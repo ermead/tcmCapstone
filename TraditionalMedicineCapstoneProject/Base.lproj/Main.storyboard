@@ -2,9 +2,11 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vAR-Xe-XzX">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Screen B-->
+        <!--Herbs-->
         <scene sceneID="euT-Td-RZx">
             <objects>
                 <viewController id="rX5-hd-Jpb" sceneMemberID="viewController">
@@ -17,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Screen B" id="pD8-CF-5AK">
+                    <navigationItem key="navigationItem" title="Herbs" id="pD8-CF-5AK">
                         <barButtonItem key="leftBarButtonItem" title="Item" id="Sub-9J-PSw"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="uNe-y9-41d">
                             <connections>
@@ -30,7 +32,7 @@
             </objects>
             <point key="canvasLocation" x="1960" y="-1147"/>
         </scene>
-        <!--Screen A-->
+        <!--Acupuncture-->
         <scene sceneID="UWA-Eo-im0">
             <objects>
                 <viewController id="Y54-Jl-QS1" sceneMemberID="viewController">
@@ -43,7 +45,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Screen A" id="gqs-du-kG9">
+                    <navigationItem key="navigationItem" title="Acupuncture" id="gqs-du-kG9">
                         <barButtonItem key="leftBarButtonItem" title="Item" id="bOn-81-P5Z"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="oJ6-3t-nmy">
                             <connections>
@@ -56,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="1960" y="-439"/>
         </scene>
-        <!--Screen B-1-->
+        <!--Herb Detail-->
         <scene sceneID="0ze-sL-Ncd">
             <objects>
-                <viewController title="Screen B-1" id="9ad-Mu-vn7" sceneMemberID="viewController">
+                <viewController title="Herb Detail" id="9ad-Mu-vn7" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cgE-G2-FWT"/>
                         <viewControllerLayoutGuide type="bottom" id="gV1-WU-d0z"/>
@@ -67,17 +69,118 @@
                     <view key="view" contentMode="scaleToFill" id="2bY-og-23r">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="vZE-fL-M2i">
+                                <rect key="frame" x="340" y="72" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vZE-fL-M2i" secondAttribute="height" multiplier="1:1" id="w8f-pe-bpZ"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="csD-HK-T7i">
+                                <rect key="frame" x="20" y="329" width="560" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="4gE-o7-53G"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vu8-86-2N2">
+                                <rect key="frame" x="20" y="431" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ztJ-R0-25f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pd5-53-GHz">
+                                <rect key="frame" x="20" y="460" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="xll-6F-jvL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpk-ID-clb">
+                                <rect key="frame" x="20" y="489" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="NqK-gY-YcQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCu-UK-FDt">
+                                <rect key="frame" x="538" y="430" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="uiA-dO-XUA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZA-Ch-9SR">
+                                <rect key="frame" x="538" y="459" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1D8-qg-evo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8Y-J7-GRj">
+                                <rect key="frame" x="538" y="488" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="few-Cs-526">
+                                <rect key="frame" x="20" y="72" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Jnj-QR-gyS"/>
+                                    <constraint firstAttribute="width" secondItem="few-Cs-526" secondAttribute="height" multiplier="1:1" id="bKB-KP-aAY"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="few-Cs-526" firstAttribute="top" secondItem="cgE-G2-FWT" secondAttribute="bottom" constant="8" symbolic="YES" id="4Tw-Vt-TMD"/>
+                            <constraint firstItem="vZE-fL-M2i" firstAttribute="trailing" secondItem="csD-HK-T7i" secondAttribute="trailing" id="71Y-1i-1Oc"/>
+                            <constraint firstItem="EZA-Ch-9SR" firstAttribute="trailing" secondItem="2bY-og-23r" secondAttribute="trailingMargin" id="7UQ-Qf-m4P"/>
+                            <constraint firstItem="fCu-UK-FDt" firstAttribute="top" secondItem="csD-HK-T7i" secondAttribute="bottom" constant="7" id="9Cm-0l-k6t"/>
+                            <constraint firstItem="vZE-fL-M2i" firstAttribute="width" secondItem="few-Cs-526" secondAttribute="width" id="BcE-u7-m1G"/>
+                            <constraint firstItem="Vu8-86-2N2" firstAttribute="leading" secondItem="pd5-53-GHz" secondAttribute="leading" id="CJG-Fu-6K2"/>
+                            <constraint firstItem="few-Cs-526" firstAttribute="top" secondItem="vZE-fL-M2i" secondAttribute="top" id="Ha6-hx-FMj"/>
+                            <constraint firstItem="mpk-ID-clb" firstAttribute="top" secondItem="pd5-53-GHz" secondAttribute="bottom" constant="8" symbolic="YES" id="JjL-fx-rgO"/>
+                            <constraint firstItem="fCu-UK-FDt" firstAttribute="trailing" secondItem="csD-HK-T7i" secondAttribute="trailing" id="KAy-c7-4CS"/>
+                            <constraint firstItem="csD-HK-T7i" firstAttribute="leading" secondItem="few-Cs-526" secondAttribute="leading" id="KW8-HD-wyp"/>
+                            <constraint firstItem="gV1-WU-d0z" firstAttribute="top" secondItem="mpk-ID-clb" secondAttribute="bottom" constant="41" id="L6z-gX-NOW"/>
+                            <constraint firstItem="EZA-Ch-9SR" firstAttribute="top" secondItem="fCu-UK-FDt" secondAttribute="bottom" constant="8" symbolic="YES" id="O8Q-A0-f8D"/>
+                            <constraint firstItem="a8Y-J7-GRj" firstAttribute="leading" secondItem="EZA-Ch-9SR" secondAttribute="leading" id="OQb-o9-z34"/>
+                            <constraint firstItem="pd5-53-GHz" firstAttribute="top" secondItem="Vu8-86-2N2" secondAttribute="bottom" constant="8" symbolic="YES" id="OSA-hX-mmh"/>
+                            <constraint firstItem="Vu8-86-2N2" firstAttribute="top" secondItem="csD-HK-T7i" secondAttribute="bottom" constant="8" symbolic="YES" id="TwD-M8-urS"/>
+                            <constraint firstItem="gV1-WU-d0z" firstAttribute="top" secondItem="a8Y-J7-GRj" secondAttribute="bottom" constant="42" id="XUs-QZ-pdx"/>
+                            <constraint firstItem="a8Y-J7-GRj" firstAttribute="top" secondItem="EZA-Ch-9SR" secondAttribute="bottom" constant="8" symbolic="YES" id="Xsr-q7-aMP"/>
+                            <constraint firstItem="EZA-Ch-9SR" firstAttribute="trailing" secondItem="fCu-UK-FDt" secondAttribute="trailing" id="baj-ce-kmI"/>
+                            <constraint firstItem="pd5-53-GHz" firstAttribute="leading" secondItem="mpk-ID-clb" secondAttribute="leading" id="kja-at-fVJ"/>
+                            <constraint firstItem="pd5-53-GHz" firstAttribute="leading" secondItem="2bY-og-23r" secondAttribute="leadingMargin" id="o6Q-K8-61E"/>
+                            <constraint firstItem="csD-HK-T7i" firstAttribute="top" secondItem="few-Cs-526" secondAttribute="bottom" constant="17" id="p3B-p5-zYQ"/>
+                            <constraint firstItem="few-Cs-526" firstAttribute="bottom" secondItem="vZE-fL-M2i" secondAttribute="bottom" id="qnn-Y8-TM1"/>
+                            <constraint firstItem="Vu8-86-2N2" firstAttribute="leading" secondItem="csD-HK-T7i" secondAttribute="leading" id="sol-SX-Olg"/>
+                            <constraint firstItem="vZE-fL-M2i" firstAttribute="leading" secondItem="few-Cs-526" secondAttribute="trailing" constant="80" id="yFg-m6-lzO"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R1i-Qu-O17" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2804" y="-1147"/>
         </scene>
-        <!--Screen A-1-->
+        <!--Point Detail-->
         <scene sceneID="eem-OI-rxJ">
             <objects>
-                <viewController title="Screen A-1" id="ofP-5f-vj4" sceneMemberID="viewController">
+                <viewController title="Point Detail" id="ofP-5f-vj4" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ws6-0r-pRf"/>
                         <viewControllerLayoutGuide type="bottom" id="sME-Nz-x27"/>
@@ -90,7 +193,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tir-R6-dJW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2804" y="-439"/>
+            <point key="canvasLocation" x="2730" y="-467"/>
         </scene>
         <!--HomeScreen-->
         <scene sceneID="tne-QT-ifu">
@@ -115,7 +218,7 @@
             </objects>
             <point key="canvasLocation" x="1960" y="251"/>
         </scene>
-        <!--Screen C-->
+        <!--Diagnostic Tool-->
         <scene sceneID="30K-8x-S1y">
             <objects>
                 <viewController id="9Zw-A7-Dch" sceneMemberID="viewController">
@@ -128,7 +231,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Screen C" id="zgq-6P-9DB">
+                    <navigationItem key="navigationItem" title="Diagnostic Tool" id="zgq-6P-9DB">
                         <barButtonItem key="leftBarButtonItem" title="Item" id="WJR-or-8Bm"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="TqF-Xv-sgk">
                             <connections>
@@ -208,7 +311,7 @@
         <scene sceneID="rqR-r5-ZKb">
             <objects>
                 <navigationController title="Screen A Nav" automaticallyAdjustsScrollViewInsets="NO" id="Kot-ms-YDZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Screen A" id="pMO-1I-S0G"/>
+                    <tabBarItem key="tabBarItem" title="Points" id="pMO-1I-S0G"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5WO-OR-Seo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -227,7 +330,7 @@
         <scene sceneID="9SD-72-L23">
             <objects>
                 <navigationController title="Screen B Nav" automaticallyAdjustsScrollViewInsets="NO" id="d8W-6q-Qnk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Screen B" id="5JI-29-EoA"/>
+                    <tabBarItem key="tabBarItem" title="Herbs" id="5JI-29-EoA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4JB-5Y-rJC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -246,7 +349,7 @@
         <scene sceneID="FRi-jz-Gcb">
             <objects>
                 <navigationController title="Screen C Nav" automaticallyAdjustsScrollViewInsets="NO" id="cwl-FY-ru7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Screen C" id="pet-32-eNt"/>
+                    <tabBarItem key="tabBarItem" title="Diagnosis" id="pet-32-eNt"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eny-ti-tyU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -262,4 +365,7 @@
             <point key="canvasLocation" x="1136" y="995"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="default" width="1024" height="768"/>
+    </resources>
 </document>
