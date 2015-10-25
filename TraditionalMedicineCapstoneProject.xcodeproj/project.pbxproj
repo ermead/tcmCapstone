@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D7580B041BDD1EB70008789F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7580B031BDD1EB70008789F /* AppDelegate.swift */; };
+		D7580B061BDD1EB70008789F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7580B051BDD1EB70008789F /* ViewController.swift */; };
+		D7580B091BDD1EB70008789F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7580B071BDD1EB70008789F /* Main.storyboard */; };
+		D7580B0C1BDD1EB70008789F /* TraditionalMedicineCapstoneProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D7580B0A1BDD1EB70008789F /* TraditionalMedicineCapstoneProject.xcdatamodeld */; };
+		D7580B0E1BDD1EB70008789F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7580B0D1BDD1EB70008789F /* Assets.xcassets */; };
+		D7580B111BDD1EB70008789F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7580B0F1BDD1EB70008789F /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D7580B001BDD1EB70008789F /* TraditionalMedicineCapstoneProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TraditionalMedicineCapstoneProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7580B031BDD1EB70008789F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D7580B051BDD1EB70008789F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D7580B081BDD1EB70008789F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D7580B0B1BDD1EB70008789F /* TraditionalMedicineCapstoneProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TraditionalMedicineCapstoneProject.xcdatamodel; sourceTree = "<group>"; };
+		D7580B0D1BDD1EB70008789F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7580B101BDD1EB70008789F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D7580B121BDD1EB70008789F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7580AFD1BDD1EB70008789F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D7580AF71BDD1EB70008789F = {
+			isa = PBXGroup;
+			children = (
+				D7580B021BDD1EB70008789F /* TraditionalMedicineCapstoneProject */,
+				D7580B011BDD1EB70008789F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7580B011BDD1EB70008789F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7580B001BDD1EB70008789F /* TraditionalMedicineCapstoneProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7580B021BDD1EB70008789F /* TraditionalMedicineCapstoneProject */ = {
+			isa = PBXGroup;
+			children = (
+				D7580B031BDD1EB70008789F /* AppDelegate.swift */,
+				D7580B051BDD1EB70008789F /* ViewController.swift */,
+				D7580B071BDD1EB70008789F /* Main.storyboard */,
+				D7580B0D1BDD1EB70008789F /* Assets.xcassets */,
+				D7580B0F1BDD1EB70008789F /* LaunchScreen.storyboard */,
+				D7580B121BDD1EB70008789F /* Info.plist */,
+				D7580B0A1BDD1EB70008789F /* TraditionalMedicineCapstoneProject.xcdatamodeld */,
+			);
+			path = TraditionalMedicineCapstoneProject;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7580AFF1BDD1EB70008789F /* TraditionalMedicineCapstoneProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7580B151BDD1EB70008789F /* Build configuration list for PBXNativeTarget "TraditionalMedicineCapstoneProject" */;
+			buildPhases = (
+				D7580AFC1BDD1EB70008789F /* Sources */,
+				D7580AFD1BDD1EB70008789F /* Frameworks */,
+				D7580AFE1BDD1EB70008789F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TraditionalMedicineCapstoneProject;
+			productName = TraditionalMedicineCapstoneProject;
+			productReference = D7580B001BDD1EB70008789F /* TraditionalMedicineCapstoneProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7580AF81BDD1EB70008789F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Eric Mead";
+				TargetAttributes = {
+					D7580AFF1BDD1EB70008789F = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = D7580AFB1BDD1EB70008789F /* Build configuration list for PBXProject "TraditionalMedicineCapstoneProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7580AF71BDD1EB70008789F;
+			productRefGroup = D7580B011BDD1EB70008789F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7580AFF1BDD1EB70008789F /* TraditionalMedicineCapstoneProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7580AFE1BDD1EB70008789F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7580B111BDD1EB70008789F /* LaunchScreen.storyboard in Resources */,
+				D7580B0E1BDD1EB70008789F /* Assets.xcassets in Resources */,
+				D7580B091BDD1EB70008789F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7580AFC1BDD1EB70008789F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7580B061BDD1EB70008789F /* ViewController.swift in Sources */,
+				D7580B0C1BDD1EB70008789F /* TraditionalMedicineCapstoneProject.xcdatamodeld in Sources */,
+				D7580B041BDD1EB70008789F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D7580B071BDD1EB70008789F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7580B081BDD1EB70008789F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D7580B0F1BDD1EB70008789F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7580B101BDD1EB70008789F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7580B131BDD1EB70008789F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D7580B141BDD1EB70008789F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7580B161BDD1EB70008789F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TraditionalMedicineCapstoneProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mysite.TraditionalMedicineCapstoneProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D7580B171BDD1EB70008789F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TraditionalMedicineCapstoneProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mysite.TraditionalMedicineCapstoneProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7580AFB1BDD1EB70008789F /* Build configuration list for PBXProject "TraditionalMedicineCapstoneProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7580B131BDD1EB70008789F /* Debug */,
+				D7580B141BDD1EB70008789F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7580B151BDD1EB70008789F /* Build configuration list for PBXNativeTarget "TraditionalMedicineCapstoneProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7580B161BDD1EB70008789F /* Debug */,
+				D7580B171BDD1EB70008789F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D7580B0A1BDD1EB70008789F /* TraditionalMedicineCapstoneProject.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D7580B0B1BDD1EB70008789F /* TraditionalMedicineCapstoneProject.xcdatamodel */,
+			);
+			currentVersion = D7580B0B1BDD1EB70008789F /* TraditionalMedicineCapstoneProject.xcdatamodel */;
+			path = TraditionalMedicineCapstoneProject.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D7580AF81BDD1EB70008789F /* Project object */;
+}
