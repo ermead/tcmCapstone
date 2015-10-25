@@ -9,7 +9,7 @@
         <!--Herbs-->
         <scene sceneID="euT-Td-RZx">
             <objects>
-                <viewController id="rX5-hd-Jpb" sceneMemberID="viewController">
+                <viewController id="rX5-hd-Jpb" customClass="HerbsListViewController" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kLR-pS-SAT"/>
                         <viewControllerLayoutGuide type="bottom" id="zjR-8f-ngb"/>
@@ -17,7 +17,36 @@
                     <view key="view" contentMode="scaleToFill" id="KGb-tg-7Ah">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tB1-fJ-dk2">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="ss0-Ob-bka"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="herbsCell" id="zVd-eJ-DAc">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zVd-eJ-DAc" id="TsP-W3-O5c">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="rX5-hd-Jpb" id="N3F-g3-ELI"/>
+                                    <outlet property="delegate" destination="rX5-hd-Jpb" id="0cO-mG-ybD"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zjR-8f-ngb" firstAttribute="top" secondItem="tB1-fJ-dk2" secondAttribute="bottom" id="PW1-ff-Qhr"/>
+                            <constraint firstItem="tB1-fJ-dk2" firstAttribute="top" secondItem="kLR-pS-SAT" secondAttribute="bottom" id="T37-lN-tIM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tB1-fJ-dk2" secondAttribute="trailing" constant="-20" id="ZtJ-tb-Rug"/>
+                            <constraint firstItem="tB1-fJ-dk2" firstAttribute="leading" secondItem="KGb-tg-7Ah" secondAttribute="leadingMargin" constant="-20" id="z2U-ph-tz4"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Herbs" id="pD8-CF-5AK">
                         <barButtonItem key="leftBarButtonItem" title="Item" id="Sub-9J-PSw"/>
