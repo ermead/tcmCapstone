@@ -32,6 +32,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="9ad-Mu-vn7" kind="show" identifier="showHerbDetail" id="Fwi-m7-Uc1"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -56,6 +59,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="herbsListTableView" destination="tB1-fJ-dk2" id="Iff-7N-Gne"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JUy-QC-sH6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -90,7 +96,7 @@
         <!--Herb Detail-->
         <scene sceneID="0ze-sL-Ncd">
             <objects>
-                <viewController title="Herb Detail" id="9ad-Mu-vn7" sceneMemberID="viewController">
+                <viewController title="Herb Detail" id="9ad-Mu-vn7" customClass="HerbsListDetailViewController" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cgE-G2-FWT"/>
                         <viewControllerLayoutGuide type="bottom" id="gV1-WU-d0z"/>
@@ -400,4 +406,7 @@
     <resources>
         <image name="default" width="1024" height="768"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Fwi-m7-Uc1"/>
+    </inferredMetricsTieBreakers>
 </document>

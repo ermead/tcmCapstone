@@ -10,6 +10,9 @@ import UIKit
 
 class HerbsListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var herbsListTableView: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,6 +31,17 @@ class HerbsListViewController: UIViewController, UITableViewDataSource, UITableV
         return cell
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let index = herbsListTableView.indexPathForSelectedRow?.row
+        
+        if let hldc: HerbsListDetailViewController = segue.destinationViewController as? HerbsListDetailViewController{
+             print("the index touched was \(index) and the herb selected was \(HerbsController.herbs[index!].englishName)")
+            
+            hldc.title = HerbsController.herbs[index!].englishName
+            hldc.index = index!
+        }
+    }
     
     
    
