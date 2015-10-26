@@ -603,6 +603,14 @@
                                 <rect key="frame" x="20" y="224" width="105" height="30"/>
                                 <state key="normal" title="Songs"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJh-Io-YzS">
+                                <rect key="frame" x="16" y="262" width="114" height="30"/>
+                                <state key="normal" title="Classical Quotes"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKk-JC-9EX">
+                                <rect key="frame" x="20" y="300" width="105" height="30"/>
+                                <state key="normal" title="Quiz"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
