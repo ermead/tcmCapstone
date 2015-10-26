@@ -13,6 +13,7 @@ class PointsDetailListViewController: UIViewController {
     var index:Int?
     var firstPicVisible: Bool = true
     
+    @IBOutlet weak var topRightLabel: UILabel!
     @IBOutlet weak var leftImage: UIImageView!
     @IBOutlet weak var generalDescription: UITextView!
     @IBOutlet weak var rightImage: UIImageView!
@@ -24,6 +25,7 @@ class PointsDetailListViewController: UIViewController {
         print(" I loaded the index \(index)")
         
         leftImage.alpha = 1
+        rightImage.alpha = 0
         
         if let index = index {
             
@@ -58,7 +60,8 @@ class PointsDetailListViewController: UIViewController {
         
         point = Point(pinyinName: point.pinyinName, englishName: point.englishName, pointOnMeridian: point.pointOnMeridian, specialCategories: point.specialCategories!, channel: point.channel, locationDescription: point.locationDescription, uses: point.uses)
         
-        generalDescription.text = point.uses
+        topRightLabel.text = point.channel
+        generalDescription.text = ("The point \(point.pinyinName) is located on the \(point.channel) meridian.")
         location.text = point.locationDescription
         indicationsAndUses.text = point.uses
         
@@ -66,7 +69,13 @@ class PointsDetailListViewController: UIViewController {
     }
     
     func addNewPointEntry() {
-        
+        print("adding new point")
+        leftImage.image = nil
+        rightImage.image = nil
+        topRightLabel.text = ""
+        generalDescription.text = ""
+        location.text = ""
+        indicationsAndUses.text = ""
         
     }
 

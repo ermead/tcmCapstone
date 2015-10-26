@@ -75,7 +75,7 @@
 				D7580B031BDD1EB70008789F /* AppDelegate.swift */,
 				D7580B051BDD1EB70008789F /* ViewController.swift */,
 				D7D9EBB61BDDA4F800C920AC /* Herbs */,
-				D7D9EBBF1BDDAC4300C920AC /* New Group */,
+				D7D9EBBF1BDDAC4300C920AC /* Points */,
 				D7580B071BDD1EB70008789F /* Main.storyboard */,
 				D7580B0D1BDD1EB70008789F /* Assets.xcassets */,
 				D7580B0F1BDD1EB70008789F /* LaunchScreen.storyboard */,
@@ -96,7 +96,7 @@
 			name = Herbs;
 			sourceTree = "<group>";
 		};
-		D7D9EBBF1BDDAC4300C920AC /* New Group */ = {
+		D7D9EBBF1BDDAC4300C920AC /* Points */ = {
 			isa = PBXGroup;
 			children = (
 				D7D9EBBB1BDDAC2300C920AC /* PointsListViewController.swift */,
@@ -104,7 +104,7 @@
 				D7D9EBB71BDDABE100C920AC /* Point.swift */,
 				D7D9EBB91BDDABF400C920AC /* PointController.swift */,
 			);
-			name = "New Group";
+			name = Points;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -359,6 +359,7 @@
                         <outlet property="leftImage" destination="teu-Wa-kOn" id="2zH-9f-aMw"/>
                         <outlet property="location" destination="gYe-00-Cfp" id="zHK-O0-1yW"/>
                         <outlet property="rightImage" destination="Ubm-mN-RWn" id="hn3-GG-GGT"/>
+                        <outlet property="topRightLabel" destination="WfW-ta-gzQ" id="f82-FA-a1O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tir-R6-dJW" userLabel="First Responder" sceneMemberID="firstResponder"/>
