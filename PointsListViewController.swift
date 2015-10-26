@@ -46,8 +46,12 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
 
             }
                 
+        } else {
+            if let pdlc : PointsDetailListViewController = segue.destinationViewController as? PointsDetailListViewController {
+                    print("preparing for a new point entry")
+                    pdlc.title = "New Point"
+            }
         }
-    
     }
     
     override func didReceiveMemoryWarning() {

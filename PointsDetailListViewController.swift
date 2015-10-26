@@ -12,10 +12,32 @@ class PointsDetailListViewController: UIViewController {
 
     var index:Int?
     
+    @IBOutlet weak var leftImage: UIImageView!
+    @IBOutlet weak var rightImage: UIImageView!
+    @IBOutlet weak var generalDescription: UITextView!
+    @IBOutlet weak var location: UITextView!
+    @IBOutlet weak var indicationsAndUses: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print(" I loaded the index \(index)")
-        // Do any additional setup after loading the view.
+        
+        if let index = index{
+            populatePointInfo()
+        } else {
+            addNewPointEntry()
+        }
+        
+    }
+    
+    func populatePointInfo() {
+        
+        
+    }
+    
+    func addNewPointEntry() {
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
