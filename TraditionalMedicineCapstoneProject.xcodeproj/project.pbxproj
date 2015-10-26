@@ -17,6 +17,10 @@
 		D7D9EBB11BDD8A6500C920AC /* HerbsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBB01BDD8A6500C920AC /* HerbsController.swift */; settings = {ASSET_TAGS = (); }; };
 		D7D9EBB31BDD900100C920AC /* HerbsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBB21BDD900100C920AC /* HerbsListViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D7D9EBB51BDD96F900C920AC /* HerbsListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBB41BDD96F900C920AC /* HerbsListDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D7D9EBB81BDDABE100C920AC /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBB71BDDABE100C920AC /* Point.swift */; settings = {ASSET_TAGS = (); }; };
+		D7D9EBBA1BDDABF400C920AC /* PointController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBB91BDDABF400C920AC /* PointController.swift */; settings = {ASSET_TAGS = (); }; };
+		D7D9EBBC1BDDAC2300C920AC /* PointsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBBB1BDDAC2300C920AC /* PointsListViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D7D9EBBE1BDDAC3600C920AC /* PointsDetailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBBD1BDDAC3600C920AC /* PointsDetailListViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		D7D9EBB01BDD8A6500C920AC /* HerbsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HerbsController.swift; sourceTree = "<group>"; };
 		D7D9EBB21BDD900100C920AC /* HerbsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HerbsListViewController.swift; sourceTree = "<group>"; };
 		D7D9EBB41BDD96F900C920AC /* HerbsListDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HerbsListDetailViewController.swift; sourceTree = "<group>"; };
+		D7D9EBB71BDDABE100C920AC /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		D7D9EBB91BDDABF400C920AC /* PointController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointController.swift; sourceTree = "<group>"; };
+		D7D9EBBB1BDDAC2300C920AC /* PointsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PointsListViewController.swift; path = ../PointsListViewController.swift; sourceTree = "<group>"; };
+		D7D9EBBD1BDDAC3600C920AC /* PointsDetailListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PointsDetailListViewController.swift; path = ../PointsDetailListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +75,7 @@
 				D7580B031BDD1EB70008789F /* AppDelegate.swift */,
 				D7580B051BDD1EB70008789F /* ViewController.swift */,
 				D7D9EBB61BDDA4F800C920AC /* Herbs */,
+				D7D9EBBF1BDDAC4300C920AC /* New Group */,
 				D7580B071BDD1EB70008789F /* Main.storyboard */,
 				D7580B0D1BDD1EB70008789F /* Assets.xcassets */,
 				D7580B0F1BDD1EB70008789F /* LaunchScreen.storyboard */,
@@ -85,6 +94,17 @@
 				D7D9EBB01BDD8A6500C920AC /* HerbsController.swift */,
 			);
 			name = Herbs;
+			sourceTree = "<group>";
+		};
+		D7D9EBBF1BDDAC4300C920AC /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				D7D9EBBB1BDDAC2300C920AC /* PointsListViewController.swift */,
+				D7D9EBBD1BDDAC3600C920AC /* PointsDetailListViewController.swift */,
+				D7D9EBB71BDDABE100C920AC /* Point.swift */,
+				D7D9EBB91BDDABF400C920AC /* PointController.swift */,
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,13 +177,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7D9EBB81BDDABE100C920AC /* Point.swift in Sources */,
+				D7D9EBBC1BDDAC2300C920AC /* PointsListViewController.swift in Sources */,
 				D7580B061BDD1EB70008789F /* ViewController.swift in Sources */,
 				D7580B0C1BDD1EB70008789F /* TraditionalMedicineCapstoneProject.xcdatamodeld in Sources */,
 				D7D9EBAF1BDD88E500C920AC /* Herb.swift in Sources */,
 				D7D9EBB31BDD900100C920AC /* HerbsListViewController.swift in Sources */,
 				D7580B041BDD1EB70008789F /* AppDelegate.swift in Sources */,
+				D7D9EBBE1BDDAC3600C920AC /* PointsDetailListViewController.swift in Sources */,
 				D7D9EBB51BDD96F900C920AC /* HerbsListDetailViewController.swift in Sources */,
 				D7D9EBB11BDD8A6500C920AC /* HerbsController.swift in Sources */,
+				D7D9EBBA1BDDABF400C920AC /* PointController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
