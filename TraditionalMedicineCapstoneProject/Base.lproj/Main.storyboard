@@ -266,57 +266,99 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="teu-Wa-kOn">
-                                <rect key="frame" x="20" y="72" width="202" height="288"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="teu-Wa-kOn">
+                                <rect key="frame" x="20" y="72" width="140" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="teu-Wa-kOn" secondAttribute="height" multiplier="101:144" id="DOk-b5-O6S"/>
+                                    <constraint firstAttribute="height" constant="200" id="eR5-R0-mM7"/>
+                                    <constraint firstAttribute="width" constant="140" id="jlJ-By-CR4"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="y3s-LB-mdD">
-                                <rect key="frame" x="246" y="72" width="334" height="179"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mg2-n5-iR8">
-                                <rect key="frame" x="246" y="278" width="329" height="76"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gYe-00-Cfp">
+                                <rect key="frame" x="20" y="369" width="555" height="62"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gYe-00-Cfp">
-                                <rect key="frame" x="20" y="382" width="555" height="62"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="e0P-jb-eaw">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="e0P-jb-eaw">
                                 <rect key="frame" x="20" y="467" width="555" height="76"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Uses and Indications:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwb-q6-JZ0">
-                                <rect key="frame" x="20" y="445" width="210" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Uses and Indications:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwb-q6-JZ0">
+                                <rect key="frame" x="20" y="439" width="210" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QfJ-JA-ioT">
-                                <rect key="frame" x="20" y="361" width="210" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Location:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QfJ-JA-ioT">
+                                <rect key="frame" x="20" y="340" width="210" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Overview:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6l-ey-3rX">
-                                <rect key="frame" x="308" y="257" width="210" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="default2" translatesAutoresizingMaskIntoConstraints="NO" id="Ubm-mN-RWn">
+                                <rect key="frame" x="168" y="72" width="140" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="QwU-0J-4bm"/>
+                                    <constraint firstAttribute="width" constant="140" id="gJg-Ur-G4o"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQ8-DJ-IeL">
+                                <rect key="frame" x="20" y="290" width="99" height="30"/>
+                                <state key="normal" title="Toggle Picture"/>
+                                <connections>
+                                    <action selector="TogglePictureButtonTapped:" destination="ofP-5f-vj4" eventType="touchUpInside" id="nlI-N7-SAE"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pmY-9h-7Ck">
+                                <rect key="frame" x="340" y="110" width="240" height="128"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Leg Shao Yin" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfW-ta-gzQ">
+                                <rect key="frame" x="369" y="64" width="183" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VQ8-DJ-IeL" firstAttribute="top" secondItem="teu-Wa-kOn" secondAttribute="bottom" constant="18" id="2hE-N0-esx"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="teu-Wa-kOn" secondAttribute="leading" id="3BL-lZ-wIa"/>
+                            <constraint firstItem="Ubm-mN-RWn" firstAttribute="width" secondItem="teu-Wa-kOn" secondAttribute="width" id="3SZ-hA-AOF"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Ubm-mN-RWn" secondAttribute="leading" id="6vs-t4-D7L"/>
+                            <constraint firstItem="sME-Nz-x27" firstAttribute="top" secondItem="e0P-jb-eaw" secondAttribute="bottom" constant="8" id="9BI-Ia-6dY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gYe-00-Cfp" secondAttribute="trailing" constant="5" id="B8a-JH-ndp"/>
+                            <constraint firstItem="Ubm-mN-RWn" firstAttribute="height" secondItem="teu-Wa-kOn" secondAttribute="height" id="Hvj-xV-WVp"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="e0P-jb-eaw" secondAttribute="leading" id="IbR-Sq-dqR"/>
+                            <constraint firstItem="teu-Wa-kOn" firstAttribute="top" secondItem="Ws6-0r-pRf" secondAttribute="bottom" constant="8" id="JlX-1t-YI4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pmY-9h-7Ck" secondAttribute="trailing" id="Knk-CK-G1C"/>
+                            <constraint firstItem="pmY-9h-7Ck" firstAttribute="leading" secondItem="teu-Wa-kOn" secondAttribute="trailing" constant="20" id="MxN-RF-Eq9"/>
+                            <constraint firstItem="hwb-q6-JZ0" firstAttribute="top" secondItem="gYe-00-Cfp" secondAttribute="bottom" constant="8" id="POk-nf-rZN"/>
+                            <constraint firstItem="e0P-jb-eaw" firstAttribute="top" secondItem="hwb-q6-JZ0" secondAttribute="bottom" constant="7" id="Qln-gq-eT6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="e0P-jb-eaw" secondAttribute="trailing" constant="5" id="Tk0-vE-tAe"/>
+                            <constraint firstItem="pmY-9h-7Ck" firstAttribute="top" secondItem="WfW-ta-gzQ" secondAttribute="bottom" constant="16" id="XsD-Lk-45M"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="gYe-00-Cfp" secondAttribute="leading" id="bIi-BR-x3R"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WfW-ta-gzQ" secondAttribute="trailing" constant="28" id="eoc-LM-3wK"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="hwb-q6-JZ0" secondAttribute="leading" id="ghK-t0-Ipd"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="VQ8-DJ-IeL" secondAttribute="leading" id="gje-KM-2i5"/>
+                            <constraint firstItem="WfW-ta-gzQ" firstAttribute="top" secondItem="Ws6-0r-pRf" secondAttribute="bottom" id="hlW-DP-yYE"/>
+                            <constraint firstItem="gYe-00-Cfp" firstAttribute="top" secondItem="QfJ-JA-ioT" secondAttribute="bottom" constant="8" id="ma4-dU-iZD"/>
+                            <constraint firstItem="Ubm-mN-RWn" firstAttribute="top" secondItem="Ws6-0r-pRf" secondAttribute="bottom" constant="8" id="oXo-7T-lKj"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="QfJ-JA-ioT" secondAttribute="leading" id="tHO-Ba-D2B"/>
+                            <constraint firstItem="QfJ-JA-ioT" firstAttribute="top" secondItem="VQ8-DJ-IeL" secondAttribute="bottom" constant="20" id="teu-54-isO"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="generalDescription" destination="mg2-n5-iR8" id="p0c-jQ-yRb"/>
+                        <outlet property="generalDescription" destination="pmY-9h-7Ck" id="2Rk-rg-Tbe"/>
                         <outlet property="indicationsAndUses" destination="e0P-jb-eaw" id="t4o-Fp-DkS"/>
                         <outlet property="leftImage" destination="teu-Wa-kOn" id="2zH-9f-aMw"/>
                         <outlet property="location" destination="gYe-00-Cfp" id="zHK-O0-1yW"/>
-                        <outlet property="rightImage" destination="y3s-LB-mdD" id="0ro-O5-bDc"/>
+                        <outlet property="rightImage" destination="Ubm-mN-RWn" id="hn3-GG-GGT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tir-R6-dJW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -495,6 +537,7 @@
     </scenes>
     <resources>
         <image name="default" width="1024" height="768"/>
+        <image name="default2" width="1024" height="768"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Fwi-m7-Uc1"/>

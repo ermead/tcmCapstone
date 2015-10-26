@@ -16,9 +16,10 @@ class Point: NSObject {
     let specialCategories: String?
     let locationDescription: String
     let channel: String
+    let uses: String
     let imageName: String?
     
-    init(pinyinName: String, englishName: String, pointOnMeridian: String, specialCategories: String, channel: String, locationDescription: String){
+    init(pinyinName: String, englishName: String, pointOnMeridian: String, specialCategories: String, channel: String, locationDescription: String, uses: String){
         
         self.pinyinName = pinyinName
         self.englishName = englishName
@@ -27,5 +28,6 @@ class Point: NSObject {
         self.locationDescription = locationDescription
         self.imageName = englishName.lowercaseString
         self.specialCategories = specialCategories
+        self.uses = uses
 }
 }

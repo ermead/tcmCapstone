@@ -11,10 +11,11 @@ import UIKit
 class PointsDetailListViewController: UIViewController {
 
     var index:Int?
+    var firstPicVisible: Bool = true
     
     @IBOutlet weak var leftImage: UIImageView!
-    @IBOutlet weak var rightImage: UIImageView!
     @IBOutlet weak var generalDescription: UITextView!
+    @IBOutlet weak var rightImage: UIImageView!
     @IBOutlet weak var location: UITextView!
     @IBOutlet weak var indicationsAndUses: UITextView!
     
@@ -22,15 +23,44 @@ class PointsDetailListViewController: UIViewController {
         super.viewDidLoad()
         print(" I loaded the index \(index)")
         
-        if let index = index{
+        leftImage.alpha = 1
+        
+        if let index = index {
+            
             populatePointInfo()
+            
         } else {
+            
             addNewPointEntry()
         }
         
     }
     
+    @IBAction func TogglePictureButtonTapped(sender: UIButton) {
+        
+        if firstPicVisible{
+            leftImage.alpha = 0
+            rightImage.alpha = 1
+            firstPicVisible = false
+            
+        } else {
+            leftImage.alpha = 1
+            rightImage.alpha = 0
+            firstPicVisible = true
+        }
+        
+    }
+    
+    
     func populatePointInfo() {
+        
+        var point = PointController.points[index!]
+        
+        point = Point(pinyinName: point.pinyinName, englishName: point.englishName, pointOnMeridian: point.pointOnMeridian, specialCategories: point.specialCategories!, channel: point.channel, locationDescription: point.locationDescription, uses: point.uses)
+        
+        generalDescription.text = point.uses
+        location.text = point.locationDescription
+        indicationsAndUses.text = point.uses
         
         
     }
