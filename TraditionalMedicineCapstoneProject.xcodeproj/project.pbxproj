@@ -66,10 +66,7 @@
 			children = (
 				D7580B031BDD1EB70008789F /* AppDelegate.swift */,
 				D7580B051BDD1EB70008789F /* ViewController.swift */,
-				D7D9EBAE1BDD88E500C920AC /* Herb.swift */,
-				D7D9EBB01BDD8A6500C920AC /* HerbsController.swift */,
-				D7D9EBB21BDD900100C920AC /* HerbsListViewController.swift */,
-				D7D9EBB41BDD96F900C920AC /* HerbsListDetailViewController.swift */,
+				D7D9EBB61BDDA4F800C920AC /* Herbs */,
 				D7580B071BDD1EB70008789F /* Main.storyboard */,
 				D7580B0D1BDD1EB70008789F /* Assets.xcassets */,
 				D7580B0F1BDD1EB70008789F /* LaunchScreen.storyboard */,
@@ -77,6 +74,17 @@
 				D7580B0A1BDD1EB70008789F /* TraditionalMedicineCapstoneProject.xcdatamodeld */,
 			);
 			path = TraditionalMedicineCapstoneProject;
+			sourceTree = "<group>";
+		};
+		D7D9EBB61BDDA4F800C920AC /* Herbs */ = {
+			isa = PBXGroup;
+			children = (
+				D7D9EBB21BDD900100C920AC /* HerbsListViewController.swift */,
+				D7D9EBB41BDD96F900C920AC /* HerbsListDetailViewController.swift */,
+				D7D9EBAE1BDD88E500C920AC /* Herb.swift */,
+				D7D9EBB01BDD8A6500C920AC /* HerbsController.swift */,
+			);
+			name = Herbs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
