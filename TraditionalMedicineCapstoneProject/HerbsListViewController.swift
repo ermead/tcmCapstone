@@ -32,6 +32,7 @@ class HerbsListViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showHerbDetail" {
         
         let index = herbsListTableView.indexPathForSelectedRow?.row
         
@@ -40,11 +41,15 @@ class HerbsListViewController: UIViewController, UITableViewDataSource, UITableV
             
             hldc.title = HerbsController.herbs[index!].englishName
             hldc.index = index!
+            }
+        } else {
+            if let hldc: HerbsListDetailViewController = segue.destinationViewController as? HerbsListDetailViewController{
+                print("Enter a new herbal entry")
+                
+                hldc.title = "New Entry"
+            }
         }
     }
-    
-    
-    
     
    
     override func didReceiveMemoryWarning() {

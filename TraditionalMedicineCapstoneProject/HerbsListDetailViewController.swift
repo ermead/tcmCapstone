@@ -12,7 +12,7 @@ import UIKit
 
 class HerbsListDetailViewController: UIViewController {
 
- var index = 0
+    var index: Int?
     
     @IBOutlet weak var leftImage: UIImageView!
     @IBOutlet weak var rightImage: UIImageView!
@@ -26,15 +26,18 @@ class HerbsListDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if let index = index{
         print("I have the index and it is \(index), the herb I will display is \(HerbsController.herbs[index].englishName)")
         populateHerbInfo()
+        } else {
+            prepareForNewEntry()
+        }
     
     }
 
     func populateHerbInfo(){
         
-        var detailHerb = HerbsController.herbs[index]
+        var detailHerb = HerbsController.herbs[index!]
         
         detailHerb = Herb(pinyinName: detailHerb.pinyinName, botanicalName: detailHerb.botanicalName, englishName: detailHerb.englishName, category: detailHerb.category, temp: detailHerb.temp, meridians: detailHerb.meridians)
         
@@ -46,8 +49,11 @@ class HerbsListDetailViewController: UIViewController {
         category.text = detailHerb.category
         temp.text = detailHerb.temp
         meridians.text = detailHerb.meridians
+    }
         
-        
+    func prepareForNewEntry(){
+    
+        print("preparing for new Entry")
     }
 
     /*
