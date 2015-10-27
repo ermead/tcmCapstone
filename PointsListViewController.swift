@@ -13,31 +13,32 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
     //toggle this var if herbs list or points list
     var herbsList: Bool = false
     
-    
-    @IBAction func switchOnTapped(sender: UISwitch) {
-        
-        if herbsList == true {
+    @IBAction func segmentedSwitched(sender: UISegmentedControl) {
+      
+        if(sender.selectedSegmentIndex == 0){
+          print("segment points hit")
             herbsList = false
-            self.title = "points"
+            self.title = "Acupuncture"
             pointsTableViewOutlet.reloadData()
+
         } else {
+            print("segment herbs hit")
             herbsList = true
-            self.title = "herbs"
+            self.title = "Herbs"
             pointsTableViewOutlet.reloadData()
         }
-    
+        
     }
-    
    
     @IBOutlet weak var pointsTableViewOutlet: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         if herbsList == true {
-            self.title = "herbs"
+            self.title = "Herbs"
         } else
         {
-            self.title = "points"
+            self.title = "Acupuncture"
         }
         // Do any additional setup after loading the view.
     }
@@ -51,8 +52,14 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
         }
     }
     
+//    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+//        <#code#>
+//    }
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("pointsCell", forIndexPath: indexPath)
+        
+//      if indexPath.section == 0 { }
         
         if herbsList {
             cell.textLabel?.text = HerbsController.herbs[indexPath.row].pinyinName
@@ -90,6 +97,7 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
                 
             pdlc.title = PointController.points[index!].pointOnMeridian
             pdlc.index = index!
+            pdlc.herbsList = false
 
             }
                 
