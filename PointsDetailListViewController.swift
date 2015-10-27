@@ -17,6 +17,7 @@ class PointsDetailListViewController: UIViewController {
     @IBOutlet weak var leftImage: UIImageView!
     @IBOutlet weak var generalDescription: UITextView!
     @IBOutlet weak var rightImage: UIImageView!
+    @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var location: UITextView!
     @IBOutlet weak var indicationsAndUses: UITextView!
     
@@ -59,17 +60,14 @@ class PointsDetailListViewController: UIViewController {
             
             var detailHerb = HerbsController.herbs[index!]
             
-            detailHerb = Herb(pinyinName: detailHerb.pinyinName, botanicalName: detailHerb.botanicalName, englishName: detailHerb.englishName, category: detailHerb.category, temp: detailHerb.temp, meridians: detailHerb.meridians)
+            detailHerb = Herb(pinyinName: detailHerb.pinyinName, botanicalName: detailHerb.botanicalName, englishName: detailHerb.englishName, category: detailHerb.category, temp: detailHerb.temp, meridians: detailHerb.meridians, uses: detailHerb.uses, majorFormulas: detailHerb.majorFormulas)
             
-            generalDescription.text = "This herb, named \(detailHerb.pinyinName), belongs to the category of \(detailHerb.category). Having a \(detailHerb.temp) temperature, it travels along the \(detailHerb.meridians) channels."
+            generalDescription.text = ("\(detailHerb.pinyinName) is found in the major formula(s) \(detailHerb.majorFormulas).")
             
-            topRightLabel.text = detailHerb.pinyinName
-            location.text = detailHerb.botanicalName
-//            englishName.text = detailHerb.englishName
-//            category.text = detailHerb.category
-//            temp.text = detailHerb.temp
-//            meridians.text = detailHerb.meridians
-//            
+            topRightLabel.text = detailHerb.englishName
+            locationLabel.text = detailHerb.botanicalName
+            location.text = "This herb, named \(detailHerb.pinyinName), belongs to the category of \(detailHerb.category). Having a \(detailHerb.temp) temperature, it travels along the \(detailHerb.meridians) channels."
+            indicationsAndUses.text = detailHerb.uses
             
         } else {
         

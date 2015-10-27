@@ -13,18 +13,22 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
     //toggle this var if herbs list or points list
     var herbsList: Bool = false
     
+    @IBAction func BackToHomeTapped(sender: UIBarButtonItem) {
+        
+       // self.navigationController?.popToRootViewControllerAnimated(true)
+    }
+    
+    
     @IBAction func segmentedSwitched(sender: UISegmentedControl) {
       
         if(sender.selectedSegmentIndex == 0){
-          print("segment points hit")
+            print("segment points hit")
             herbsList = false
-            self.title = "Acupuncture"
             pointsTableViewOutlet.reloadData()
 
         } else {
             print("segment herbs hit")
             herbsList = true
-            self.title = "Herbs"
             pointsTableViewOutlet.reloadData()
         }
         
@@ -35,10 +39,9 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         if herbsList == true {
-            self.title = "Herbs"
-        } else
-        {
-            self.title = "Acupuncture"
+            print("displaying herb list")
+        } else {
+            print("displaying point list")
         }
         // Do any additional setup after loading the view.
     }

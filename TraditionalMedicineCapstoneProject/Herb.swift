@@ -20,8 +20,10 @@ class Herb: NSObject {
     let category: String
     let temp: String
     let meridians: String
+    let uses: String
+    let majorFormulas: String
     
-    init(pinyinName: String, botanicalName: String, englishName: String, category: String, temp: String, meridians: String){
+    init(pinyinName: String, botanicalName: String, englishName: String, category: String, temp: String, meridians: String, uses: String, majorFormulas: String){
         
         self.pinyinName = pinyinName
         self.botanicalName = botanicalName
@@ -30,6 +32,8 @@ class Herb: NSObject {
         self.category = category
         self.temp = temp
         self.meridians = meridians
+        self.uses = uses
+        self.majorFormulas = majorFormulas
         
     }
 

@@ -15,8 +15,6 @@
 		D7580B111BDD1EB70008789F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7580B0F1BDD1EB70008789F /* LaunchScreen.storyboard */; };
 		D7D9EBAF1BDD88E500C920AC /* Herb.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBAE1BDD88E500C920AC /* Herb.swift */; settings = {ASSET_TAGS = (); }; };
 		D7D9EBB11BDD8A6500C920AC /* HerbsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBB01BDD8A6500C920AC /* HerbsController.swift */; settings = {ASSET_TAGS = (); }; };
-		D7D9EBB31BDD900100C920AC /* HerbsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBB21BDD900100C920AC /* HerbsListViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		D7D9EBB51BDD96F900C920AC /* HerbsListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBB41BDD96F900C920AC /* HerbsListDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D7D9EBB81BDDABE100C920AC /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBB71BDDABE100C920AC /* Point.swift */; settings = {ASSET_TAGS = (); }; };
 		D7D9EBBA1BDDABF400C920AC /* PointController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBB91BDDABF400C920AC /* PointController.swift */; settings = {ASSET_TAGS = (); }; };
 		D7D9EBBC1BDDAC2300C920AC /* PointsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBBB1BDDAC2300C920AC /* PointsListViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -34,8 +32,6 @@
 		D7580B121BDD1EB70008789F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7D9EBAE1BDD88E500C920AC /* Herb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Herb.swift; sourceTree = "<group>"; };
 		D7D9EBB01BDD8A6500C920AC /* HerbsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HerbsController.swift; sourceTree = "<group>"; };
-		D7D9EBB21BDD900100C920AC /* HerbsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HerbsListViewController.swift; sourceTree = "<group>"; };
-		D7D9EBB41BDD96F900C920AC /* HerbsListDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HerbsListDetailViewController.swift; sourceTree = "<group>"; };
 		D7D9EBB71BDDABE100C920AC /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		D7D9EBB91BDDABF400C920AC /* PointController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointController.swift; sourceTree = "<group>"; };
 		D7D9EBBB1BDDAC2300C920AC /* PointsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PointsListViewController.swift; path = ../PointsListViewController.swift; sourceTree = "<group>"; };
@@ -88,8 +84,6 @@
 		D7D9EBB61BDDA4F800C920AC /* Herbs */ = {
 			isa = PBXGroup;
 			children = (
-				D7D9EBB21BDD900100C920AC /* HerbsListViewController.swift */,
-				D7D9EBB41BDD96F900C920AC /* HerbsListDetailViewController.swift */,
 				D7D9EBAE1BDD88E500C920AC /* Herb.swift */,
 				D7D9EBB01BDD8A6500C920AC /* HerbsController.swift */,
 			);
@@ -182,10 +176,8 @@
 				D7580B061BDD1EB70008789F /* ViewController.swift in Sources */,
 				D7580B0C1BDD1EB70008789F /* TraditionalMedicineCapstoneProject.xcdatamodeld in Sources */,
 				D7D9EBAF1BDD88E500C920AC /* Herb.swift in Sources */,
-				D7D9EBB31BDD900100C920AC /* HerbsListViewController.swift in Sources */,
 				D7580B041BDD1EB70008789F /* AppDelegate.swift in Sources */,
 				D7D9EBBE1BDDAC3600C920AC /* PointsDetailListViewController.swift in Sources */,
-				D7D9EBB51BDD96F900C920AC /* HerbsListDetailViewController.swift in Sources */,
 				D7D9EBB11BDD8A6500C920AC /* HerbsController.swift in Sources */,
 				D7D9EBBA1BDDABF400C920AC /* PointController.swift in Sources */,
 			);
