@@ -242,6 +242,9 @@
                                         <integer key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="topRightButton:" destination="9Zw-A7-Dch" eventType="touchUpInside" id="gqf-ZQ-OmX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54k-I5-WUb">
                                 <rect key="frame" x="480" y="435" width="100" height="100"/>
@@ -252,6 +255,9 @@
                                         <integer key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bottomRightButton:" destination="9Zw-A7-Dch" eventType="touchUpInside" id="nMc-Gc-OMu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Asf-pX-bWZ">
                                 <rect key="frame" x="20" y="119" width="100" height="100"/>
@@ -282,6 +288,9 @@
                                         <integer key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bottomLeftButton:" destination="9Zw-A7-Dch" eventType="touchUpInside" id="db2-Js-eNC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXo-Wu-BHj">
                                 <rect key="frame" x="250" y="443" width="100" height="100"/>
@@ -295,6 +304,9 @@
                                         <integer key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bottomCenterButton:" destination="9Zw-A7-Dch" eventType="touchUpInside" id="WG4-F4-BOe"/>
+                                </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZJY-or-nxv">
                                 <rect key="frame" x="121" y="223" width="358" height="212"/>
@@ -332,6 +344,9 @@
                                         <integer key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="topCenterButton:" destination="9Zw-A7-Dch" eventType="touchUpInside" id="DDd-2m-Xbo"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxm-gW-i9S">
                                 <rect key="frame" x="250" y="414" width="100" height="21"/>

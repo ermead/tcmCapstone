@@ -67,9 +67,29 @@ class DiagnosticToolViewController: UIViewController {
     }
     
     @IBAction func topLeftButton(sender: UIButton) {
-        
-        
+        print("topLeft button hit")
     }
+    
+    @IBAction func topCenterButton(sender: AnyObject) {
+        print("topCenter button hit")
+    }
+    
+    @IBAction func topRightButton(sender: UIButton) {
+        print("topRight button hit")
+    }
+    
+    @IBAction func bottomLeftButton(sender: UIButton) {
+        print("bottomLeft button hit")
+    }
+    
+    @IBAction func bottomCenterButton(sender: UIButton) {
+        print("bottomCenter button hit")
+    }
+    
+    @IBAction func bottomRightButton(sender: UIButton) {
+        print("bottomRight button hit")
+    }
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,14 +99,15 @@ class DiagnosticToolViewController: UIViewController {
         bottomLeftButton.setTitle("Digestive", forState: .Normal)
         bottomCenterButton.setTitle("Repro", forState: .Normal)
         bottomRightButton.setTitle("Deficiency", forState: .Normal)
+        upDateLabels()
 
     }
 
     func upDateLabels() {
         switch upDateLabelControl{
-        case 0 : labelTitle = "Acute"
-        case 1 : labelTitle = "Chronic"
-        case 2 : labelTitle = "Tonics"
+        case 0 : labelTitle = "Acute Disorders"
+        case 1 : labelTitle = "Chronic Disorders"
+        case 2 : labelTitle = "Longevity Tonics"
         default: labelTitle = ""
         }
         topLeftLabel.text = labelTitle
