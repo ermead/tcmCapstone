@@ -9,7 +9,7 @@
 import UIKit
 
 class PointsDetailListViewController: UIViewController {
-
+    var herbsList: Bool = true
     var index:Int?
     var firstPicVisible: Bool = true
     
@@ -55,6 +55,23 @@ class PointsDetailListViewController: UIViewController {
     
     
     func populatePointInfo() {
+        if herbsList{
+            
+            var detailHerb = HerbsController.herbs[index!]
+            
+            detailHerb = Herb(pinyinName: detailHerb.pinyinName, botanicalName: detailHerb.botanicalName, englishName: detailHerb.englishName, category: detailHerb.category, temp: detailHerb.temp, meridians: detailHerb.meridians)
+            
+            generalDescription.text = "This herb, named \(detailHerb.pinyinName), belongs to the category of \(detailHerb.category). Having a \(detailHerb.temp) temperature, it travels along the \(detailHerb.meridians) channels."
+            
+            topRightLabel.text = detailHerb.pinyinName
+            location.text = detailHerb.botanicalName
+//            englishName.text = detailHerb.englishName
+//            category.text = detailHerb.category
+//            temp.text = detailHerb.temp
+//            meridians.text = detailHerb.meridians
+//            
+            
+        } else {
         
         var point = PointController.points[index!]
         
@@ -64,7 +81,7 @@ class PointsDetailListViewController: UIViewController {
         generalDescription.text = ("The point \(point.pinyinName) is located on the \(point.channel) meridian.")
         location.text = point.locationDescription
         indicationsAndUses.text = point.uses
-        
+        }
         
     }
     

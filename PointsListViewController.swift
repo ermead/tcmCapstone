@@ -11,14 +11,34 @@ import UIKit
 class PointsListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     //toggle this var if herbs list or points list
-    var herbsList: Bool = true
+    var herbsList: Bool = false
     
     
+    @IBAction func switchOnTapped(sender: UISwitch) {
+        
+        if herbsList == true {
+            herbsList = false
+            self.title = "points"
+            pointsTableViewOutlet.reloadData()
+        } else {
+            herbsList = true
+            self.title = "herbs"
+            pointsTableViewOutlet.reloadData()
+        }
+    
+    }
+    
+   
     @IBOutlet weak var pointsTableViewOutlet: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if herbsList == true {
+            self.title = "herbs"
+        } else
+        {
+            self.title = "points"
+        }
         // Do any additional setup after loading the view.
     }
 
@@ -55,7 +75,7 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
                 
                 pdlc.title = HerbsController.herbs[index!].pinyinName
                 pdlc.index = index!
-                
+                pdlc.herbsList = true
             }
 
         
