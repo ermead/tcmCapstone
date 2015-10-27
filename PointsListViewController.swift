@@ -10,6 +10,10 @@ import UIKit
 
 class PointsListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    //toggle this var if herbs list or points list
+    var herbsList: Bool = true
+    
+    
     @IBOutlet weak var pointsTableViewOutlet: UITableView!
     
     override func viewDidLoad() {
@@ -20,22 +24,45 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return PointController.points.count
+        if herbsList{
+            return HerbsController.herbs.count
+        } else {
+            return PointController.points.count
+        }
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("pointsCell", forIndexPath: indexPath)
         
-        cell.textLabel?.text = PointController.points[indexPath.row].pointOnMeridian
+        if herbsList {
+            cell.textLabel?.text = HerbsController.herbs[indexPath.row].pinyinName
+        } else {
+            cell.textLabel?.text = PointController.points[indexPath.row].pointOnMeridian
+        }
         
         return cell
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        if segue.identifier == "showPointDetail" {
+        if segue.identifier == "showPointDetail" && herbsList == true {
+        
+            print("display herb detail")
+            let index = pointsTableViewOutlet.indexPathForSelectedRow?.row
+            if let pdlc : PointsDetailListViewController = segue.destinationViewController as? PointsDetailListViewController {
+                
+                print("the index touched was \(index) and the point selected was \(HerbsController.herbs[index!].pinyinName)")
+                
+                pdlc.title = HerbsController.herbs[index!].pinyinName
+                pdlc.index = index!
+                
+            }
+
+        
+        } else if segue.identifier == "showPointDetail" && herbsList == false {
+        
             
-        let index = pointsTableViewOutlet.indexPathForSelectedRow?.row
+            let index = pointsTableViewOutlet.indexPathForSelectedRow?.row
         
             if let pdlc : PointsDetailListViewController = segue.destinationViewController as? PointsDetailListViewController {
             
