@@ -36,11 +36,14 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
     
     var pickerViewDataSource: [String] {
         if upDateLabelControl == 0 {
-            return ["Insomnia", "Cold", "Flu", "Upset Stomach", "Traumatic Injury", "Headache", "Constipation", "Ear Ache"]
+            // 10 Acute disorders
+            return ["Insomnia", "Cold", "Flu", "Upset Stomach", "Traumatic Injury", "Headache", "Constipation", "Ear Ache", "", ""]
         } else if upDateLabelControl == 1 {
-            return ["YadaYada", "Cold", "Flu", "Upset Stomach", "Traumatic Injury", "Headache", "Constipation", "Ear Ache"]
+            //10 Chronic Disorders
+            return ["Fibromyalgia", "Low Back Pain", "Depression", "Insomnia", "Chronic Inflammation", "Migraines", "Irritable Bowel Syndrome ", "High Blood Pressure", "Cancer Support Therapy", ""]
         } else if upDateLabelControl == 2 {
-            return ["YadaYada", "Yada", "Flu", "Upset Stomach", "Traumatic Injury", "Headache", "Constipation", "Ear Ache"]}
+            //10 Longevity Tonics
+            return ["6 Flavor Rehmannia", "Golden Book", "Eight Immortals", "Mushroom", "Immune Boosters", "Hair Tonics", "", "", "", ""]}
         else { return []}
     }
     @IBAction func FindInfoButtonPressed(sender: UIButton) {
@@ -152,7 +155,8 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
     }
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return pickerViewDataSource.count
+        //return pickerViewDataSource.count
+        return 10
     }
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
