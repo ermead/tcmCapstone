@@ -364,6 +364,13 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tE6-ig-Srr">
+                                <rect key="frame" x="20" y="312" width="122" height="30"/>
+                                <state key="normal" title="Find Info On: "/>
+                                <connections>
+                                    <action selector="FindInfoButtonPressed:" destination="9Zw-A7-Dch" eventType="touchUpInside" id="SSw-LD-7GP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -373,7 +380,9 @@
                             <constraint firstItem="yDa-4a-TUl" firstAttribute="centerX" secondItem="5xS-Q5-pjE" secondAttribute="centerX" id="HEU-3K-r5c"/>
                             <constraint firstItem="Asf-pX-bWZ" firstAttribute="top" secondItem="jkX-Xr-Ga6" secondAttribute="bottom" constant="55" id="KGy-nV-Pu0"/>
                             <constraint firstItem="Asf-pX-bWZ" firstAttribute="trailing" secondItem="osO-KU-Cgp" secondAttribute="trailing" id="O3h-wP-SO5"/>
+                            <constraint firstItem="tE6-ig-Srr" firstAttribute="leading" secondItem="5xS-Q5-pjE" secondAttribute="leadingMargin" constant="40" id="Og7-CQ-pJF"/>
                             <constraint firstItem="Asf-pX-bWZ" firstAttribute="leading" secondItem="osO-KU-Cgp" secondAttribute="leading" id="Oqf-Ik-OxD"/>
+                            <constraint firstItem="tE6-ig-Srr" firstAttribute="centerY" secondItem="ZJY-or-nxv" secondAttribute="centerY" id="PfN-SM-L7R"/>
                             <constraint firstItem="bXo-Wu-BHj" firstAttribute="top" secondItem="Gxm-gW-i9S" secondAttribute="bottom" constant="8" id="QJO-UK-pM9"/>
                             <constraint firstItem="bXo-Wu-BHj" firstAttribute="top" secondItem="ZJY-or-nxv" secondAttribute="bottom" constant="41" id="S53-Ed-AQB"/>
                             <constraint firstItem="dyK-GU-z6b" firstAttribute="trailing" secondItem="bXo-Wu-BHj" secondAttribute="trailing" id="Sif-OB-Ehv"/>
@@ -386,6 +395,7 @@
                             <constraint firstItem="ZJY-or-nxv" firstAttribute="centerX" secondItem="5xS-Q5-pjE" secondAttribute="centerX" id="alY-bv-WNt"/>
                             <constraint firstItem="M6F-p8-03T" firstAttribute="top" secondItem="bXo-Wu-BHj" secondAttribute="bottom" constant="8" symbolic="YES" id="bTi-DD-XUK"/>
                             <constraint firstItem="Asf-pX-bWZ" firstAttribute="baseline" secondItem="g52-8M-Z2L" secondAttribute="firstBaseline" id="bYU-VU-twG"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="tE6-ig-Srr" secondAttribute="leading" id="bhB-7a-em9"/>
                             <constraint firstItem="54k-I5-WUb" firstAttribute="top" secondItem="osO-KU-Cgp" secondAttribute="top" id="cPk-QT-UDd"/>
                             <constraint firstItem="osO-KU-Cgp" firstAttribute="baseline" secondItem="54k-I5-WUb" secondAttribute="firstBaseline" id="cWs-4T-zKF"/>
                             <constraint firstItem="54k-I5-WUb" firstAttribute="trailing" secondItem="5xS-Q5-pjE" secondAttribute="trailingMargin" id="hQB-Ex-o7O"/>
@@ -398,6 +408,11 @@
                             <constraint firstItem="bXo-Wu-BHj" firstAttribute="centerX" secondItem="ZJY-or-nxv" secondAttribute="centerX" id="xLl-nd-EnE"/>
                             <constraint firstItem="54k-I5-WUb" firstAttribute="baseline" secondItem="osO-KU-Cgp" secondAttribute="firstBaseline" id="xZ3-Db-05Z"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Og7-CQ-pJF"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Diagnostic Tool" id="zgq-6P-9DB">
                         <barButtonItem key="leftBarButtonItem" title="Item" id="WJR-or-8Bm"/>
@@ -413,6 +428,7 @@
                         <outlet property="bottomLeftLabel" destination="Gxm-gW-i9S" id="q0R-1d-CVr"/>
                         <outlet property="bottomRightButton" destination="54k-I5-WUb" id="SAd-rX-XYQ"/>
                         <outlet property="chooseACommonLabel" destination="yDa-4a-TUl" id="iFf-A0-8NB"/>
+                        <outlet property="findInfoOnOutlet" destination="tE6-ig-Srr" id="4mS-nP-ZE1"/>
                         <outlet property="pickerView" destination="ZJY-or-nxv" id="FyW-iy-IvD"/>
                         <outlet property="topCenterButton" destination="dyK-GU-z6b" id="nlm-49-9N7"/>
                         <outlet property="topLeftButton" destination="Asf-pX-bWZ" id="hH9-Df-gzp"/>

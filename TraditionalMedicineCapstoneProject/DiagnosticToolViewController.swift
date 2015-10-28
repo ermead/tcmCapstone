@@ -25,9 +25,12 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
     @IBOutlet weak var bottomCenterButton: UIButton!
     @IBOutlet weak var bottomRightButton: UIButton!
     
+    @IBOutlet weak var findInfoOnOutlet: UIButton!
+    
     var upDateLabelControl = 0
     var labelTitle = "Acute"
     var buttonTitle = ""
+    var rowOfpickerSelected: Int?
     
     @IBOutlet weak var chooseACommonLabel: UILabel!
     
@@ -39,6 +42,15 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
         } else if upDateLabelControl == 2 {
             return ["YadaYada", "Yada", "Flu", "Upset Stomach", "Traumatic Injury", "Headache", "Constipation", "Ear Ache"]}
         else { return []}
+    }
+    @IBAction func FindInfoButtonPressed(sender: UIButton) {
+        
+        let row = rowOfpickerSelected
+        
+        if let row = row {
+            print("Find info on: \(pickerViewDataSource[row])")
+        }
+ 
     }
     
     @IBAction func segmentedControlButton(sender: UISegmentedControl) {
@@ -129,7 +141,7 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
         bottomCenterButton.setTitle("Repro", forState: .Normal)
         bottomRightButton.setTitle("Deficiency", forState: .Normal)
         upDateLabels()
-        
+        findInfoOnOutlet.hidden = true
         self.pickerView.delegate = self
         self.pickerView.dataSource = self
 
@@ -149,6 +161,8 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         chooseACommonLabel.alpha = 0
+        findInfoOnOutlet.hidden = false
+        rowOfpickerSelected = row
         print(pickerViewDataSource[row])
     }
     
