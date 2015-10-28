@@ -405,6 +405,7 @@
                         <outlet property="topLeftButton" destination="Asf-pX-bWZ" id="hH9-Df-gzp"/>
                         <outlet property="topLeftLabel" destination="QJc-6r-1j8" id="WQ3-X7-Nrv"/>
                         <outlet property="topRightButton" destination="g52-8M-Z2L" id="oJ8-X0-hp4"/>
+                        <segue destination="OIQ-0G-fvf" kind="show" identifier="diagnosticSegue" id="fF0-C2-OS7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QiN-fF-CLq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -414,7 +415,7 @@
         <!--Screen C-1-->
         <scene sceneID="MbZ-nG-kBv">
             <objects>
-                <viewController title="Screen C-1" id="OIQ-0G-fvf" sceneMemberID="viewController">
+                <viewController title="Screen C-1" id="OIQ-0G-fvf" customClass="DiagnosisDetailViewController" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hc2-HF-DgP"/>
                         <viewControllerLayoutGuide type="bottom" id="zUu-te-q24"/>
@@ -426,13 +427,26 @@
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UFx-QM-5EN">
                                 <rect key="frame" x="0.0" y="8" width="600" height="44"/>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jq0-8D-sWX">
+                                <rect key="frame" x="180" y="64" width="240" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jq0-8D-sWX" firstAttribute="top" secondItem="hc2-HF-DgP" secondAttribute="bottom" id="02f-HN-M08"/>
+                            <constraint firstItem="Jq0-8D-sWX" firstAttribute="centerX" secondItem="JGW-Hl-dFn" secondAttribute="centerX" id="o0M-Qm-Yau"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mainTitleOutlet" destination="Jq0-8D-sWX" id="Uay-sk-cvm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I60-jG-cm9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3592" y="995"/>
+            <point key="canvasLocation" x="3596" y="1011"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="YF2-TV-5aY">
@@ -587,5 +601,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="BTE-YL-rNC"/>
+        <segue reference="fF0-C2-OS7"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -27,6 +27,7 @@ class DiagnosticToolViewController: UIViewController {
     
     var upDateLabelControl = 0
     var labelTitle = "Acute"
+    var buttonTitle = ""
     
     @IBAction func segmentedControlButton(sender: UISegmentedControl) {
         if(sender.selectedSegmentIndex == 0){
@@ -68,26 +69,39 @@ class DiagnosticToolViewController: UIViewController {
     
     @IBAction func topLeftButton(sender: UIButton) {
         print("topLeft button hit")
+        buttonTitle = String(sender.titleLabel!.text!)
+        performSegueWithIdentifier("diagnosticSegue", sender: self)
+        
     }
     
     @IBAction func topCenterButton(sender: AnyObject) {
         print("topCenter button hit")
+        buttonTitle = String(sender.titleLabel!!.text!)
+        performSegueWithIdentifier("diagnosticSegue", sender: self)
     }
     
     @IBAction func topRightButton(sender: UIButton) {
         print("topRight button hit")
+        buttonTitle = String(sender.titleLabel!.text!)
+        performSegueWithIdentifier("diagnosticSegue", sender: self)
     }
     
     @IBAction func bottomLeftButton(sender: UIButton) {
         print("bottomLeft button hit")
+        buttonTitle = String(sender.titleLabel!.text!)
+        performSegueWithIdentifier("diagnosticSegue", sender: self)
     }
     
     @IBAction func bottomCenterButton(sender: UIButton) {
         print("bottomCenter button hit")
+        buttonTitle = String(sender.titleLabel!.text!)
+        performSegueWithIdentifier("diagnosticSegue", sender: self)
     }
     
     @IBAction func bottomRightButton(sender: UIButton) {
         print("bottomRight button hit")
+        buttonTitle = String(sender.titleLabel!.text!)
+        performSegueWithIdentifier("diagnosticSegue", sender: self)
     }
    
     
@@ -113,6 +127,18 @@ class DiagnosticToolViewController: UIViewController {
         topLeftLabel.text = labelTitle
         bottomLeftLabel.text = labelTitle
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "diagnosticSegue" {
+            print("the segue hit was the diagnosticSegue")
+            if let ddlc : DiagnosisDetailViewController = segue.destinationViewController as? DiagnosisDetailViewController {
+                    ddlc.title = buttonTitle
+                    ddlc.mainTitle = labelTitle
+        }
+    }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
