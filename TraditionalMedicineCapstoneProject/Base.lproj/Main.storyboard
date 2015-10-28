@@ -309,10 +309,14 @@
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZJY-or-nxv">
-                                <rect key="frame" x="121" y="223" width="358" height="212"/>
+                                <rect key="frame" x="121" y="252" width="358" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="358" id="xXt-Ka-rxN"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="9Zw-A7-Dch" id="zj6-0M-2bl"/>
+                                    <outlet property="delegate" destination="9Zw-A7-Dch" id="nGk-YS-TGW"/>
+                                </connections>
                             </pickerView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="QLS-E0-kBe">
                                 <rect key="frame" x="181" y="64" width="239" height="29"/>
@@ -354,23 +358,31 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Choose a Common Ailment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDa-4a-TUl">
+                                <rect key="frame" x="121" y="273" width="358" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="QLS-E0-kBe" firstAttribute="top" secondItem="jkX-Xr-Ga6" secondAttribute="bottom" id="1NG-Ga-2on"/>
+                            <constraint firstItem="yDa-4a-TUl" firstAttribute="top" secondItem="QJc-6r-1j8" secondAttribute="bottom" constant="29" id="26f-Xk-gGH"/>
                             <constraint firstItem="dyK-GU-z6b" firstAttribute="top" secondItem="QLS-E0-kBe" secondAttribute="bottom" constant="7" id="Cu8-Jx-kG5"/>
+                            <constraint firstItem="yDa-4a-TUl" firstAttribute="centerX" secondItem="5xS-Q5-pjE" secondAttribute="centerX" id="HEU-3K-r5c"/>
                             <constraint firstItem="Asf-pX-bWZ" firstAttribute="top" secondItem="jkX-Xr-Ga6" secondAttribute="bottom" constant="55" id="KGy-nV-Pu0"/>
-                            <constraint firstItem="ZJY-or-nxv" firstAttribute="top" secondItem="dyK-GU-z6b" secondAttribute="bottom" constant="24" id="N0I-GR-0Og"/>
                             <constraint firstItem="Asf-pX-bWZ" firstAttribute="trailing" secondItem="osO-KU-Cgp" secondAttribute="trailing" id="O3h-wP-SO5"/>
                             <constraint firstItem="Asf-pX-bWZ" firstAttribute="leading" secondItem="osO-KU-Cgp" secondAttribute="leading" id="Oqf-Ik-OxD"/>
                             <constraint firstItem="bXo-Wu-BHj" firstAttribute="top" secondItem="Gxm-gW-i9S" secondAttribute="bottom" constant="8" id="QJO-UK-pM9"/>
-                            <constraint firstItem="bXo-Wu-BHj" firstAttribute="top" secondItem="ZJY-or-nxv" secondAttribute="bottom" constant="9" id="S53-Ed-AQB"/>
+                            <constraint firstItem="bXo-Wu-BHj" firstAttribute="top" secondItem="ZJY-or-nxv" secondAttribute="bottom" constant="41" id="S53-Ed-AQB"/>
                             <constraint firstItem="dyK-GU-z6b" firstAttribute="trailing" secondItem="bXo-Wu-BHj" secondAttribute="trailing" id="Sif-OB-Ehv"/>
                             <constraint firstItem="54k-I5-WUb" firstAttribute="trailing" secondItem="g52-8M-Z2L" secondAttribute="trailing" id="TDR-4U-9EV"/>
                             <constraint firstItem="bXo-Wu-BHj" firstAttribute="leading" secondItem="dyK-GU-z6b" secondAttribute="leading" id="TtX-EC-Dsc"/>
                             <constraint firstItem="osO-KU-Cgp" firstAttribute="leading" secondItem="5xS-Q5-pjE" secondAttribute="leadingMargin" id="UFd-I1-MfV"/>
                             <constraint firstItem="g52-8M-Z2L" firstAttribute="baseline" secondItem="Asf-pX-bWZ" secondAttribute="firstBaseline" id="WeV-7b-qnP"/>
                             <constraint firstItem="M6F-p8-03T" firstAttribute="top" secondItem="osO-KU-Cgp" secondAttribute="bottom" constant="16" id="YMi-Yv-Uyh"/>
+                            <constraint firstItem="ZJY-or-nxv" firstAttribute="top" secondItem="QJc-6r-1j8" secondAttribute="bottom" constant="8" id="Yd5-bv-Yy7"/>
                             <constraint firstItem="ZJY-or-nxv" firstAttribute="centerX" secondItem="5xS-Q5-pjE" secondAttribute="centerX" id="alY-bv-WNt"/>
                             <constraint firstItem="M6F-p8-03T" firstAttribute="top" secondItem="bXo-Wu-BHj" secondAttribute="bottom" constant="8" symbolic="YES" id="bTi-DD-XUK"/>
                             <constraint firstItem="Asf-pX-bWZ" firstAttribute="baseline" secondItem="g52-8M-Z2L" secondAttribute="firstBaseline" id="bYU-VU-twG"/>
@@ -400,6 +412,7 @@
                         <outlet property="bottomLeftButton" destination="osO-KU-Cgp" id="N9S-81-MjG"/>
                         <outlet property="bottomLeftLabel" destination="Gxm-gW-i9S" id="q0R-1d-CVr"/>
                         <outlet property="bottomRightButton" destination="54k-I5-WUb" id="SAd-rX-XYQ"/>
+                        <outlet property="chooseACommonLabel" destination="yDa-4a-TUl" id="iFf-A0-8NB"/>
                         <outlet property="pickerView" destination="ZJY-or-nxv" id="FyW-iy-IvD"/>
                         <outlet property="topCenterButton" destination="dyK-GU-z6b" id="nlm-49-9N7"/>
                         <outlet property="topLeftButton" destination="Asf-pX-bWZ" id="hH9-Df-gzp"/>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DiagnosticToolViewController: UIViewController {
+class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
     @IBOutlet weak var topLeftLabel: UILabel!
     @IBOutlet weak var topRightLabel: UILabel!
@@ -29,9 +29,22 @@ class DiagnosticToolViewController: UIViewController {
     var labelTitle = "Acute"
     var buttonTitle = ""
     
+    @IBOutlet weak var chooseACommonLabel: UILabel!
+    
+    var pickerViewDataSource: [String] {
+        if upDateLabelControl == 0 {
+            return ["Insomnia", "Cold", "Flu", "Upset Stomach", "Traumatic Injury", "Headache", "Constipation", "Ear Ache"]
+        } else if upDateLabelControl == 1 {
+            return ["YadaYada", "Cold", "Flu", "Upset Stomach", "Traumatic Injury", "Headache", "Constipation", "Ear Ache"]
+        } else if upDateLabelControl == 2 {
+            return ["YadaYada", "Yada", "Flu", "Upset Stomach", "Traumatic Injury", "Headache", "Constipation", "Ear Ache"]}
+        else { return []}
+    }
+    
     @IBAction func segmentedControlButton(sender: UISegmentedControl) {
         if(sender.selectedSegmentIndex == 0){
             print("segment acute hit")
+            pickerView.reloadAllComponents()
             upDateLabelControl = 0
             upDateLabels()
             topLeftButton.setTitle("Stress", forState: .Normal)
@@ -43,6 +56,7 @@ class DiagnosticToolViewController: UIViewController {
         }
         if(sender.selectedSegmentIndex == 1){
             print("segment chronic hit")
+            pickerView.reloadAllComponents()
             upDateLabelControl = 1
             upDateLabels()
             topLeftButton.setTitle("Stress", forState: .Normal)
@@ -54,6 +68,7 @@ class DiagnosticToolViewController: UIViewController {
         }
         if(sender.selectedSegmentIndex == 2){
             print("segment longevity hit")
+            pickerView.reloadAllComponents()
             upDateLabelControl = 2
             upDateLabels()
             topLeftButton.setTitle("Liver", forState: .Normal)
@@ -114,8 +129,30 @@ class DiagnosticToolViewController: UIViewController {
         bottomCenterButton.setTitle("Repro", forState: .Normal)
         bottomRightButton.setTitle("Deficiency", forState: .Normal)
         upDateLabels()
+        
+        self.pickerView.delegate = self
+        self.pickerView.dataSource = self
 
     }
+    
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerViewDataSource.count
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return String(pickerViewDataSource[row])
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        chooseACommonLabel.alpha = 0
+        print(pickerViewDataSource[row])
+    }
+    
+    
 
     func upDateLabels() {
         switch upDateLabelControl{
@@ -138,6 +175,7 @@ class DiagnosticToolViewController: UIViewController {
         }
     }
     }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
