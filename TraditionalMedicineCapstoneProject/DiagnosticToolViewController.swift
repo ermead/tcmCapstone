@@ -44,11 +44,11 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
         else { return []}
     }
     @IBAction func FindInfoButtonPressed(sender: UIButton) {
-        
         let row = rowOfpickerSelected
-        
         if let row = row {
             print("Find info on: \(pickerViewDataSource[row])")
+            buttonTitle = String(pickerViewDataSource[row])
+            performSegueWithIdentifier("diagnosticSegue", sender: self)
         }
  
     }
