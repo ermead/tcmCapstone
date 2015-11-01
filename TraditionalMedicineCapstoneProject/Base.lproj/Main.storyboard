@@ -301,7 +301,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g52-8M-Z2L">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g52-8M-Z2L" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
                                 <rect key="frame" x="505" y="119" width="75" height="75"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -317,7 +317,7 @@
                                     <action selector="topRightButton:" destination="9Zw-A7-Dch" eventType="touchUpInside" id="gqf-ZQ-OmX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54k-I5-WUb">
+                            <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54k-I5-WUb" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
                                 <rect key="frame" x="505" y="460" width="75" height="75"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Deficiencies"/>
@@ -330,7 +330,7 @@
                                     <action selector="bottomRightButton:" destination="9Zw-A7-Dch" eventType="touchUpInside" id="nMc-Gc-OMu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Asf-pX-bWZ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Asf-pX-bWZ" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
                                 <rect key="frame" x="20" y="119" width="75" height="75"/>
                                 <color key="backgroundColor" red="0.31140350877192979" green="1" blue="0.17982456140350875" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -347,7 +347,7 @@
                                     <action selector="topLeftButton:" destination="9Zw-A7-Dch" eventType="touchUpInside" id="3zh-8u-0Fi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osO-KU-Cgp">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osO-KU-Cgp" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
                                 <rect key="frame" x="20" y="460" width="75" height="75"/>
                                 <color key="backgroundColor" red="0.95294117649999999" green="0.93725490199999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -363,7 +363,7 @@
                                     <action selector="bottomLeftButton:" destination="9Zw-A7-Dch" eventType="touchUpInside" id="db2-Js-eNC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXo-Wu-BHj">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXo-Wu-BHj" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
                                 <rect key="frame" x="261" y="468" width="75" height="75"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -406,9 +406,10 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyK-GU-z6b">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyK-GU-z6b" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
                                 <rect key="frame" x="261" y="99" width="75" height="75"/>
                                 <color key="backgroundColor" red="0.97161698340000002" green="0.1127685745" blue="0.1397975216" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="button1"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="V6c-Cu-KKS"/>
                                     <constraint firstAttribute="height" constant="75" id="yEe-Sf-LAF"/>

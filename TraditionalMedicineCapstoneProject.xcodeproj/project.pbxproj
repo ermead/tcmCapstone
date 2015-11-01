@@ -16,6 +16,9 @@
 		D782A4A61BE02A1000E51BAC /* DiagnosticToolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A4A51BE02A1000E51BAC /* DiagnosticToolViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D782A4A81BE03B6A00E51BAC /* DiagnosisDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A4A71BE03B6900E51BAC /* DiagnosisDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D782A5701BE4479700E51BAC /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A56F1BE4479700E51BAC /* Stack.swift */; settings = {ASSET_TAGS = (); }; };
+		D782A5721BE664E600E51BAC /* AppearanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5711BE664E600E51BAC /* AppearanceController.swift */; settings = {ASSET_TAGS = (); }; };
+		D782A5741BE6667300E51BAC /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5731BE6667300E51BAC /* Colors.swift */; settings = {ASSET_TAGS = (); }; };
+		D782A57A1BE6827C00E51BAC /* MyCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5791BE6827C00E51BAC /* MyCustomButton.swift */; settings = {ASSET_TAGS = (); }; };
 		D7D9EBAF1BDD88E500C920AC /* Herb.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBAE1BDD88E500C920AC /* Herb.swift */; settings = {ASSET_TAGS = (); }; };
 		D7D9EBB11BDD8A6500C920AC /* HerbsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBB01BDD8A6500C920AC /* HerbsController.swift */; settings = {ASSET_TAGS = (); }; };
 		D7D9EBB81BDDABE100C920AC /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBB71BDDABE100C920AC /* Point.swift */; settings = {ASSET_TAGS = (); }; };
@@ -36,6 +39,9 @@
 		D782A4A51BE02A1000E51BAC /* DiagnosticToolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagnosticToolViewController.swift; sourceTree = "<group>"; };
 		D782A4A71BE03B6900E51BAC /* DiagnosisDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagnosisDetailViewController.swift; sourceTree = "<group>"; };
 		D782A56F1BE4479700E51BAC /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		D782A5711BE664E600E51BAC /* AppearanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceController.swift; sourceTree = "<group>"; };
+		D782A5731BE6667300E51BAC /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		D782A5791BE6827C00E51BAC /* MyCustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomButton.swift; sourceTree = "<group>"; };
 		D7D9EBAE1BDD88E500C920AC /* Herb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Herb.swift; sourceTree = "<group>"; };
 		D7D9EBB01BDD8A6500C920AC /* HerbsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HerbsController.swift; sourceTree = "<group>"; };
 		D7D9EBB71BDDABE100C920AC /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
@@ -79,6 +85,9 @@
 				D7D9EBB61BDDA4F800C920AC /* Herbs */,
 				D7D9EBBF1BDDAC4300C920AC /* Points */,
 				D7580B071BDD1EB70008789F /* Main.storyboard */,
+				D782A5711BE664E600E51BAC /* AppearanceController.swift */,
+				D782A5791BE6827C00E51BAC /* MyCustomButton.swift */,
+				D782A5731BE6667300E51BAC /* Colors.swift */,
 				D782A56F1BE4479700E51BAC /* Stack.swift */,
 				D782A4A51BE02A1000E51BAC /* DiagnosticToolViewController.swift */,
 				D782A4A71BE03B6900E51BAC /* DiagnosisDetailViewController.swift */,
@@ -183,12 +192,15 @@
 				D7D9EBB81BDDABE100C920AC /* Point.swift in Sources */,
 				D7D9EBBC1BDDAC2300C920AC /* PointsListViewController.swift in Sources */,
 				D7580B061BDD1EB70008789F /* ViewController.swift in Sources */,
+				D782A57A1BE6827C00E51BAC /* MyCustomButton.swift in Sources */,
+				D782A5741BE6667300E51BAC /* Colors.swift in Sources */,
 				D7580B0C1BDD1EB70008789F /* TraditionalMedicineCapstoneProject.xcdatamodeld in Sources */,
 				D782A5701BE4479700E51BAC /* Stack.swift in Sources */,
 				D7D9EBAF1BDD88E500C920AC /* Herb.swift in Sources */,
 				D782A4A61BE02A1000E51BAC /* DiagnosticToolViewController.swift in Sources */,
 				D7580B041BDD1EB70008789F /* AppDelegate.swift in Sources */,
 				D782A4A81BE03B6A00E51BAC /* DiagnosisDetailViewController.swift in Sources */,
+				D782A5721BE664E600E51BAC /* AppearanceController.swift in Sources */,
 				D7D9EBBE1BDDAC3600C920AC /* PointsDetailListViewController.swift in Sources */,
 				D7D9EBB11BDD8A6500C920AC /* HerbsController.swift in Sources */,
 				D7D9EBBA1BDDABF400C920AC /* PointController.swift in Sources */,
