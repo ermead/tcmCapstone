@@ -304,6 +304,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g52-8M-Z2L" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
                                 <rect key="frame" x="505" y="119" width="75" height="75"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" identifier="TopRightButton"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="Qwf-I9-Nzd"/>
                                 </constraints>
@@ -320,6 +321,7 @@
                             <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54k-I5-WUb" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
                                 <rect key="frame" x="505" y="460" width="75" height="75"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" identifier="BottomRightButton"/>
                                 <state key="normal" title="Deficiencies"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -333,6 +335,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Asf-pX-bWZ" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
                                 <rect key="frame" x="20" y="119" width="75" height="75"/>
                                 <color key="backgroundColor" red="0.31140350877192979" green="1" blue="0.17982456140350875" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="TopLeftButton"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="K2V-4M-DkS"/>
                                     <constraint firstAttribute="width" constant="75" id="xus-2d-vLq"/>
@@ -347,25 +350,10 @@
                                     <action selector="topLeftButton:" destination="9Zw-A7-Dch" eventType="touchUpInside" id="3zh-8u-0Fi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osO-KU-Cgp" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
-                                <rect key="frame" x="20" y="460" width="75" height="75"/>
-                                <color key="backgroundColor" red="0.95294117649999999" green="0.93725490199999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="iVq-4e-bGr"/>
-                                </constraints>
-                                <state key="normal" title="Digestive"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <real key="value" value="37.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="bottomLeftButton:" destination="9Zw-A7-Dch" eventType="touchUpInside" id="db2-Js-eNC"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXo-Wu-BHj" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
                                 <rect key="frame" x="261" y="468" width="75" height="75"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="BottomCenterButton"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="9Bv-jA-28g"/>
                                 </constraints>
@@ -407,9 +395,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyK-GU-z6b" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
-                                <rect key="frame" x="261" y="99" width="75" height="75"/>
+                                <rect key="frame" x="261" y="97" width="75" height="75"/>
                                 <color key="backgroundColor" red="0.97161698340000002" green="0.1127685745" blue="0.1397975216" alpha="1" colorSpace="calibratedRGB"/>
-                                <accessibility key="accessibilityConfiguration" identifier="button1"/>
+                                <accessibility key="accessibilityConfiguration" identifier="TopCenterButton"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="V6c-Cu-KKS"/>
                                     <constraint firstAttribute="height" constant="75" id="yEe-Sf-LAF"/>
@@ -421,7 +409,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="topCenterButton:" destination="9Zw-A7-Dch" eventType="touchUpInside" id="DDd-2m-Xbo"/>
+                                    <action selector="topCenterButton:" destination="9Zw-A7-Dch" eventType="touchUpInside" id="5Vh-OW-qWY"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxm-gW-i9S">
@@ -441,6 +429,23 @@
                                 <state key="normal" title="Find Info On: "/>
                                 <connections>
                                     <action selector="FindInfoButtonPressed:" destination="9Zw-A7-Dch" eventType="touchUpInside" id="SSw-LD-7GP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osO-KU-Cgp" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
+                                <rect key="frame" x="20" y="460" width="75" height="75"/>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.93725490199999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="BottomLeftButton"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="iVq-4e-bGr"/>
+                                </constraints>
+                                <state key="normal" title="Digestive"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="37.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bottomLeftButton:" destination="9Zw-A7-Dch" eventType="touchUpInside" id="db2-Js-eNC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -495,17 +500,17 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="bottomCenterButton" destination="bXo-Wu-BHj" id="fK6-nF-rKJ"/>
-                        <outlet property="bottomLeftButton" destination="osO-KU-Cgp" id="N9S-81-MjG"/>
+                        <outlet property="bottomCenterButton" destination="bXo-Wu-BHj" id="4kG-NU-2QM"/>
+                        <outlet property="bottomLeftButton" destination="osO-KU-Cgp" id="Ujt-WV-3HC"/>
                         <outlet property="bottomLeftLabel" destination="Gxm-gW-i9S" id="q0R-1d-CVr"/>
-                        <outlet property="bottomRightButton" destination="54k-I5-WUb" id="SAd-rX-XYQ"/>
+                        <outlet property="bottomRightButton" destination="54k-I5-WUb" id="a7E-1y-qdz"/>
                         <outlet property="chooseACommonLabel" destination="yDa-4a-TUl" id="iFf-A0-8NB"/>
                         <outlet property="findInfoOnOutlet" destination="tE6-ig-Srr" id="4mS-nP-ZE1"/>
                         <outlet property="pickerView" destination="ZJY-or-nxv" id="FyW-iy-IvD"/>
-                        <outlet property="topCenterButton" destination="dyK-GU-z6b" id="nlm-49-9N7"/>
-                        <outlet property="topLeftButton" destination="Asf-pX-bWZ" id="hH9-Df-gzp"/>
+                        <outlet property="topCenterButton" destination="dyK-GU-z6b" id="J5l-bR-cpL"/>
+                        <outlet property="topLeftButton" destination="Asf-pX-bWZ" id="CD5-cj-hMV"/>
                         <outlet property="topLeftLabel" destination="QJc-6r-1j8" id="WQ3-X7-Nrv"/>
-                        <outlet property="topRightButton" destination="g52-8M-Z2L" id="oJ8-X0-hp4"/>
+                        <outlet property="topRightButton" destination="g52-8M-Z2L" id="g9z-Ny-KIh"/>
                         <segue destination="OIQ-0G-fvf" kind="show" identifier="diagnosticSegue" id="fF0-C2-OS7"/>
                     </connections>
                 </viewController>
@@ -699,6 +704,10 @@
         <scene sceneID="PDv-Uc-oJW">
             <objects>
                 <viewController id="Ead-sl-NrX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6AL-aU-e6b"/>
+                        <viewControllerLayoutGuide type="bottom" id="pZp-Rr-zNQ"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LY7-A9-BDX">
                         <rect key="frame" x="0.0" y="0.0" width="1400" height="128"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

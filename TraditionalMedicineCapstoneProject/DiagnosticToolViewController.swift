@@ -18,12 +18,12 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
     
     @IBOutlet weak var pickerView: UIPickerView!
     
-    @IBOutlet weak var topLeftButton: UIButton!
-    @IBOutlet weak var topCenterButton: UIButton!
-    @IBOutlet weak var topRightButton: UIButton!
-    @IBOutlet weak var bottomLeftButton: UIButton!
-    @IBOutlet weak var bottomCenterButton: UIButton!
-    @IBOutlet weak var bottomRightButton: UIButton!
+    @IBOutlet weak var topLeftButton: MyCustomButton!
+    @IBOutlet weak var topCenterButton: MyCustomButton!
+    @IBOutlet weak var topRightButton: MyCustomButton!
+    @IBOutlet weak var bottomLeftButton: MyCustomButton!
+    @IBOutlet weak var bottomCenterButton: MyCustomButton!
+    @IBOutlet weak var bottomRightButton: MyCustomButton!
     
     @IBOutlet weak var findInfoOnOutlet: UIButton!
     
@@ -59,11 +59,17 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
     @IBAction func segmentedControlButton(sender: UISegmentedControl) {
         if(sender.selectedSegmentIndex == 0){
             print("segment acute hit")
+            topLeftButton.updateButtonProperties()
+            topCenterButton.updateButtonProperties()
+            topRightButton.updateButtonProperties()
+            bottomLeftButton.updateButtonProperties()
+            bottomCenterButton.updateButtonProperties()
+            bottomRightButton.updateButtonProperties()  
             pickerView.reloadAllComponents()
             upDateLabelControl = 0
             upDateLabels()
             topLeftButton.setTitle("Stress", forState: .Normal)
-            topCenterButton.setTitle("Acute Pain", forState: .Normal)
+            topCenterButton.setTitle("Pain", forState: .Normal)
             topRightButton.setTitle("Cold & Flu", forState: .Normal)
             bottomLeftButton.setTitle("Digestive", forState: .Normal)
             bottomCenterButton.setTitle("Repro", forState: .Normal)
@@ -71,6 +77,12 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
         }
         if(sender.selectedSegmentIndex == 1){
             print("segment chronic hit")
+            topLeftButton.updateButtonProperties()
+            topCenterButton.updateButtonProperties()
+            topRightButton.updateButtonProperties()
+            bottomLeftButton.updateButtonProperties()
+            bottomCenterButton.updateButtonProperties()
+            bottomRightButton.updateButtonProperties()
             pickerView.reloadAllComponents()
             upDateLabelControl = 1
             upDateLabels()
@@ -83,6 +95,12 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
         }
         if(sender.selectedSegmentIndex == 2){
             print("segment longevity hit")
+            topLeftButton.updateButtonProperties()
+            topCenterButton.updateButtonProperties()
+            topRightButton.updateButtonProperties()
+            bottomLeftButton.updateButtonProperties()
+            bottomCenterButton.updateButtonProperties()
+            bottomRightButton.updateButtonProperties()
             pickerView.reloadAllComponents()
             upDateLabelControl = 2
             upDateLabels()

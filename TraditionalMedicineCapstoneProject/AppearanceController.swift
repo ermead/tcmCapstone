@@ -12,17 +12,25 @@ import UIKit
 
 class AppearanceController {
     
+    
+    
+    
     class func setUpAppearance() {
         
+        let color1 = UIColor.blueColorLight()
+        let color2 = UIColor.blueColorMedium()
+        let color3 = UIColor.blueColorDark()
+        let color4 = UIColor.yellowColorA()
+        let color5 = UIColor.maroonColor1()
+        let white = UIColor.whiteColor()
         
         //Navigation Bar
-        UINavigationBar.appearance().barTintColor = UIColor.blueColorMedium()
+        UINavigationBar.appearance().barTintColor = color3
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : white]
         
-        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+        //UIButton.appearanceWhenContainedInInstancesOfClasses([UINavigationBar.self]).backgroundColor = UIColor.blueColorDark()
         
-        UIButton.appearanceWhenContainedInInstancesOfClasses([UINavigationBar.self]).backgroundColor = UIColor.blueColorDark()
-        
-        UIButton.appearanceWhenContainedInInstancesOfClasses([UINavigationBar.self]).setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        UIButton.appearanceWhenContainedInInstancesOfClasses([UINavigationBar.self]).setTitleColor(white, forState: .Normal)
         
 
         //UI VIew
@@ -31,16 +39,17 @@ class AppearanceController {
         
         //Buttons
         
-        UIButton.appearanceWhenContainedInInstancesOfClasses([MyCustomButton.self]).backgroundColor = UIColor.yellowColorA()
+        //UIButton.appearanceWhenContainedInInstancesOfClasses([MyCustomButton.self]).backgroundColor = UIColor.yellowColorA()
         //UIButton.appearance().backgroundColor = UIColor.greenColorA()
-        
-        UIButton.appearance().setTitleColor(UIColor.maroonColor1(), forState: .Normal)
+        //UIButton.appearance().setTitleColor(UIColor.maroonColor1(), forState: .Normal)
         
         //Segmented Controls
         
-        UISegmentedControl.appearance().backgroundColor = UIColor.blueColorDark()
-        UISegmentedControl.appearance().tintColor = UIColor.blueColorLight()
-        UISegmentedControl.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.whiteColor()], forState: .Normal)
+        UISegmentedControl.appearance().backgroundColor = color3
+        UISegmentedControl.appearance().tintColor = color1
+        UISegmentedControl.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: white], forState: .Normal)
+        UISegmentedControl.appearance().layer.borderColor = color3.CGColor
+        UISegmentedControl.appearance().layer.borderWidth = 5
         
         //Pickers
         
@@ -48,18 +57,12 @@ class AppearanceController {
         
         //Tab Bar & Bar Buttons
         
-        UITabBar.appearance().barTintColor = UIColor.blueColorLight()
-        
-        UITabBar.appearance().tintColor = UIColor.whiteColor()
-        
-        UIBarButtonItem.appearance().tintColor = UIColor.blueColorDark()
-        
-        UIBarButtonItem.appearanceWhenContainedInInstancesOfClasses([UIToolbar.self]).tintColor = UIColor.whiteColor()
-        
-        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.whiteColor() ], forState: .Selected)
-        
-        
-
+        UITabBar.appearance().barTintColor = color3
+        UITabBar.appearance().tintColor = white
+        UIBarButtonItem.appearance().tintColor = color3
+        UIBarButtonItem.appearanceWhenContainedInInstancesOfClasses([UIToolbar.self]).tintColor = white
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: white ], forState: .Selected)
+       
         
     }
 }
