@@ -26,7 +26,7 @@ class MyCustomButton: UIButton {
             self.tintColor = UIColor.whiteColor()
         }
         
-        if self.titleLabel?.text == "TopCenterButton" {
+        if self.accessibilityIdentifier == "TopCenterButton" {
             self.layer.cornerRadius = 10.0;
             self.layer.borderColor = UIColor.blueColorDark().CGColor
             self.layer.borderWidth = 1.5
@@ -34,7 +34,7 @@ class MyCustomButton: UIButton {
             self.tintColor = UIColor.whiteColor()
         }
         
-        if self.titleLabel?.text == "TopRightButton" {
+        if self.accessibilityIdentifier == "TopRightButton" {
             self.layer.cornerRadius = 10.0;
             self.layer.borderColor = UIColor.blueColorDark().CGColor
             self.layer.borderWidth = 1.5
@@ -42,14 +42,21 @@ class MyCustomButton: UIButton {
             self.tintColor = UIColor.whiteColor()
         }
     
-        if self.titleLabel?.text == "BottomLeftButton" {
+        if self.accessibilityIdentifier == "BottomLeftButton" {
             self.layer.cornerRadius = 10.0;
             self.layer.borderColor = UIColor.blueColorDark().CGColor
             self.layer.borderWidth = 1.5
             self.backgroundColor = UIColor.blueColorLight()
             self.tintColor = UIColor.whiteColor()
         }
-        if self.titleLabel?.text == "BottomLeftButton" {
+        if self.accessibilityIdentifier == "BottomCenterButton" {
+            self.layer.cornerRadius = 10.0;
+            self.layer.borderColor = UIColor.blueColorDark().CGColor
+            self.layer.borderWidth = 1.5
+            self.backgroundColor = UIColor.blueColorLight()
+            self.tintColor = UIColor.whiteColor()
+        }
+        if self.accessibilityIdentifier == "BottomRightButton" {
             self.layer.cornerRadius = 10.0;
             self.layer.borderColor = UIColor.blueColorDark().CGColor
             self.layer.borderWidth = 1.5

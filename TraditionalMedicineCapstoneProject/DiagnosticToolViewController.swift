@@ -165,6 +165,12 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
         findInfoOnOutlet.hidden = true
         self.pickerView.delegate = self
         self.pickerView.dataSource = self
+        topLeftButton.updateButtonProperties()
+        topCenterButton.updateButtonProperties()
+        topRightButton.updateButtonProperties()
+        bottomLeftButton.updateButtonProperties()
+        bottomCenterButton.updateButtonProperties()
+        bottomRightButton.updateButtonProperties()
 
     }
     
