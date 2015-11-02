@@ -13,22 +13,45 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
     //toggle this var if herbs list or points list
     var herbsList: Bool = false
     
+    @IBOutlet weak var singleOrComboHerbsOutlet: UISegmentedControl!
+    @IBOutlet weak var singleOrComboPointsOutlet: UISegmentedControl!
+    
     @IBAction func BackToHomeTapped(sender: UIBarButtonItem) {
         
        // self.navigationController?.popToRootViewControllerAnimated(true)
     }
     
+    @IBAction func SingleOrComboPoints(sender: UISegmentedControl) {
+        if(sender.selectedSegmentIndex == 0){
+            print("segment single points hit")
+        } else {
+            print("segment combo points hit")
+        }
+        
+    }
+    @IBAction func SingleOrComboHerbs(sender: UISegmentedControl) {
+        if(sender.selectedSegmentIndex == 0){
+            print("segment single herbs hit")
+        } else {
+            print("segment formulas hit")
+        }
+        
+    }
     
     @IBAction func segmentedSwitched(sender: UISegmentedControl) {
       
         if(sender.selectedSegmentIndex == 0){
             print("segment points hit")
             herbsList = false
+            singleOrComboHerbsOutlet.hidden = true
+            singleOrComboPointsOutlet.hidden = false
             pointsTableViewOutlet.reloadData()
 
         } else {
             print("segment herbs hit")
             herbsList = true
+            singleOrComboHerbsOutlet.hidden = false
+            singleOrComboPointsOutlet.hidden = true
             pointsTableViewOutlet.reloadData()
         }
         
@@ -38,8 +61,11 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        singleOrComboHerbsOutlet.hidden = true
+        
         if herbsList == true {
             print("displaying herb list")
+            singleOrComboHerbsOutlet.hidden = false
         } else {
             print("displaying point list")
         }

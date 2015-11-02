@@ -41,7 +41,8 @@ class AppearanceController {
         
         //UIButton.appearanceWhenContainedInInstancesOfClasses([MyCustomButton.self]).backgroundColor = UIColor.yellowColorA()
         //UIButton.appearance().backgroundColor = UIColor.greenColorA()
-        //UIButton.appearance().setTitleColor(UIColor.maroonColor1(), forState: .Normal)
+        
+        UIButton.appearance().setTitleColor(UIColor.blueColorDark(), forState: .Normal)
         
         //Segmented Controls
         

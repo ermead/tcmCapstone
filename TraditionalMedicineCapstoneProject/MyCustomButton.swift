@@ -24,6 +24,7 @@ class MyCustomButton: UIButton {
             self.layer.borderWidth = 1.5
             self.backgroundColor = UIColor.blueColorLight()
             self.tintColor = UIColor.whiteColor()
+            //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         }
         
         if self.accessibilityIdentifier == "TopCenterButton" {
@@ -32,6 +33,7 @@ class MyCustomButton: UIButton {
             self.layer.borderWidth = 1.5
             self.backgroundColor = UIColor.blueColorLight()
             self.tintColor = UIColor.whiteColor()
+            //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         }
         
         if self.accessibilityIdentifier == "TopRightButton" {
@@ -40,6 +42,7 @@ class MyCustomButton: UIButton {
             self.layer.borderWidth = 1.5
             self.backgroundColor = UIColor.blueColorLight()
             self.tintColor = UIColor.whiteColor()
+            //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         }
     
         if self.accessibilityIdentifier == "BottomLeftButton" {
@@ -48,6 +51,7 @@ class MyCustomButton: UIButton {
             self.layer.borderWidth = 1.5
             self.backgroundColor = UIColor.blueColorLight()
             self.tintColor = UIColor.whiteColor()
+            //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         }
         if self.accessibilityIdentifier == "BottomCenterButton" {
             self.layer.cornerRadius = 10.0;
@@ -55,6 +59,7 @@ class MyCustomButton: UIButton {
             self.layer.borderWidth = 1.5
             self.backgroundColor = UIColor.blueColorLight()
             self.tintColor = UIColor.whiteColor()
+            //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         }
         if self.accessibilityIdentifier == "BottomRightButton" {
             self.layer.cornerRadius = 10.0;
@@ -62,6 +67,7 @@ class MyCustomButton: UIButton {
             self.layer.borderWidth = 1.5
             self.backgroundColor = UIColor.blueColorLight()
             self.tintColor = UIColor.whiteColor()
+            //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         }
 
     }

@@ -84,19 +84,27 @@
 				D7580B051BDD1EB70008789F /* ViewController.swift */,
 				D7D9EBB61BDDA4F800C920AC /* Herbs */,
 				D7D9EBBF1BDDAC4300C920AC /* Points */,
+				D782A59D1BE822D200E51BAC /* Diagnostics */,
 				D7580B071BDD1EB70008789F /* Main.storyboard */,
 				D782A5711BE664E600E51BAC /* AppearanceController.swift */,
 				D782A5791BE6827C00E51BAC /* MyCustomButton.swift */,
 				D782A5731BE6667300E51BAC /* Colors.swift */,
 				D782A56F1BE4479700E51BAC /* Stack.swift */,
-				D782A4A51BE02A1000E51BAC /* DiagnosticToolViewController.swift */,
-				D782A4A71BE03B6900E51BAC /* DiagnosisDetailViewController.swift */,
 				D7580B0D1BDD1EB70008789F /* Assets.xcassets */,
 				D7580B0F1BDD1EB70008789F /* LaunchScreen.storyboard */,
 				D7580B121BDD1EB70008789F /* Info.plist */,
 				D7580B0A1BDD1EB70008789F /* TraditionalMedicineCapstoneProject.xcdatamodeld */,
 			);
 			path = TraditionalMedicineCapstoneProject;
+			sourceTree = "<group>";
+		};
+		D782A59D1BE822D200E51BAC /* Diagnostics */ = {
+			isa = PBXGroup;
+			children = (
+				D782A4A51BE02A1000E51BAC /* DiagnosticToolViewController.swift */,
+				D782A4A71BE03B6900E51BAC /* DiagnosisDetailViewController.swift */,
+			);
+			name = Diagnostics;
 			sourceTree = "<group>";
 		};
 		D7D9EBB61BDDA4F800C920AC /* Herbs */ = {

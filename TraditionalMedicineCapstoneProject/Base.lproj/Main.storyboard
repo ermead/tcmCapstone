@@ -20,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iCn-X0-nUq">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iCn-X0-nUq">
                                 <rect key="frame" x="0.0" y="110" width="600" height="441"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -28,7 +28,7 @@
                                         <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zis-SX-SJ5" id="SFc-iC-VyI">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
@@ -41,12 +41,35 @@
                                     <outlet property="delegate" destination="Y54-Jl-QS1" id="Y2T-GX-U02"/>
                                 </connections>
                             </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="f5b-yj-VHN">
+                                <rect key="frame" x="105" y="64" width="197" height="29"/>
+                                <segments>
+                                    <segment title="Single Point"/>
+                                    <segment title="Combinations"/>
+                                </segments>
+                                <connections>
+                                    <action selector="SingleOrComboPoints:" destination="Y54-Jl-QS1" eventType="valueChanged" id="nz5-c6-CP1"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="K9L-gn-WV8">
+                                <rect key="frame" x="302" y="64" width="185" height="29"/>
+                                <segments>
+                                    <segment title="Single Herbs"/>
+                                    <segment title="Formulas"/>
+                                </segments>
+                                <connections>
+                                    <action selector="SingleOrComboHerbs:" destination="Y54-Jl-QS1" eventType="valueChanged" id="yjI-fZ-EB7"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="f5b-yj-VHN" firstAttribute="centerX" secondItem="7WJ-X1-b3I" secondAttribute="centerX" id="88w-uO-fqx"/>
                             <constraint firstItem="F9l-PF-cgA" firstAttribute="top" secondItem="iCn-X0-nUq" secondAttribute="bottom" id="Ic9-db-qqv"/>
+                            <constraint firstItem="f5b-yj-VHN" firstAttribute="baseline" secondItem="K9L-gn-WV8" secondAttribute="baseline" id="UjV-qK-mln"/>
                             <constraint firstAttribute="trailingMargin" secondItem="iCn-X0-nUq" secondAttribute="trailing" constant="-20" id="ZHP-KQ-pj9"/>
-                            <constraint firstItem="iCn-X0-nUq" firstAttribute="leading" secondItem="7WJ-X1-b3I" secondAttribute="leadingMargin" constant="-20" id="cl1-UB-5NE"/>
+                            <constraint firstItem="K9L-gn-WV8" firstAttribute="centerX" secondItem="7WJ-X1-b3I" secondAttribute="centerX" id="ZY2-dW-rGE"/>
+                            <constraint firstItem="f5b-yj-VHN" firstAttribute="top" secondItem="6Po-3q-dwo" secondAttribute="bottom" id="eSv-oh-5jT"/>
                             <constraint firstItem="iCn-X0-nUq" firstAttribute="top" secondItem="6Po-3q-dwo" secondAttribute="bottom" id="sRO-Lc-dLe"/>
                         </constraints>
                     </view>
@@ -76,6 +99,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="pointsTableViewOutlet" destination="iCn-X0-nUq" id="fOd-qj-XB2"/>
+                        <outlet property="singleOrComboHerbsOutlet" destination="K9L-gn-WV8" id="8Vt-XH-tzo"/>
+                        <outlet property="singleOrComboPointsOutlet" destination="f5b-yj-VHN" id="uuA-yr-i9V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Drn-bV-y2W" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -350,6 +375,23 @@
                                     <action selector="topLeftButton:" destination="9Zw-A7-Dch" eventType="touchUpInside" id="3zh-8u-0Fi"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osO-KU-Cgp" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
+                                <rect key="frame" x="20" y="460" width="75" height="75"/>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.93725490199999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="BottomLeftButton"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="iVq-4e-bGr"/>
+                                </constraints>
+                                <state key="normal" title="Digestive"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="37.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bottomLeftButton:" destination="9Zw-A7-Dch" eventType="touchUpInside" id="db2-Js-eNC"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXo-Wu-BHj" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
                                 <rect key="frame" x="261" y="468" width="75" height="75"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -425,27 +467,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tE6-ig-Srr">
-                                <rect key="frame" x="20" y="304" width="92" height="30"/>
+                                <rect key="frame" x="20" y="272" width="92" height="30"/>
                                 <state key="normal" title="Find Info On: "/>
                                 <connections>
                                     <action selector="FindInfoButtonPressed:" destination="9Zw-A7-Dch" eventType="touchUpInside" id="SSw-LD-7GP"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osO-KU-Cgp" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
-                                <rect key="frame" x="20" y="460" width="75" height="75"/>
-                                <color key="backgroundColor" red="0.95294117649999999" green="0.93725490199999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <accessibility key="accessibilityConfiguration" identifier="BottomLeftButton"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="iVq-4e-bGr"/>
-                                </constraints>
-                                <state key="normal" title="Digestive"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <real key="value" value="37.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="bottomLeftButton:" destination="9Zw-A7-Dch" eventType="touchUpInside" id="db2-Js-eNC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -459,7 +484,7 @@
                             <constraint firstItem="Asf-pX-bWZ" firstAttribute="trailing" secondItem="osO-KU-Cgp" secondAttribute="trailing" id="O3h-wP-SO5"/>
                             <constraint firstItem="tE6-ig-Srr" firstAttribute="leading" secondItem="5xS-Q5-pjE" secondAttribute="leadingMargin" constant="40" id="Og7-CQ-pJF"/>
                             <constraint firstItem="Asf-pX-bWZ" firstAttribute="leading" secondItem="osO-KU-Cgp" secondAttribute="leading" id="Oqf-Ik-OxD"/>
-                            <constraint firstItem="tE6-ig-Srr" firstAttribute="centerY" secondItem="ZJY-or-nxv" secondAttribute="centerY" id="PfN-SM-L7R"/>
+                            <constraint firstItem="tE6-ig-Srr" firstAttribute="centerY" secondItem="ZJY-or-nxv" secondAttribute="centerY" constant="-32" id="PfN-SM-L7R"/>
                             <constraint firstItem="bXo-Wu-BHj" firstAttribute="top" secondItem="Gxm-gW-i9S" secondAttribute="bottom" constant="8" id="QJO-UK-pM9"/>
                             <constraint firstItem="bXo-Wu-BHj" firstAttribute="top" secondItem="ZJY-or-nxv" secondAttribute="bottom" constant="41" id="S53-Ed-AQB"/>
                             <constraint firstItem="dyK-GU-z6b" firstAttribute="trailing" secondItem="bXo-Wu-BHj" secondAttribute="trailing" id="Sif-OB-Ehv"/>
@@ -614,6 +639,14 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKk-JC-9EX">
                                 <rect key="frame" x="20" y="300" width="105" height="30"/>
                                 <state key="normal" title="Quiz"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixy-wO-Mcp">
+                                <rect key="frame" x="20" y="381" width="105" height="30"/>
+                                <state key="normal" title="Pulse"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNy-wG-woS">
+                                <rect key="frame" x="20" y="338" width="105" height="30"/>
+                                <state key="normal" title="Tongue"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
