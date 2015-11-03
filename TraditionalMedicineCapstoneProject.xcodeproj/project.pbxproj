@@ -76,14 +76,7 @@
 		D7580AF71BDD1EB70008789F = {
 			isa = PBXGroup;
 			children = (
-				D782A5A71BE9535C00E51BAC /* Point+CoreDataProperties.swift */,
-				D782A5A81BE9535C00E51BAC /* Point.swift */,
-				D782A5A91BE9535C00E51BAC /* Channel+CoreDataProperties.swift */,
-				D782A5AA1BE9535C00E51BAC /* Channel.swift */,
-				D782A5A41BE907F000E51BAC /* Formula.swift */,
-				D782A5A31BE907F000E51BAC /* Formula+CoreDataProperties.swift */,
-				D782A59F1BE849B600E51BAC /* Herb+CoreDataProperties.swift */,
-				D782A5A01BE849B600E51BAC /* Herb.swift */,
+				D782A5CD1BE95AC300E51BAC /* CoreData */,
 				D7580B021BDD1EB70008789F /* TraditionalMedicineCapstoneProject */,
 				D7580B011BDD1EB70008789F /* Products */,
 			);
@@ -133,6 +126,21 @@
 				D782A5731BE6667300E51BAC /* Colors.swift */,
 			);
 			name = Customization;
+			sourceTree = "<group>";
+		};
+		D782A5CD1BE95AC300E51BAC /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				D782A5A71BE9535C00E51BAC /* Point+CoreDataProperties.swift */,
+				D782A5A81BE9535C00E51BAC /* Point.swift */,
+				D782A5A91BE9535C00E51BAC /* Channel+CoreDataProperties.swift */,
+				D782A5AA1BE9535C00E51BAC /* Channel.swift */,
+				D782A5A41BE907F000E51BAC /* Formula.swift */,
+				D782A5A31BE907F000E51BAC /* Formula+CoreDataProperties.swift */,
+				D782A59F1BE849B600E51BAC /* Herb+CoreDataProperties.swift */,
+				D782A5A01BE849B600E51BAC /* Herb.swift */,
+			);
+			name = CoreData;
 			sourceTree = "<group>";
 		};
 		D7D9EBB61BDDA4F800C920AC /* Herbs */ = {

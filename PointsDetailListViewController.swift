@@ -87,7 +87,7 @@ class PointsDetailListViewController: UIViewController {
         
         var point = PointController.sharedController.points[index!]
         
-        point = Point(pinyinName: point.pinyinName, englishName: point.englishName, pointOnMeridian: point.pointOnMeridian, specialCategories: point.specialCategories!, channel: point.channel, locationDescription: point.locationDescription, uses: point.uses)
+        //point = Point(pinyinName: point.pinyinName, englishName: point.englishName, pointOnMeridian: point.pointOnMeridian, specialCategories: point.specialCategories!, channel: point.channel, locationDescription: point.locationDescription, uses: point.uses)
         
         topRightLabel.text = point.channel
         generalDescription.text = ("The point \(point.pinyinName) is located on the \(point.channel) meridian.")
@@ -99,7 +99,11 @@ class PointsDetailListViewController: UIViewController {
     
     @IBAction func saveButtonTapped(sender: UIBarButtonItem) {
         print("save attempted")
-        updateHerb()
+        if herbsList {
+            updateHerb()
+        } else {
+            updatePoint()
+        }
         self.navigationController?.popViewControllerAnimated(true)
         
         
@@ -128,6 +132,19 @@ class PointsDetailListViewController: UIViewController {
         
         HerbsController.sharedController.addHerb(newHerb)
        
+    }
+    
+    
+    func updatePoint() {
+        
+        let pinyinName = indicationsAndUses.text!
+        let englishName = indicationsAndUses.text
+        
+        let newPoint = Point(pinyinName: pinyinName, englishName: englishName, pointOnMeridian: englishName, specialCategories: "", locationDescription: "", channel: "", uses: "", imageName: "", context: Stack.sharedStack.managedObjectContext)
+        
+        PointController.sharedController.addPoint(newPoint)
+        print("well did I?")
+        
     }
     
     

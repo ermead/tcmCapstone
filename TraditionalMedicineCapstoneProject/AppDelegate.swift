@@ -20,12 +20,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         AppearanceController.setUpAppearance()
         
-        let fetchRequest = NSFetchRequest(entityName: "Herb")
+        let fetchRequestDefaultHerbs = NSFetchRequest(entityName: "Herb")
         do {
-            let results = try Stack.sharedStack.managedObjectContext.executeFetchRequest(fetchRequest)
+            let results = try Stack.sharedStack.managedObjectContext.executeFetchRequest(fetchRequestDefaultHerbs)
             if results.count == 0 {
                 
-                 loadTestData()
+                 loadHerbDefaultData()
+            }
+        } catch {
+            fatalError("Error fetching data")
+        }
+        
+        let fetchRequestDefaultPoints = NSFetchRequest(entityName: "Point")
+        do {
+            let results = try Stack.sharedStack.managedObjectContext.executeFetchRequest(fetchRequestDefaultPoints)
+            if results.count == 0 {
+                
+                loadPointsDefaultData()
             }
         } catch {
             fatalError("Error fetching data")
@@ -34,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-    func loadTestData() {
+    func loadHerbDefaultData() {
         
         guard let entity = NSEntityDescription.entityForName("Herb", inManagedObjectContext: Stack.sharedStack.managedObjectContext) else { fatalError("Could not find entity description!")}
         
@@ -52,6 +63,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            managedHerb.meridians = herb.meridians
 //            managedHerb.majorFormulas = herb.majorFormulas
 //        }
+    }
+    
+    func loadPointsDefaultData() {
+        
+        guard let entity = NSEntityDescription.entityForName("Point", inManagedObjectContext: Stack.sharedStack.managedObjectContext) else { fatalError("Could not find entity description!")}
+        
+        let defaultPointsArray = PointController.sharedController.defaultPoints
+        
     }
 
     func applicationWillResignActive(application: UIApplication) {

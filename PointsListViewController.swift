@@ -92,7 +92,8 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
     override func viewDidAppear(animated: Bool) {
         
         pointsTableViewOutlet.reloadData()
-        print(HerbsController.sharedController.herbs)
+        //print(HerbsController.sharedController.herbs)
+        print(PointController.sharedController.points)
     }
     
 //    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -101,9 +102,16 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
-            let herb = HerbsController.sharedController.herbs[indexPath.row]
-            HerbsController.sharedController.removeHerb(herb)
-            tableView.reloadData()
+            if herbsList {
+                let herb = HerbsController.sharedController.herbs[indexPath.row]
+                HerbsController.sharedController.removeHerb(herb)
+                tableView.reloadData()
+            } else {
+                let point = PointController.sharedController.points[indexPath.row]
+                PointController.sharedController.removePoint(point)
+                tableView.reloadData()
+    
+            }
         }
     }
     

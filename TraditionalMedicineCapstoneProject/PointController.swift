@@ -40,6 +40,7 @@ class PointController: NSObject {
     
     func addPoint(point: Point) {
         saveToPersistentStorage()
+        print("did I add it?")
     }
     
     func removePoint( point: Point) {
