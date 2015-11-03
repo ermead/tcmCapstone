@@ -20,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iCn-X0-nUq">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iCn-X0-nUq">
                                 <rect key="frame" x="0.0" y="110" width="600" height="441"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -70,6 +70,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="iCn-X0-nUq" secondAttribute="trailing" constant="-20" id="ZHP-KQ-pj9"/>
                             <constraint firstItem="K9L-gn-WV8" firstAttribute="centerX" secondItem="7WJ-X1-b3I" secondAttribute="centerX" id="ZY2-dW-rGE"/>
                             <constraint firstItem="f5b-yj-VHN" firstAttribute="top" secondItem="6Po-3q-dwo" secondAttribute="bottom" id="eSv-oh-5jT"/>
+                            <constraint firstItem="iCn-X0-nUq" firstAttribute="leading" secondItem="7WJ-X1-b3I" secondAttribute="leading" id="pba-yB-huU"/>
                             <constraint firstItem="iCn-X0-nUq" firstAttribute="top" secondItem="6Po-3q-dwo" secondAttribute="bottom" id="sRO-Lc-dLe"/>
                         </constraints>
                     </view>

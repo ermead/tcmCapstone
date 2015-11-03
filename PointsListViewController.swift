@@ -12,6 +12,7 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
 
     //toggle this var if herbs list or points list
     var herbsList: Bool = false
+    var singles: Bool = true
     
     @IBOutlet weak var singleOrComboHerbsOutlet: UISegmentedControl!
     @IBOutlet weak var singleOrComboPointsOutlet: UISegmentedControl!
@@ -24,16 +25,20 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
     @IBAction func SingleOrComboPoints(sender: UISegmentedControl) {
         if(sender.selectedSegmentIndex == 0){
             print("segment single points hit")
+            singles = true
         } else {
             print("segment combo points hit")
+            singles = false
         }
         
     }
     @IBAction func SingleOrComboHerbs(sender: UISegmentedControl) {
         if(sender.selectedSegmentIndex == 0){
             print("segment single herbs hit")
+            singles = true
         } else {
             print("segment formulas hit")
+            singles = false
         }
         
     }
@@ -107,11 +112,20 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
             let index = pointsTableViewOutlet.indexPathForSelectedRow?.row
             if let pdlc : PointsDetailListViewController = segue.destinationViewController as? PointsDetailListViewController {
                 
-                print("the index touched was \(index) and the point selected was \(HerbsController.herbs[index!].pinyinName)")
-                
-                pdlc.title = HerbsController.herbs[index!].pinyinName
-                pdlc.index = index!
-                pdlc.herbsList = true
+                if singleOrComboHerbsOutlet.selectedSegmentIndex == 0 {
+                    print("the index touched was \(index) and the point selected was \(HerbsController.herbs[index!].pinyinName)")
+                    pdlc.title = HerbsController.herbs[index!].pinyinName
+                    pdlc.index = index!
+                    pdlc.herbsList = true
+                    pdlc.singles = true
+                } else {
+                    print("the index touched was \(index) and the formula selected was UPDATE \(HerbsController.herbs[index!].pinyinName)")
+                    
+                    pdlc.title = HerbsController.herbs[index!].pinyinName
+                    pdlc.index = index!
+                    pdlc.herbsList = true
+                    pdlc.singles = false
+                }
             }
 
         
@@ -122,14 +136,21 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
         
             if let pdlc : PointsDetailListViewController = segue.destinationViewController as? PointsDetailListViewController {
             
-            print("the index touched was \(index) and the point selected was \(PointController.points[index!].pinyinName)")
-                
-            pdlc.title = PointController.points[index!].pointOnMeridian
-            pdlc.index = index!
-            pdlc.herbsList = false
-
+                if singleOrComboPointsOutlet.selectedSegmentIndex == 0 {
+                    print("the index touched was \(index) and the point selected was \(PointController.points[index!].pinyinName)")
+                    pdlc.title = PointController.points[index!].pointOnMeridian
+                    pdlc.index = index!
+                    pdlc.herbsList = false
+                    pdlc.singles = true
+                } else {
+                    print("the index touched was \(index) and the combination selected was UPDATE \(PointController.points[index!].pinyinName)")
+                    
+                    pdlc.title = PointController.points[index!].pointOnMeridian
+                    pdlc.index = index!
+                    pdlc.herbsList = false
+                    pdlc.singles = false
+                }
             }
-                
         } else {
             if let pdlc : PointsDetailListViewController = segue.destinationViewController as? PointsDetailListViewController {
                     print("preparing for a new point entry")

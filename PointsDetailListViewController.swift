@@ -10,6 +10,7 @@ import UIKit
 
 class PointsDetailListViewController: UIViewController {
     var herbsList: Bool = true
+    var singles: Bool = true
     var index:Int?
     var firstPicVisible: Bool = true
     
@@ -25,6 +26,11 @@ class PointsDetailListViewController: UIViewController {
         super.viewDidLoad()
         print(" I loaded the index \(index)")
         
+        if singles {
+            print("I am loading up a single detail")
+        } else {
+            print("I am loading up a combination detail")
+        }
         leftImage.alpha = 1
         rightImage.alpha = 0
         
