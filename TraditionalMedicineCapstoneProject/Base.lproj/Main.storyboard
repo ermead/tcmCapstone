@@ -207,6 +207,15 @@
                             <constraint firstItem="QfJ-JA-ioT" firstAttribute="top" secondItem="VQ8-DJ-IeL" secondAttribute="bottom" constant="20" id="teu-54-isO"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Title" id="buK-LZ-vIB">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="tPo-eU-ezY">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="ofP-5f-vj4" id="wCX-5R-g5l"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="generalDescription" destination="pmY-9h-7Ck" id="2Rk-rg-Tbe"/>
                         <outlet property="indicationsAndUses" destination="e0P-jb-eaw" id="t4o-Fp-DkS"/>
@@ -214,6 +223,7 @@
                         <outlet property="location" destination="gYe-00-Cfp" id="zHK-O0-1yW"/>
                         <outlet property="locationLabel" destination="QfJ-JA-ioT" id="Qgf-65-zma"/>
                         <outlet property="rightImage" destination="Ubm-mN-RWn" id="hn3-GG-GGT"/>
+                        <outlet property="togglePicOutlet" destination="VQ8-DJ-IeL" id="4Xr-2Q-3Ek"/>
                         <outlet property="topRightLabel" destination="WfW-ta-gzQ" id="f82-FA-a1O"/>
                     </connections>
                 </viewController>

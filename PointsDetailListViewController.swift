@@ -9,11 +9,17 @@
 import UIKit
 
 class PointsDetailListViewController: UIViewController {
+    
+    var herb: Herb?
+    var point: Point?
+    
     var herbsList: Bool = true
     var singles: Bool = true
     var index:Int?
     var firstPicVisible: Bool = true
+    var newFieldsColor = UIColor(red:0.012,  green:0.549,  blue:0.549, alpha: 0.2)
     
+    @IBOutlet weak var togglePicOutlet: UIButton!
     @IBOutlet weak var topRightLabel: UILabel!
     @IBOutlet weak var leftImage: UIImageView!
     @IBOutlet weak var generalDescription: UITextView!
@@ -31,8 +37,10 @@ class PointsDetailListViewController: UIViewController {
         } else {
             print("I am loading up a combination detail")
         }
+        
         leftImage.alpha = 1
         rightImage.alpha = 0
+        togglePicOutlet.setTitleColor(UIColor.blueColorDark(), forState: .Normal)
         
         if let index = index {
             
@@ -89,14 +97,25 @@ class PointsDetailListViewController: UIViewController {
         
     }
     
+    @IBAction func saveButtonTapped(sender: UIBarButtonItem) {
+        print("save attempted")
+        
+        self.navigationController?.popViewControllerAnimated(true)
+        
+        
+    }
     func addNewPointEntry() {
         print("adding new point")
-        leftImage.image = nil
-        rightImage.image = nil
+        leftImage.image = UIImage(named: "default")
+        rightImage.image = UIImage(named: "default2")
         topRightLabel.text = ""
+        topRightLabel.backgroundColor = newFieldsColor
         generalDescription.text = ""
+        generalDescription.backgroundColor = newFieldsColor
         location.text = ""
+        location.backgroundColor = newFieldsColor
         indicationsAndUses.text = ""
+        indicationsAndUses.backgroundColor = newFieldsColor
         
     }
 

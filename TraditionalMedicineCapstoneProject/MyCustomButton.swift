@@ -24,7 +24,7 @@ class MyCustomButton: UIButton {
             self.layer.borderWidth = 1.5
             self.backgroundColor = UIColor.blueColorLight()
             self.tintColor = UIColor.whiteColor()
-            //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+            self.setTitleColor(UIColor.blueColorDark(), forState: .Normal)
         }
         
         if self.accessibilityIdentifier == "TopCenterButton" {

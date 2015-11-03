@@ -17,7 +17,8 @@ class HerbsController: NSObject {
         let dangGui = Herb(pinyinName: "Dang Gui", botanicalName: "insert botanical name", englishName: "Angelica", category: "Tonify the Blood", temp: "Warm", meridians: "insert meridians", uses: "Strengthen the Blood", majorFormulas: "Si Wu Tang")
         
         return [cinnamon, ginseng, dangGui]
+        
+        
     }
-
 
 }
