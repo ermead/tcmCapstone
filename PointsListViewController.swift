@@ -76,6 +76,7 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
         } else {
             print("displaying point list")
         }
+        
         // Do any additional setup after loading the view.
     }
 
