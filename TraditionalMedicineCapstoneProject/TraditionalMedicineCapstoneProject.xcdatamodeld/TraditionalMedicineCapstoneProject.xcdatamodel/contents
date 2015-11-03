@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8195" systemVersion="14E46" minimumToolsVersion="Automatic">
+    <entity name="Formula" representedClassName=".Formula" syncable="YES">
+        <relationship name="hasContents" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Herb" inverseName="inContents" inverseEntity="Herb" syncable="YES"/>
+    </entity>
     <entity name="Herb" representedClassName="Herb" syncable="YES">
         <attribute name="botanicalName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
@@ -10,10 +13,12 @@
         <attribute name="pinyinName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="temp" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="uses" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="inContents" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Formula" inverseName="hasContents" inverseEntity="Formula" syncable="YES"/>
     </entity>
     <entity name="Point" syncable="YES"/>
     <elements>
-        <element name="Herb" positionX="-63" positionY="-18" width="128" height="178"/>
+        <element name="Herb" positionX="-63" positionY="-18" width="128" height="193"/>
         <element name="Point" positionX="-281" positionY="0" width="128" height="45"/>
+        <element name="Formula" positionX="-153" positionY="72" width="128" height="60"/>
     </elements>
 </model>

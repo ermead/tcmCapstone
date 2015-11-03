@@ -2,7 +2,7 @@
 //  Herb+CoreDataProperties.swift
 //  TraditionalMedicineCapstoneProject
 //
-//  Created by Eric Mead on 11/2/15.
+//  Created by Eric Mead on 11/3/15.
 //  Copyright © 2015 Eric Mead. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -23,5 +23,6 @@ extension Herb {
     @NSManaged var pinyinName: String?
     @NSManaged var temp: String?
     @NSManaged var uses: String?
+    @NSManaged var inContents: NSSet?
 
 }

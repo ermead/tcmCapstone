@@ -42,10 +42,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         for herb in defaultHerbArray {
             
-            let managedEntity = NSManagedObject(entity: entity, insertIntoManagedObjectContext: Stack.sharedStack.managedObjectContext)
+            let managedHerb = Herb(entity: entity, insertIntoManagedObjectContext: Stack.sharedStack.managedObjectContext)
             
-            managedEntity.setValue(herb.pinyinName, forKey: "pinyinName")
-            managedEntity.setValue(herb.englishName, forKey: "englishName")
+            managedHerb.pinyinName = herb.pinyinName
+            managedHerb.englishName = herb.englishName
+            managedHerb.botanicalName = herb.botanicalName
+            managedHerb.temp = herb.temp
+            managedHerb.category = herb.category
+            managedHerb.meridians = herb.meridians
+            managedHerb.majorFormulas = herb.majorFormulas
         }
     }
 

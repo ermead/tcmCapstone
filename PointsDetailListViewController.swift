@@ -76,11 +76,11 @@ class PointsDetailListViewController: UIViewController {
             
             detailHerb = Herb(pinyinName: detailHerb.pinyinName, botanicalName: detailHerb.botanicalName, englishName: detailHerb.englishName!, category: detailHerb.category, temp: detailHerb.temp, meridians: detailHerb.meridians, uses: detailHerb.uses, majorFormulas: detailHerb.majorFormulas)
             
-            generalDescription.text = ("\(detailHerb.pinyinName) is found in the major formula(s) \(detailHerb.majorFormulas).")
+            generalDescription.text = ("\(detailHerb.pinyinName!) is found in the major formula(s) \(detailHerb.majorFormulas!).")
             
             topRightLabel.text = detailHerb.englishName
             locationLabel.text = detailHerb.botanicalName
-            location.text = "This herb, named \(detailHerb.pinyinName), belongs to the category of \(detailHerb.category). Having a \(detailHerb.temp) temperature, it travels along the \(detailHerb.meridians) channels."
+            location.text = "This herb, named \(detailHerb.pinyinName!), belongs to the category of \(detailHerb.category!). Having a \(detailHerb.temp!) temperature, it travels along the \(detailHerb.meridians!) channels."
             indicationsAndUses.text = detailHerb.uses
             
         } else {
