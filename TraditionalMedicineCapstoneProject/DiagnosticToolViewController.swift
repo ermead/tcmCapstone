@@ -119,6 +119,7 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
         print("topLeft button hit")
         buttonTitle = String(sender.titleLabel!.text!)
         performSegueWithIdentifier("diagnosticSegue", sender: self)
+
         
     }
     

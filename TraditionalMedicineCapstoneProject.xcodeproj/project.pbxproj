@@ -70,8 +70,8 @@
 		D7580AF71BDD1EB70008789F = {
 			isa = PBXGroup;
 			children = (
-				D782A5A31BE907F000E51BAC /* Formula+CoreDataProperties.swift */,
 				D782A5A41BE907F000E51BAC /* Formula.swift */,
+				D782A5A31BE907F000E51BAC /* Formula+CoreDataProperties.swift */,
 				D782A59F1BE849B600E51BAC /* Herb+CoreDataProperties.swift */,
 				D782A5A01BE849B600E51BAC /* Herb.swift */,
 				D7580B021BDD1EB70008789F /* TraditionalMedicineCapstoneProject */,

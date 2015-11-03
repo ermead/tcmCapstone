@@ -37,7 +37,7 @@ class HerbsController: NSObject {
         }
     }
 
-    func addHerb( herb: Herb) {
+    func addHerb(herb: Herb) {
       saveToPersistentStorage()
     }
     
