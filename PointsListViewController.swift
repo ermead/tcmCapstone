@@ -99,6 +99,14 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
 //        return 12
 //    }
     
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete {
+            let herb = HerbsController.sharedController.herbs[indexPath.row]
+            HerbsController.sharedController.removeHerb(herb)
+            tableView.reloadData()
+        }
+    }
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("pointsCell", forIndexPath: indexPath)
         

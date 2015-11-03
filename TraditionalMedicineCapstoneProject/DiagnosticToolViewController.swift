@@ -87,7 +87,7 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
             upDateLabelControl = 1
             upDateLabels()
             topLeftButton.setTitle("Stress", forState: .Normal)
-            topCenterButton.setTitle("Chronic Pain", forState: .Normal)
+            topCenterButton.setTitle("Pain", forState: .Normal)
             topRightButton.setTitle("Lung", forState: .Normal)
             bottomLeftButton.setTitle("Digestive", forState: .Normal)
             bottomCenterButton.setTitle("Repro", forState: .Normal)
