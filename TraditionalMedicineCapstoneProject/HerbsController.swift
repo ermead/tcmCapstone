@@ -31,6 +31,7 @@ class HerbsController: NSObject {
         
         do {
             return try Stack.sharedStack.managedObjectContext.executeFetchRequest(request) as! [Herb]
+            
         } catch {
             return []
         }

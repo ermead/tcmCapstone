@@ -85,7 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				D7580B031BDD1EB70008789F /* AppDelegate.swift */,
-				D7D9EBBD1BDDAC3600C920AC /* PointsDetailListViewController.swift */,
 				D7580B051BDD1EB70008789F /* ViewController.swift */,
 				D7D9EBB61BDDA4F800C920AC /* Herbs */,
 				D7D9EBBF1BDDAC4300C920AC /* Points */,
@@ -131,6 +130,7 @@
 		D7D9EBBF1BDDAC4300C920AC /* Points */ = {
 			isa = PBXGroup;
 			children = (
+				D7D9EBBD1BDDAC3600C920AC /* PointsDetailListViewController.swift */,
 				D7D9EBBB1BDDAC2300C920AC /* PointsListViewController.swift */,
 				D7D9EBB71BDDABE100C920AC /* Point.swift */,
 				D7D9EBB91BDDABF400C920AC /* PointController.swift */,

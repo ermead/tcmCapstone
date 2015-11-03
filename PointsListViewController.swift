@@ -13,7 +13,7 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
     //toggle this var if herbs list or points list
     var herbsList: Bool = false
     var singles: Bool = true
-    @IBOutlet weak var tableView: UITableView!
+   
     
     @IBOutlet weak var singleOrComboHerbsOutlet: UISegmentedControl!
     @IBOutlet weak var singleOrComboPointsOutlet: UISegmentedControl!
@@ -81,7 +81,7 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if herbsList{
-            return HerbsController.sharedController.herbs.count
+             return HerbsController.sharedController.herbs.count
         } else {
             return PointController.points.count
         }
@@ -89,7 +89,7 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
     
     override func viewDidAppear(animated: Bool) {
         
-        tableView.reloadData()
+        pointsTableViewOutlet.reloadData()
         print(HerbsController.sharedController.herbs)
     }
     

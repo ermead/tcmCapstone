@@ -102,7 +102,6 @@
                         <outlet property="pointsTableViewOutlet" destination="iCn-X0-nUq" id="fOd-qj-XB2"/>
                         <outlet property="singleOrComboHerbsOutlet" destination="K9L-gn-WV8" id="8Vt-XH-tzo"/>
                         <outlet property="singleOrComboPointsOutlet" destination="f5b-yj-VHN" id="uuA-yr-i9V"/>
-                        <outlet property="tableView" destination="iCn-X0-nUq" id="AcM-8e-RIr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Drn-bV-y2W" userLabel="First Responder" sceneMemberID="firstResponder"/>

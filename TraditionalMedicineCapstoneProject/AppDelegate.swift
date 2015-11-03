@@ -20,7 +20,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         AppearanceController.setUpAppearance()
         
+        loadTestData()
+        
         return true
+    }
+    
+    func loadTestData() {
+        
+        guard let entity = NSEntityDescription.entityForName("Herb", inManagedObjectContext: Stack.sharedStack.managedObjectContext) else { fatalError("Could not find entity description!")}
+        
+        let defaultHerbArray = HerbsController.sharedController.defaultHerbs
+        
+        for herb in defaultHerbArray {
+            
+            let managedEntity = NSManagedObject(entity: entity, insertIntoManagedObjectContext: Stack.sharedStack.managedObjectContext)
+            
+            managedEntity.setValue(herb.pinyinName, forKey: "pinyinName")
+            managedEntity.setValue(herb.englishName, forKey: "englishName")
+        }
     }
 
     func applicationWillResignActive(application: UIApplication) {

@@ -121,19 +121,16 @@ class PointsDetailListViewController: UIViewController {
     
     func updateHerb() {
         
-        let pinyinName = generalDescription.text!
+        let pinyinName = indicationsAndUses.text!
         let englishName = indicationsAndUses.text
         
-        if let newEntry = self.herb {
-            herb!.pinyinName = pinyinName
-            herb!.englishName = englishName
-           
-        } else {
-            
-            let newHerb = Herb(englishName: englishName)
-            HerbsController.sharedController.addHerb(newHerb)
-        }
+        let newHerb = Herb(pinyinName: pinyinName, botanicalName: "", englishName: englishName, category: "", temp: "", meridians: "", uses: "", majorFormulas: "", context: Stack.sharedStack.managedObjectContext)
+        
+        HerbsController.sharedController.addHerb(newHerb)
+        print("did I update?")
     }
+    
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
