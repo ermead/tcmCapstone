@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class PointsListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -100,13 +101,15 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("pointsCell", forIndexPath: indexPath)
         
-        
         if herbsList {
         
             cell.textLabel?.text = HerbsController.sharedController.herbs[indexPath.row].pinyinName
+            cell.detailTextLabel?.text = HerbsController.sharedController.herbs[indexPath.row].englishName
            
         } else {
             cell.textLabel?.text = PointController.points[indexPath.row].pointOnMeridian
+            cell.detailTextLabel?.text = PointController.points[indexPath.row].pinyinName
+
         }
         
         return cell

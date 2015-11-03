@@ -20,7 +20,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         AppearanceController.setUpAppearance()
         
-        loadTestData()
+        let fetchRequest = NSFetchRequest(entityName: "Herb")
+        do {
+            let results = try Stack.sharedStack.managedObjectContext.executeFetchRequest(fetchRequest)
+            if results.count == 0 {
+                
+                 loadTestData()
+            }
+        } catch {
+            fatalError("Error fetching data")
+        }
         
         return true
     }

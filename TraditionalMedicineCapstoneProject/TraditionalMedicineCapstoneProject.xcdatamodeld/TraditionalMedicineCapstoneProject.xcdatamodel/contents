@@ -13,7 +13,7 @@
     </entity>
     <entity name="Point" syncable="YES"/>
     <elements>
-        <element name="Herb" positionX="-63" positionY="-18" width="128" height="180"/>
-        <element name="Point" positionX="-54" positionY="-9" width="128" height="45"/>
+        <element name="Herb" positionX="-63" positionY="-18" width="128" height="178"/>
+        <element name="Point" positionX="-281" positionY="0" width="128" height="45"/>
     </elements>
 </model>
