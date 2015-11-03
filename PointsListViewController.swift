@@ -85,7 +85,7 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
         if herbsList{
              return HerbsController.sharedController.herbs.count
         } else {
-            return PointController.points.count
+            return PointController.sharedController.points.count
         }
     }
     
@@ -116,8 +116,8 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
             cell.detailTextLabel?.text = HerbsController.sharedController.herbs[indexPath.row].englishName
            
         } else {
-            cell.textLabel?.text = PointController.points[indexPath.row].pointOnMeridian
-            cell.detailTextLabel?.text = PointController.points[indexPath.row].pinyinName
+            cell.textLabel?.text = PointController.sharedController.points[indexPath.row].pointOnMeridian
+            cell.detailTextLabel?.text = PointController.sharedController.points[indexPath.row].pinyinName
 
         }
         
@@ -157,15 +157,15 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
             if let pdlc : PointsDetailListViewController = segue.destinationViewController as? PointsDetailListViewController {
             
                 if singleOrComboPointsOutlet.selectedSegmentIndex == 0 {
-                    print("the index touched was \(index) and the point selected was \(PointController.points[index!].pinyinName)")
-                    pdlc.title = PointController.points[index!].pointOnMeridian
+                    print("the index touched was \(index) and the point selected was \(PointController.sharedController.points[index!].pinyinName)")
+                    pdlc.title = PointController.sharedController.points[index!].pointOnMeridian
                     pdlc.index = index!
                     pdlc.herbsList = false
                     pdlc.singles = true
                 } else {
-                    print("the index touched was \(index) and the combination selected was UPDATE \(PointController.points[index!].pinyinName)")
+                    print("the index touched was \(index) and the combination selected was UPDATE \(PointController.sharedController.points[index!].pinyinName)")
                     
-                    pdlc.title = PointController.points[index!].pointOnMeridian
+                    pdlc.title = PointController.sharedController.points[index!].pointOnMeridian
                     pdlc.index = index!
                     pdlc.herbsList = false
                     pdlc.singles = false

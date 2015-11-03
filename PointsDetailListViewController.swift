@@ -85,7 +85,7 @@ class PointsDetailListViewController: UIViewController {
             
         } else {
         
-        var point = PointController.points[index!]
+        var point = PointController.sharedController.points[index!]
         
         point = Point(pinyinName: point.pinyinName, englishName: point.englishName, pointOnMeridian: point.pointOnMeridian, specialCategories: point.specialCategories!, channel: point.channel, locationDescription: point.locationDescription, uses: point.uses)
         
@@ -127,7 +127,7 @@ class PointsDetailListViewController: UIViewController {
         let newHerb = Herb(pinyinName: pinyinName, botanicalName: "", englishName: englishName, category: "", temp: "", meridians: "", uses: "", majorFormulas: "", context: Stack.sharedStack.managedObjectContext)
         
         HerbsController.sharedController.addHerb(newHerb)
-        print("did I update?")
+       
     }
     
     

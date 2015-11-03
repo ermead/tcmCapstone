@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8195" systemVersion="14E46" minimumToolsVersion="Automatic">
+    <entity name="Channel" representedClassName=".Channel" syncable="YES">
+        <relationship name="hasPoints" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Point" inverseName="onChannel" inverseEntity="Point" syncable="YES"/>
+    </entity>
     <entity name="Formula" representedClassName=".Formula" syncable="YES">
         <relationship name="hasContents" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Herb" inverseName="inContents" inverseEntity="Herb" syncable="YES"/>
     </entity>
@@ -15,10 +18,21 @@
         <attribute name="uses" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="inContents" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Formula" inverseName="hasContents" inverseEntity="Formula" syncable="YES"/>
     </entity>
-    <entity name="Point" syncable="YES"/>
+    <entity name="Point" representedClassName="Point" syncable="YES">
+        <attribute name="channel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="englishName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locationDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pinyinName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pointOnMeridian" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="specialCategories" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uses" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="onChannel" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Channel" inverseName="hasPoints" inverseEntity="Channel" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="Herb" positionX="-63" positionY="-18" width="128" height="193"/>
-        <element name="Point" positionX="-281" positionY="0" width="128" height="45"/>
         <element name="Formula" positionX="-153" positionY="72" width="128" height="60"/>
+        <element name="Herb" positionX="-63" positionY="-18" width="128" height="193"/>
+        <element name="Point" positionX="-281" positionY="0" width="128" height="180"/>
+        <element name="Channel" positionX="-144" positionY="90" width="128" height="60"/>
     </elements>
 </model>
