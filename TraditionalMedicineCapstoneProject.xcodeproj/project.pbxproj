@@ -19,7 +19,8 @@
 		D782A5721BE664E600E51BAC /* AppearanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5711BE664E600E51BAC /* AppearanceController.swift */; settings = {ASSET_TAGS = (); }; };
 		D782A5741BE6667300E51BAC /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5731BE6667300E51BAC /* Colors.swift */; settings = {ASSET_TAGS = (); }; };
 		D782A57A1BE6827C00E51BAC /* MyCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5791BE6827C00E51BAC /* MyCustomButton.swift */; settings = {ASSET_TAGS = (); }; };
-		D7D9EBAF1BDD88E500C920AC /* Herb.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBAE1BDD88E500C920AC /* Herb.swift */; settings = {ASSET_TAGS = (); }; };
+		D782A5A11BE849B600E51BAC /* Herb+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A59F1BE849B600E51BAC /* Herb+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		D782A5A21BE849B600E51BAC /* Herb.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5A01BE849B600E51BAC /* Herb.swift */; settings = {ASSET_TAGS = (); }; };
 		D7D9EBB11BDD8A6500C920AC /* HerbsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBB01BDD8A6500C920AC /* HerbsController.swift */; settings = {ASSET_TAGS = (); }; };
 		D7D9EBB81BDDABE100C920AC /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBB71BDDABE100C920AC /* Point.swift */; settings = {ASSET_TAGS = (); }; };
 		D7D9EBBA1BDDABF400C920AC /* PointController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBB91BDDABF400C920AC /* PointController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -42,7 +43,8 @@
 		D782A5711BE664E600E51BAC /* AppearanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceController.swift; sourceTree = "<group>"; };
 		D782A5731BE6667300E51BAC /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		D782A5791BE6827C00E51BAC /* MyCustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomButton.swift; sourceTree = "<group>"; };
-		D7D9EBAE1BDD88E500C920AC /* Herb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Herb.swift; sourceTree = "<group>"; };
+		D782A59F1BE849B600E51BAC /* Herb+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Herb+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D782A5A01BE849B600E51BAC /* Herb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Herb.swift; sourceTree = "<group>"; };
 		D7D9EBB01BDD8A6500C920AC /* HerbsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HerbsController.swift; sourceTree = "<group>"; };
 		D7D9EBB71BDDABE100C920AC /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		D7D9EBB91BDDABF400C920AC /* PointController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,8 @@
 		D7580AF71BDD1EB70008789F = {
 			isa = PBXGroup;
 			children = (
+				D782A59F1BE849B600E51BAC /* Herb+CoreDataProperties.swift */,
+				D782A5A01BE849B600E51BAC /* Herb.swift */,
 				D7580B021BDD1EB70008789F /* TraditionalMedicineCapstoneProject */,
 				D7580B011BDD1EB70008789F /* Products */,
 			);
@@ -81,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				D7580B031BDD1EB70008789F /* AppDelegate.swift */,
+				D7D9EBBD1BDDAC3600C920AC /* PointsDetailListViewController.swift */,
 				D7580B051BDD1EB70008789F /* ViewController.swift */,
 				D7D9EBB61BDDA4F800C920AC /* Herbs */,
 				D7D9EBBF1BDDAC4300C920AC /* Points */,
@@ -118,7 +123,6 @@
 		D7D9EBB61BDDA4F800C920AC /* Herbs */ = {
 			isa = PBXGroup;
 			children = (
-				D7D9EBAE1BDD88E500C920AC /* Herb.swift */,
 				D7D9EBB01BDD8A6500C920AC /* HerbsController.swift */,
 			);
 			name = Herbs;
@@ -128,7 +132,6 @@
 			isa = PBXGroup;
 			children = (
 				D7D9EBBB1BDDAC2300C920AC /* PointsListViewController.swift */,
-				D7D9EBBD1BDDAC3600C920AC /* PointsDetailListViewController.swift */,
 				D7D9EBB71BDDABE100C920AC /* Point.swift */,
 				D7D9EBB91BDDABF400C920AC /* PointController.swift */,
 			);
@@ -209,11 +212,12 @@
 				D7D9EBBC1BDDAC2300C920AC /* PointsListViewController.swift in Sources */,
 				D7580B061BDD1EB70008789F /* ViewController.swift in Sources */,
 				D782A57A1BE6827C00E51BAC /* MyCustomButton.swift in Sources */,
+				D782A5A11BE849B600E51BAC /* Herb+CoreDataProperties.swift in Sources */,
 				D782A5741BE6667300E51BAC /* Colors.swift in Sources */,
 				D7580B0C1BDD1EB70008789F /* TraditionalMedicineCapstoneProject.xcdatamodeld in Sources */,
 				D782A5701BE4479700E51BAC /* Stack.swift in Sources */,
-				D7D9EBAF1BDD88E500C920AC /* Herb.swift in Sources */,
 				D782A4A61BE02A1000E51BAC /* DiagnosticToolViewController.swift in Sources */,
+				D782A5A21BE849B600E51BAC /* Herb.swift in Sources */,
 				D7580B041BDD1EB70008789F /* AppDelegate.swift in Sources */,
 				D782A4A81BE03B6A00E51BAC /* DiagnosisDetailViewController.swift in Sources */,
 				D782A5721BE664E600E51BAC /* AppearanceController.swift in Sources */,

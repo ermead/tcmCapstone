@@ -72,9 +72,9 @@ class PointsDetailListViewController: UIViewController {
     func populatePointInfo() {
         if herbsList{
             
-            var detailHerb = HerbsController.herbs[index!]
+            var detailHerb = HerbsController.sharedController.herbs[index!]
             
-            detailHerb = Herb(pinyinName: detailHerb.pinyinName, botanicalName: detailHerb.botanicalName, englishName: detailHerb.englishName, category: detailHerb.category, temp: detailHerb.temp, meridians: detailHerb.meridians, uses: detailHerb.uses, majorFormulas: detailHerb.majorFormulas)
+            detailHerb = Herb(pinyinName: detailHerb.pinyinName, botanicalName: detailHerb.botanicalName, englishName: detailHerb.englishName!, category: detailHerb.category, temp: detailHerb.temp, meridians: detailHerb.meridians, uses: detailHerb.uses, majorFormulas: detailHerb.majorFormulas)
             
             generalDescription.text = ("\(detailHerb.pinyinName) is found in the major formula(s) \(detailHerb.majorFormulas).")
             
@@ -99,7 +99,7 @@ class PointsDetailListViewController: UIViewController {
     
     @IBAction func saveButtonTapped(sender: UIBarButtonItem) {
         print("save attempted")
-        
+        updateHerb()
         self.navigationController?.popViewControllerAnimated(true)
         
         
@@ -117,6 +117,22 @@ class PointsDetailListViewController: UIViewController {
         indicationsAndUses.text = ""
         indicationsAndUses.backgroundColor = newFieldsColor
         
+    }
+    
+    func updateHerb() {
+        
+        let pinyinName = generalDescription.text!
+        let englishName = indicationsAndUses.text
+        
+        if let newEntry = self.herb {
+            herb!.pinyinName = pinyinName
+            herb!.englishName = englishName
+           
+        } else {
+            
+            let newHerb = Herb(englishName: englishName)
+            HerbsController.sharedController.addHerb(newHerb)
+        }
     }
 
     override func didReceiveMemoryWarning() {

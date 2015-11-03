@@ -13,6 +13,7 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
     //toggle this var if herbs list or points list
     var herbsList: Bool = false
     var singles: Bool = true
+    @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var singleOrComboHerbsOutlet: UISegmentedControl!
     @IBOutlet weak var singleOrComboPointsOutlet: UISegmentedControl!
@@ -80,23 +81,30 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if herbsList{
-            return HerbsController.herbs.count
+            return HerbsController.sharedController.herbs.count
         } else {
             return PointController.points.count
         }
     }
     
+    override func viewDidAppear(animated: Bool) {
+        
+        tableView.reloadData()
+        print(HerbsController.sharedController.herbs)
+    }
+    
 //    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-//        <#code#>
+//        return 12
 //    }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("pointsCell", forIndexPath: indexPath)
         
-//      if indexPath.section == 0 { }
         
         if herbsList {
-            cell.textLabel?.text = HerbsController.herbs[indexPath.row].pinyinName
+        
+            cell.textLabel?.text = HerbsController.sharedController.herbs[indexPath.row].pinyinName
+           
         } else {
             cell.textLabel?.text = PointController.points[indexPath.row].pointOnMeridian
         }
@@ -113,15 +121,15 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
             if let pdlc : PointsDetailListViewController = segue.destinationViewController as? PointsDetailListViewController {
                 
                 if singleOrComboHerbsOutlet.selectedSegmentIndex == 0 {
-                    print("the index touched was \(index) and the point selected was \(HerbsController.herbs[index!].pinyinName)")
-                    pdlc.title = HerbsController.herbs[index!].pinyinName
+                    print("the index touched was \(index) and the point selected was \(HerbsController.sharedController.herbs[index!].pinyinName)")
+                    pdlc.title = HerbsController.sharedController.herbs[index!].pinyinName
                     pdlc.index = index!
                     pdlc.herbsList = true
                     pdlc.singles = true
                 } else {
-                    print("the index touched was \(index) and the formula selected was UPDATE \(HerbsController.herbs[index!].pinyinName)")
+                    print("the index touched was \(index) and the formula selected was UPDATE \(HerbsController.sharedController.herbs[index!].pinyinName)")
                     
-                    pdlc.title = HerbsController.herbs[index!].pinyinName
+                    pdlc.title = HerbsController.sharedController.herbs[index!].pinyinName
                     pdlc.index = index!
                     pdlc.herbsList = true
                     pdlc.singles = false
