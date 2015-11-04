@@ -15,6 +15,8 @@ class MyCustomButton: UIButton {
  
     }
     
+    let animation = CAAnimation
+    
     func updateButtonProperties() {
         
         
@@ -22,52 +24,64 @@ class MyCustomButton: UIButton {
             self.layer.cornerRadius = 10.0;
             self.layer.borderColor = UIColor.blueColorDark().CGColor
             self.layer.borderWidth = 1.5
-            self.backgroundColor = UIColor.blueColorLight()
+            self.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
+            //self.backgroundColor = UIColor.blueColorLight()
             self.tintColor = UIColor.whiteColor()
-            self.setTitleColor(UIColor.blueColorDark(), forState: .Normal)
+            //self.setTitleColor(UIColor.blueColorDark(), forState: .Normal)
+            self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         }
         
         if self.accessibilityIdentifier == "TopCenterButton" {
             self.layer.cornerRadius = 10.0;
             self.layer.borderColor = UIColor.blueColorDark().CGColor
             self.layer.borderWidth = 1.5
-            self.backgroundColor = UIColor.blueColorLight()
+            self.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
+            //self.backgroundColor = UIColor.blueColorLight()
             self.tintColor = UIColor.whiteColor()
             //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+            self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         }
         
         if self.accessibilityIdentifier == "TopRightButton" {
             self.layer.cornerRadius = 10.0;
             self.layer.borderColor = UIColor.blueColorDark().CGColor
             self.layer.borderWidth = 1.5
-            self.backgroundColor = UIColor.blueColorLight()
+            self.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
+            //self.backgroundColor = UIColor.blueColorLight()
             self.tintColor = UIColor.whiteColor()
             //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+            self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         }
     
         if self.accessibilityIdentifier == "BottomLeftButton" {
             self.layer.cornerRadius = 10.0;
             self.layer.borderColor = UIColor.blueColorDark().CGColor
             self.layer.borderWidth = 1.5
-            self.backgroundColor = UIColor.blueColorLight()
+            self.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
+            //self.backgroundColor = UIColor.blueColorLight()
             self.tintColor = UIColor.whiteColor()
             //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+            self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         }
         if self.accessibilityIdentifier == "BottomCenterButton" {
             self.layer.cornerRadius = 10.0;
             self.layer.borderColor = UIColor.blueColorDark().CGColor
             self.layer.borderWidth = 1.5
-            self.backgroundColor = UIColor.blueColorLight()
+            self.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
+            //self.backgroundColor = UIColor.blueColorLight()
             self.tintColor = UIColor.whiteColor()
             //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+            self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         }
         if self.accessibilityIdentifier == "BottomRightButton" {
             self.layer.cornerRadius = 10.0;
             self.layer.borderColor = UIColor.blueColorDark().CGColor
             self.layer.borderWidth = 1.5
-            self.backgroundColor = UIColor.blueColorLight()
+            self.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
+            //self.backgroundColor = UIColor.blueColorLight()
             self.tintColor = UIColor.whiteColor()
             //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+            self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         }
 
     }
