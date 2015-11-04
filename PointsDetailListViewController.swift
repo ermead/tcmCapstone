@@ -138,11 +138,11 @@ class PointsDetailListViewController: UIViewController {
     func updatePoint() {
         
         let pinyinName = indicationsAndUses.text!
-        let englishName = indicationsAndUses.text
+        let englishName = indicationsAndUses.text!
         
-        let newPoint = Point(pinyinName: pinyinName, englishName: englishName, pointOnMeridian: englishName, specialCategories: "", locationDescription: "", channel: "", uses: "", imageName: "", context: Stack.sharedStack.managedObjectContext)
+        let point = Point(pinyinName: pinyinName, englishName: englishName, pointOnMeridian: englishName, specialCategories: "", locationDescription: "", channel: "", uses: "", imageName: "", context: Stack.sharedStack.managedObjectContext)
         
-        PointController.sharedController.addPoint(newPoint)
+        PointController.sharedController.addPoint(point)
         print("well did I?")
         
     }

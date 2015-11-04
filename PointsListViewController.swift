@@ -183,6 +183,9 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
             if let pdlc : PointsDetailListViewController = segue.destinationViewController as? PointsDetailListViewController {
                     print("preparing for a new point entry")
                     pdlc.title = "New Point"
+                if herbsList == false {
+                    pdlc.herbsList = false
+                }
             }
         }
     }
