@@ -21,12 +21,13 @@
 		D782A57A1BE6827C00E51BAC /* MyCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5791BE6827C00E51BAC /* MyCustomButton.swift */; settings = {ASSET_TAGS = (); }; };
 		D782A5A11BE849B600E51BAC /* Herb+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A59F1BE849B600E51BAC /* Herb+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		D782A5A21BE849B600E51BAC /* Herb.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5A01BE849B600E51BAC /* Herb.swift */; settings = {ASSET_TAGS = (); }; };
-		D782A5A51BE907F000E51BAC /* Formula+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5A31BE907F000E51BAC /* Formula+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		D782A5A61BE907F000E51BAC /* Formula.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5A41BE907F000E51BAC /* Formula.swift */; settings = {ASSET_TAGS = (); }; };
 		D782A5AB1BE9535C00E51BAC /* Point+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5A71BE9535C00E51BAC /* Point+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		D782A5AC1BE9535C00E51BAC /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5A81BE9535C00E51BAC /* Point.swift */; settings = {ASSET_TAGS = (); }; };
 		D782A5AD1BE9535C00E51BAC /* Channel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5A91BE9535C00E51BAC /* Channel+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		D782A5AE1BE9535C00E51BAC /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5AA1BE9535C00E51BAC /* Channel.swift */; settings = {ASSET_TAGS = (); }; };
+		D782A5F31BEA4BE200E51BAC /* FormulasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5F21BEA4BE200E51BAC /* FormulasController.swift */; settings = {ASSET_TAGS = (); }; };
+		D782A5F51BEA4ECF00E51BAC /* Formula+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5F41BEA4ECF00E51BAC /* Formula+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		D7D9EBB11BDD8A6500C920AC /* HerbsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBB01BDD8A6500C920AC /* HerbsController.swift */; settings = {ASSET_TAGS = (); }; };
 		D7D9EBBA1BDDABF400C920AC /* PointController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBB91BDDABF400C920AC /* PointController.swift */; settings = {ASSET_TAGS = (); }; };
 		D7D9EBBC1BDDAC2300C920AC /* PointsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBBB1BDDAC2300C920AC /* PointsListViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -50,12 +51,13 @@
 		D782A5791BE6827C00E51BAC /* MyCustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomButton.swift; sourceTree = "<group>"; };
 		D782A59F1BE849B600E51BAC /* Herb+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Herb+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D782A5A01BE849B600E51BAC /* Herb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Herb.swift; sourceTree = "<group>"; };
-		D782A5A31BE907F000E51BAC /* Formula+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Formula+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D782A5A41BE907F000E51BAC /* Formula.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formula.swift; sourceTree = "<group>"; };
 		D782A5A71BE9535C00E51BAC /* Point+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Point+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D782A5A81BE9535C00E51BAC /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		D782A5A91BE9535C00E51BAC /* Channel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Channel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D782A5AA1BE9535C00E51BAC /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		D782A5F21BEA4BE200E51BAC /* FormulasController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulasController.swift; sourceTree = "<group>"; };
+		D782A5F41BEA4ECF00E51BAC /* Formula+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Formula+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D7D9EBB01BDD8A6500C920AC /* HerbsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HerbsController.swift; sourceTree = "<group>"; };
 		D7D9EBB91BDDABF400C920AC /* PointController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointController.swift; sourceTree = "<group>"; };
 		D7D9EBBB1BDDAC2300C920AC /* PointsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PointsListViewController.swift; path = ../PointsListViewController.swift; sourceTree = "<group>"; };
@@ -135,8 +137,8 @@
 				D782A5A81BE9535C00E51BAC /* Point.swift */,
 				D782A5A91BE9535C00E51BAC /* Channel+CoreDataProperties.swift */,
 				D782A5AA1BE9535C00E51BAC /* Channel.swift */,
+				D782A5F41BEA4ECF00E51BAC /* Formula+CoreDataProperties.swift */,
 				D782A5A41BE907F000E51BAC /* Formula.swift */,
-				D782A5A31BE907F000E51BAC /* Formula+CoreDataProperties.swift */,
 				D782A59F1BE849B600E51BAC /* Herb+CoreDataProperties.swift */,
 				D782A5A01BE849B600E51BAC /* Herb.swift */,
 			);
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				D7D9EBB01BDD8A6500C920AC /* HerbsController.swift */,
+				D782A5F21BEA4BE200E51BAC /* FormulasController.swift */,
 			);
 			name = Herbs;
 			sourceTree = "<group>";
@@ -231,7 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D782A5A51BE907F000E51BAC /* Formula+CoreDataProperties.swift in Sources */,
+				D782A5F31BEA4BE200E51BAC /* FormulasController.swift in Sources */,
 				D7D9EBBC1BDDAC2300C920AC /* PointsListViewController.swift in Sources */,
 				D7580B061BDD1EB70008789F /* ViewController.swift in Sources */,
 				D782A57A1BE6827C00E51BAC /* MyCustomButton.swift in Sources */,
@@ -239,6 +242,7 @@
 				D782A5A11BE849B600E51BAC /* Herb+CoreDataProperties.swift in Sources */,
 				D782A5741BE6667300E51BAC /* Colors.swift in Sources */,
 				D7580B0C1BDD1EB70008789F /* TraditionalMedicineCapstoneProject.xcdatamodeld in Sources */,
+				D782A5F51BEA4ECF00E51BAC /* Formula+CoreDataProperties.swift in Sources */,
 				D782A5A61BE907F000E51BAC /* Formula.swift in Sources */,
 				D782A5701BE4479700E51BAC /* Stack.swift in Sources */,
 				D782A4A61BE02A1000E51BAC /* DiagnosticToolViewController.swift in Sources */,

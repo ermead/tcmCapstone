@@ -28,9 +28,11 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
         if(sender.selectedSegmentIndex == 0){
             print("segment single points hit")
             singles = true
+            pointsTableViewOutlet.reloadData()
         } else {
             print("segment combo points hit")
             singles = false
+            pointsTableViewOutlet.reloadData()
         }
         
     }
@@ -38,9 +40,11 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
         if(sender.selectedSegmentIndex == 0){
             print("segment single herbs hit")
             singles = true
+            pointsTableViewOutlet.reloadData()
         } else {
             print("segment formulas hit")
             singles = false
+            pointsTableViewOutlet.reloadData()
         }
         
     }
@@ -83,7 +87,11 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if herbsList{
+            if singles{
              return HerbsController.sharedController.herbs.count
+            } else {
+                return FormulasController.sharedController.formulas.count
+            }
         } else {
             return PointController.sharedController.points.count
         }
@@ -93,7 +101,7 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
         
         pointsTableViewOutlet.reloadData()
         //print(HerbsController.sharedController.herbs)
-        print(PointController.sharedController.points)
+        //print(PointController.sharedController.points)
     }
     
 //    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -119,9 +127,13 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
         let cell = tableView.dequeueReusableCellWithIdentifier("pointsCell", forIndexPath: indexPath)
         
         if herbsList {
-        
+            if singles{
             cell.textLabel?.text = HerbsController.sharedController.herbs[indexPath.row].pinyinName
             cell.detailTextLabel?.text = HerbsController.sharedController.herbs[indexPath.row].englishName
+            } else {
+                cell.textLabel?.text = FormulasController.sharedController.formulas[indexPath.row].pinyinName
+                cell.detailTextLabel?.text = FormulasController.sharedController.formulas[indexPath.row].englishName
+            }
            
         } else {
             cell.textLabel?.text = PointController.sharedController.points[indexPath.row].pointOnMeridian

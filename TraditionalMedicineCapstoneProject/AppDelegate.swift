@@ -42,12 +42,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             fatalError("Error fetching data")
         }
         
+        let fetchRequestDefaultFormulas = NSFetchRequest(entityName: "Formula")
+        do {
+            let results = try Stack.sharedStack.managedObjectContext.executeFetchRequest(fetchRequestDefaultFormulas)
+            if results.count == 0 {
+                
+                loadFormulasDefaultData()
+            }
+        } catch {
+            fatalError("Error fetching data")
+        }
+
+        
         return true
     }
     
     func loadHerbDefaultData() {
         
-        guard let entity = NSEntityDescription.entityForName("Herb", inManagedObjectContext: Stack.sharedStack.managedObjectContext) else { fatalError("Could not find entity description!")}
+        guard let entity = NSEntityDescription.entityForName("Herb", inManagedObjectContext: Stack.sharedStack.managedObjectContext) else { fatalError("Could not find herbs entity description!")}
         
         let defaultHerbArray = HerbsController.sharedController.defaultHerbs
         
@@ -67,10 +79,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func loadPointsDefaultData() {
         
-        guard let entity = NSEntityDescription.entityForName("Point", inManagedObjectContext: Stack.sharedStack.managedObjectContext) else { fatalError("Could not find entity description!")}
+        guard let entity = NSEntityDescription.entityForName("Point", inManagedObjectContext: Stack.sharedStack.managedObjectContext) else { fatalError("Could not find points entity description!")}
         
         let defaultPointsArray = PointController.sharedController.defaultPoints
         
+    }
+    
+    func loadFormulasDefaultData() {
+        
+        guard let formulaEntity = NSEntityDescription.entityForName("Formula", inManagedObjectContext: Stack.sharedStack.managedObjectContext) else {fatalError("Could not find formula entity description!")}
+            
+        let cinnamonDecoction = Formula(entity: formulaEntity, insertIntoManagedObjectContext: Stack.sharedStack.managedObjectContext)
+            cinnamonDecoction.pinyinName = "Gui Zhi Tang"
+            cinnamonDecoction.englishName = "Cinnamon Decoction"
+            cinnamonDecoction.uses = "Release Wind Cold"
+        
+        let SixFlavorDecoction = Formula(entity: formulaEntity, insertIntoManagedObjectContext: Stack.sharedStack.managedObjectContext)
+            SixFlavorDecoction.pinyinName = "Liu Wei Di Huang Wan"
+            SixFlavorDecoction.englishName = "6 Flavor Rehmannia Decoction"
+            SixFlavorDecoction.uses = "Tonify Liver & Kidney Yin"
+
+        do { try Stack.sharedStack.managedObjectContext.save()} catch {print("Error with Default Formulas")}
     }
 
     func applicationWillResignActive(application: UIApplication) {

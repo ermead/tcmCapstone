@@ -3,7 +3,10 @@
     <entity name="Channel" representedClassName=".Channel" syncable="YES">
         <relationship name="hasPoints" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Point" inverseName="onChannel" inverseEntity="Point" syncable="YES"/>
     </entity>
-    <entity name="Formula" representedClassName=".Formula" syncable="YES">
+    <entity name="Formula" representedClassName="Formula" syncable="YES">
+        <attribute name="englishName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pinyinName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uses" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="hasContents" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Herb" inverseName="inContents" inverseEntity="Herb" syncable="YES"/>
     </entity>
     <entity name="Herb" representedClassName="Herb" syncable="YES">
@@ -30,9 +33,9 @@
         <relationship name="onChannel" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Channel" inverseName="hasPoints" inverseEntity="Channel" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Formula" positionX="-153" positionY="72" width="128" height="60"/>
+        <element name="Channel" positionX="-144" positionY="90" width="128" height="60"/>
+        <element name="Formula" positionX="-153" positionY="72" width="128" height="105"/>
         <element name="Herb" positionX="-63" positionY="-18" width="128" height="193"/>
         <element name="Point" positionX="-281" positionY="0" width="128" height="180"/>
-        <element name="Channel" positionX="-144" positionY="90" width="128" height="60"/>
     </elements>
 </model>
