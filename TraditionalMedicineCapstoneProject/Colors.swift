@@ -41,6 +41,8 @@ extension UIColor {
     static func blueColorLight() -> UIColor {
         return UIColor(red:0.663,  green:0.851,  blue:0.690, alpha:1)
     }
+    
+   
 
     static func blueColorMedium() -> UIColor {
         return UIColor(red:0.012,  green:0.549,  blue:0.549, alpha:1)    }
@@ -50,7 +52,7 @@ extension UIColor {
     }
 
     static func yellowColorA() -> UIColor {
-        return UIColor(red:0.992,  green:0.859,  blue:0.600, alpha:1)
+        return UIColor(red:0.992,  green:0.859,  blue:0.600, alpha:0.3)
     }
     
     static func greenColorA() -> UIColor {
@@ -62,7 +64,7 @@ extension UIColor {
     }
     
     
-    
+  
     
 
     

@@ -156,6 +156,9 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
+        
         topLeftButton.setTitle("Stress", forState: .Normal)
         topCenterButton.setTitle("Pain", forState: .Normal)
         topRightButton.setTitle("Cold & Flu", forState: .Normal)

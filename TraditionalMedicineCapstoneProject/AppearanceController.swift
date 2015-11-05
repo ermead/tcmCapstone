@@ -46,15 +46,18 @@ class AppearanceController {
         
         //Segmented Controls
         
-        UISegmentedControl.appearance().backgroundColor = white
-        UISegmentedControl.appearance().tintColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
-        UISegmentedControl.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: color3], forState: .Normal)
+        UISegmentedControl.appearance().backgroundColor = color3
+       //UISegmentedControl.appearance().tintColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
+        UISegmentedControl.appearance().tintColor = color1
+        UISegmentedControl.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: white], forState: .Normal)
         UISegmentedControl.appearance().layer.borderColor = color3.CGColor
         UISegmentedControl.appearance().layer.borderWidth = 5
         
         //Pickers
         
-        //UIPickerView.appearance().backgroundColor = UIColor.yellowColor1()
+        UIPickerView.appearance().backgroundColor = color4
+        UIPickerView.appearance().layer.borderWidth = 15
+        UIPickerView.appearance().layer.cornerRadius = 100
         
         //Tab Bar & Bar Buttons
         
