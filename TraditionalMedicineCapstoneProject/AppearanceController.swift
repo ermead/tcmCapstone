@@ -23,6 +23,7 @@ class AppearanceController {
         let color4 = UIColor.yellowColorA()
         let color5 = UIColor.maroonColor1()
         let white = UIColor.whiteColor()
+        let black = UIColor.blackColor()
         
         //Navigation Bar
         UINavigationBar.appearance().barTintColor = color3

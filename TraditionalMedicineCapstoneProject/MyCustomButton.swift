@@ -18,17 +18,21 @@ class MyCustomButton: UIButton {
     
     func updateButtonProperties() {
         
-        var backgroundColor = UIColor.blueColorLight()  
+        var earth = UIColor.YellowEarth()
+        var fire = UIColor.RedFire()
+        var wood = UIColor.GreenWood()
+        var water = UIColor.BlueWater()
+        var metal = UIColor.WhiteMetal()
         
         if self.accessibilityIdentifier == "TopLeftButton" {
             self.layer.cornerRadius = 37.5;
             self.layer.borderColor = UIColor.blueColorDark().CGColor
             self.layer.borderWidth = 1.5
             //self.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
-            self.backgroundColor = backgroundColor
+            self.backgroundColor = wood
             self.tintColor = UIColor.whiteColor()
             //self.setTitleColor(UIColor.blueColorDark(), forState: .Normal)
-            //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+            self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         }
         
         if self.accessibilityIdentifier == "TopCenterButton" {
@@ -36,10 +40,10 @@ class MyCustomButton: UIButton {
             self.layer.borderColor = UIColor.blueColorDark().CGColor
             self.layer.borderWidth = 1.5
             //self.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
-            self.backgroundColor = backgroundColor
+            self.backgroundColor = fire
             self.tintColor = UIColor.whiteColor()
             //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
-            //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+            self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         }
         
         if self.accessibilityIdentifier == "TopRightButton" {
@@ -47,7 +51,7 @@ class MyCustomButton: UIButton {
             self.layer.borderColor = UIColor.blueColorDark().CGColor
             self.layer.borderWidth = 1.5
             //self.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
-            self.backgroundColor = backgroundColor
+            self.backgroundColor = metal
             self.tintColor = UIColor.whiteColor()
             //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
             //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
@@ -58,7 +62,7 @@ class MyCustomButton: UIButton {
             self.layer.borderColor = UIColor.blueColorDark().CGColor
             self.layer.borderWidth = 1.5
             //self.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
-            self.backgroundColor = backgroundColor
+            self.backgroundColor = earth
             self.tintColor = UIColor.whiteColor()
             //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
             //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
@@ -68,20 +72,20 @@ class MyCustomButton: UIButton {
             self.layer.borderColor = UIColor.blueColorDark().CGColor
             self.layer.borderWidth = 1.5
             //self.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
-            self.backgroundColor = backgroundColor
+            self.backgroundColor = water
             self.tintColor = UIColor.whiteColor()
             //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
-            //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+            self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         }
         if self.accessibilityIdentifier == "BottomRightButton" {
             self.layer.cornerRadius = 37.5;
             self.layer.borderColor = UIColor.blueColorDark().CGColor
             self.layer.borderWidth = 1.5
             //self.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
-            self.backgroundColor = backgroundColor
+            self.backgroundColor = water
             self.tintColor = UIColor.whiteColor()
             //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
-            //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+            self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         }
 
     }
