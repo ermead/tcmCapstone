@@ -6,6 +6,7 @@
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--New Entry Table View Controller-->
@@ -409,11 +410,18 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Title" id="buK-LZ-vIB">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="tPo-eU-ezY">
-                            <connections>
-                                <action selector="saveButtonTapped:" destination="ofP-5f-vj4" id="wCX-5R-g5l"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="save" id="tPo-eU-ezY">
+                                <connections>
+                                    <action selector="saveButtonTapped:" destination="ofP-5f-vj4" id="wCX-5R-g5l"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="New" id="hRm-0p-yjx">
+                                <connections>
+                                    <action selector="NewButtonTapped:" destination="ofP-5f-vj4" id="ih9-wH-dy3"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>

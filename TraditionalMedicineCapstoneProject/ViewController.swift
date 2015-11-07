@@ -35,6 +35,10 @@ class ViewController: UIViewController {
             return
         }
     }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
+    }
 
 
 }

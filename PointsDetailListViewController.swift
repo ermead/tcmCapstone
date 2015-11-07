@@ -49,6 +49,7 @@ class PointsDetailListViewController: UIViewController {
         } else {
             
             addNewPointEntry()
+            
         }
         
     }
@@ -144,6 +145,44 @@ class PointsDetailListViewController: UIViewController {
         
         PointController.sharedController.addPoint(point)
         print("well did I?")
+        
+    }
+    
+    
+    @IBAction func NewButtonTapped(sender: UIBarButtonItem) {
+        
+        let commentAlert = UIAlertController(title: "Add Comment", message: nil, preferredStyle: .Alert)
+        
+        commentAlert.addTextFieldWithConfigurationHandler { (textfield) -> Void in
+            textfield.placeholder = "Main Name"
+        }
+        commentAlert.addTextFieldWithConfigurationHandler { (textfield) -> Void in
+            textfield.placeholder = "Botanical Name"
+        }
+        commentAlert.addTextFieldWithConfigurationHandler { (textfield) -> Void in
+            textfield.placeholder = "Other Name"
+        }
+        
+        commentAlert.addAction(UIAlertAction(title: "Add Comment", style: .Default, handler: { (action) -> Void in
+            
+            if let text = commentAlert.textFields?.first?.text {
+                
+                print(text)
+            }
+            
+            for text in commentAlert.textFields!{
+                print(text.text)
+            }
+           
+            }
+            )
+        )
+
+        
+        commentAlert.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: nil))
+        
+        presentViewController(commentAlert, animated: true, completion: nil)
+        
         
     }
     
