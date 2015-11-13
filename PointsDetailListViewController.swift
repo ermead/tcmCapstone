@@ -30,6 +30,10 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     @IBOutlet weak var location: UITextView!
     @IBOutlet weak var indicationsAndUses: UITextView!
     
+    var textFieldPlaceholderZero: String? = ""
+    var textFieldPlaceholderOne: String? = ""
+    var textFieldPlaceholderTwo: String? = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print(" I loaded the index \(index)")
@@ -128,21 +132,23 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     @IBAction func saveButtonTapped(sender: UIBarButtonItem) {
         print("save attempted")
         
-        let saveAlert = UIAlertController(title: "Save?", message: "Where Should I save it?", preferredStyle: .Alert)
-            saveAlert.addAction(UIAlertAction(title: "Save Herb", style: .Default, handler: { (action) -> Void in
+        let saveAlert = UIAlertController(title: "Save this Entry", message: "as...", preferredStyle: .Alert)
+        
+        
+            saveAlert.addAction(UIAlertAction(title: "Herb", style: .Default, handler: { (action) -> Void in
                self.updateHerb()
                 }))
-            saveAlert.addAction(UIAlertAction(title: "Save Formula", style: .Default, handler: { (action) -> Void in
+            saveAlert.addAction(UIAlertAction(title: "Formula", style: .Default, handler: { (action) -> Void in
                self.updateFormula()
                 
             }))
         
-            saveAlert.addAction(UIAlertAction(title: "Save Point", style: .Default, handler: { (action) -> Void in
+            saveAlert.addAction(UIAlertAction(title: "Point", style: .Default, handler: { (action) -> Void in
                self.updatePoint()
             
             }))
         
-            saveAlert.addAction(UIAlertAction(title: "Save Combination", style: .Default, handler: { (action) -> Void in
+            saveAlert.addAction(UIAlertAction(title: "Combination", style: .Default, handler: { (action) -> Void in
                 self.updateChannel()
             
             }))
@@ -187,10 +193,16 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     
     func updateHerb() {
         
-        let pinyinName = indicationsAndUses.text!
-        let englishName = indicationsAndUses.text
+        let pinyinName = topRightLabel.text
+        let botanicalName = ""
+        let englishName = generalDescription.text
+        let category = ""
+        let temp = ""
+        let meridians = ""
+        let uses = ""
+        let majorFormulas = ""
         
-        let newHerb = Herb(pinyinName: pinyinName, botanicalName: "", englishName: englishName, category: "", temp: "", meridians: "", uses: "", majorFormulas: "", context: Stack.sharedStack.managedObjectContext)
+        let newHerb = Herb(pinyinName: pinyinName, botanicalName: botanicalName, englishName: englishName, category: category, temp: temp , meridians: meridians, uses: uses, majorFormulas: majorFormulas, context: Stack.sharedStack.managedObjectContext)
         
         HerbsController.sharedController.addHerb(newHerb)
        
@@ -199,10 +211,16 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     
     func updatePoint() {
         
-        let pinyinName = indicationsAndUses.text!
-        let englishName = indicationsAndUses.text!
+        let pinyinName = topRightLabel.text
+        let englishName = generalDescription.text
+        let pointOnMeridan = ""
+        let specialCategories = ""
+        let locationDescription = location.text
+        let channel = ""
+        let uses = indicationsAndUses.text
+        let imageName = ""
         
-        let point = Point(pinyinName: pinyinName, englishName: englishName, pointOnMeridian: englishName, specialCategories: "", locationDescription: "", channel: "", uses: "", imageName: "", context: Stack.sharedStack.managedObjectContext)
+        let point = Point(pinyinName: pinyinName, englishName: englishName, pointOnMeridian: pointOnMeridan, specialCategories: specialCategories, locationDescription: locationDescription, channel: channel, uses: uses, imageName: imageName, context: Stack.sharedStack.managedObjectContext)
         
         PointController.sharedController.addPoint(point)
         print("I tried to add a point")
@@ -211,10 +229,11 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     
     func updateFormula() {
         
-        let pinyinName = indicationsAndUses.text!
-        let englishName = indicationsAndUses.text
-        
-        let newFormula = Formula(pinyinName: pinyinName, englishName: englishName, uses: "It has these uses", hasContents: [], context: Stack.sharedStack.managedObjectContext)
+        let pinyinName = topRightLabel.text
+        let englishName = generalDescription.text
+        let uses = indicationsAndUses.text
+    
+        let newFormula = Formula(pinyinName: pinyinName, englishName: englishName, uses: uses, hasContents: [], context: Stack.sharedStack.managedObjectContext)
         
         FormulasController.sharedController.addFormula(newFormula)
         print("I tried to add a new Formula")
@@ -222,7 +241,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     
     func updateChannel(){
         
-        let name = indicationsAndUses.text!
+        let name = topRightLabel.text
         let uses = indicationsAndUses.text
         
         let newCombo = Channel(name: name, uses: uses, context: Stack.sharedStack.managedObjectContext)
@@ -233,62 +252,66 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     
     @IBAction func NewButtonTapped(sender: UIBarButtonItem) {
         
-        let commentAlert = UIAlertController(title: "Add Comment", message: nil, preferredStyle: .Alert)
+        let commentAlert = UIAlertController(title: "Add New", message: nil, preferredStyle: .Alert)
         
         commentAlert.addTextFieldWithConfigurationHandler { (textfield) -> Void in
             textfield.placeholder = "Main Name"
         }
         commentAlert.addTextFieldWithConfigurationHandler { (textfield) -> Void in
-            textfield.placeholder = "Botanical Name"
+            textfield.placeholder = "Secondary Name"
         }
         commentAlert.addTextFieldWithConfigurationHandler { (textfield) -> Void in
-            textfield.placeholder = "Other Name"
+            textfield.placeholder = "Other Info"
         }
-        commentAlert.addAction(UIAlertAction(title: "...a New Formula", style: .Default, handler: { (action) -> Void in
+        commentAlert.addAction(UIAlertAction(title: "Herb", style: .Default, handler: { (action) -> Void in
             self.herbsList = true
-            self.singles = false
-            self.setupNewFormulaScene()
+            self.singles = true
+            
             if let textfields = commentAlert.textFields{
-                self.generalDescription.text = textfields[0].text
-                self.locationLabel.text = textfields[1].text
-                self.topRightLabel.text = textfields[2].text
+                self.textFieldPlaceholderZero = textfields[0].text
+                self.textFieldPlaceholderOne = textfields[1].text
+                self.textFieldPlaceholderTwo = textfields[2].text
             }
+            self.setupNewHerbScene()
             }
             ))
 
-        commentAlert.addAction(UIAlertAction(title: "...a New Herb", style: .Default, handler: { (action) -> Void in
+        commentAlert.addAction(UIAlertAction(title: "Formula", style: .Default, handler: { (action) -> Void in
             self.herbsList = true
-            self.singles = true
-            self.setupNewHerbScene()
+            self.singles = false
+           
             if let textfields = commentAlert.textFields{
-                self.generalDescription.text = textfields[0].text
-                self.locationLabel.text = textfields[1].text
-                self.topRightLabel.text = textfields[2].text
+                self.textFieldPlaceholderZero = textfields[0].text
+                self.textFieldPlaceholderOne = textfields[1].text
+                self.textFieldPlaceholderTwo = textfields[2].text
             }
+             self.setupNewHerbScene()
             }
             ))
         
-        commentAlert.addAction(UIAlertAction(title: "...a New Point", style: .Default, handler: { (action) -> Void in
+        commentAlert.addAction(UIAlertAction(title: "Point", style: .Default, handler: { (action) -> Void in
             self.herbsList = false
             self.singles = true
-            self.setupNewPointScene()
+            
             if let textfields = commentAlert.textFields{
-                self.generalDescription.text = textfields[0].text
-                self.locationLabel.text = textfields[1].text
-                self.topRightLabel.text = textfields[2].text
+                self.textFieldPlaceholderZero = textfields[0].text
+                self.textFieldPlaceholderOne = textfields[1].text
+                self.textFieldPlaceholderTwo = textfields[2].text
             }
+            self.setupNewPointScene()
             }
             ))
         
-        commentAlert.addAction(UIAlertAction(title: "...a New Combination", style: .Default, handler: { (action) -> Void in
+        commentAlert.addAction(UIAlertAction(title: "Combination", style: .Default, handler: { (action) -> Void in
             self.herbsList = false
             self.singles = false
-            self.setupNewpointComboScene()
+            
             if let textfields = commentAlert.textFields{
-                self.generalDescription.text = textfields[0].text
-                self.locationLabel.text = textfields[1].text
-                self.topRightLabel.text = textfields[2].text
+                self.textFieldPlaceholderZero = textfields[0].text
+                self.textFieldPlaceholderOne = textfields[1].text
+                self.textFieldPlaceholderTwo = textfields[2].text
             }
+            self.setupNewpointComboScene()
             }
             ))
 
@@ -296,8 +319,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         commentAlert.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: nil))
         
         presentViewController(commentAlert, animated: true, completion: nil)
-        
-        
+      
     }
     
     
@@ -306,6 +328,14 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         self.herbsList = true
         self.singles = false
         self.title = "New Formula"
+        
+        //togglePicOutlet
+        //leftImage.image
+        topRightLabel.text = self.textFieldPlaceholderZero!
+        generalDescription.text = "\(self.textFieldPlaceholderOne!)       \(self.textFieldPlaceholderTwo!)"
+        locationLabel.text = "Preparation and Dosage"
+        location.text = "..."
+        indicationsAndUses.text = "..."
         
         addButtonsToScene()
 
@@ -317,6 +347,14 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         self.singles = true
         self.title = "New Herb"
         
+        //togglePicOutlet
+        //leftImage.image
+        topRightLabel.text = self.textFieldPlaceholderZero!
+        generalDescription.text = "\(self.textFieldPlaceholderOne!)       \(self.textFieldPlaceholderTwo!)"
+        locationLabel.text = "Preparation and Dosage"
+        location.text = "..."
+        indicationsAndUses.text = "..."
+        
         addButtonsToScene()
         
     }
@@ -327,6 +365,14 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         self.singles = true
         self.title = "New Point"
         
+        //togglePicOutlet
+        //leftImage.image
+        topRightLabel.text = self.textFieldPlaceholderZero!
+        generalDescription.text = "\(self.textFieldPlaceholderOne!)       \(self.textFieldPlaceholderTwo!)"
+        locationLabel.text = "Location"
+        location.text = "..."
+        indicationsAndUses.text = "..."
+        
         addButtonsToScene()
     }
     
@@ -335,6 +381,14 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         self.herbsList = false
         self.singles = false
         self.title = "New Point Combination"
+        
+        //togglePicOutlet
+        //leftImage.image
+        topRightLabel.text = self.textFieldPlaceholderZero!
+        generalDescription.text = "\(self.textFieldPlaceholderOne!)       \(self.textFieldPlaceholderTwo!)"
+        locationLabel.text = "General Strategy"
+        location.text = "..."
+        indicationsAndUses.text = "..."
         
         addButtonsToScene()
 
