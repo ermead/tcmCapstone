@@ -6,43 +6,48 @@
 //  Copyright © 2015 Eric Mead. All rights reserved.
 //
 
-import Foundation
+
 import UIKit
 import CoreData
 
-class PointComboController: NSObject {
+class ChannelController: NSObject {
     
-    private let PointComboKey = "pointsCombo"
+    private let ChannelKey = "channelCombo"
     
-    static let sharedController = PointComboController()
+    static let sharedController = ChannelController()
     
-    var defaultPointCombos: [Channel] {
+    var defaultChannels: [Channel] {
         
         let fourFlowers = Channel(name: "Four Flowers", uses: "Exhaustion", context: Stack.sharedStack.managedObjectContext)
+        
+        let fiveFlowers = Channel(name: "Five Flowers", uses: "Exhaustion", context: Stack.sharedStack.managedObjectContext)
+        
+        let sixFlowers = Channel(name: "Six Flowers", uses: "Exhaustion", context: Stack.sharedStack.managedObjectContext)
+        
     
-        return[fourFlowers]
+        return[fourFlowers, fiveFlowers, sixFlowers]
         
     }
     
-    var points: [Point] {
+    var channels: [Channel] {
         
-        let request = NSFetchRequest(entityName: "Point")
+        let request = NSFetchRequest(entityName: "Channel")
         
         do {
-            return try Stack.sharedStack.managedObjectContext.executeFetchRequest(request) as! [Point]
+            return try Stack.sharedStack.managedObjectContext.executeFetchRequest(request) as! [Channel]
             
         } catch {
             return []
         }
     }
     
-    func addPoint(point: Point) {
+    func addCombo(combo: Channel) {
         saveToPersistentStorage()
         print("did I add it?")
     }
     
-    func removePoint( point: Point) {
-        point.managedObjectContext?.deleteObject(point)
+    func removeCombo(combo: Channel) {
+        combo.managedObjectContext?.deleteObject(combo)
         saveToPersistentStorage()
     }
     

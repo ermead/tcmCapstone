@@ -88,12 +88,16 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
         
         if herbsList{
             if singles{
-             return HerbsController.sharedController.herbs.count
+                return HerbsController.sharedController.herbs.count
             } else {
                 return FormulasController.sharedController.formulas.count
             }
         } else {
-            return PointController.sharedController.points.count
+            if singles{
+                return PointController.sharedController.points.count
+            } else {
+                return ChannelController.sharedController.channels.count
+            }
         }
     }
     
@@ -121,9 +125,15 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
                     tableView.reloadData()  
                 }
             } else {
+                if singles{
                 let point = PointController.sharedController.points[indexPath.row]
                 PointController.sharedController.removePoint(point)
                 tableView.reloadData()
+                } else {
+                    let combo = ChannelController.sharedController.channels[indexPath.row]
+                    ChannelController.sharedController.removeCombo(combo)
+                    tableView.reloadData()
+                }
     
             }
         }
@@ -142,8 +152,13 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
             }
            
         } else {
+            if singles{
             cell.textLabel?.text = PointController.sharedController.points[indexPath.row].pointOnMeridian
             cell.detailTextLabel?.text = PointController.sharedController.points[indexPath.row].pinyinName
+            } else {
+                cell.textLabel?.text = ChannelController.sharedController.channels[indexPath.row].name
+                cell.detailTextLabel?.text = ChannelController.sharedController.channels[indexPath.row].uses
+            }
 
         }
         
@@ -189,9 +204,9 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
                     pdlc.herbsList = false
                     pdlc.singles = true
                 } else {
-                    print("the index touched was \(index) and the combination selected was UPDATE \(PointController.sharedController.points[index!].pinyinName)")
+                    print("the index touched was \(index) and the combination selected was \(ChannelController.sharedController.channels[index!].name)")
                     
-                    pdlc.title = PointController.sharedController.points[index!].pointOnMeridian
+                    pdlc.title = ChannelController.sharedController.channels[index!].name
                     pdlc.index = index!
                     pdlc.herbsList = false
                     pdlc.singles = false

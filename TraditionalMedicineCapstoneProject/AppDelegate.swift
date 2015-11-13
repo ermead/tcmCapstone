@@ -52,6 +52,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } catch {
             fatalError("Error fetching data")
         }
+        
+        let fetchRequestDefaultChannels = NSFetchRequest(entityName: "Channel")
+        do {
+            let results = try Stack.sharedStack.managedObjectContext.executeFetchRequest(fetchRequestDefaultChannels)
+            if results.count == 0 {
+                
+                loadChannelsDefaultData()
+            }
+        } catch {
+            fatalError("Error fetching data")
+        }
 
         
         return true
@@ -59,9 +70,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func loadHerbDefaultData() {
         
-        guard let entity = NSEntityDescription.entityForName("Herb", inManagedObjectContext: Stack.sharedStack.managedObjectContext) else { fatalError("Could not find herbs entity description!")}
+        guard let _ = NSEntityDescription.entityForName("Herb", inManagedObjectContext: Stack.sharedStack.managedObjectContext) else { fatalError("Could not find herbs entity description!")}
         
-        let defaultHerbArray = HerbsController.sharedController.defaultHerbs
+        _ = HerbsController.sharedController.defaultHerbs
         
 //        for herb in defaultHerbArray {
 //            
@@ -79,9 +90,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func loadPointsDefaultData() {
         
-        guard let entity = NSEntityDescription.entityForName("Point", inManagedObjectContext: Stack.sharedStack.managedObjectContext) else { fatalError("Could not find points entity description!")}
+        guard let _ = NSEntityDescription.entityForName("Point", inManagedObjectContext: Stack.sharedStack.managedObjectContext) else { fatalError("Could not find points entity description!")}
         
-        let defaultPointsArray = PointController.sharedController.defaultPoints
+        _ = PointController.sharedController.defaultPoints
         
     }
     
@@ -100,6 +111,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             SixFlavorDecoction.uses = "Tonify Liver & Kidney Yin"
 
         do { try Stack.sharedStack.managedObjectContext.save()} catch {print("Error with Default Formulas")}
+    }
+    
+    func loadChannelsDefaultData() {
+        
+        guard let _ = NSEntityDescription.entityForName("Channel", inManagedObjectContext: Stack.sharedStack.managedObjectContext) else { fatalError("Could not find points entity description!")}
+        
+        _ = ChannelController.sharedController.defaultChannels
+        
     }
 
 

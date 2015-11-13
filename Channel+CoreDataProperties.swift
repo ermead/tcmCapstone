@@ -2,7 +2,7 @@
 //  Channel+CoreDataProperties.swift
 //  TraditionalMedicineCapstoneProject
 //
-//  Created by Eric Mead on 11/3/15.
+//  Created by Eric Mead on 11/12/15.
 //  Copyright © 2015 Eric Mead. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -13,7 +13,7 @@ import Foundation
 import CoreData
 
 extension Channel {
-    
+
     @NSManaged var name: String?
     @NSManaged var uses: String?
     @NSManaged var hasPoints: NSSet?

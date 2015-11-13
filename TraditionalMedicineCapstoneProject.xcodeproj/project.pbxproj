@@ -13,7 +13,8 @@
 		D7580B0C1BDD1EB70008789F /* TraditionalMedicineCapstoneProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D7580B0A1BDD1EB70008789F /* TraditionalMedicineCapstoneProject.xcdatamodeld */; };
 		D7580B0E1BDD1EB70008789F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7580B0D1BDD1EB70008789F /* Assets.xcassets */; };
 		D7580B111BDD1EB70008789F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7580B0F1BDD1EB70008789F /* LaunchScreen.storyboard */; };
-		D76D36561BF580CC0003AC43 /* PointComboController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D36551BF580CC0003AC43 /* PointComboController.swift */; settings = {ASSET_TAGS = (); }; };
+		D76D36561BF580CC0003AC43 /* ChannelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D36551BF580CC0003AC43 /* ChannelController.swift */; settings = {ASSET_TAGS = (); }; };
+		D76D365A1BF58BC90003AC43 /* Channel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D36591BF58BC90003AC43 /* Channel+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		D782A4A61BE02A1000E51BAC /* DiagnosticToolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A4A51BE02A1000E51BAC /* DiagnosticToolViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D782A4A81BE03B6A00E51BAC /* DiagnosisDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A4A71BE03B6900E51BAC /* DiagnosisDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D782A5701BE4479700E51BAC /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A56F1BE4479700E51BAC /* Stack.swift */; settings = {ASSET_TAGS = (); }; };
@@ -25,7 +26,6 @@
 		D782A5A61BE907F000E51BAC /* Formula.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5A41BE907F000E51BAC /* Formula.swift */; settings = {ASSET_TAGS = (); }; };
 		D782A5AB1BE9535C00E51BAC /* Point+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5A71BE9535C00E51BAC /* Point+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		D782A5AC1BE9535C00E51BAC /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5A81BE9535C00E51BAC /* Point.swift */; settings = {ASSET_TAGS = (); }; };
-		D782A5AD1BE9535C00E51BAC /* Channel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5A91BE9535C00E51BAC /* Channel+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		D782A5AE1BE9535C00E51BAC /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5AA1BE9535C00E51BAC /* Channel.swift */; settings = {ASSET_TAGS = (); }; };
 		D782A5F31BEA4BE200E51BAC /* FormulasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5F21BEA4BE200E51BAC /* FormulasController.swift */; settings = {ASSET_TAGS = (); }; };
 		D782A5F51BEA4ECF00E51BAC /* Formula+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5F41BEA4ECF00E51BAC /* Formula+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
@@ -46,7 +46,8 @@
 		D7580B0D1BDD1EB70008789F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7580B101BDD1EB70008789F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7580B121BDD1EB70008789F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D76D36551BF580CC0003AC43 /* PointComboController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointComboController.swift; sourceTree = "<group>"; };
+		D76D36551BF580CC0003AC43 /* ChannelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelController.swift; sourceTree = "<group>"; };
+		D76D36591BF58BC90003AC43 /* Channel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Channel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D782A4A51BE02A1000E51BAC /* DiagnosticToolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagnosticToolViewController.swift; sourceTree = "<group>"; };
 		D782A4A71BE03B6900E51BAC /* DiagnosisDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagnosisDetailViewController.swift; sourceTree = "<group>"; };
 		D782A56F1BE4479700E51BAC /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
@@ -58,7 +59,6 @@
 		D782A5A41BE907F000E51BAC /* Formula.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formula.swift; sourceTree = "<group>"; };
 		D782A5A71BE9535C00E51BAC /* Point+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Point+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D782A5A81BE9535C00E51BAC /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
-		D782A5A91BE9535C00E51BAC /* Channel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Channel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D782A5AA1BE9535C00E51BAC /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		D782A5F21BEA4BE200E51BAC /* FormulasController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulasController.swift; sourceTree = "<group>"; };
 		D782A5F41BEA4ECF00E51BAC /* Formula+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Formula+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 			children = (
 				D782A5A71BE9535C00E51BAC /* Point+CoreDataProperties.swift */,
 				D782A5A81BE9535C00E51BAC /* Point.swift */,
-				D782A5A91BE9535C00E51BAC /* Channel+CoreDataProperties.swift */,
+				D76D36591BF58BC90003AC43 /* Channel+CoreDataProperties.swift */,
 				D782A5AA1BE9535C00E51BAC /* Channel.swift */,
 				D782A5F41BEA4ECF00E51BAC /* Formula+CoreDataProperties.swift */,
 				D782A5A41BE907F000E51BAC /* Formula.swift */,
@@ -168,7 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				D7D9EBB91BDDABF400C920AC /* PointController.swift */,
-				D76D36551BF580CC0003AC43 /* PointComboController.swift */,
+				D76D36551BF580CC0003AC43 /* ChannelController.swift */,
 			);
 			name = Points;
 			sourceTree = "<group>";
@@ -244,15 +244,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D782A5F31BEA4BE200E51BAC /* FormulasController.swift in Sources */,
+				D76D365A1BF58BC90003AC43 /* Channel+CoreDataProperties.swift in Sources */,
 				D7D9EBBC1BDDAC2300C920AC /* PointsListViewController.swift in Sources */,
 				D7580B061BDD1EB70008789F /* ViewController.swift in Sources */,
 				D782A57A1BE6827C00E51BAC /* MyCustomButton.swift in Sources */,
-				D782A5AD1BE9535C00E51BAC /* Channel+CoreDataProperties.swift in Sources */,
 				D782A5A11BE849B600E51BAC /* Herb+CoreDataProperties.swift in Sources */,
 				D782A5741BE6667300E51BAC /* Colors.swift in Sources */,
 				D7580B0C1BDD1EB70008789F /* TraditionalMedicineCapstoneProject.xcdatamodeld in Sources */,
 				D782A5F51BEA4ECF00E51BAC /* Formula+CoreDataProperties.swift in Sources */,
-				D76D36561BF580CC0003AC43 /* PointComboController.swift in Sources */,
+				D76D36561BF580CC0003AC43 /* ChannelController.swift in Sources */,
 				D782A5A61BE907F000E51BAC /* Formula.swift in Sources */,
 				D782A5701BE4479700E51BAC /* Stack.swift in Sources */,
 				D782A4A61BE02A1000E51BAC /* DiagnosticToolViewController.swift in Sources */,

@@ -26,13 +26,17 @@ class ViewController: UIViewController {
     
     func deleteCoreData() {
         
-        let fetchRequest = NSFetchRequest(entityName: "Herb")
+        let classObjectsToBeDeleted = ["Herb", "Point", "Formula", "Channel"]
+        
+        for thing in classObjectsToBeDeleted {
+        let fetchRequest = NSFetchRequest(entityName: thing)
         let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
         
         do { try Stack.sharedStack.managedObjectContext.executeRequest(deleteRequest)
-        } catch let error as NSError {
+        } catch _ as NSError {
             print("error deleting batch")
             return
+        }
         }
     }
     

@@ -102,16 +102,25 @@ class PointsDetailListViewController: UIViewController {
             
         } else {
         
-        var point = PointController.sharedController.points[index!]
-        
-        //point = Point(pinyinName: point.pinyinName, englishName: point.englishName, pointOnMeridian: point.pointOnMeridian, specialCategories: point.specialCategories!, channel: point.channel, locationDescription: point.locationDescription, uses: point.uses)
-        
-        topRightLabel.text = point.channel
-        generalDescription.text = ("The point \(point.pinyinName) is located on the \(point.channel) meridian.")
-        location.text = point.locationDescription
-        indicationsAndUses.text = point.uses
+            if singles{
+                var point = PointController.sharedController.points[index!]
+                
+                //point = Point(pinyinName: point.pinyinName, englishName: point.englishName, pointOnMeridian: point.pointOnMeridian, specialCategories: point.specialCategories!, channel: point.channel, locationDescription: point.locationDescription, uses: point.uses)
+                
+                topRightLabel.text = point.channel
+                generalDescription.text = ("The point \(point.pinyinName) is located on the \(point.channel) meridian.")
+                location.text = point.locationDescription
+                indicationsAndUses.text = point.uses
+        } else {
+                var channel = ChannelController.sharedController.channels[index!]
+    
+                topRightLabel.text = channel.name
+                generalDescription.text = ("The channel \(channel.name) is is used for \(channel.uses)")
+                location.text = channel.name
+                indicationsAndUses.text = channel.uses
         }
         
+    }
     }
     
     @IBAction func saveButtonTapped(sender: UIBarButtonItem) {
@@ -123,7 +132,11 @@ class PointsDetailListViewController: UIViewController {
                 updateFormula()
             }
         } else {
+            if singles{
             updatePoint()
+            } else {
+                updateChannel()
+            }
         }
         self.navigationController?.popViewControllerAnimated(true)
         
@@ -177,6 +190,16 @@ class PointsDetailListViewController: UIViewController {
         
         FormulasController.sharedController.addFormula(newFormula)
         print("I tried to add a new Formula")
+    }
+    
+    func updateChannel(){
+        
+        let name = indicationsAndUses.text!
+        let uses = indicationsAndUses.text
+        
+        let newCombo = Channel(name: name, uses: uses, context: Stack.sharedStack.managedObjectContext)
+        ChannelController.sharedController.addCombo(newCombo)
+        
     }
     
     
