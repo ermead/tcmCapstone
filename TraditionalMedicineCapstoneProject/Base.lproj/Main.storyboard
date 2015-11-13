@@ -259,7 +259,7 @@
         <!--Combinations View Controller-->
         <scene sceneID="TsD-Bu-YMu">
             <objects>
-                <viewController storyboardIdentifier="combinations" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Vde-ry-FGg" customClass="CombinationsViewController" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="combination1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Vde-ry-FGg" customClass="CombinationsViewController" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6oC-Yi-qGy"/>
                         <viewControllerLayoutGuide type="bottom" id="Nly-6q-Ati"/>
@@ -273,7 +273,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="idU-AE-zVp">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="idU-AE-zVp" id="1cc-FA-gef">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -295,10 +295,13 @@
                             <constraint firstAttribute="trailing" secondItem="4Kp-he-lq8" secondAttribute="trailing" id="kbp-v7-5in"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="x4d-ET-GMW">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="zx9-ua-eF0"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B4A-ap-D8e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3519" y="-439"/>
+            <point key="canvasLocation" x="4451" y="-439"/>
         </scene>
         <!--HomeScreen-->
         <scene sceneID="tne-QT-ifu">
@@ -878,6 +881,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RFi-rw-qie" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2979" y="580"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JiW-XJ-VMv">
+            <objects>
+                <navigationController storyboardIdentifier="combinations" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ocd-d0-SMa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qSO-cU-OQO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Vde-ry-FGg" kind="relationship" relationship="rootViewController" id="t6s-28-Wsp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Sg-X6-xhq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3562" y="-433"/>
         </scene>
     </scenes>
     <resources>

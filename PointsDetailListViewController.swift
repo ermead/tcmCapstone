@@ -314,7 +314,7 @@ class PointsDetailListViewController: UIViewController {
         
         print("ADD BUTTON TAPPED")
         
-        let cvc = self.storyboard?.instantiateViewControllerWithIdentifier("combinations") as! CombinationsViewController
+        let cvc = self.storyboard?.instantiateViewControllerWithIdentifier("combinations") as! UINavigationController   
         self.presentViewController(cvc, animated: true, completion: nil)
         
     }
