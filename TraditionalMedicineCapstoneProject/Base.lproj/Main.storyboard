@@ -78,6 +78,10 @@
                                     <action selector="SingleOrComboHerbs:" destination="Y54-Jl-QS1" eventType="valueChanged" id="yjI-fZ-EB7"/>
                                 </connections>
                             </segmentedControl>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xpi-4d-A3S">
+                                <rect key="frame" x="-14" y="92" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -117,11 +121,20 @@
                     </navigationItem>
                     <connections>
                         <outlet property="pointsTableViewOutlet" destination="iCn-X0-nUq" id="fOd-qj-XB2"/>
+                        <outlet property="searchDisplayController" destination="mqB-uV-rWH" id="oAv-BL-Fpx"/>
                         <outlet property="singleOrComboHerbsOutlet" destination="K9L-gn-WV8" id="8Vt-XH-tzo"/>
                         <outlet property="singleOrComboPointsOutlet" destination="f5b-yj-VHN" id="uuA-yr-i9V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Drn-bV-y2W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="mqB-uV-rWH">
+                    <connections>
+                        <outlet property="delegate" destination="Y54-Jl-QS1" id="N6g-u6-Its"/>
+                        <outlet property="searchContentsController" destination="Y54-Jl-QS1" id="n0u-AW-Wsw"/>
+                        <outlet property="searchResultsDataSource" destination="Y54-Jl-QS1" id="tv6-Fc-XhX"/>
+                        <outlet property="searchResultsDelegate" destination="Y54-Jl-QS1" id="49R-tZ-WNf"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="1960" y="-439"/>
         </scene>
