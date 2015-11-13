@@ -125,19 +125,45 @@ class PointsDetailListViewController: UIViewController {
     
     @IBAction func saveButtonTapped(sender: UIBarButtonItem) {
         print("save attempted")
-        if herbsList {
-            if singles{
-                updateHerb()
-            } else {
-                updateFormula()
-            }
-        } else {
-            if singles{
-            updatePoint()
-            } else {
-                updateChannel()
-            }
-        }
+        
+        let saveAlert = UIAlertController(title: "Save?", message: "Where Should I save it?", preferredStyle: .Alert)
+            saveAlert.addAction(UIAlertAction(title: "Save Herb", style: .Default, handler: { (action) -> Void in
+               self.updateHerb()
+                }))
+            saveAlert.addAction(UIAlertAction(title: "Save Formula", style: .Default, handler: { (action) -> Void in
+               self.updateFormula()
+                
+            }))
+        
+            saveAlert.addAction(UIAlertAction(title: "Save Point", style: .Default, handler: { (action) -> Void in
+               self.updatePoint()
+            
+            }))
+        
+            saveAlert.addAction(UIAlertAction(title: "Save Combination", style: .Default, handler: { (action) -> Void in
+                self.updateChannel()
+            
+            }))
+        
+            saveAlert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
+            presentViewController(saveAlert, animated: true, completion: nil)
+            
+        
+//        if herbsList {
+//            if singles{
+//                updateHerb()
+//            } else {
+//                updateFormula()
+//            }
+//        } else {
+//            if singles{
+//            updatePoint()
+//            } else {
+//                updateChannel()
+//            }
+//        }
+        
+        
         self.navigationController?.popViewControllerAnimated(true)
         
         
@@ -177,7 +203,7 @@ class PointsDetailListViewController: UIViewController {
         let point = Point(pinyinName: pinyinName, englishName: englishName, pointOnMeridian: englishName, specialCategories: "", locationDescription: "", channel: "", uses: "", imageName: "", context: Stack.sharedStack.managedObjectContext)
         
         PointController.sharedController.addPoint(point)
-        print("well did I?")
+        print("I tried to add a point")
         
     }
     
@@ -199,7 +225,7 @@ class PointsDetailListViewController: UIViewController {
         
         let newCombo = Channel(name: name, uses: uses, context: Stack.sharedStack.managedObjectContext)
         ChannelController.sharedController.addCombo(newCombo)
-        
+        print("I tried to add a new Combo")
     }
     
     
@@ -252,7 +278,7 @@ class PointsDetailListViewController: UIViewController {
             }
             ))
         
-        commentAlert.addAction(UIAlertAction(title: "...a New Point Combination", style: .Default, handler: { (action) -> Void in
+        commentAlert.addAction(UIAlertAction(title: "...a New Combination", style: .Default, handler: { (action) -> Void in
             self.herbsList = false
             self.singles = false
             self.setupNewpointComboScene()
@@ -314,7 +340,7 @@ class PointsDetailListViewController: UIViewController {
         
         print("ADD BUTTON TAPPED")
         
-        let cvc = self.storyboard?.instantiateViewControllerWithIdentifier("combinations") as! UINavigationController   
+        let cvc = self.storyboard?.instantiateViewControllerWithIdentifier("combinations") as! UINavigationController
         self.presentViewController(cvc, animated: true, completion: nil)
         
     }
