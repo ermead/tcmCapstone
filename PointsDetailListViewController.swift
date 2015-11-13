@@ -311,6 +311,13 @@ class PointsDetailListViewController: UIViewController {
         addButton.addTarget(self, action: "addButtonTapped:", forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(addButton)
         
+        let addPhotoButton = UIButton()
+        addPhotoButton.backgroundColor = UIColor.yellowColor()
+        addPhotoButton.frame = CGRect(x: self.view.bounds.size.width/2-100, y: self.view.bounds.size.height/2 , width: 100, height: 50)
+        addPhotoButton.addTarget(self, action: "addPhotoButtonTapped:", forControlEvents: UIControlEvents.TouchUpInside)
+        self.view.addSubview(addPhotoButton)
+
+        
     }
     
     func setupNewHerbScene(){
@@ -339,6 +346,15 @@ class PointsDetailListViewController: UIViewController {
     @IBAction func addButtonTapped(sender: UIButton){
         
         print("ADD BUTTON TAPPED")
+        
+        let cvc = self.storyboard?.instantiateViewControllerWithIdentifier("combinations") as! UINavigationController
+        self.presentViewController(cvc, animated: true, completion: nil)
+        
+    }
+    
+    @IBAction func addPhotoButtonTapped(sender: UIButton){
+        
+        print("ADD PHOTO BUTTON TAPPED")
         
         let cvc = self.storyboard?.instantiateViewControllerWithIdentifier("combinations") as! UINavigationController
         self.presentViewController(cvc, animated: true, completion: nil)
