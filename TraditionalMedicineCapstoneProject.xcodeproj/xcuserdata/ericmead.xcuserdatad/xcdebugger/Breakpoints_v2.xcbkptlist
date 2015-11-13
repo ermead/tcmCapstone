@@ -22,11 +22,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PointsDetailListViewController.swift"
-            timestampString = "468615741.376042"
+            timestampString = "469069700.54855"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "198"
-            endingLineNumber = "198"
+            startingLineNumber = "229"
+            endingLineNumber = "229"
             landmarkName = "PointsDetailListViewController"
             landmarkType = "3">
          </BreakpointContent>

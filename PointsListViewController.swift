@@ -111,9 +111,15 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             if herbsList {
+                if singles{
                 let herb = HerbsController.sharedController.herbs[indexPath.row]
                 HerbsController.sharedController.removeHerb(herb)
                 tableView.reloadData()
+                } else {
+                    let formula = FormulasController.sharedController.formulas[indexPath.row]
+                    FormulasController.sharedController.removeFormula(formula)
+                    tableView.reloadData()  
+                }
             } else {
                 let point = PointController.sharedController.points[indexPath.row]
                 PointController.sharedController.removePoint(point)
@@ -159,9 +165,9 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
                     pdlc.herbsList = true
                     pdlc.singles = true
                 } else {
-                    print("the index touched was \(index) and the formula selected was UPDATE \(HerbsController.sharedController.herbs[index!].pinyinName)")
+                    print("the index touched was \(index) and the formula selected was \(FormulasController.sharedController.formulas[index!].pinyinName)")
                     
-                    pdlc.title = HerbsController.sharedController.herbs[index!].pinyinName
+                    pdlc.title = FormulasController.sharedController.formulas[index!].pinyinName
                     pdlc.index = index!
                     pdlc.herbsList = true
                     pdlc.singles = false

@@ -72,7 +72,7 @@ class PointsDetailListViewController: UIViewController {
     
     func populatePointInfo() {
         if herbsList{
-            
+            if singles{
             var detailHerb = HerbsController.sharedController.herbs[index!]
             
             //detailHerb = Herb(pinyinName: detailHerb.pinyinName, botanicalName: detailHerb.botanicalName, englishName: detailHerb.englishName!, category: detailHerb.category, temp: detailHerb.temp, meridians: detailHerb.meridians, uses: detailHerb.uses, majorFormulas: detailHerb.majorFormulas)
@@ -82,7 +82,23 @@ class PointsDetailListViewController: UIViewController {
             topRightLabel.text = detailHerb.englishName
             locationLabel.text = detailHerb.botanicalName
             location.text = "This herb, named \(detailHerb.pinyinName!), belongs to the category of \(detailHerb.category!). Having a \(detailHerb.temp!) temperature, it travels along the \(detailHerb.meridians!) channels."
-            indicationsAndUses.text = detailHerb.uses
+                indicationsAndUses.text = detailHerb.uses
+            }
+            else {
+                //FORMULA
+                var detailHerb = FormulasController.sharedController.formulas[index!]
+                print(detailHerb.pinyinName)
+                print(detailHerb.englishName)
+                print(detailHerb.uses)
+               // generalDescription.text = ("\(detailHerb.pinyinName!) is used for \(detailHerb.uses!).")
+                
+                topRightLabel.text = detailHerb.englishName
+                locationLabel.text = detailHerb.pinyinName
+                location.text = "This formula, contains how many and what herbs?"
+                indicationsAndUses.text = detailHerb.uses
+                
+            }
+            
             
         } else {
         
@@ -101,7 +117,11 @@ class PointsDetailListViewController: UIViewController {
     @IBAction func saveButtonTapped(sender: UIBarButtonItem) {
         print("save attempted")
         if herbsList {
-            updateHerb()
+            if singles{
+                updateHerb()
+            } else {
+                updateFormula()
+            }
         } else {
             updatePoint()
         }
@@ -146,6 +166,17 @@ class PointsDetailListViewController: UIViewController {
         PointController.sharedController.addPoint(point)
         print("well did I?")
         
+    }
+    
+    func updateFormula() {
+        
+        let pinyinName = indicationsAndUses.text!
+        let englishName = indicationsAndUses.text
+        
+        let newFormula = Formula(pinyinName: pinyinName, englishName: englishName, uses: "It has these uses", hasContents: [], context: Stack.sharedStack.managedObjectContext)
+        
+        FormulasController.sharedController.addFormula(newFormula)
+    
     }
     
     
