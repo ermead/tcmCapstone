@@ -296,7 +296,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="x4d-ET-GMW">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="zx9-ua-eF0"/>
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="zx9-ua-eF0">
+                            <connections>
+                                <action selector="BackButtonTapped:" destination="Vde-ry-FGg" id="R6h-GD-jvf"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B4A-ap-D8e" userLabel="First Responder" sceneMemberID="firstResponder"/>
