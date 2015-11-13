@@ -307,6 +307,41 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         self.singles = false
         self.title = "New Formula"
         
+        addButtonsToScene()
+
+    }
+    
+    func setupNewHerbScene(){
+        print("setting up new Herb Scene")
+        self.herbsList = true
+        self.singles = true
+        self.title = "New Herb"
+        
+        addButtonsToScene()
+        
+    }
+    
+    func setupNewPointScene(){
+        print("setting up new Point Scene")
+        self.herbsList = false
+        self.singles = true
+        self.title = "New Point"
+        
+        addButtonsToScene()
+    }
+    
+    func setupNewpointComboScene(){
+        print("setting up new Point Combination Scene")
+        self.herbsList = false
+        self.singles = false
+        self.title = "New Point Combination"
+        
+        addButtonsToScene()
+
+    }
+    
+    func addButtonsToScene(){
+        
         let addButton = UIButton()
         addButton.backgroundColor = UIColor.blueColor()
         addButton.frame = CGRect(x: self.view.bounds.size.width/2+75, y: self.view.bounds.size.height/2-90 , width: 100, height: 50)
@@ -319,31 +354,6 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         addPhotoButton.frame = CGRect(x: self.view.bounds.size.width/2-25, y: self.view.bounds.size.height/2-90 , width: 100, height: 50)
         addPhotoButton.addTarget(self, action: "addPhotoButtonTapped:", forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(addPhotoButton)
-
-        
-    }
-    
-    func setupNewHerbScene(){
-        print("setting up new Herb Scene")
-        self.herbsList = true
-        self.singles = true
-        self.title = "New Herb"
-    }
-    
-    func setupNewPointScene(){
-        print("setting up new Point Scene")
-        self.herbsList = false
-        self.singles = true
-        self.title = "New Point"
-    }
-    
-    func setupNewpointComboScene(){
-        print("setting up new Point Combination Scene")
-        self.herbsList = false
-        self.singles = false
-        self.title = "New Point Combination"
-
-        
     }
     
     @IBAction func addButtonTapped(sender: UIButton){
