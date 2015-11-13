@@ -30,13 +30,14 @@ class CombinationsViewController: UIViewController, UITableViewDataSource, UITab
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
-        cell.textLabel?.text = "test"
+        cell.textLabel?.text = HerbsController.sharedController.herbs[indexPath.row].pinyinName
+        cell.detailTextLabel?.text = HerbsController.sharedController.herbs[indexPath.row].englishName
         return cell
         
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return HerbsController.sharedController.herbs.count
     }
 
     /*

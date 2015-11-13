@@ -8,10 +8,12 @@
 
 import UIKit
 
-class PointsDetailListViewController: UIViewController {
+class PointsDetailListViewController: UIViewController,  UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     var herb: Herb?
     var point: Point?
+    
+    var photos = [AnyObject]()
     
     var herbsList: Bool = true
     var singles: Bool = true
@@ -304,16 +306,17 @@ class PointsDetailListViewController: UIViewController {
         self.herbsList = true
         self.singles = false
         self.title = "New Formula"
+        
         let addButton = UIButton()
         addButton.backgroundColor = UIColor.blueColor()
-        addButton.frame = CGRect(x: self.view.bounds.size.width/2, y: self.view.bounds.size.height/2 , width: 100, height: 50)
+        addButton.frame = CGRect(x: self.view.bounds.size.width/2+75, y: self.view.bounds.size.height/2-90 , width: 100, height: 50)
         addButton.titleLabel!.text = "Add Button"
         addButton.addTarget(self, action: "addButtonTapped:", forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(addButton)
         
         let addPhotoButton = UIButton()
         addPhotoButton.backgroundColor = UIColor.yellowColor()
-        addPhotoButton.frame = CGRect(x: self.view.bounds.size.width/2-100, y: self.view.bounds.size.height/2 , width: 100, height: 50)
+        addPhotoButton.frame = CGRect(x: self.view.bounds.size.width/2-25, y: self.view.bounds.size.height/2-90 , width: 100, height: 50)
         addPhotoButton.addTarget(self, action: "addPhotoButtonTapped:", forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(addPhotoButton)
 
@@ -353,13 +356,50 @@ class PointsDetailListViewController: UIViewController {
     }
     
     @IBAction func addPhotoButtonTapped(sender: UIButton){
+       
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
         
-        print("ADD PHOTO BUTTON TAPPED")
+        let photoChoiceAlert = UIAlertController(title: "Select Photo Location", message: nil, preferredStyle: .ActionSheet)
         
-        let cvc = self.storyboard?.instantiateViewControllerWithIdentifier("combinations") as! UINavigationController
-        self.presentViewController(cvc, animated: true, completion: nil)
+        if UIImagePickerController.isSourceTypeAvailable(.PhotoLibrary) {
+            photoChoiceAlert.addAction(UIAlertAction(title: "Photo Library", style: .Default, handler: { (_) -> Void in
+                imagePicker.sourceType = .PhotoLibrary
+                
+                self.presentViewController(imagePicker, animated: true, completion: nil)
+            }))
+        }
+        
+        if UIImagePickerController.isSourceTypeAvailable(.Camera) {
+            
+            photoChoiceAlert.addAction(UIAlertAction(title: "Camera", style: .Default, handler: { (_) -> Void in
+                imagePicker.sourceType = .Camera
+                
+                self.presentViewController(imagePicker, animated: true, completion: nil)
+            }))
+            
+        }
+        
+        photoChoiceAlert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
+        
+        self.presentViewController(photoChoiceAlert, animated: true, completion: nil)
+
         
     }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        
+        picker.dismissViewControllerAnimated(true, completion: nil)
+        if firstPicVisible{
+            leftImage.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        }else {
+            rightImage.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        }
+    }
+
+    
+    
+   
     
     
 
