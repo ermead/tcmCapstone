@@ -216,6 +216,30 @@ class PointsDetailListViewController: UIViewController {
             }
             }
             ))
+        
+        commentAlert.addAction(UIAlertAction(title: "...a New Point", style: .Default, handler: { (action) -> Void in
+            self.herbsList = false
+            self.singles = true
+            self.setupNewPointScene()
+            if let textfields = commentAlert.textFields{
+                self.generalDescription.text = textfields[0].text
+                self.locationLabel.text = textfields[1].text
+                self.topRightLabel.text = textfields[2].text
+            }
+            }
+            ))
+        
+        commentAlert.addAction(UIAlertAction(title: "...a New Point Combination", style: .Default, handler: { (action) -> Void in
+            self.herbsList = false
+            self.singles = false
+            self.setupNewpointComboScene()
+            if let textfields = commentAlert.textFields{
+                self.generalDescription.text = textfields[0].text
+                self.locationLabel.text = textfields[1].text
+                self.topRightLabel.text = textfields[2].text
+            }
+            }
+            ))
 
         
         commentAlert.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: nil))
@@ -228,14 +252,35 @@ class PointsDetailListViewController: UIViewController {
     
     func setupNewFormulaScene(){
         print("setting up new Formula Scene")
+        self.herbsList = true
+        self.singles = false
         self.title = "New Formula"
         
     }
     
     func setupNewHerbScene(){
         print("setting up new Herb Scene")
+        self.herbsList = true
+        self.singles = true
         self.title = "New Herb"
     }
+    
+    func setupNewPointScene(){
+        print("setting up new Point Scene")
+        self.herbsList = false
+        self.singles = true
+        self.title = "New Point"
+    }
+    
+    func setupNewpointComboScene(){
+        print("setting up new Point Combination Scene")
+        self.herbsList = false
+        self.singles = false
+        self.title = "New Point Combination"
+
+        
+    }
+    
     
 
     /*
