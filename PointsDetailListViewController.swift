@@ -176,7 +176,7 @@ class PointsDetailListViewController: UIViewController {
         let newFormula = Formula(pinyinName: pinyinName, englishName: englishName, uses: "It has these uses", hasContents: [], context: Stack.sharedStack.managedObjectContext)
         
         FormulasController.sharedController.addFormula(newFormula)
-    
+        print("I tried to add a new Formula")
     }
     
     
@@ -193,21 +193,29 @@ class PointsDetailListViewController: UIViewController {
         commentAlert.addTextFieldWithConfigurationHandler { (textfield) -> Void in
             textfield.placeholder = "Other Name"
         }
-        
-        commentAlert.addAction(UIAlertAction(title: "Add Comment", style: .Default, handler: { (action) -> Void in
-            
-            if let text = commentAlert.textFields?.first?.text {
-                
-                print(text)
+        commentAlert.addAction(UIAlertAction(title: "...a New Formula", style: .Default, handler: { (action) -> Void in
+            self.herbsList = true
+            self.singles = false
+            self.setupNewFormulaScene()
+            if let textfields = commentAlert.textFields{
+                self.generalDescription.text = textfields[0].text
+                self.locationLabel.text = textfields[1].text
+                self.topRightLabel.text = textfields[2].text
             }
-            
-            for text in commentAlert.textFields!{
-                print(text.text)
             }
-           
+            ))
+
+        commentAlert.addAction(UIAlertAction(title: "...a New Herb", style: .Default, handler: { (action) -> Void in
+            self.herbsList = true
+            self.singles = true
+            self.setupNewHerbScene()
+            if let textfields = commentAlert.textFields{
+                self.generalDescription.text = textfields[0].text
+                self.locationLabel.text = textfields[1].text
+                self.topRightLabel.text = textfields[2].text
             }
-            )
-        )
+            }
+            ))
 
         
         commentAlert.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: nil))
@@ -218,9 +226,15 @@ class PointsDetailListViewController: UIViewController {
     }
     
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func setupNewFormulaScene(){
+        print("setting up new Formula Scene")
+        self.title = "New Formula"
+        
+    }
+    
+    func setupNewHerbScene(){
+        print("setting up new Herb Scene")
+        self.title = "New Herb"
     }
     
 
