@@ -37,7 +37,7 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
     var pickerViewDataSource: [String] {
         if upDateLabelControl == 0 {
             // 10 Acute disorders
-            return ["Insomnia", "Cold", "Flu", "Upset Stomach", "Traumatic Injury", "Headache", "Constipation", "Ear Ache", "", ""]
+            return ["Insomnia", "Cold", "Flu", "Upset Stomach", "Traumatic Injury", "Headache", "Bowels", "Ear Ache", "Burns", ""]
         } else if upDateLabelControl == 1 {
             //10 Chronic Disorders
             return ["Fibromyalgia", "Low Back Pain", "Depression", "Insomnia", "Chronic Inflammation", "Migraines", "Irritable Bowel Syndrome ", "High Blood Pressure", "Cancer Support Therapy", ""]
@@ -167,6 +167,7 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
         bottomRightButton.setTitle("Deficiency", forState: .Normal)
         upDateLabels()
         findInfoOnOutlet.hidden = true
+        findInfoOnOutlet.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         self.pickerView.delegate = self
         self.pickerView.dataSource = self
         topLeftButton.updateButtonProperties()

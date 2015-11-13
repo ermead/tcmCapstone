@@ -59,6 +59,7 @@ class AppearanceController {
         UIPickerView.appearance().backgroundColor = color4
         UIPickerView.appearance().layer.borderWidth = 15
         UIPickerView.appearance().layer.cornerRadius = 100
+        UIPickerView.appearance().tintColor = white
         
         //Tab Bar & Bar Buttons
         
