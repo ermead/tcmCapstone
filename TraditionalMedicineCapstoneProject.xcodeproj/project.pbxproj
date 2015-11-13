@@ -16,6 +16,7 @@
 		D76D36561BF580CC0003AC43 /* ChannelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D36551BF580CC0003AC43 /* ChannelController.swift */; settings = {ASSET_TAGS = (); }; };
 		D76D365A1BF58BC90003AC43 /* Channel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D36591BF58BC90003AC43 /* Channel+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		D76D365E1BF599980003AC43 /* CombinationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D365D1BF599980003AC43 /* CombinationsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D76D36601BF5B16A0003AC43 /* CombinationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D365F1BF5B16A0003AC43 /* CombinationsTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		D782A4A61BE02A1000E51BAC /* DiagnosticToolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A4A51BE02A1000E51BAC /* DiagnosticToolViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D782A4A81BE03B6A00E51BAC /* DiagnosisDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A4A71BE03B6900E51BAC /* DiagnosisDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D782A5701BE4479700E51BAC /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A56F1BE4479700E51BAC /* Stack.swift */; settings = {ASSET_TAGS = (); }; };
@@ -48,6 +49,7 @@
 		D76D36551BF580CC0003AC43 /* ChannelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelController.swift; sourceTree = "<group>"; };
 		D76D36591BF58BC90003AC43 /* Channel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Channel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D76D365D1BF599980003AC43 /* CombinationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinationsViewController.swift; sourceTree = "<group>"; };
+		D76D365F1BF5B16A0003AC43 /* CombinationsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinationsTableViewCell.swift; sourceTree = "<group>"; };
 		D782A4A51BE02A1000E51BAC /* DiagnosticToolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagnosticToolViewController.swift; sourceTree = "<group>"; };
 		D782A4A71BE03B6900E51BAC /* DiagnosisDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagnosisDetailViewController.swift; sourceTree = "<group>"; };
 		D782A56F1BE4479700E51BAC /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				D7580B071BDD1EB70008789F /* Main.storyboard */,
+				D76D365F1BF5B16A0003AC43 /* CombinationsTableViewCell.swift */,
 				D76D365D1BF599980003AC43 /* CombinationsViewController.swift */,
 				D7D9EBBD1BDDAC3600C920AC /* PointsDetailListViewController.swift */,
 				D7D9EBBB1BDDAC2300C920AC /* PointsListViewController.swift */,
@@ -246,6 +249,7 @@
 				D7580B061BDD1EB70008789F /* ViewController.swift in Sources */,
 				D782A57A1BE6827C00E51BAC /* MyCustomButton.swift in Sources */,
 				D782A5A11BE849B600E51BAC /* Herb+CoreDataProperties.swift in Sources */,
+				D76D36601BF5B16A0003AC43 /* CombinationsTableViewCell.swift in Sources */,
 				D782A5741BE6667300E51BAC /* Colors.swift in Sources */,
 				D7580B0C1BDD1EB70008789F /* TraditionalMedicineCapstoneProject.xcdatamodeld in Sources */,
 				D782A5F51BEA4ECF00E51BAC /* Formula+CoreDataProperties.swift in Sources */,
