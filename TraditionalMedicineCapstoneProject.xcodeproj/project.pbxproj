@@ -15,6 +15,7 @@
 		D7580B111BDD1EB70008789F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7580B0F1BDD1EB70008789F /* LaunchScreen.storyboard */; };
 		D76D36561BF580CC0003AC43 /* ChannelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D36551BF580CC0003AC43 /* ChannelController.swift */; settings = {ASSET_TAGS = (); }; };
 		D76D365A1BF58BC90003AC43 /* Channel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D36591BF58BC90003AC43 /* Channel+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		D76D365E1BF599980003AC43 /* CombinationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D365D1BF599980003AC43 /* CombinationsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D782A4A61BE02A1000E51BAC /* DiagnosticToolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A4A51BE02A1000E51BAC /* DiagnosticToolViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D782A4A81BE03B6A00E51BAC /* DiagnosisDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A4A71BE03B6900E51BAC /* DiagnosisDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D782A5701BE4479700E51BAC /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A56F1BE4479700E51BAC /* Stack.swift */; settings = {ASSET_TAGS = (); }; };
@@ -29,8 +30,6 @@
 		D782A5AE1BE9535C00E51BAC /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5AA1BE9535C00E51BAC /* Channel.swift */; settings = {ASSET_TAGS = (); }; };
 		D782A5F31BEA4BE200E51BAC /* FormulasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5F21BEA4BE200E51BAC /* FormulasController.swift */; settings = {ASSET_TAGS = (); }; };
 		D782A5F51BEA4ECF00E51BAC /* Formula+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5F41BEA4ECF00E51BAC /* Formula+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
-		D782A5F91BEA526C00E51BAC /* NewEntryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5F81BEA526C00E51BAC /* NewEntryTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		D782A5FB1BEA541A00E51BAC /* CombinationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5FA1BEA541A00E51BAC /* CombinationsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D7D9EBB11BDD8A6500C920AC /* HerbsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBB01BDD8A6500C920AC /* HerbsController.swift */; settings = {ASSET_TAGS = (); }; };
 		D7D9EBBA1BDDABF400C920AC /* PointController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBB91BDDABF400C920AC /* PointController.swift */; settings = {ASSET_TAGS = (); }; };
 		D7D9EBBC1BDDAC2300C920AC /* PointsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBBB1BDDAC2300C920AC /* PointsListViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -48,6 +47,7 @@
 		D7580B121BDD1EB70008789F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D76D36551BF580CC0003AC43 /* ChannelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelController.swift; sourceTree = "<group>"; };
 		D76D36591BF58BC90003AC43 /* Channel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Channel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D76D365D1BF599980003AC43 /* CombinationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinationsViewController.swift; sourceTree = "<group>"; };
 		D782A4A51BE02A1000E51BAC /* DiagnosticToolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagnosticToolViewController.swift; sourceTree = "<group>"; };
 		D782A4A71BE03B6900E51BAC /* DiagnosisDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagnosisDetailViewController.swift; sourceTree = "<group>"; };
 		D782A56F1BE4479700E51BAC /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
@@ -62,8 +62,6 @@
 		D782A5AA1BE9535C00E51BAC /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		D782A5F21BEA4BE200E51BAC /* FormulasController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulasController.swift; sourceTree = "<group>"; };
 		D782A5F41BEA4ECF00E51BAC /* Formula+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Formula+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		D782A5F81BEA526C00E51BAC /* NewEntryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewEntryTableViewController.swift; sourceTree = "<group>"; };
-		D782A5FA1BEA541A00E51BAC /* CombinationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinationsTableViewController.swift; sourceTree = "<group>"; };
 		D7D9EBB01BDD8A6500C920AC /* HerbsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HerbsController.swift; sourceTree = "<group>"; };
 		D7D9EBB91BDDABF400C920AC /* PointController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointController.swift; sourceTree = "<group>"; };
 		D7D9EBBB1BDDAC2300C920AC /* PointsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PointsListViewController.swift; path = ../PointsListViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +99,8 @@
 		D7580B021BDD1EB70008789F /* TraditionalMedicineCapstoneProject */ = {
 			isa = PBXGroup;
 			children = (
+				D7580B071BDD1EB70008789F /* Main.storyboard */,
+				D76D365D1BF599980003AC43 /* CombinationsViewController.swift */,
 				D7D9EBBD1BDDAC3600C920AC /* PointsDetailListViewController.swift */,
 				D7D9EBBB1BDDAC2300C920AC /* PointsListViewController.swift */,
 				D7580B031BDD1EB70008789F /* AppDelegate.swift */,
@@ -108,9 +108,6 @@
 				D7D9EBB61BDDA4F800C920AC /* Herbs */,
 				D7D9EBBF1BDDAC4300C920AC /* Points */,
 				D782A59D1BE822D200E51BAC /* Diagnostics */,
-				D7580B071BDD1EB70008789F /* Main.storyboard */,
-				D782A5FA1BEA541A00E51BAC /* CombinationsTableViewController.swift */,
-				D782A5F81BEA526C00E51BAC /* NewEntryTableViewController.swift */,
 				D782A59E1BE8386000E51BAC /* Customization */,
 				D782A56F1BE4479700E51BAC /* Stack.swift */,
 				D7580B0D1BDD1EB70008789F /* Assets.xcassets */,
@@ -257,9 +254,8 @@
 				D782A5701BE4479700E51BAC /* Stack.swift in Sources */,
 				D782A4A61BE02A1000E51BAC /* DiagnosticToolViewController.swift in Sources */,
 				D782A5A21BE849B600E51BAC /* Herb.swift in Sources */,
-				D782A5FB1BEA541A00E51BAC /* CombinationsTableViewController.swift in Sources */,
 				D782A5AE1BE9535C00E51BAC /* Channel.swift in Sources */,
-				D782A5F91BEA526C00E51BAC /* NewEntryTableViewController.swift in Sources */,
+				D76D365E1BF599980003AC43 /* CombinationsViewController.swift in Sources */,
 				D782A5AB1BE9535C00E51BAC /* Point+CoreDataProperties.swift in Sources */,
 				D7580B041BDD1EB70008789F /* AppDelegate.swift in Sources */,
 				D782A4A81BE03B6A00E51BAC /* DiagnosisDetailViewController.swift in Sources */,

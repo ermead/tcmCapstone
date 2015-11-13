@@ -278,6 +278,12 @@ class PointsDetailListViewController: UIViewController {
         self.herbsList = true
         self.singles = false
         self.title = "New Formula"
+        let addButton = UIButton()
+        addButton.backgroundColor = UIColor.blueColor()
+        addButton.frame = CGRect(x: self.view.bounds.size.width/2, y: self.view.bounds.size.height/2 , width: 100, height: 50)
+        addButton.titleLabel!.text = "Add Button"
+        addButton.addTarget(self, action: "addButtonTapped:", forControlEvents: UIControlEvents.TouchUpInside)
+        self.view.addSubview(addButton)
         
     }
     
@@ -301,6 +307,15 @@ class PointsDetailListViewController: UIViewController {
         self.singles = false
         self.title = "New Point Combination"
 
+        
+    }
+    
+    @IBAction func addButtonTapped(sender: UIButton){
+        
+        print("ADD BUTTON TAPPED")
+        
+        let cvc = self.storyboard?.instantiateViewControllerWithIdentifier("combinations") as! CombinationsViewController
+        self.presentViewController(cvc, animated: true, completion: nil)
         
     }
     
