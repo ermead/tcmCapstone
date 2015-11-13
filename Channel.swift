@@ -9,8 +9,20 @@
 import Foundation
 import CoreData
 
+@objc(Channel)
 class Channel: NSManagedObject {
-
-// Insert code here to add functionality to your managed object subclass
+        
+        // Insert code here to add functionality to your managed object subclass
+        
+    convenience init(name: String? = "", uses: String? = "" ,context: NSManagedObjectContext = Stack.sharedStack.managedObjectContext) {
+            
+            let entity = NSEntityDescription.entityForName("Channel", inManagedObjectContext: context)
+            
+            self.init(entity: entity!, insertIntoManagedObjectContext: context)
+            
+            self.name = name
+            self.uses = uses
+            
+    }
 
 }

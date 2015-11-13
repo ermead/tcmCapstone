@@ -13,7 +13,9 @@ import Foundation
 import CoreData
 
 extension Channel {
-
+    
+    @NSManaged var name: String?
+    @NSManaged var uses: String?
     @NSManaged var hasPoints: NSSet?
 
 }
