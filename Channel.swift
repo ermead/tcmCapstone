@@ -14,7 +14,7 @@ class Channel: NSManagedObject {
         
         // Insert code here to add functionality to your managed object subclass
         
-    convenience init(name: String? = "", uses: String? = "" ,context: NSManagedObjectContext = Stack.sharedStack.managedObjectContext) {
+    convenience init(name: String? = "", uses: String? = "" , imageId1: String? = "", imageId2: String? = "",context: NSManagedObjectContext = Stack.sharedStack.managedObjectContext) {
             
             let entity = NSEntityDescription.entityForName("Channel", inManagedObjectContext: context)
             
@@ -22,7 +22,9 @@ class Channel: NSManagedObject {
             
             self.name = name
             self.uses = uses
-            
+            self.imageId1 = imageId1
+            self.imageId2 = imageId2
+        
     }
 
 }

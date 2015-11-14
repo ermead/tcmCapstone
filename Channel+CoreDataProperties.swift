@@ -16,6 +16,8 @@ extension Channel {
 
     @NSManaged var name: String?
     @NSManaged var uses: String?
+    @NSManaged var imageId1: String?
+    @NSManaged var imageId2: String?
     @NSManaged var hasPoints: NSSet?
 
 }

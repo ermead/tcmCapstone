@@ -127,6 +127,12 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                 generalDescription.text = ("The channel \(channel.name) is is used for \(channel.uses)")
                 location.text = channel.name
                 indicationsAndUses.text = channel.uses
+                ImageController.imageForImageId(channel.imageId1!, completion: { (image) -> Void in
+                    self.leftImage.image = image
+                })
+                ImageController.imageForImageId(channel.imageId2!, completion: { (image) -> Void in
+                    self.rightImage.image = image
+                })
         }
         
     }
@@ -244,7 +250,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         let name = topRightLabel.text
         let uses = indicationsAndUses.text
         
-        let newCombo = Channel(name: name, uses: uses, context: Stack.sharedStack.managedObjectContext)
+        let newCombo = Channel(name: name, uses: uses, imageId1: placeholderLeftImageId, imageId2: placeholderRightImageId, context: Stack.sharedStack.managedObjectContext)
         ChannelController.sharedController.addCombo(newCombo)
         print("I tried to add a new Combo")
     }
