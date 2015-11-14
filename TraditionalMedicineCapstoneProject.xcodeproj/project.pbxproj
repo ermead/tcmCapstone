@@ -84,7 +84,7 @@
 		D7580AF71BDD1EB70008789F = {
 			isa = PBXGroup;
 			children = (
-				D782A5CD1BE95AC300E51BAC /* CoreData */,
+				D7580B071BDD1EB70008789F /* Main.storyboard */,
 				D7580B021BDD1EB70008789F /* TraditionalMedicineCapstoneProject */,
 				D7580B011BDD1EB70008789F /* Products */,
 			);
@@ -101,17 +101,17 @@
 		D7580B021BDD1EB70008789F /* TraditionalMedicineCapstoneProject */ = {
 			isa = PBXGroup;
 			children = (
-				D7580B071BDD1EB70008789F /* Main.storyboard */,
 				D76D365F1BF5B16A0003AC43 /* CombinationsTableViewCell.swift */,
 				D76D365D1BF599980003AC43 /* CombinationsViewController.swift */,
 				D7D9EBBD1BDDAC3600C920AC /* PointsDetailListViewController.swift */,
 				D7D9EBBB1BDDAC2300C920AC /* PointsListViewController.swift */,
-				D7580B031BDD1EB70008789F /* AppDelegate.swift */,
 				D7580B051BDD1EB70008789F /* ViewController.swift */,
 				D7D9EBB61BDDA4F800C920AC /* Herbs */,
 				D7D9EBBF1BDDAC4300C920AC /* Points */,
 				D782A59D1BE822D200E51BAC /* Diagnostics */,
 				D782A59E1BE8386000E51BAC /* Customization */,
+				D782A5CD1BE95AC300E51BAC /* CoreData */,
+				D7580B031BDD1EB70008789F /* AppDelegate.swift */,
 				D782A56F1BE4479700E51BAC /* Stack.swift */,
 				D7580B0D1BDD1EB70008789F /* Assets.xcassets */,
 				D7580B0F1BDD1EB70008789F /* LaunchScreen.storyboard */,
@@ -153,6 +153,7 @@
 				D782A5A01BE849B600E51BAC /* Herb.swift */,
 			);
 			name = CoreData;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		D7D9EBB61BDDA4F800C920AC /* Herbs */ = {
@@ -280,6 +281,7 @@
 				D7580B081BDD1EB70008789F /* Base */,
 			);
 			name = Main.storyboard;
+			path = TraditionalMedicineCapstoneProject;
 			sourceTree = "<group>";
 		};
 		D7580B0F1BDD1EB70008789F /* LaunchScreen.storyboard */ = {
