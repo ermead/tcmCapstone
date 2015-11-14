@@ -12,7 +12,7 @@ import CoreData
 @objc(Formula)
 class Formula: NSManagedObject {
 
-    convenience init(pinyinName: String? = "", englishName: String? = "", uses: String? = "", hasContents: NSSet?, context: NSManagedObjectContext = Stack.sharedStack.managedObjectContext){
+    convenience init(pinyinName: String? = "", englishName: String? = "", uses: String? = "", hasContents: NSSet?, imageId1: String? = "", imageId2: String? = "", context: NSManagedObjectContext = Stack.sharedStack.managedObjectContext){
         
         let entity = NSEntityDescription.entityForName("Formula", inManagedObjectContext: context)
         
@@ -20,6 +20,8 @@ class Formula: NSManagedObject {
         
         self.pinyinName = pinyinName
         self.englishName = englishName
+        self.imageId1 = imageId1
+        self.imageId2 = imageId2
         
     }
 

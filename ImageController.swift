@@ -21,11 +21,11 @@ class ImageController {
     }
     
     static func imageForImageId(imageId: String, completion: (image: UIImage?) -> Void) {
-        
-        if let imageId = imageId as? String {
+       
+            if let imageId = imageId as? String {
+                let image = UIImage(base64: imageId)
+                completion(image: image)
             
-            let image = UIImage(base64: imageId)
-            completion(image: image)
         }
         
         

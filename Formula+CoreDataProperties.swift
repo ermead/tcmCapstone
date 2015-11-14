@@ -18,5 +18,7 @@ extension Formula {
     @NSManaged var englishName: String?
     @NSManaged var uses: String?
     @NSManaged var hasContents: NSSet?
+    @NSManaged var imageId1: String?
+    @NSManaged var imageId2: String?
 
 }

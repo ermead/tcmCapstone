@@ -92,6 +92,15 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             locationLabel.text = detailHerb.botanicalName
             location.text = "This herb, named \(detailHerb.pinyinName!), belongs to the category of \(detailHerb.category!). Having a \(detailHerb.temp!) temperature, it travels along the \(detailHerb.meridians!) channels."
                 indicationsAndUses.text = detailHerb.uses
+                
+                if detailHerb.imageId1 != nil {
+                ImageController.imageForImageId(detailHerb.imageId1!, completion: { (image) -> Void in
+                    self.leftImage.image = image
+                })}
+                if detailHerb.imageId2 != nil {
+                ImageController.imageForImageId(detailHerb.imageId2!, completion: { (image) -> Void in
+                    self.rightImage.image = image
+                })}
             }
             else {
                 //FORMULA
@@ -105,6 +114,15 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                 locationLabel.text = detailHerb.pinyinName
                 location.text = "This formula, contains how many and what herbs?"
                 indicationsAndUses.text = detailHerb.uses
+                
+                if detailHerb.imageId1 != nil {
+                ImageController.imageForImageId(detailHerb.imageId1!, completion: { (image) -> Void in
+                    self.leftImage.image = image
+                })}
+                if detailHerb.imageId2 != nil {
+                ImageController.imageForImageId(detailHerb.imageId2!, completion: { (image) -> Void in
+                    self.rightImage.image = image
+                })}
                 
             }
             
@@ -120,6 +138,16 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                 generalDescription.text = ("The point \(point.pinyinName) is located on the \(point.channel) meridian.")
                 location.text = point.locationDescription
                 indicationsAndUses.text = point.uses
+                
+                if point.imageId1 != nil {
+                ImageController.imageForImageId(point.imageId1!, completion: { (image) -> Void in
+                    self.leftImage.image = image
+                })}
+                if point.imageId2 != nil {
+                ImageController.imageForImageId(point.imageId2!, completion: { (image) -> Void in
+                    self.rightImage.image = image
+                })}
+                
         } else {
                 var channel = ChannelController.sharedController.channels[index!]
     
@@ -127,12 +155,15 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                 generalDescription.text = ("The channel \(channel.name) is is used for \(channel.uses)")
                 location.text = channel.name
                 indicationsAndUses.text = channel.uses
+                
+                if channel.imageId1 != nil {
                 ImageController.imageForImageId(channel.imageId1!, completion: { (image) -> Void in
                     self.leftImage.image = image
-                })
+                })}
+                if channel.imageId2 != nil {
                 ImageController.imageForImageId(channel.imageId2!, completion: { (image) -> Void in
                     self.rightImage.image = image
-                })
+                })}
         }
         
     }
@@ -208,7 +239,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         let uses = ""
         let majorFormulas = ""
         
-        let newHerb = Herb(pinyinName: pinyinName, botanicalName: botanicalName, englishName: englishName, category: category, temp: temp , meridians: meridians, uses: uses, majorFormulas: majorFormulas, context: Stack.sharedStack.managedObjectContext)
+        let newHerb = Herb(pinyinName: pinyinName, botanicalName: botanicalName, englishName: englishName, category: category, temp: temp , meridians: meridians, uses: uses, majorFormulas: majorFormulas, imageId1: placeholderLeftImageId, imageId2: placeholderRightImageId, context: Stack.sharedStack.managedObjectContext)
         
         HerbsController.sharedController.addHerb(newHerb)
        
@@ -226,7 +257,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         let uses = indicationsAndUses.text
         let imageName = ""
         
-        let point = Point(pinyinName: pinyinName, englishName: englishName, pointOnMeridian: pointOnMeridan, specialCategories: specialCategories, locationDescription: locationDescription, channel: channel, uses: uses, imageName: imageName, context: Stack.sharedStack.managedObjectContext)
+        let point = Point(pinyinName: pinyinName, englishName: englishName, pointOnMeridian: pointOnMeridan, specialCategories: specialCategories, locationDescription: locationDescription, channel: channel, uses: uses, imageName: imageName, imageId1: placeholderLeftImageId, imageId2: placeholderRightImageId, context: Stack.sharedStack.managedObjectContext)
         
         PointController.sharedController.addPoint(point)
         print("I tried to add a point")
@@ -239,7 +270,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         let englishName = generalDescription.text
         let uses = indicationsAndUses.text
     
-        let newFormula = Formula(pinyinName: pinyinName, englishName: englishName, uses: uses, hasContents: [], context: Stack.sharedStack.managedObjectContext)
+        let newFormula = Formula(pinyinName: pinyinName, englishName: englishName, uses: uses, hasContents: [], imageId1: placeholderLeftImageId, imageId2: placeholderRightImageId, context: Stack.sharedStack.managedObjectContext)
         
         FormulasController.sharedController.addFormula(newFormula)
         print("I tried to add a new Formula")

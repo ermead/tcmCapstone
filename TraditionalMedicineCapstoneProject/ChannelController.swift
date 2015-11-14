@@ -18,11 +18,11 @@ class ChannelController: NSObject {
     
     var defaultChannels: [Channel] {
         
-        let fourFlowers = Channel(name: "Four Flowers", uses: "Exhaustion", imageId1: "", imageId2: "", context: Stack.sharedStack.managedObjectContext)
+        let fourFlowers = Channel(name: "Four Flowers", uses: "Exhaustion", imageId1: nil, imageId2: nil, context: Stack.sharedStack.managedObjectContext)
         
-        let fiveFlowers = Channel(name: "Five Flowers", uses: "Exhaustion", imageId1: "", imageId2: "", context: Stack.sharedStack.managedObjectContext)
+        let fiveFlowers = Channel(name: "Five Flowers", uses: "Exhaustion", imageId1: nil, imageId2: nil, context: Stack.sharedStack.managedObjectContext)
         
-        let sixFlowers = Channel(name: "Six Flowers", uses: "Exhaustion", imageId1: "", imageId2: "", context: Stack.sharedStack.managedObjectContext)
+        let sixFlowers = Channel(name: "Six Flowers", uses: "Exhaustion", imageId1: nil, imageId2: nil, context: Stack.sharedStack.managedObjectContext)
         
     
         return[fourFlowers, fiveFlowers, sixFlowers]

@@ -9,6 +9,8 @@
     </entity>
     <entity name="Formula" representedClassName="Formula" syncable="YES">
         <attribute name="englishName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageId1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageId2" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="pinyinName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="uses" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="hasContents" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Herb" inverseName="inContents" inverseEntity="Herb" syncable="YES"/>
@@ -17,6 +19,8 @@
         <attribute name="botanicalName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="englishName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageId1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageId2" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="imageName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="majorFormulas" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="meridians" optional="YES" attributeType="String" syncable="YES"/>
@@ -28,6 +32,8 @@
     <entity name="Point" representedClassName="Point" syncable="YES">
         <attribute name="channel" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="englishName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageId1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageId2" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="imageName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="locationDescription" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="pinyinName" optional="YES" attributeType="String" syncable="YES"/>
@@ -38,8 +44,8 @@
     </entity>
     <elements>
         <element name="Channel" positionX="-144" positionY="90" width="128" height="120"/>
-        <element name="Formula" positionX="-153" positionY="72" width="128" height="105"/>
-        <element name="Herb" positionX="-63" positionY="-18" width="128" height="193"/>
-        <element name="Point" positionX="-281" positionY="0" width="128" height="180"/>
+        <element name="Formula" positionX="-153" positionY="72" width="128" height="135"/>
+        <element name="Herb" positionX="-63" positionY="-18" width="128" height="225"/>
+        <element name="Point" positionX="-281" positionY="0" width="128" height="210"/>
     </elements>
 </model>

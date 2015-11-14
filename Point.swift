@@ -14,7 +14,7 @@ class Point: NSManagedObject {
 
 // Insert code here to add functionality to your managed object subclass
 
-    convenience init(pinyinName: String? = "", englishName: String? = "", pointOnMeridian: String? = "", specialCategories: String? = "", locationDescription: String? = "", channel: String? = "", uses: String? = "", imageName: String? = "", context: NSManagedObjectContext = Stack.sharedStack.managedObjectContext) {
+    convenience init(pinyinName: String? = "", englishName: String? = "", pointOnMeridian: String? = "", specialCategories: String? = "", locationDescription: String? = "", channel: String? = "", uses: String? = "", imageName: String? = "", imageId1: String? = "", imageId2: String? = "", context: NSManagedObjectContext = Stack.sharedStack.managedObjectContext) {
         
         let entity = NSEntityDescription.entityForName("Point", inManagedObjectContext: context)
         
@@ -28,6 +28,8 @@ class Point: NSManagedObject {
         self.channel = channel
         self.uses = uses
         self.imageName = imageName
+        self.imageId1 = imageId1
+        self.imageId2 = imageId2
         
     }
     

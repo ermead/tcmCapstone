@@ -104,11 +104,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             cinnamonDecoction.pinyinName = "Gui Zhi Tang"
             cinnamonDecoction.englishName = "Cinnamon Decoction"
             cinnamonDecoction.uses = "Release Wind Cold"
+            cinnamonDecoction.imageId1 = nil
+            cinnamonDecoction.imageId2 = nil
         
         let SixFlavorDecoction = Formula(entity: formulaEntity, insertIntoManagedObjectContext: Stack.sharedStack.managedObjectContext)
             SixFlavorDecoction.pinyinName = "Liu Wei Di Huang Wan"
             SixFlavorDecoction.englishName = "6 Flavor Rehmannia Decoction"
             SixFlavorDecoction.uses = "Tonify Liver & Kidney Yin"
+            SixFlavorDecoction.imageId1 = nil
+            SixFlavorDecoction.imageId2 = nil
 
         do { try Stack.sharedStack.managedObjectContext.save()} catch {print("Error with Default Formulas")}
     }
