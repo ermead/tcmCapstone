@@ -34,6 +34,9 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     var textFieldPlaceholderOne: String? = ""
     var textFieldPlaceholderTwo: String? = ""
     
+    var placeholderLeftImageId: String = ""
+    var placeholderRightImageId: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print(" I loaded the index \(index)")
@@ -156,21 +159,18 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             saveAlert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
             presentViewController(saveAlert, animated: true, completion: nil)
             
-        
-//        if herbsList {
-//            if singles{
-//                updateHerb()
-//            } else {
-//                updateFormula()
-//            }
-//        } else {
-//            if singles{
-//            updatePoint()
-//            } else {
-//                updateChannel()
-//            }
-//        }
-        
+            ImageController.getImageIdFromPhoto(leftImage.image!) { (imageId) -> Void in
+                
+                if let imageId = imageId {
+                    self.placeholderLeftImageId = imageId
+                }
+            }
+            ImageController.getImageIdFromPhoto(rightImage.image!) { (imageId) -> Void in
+            
+            if let imageId = imageId {
+                self.placeholderRightImageId = imageId
+            }
+            }
         
         self.navigationController?.popViewControllerAnimated(true)
         
