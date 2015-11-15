@@ -36,6 +36,10 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
     var chronicQuickArray = [String]()
     var longevityQuickArray = [String]()
     
+    var acuteButtonArray = [String]()
+    var chronicButtonArray = [String]()
+    var longevityButtonArray = [String]()
+    
     @IBOutlet weak var chooseACommonLabel: UILabel!
     
     var pickerViewDataSource: [String] {
@@ -53,7 +57,7 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
     
     @IBAction func topLeftNavigationButton(sender: UIBarButtonItem) {
         
-        self.presentSettingsActionSheet()
+        self.presentQuickOrButtons()
     }
     
     @IBAction func FindInfoButtonPressed(sender: UIButton) {
@@ -252,27 +256,55 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
     }
 
    
+    func presentQuickOrButtons(){
+        
+        let commentAlert = UIAlertController(title: "Customize Your Settings", message: "do you want to customize your buttons or quick picks?", preferredStyle: .Alert)
+        commentAlert.addAction(UIAlertAction(title: "Buttons", style: .Default, handler: { (action) -> Void in
+            self.presentSettingsActionSheet("Buttons")
+        }))
+        commentAlert.addAction(UIAlertAction(title: "Quick Picks", style: .Default, handler: { (action) -> Void in
+            self.presentSettingsActionSheet("Quick Picker")
+        }))
+        
+        presentViewController(commentAlert, animated: true, completion: nil)
+    }
     
-    func presentSettingsActionSheet(){
+    
+    func presentSettingsActionSheet(kind: String){
+        
+        
         
         let commentAlert = UIAlertController(title: "Customize Your Settings", message: nil, preferredStyle: .Alert)
        
         
-        commentAlert.addAction(UIAlertAction(title: "Acute Quick Picker", style: .Default, handler: { (action) ->
+        commentAlert.addAction(UIAlertAction(title: "Acute \(kind)", style: .Default, handler: { (action) ->
            Void in
+            if kind == "Quick Picker"{
             self.presentQuickPickerSettings(self.acuteQuickArray)
+            } else {
+            self.presentQuickPickerSettings(self.acuteButtonArray)
+            }
             
         }))
         
-        commentAlert.addAction(UIAlertAction(title: "Chronic Quick Picker", style: .Default, handler: { (action) ->
+        commentAlert.addAction(UIAlertAction(title: "Chronic \(kind)", style: .Default, handler: { (action) ->
             Void in
+            if kind == "Quick Picker"{
             self.presentQuickPickerSettings(self.chronicQuickArray)
+            } else {
+            self.presentQuickPickerSettings(self.chronicButtonArray)
+            }
+        
             
         }))
         
-        commentAlert.addAction(UIAlertAction(title: "Longevity Quick Picker", style: .Default, handler: { (action) ->
+        commentAlert.addAction(UIAlertAction(title: "Longevity \(kind)", style: .Default, handler: { (action) ->
             Void in
+            if kind == "Quick Picker" {
             self.presentQuickPickerSettings(self.longevityQuickArray)
+            } else {
+            self.presentQuickPickerSettings(self.longevityButtonArray)
+            }
             
         }))
         commentAlert.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: nil))
@@ -284,20 +316,41 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
     func presentQuickPickerSettings(kind: [String]){
     
         var kind = kind
+        var title = ""
         var kindString = ""
+        var isQuick: Bool = true
         
-        if kind == self.acuteQuickArray  {
+        if kind == self.acuteQuickArray {
+            title = "Quick Picker Settings"
             kindString = "Acute Disorders"
+            isQuick = true
         } else if kind == self.chronicQuickArray {
+            title = "Quick Picker Settings"
             kindString = "Chronic Disorders"
+            isQuick = true
         } else if kind == self.longevityQuickArray {
+            title = "Quick Picker Settings"
             kindString = "Longevity Disorders"
+            isQuick = true
+            
+        } else if kind == self.acuteButtonArray{
+            title = "Button Settings"
+            kindString = "Acute Disorders"
+            isQuick = false
+        } else if kind == self.chronicButtonArray{
+            title = "Button Settings"
+            kindString = "Chronic Disorders"
+            isQuick = false
+        } else if kind == self.longevityButtonArray{
+            title = "Button Settings"
+            kindString = "Chronic Disorders"
+            isQuick = false
         } else {
             print("quick picker changed?")
         }
 
         
-        let commentAlert2 = UIAlertController(title: "Quick Picker Settings", message: "\(kindString)", preferredStyle: .Alert)
+        let commentAlert2 = UIAlertController(title: "\(title)", message: "\(kindString)", preferredStyle: .Alert)
         
        
         
@@ -319,6 +372,7 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
         commentAlert2.addTextFieldWithConfigurationHandler { (textField) -> Void in
             textField.text = kind[5]
         }
+        if isQuick == true {
         commentAlert2.addTextFieldWithConfigurationHandler { (textField) -> Void in
             textField.text = kind[6]
         }
@@ -331,7 +385,7 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
         commentAlert2.addTextFieldWithConfigurationHandler { (textField) -> Void in
             textField.text = kind[9]
         }
-        
+        }
         commentAlert2.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: nil))
         
         commentAlert2.addAction(UIAlertAction(title: "Save?", style: .Default, handler: { (action) -> Void in
@@ -347,15 +401,21 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
                         }
                     }
                     
-                    if kind == self.acuteQuickArray  {
-                    self.acuteQuickArray = newArray
+                if kind == self.acuteQuickArray  {
+                        self.acuteQuickArray = newArray
 //                        self.acuteQuickArray.append("test")
 //                        self.acuteQuickArray.append("test")
 //                        self.acuteQuickArray.append("test")
                 } else if kind == self.chronicQuickArray {
-                    self.chronicQuickArray = newArray
-                    } else if kind == self.longevityQuickArray {
-                    self.longevityQuickArray = newArray
+                        self.chronicQuickArray = newArray
+                } else if kind == self.longevityQuickArray {
+                        self.longevityQuickArray = newArray
+                } else if kind == self.acuteButtonArray {
+                        self.acuteButtonArray = newArray
+                } else if kind == self.chronicButtonArray {
+                        self.chronicButtonArray = newArray
+                } else if kind == self.longevityButtonArray{
+                        self.longevityButtonArray = newArray
                 } else {
                     print("quick picker changed?")
                     }
