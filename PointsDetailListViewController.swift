@@ -217,7 +217,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         print("adding new point")
         leftImage.image = UIImage(named: "default")
         rightImage.image = UIImage(named: "default2")
-        topRightLabel.text = ""
+        topRightLabel.text = "Name"
         topRightLabel.backgroundColor = newFieldsColor
         generalDescription.text = ""
         generalDescription.backgroundColor = newFieldsColor
@@ -434,16 +434,23 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     func addButtonsToScene(){
         
         let addButton = UIButton()
-        addButton.backgroundColor = UIColor.blueColor()
         addButton.frame = CGRect(x: self.view.bounds.size.width/2+75, y: self.view.bounds.size.height/2-90 , width: 100, height: 50)
-        addButton.titleLabel!.text = "Add Button"
+        addButton.setTitle("add Action", forState: .Normal)
+        addButton.titleLabel?.font = UIFont.systemFontOfSize(CGFloat(12))
         addButton.addTarget(self, action: "addButtonTapped:", forControlEvents: UIControlEvents.TouchUpInside)
+        addButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        addButton.layer.cornerRadius = CGFloat(5)
+        addButton.backgroundColor = UIColor.blueColorDark()
         self.view.addSubview(addButton)
         
         let addPhotoButton = UIButton()
-        addPhotoButton.backgroundColor = UIColor.yellowColor()
         addPhotoButton.frame = CGRect(x: self.view.bounds.size.width/2-25, y: self.view.bounds.size.height/2-90 , width: 100, height: 50)
+        addPhotoButton.setTitle("add photo", forState: .Normal)
+        addPhotoButton.titleLabel?.font = UIFont.systemFontOfSize(CGFloat(12))
         addPhotoButton.addTarget(self, action: "addPhotoButtonTapped:", forControlEvents: UIControlEvents.TouchUpInside)
+        addPhotoButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        addPhotoButton.layer.cornerRadius = CGFloat(5)
+        addPhotoButton.backgroundColor = UIColor.blueColorDark()
         self.view.addSubview(addPhotoButton)
     }
     
