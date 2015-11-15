@@ -19,9 +19,12 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
     @IBOutlet weak var singleOrComboHerbsOutlet: UISegmentedControl!
     @IBOutlet weak var singleOrComboPointsOutlet: UISegmentedControl!
     
+    @IBOutlet weak var buttonStackOutlet: UIStackView!
+    
     @IBAction func BackToHomeTapped(sender: UIBarButtonItem) {
-        
-       // self.navigationController?.popToRootViewControllerAnimated(true)
+        print("button1")
+        buttonStackOutlet.hidden = false
+       self.navigationController?.popToRootViewControllerAnimated(true)
     }
     
     @IBAction func SingleOrComboPoints(sender: UISegmentedControl) {
@@ -73,6 +76,8 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         singleOrComboHerbsOutlet.hidden = true
+        
+        buttonStackOutlet.hidden = true
         
         if herbsList == true {
             print("displaying herb list")

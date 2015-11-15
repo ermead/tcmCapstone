@@ -63,7 +63,7 @@
                                 </connections>
                             </tableView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="f5b-yj-VHN">
-                                <rect key="frame" x="201.5" y="64" width="197" height="29"/>
+                                <rect key="frame" x="201" y="64" width="197" height="29"/>
                                 <segments>
                                     <segment title="Single Point"/>
                                     <segment title="Combinations"/>
@@ -73,7 +73,7 @@
                                 </connections>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="K9L-gn-WV8">
-                                <rect key="frame" x="207.5" y="64" width="185" height="29"/>
+                                <rect key="frame" x="207" y="64" width="185" height="29"/>
                                 <segments>
                                     <segment title="Single Herbs"/>
                                     <segment title="Formulas"/>
@@ -86,18 +86,111 @@
                                 <rect key="frame" x="-14" y="92" width="600" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gMo-4a-bvC">
+                                <rect key="frame" x="0.0" y="135" width="600" height="24"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="R9h-K4-EIj">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="12"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZg-Qg-OBh">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="12"/>
+                                                <color key="backgroundColor" red="1" green="0.91764705879999997" blue="0.18039215689999999" alpha="1" colorSpace="deviceRGB"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CfB-6Q-hcN">
+                                                <rect key="frame" x="150" y="0.0" width="150" height="12"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6o2-6b-5gR">
+                                                <rect key="frame" x="300" y="0.0" width="150" height="12"/>
+                                                <color key="backgroundColor" red="0.61960784310000006" green="0.0" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZH5-Xh-tJ4">
+                                                <rect key="frame" x="450" y="0.0" width="150" height="12"/>
+                                                <color key="backgroundColor" red="0.0" green="0.41776315790000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="12" id="icg-qZ-hEs"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZmY-Ev-wJ3">
+                                        <rect key="frame" x="0.0" y="12" width="600" height="12"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gqt-Rz-jTo">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="12"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLi-tS-PJo">
+                                                <rect key="frame" x="150" y="0.0" width="150" height="12"/>
+                                                <color key="backgroundColor" red="0.61960784310000006" green="0.0" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nrh-tj-hZp">
+                                                <rect key="frame" x="300" y="0.0" width="150" height="12"/>
+                                                <color key="backgroundColor" red="0.0" green="0.44407894739999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7H8-sr-lom">
+                                                <rect key="frame" x="450" y="0.0" width="150" height="12"/>
+                                                <color key="backgroundColor" red="1" green="0.91764705879999997" blue="0.18039215689999999" alpha="1" colorSpace="deviceRGB"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="gMo-4a-bvC" secondAttribute="trailing" constant="-20" id="0bj-V2-s1w"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gMo-4a-bvC" secondAttribute="trailing" id="3Tg-Ls-lb1"/>
                             <constraint firstItem="f5b-yj-VHN" firstAttribute="centerX" secondItem="7WJ-X1-b3I" secondAttribute="centerX" id="88w-uO-fqx"/>
+                            <constraint firstItem="gMo-4a-bvC" firstAttribute="leading" secondItem="7WJ-X1-b3I" secondAttribute="leadingMargin" constant="-20" id="8J3-M6-v4l"/>
+                            <constraint firstAttribute="trailing" secondItem="gMo-4a-bvC" secondAttribute="trailing" id="8qX-Ss-Gfc"/>
                             <constraint firstItem="F9l-PF-cgA" firstAttribute="top" secondItem="iCn-X0-nUq" secondAttribute="bottom" id="Ic9-db-qqv"/>
+                            <constraint firstItem="gMo-4a-bvC" firstAttribute="leading" secondItem="7WJ-X1-b3I" secondAttribute="leadingMargin" constant="20" id="M6J-WS-fhM"/>
+                            <constraint firstItem="gMo-4a-bvC" firstAttribute="leading" secondItem="7WJ-X1-b3I" secondAttribute="leading" id="Ndc-Qt-XSL"/>
+                            <constraint firstItem="gMo-4a-bvC" firstAttribute="leading" secondItem="7WJ-X1-b3I" secondAttribute="leadingMargin" id="RDx-GP-Uv4"/>
                             <constraint firstItem="f5b-yj-VHN" firstAttribute="baseline" secondItem="K9L-gn-WV8" secondAttribute="baseline" id="UjV-qK-mln"/>
                             <constraint firstAttribute="trailingMargin" secondItem="iCn-X0-nUq" secondAttribute="trailing" constant="-20" id="ZHP-KQ-pj9"/>
                             <constraint firstItem="K9L-gn-WV8" firstAttribute="centerX" secondItem="7WJ-X1-b3I" secondAttribute="centerX" id="ZY2-dW-rGE"/>
                             <constraint firstItem="f5b-yj-VHN" firstAttribute="top" secondItem="6Po-3q-dwo" secondAttribute="bottom" id="eSv-oh-5jT"/>
                             <constraint firstItem="iCn-X0-nUq" firstAttribute="leading" secondItem="7WJ-X1-b3I" secondAttribute="leading" id="pba-yB-huU"/>
                             <constraint firstItem="iCn-X0-nUq" firstAttribute="top" secondItem="6Po-3q-dwo" secondAttribute="bottom" id="sRO-Lc-dLe"/>
+                            <constraint firstItem="gMo-4a-bvC" firstAttribute="top" secondItem="K9L-gn-WV8" secondAttribute="bottom" constant="43" id="v27-YW-L3B"/>
+                            <constraint firstItem="gMo-4a-bvC" firstAttribute="top" secondItem="K9L-gn-WV8" secondAttribute="bottom" constant="158" id="zaL-OM-dhq"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3Tg-Ls-lb1"/>
+                                <exclude reference="8qX-Ss-Gfc"/>
+                                <exclude reference="M6J-WS-fhM"/>
+                                <exclude reference="Ndc-Qt-XSL"/>
+                                <exclude reference="RDx-GP-Uv4"/>
+                                <exclude reference="zaL-OM-dhq"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="gqs-du-kG9">
                         <nil key="title"/>
@@ -124,6 +217,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="buttonStackOutlet" destination="gMo-4a-bvC" id="r9H-8H-5PK"/>
                         <outlet property="pointsTableViewOutlet" destination="iCn-X0-nUq" id="fOd-qj-XB2"/>
                         <outlet property="searchDisplayController" destination="mqB-uV-rWH" id="oAv-BL-Fpx"/>
                         <outlet property="singleOrComboHerbsOutlet" destination="K9L-gn-WV8" id="8Vt-XH-tzo"/>
