@@ -596,13 +596,20 @@
                                     <action selector="FindInfoButtonPressed:" destination="9Zw-A7-Dch" eventType="touchUpInside" id="SSw-LD-7GP"/>
                                 </connections>
                             </button>
+                            <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Obb-JQ-usZ">
+                                <rect key="frame" x="-1" y="265" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="QLS-E0-kBe" firstAttribute="top" secondItem="jkX-Xr-Ga6" secondAttribute="bottom" id="1NG-Ga-2on"/>
                             <constraint firstItem="yDa-4a-TUl" firstAttribute="top" secondItem="QJc-6r-1j8" secondAttribute="bottom" constant="29" id="26f-Xk-gGH"/>
+                            <constraint firstItem="Obb-JQ-usZ" firstAttribute="leading" secondItem="5xS-Q5-pjE" secondAttribute="leadingMargin" constant="20" id="3Ks-zm-VDz"/>
                             <constraint firstItem="dyK-GU-z6b" firstAttribute="top" secondItem="QLS-E0-kBe" secondAttribute="bottom" constant="7" id="Cu8-Jx-kG5"/>
                             <constraint firstItem="yDa-4a-TUl" firstAttribute="centerX" secondItem="5xS-Q5-pjE" secondAttribute="centerX" id="HEU-3K-r5c"/>
+                            <constraint firstItem="Obb-JQ-usZ" firstAttribute="centerX" secondItem="5xS-Q5-pjE" secondAttribute="centerX" id="IN0-Yc-6PY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Obb-JQ-usZ" secondAttribute="trailing" constant="20" id="K0H-qp-SzH"/>
                             <constraint firstItem="Asf-pX-bWZ" firstAttribute="top" secondItem="jkX-Xr-Ga6" secondAttribute="bottom" constant="55" id="KGy-nV-Pu0"/>
                             <constraint firstItem="Asf-pX-bWZ" firstAttribute="trailing" secondItem="osO-KU-Cgp" secondAttribute="trailing" id="O3h-wP-SO5"/>
                             <constraint firstItem="tE6-ig-Srr" firstAttribute="leading" secondItem="5xS-Q5-pjE" secondAttribute="leadingMargin" constant="40" id="Og7-CQ-pJF"/>
@@ -623,8 +630,10 @@
                             <constraint firstAttribute="leadingMargin" secondItem="tE6-ig-Srr" secondAttribute="leading" id="bhB-7a-em9"/>
                             <constraint firstItem="54k-I5-WUb" firstAttribute="top" secondItem="osO-KU-Cgp" secondAttribute="top" id="cPk-QT-UDd"/>
                             <constraint firstItem="osO-KU-Cgp" firstAttribute="baseline" secondItem="54k-I5-WUb" secondAttribute="firstBaseline" id="cWs-4T-zKF"/>
+                            <constraint firstItem="Obb-JQ-usZ" firstAttribute="top" secondItem="yDa-4a-TUl" secondAttribute="bottom" constant="9" id="fTV-MK-n06"/>
                             <constraint firstItem="54k-I5-WUb" firstAttribute="trailing" secondItem="5xS-Q5-pjE" secondAttribute="trailingMargin" id="hQB-Ex-o7O"/>
                             <constraint firstItem="QJc-6r-1j8" firstAttribute="top" secondItem="dyK-GU-z6b" secondAttribute="bottom" constant="8" id="i2o-uJ-KQg"/>
+                            <constraint firstItem="ZJY-or-nxv" firstAttribute="top" secondItem="Obb-JQ-usZ" secondAttribute="bottom" id="jBQ-bx-wA7"/>
                             <constraint firstItem="54k-I5-WUb" firstAttribute="leading" secondItem="g52-8M-Z2L" secondAttribute="leading" id="jze-D8-GPu"/>
                             <constraint firstItem="QLS-E0-kBe" firstAttribute="centerX" secondItem="5xS-Q5-pjE" secondAttribute="centerX" id="n6C-qZ-797"/>
                             <constraint firstItem="QJc-6r-1j8" firstAttribute="centerX" secondItem="5xS-Q5-pjE" secondAttribute="centerX" id="saf-jy-ZQc"/>
@@ -635,6 +644,7 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="jBQ-bx-wA7"/>
                                 <exclude reference="Og7-CQ-pJF"/>
                             </mask>
                         </variation>

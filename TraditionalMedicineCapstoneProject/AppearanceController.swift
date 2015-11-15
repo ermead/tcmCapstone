@@ -27,6 +27,7 @@ class AppearanceController {
         
         //Navigation Bar
         UINavigationBar.appearance().barTintColor = color3
+        UINavigationBar.appearance().tintColor = white
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : white]
         
         //UIButton.appearanceWhenContainedInInstancesOfClasses([UINavigationBar.self]).backgroundColor = UIColor.blueColorDark()
