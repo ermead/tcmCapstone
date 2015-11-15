@@ -10,7 +10,7 @@ import Foundation
 
 
 class HerbSets {
-
+    
     static let sharedController = HerbSets()
     
     var HerbSet = HerbSetType.ReleaseWindCold
@@ -24,17 +24,17 @@ class HerbSets {
         case ReleaseWindHeat
         
     }
-
+    
     func getHerbSet(thisSetType: HerbSetType) -> [Herb]{
         //self.thisHerbSetType = thisSetType
         self.HerbSet = thisSetType
         print("this herb set I am trying to load is \(HerbSet)")
         return setHerbSet()
     }
-
     
     
-   
+    
+    
     
     func setHerbSet()->[Herb]{
         
@@ -54,7 +54,7 @@ class HerbSets {
         case .ReleaseWindCold:
             
             return [cinnamon, ginseng, dangGui]
-        
+            
             
         case .ReleaseWindHeat:
             
@@ -64,3 +64,5 @@ class HerbSets {
     }
     
 }
+
+

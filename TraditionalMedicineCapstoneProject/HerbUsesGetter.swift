@@ -32,24 +32,19 @@ class HerbUses: NSObject {
         case .BaiZhu    : self.use = baizhuUse
         default : self.use = "default"
         }
-       
+        
         
         return self.use!
     }
-
+    
     
     var baishaoUse = "This is a test to see what gets entered and where"
     var guizhiUse = "This is the test for guizhiUse"
     var renshenUse = "This is a test for ren shen use"
     var baizhuUse = "Another test for bai zhu use now"
     
-
+    
 }
-
-
-
-
-
 
 
 
