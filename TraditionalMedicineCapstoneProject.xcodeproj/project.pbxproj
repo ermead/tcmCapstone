@@ -18,8 +18,6 @@
 		D76D365E1BF599980003AC43 /* CombinationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D365D1BF599980003AC43 /* CombinationsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D76D36601BF5B16A0003AC43 /* CombinationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D365F1BF5B16A0003AC43 /* CombinationsTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		D76D36681BF6C2B70003AC43 /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D36671BF6C2B70003AC43 /* ImageController.swift */; settings = {ASSET_TAGS = (); }; };
-		D76D366A1BF7CFEF0003AC43 /* HerbSets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D36691BF7CFEF0003AC43 /* HerbSets.swift */; settings = {ASSET_TAGS = (); }; };
-		D76D366C1BF7D7990003AC43 /* HerbUses.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D366B1BF7D7990003AC43 /* HerbUses.swift */; settings = {ASSET_TAGS = (); }; };
 		D782A4A61BE02A1000E51BAC /* DiagnosticToolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A4A51BE02A1000E51BAC /* DiagnosticToolViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D782A4A81BE03B6A00E51BAC /* DiagnosisDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A4A71BE03B6900E51BAC /* DiagnosisDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D782A5701BE4479700E51BAC /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A56F1BE4479700E51BAC /* Stack.swift */; settings = {ASSET_TAGS = (); }; };
@@ -54,8 +52,6 @@
 		D76D365D1BF599980003AC43 /* CombinationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinationsViewController.swift; sourceTree = "<group>"; };
 		D76D365F1BF5B16A0003AC43 /* CombinationsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinationsTableViewCell.swift; sourceTree = "<group>"; };
 		D76D36671BF6C2B70003AC43 /* ImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageController.swift; path = ../ImageController.swift; sourceTree = "<group>"; };
-		D76D36691BF7CFEF0003AC43 /* HerbSets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HerbSets.swift; sourceTree = "<group>"; };
-		D76D366B1BF7D7990003AC43 /* HerbUses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HerbUses.swift; sourceTree = "<group>"; };
 		D782A4A51BE02A1000E51BAC /* DiagnosticToolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagnosticToolViewController.swift; sourceTree = "<group>"; };
 		D782A4A71BE03B6900E51BAC /* DiagnosisDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagnosisDetailViewController.swift; sourceTree = "<group>"; };
 		D782A56F1BE4479700E51BAC /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
@@ -167,8 +163,6 @@
 			isa = PBXGroup;
 			children = (
 				D7D9EBB01BDD8A6500C920AC /* HerbsController.swift */,
-				D76D36691BF7CFEF0003AC43 /* HerbSets.swift */,
-				D76D366B1BF7D7990003AC43 /* HerbUses.swift */,
 				D782A5F21BEA4BE200E51BAC /* FormulasController.swift */,
 			);
 			name = Herbs;
@@ -263,7 +257,6 @@
 				D782A5741BE6667300E51BAC /* Colors.swift in Sources */,
 				D7580B0C1BDD1EB70008789F /* TraditionalMedicineCapstoneProject.xcdatamodeld in Sources */,
 				D782A5F51BEA4ECF00E51BAC /* Formula+CoreDataProperties.swift in Sources */,
-				D76D366A1BF7CFEF0003AC43 /* HerbSets.swift in Sources */,
 				D76D36561BF580CC0003AC43 /* ChannelController.swift in Sources */,
 				D782A5A61BE907F000E51BAC /* Formula.swift in Sources */,
 				D782A5701BE4479700E51BAC /* Stack.swift in Sources */,
@@ -271,7 +264,6 @@
 				D782A5A21BE849B600E51BAC /* Herb.swift in Sources */,
 				D782A5AE1BE9535C00E51BAC /* Channel.swift in Sources */,
 				D76D365E1BF599980003AC43 /* CombinationsViewController.swift in Sources */,
-				D76D366C1BF7D7990003AC43 /* HerbUses.swift in Sources */,
 				D782A5AB1BE9535C00E51BAC /* Point+CoreDataProperties.swift in Sources */,
 				D7580B041BDD1EB70008789F /* AppDelegate.swift in Sources */,
 				D76D36681BF6C2B70003AC43 /* ImageController.swift in Sources */,
