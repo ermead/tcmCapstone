@@ -82,12 +82,12 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
             pickerView.reloadAllComponents()
             upDateLabelControl = 0
             upDateLabels()
-            topLeftButton.setTitle("Stress", forState: .Normal)
-            topCenterButton.setTitle("Pain", forState: .Normal)
-            topRightButton.setTitle("Cold & Flu", forState: .Normal)
-            bottomLeftButton.setTitle("Digestive", forState: .Normal)
-            bottomCenterButton.setTitle("Repro", forState: .Normal)
-            bottomRightButton.setTitle("Deficiency", forState: .Normal)
+            topLeftButton.setTitle(acuteButtonArray[0], forState: .Normal)
+            topCenterButton.setTitle(acuteButtonArray[1], forState: .Normal)
+            topRightButton.setTitle(acuteButtonArray[2], forState: .Normal)
+            bottomLeftButton.setTitle(acuteButtonArray[3], forState: .Normal)
+            bottomCenterButton.setTitle(acuteButtonArray[4], forState: .Normal)
+            bottomRightButton.setTitle(acuteButtonArray[5], forState: .Normal)
         }
         if(sender.selectedSegmentIndex == 1){
             print("segment chronic hit")
@@ -100,12 +100,12 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
             pickerView.reloadAllComponents()
             upDateLabelControl = 1
             upDateLabels()
-            topLeftButton.setTitle("Stress", forState: .Normal)
-            topCenterButton.setTitle("Pain", forState: .Normal)
-            topRightButton.setTitle("Lung", forState: .Normal)
-            bottomLeftButton.setTitle("Digestive", forState: .Normal)
-            bottomCenterButton.setTitle("Repro", forState: .Normal)
-            bottomRightButton.setTitle("Deficiency", forState: .Normal)
+            topLeftButton.setTitle(chronicButtonArray[0], forState: .Normal)
+            topCenterButton.setTitle(chronicButtonArray[1], forState: .Normal)
+            topRightButton.setTitle(chronicButtonArray[2], forState: .Normal)
+            bottomLeftButton.setTitle(chronicButtonArray[3], forState: .Normal)
+            bottomCenterButton.setTitle(chronicButtonArray[4], forState: .Normal)
+            bottomRightButton.setTitle(chronicButtonArray[5], forState: .Normal)
         }
         if(sender.selectedSegmentIndex == 2){
             print("segment longevity hit")
@@ -118,12 +118,12 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
             pickerView.reloadAllComponents()
             upDateLabelControl = 2
             upDateLabels()
-            topLeftButton.setTitle("Liver", forState: .Normal)
-            topCenterButton.setTitle("Heart", forState: .Normal)
-            topRightButton.setTitle("Lung", forState: .Normal)
-            bottomLeftButton.setTitle("Spleen", forState: .Normal)
-            bottomCenterButton.setTitle("Kidney", forState: .Normal)
-            bottomRightButton.setTitle("Qi & Blood", forState: .Normal)
+            topLeftButton.setTitle(longevityButtonArray[0], forState: .Normal)
+            topCenterButton.setTitle(longevityButtonArray[1], forState: .Normal)
+            topRightButton.setTitle(longevityButtonArray[2], forState: .Normal)
+            bottomLeftButton.setTitle(longevityButtonArray[3], forState: .Normal)
+            bottomCenterButton.setTitle(longevityButtonArray[4], forState: .Normal)
+            bottomRightButton.setTitle(longevityButtonArray[5], forState: .Normal)
         }
 
 
@@ -172,12 +172,16 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
         
         view.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
         
-        topLeftButton.setTitle("Stress", forState: .Normal)
-        topCenterButton.setTitle("Pain", forState: .Normal)
-        topRightButton.setTitle("Cold & Flu", forState: .Normal)
-        bottomLeftButton.setTitle("Digestive", forState: .Normal)
-        bottomCenterButton.setTitle("Repro", forState: .Normal)
-        bottomRightButton.setTitle("Deficiency", forState: .Normal)
+        acuteButtonArray = ["Stress", "Pain", "Cold & Flu", "Digestive", "Repro", "Deficiency"]
+        chronicButtonArray = ["Stress", "Pain", "Lung", "Digestive", "Repro", "Deficiency"]
+        longevityButtonArray = ["Liver", "Heart", "Lung", "Spleen", "Kidney", "Qi & Blood"]
+        
+        topLeftButton.setTitle(acuteButtonArray[0], forState: .Normal)
+        topCenterButton.setTitle(acuteButtonArray[1], forState: .Normal)
+        topRightButton.setTitle(acuteButtonArray[2], forState: .Normal)
+        bottomLeftButton.setTitle(acuteButtonArray[3], forState: .Normal)
+        bottomCenterButton.setTitle(acuteButtonArray[4], forState: .Normal)
+        bottomRightButton.setTitle(acuteButtonArray[5], forState: .Normal)
         upDateLabels()
         findInfoOnOutlet.hidden = true
         findInfoOnOutlet.setTitleColor(UIColor.whiteColor(), forState: .Normal)
@@ -330,7 +334,7 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
             isQuick = true
         } else if kind == self.longevityQuickArray {
             title = "Quick Picker Settings"
-            kindString = "Longevity Disorders"
+            kindString = "Longevity Tonics"
             isQuick = true
             
         } else if kind == self.acuteButtonArray{
@@ -343,7 +347,7 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
             isQuick = false
         } else if kind == self.longevityButtonArray{
             title = "Button Settings"
-            kindString = "Chronic Disorders"
+            kindString = "Longevity Tonics"
             isQuick = false
         } else {
             print("quick picker changed?")
@@ -419,7 +423,7 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
                 } else {
                     print("quick picker changed?")
                     }
-                    
+        
                 self.pickerView.reloadAllComponents()
                 }
     
