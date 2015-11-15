@@ -200,12 +200,25 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         //return pickerViewDataSource.count
-        return 10
+        if upDateLabelControl == 0 {
+            // 10 Acute disorders
+            return acuteQuickArray.count
+        } else if upDateLabelControl == 1 {
+            //10 Chronic Disorders
+            return chronicQuickArray.count
+        } else if upDateLabelControl == 2 {
+            //10 Longevity Tonics
+            return longevityQuickArray.count
+        }
+        else { return 10}
     }
     
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return String(pickerViewDataSource[row])
+    func pickerView(pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        let titleData = pickerViewDataSource[row]
+        let myTitle = NSAttributedString(string: titleData, attributes: [NSFontAttributeName:UIFont(name: "Georgia", size: 15.0)!,NSForegroundColorAttributeName:UIColor.whiteColor()])
+        return myTitle
     }
+    
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         chooseACommonLabel.alpha = 0
@@ -336,6 +349,9 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
                     
                     if kind == self.acuteQuickArray  {
                     self.acuteQuickArray = newArray
+//                        self.acuteQuickArray.append("test")
+//                        self.acuteQuickArray.append("test")
+//                        self.acuteQuickArray.append("test")
                 } else if kind == self.chronicQuickArray {
                     self.chronicQuickArray = newArray
                     } else if kind == self.longevityQuickArray {

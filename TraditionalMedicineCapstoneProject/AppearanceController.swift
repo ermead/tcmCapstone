@@ -62,6 +62,7 @@ class AppearanceController {
         UIPickerView.appearance().layer.cornerRadius = 100
         UIPickerView.appearance().tintColor = white
         
+        
         //Tab Bar & Bar Buttons
         
         UITabBar.appearance().barTintColor = color3
