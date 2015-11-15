@@ -8,12 +8,13 @@
 
 import UIKit
 
-class PointsDetailListViewController: UIViewController,  UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class PointsDetailListViewController: UIViewController,  UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate, UITextViewDelegate {
     
     var herb: Herb?
     var point: Point?
     
     var photos = [AnyObject]()
+    var canEdit: Bool = false
     
     @IBOutlet weak var saveButton: UIBarButtonItem!
     
@@ -44,6 +45,9 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if canEdit{
+            addButtonsToScene()
+        }
         print(" I loaded the index \(index)")
         
         if singles {
@@ -229,12 +233,15 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         self.navigationController?.popViewControllerAnimated(true)
         } else {
             print("it is Edit")
-            
-            
+            canEdit = true
+            addButtonsToScene()
+            self.saveButton.title = "Save"
         }
         
     }
     func addNewPointEntry() {
+        canEdit = true
+        addButtonsToScene()
         print("adding new point")
         leftImage.image = UIImage(named: "default")
         rightImage.image = UIImage(named: "default2")
@@ -313,6 +320,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     @IBAction func NewButtonTapped(sender: UIBarButtonItem) {
         
         saveButton.title = "Save"
+        canEdit = true
         
         let commentAlert = UIAlertController(title: "Add New", message: nil, preferredStyle: .Alert)
         
@@ -534,8 +542,13 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         }
     }
 
+    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
+        return canEdit
+    }
     
-    
+    func textViewShouldBeginEditing(textView: UITextView) -> Bool {
+        return canEdit
+    }
    
     
     
