@@ -964,7 +964,7 @@
         <scene sceneID="FRi-jz-Gcb">
             <objects>
                 <navigationController title="Screen C Nav" automaticallyAdjustsScrollViewInsets="NO" id="cwl-FY-ru7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Diagnosis" id="pet-32-eNt"/>
+                    <tabBarItem key="tabBarItem" title="Quick" id="pet-32-eNt"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eny-ti-tyU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

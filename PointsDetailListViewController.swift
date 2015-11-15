@@ -46,7 +46,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     override func viewDidLoad() {
         super.viewDidLoad()
         if canEdit{
-            addButtonsToScene()
+            addButtonsToScene(true)
         }
         print(" I loaded the index \(index)")
         
@@ -191,7 +191,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     
     @IBAction func saveButtonTapped(sender: UIBarButtonItem) {
         print("save attempted")
-        
+    
         if sender.title == "Save"{
         let saveAlert = UIAlertController(title: "Save this Entry", message: "as...", preferredStyle: .Alert)
         
@@ -229,19 +229,22 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                 self.placeholderRightImageId = imageId
             }
             }
-        
+            
+        self.addButtonsToScene(false)
+            
         self.navigationController?.popViewControllerAnimated(true)
+            
         } else {
             print("it is Edit")
             canEdit = true
-            addButtonsToScene()
+            addButtonsToScene(true)
             self.saveButton.title = "Save"
         }
         
     }
     func addNewPointEntry() {
         canEdit = true
-        addButtonsToScene()
+        addButtonsToScene(true)
         print("adding new point")
         leftImage.image = UIImage(named: "default")
         rightImage.image = UIImage(named: "default2")
@@ -408,7 +411,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         location.text = "..."
         indicationsAndUses.text = "..."
         
-        addButtonsToScene()
+        addButtonsToScene(true)
 
     }
     
@@ -427,7 +430,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         location.text = "..."
         indicationsAndUses.text = "..."
         
-        addButtonsToScene()
+        addButtonsToScene(true)
         
     }
     
@@ -446,7 +449,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         location.text = "..."
         indicationsAndUses.text = "..."
         
-        addButtonsToScene()
+        addButtonsToScene(true)
     }
     
     func setupNewpointComboScene(){
@@ -464,13 +467,13 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         location.text = "..."
         indicationsAndUses.text = "..."
         
-        addButtonsToScene()
+        addButtonsToScene(true)
 
     }
     
-    func addButtonsToScene(){
+    func addButtonsToScene(add: Bool){
         
-        let addButton = UIButton()
+        var addButton = UIButton()
         addButton.frame = CGRect(x: self.view.bounds.size.width/2+75, y: self.view.bounds.size.height/2-90 , width: 100, height: 50)
         addButton.setTitle("add Action", forState: .Normal)
         addButton.titleLabel?.font = UIFont.systemFontOfSize(CGFloat(12))
@@ -478,9 +481,8 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         addButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         addButton.layer.cornerRadius = CGFloat(5)
         addButton.backgroundColor = UIColor.blueColorDark()
-        self.view.addSubview(addButton)
         
-        let addPhotoButton = UIButton()
+        var addPhotoButton = UIButton()
         addPhotoButton.frame = CGRect(x: self.view.bounds.size.width/2-25, y: self.view.bounds.size.height/2-90 , width: 100, height: 50)
         addPhotoButton.setTitle("add photo", forState: .Normal)
         addPhotoButton.titleLabel?.font = UIFont.systemFontOfSize(CGFloat(12))
@@ -488,8 +490,25 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         addPhotoButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         addPhotoButton.layer.cornerRadius = CGFloat(5)
         addPhotoButton.backgroundColor = UIColor.blueColorDark()
+        
+        self.view.addSubview(addButton)
         self.view.addSubview(addPhotoButton)
+        
+        if add{
+           return
+        } else {
+            print("tried to remove buttons")
+            if view.subviews.contains(addButton){
+                print("well, I contain the addButton")
+                addButton.removeFromSuperview() 
+            }
+            if view.subviews.contains(addPhotoButton){
+                print("well, I contain the addPhotoButton")
+                addPhotoButton.removeFromSuperview()
+            }
+        }
     }
+    
     
     @IBAction func addButtonTapped(sender: UIButton){
         
