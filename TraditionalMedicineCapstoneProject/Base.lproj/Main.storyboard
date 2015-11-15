@@ -684,7 +684,7 @@
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJc-6r-1j8">
-                                <rect key="frame" x="275.5" y="182" width="49" height="21"/>
+                                <rect key="frame" x="275" y="182" width="49" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -714,7 +714,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Choose a Common Ailment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDa-4a-TUl">
-                                <rect key="frame" x="177.5" y="232" width="245.5" height="24"/>
+                                <rect key="frame" x="177" y="232" width="245.5" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -728,8 +728,8 @@
                                     <action selector="FindInfoButtonPressed:" destination="9Zw-A7-Dch" eventType="touchUpInside" id="SSw-LD-7GP"/>
                                 </connections>
                             </button>
-                            <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Obb-JQ-usZ">
-                                <rect key="frame" x="-1" y="265" width="600" height="44"/>
+                            <searchBar contentMode="redraw" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Obb-JQ-usZ">
+                                <rect key="frame" x="40" y="226" width="520" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
@@ -762,7 +762,7 @@
                             <constraint firstAttribute="leadingMargin" secondItem="tE6-ig-Srr" secondAttribute="leading" id="bhB-7a-em9"/>
                             <constraint firstItem="54k-I5-WUb" firstAttribute="top" secondItem="osO-KU-Cgp" secondAttribute="top" id="cPk-QT-UDd"/>
                             <constraint firstItem="osO-KU-Cgp" firstAttribute="baseline" secondItem="54k-I5-WUb" secondAttribute="firstBaseline" id="cWs-4T-zKF"/>
-                            <constraint firstItem="Obb-JQ-usZ" firstAttribute="top" secondItem="yDa-4a-TUl" secondAttribute="bottom" constant="9" id="fTV-MK-n06"/>
+                            <constraint firstItem="Obb-JQ-usZ" firstAttribute="top" secondItem="yDa-4a-TUl" secondAttribute="bottom" constant="-30" id="fTV-MK-n06"/>
                             <constraint firstItem="54k-I5-WUb" firstAttribute="trailing" secondItem="5xS-Q5-pjE" secondAttribute="trailingMargin" id="hQB-Ex-o7O"/>
                             <constraint firstItem="QJc-6r-1j8" firstAttribute="top" secondItem="dyK-GU-z6b" secondAttribute="bottom" constant="8" id="i2o-uJ-KQg"/>
                             <constraint firstItem="ZJY-or-nxv" firstAttribute="top" secondItem="Obb-JQ-usZ" secondAttribute="bottom" id="jBQ-bx-wA7"/>
@@ -782,7 +782,11 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Diagnostic Tool" id="zgq-6P-9DB">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="WJR-or-8Bm"/>
+                        <barButtonItem key="leftBarButtonItem" title="Settings" id="WJR-or-8Bm">
+                            <connections>
+                                <action selector="topLeftNavigationButton:" destination="9Zw-A7-Dch" id="sDA-O5-Uni"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="TqF-Xv-sgk">
                             <connections>
                                 <segue destination="OIQ-0G-fvf" kind="show" id="tEx-Ff-rou"/>
