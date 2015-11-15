@@ -16,8 +16,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         deleteCoreData()
-        addHerbSet()
-        
+        addHerbSet(HerbSets.sharedController.setHerbSet())
+        addHerbSet(HerbSets.sharedController.setHerbSet1())
+        addHerbSet(HerbSets.sharedController.setHerbSet2())
+        addHerbSet(HerbSets.sharedController.setHerbSet3())
+        addHerbSet(HerbSets.sharedController.setHerbSet4())
+     
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,11 +45,11 @@ class ViewController: UIViewController {
         }
     }
     
-    func addHerbSet(){
+    func addHerbSet(array: [Herb]){
         
        //let array = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.ReleaseWindHeat)
        
-        let array = HerbSets.sharedController.setHerbSet1()
+        let array = array
         
         for herb in array{
             
