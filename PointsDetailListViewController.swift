@@ -15,6 +15,8 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     
     var photos = [AnyObject]()
     
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+    
     var herbsList: Bool = true
     var singles: Bool = true
     var index:Int?
@@ -54,6 +56,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         if let index = index {
             
             populatePointInfo()
+            saveButton.title = "Edit"
             
         } else {
             
@@ -61,7 +64,11 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             
         }
         
+//        self.navigationItem.rightBarButtonItem?.enabled = false
+//        self.navigationItem.rightBarButtonItem?.tintColor = UIColor.clearColor()
+        
     }
+    
     
     @IBAction func TogglePictureButtonTapped(sender: UIButton) {
         
@@ -172,6 +179,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     @IBAction func saveButtonTapped(sender: UIBarButtonItem) {
         print("save attempted")
         
+        if sender.title == "Save"{
         let saveAlert = UIAlertController(title: "Save this Entry", message: "as...", preferredStyle: .Alert)
         
         
@@ -210,7 +218,11 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             }
         
         self.navigationController?.popViewControllerAnimated(true)
-        
+        } else {
+            print("it is Edit")
+            
+            
+        }
         
     }
     func addNewPointEntry() {

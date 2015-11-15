@@ -90,7 +90,6 @@
 		D7580AF71BDD1EB70008789F = {
 			isa = PBXGroup;
 			children = (
-				D7580B071BDD1EB70008789F /* Main.storyboard */,
 				D7580B021BDD1EB70008789F /* TraditionalMedicineCapstoneProject */,
 				D7580B011BDD1EB70008789F /* Products */,
 			);
@@ -107,6 +106,7 @@
 		D7580B021BDD1EB70008789F /* TraditionalMedicineCapstoneProject */ = {
 			isa = PBXGroup;
 			children = (
+				D7580B071BDD1EB70008789F /* Main.storyboard */,
 				D76D36671BF6C2B70003AC43 /* ImageController.swift */,
 				D76D365F1BF5B16A0003AC43 /* CombinationsTableViewCell.swift */,
 				D76D365D1BF599980003AC43 /* CombinationsViewController.swift */,
@@ -293,7 +293,6 @@
 				D7580B081BDD1EB70008789F /* Base */,
 			);
 			name = Main.storyboard;
-			path = TraditionalMedicineCapstoneProject;
 			sourceTree = "<group>";
 		};
 		D7580B0F1BDD1EB70008789F /* LaunchScreen.storyboard */ = {

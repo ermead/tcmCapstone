@@ -347,7 +347,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Title" id="buK-LZ-vIB">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="save" id="tPo-eU-ezY">
+                            <barButtonItem title="Save" id="tPo-eU-ezY">
                                 <connections>
                                     <action selector="saveButtonTapped:" destination="ofP-5f-vj4" id="wCX-5R-g5l"/>
                                 </connections>
@@ -367,6 +367,7 @@
                         <outlet property="location" destination="gYe-00-Cfp" id="zHK-O0-1yW"/>
                         <outlet property="locationLabel" destination="QfJ-JA-ioT" id="Qgf-65-zma"/>
                         <outlet property="rightImage" destination="Ubm-mN-RWn" id="hn3-GG-GGT"/>
+                        <outlet property="saveButton" destination="tPo-eU-ezY" id="st2-Vi-RGJ"/>
                         <outlet property="togglePicOutlet" destination="VQ8-DJ-IeL" id="4Xr-2Q-3Ek"/>
                         <outlet property="topRightLabel" destination="WfW-ta-gzQ" id="f82-FA-a1O"/>
                     </connections>

@@ -198,6 +198,7 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
         
             print("display herb detail")
             let index = pointsTableViewOutlet.indexPathForSelectedRow?.row
+        
             if let pdlc : PointsDetailListViewController = segue.destinationViewController as? PointsDetailListViewController {
                 
                 if singleOrComboHerbsOutlet.selectedSegmentIndex == 0 {
