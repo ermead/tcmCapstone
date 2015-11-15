@@ -55,6 +55,17 @@ class HerbSets {
         
         return [cinnamon]
     }
+    
+    func setHerbSet2()->[Herb]{
+        
+        var array = setHerbSet1()
+        var array1 = setHerbSet2()
+        for herb in array1{
+            array.append(herb)
+        }
+        return array
+    }
+
 
 }
 

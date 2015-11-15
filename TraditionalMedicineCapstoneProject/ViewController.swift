@@ -43,7 +43,9 @@ class ViewController: UIViewController {
     
     func addHerbSet(){
         
-       let array = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.ReleaseWindHeat)
+       //let array = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.ReleaseWindHeat)
+       
+        let array = HerbSets.sharedController.setHerbSet1()
         
         for herb in array{
             
