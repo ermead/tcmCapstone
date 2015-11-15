@@ -21,9 +21,22 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
     
     @IBOutlet weak var buttonStackOutlet: UIStackView!
     
+    @IBOutlet weak var button1a: UIButton!
+    @IBOutlet weak var button1b: UIButton!
+    @IBOutlet weak var button1c: UIButton!
+    @IBOutlet weak var button1d: UIButton!
+    @IBOutlet weak var button2a: UIButton!
+    @IBOutlet weak var button2b: UIButton!
+    @IBOutlet weak var button2c: UIButton!
+    @IBOutlet weak var button2d: UIButton!
+    
     @IBAction func BackToHomeTapped(sender: UIBarButtonItem) {
-        print("button1")
+        print("back button")
+        
+        if buttonStackOutlet.hidden == true{
         buttonStackOutlet.hidden = false
+        } else { buttonStackOutlet.hidden = true }
+        
        self.navigationController?.popToRootViewControllerAnimated(true)
     }
     
@@ -85,6 +98,8 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
         } else {
             print("displaying point list")
         }
+        
+        setupButtons()
         
         // Do any additional setup after loading the view.
     }
@@ -233,6 +248,81 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
                 }
             }
         }
+    }
+    
+    func setupButtons() {
+        let titleColor = UIColor.WhiteMetal()
+        let borderColor = UIColor.blueColorLight().CGColor
+        let borderWidth = CGFloat(0.25)
+        let backgroundColor = UIColor.blueColorMedium()
+        let fontsize = UIFont.systemFontOfSize(12)
+        let cornerRadius = CGFloat(2)
+        
+        button1a.backgroundColor = backgroundColor
+        button1a.setTitleColor(titleColor, forState: .Normal)
+        button1a.setTitle("action", forState: .Normal)
+        button1a.layer.borderColor = borderColor
+        button1a.layer.borderWidth = borderWidth
+        button1a.titleLabel?.font = fontsize
+        button1a.layer.cornerRadius = cornerRadius
+        
+        button1b.backgroundColor = backgroundColor
+        button1b.setTitleColor(titleColor, forState: .Normal)
+        button1b.setTitle("action", forState: .Normal)
+        button1b.layer.borderColor = borderColor
+        button1b.layer.borderWidth = borderWidth
+        button1b.titleLabel?.font = fontsize
+        button1b.layer.cornerRadius = cornerRadius
+        
+        button1c.backgroundColor = backgroundColor
+        button1c.setTitleColor(titleColor, forState: .Normal)
+        button1c.setTitle("action", forState: .Normal)
+        button1c.layer.borderColor = borderColor
+        button1c.layer.borderWidth = borderWidth
+        button1c.titleLabel?.font = fontsize
+        button1c.layer.cornerRadius = cornerRadius
+
+        
+        button1d.backgroundColor = backgroundColor
+        button1d.setTitleColor(titleColor, forState: .Normal)
+        button1d.setTitle("action", forState: .Normal)
+        button1d.layer.borderColor = borderColor
+        button1d.layer.borderWidth = borderWidth
+        button1d.titleLabel?.font = fontsize
+        button1d.layer.cornerRadius = cornerRadius
+        
+        button2a.backgroundColor = backgroundColor
+        button2a.setTitleColor(titleColor, forState: .Normal)
+        button2a.setTitle("action", forState: .Normal)
+        button2a.layer.borderColor = borderColor
+        button2a.layer.borderWidth = borderWidth
+        button2a.titleLabel?.font = fontsize
+        button2a.layer.cornerRadius = cornerRadius
+        
+        button2b.backgroundColor = backgroundColor
+        button2b.setTitleColor(titleColor, forState: .Normal)
+        button2b.setTitle("action", forState: .Normal)
+        button2b.layer.borderColor = borderColor
+        button2b.layer.borderWidth = borderWidth
+        button2b.titleLabel?.font = fontsize
+        button2b.layer.cornerRadius = cornerRadius
+
+        button2c.backgroundColor = backgroundColor
+        button2c.setTitleColor(titleColor, forState: .Normal)
+        button2c.setTitle("action", forState: .Normal)
+        button2c.layer.borderColor = borderColor
+        button2c.layer.borderWidth = borderWidth
+        button2c.titleLabel?.font = fontsize
+        button2c.layer.cornerRadius = cornerRadius
+
+        button2d.backgroundColor = backgroundColor
+        button2d.setTitleColor(titleColor, forState: .Normal)
+        button2d.setTitle("action", forState: .Normal)
+        button2d.layer.borderColor = borderColor
+        button2d.layer.borderWidth = borderWidth
+        button2d.titleLabel?.font = fontsize
+        button2d.layer.cornerRadius = cornerRadius
+
     }
     
     override func didReceiveMemoryWarning() {

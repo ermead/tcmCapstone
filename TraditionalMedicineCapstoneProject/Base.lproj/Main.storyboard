@@ -217,6 +217,14 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="button1a" destination="NZg-Qg-OBh" id="THm-cf-Xu9"/>
+                        <outlet property="button1b" destination="CfB-6Q-hcN" id="rBz-qw-qWw"/>
+                        <outlet property="button1c" destination="6o2-6b-5gR" id="hM2-iE-IOR"/>
+                        <outlet property="button1d" destination="ZH5-Xh-tJ4" id="vxb-lg-6Eg"/>
+                        <outlet property="button2a" destination="Gqt-Rz-jTo" id="MMF-BZ-AV4"/>
+                        <outlet property="button2b" destination="FLi-tS-PJo" id="vAi-wY-Whe"/>
+                        <outlet property="button2c" destination="Nrh-tj-hZp" id="PQa-pt-sHA"/>
+                        <outlet property="button2d" destination="7H8-sr-lom" id="UmG-h1-pKL"/>
                         <outlet property="buttonStackOutlet" destination="gMo-4a-bvC" id="r9H-8H-5PK"/>
                         <outlet property="pointsTableViewOutlet" destination="iCn-X0-nUq" id="fOd-qj-XB2"/>
                         <outlet property="searchDisplayController" destination="mqB-uV-rWH" id="oAv-BL-Fpx"/>
