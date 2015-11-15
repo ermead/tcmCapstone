@@ -352,7 +352,7 @@
                                     <action selector="saveButtonTapped:" destination="ofP-5f-vj4" id="wCX-5R-g5l"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="New" id="hRm-0p-yjx">
+                            <barButtonItem systemItem="add" id="hRm-0p-yjx">
                                 <connections>
                                     <action selector="NewButtonTapped:" destination="ofP-5f-vj4" id="ih9-wH-dy3"/>
                                 </connections>

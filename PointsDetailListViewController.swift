@@ -301,6 +301,8 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     
     @IBAction func NewButtonTapped(sender: UIBarButtonItem) {
         
+        saveButton.title = "Save"
+        
         let commentAlert = UIAlertController(title: "Add New", message: nil, preferredStyle: .Alert)
         
         commentAlert.addTextFieldWithConfigurationHandler { (textfield) -> Void in
@@ -334,7 +336,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                 self.textFieldPlaceholderOne = textfields[1].text
                 self.textFieldPlaceholderTwo = textfields[2].text
             }
-             self.setupNewHerbScene()
+             self.setupNewFormulaScene()
             }
             ))
         
