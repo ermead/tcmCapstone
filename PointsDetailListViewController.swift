@@ -23,10 +23,13 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     var firstPicVisible: Bool = true
     var newFieldsColor = UIColor(red:0.012,  green:0.549,  blue:0.549, alpha: 0.2)
     
+    
+    @IBOutlet weak var topRightTextField: UITextField!
+    @IBOutlet weak var topRightMiddleTextField: UITextField!
+    @IBOutlet weak var topRightBottomTextField: UITextField!
+    
     @IBOutlet weak var togglePicOutlet: UIButton!
-    @IBOutlet weak var topRightLabel: UILabel!
     @IBOutlet weak var leftImage: UIImageView!
-    @IBOutlet weak var generalDescription: UITextView!
     @IBOutlet weak var rightImage: UIImageView!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var location: UITextView!
@@ -93,10 +96,12 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             
             //detailHerb = Herb(pinyinName: detailHerb.pinyinName, botanicalName: detailHerb.botanicalName, englishName: detailHerb.englishName!, category: detailHerb.category, temp: detailHerb.temp, meridians: detailHerb.meridians, uses: detailHerb.uses, majorFormulas: detailHerb.majorFormulas)
             
-            generalDescription.text = ("\(detailHerb.pinyinName!) is found in the major formula(s) \(detailHerb.majorFormulas!).")
-            
-            topRightLabel.text = detailHerb.englishName
+            topRightTextField.text = detailHerb.pinyinName!
+            topRightMiddleTextField.text = detailHerb.englishName
+            topRightBottomTextField.text = detailHerb.botanicalName
+                
             locationLabel.text = detailHerb.botanicalName
+                
             location.text = "This herb, named \(detailHerb.pinyinName!), belongs to the category of \(detailHerb.category!). Having a \(detailHerb.temp!) temperature, it travels along the \(detailHerb.meridians!) channels."
                 indicationsAndUses.text = detailHerb.uses
                 
@@ -117,7 +122,9 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                 print(detailHerb.uses)
                // generalDescription.text = ("\(detailHerb.pinyinName!) is used for \(detailHerb.uses!).")
                 
-                topRightLabel.text = detailHerb.englishName
+                topRightTextField.text = detailHerb.pinyinName
+                topRightMiddleTextField.text = detailHerb.englishName
+                topRightBottomTextField.text = detailHerb.englishName
                 locationLabel.text = detailHerb.pinyinName
                 location.text = "This formula, contains how many and what herbs?"
                 indicationsAndUses.text = detailHerb.uses
@@ -141,8 +148,9 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                 
                 //point = Point(pinyinName: point.pinyinName, englishName: point.englishName, pointOnMeridian: point.pointOnMeridian, specialCategories: point.specialCategories!, channel: point.channel, locationDescription: point.locationDescription, uses: point.uses)
                 
-                topRightLabel.text = point.channel
-                generalDescription.text = ("The point \(point.pinyinName) is located on the \(point.channel) meridian.")
+                topRightTextField.text = point.channel
+                topRightMiddleTextField.text = point.pinyinName
+                topRightBottomTextField.text = point.englishName
                 location.text = point.locationDescription
                 indicationsAndUses.text = point.uses
                 
@@ -158,8 +166,9 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         } else {
                 var channel = ChannelController.sharedController.channels[index!]
     
-                topRightLabel.text = channel.name
-                generalDescription.text = ("The channel \(channel.name) is is used for \(channel.uses)")
+                topRightTextField.text = channel.name
+                topRightMiddleTextField.text = channel.name
+                topRightBottomTextField.text = channel.name
                 location.text = channel.name
                 indicationsAndUses.text = channel.uses
                 
@@ -229,10 +238,12 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         print("adding new point")
         leftImage.image = UIImage(named: "default")
         rightImage.image = UIImage(named: "default2")
-        topRightLabel.text = "Name"
-        topRightLabel.backgroundColor = newFieldsColor
-        generalDescription.text = ""
-        generalDescription.backgroundColor = newFieldsColor
+        topRightTextField.placeholder = "New Name"
+        topRightTextField.backgroundColor = newFieldsColor
+        topRightMiddleTextField.placeholder = "new something"
+        topRightMiddleTextField.backgroundColor = newFieldsColor
+        topRightBottomTextField.placeholder = "soemthing else"
+        topRightBottomTextField.backgroundColor = newFieldsColor
         location.text = ""
         location.backgroundColor = newFieldsColor
         indicationsAndUses.text = ""
@@ -242,16 +253,16 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     
     func updateHerb() {
         
-        let pinyinName = topRightLabel.text
+        let pinyinName = topRightTextField.text
         let botanicalName = ""
-        let englishName = generalDescription.text
+        let englishName = topRightMiddleTextField.text
         let category = ""
         let temp = ""
         let meridians = ""
         let uses = ""
         let majorFormulas = ""
         
-        let newHerb = Herb(pinyinName: pinyinName, botanicalName: botanicalName, englishName: englishName, category: category, temp: temp , meridians: meridians, uses: uses, majorFormulas: majorFormulas, imageId1: placeholderLeftImageId, imageId2: placeholderRightImageId, context: Stack.sharedStack.managedObjectContext)
+        let newHerb = Herb(pinyinName: pinyinName, botanicalName: botanicalName, englishName: englishName!, category: category, temp: temp , meridians: meridians, uses: uses, majorFormulas: majorFormulas, imageId1: placeholderLeftImageId, imageId2: placeholderRightImageId, context: Stack.sharedStack.managedObjectContext)
         
         HerbsController.sharedController.addHerb(newHerb)
        
@@ -260,8 +271,8 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     
     func updatePoint() {
         
-        let pinyinName = topRightLabel.text
-        let englishName = generalDescription.text
+        let pinyinName = topRightTextField.text
+        let englishName = topRightMiddleTextField.text
         let pointOnMeridan = ""
         let specialCategories = ""
         let locationDescription = location.text
@@ -278,8 +289,8 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     
     func updateFormula() {
         
-        let pinyinName = topRightLabel.text
-        let englishName = generalDescription.text
+        let pinyinName = topRightTextField.text
+        let englishName = topRightMiddleTextField.text
         let uses = indicationsAndUses.text
     
         let newFormula = Formula(pinyinName: pinyinName, englishName: englishName, uses: uses, hasContents: [], imageId1: placeholderLeftImageId, imageId2: placeholderRightImageId, context: Stack.sharedStack.managedObjectContext)
@@ -290,7 +301,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     
     func updateChannel(){
         
-        let name = topRightLabel.text
+        let name = topRightTextField.text
         let uses = indicationsAndUses.text
         
         let newCombo = Channel(name: name, uses: uses, imageId1: placeholderLeftImageId, imageId2: placeholderRightImageId, context: Stack.sharedStack.managedObjectContext)
@@ -382,8 +393,9 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         
         //togglePicOutlet
         //leftImage.image
-        topRightLabel.text = self.textFieldPlaceholderZero!
-        generalDescription.text = "\(self.textFieldPlaceholderOne!)       \(self.textFieldPlaceholderTwo!)"
+        topRightTextField.text = self.textFieldPlaceholderZero!
+        topRightMiddleTextField.text = self.textFieldPlaceholderOne!
+        topRightBottomTextField.text = self.textFieldPlaceholderTwo!
         locationLabel.text = "Preparation and Dosage"
         location.text = "..."
         indicationsAndUses.text = "..."
@@ -400,8 +412,9 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         
         //togglePicOutlet
         //leftImage.image
-        topRightLabel.text = self.textFieldPlaceholderZero!
-        generalDescription.text = "\(self.textFieldPlaceholderOne!)       \(self.textFieldPlaceholderTwo!)"
+        topRightTextField.text = self.textFieldPlaceholderZero!
+        topRightMiddleTextField.text = self.textFieldPlaceholderOne!
+        topRightBottomTextField.text = self.textFieldPlaceholderTwo!
         locationLabel.text = "Preparation and Dosage"
         location.text = "..."
         indicationsAndUses.text = "..."
@@ -418,8 +431,9 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         
         //togglePicOutlet
         //leftImage.image
-        topRightLabel.text = self.textFieldPlaceholderZero!
-        generalDescription.text = "\(self.textFieldPlaceholderOne!)       \(self.textFieldPlaceholderTwo!)"
+        topRightTextField.text = self.textFieldPlaceholderZero!
+        topRightMiddleTextField.text = self.textFieldPlaceholderOne!
+        topRightBottomTextField.text = self.textFieldPlaceholderTwo!
         locationLabel.text = "Location"
         location.text = "..."
         indicationsAndUses.text = "..."
@@ -435,8 +449,9 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         
         //togglePicOutlet
         //leftImage.image
-        topRightLabel.text = self.textFieldPlaceholderZero!
-        generalDescription.text = "\(self.textFieldPlaceholderOne!)       \(self.textFieldPlaceholderTwo!)"
+        topRightTextField.text = self.textFieldPlaceholderZero!
+        topRightMiddleTextField.text = self.textFieldPlaceholderOne!
+        topRightBottomTextField.text = self.textFieldPlaceholderTwo!
         locationLabel.text = "General Strategy"
         location.text = "..."
         indicationsAndUses.text = "..."
