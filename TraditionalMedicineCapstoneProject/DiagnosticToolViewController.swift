@@ -247,19 +247,19 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
         
         commentAlert.addAction(UIAlertAction(title: "Acute Quick Picker", style: .Default, handler: { (action) ->
            Void in
-            self.presentQuickPickerSettings("acute")
+            self.presentQuickPickerSettings(self.acuteQuickArray)
             
         }))
         
         commentAlert.addAction(UIAlertAction(title: "Chronic Quick Picker", style: .Default, handler: { (action) ->
             Void in
-            self.presentQuickPickerSettings("chronic")
+            self.presentQuickPickerSettings(self.chronicQuickArray)
             
         }))
         
         commentAlert.addAction(UIAlertAction(title: "Longevity Quick Picker", style: .Default, handler: { (action) ->
             Void in
-            self.presentQuickPickerSettings("longevity")
+            self.presentQuickPickerSettings(self.longevityQuickArray)
             
         }))
         commentAlert.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: nil))
@@ -268,39 +268,55 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
     
     }
     
-    func presentQuickPickerSettings(kind: String){
+    func presentQuickPickerSettings(kind: [String]){
+    
+        var kind = kind
+        var kindString = ""
         
-         let commentAlert2 = UIAlertController(title: "Quick Picker Settings", message: "set your 10 quick picks", preferredStyle: .Alert)
+        if kind == self.acuteQuickArray  {
+            kindString = "Acute Disorders"
+        } else if kind == self.chronicQuickArray {
+            kindString = "Chronic Disorders"
+        } else if kind == self.longevityQuickArray {
+            kindString = "Longevity Disorders"
+        } else {
+            print("quick picker changed?")
+        }
+
+        
+        let commentAlert2 = UIAlertController(title: "Quick Picker Settings", message: "\(kindString)", preferredStyle: .Alert)
+        
+       
         
         commentAlert2.addTextFieldWithConfigurationHandler { (textField) -> Void in
-            textField.text = self.acuteQuickArray[0]
+            textField.text = kind[0]
         }
         commentAlert2.addTextFieldWithConfigurationHandler { (textField) -> Void in
-            textField.text = self.acuteQuickArray[1]
+            textField.text = kind[1]
         }
         commentAlert2.addTextFieldWithConfigurationHandler { (textField) -> Void in
-            textField.text = self.acuteQuickArray[2]
+            textField.text = kind[2]
         }
         commentAlert2.addTextFieldWithConfigurationHandler { (textField) -> Void in
-            textField.text = self.acuteQuickArray[3]
+            textField.text = kind[3]
         }
         commentAlert2.addTextFieldWithConfigurationHandler { (textField) -> Void in
-            textField.text = self.acuteQuickArray[4]
+            textField.text = kind[4]
         }
         commentAlert2.addTextFieldWithConfigurationHandler { (textField) -> Void in
-            textField.text = self.acuteQuickArray[5]
+            textField.text = kind[5]
         }
         commentAlert2.addTextFieldWithConfigurationHandler { (textField) -> Void in
-            textField.text = self.acuteQuickArray[6]
+            textField.text = kind[6]
         }
         commentAlert2.addTextFieldWithConfigurationHandler { (textField) -> Void in
-            textField.text = self.acuteQuickArray[7]
+            textField.text = kind[7]
         }
         commentAlert2.addTextFieldWithConfigurationHandler { (textField) -> Void in
-            textField.text = self.acuteQuickArray[8]
+            textField.text = kind[8]
         }
         commentAlert2.addTextFieldWithConfigurationHandler { (textField) -> Void in
-            textField.text = self.acuteQuickArray[9]
+            textField.text = kind[9]
         }
         
         commentAlert2.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: nil))
@@ -318,11 +334,11 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
                         }
                     }
                     
-                if kind == "acute"{
+                    if kind == self.acuteQuickArray  {
                     self.acuteQuickArray = newArray
-                } else if kind == "chronic" {
+                } else if kind == self.chronicQuickArray {
                     self.chronicQuickArray = newArray
-                } else if kind == "longevity" {
+                    } else if kind == self.longevityQuickArray {
                     self.longevityQuickArray = newArray
                 } else {
                     print("quick picker changed?")
