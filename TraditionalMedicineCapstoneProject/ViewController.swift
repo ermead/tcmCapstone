@@ -15,7 +15,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-       // deleteCoreData()
+        deleteCoreData()
+        addHerbSet()
         
     }
 
@@ -37,6 +38,17 @@ class ViewController: UIViewController {
             print("error deleting batch")
             return
         }
+        }
+    }
+    
+    func addHerbSet(){
+        
+       let array = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.ReleaseWindHeat)
+        
+        for herb in array{
+            
+            HerbsController.sharedController.addHerb(herb)
+        
         }
     }
     

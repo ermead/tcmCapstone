@@ -29,11 +29,8 @@ class HerbSets {
         //self.thisHerbSetType = thisSetType
         self.HerbSet = thisSetType
         print("this herb set I am trying to load is \(HerbSet)")
-        return setHerbSet()
+        return setHerbSet1()
     }
-    
-    
-    
     
     
     func setHerbSet()->[Herb]{
@@ -45,24 +42,21 @@ class HerbSets {
         let baishao = Herb(pinyinName: "Bai Shao", botanicalName: "Radix Peony", englishName: "White Peony", category: "Yin Tonic", temp: "Cool", meridians: "LR", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.BaiShao), majorFormulas: "Xiao Yao San", imageId1: nil, imageId2: nil)
         
         
-        switch HerbSet {
-            
-        case .AllHerbs:
-            
-            return [cinnamon, ginseng]
-            
-        case .ReleaseWindCold:
-            
-            return [cinnamon, ginseng, dangGui]
-            
-            
-        case .ReleaseWindHeat:
-            
-            return [cinnamon]
-            
-        }
+        let baishao1 = Herb(pinyinName: "chi Shao", botanicalName: "Radix Peony", englishName: "White Peony", category: "Yin Tonic", temp: "Cool", meridians: "LR", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.BaiShao), majorFormulas: "Xiao Yao San", imageId1: nil, imageId2: nil)
+        
+        return [cinnamon]
     }
     
+    func setHerbSet1()->[Herb]{
+        
+        let cinnamon = Herb(pinyinName: "Gui Zhi", botanicalName: "insert botanical name", englishName: "Cinnamon", category: "Release the Exterior", temp: "Warm", meridians: "insert meridians", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.GuiZhi), majorFormulas: "Gui Zhi Tang", imageId1: nil, imageId2: nil)
+        
+        let baishao1 = Herb(pinyinName: "chi Shao", botanicalName: "Radix Peony", englishName: "White Peony", category: "Yin Tonic", temp: "Cool", meridians: "LR", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.BaiShao), majorFormulas: "Xiao Yao San", imageId1: nil, imageId2: nil)
+        
+        return [cinnamon]
+    }
+
 }
+
 
 
