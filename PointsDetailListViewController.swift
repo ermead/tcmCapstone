@@ -474,21 +474,25 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     func addButtonsToScene(add: Bool){
         
         var addButton = UIButton()
-        addButton.frame = CGRect(x: self.view.bounds.size.width/2+75, y: self.view.bounds.size.height/2-90 , width: 100, height: 50)
-        addButton.setTitle("add Action", forState: .Normal)
+        addButton.frame = CGRect(x: self.view.bounds.size.width/2+90, y: self.view.bounds.size.height/2-90 , width: 80, height: 30)
+        addButton.setTitle("Action", forState: .Normal)
         addButton.titleLabel?.font = UIFont.systemFontOfSize(CGFloat(12))
+        addButton.layer.borderWidth = 1
+        addButton.layer.borderColor = UIColor.blueColorLight().CGColor
         addButton.addTarget(self, action: "addButtonTapped:", forControlEvents: UIControlEvents.TouchUpInside)
         addButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
-        addButton.layer.cornerRadius = CGFloat(5)
+        addButton.layer.cornerRadius = CGFloat(8)
         addButton.backgroundColor = UIColor.blueColorDark()
         
         var addPhotoButton = UIButton()
-        addPhotoButton.frame = CGRect(x: self.view.bounds.size.width/2-25, y: self.view.bounds.size.height/2-90 , width: 100, height: 50)
+        addPhotoButton.frame = CGRect(x: self.view.bounds.size.width/2, y: self.view.bounds.size.height/2-90 , width: 80, height: 30)
         addPhotoButton.setTitle("add photo", forState: .Normal)
         addPhotoButton.titleLabel?.font = UIFont.systemFontOfSize(CGFloat(12))
         addPhotoButton.addTarget(self, action: "addPhotoButtonTapped:", forControlEvents: UIControlEvents.TouchUpInside)
+        addPhotoButton.layer.borderWidth = 1
+        addPhotoButton.layer.borderColor = UIColor.blueColorLight().CGColor
         addPhotoButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
-        addPhotoButton.layer.cornerRadius = CGFloat(5)
+        addPhotoButton.layer.cornerRadius = CGFloat(8)
         addPhotoButton.backgroundColor = UIColor.blueColorDark()
         
         self.view.addSubview(addButton)

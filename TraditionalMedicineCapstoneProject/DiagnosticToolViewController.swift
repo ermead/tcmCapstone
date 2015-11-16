@@ -170,8 +170,8 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //view.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
-        view.backgroundColor = UIColor.blueColorLight() 
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
+        //view.backgroundColor = UIColor.blackColor()
         
         acuteButtonArray = ["Stress", "Pain", "Cold & Flu", "Digestive", "Repro", "Deficiency"]
         chronicButtonArray = ["Stress", "Pain", "Lung", "Digestive", "Repro", "Deficiency"]
