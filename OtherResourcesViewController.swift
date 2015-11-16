@@ -65,7 +65,7 @@ class OtherResourcesViewController: UIViewController {
     }
 
     func setUpButtons() {
-        arrayOfButtonNames = ["Yoga", "Test", "Another", "Another2", "Yoga", "Test", "Another", "Another2", "Yoga", "Test"]
+        arrayOfButtonNames = ["Microsystems", "Yoga Postures", "EFT", "Classical Quotes", "Songs", "Pulse", "Tongue", "Quiz", "Diet"]
         
             self.button1Outlet.setTitle(arrayOfButtonNames[0], forState: .Normal)
             self.button2Outlet.setTitle(arrayOfButtonNames[1], forState: .Normal)
