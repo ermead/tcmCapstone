@@ -270,6 +270,8 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
         commentAlert.addAction(UIAlertAction(title: "Quick Picks", style: .Default, handler: { (action) -> Void in
             self.presentSettingsActionSheet("Quick Picker")
         }))
+        commentAlert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
+        
         
         presentViewController(commentAlert, animated: true, completion: nil)
     }

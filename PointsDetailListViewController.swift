@@ -322,7 +322,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     
     @IBAction func NewButtonTapped(sender: UIBarButtonItem) {
         
-        saveButton.title = "Save"
+       
         canEdit = true
         
         let commentAlert = UIAlertController(title: "Add New", message: nil, preferredStyle: .Alert)
@@ -346,6 +346,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                 self.textFieldPlaceholderTwo = textfields[2].text
             }
             self.setupNewHerbScene()
+            self.saveButton.title = "Save"
             }
             ))
 
@@ -359,6 +360,8 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                 self.textFieldPlaceholderTwo = textfields[2].text
             }
              self.setupNewFormulaScene()
+             self.saveButton.title = "Save"
+
             }
             ))
         
@@ -372,6 +375,8 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                 self.textFieldPlaceholderTwo = textfields[2].text
             }
             self.setupNewPointScene()
+            self.saveButton.title = "Save"
+
             }
             ))
         
@@ -385,6 +390,8 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                 self.textFieldPlaceholderTwo = textfields[2].text
             }
             self.setupNewpointComboScene()
+            self.saveButton.title = "Save"
+
             }
             ))
 
