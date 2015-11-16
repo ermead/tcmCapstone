@@ -514,10 +514,25 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         
         print("ADD BUTTON TAPPED")
         
-        let cvc = self.storyboard?.instantiateViewControllerWithIdentifier("combinations") as! UINavigationController
-        cvc.navigationItem.title = "Test"
-        self.presentViewController(cvc, animated: true, completion: nil)
+        performSegueWithIdentifier("toCombinationsView", sender: sender)
         
+//        let cvc = self.storyboard?.instantiateViewControllerWithIdentifier("combinations") as! UINavigationController
+//        cvc.navigationItem.title = "Test"
+//        self.presentViewController(cvc, animated: true, completion: nil)
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "toCombinationsView" {
+            
+            print("display combinations detail")
+            if let cvc : CombinationsViewController = segue.destinationViewController as? CombinationsViewController {
+            
+                cvc.navigationItem.title = topRightTextField.text
+                
+            }
+        }
     }
     
     @IBAction func addPhotoButtonTapped(sender: UIButton){
