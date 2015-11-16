@@ -194,6 +194,7 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
         bottomLeftButton.updateButtonProperties()
         bottomCenterButton.updateButtonProperties()
         bottomRightButton.updateButtonProperties()
+        self
         
         acuteQuickArray = ["Insomnia", "Cold", "Flu", "Upset Stomach", "Traumatic Injury", "Headache", "Bowels", "Ear Ache", "Burns", ""]
         

@@ -58,7 +58,11 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         
         leftImage.alpha = 1
         rightImage.alpha = 0
-        togglePicOutlet.setTitleColor(UIColor.blueColorDark(), forState: .Normal)
+        togglePicOutlet.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        togglePicOutlet.backgroundColor = UIColor.blueColorDark()
+        togglePicOutlet.layer.cornerRadius = 4
+        togglePicOutlet.layer.borderColor = UIColor.blueColorDark().CGColor
+        togglePicOutlet.layer.borderWidth = 1
         
         if let index = index {
             
