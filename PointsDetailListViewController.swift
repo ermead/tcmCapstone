@@ -22,7 +22,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     var singles: Bool = true
     var index:Int?
     var firstPicVisible: Bool = true
-    var newFieldsColor = UIColor(red:0.012,  green:0.549,  blue:0.549, alpha: 0.2)
+    var newFieldsColor = UIColor(red:0.012,  green:0.549,  blue:0.549, alpha: 0.1)
     
     
     @IBOutlet weak var topRightTextField: UITextField!
@@ -70,6 +70,13 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             addNewPointEntry()
             
         }
+        
+        topRightTextField.layer.cornerRadius = 5
+        topRightMiddleTextField.layer.cornerRadius = 5
+        topRightBottomTextField.layer.cornerRadius = 5
+        location.layer.cornerRadius = 5
+        indicationsAndUses.layer.cornerRadius = 5
+        
         
 //        self.navigationItem.rightBarButtonItem?.enabled = false
 //        self.navigationItem.rightBarButtonItem?.tintColor = UIColor.clearColor()
@@ -230,15 +237,28 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             }
             }
             
+            topRightTextField.backgroundColor = .whiteColor()
+            topRightMiddleTextField.backgroundColor = .whiteColor()
+            topRightBottomTextField.backgroundColor = .whiteColor()
+            location.backgroundColor = .whiteColor()
+            indicationsAndUses.backgroundColor = .whiteColor()
+            
         self.addButtonsToScene(false)
             
         self.navigationController?.popViewControllerAnimated(true)
+            
+            
             
         } else {
             print("it is Edit")
             canEdit = true
             addButtonsToScene(true)
             self.saveButton.title = "Save"
+            topRightTextField.backgroundColor = newFieldsColor
+            topRightMiddleTextField.backgroundColor = newFieldsColor
+            topRightBottomTextField.backgroundColor = newFieldsColor
+            location.backgroundColor = newFieldsColor
+            indicationsAndUses.backgroundColor = newFieldsColor
         }
         
     }
@@ -249,14 +269,14 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         leftImage.image = UIImage(named: "default")
         rightImage.image = UIImage(named: "default2")
         topRightTextField.placeholder = "New Name"
-        topRightTextField.backgroundColor = newFieldsColor
         topRightMiddleTextField.placeholder = "new something"
-        topRightMiddleTextField.backgroundColor = newFieldsColor
         topRightBottomTextField.placeholder = "soemthing else"
-        topRightBottomTextField.backgroundColor = newFieldsColor
         location.text = ""
-        location.backgroundColor = newFieldsColor
         indicationsAndUses.text = ""
+        topRightTextField.backgroundColor = newFieldsColor
+        topRightMiddleTextField.backgroundColor = newFieldsColor
+        topRightBottomTextField.backgroundColor = newFieldsColor
+        location.backgroundColor = newFieldsColor
         indicationsAndUses.backgroundColor = newFieldsColor
         
     }
@@ -417,6 +437,11 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         locationLabel.text = "Preparation and Dosage"
         location.text = "..."
         indicationsAndUses.text = "..."
+        topRightTextField.backgroundColor = newFieldsColor
+        topRightMiddleTextField.backgroundColor = newFieldsColor
+        topRightBottomTextField.backgroundColor = newFieldsColor
+        location.backgroundColor = newFieldsColor
+        indicationsAndUses.backgroundColor = newFieldsColor
         
         addButtonsToScene(true)
 
@@ -436,6 +461,11 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         locationLabel.text = "Preparation and Dosage"
         location.text = "..."
         indicationsAndUses.text = "..."
+        topRightTextField.backgroundColor = newFieldsColor
+        topRightMiddleTextField.backgroundColor = newFieldsColor
+        topRightBottomTextField.backgroundColor = newFieldsColor
+        location.backgroundColor = newFieldsColor
+        indicationsAndUses.backgroundColor = newFieldsColor
         
         addButtonsToScene(true)
         
@@ -455,6 +485,11 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         locationLabel.text = "Location"
         location.text = "..."
         indicationsAndUses.text = "..."
+        topRightTextField.backgroundColor = newFieldsColor
+        topRightMiddleTextField.backgroundColor = newFieldsColor
+        topRightBottomTextField.backgroundColor = newFieldsColor
+        location.backgroundColor = newFieldsColor
+        indicationsAndUses.backgroundColor = newFieldsColor
         
         addButtonsToScene(true)
     }
@@ -473,6 +508,11 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         locationLabel.text = "General Strategy"
         location.text = "..."
         indicationsAndUses.text = "..."
+        topRightTextField.backgroundColor = newFieldsColor
+        topRightMiddleTextField.backgroundColor = newFieldsColor
+        topRightBottomTextField.backgroundColor = newFieldsColor
+        location.backgroundColor = newFieldsColor
+        indicationsAndUses.backgroundColor = newFieldsColor
         
         addButtonsToScene(true)
 
