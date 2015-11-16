@@ -32,6 +32,12 @@ class CombinationsViewController: UIViewController, UITableViewDataSource, UITab
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
         cell.textLabel?.text = HerbsController.sharedController.herbs[indexPath.row].pinyinName
         cell.detailTextLabel?.text = HerbsController.sharedController.herbs[indexPath.row].englishName
+        
+        if HerbsController.sharedController.herbs[indexPath.row].imageId1 != nil {
+            ImageController.imageForImageId(HerbsController.sharedController.herbs[indexPath.row].imageId1!, completion: { (image) -> Void in
+                cell.imageView!.image = image
+            })}
+        
         return cell
         
     }
