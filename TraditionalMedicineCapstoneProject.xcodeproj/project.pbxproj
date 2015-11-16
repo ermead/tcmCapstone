@@ -34,6 +34,8 @@
 		D782A5F51BEA4ECF00E51BAC /* Formula+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5F41BEA4ECF00E51BAC /* Formula+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		D7C264961BF8256A0009B2A7 /* HerbUsesGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C264951BF8256A0009B2A7 /* HerbUsesGetter.swift */; settings = {ASSET_TAGS = (); }; };
 		D7C264981BF825BB0009B2A7 /* HerbSets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C264971BF825BB0009B2A7 /* HerbSets.swift */; settings = {ASSET_TAGS = (); }; };
+		D7C2649E1BFA271F0009B2A7 /* OtherResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C2649D1BFA271F0009B2A7 /* OtherResourcesViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D7C264A01BFA2C660009B2A7 /* OtherResourcesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C2649F1BFA2C660009B2A7 /* OtherResourcesDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D7D9EBB11BDD8A6500C920AC /* HerbsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBB01BDD8A6500C920AC /* HerbsController.swift */; settings = {ASSET_TAGS = (); }; };
 		D7D9EBBA1BDDABF400C920AC /* PointController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBB91BDDABF400C920AC /* PointController.swift */; settings = {ASSET_TAGS = (); }; };
 		D7D9EBBC1BDDAC2300C920AC /* PointsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBBB1BDDAC2300C920AC /* PointsListViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -70,6 +72,8 @@
 		D782A5F41BEA4ECF00E51BAC /* Formula+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Formula+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D7C264951BF8256A0009B2A7 /* HerbUsesGetter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HerbUsesGetter.swift; sourceTree = "<group>"; };
 		D7C264971BF825BB0009B2A7 /* HerbSets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HerbSets.swift; sourceTree = "<group>"; };
+		D7C2649D1BFA271F0009B2A7 /* OtherResourcesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherResourcesViewController.swift; sourceTree = "<group>"; };
+		D7C2649F1BFA2C660009B2A7 /* OtherResourcesDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherResourcesDetailViewController.swift; sourceTree = "<group>"; };
 		D7D9EBB01BDD8A6500C920AC /* HerbsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HerbsController.swift; sourceTree = "<group>"; };
 		D7D9EBB91BDDABF400C920AC /* PointController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointController.swift; sourceTree = "<group>"; };
 		D7D9EBBB1BDDAC2300C920AC /* PointsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PointsListViewController.swift; path = ../PointsListViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 		D7580AF71BDD1EB70008789F = {
 			isa = PBXGroup;
 			children = (
+				D7C2649D1BFA271F0009B2A7 /* OtherResourcesViewController.swift */,
+				D7C2649F1BFA2C660009B2A7 /* OtherResourcesDetailViewController.swift */,
 				D7580B021BDD1EB70008789F /* TraditionalMedicineCapstoneProject */,
 				D7580B011BDD1EB70008789F /* Products */,
 			);
@@ -276,10 +282,12 @@
 				D7580B041BDD1EB70008789F /* AppDelegate.swift in Sources */,
 				D76D36681BF6C2B70003AC43 /* ImageController.swift in Sources */,
 				D782A4A81BE03B6A00E51BAC /* DiagnosisDetailViewController.swift in Sources */,
+				D7C2649E1BFA271F0009B2A7 /* OtherResourcesViewController.swift in Sources */,
 				D782A5721BE664E600E51BAC /* AppearanceController.swift in Sources */,
 				D782A5AC1BE9535C00E51BAC /* Point.swift in Sources */,
 				D7D9EBBE1BDDAC3600C920AC /* PointsDetailListViewController.swift in Sources */,
 				D7D9EBB11BDD8A6500C920AC /* HerbsController.swift in Sources */,
+				D7C264A01BFA2C660009B2A7 /* OtherResourcesDetailViewController.swift in Sources */,
 				D7D9EBBA1BDDABF400C920AC /* PointController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

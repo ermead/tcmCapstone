@@ -515,7 +515,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Kp-he-lq8">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Kp-he-lq8">
                                 <rect key="frame" x="0.0" y="132" width="600" height="468"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -934,7 +934,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QiN-fF-CLq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2804" y="1279"/>
+            <point key="canvasLocation" x="3616" y="1279"/>
         </scene>
         <!--Screen C-1-->
         <scene sceneID="MbZ-nG-kBv">
@@ -970,7 +970,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I60-jG-cm9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3692" y="1279"/>
+            <point key="canvasLocation" x="4504" y="1279"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="YF2-TV-5aY">
@@ -996,7 +996,7 @@
         <!--Other Resources-->
         <scene sceneID="Vjr-Ez-Gud">
             <objects>
-                <viewController id="WUn-gP-Kp3" sceneMemberID="viewController">
+                <viewController id="WUn-gP-Kp3" customClass="OtherResourcesViewController" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Cvm-18-TH7"/>
                         <viewControllerLayoutGuide type="bottom" id="Ea8-1L-NYo"/>
@@ -1005,46 +1005,88 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sX-4W-YSf">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sX-4W-YSf">
                                 <rect key="frame" x="20" y="72" width="105" height="30"/>
                                 <state key="normal" title="Microsystems"/>
+                                <connections>
+                                    <action selector="buttonedTapped:" destination="WUn-gP-Kp3" eventType="touchUpInside" id="fNP-Lg-u69"/>
+                                    <segue destination="1Cj-GQ-A8K" kind="show" identifier="toOtherResourcesDetailView" id="VJf-vc-UO1"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAt-3p-bVe">
-                                <rect key="frame" x="20" y="110" width="105" height="30"/>
-                                <state key="normal" title="Yoga Postures"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OrO-2K-W6V">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="3" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OrO-2K-W6V">
                                 <rect key="frame" x="20" y="148" width="105" height="30"/>
                                 <state key="normal" title="Diet"/>
+                                <connections>
+                                    <action selector="buttonedTapped:" destination="WUn-gP-Kp3" eventType="touchUpInside" id="EEh-9Y-UKw"/>
+                                    <segue destination="1Cj-GQ-A8K" kind="show" identifier="toOtherResourcesDetailView" id="tFZ-Rx-MOA"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7t-46-4YI">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="4" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7t-46-4YI">
                                 <rect key="frame" x="20" y="186" width="105" height="30"/>
                                 <state key="normal" title="EFT"/>
+                                <connections>
+                                    <action selector="buttonedTapped:" destination="WUn-gP-Kp3" eventType="touchUpInside" id="t9y-CB-Hcz"/>
+                                    <segue destination="1Cj-GQ-A8K" kind="show" identifier="toOtherResourcesDetailView" id="8qe-dp-0bo"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCv-oI-NM2">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="5" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCv-oI-NM2">
                                 <rect key="frame" x="20" y="224" width="105" height="30"/>
                                 <state key="normal" title="Songs"/>
+                                <connections>
+                                    <action selector="buttonedTapped:" destination="WUn-gP-Kp3" eventType="touchUpInside" id="tKb-Mg-5mG"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJh-Io-YzS">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="6" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJh-Io-YzS">
                                 <rect key="frame" x="16" y="262" width="114" height="30"/>
                                 <state key="normal" title="Classical Quotes"/>
+                                <connections>
+                                    <action selector="buttonedTapped:" destination="WUn-gP-Kp3" eventType="touchUpInside" id="zXL-EM-kdo"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKk-JC-9EX">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="7" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKk-JC-9EX">
                                 <rect key="frame" x="20" y="300" width="105" height="30"/>
                                 <state key="normal" title="Quiz"/>
+                                <connections>
+                                    <action selector="buttonedTapped:" destination="WUn-gP-Kp3" eventType="touchUpInside" id="66C-cm-9A5"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixy-wO-Mcp">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="9" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixy-wO-Mcp">
                                 <rect key="frame" x="20" y="381" width="105" height="30"/>
                                 <state key="normal" title="Pulse"/>
+                                <connections>
+                                    <action selector="buttonedTapped:" destination="WUn-gP-Kp3" eventType="touchUpInside" id="XmK-pj-aKt"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNy-wG-woS">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="8" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNy-wG-woS">
                                 <rect key="frame" x="20" y="338" width="105" height="30"/>
                                 <state key="normal" title="Tongue"/>
+                                <connections>
+                                    <action selector="buttonedTapped:" destination="WUn-gP-Kp3" eventType="touchUpInside" id="cAc-tM-XYf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="2" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAt-3p-bVe">
+                                <rect key="frame" x="20" y="110" width="105" height="30"/>
+                                <state key="normal" title="Yoga Postures"/>
+                                <connections>
+                                    <action selector="buttonedTapped:" destination="WUn-gP-Kp3" eventType="touchUpInside" id="1lk-nF-qWv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Other Resources" id="9i6-Nh-uz3"/>
+                    <connections>
+                        <outlet property="button1Outlet" destination="4sX-4W-YSf" id="5zR-UR-fIZ"/>
+                        <outlet property="button2Outlet" destination="YAt-3p-bVe" id="Fq3-vk-3ii"/>
+                        <outlet property="button3Outlet" destination="OrO-2K-W6V" id="qY7-al-jcy"/>
+                        <outlet property="button4Outlet" destination="b7t-46-4YI" id="QBY-dK-HiB"/>
+                        <outlet property="button5Outlet" destination="gCv-oI-NM2" id="xuF-OG-e0u"/>
+                        <outlet property="button6Outlet" destination="LJh-Io-YzS" id="3li-ZQ-Ggo"/>
+                        <outlet property="button7Outlet" destination="aKk-JC-9EX" id="b7u-ee-pVT"/>
+                        <outlet property="button8Outlet" destination="Ixy-wO-Mcp" id="bBh-o9-dEh"/>
+                        <outlet property="button9Outlet" destination="wNy-wG-woS" id="hqA-du-Oyz"/>
+                        <segue destination="3Oj-iL-gLi" kind="show" identifier="toOtherResourcesDetailView" id="h0d-iW-tyn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VBT-gB-7Yi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1088,6 +1130,59 @@
             </objects>
             <point key="canvasLocation" x="1136" y="-439"/>
         </scene>
+        <!--OtherResourcesDetailViewController-->
+        <scene sceneID="UTS-Q1-prm">
+            <objects>
+                <viewController title="OtherResourcesDetailViewController" id="1Cj-GQ-A8K" customClass="OtherResourcesDetailViewController" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l5j-f4-PB0"/>
+                        <viewControllerLayoutGuide type="bottom" id="idc-Iy-VRb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Edn-P1-qrO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cDf-Jt-5Z5">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZnY-bz-tJK">
+                                        <rect key="frame" x="180" y="236" width="240" height="128"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="cll-zC-WLT"/>
+                                            <constraint firstAttribute="width" constant="240" id="vzd-C8-GyQ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ZnY-bz-tJK" secondAttribute="trailing" constant="180" id="LF8-Ae-hiD"/>
+                                    <constraint firstItem="ZnY-bz-tJK" firstAttribute="top" secondItem="cDf-Jt-5Z5" secondAttribute="top" constant="300" id="PwC-jG-eov"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZnY-bz-tJK" secondAttribute="bottom" constant="172" id="gLH-qi-kmq"/>
+                                    <constraint firstItem="ZnY-bz-tJK" firstAttribute="centerX" secondItem="cDf-Jt-5Z5" secondAttribute="centerX" id="hEP-zq-bHx"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="cDf-Jt-5Z5" secondAttribute="bottom" id="IAN-TS-74Z"/>
+                            <constraint firstAttribute="trailing" secondItem="cDf-Jt-5Z5" secondAttribute="trailing" id="U71-tX-wnv"/>
+                            <constraint firstItem="cDf-Jt-5Z5" firstAttribute="leading" secondItem="Edn-P1-qrO" secondAttribute="leading" id="Wfu-M3-6fz"/>
+                            <constraint firstItem="cDf-Jt-5Z5" firstAttribute="top" secondItem="Edn-P1-qrO" secondAttribute="top" id="lO4-oZ-ud8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="8ML-jD-93e">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="yoX-Di-J1C">
+                            <connections>
+                                <action selector="backButtonTapped:" destination="1Cj-GQ-A8K" id="9Ga-CO-klv"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="0MM-h1-cDs"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M5S-c7-UWc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1948" y="1880"/>
+        </scene>
         <!--Quick Nav-->
         <scene sceneID="FRi-jz-Gcb">
             <objects>
@@ -1105,7 +1200,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ec-lU-Sb2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1952" y="1751"/>
+            <point key="canvasLocation" x="2764" y="1751"/>
         </scene>
         <!--Other Resources Nav-->
         <scene sceneID="cBR-T8-UQv">
@@ -1208,13 +1303,32 @@
             </objects>
             <point key="canvasLocation" x="3562" y="-433"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EXG-oi-ADE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3Oj-iL-gLi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6hh-oW-mKC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1Cj-GQ-A8K" kind="relationship" relationship="rootViewController" id="EZo-DS-CRT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sj3-0X-bDe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1136" y="1880"/>
+        </scene>
     </scenes>
     <resources>
         <image name="default" width="1024" height="768"/>
         <image name="default2" width="1024" height="768"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fF0-C2-OS7"/>
         <segue reference="sbV-85-wPU"/>
+        <segue reference="8qe-dp-0bo"/>
+        <segue reference="fF0-C2-OS7"/>
     </inferredMetricsTieBreakers>
 </document>
