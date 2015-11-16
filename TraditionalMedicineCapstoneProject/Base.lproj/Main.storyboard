@@ -25,7 +25,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="459"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="pointsCell" textLabel="Vdc-TO-T45" detailTextLabel="Utp-LW-tYe" imageView="Kfm-bk-JtR" rowHeight="55" style="IBUITableViewCellStyleSubtitle" id="zis-SX-SJ5">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="pointsCell" textLabel="Vdc-TO-T45" detailTextLabel="Utp-LW-tYe" rowHeight="55" style="IBUITableViewCellStyleSubtitle" id="zis-SX-SJ5">
                                         <rect key="frame" x="0.0" y="113.5" width="600" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zis-SX-SJ5" id="SFc-iC-VyI">
@@ -33,23 +33,19 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vdc-TO-T45">
-                                                    <rect key="frame" x="103" y="11" width="31.5" height="19.5"/>
+                                                    <rect key="frame" x="15" y="11" width="31.5" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Utp-LW-tYe">
-                                                    <rect key="frame" x="103" y="30.5" width="40.5" height="13.5"/>
+                                                    <rect key="frame" x="15" y="30.5" width="40.5" height="13.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="default" id="Kfm-bk-JtR">
-                                                    <rect key="frame" x="15" y="0.0" width="73" height="54.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
@@ -324,7 +320,7 @@
                                     <action selector="TogglePictureButtonTapped:" destination="ofP-5f-vj4" eventType="touchUpInside" id="nlI-N7-SAE"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Botanical Name" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZhS-Lq-6ks">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Botanical Name" textAlignment="right" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZhS-Lq-6ks">
                                 <rect key="frame" x="340" y="117" width="240" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>

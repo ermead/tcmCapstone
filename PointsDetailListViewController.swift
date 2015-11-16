@@ -139,7 +139,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                 
                 topRightTextField.text = detailHerb.pinyinName
                 topRightMiddleTextField.text = detailHerb.englishName
-                topRightBottomTextField.text = detailHerb.englishName
+                topRightBottomTextField.text = "  "
                 locationLabel.text = detailHerb.pinyinName
                 location.text = "This formula, contains how many and what herbs?"
                 indicationsAndUses.text = detailHerb.uses
@@ -163,9 +163,9 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                 
                 //point = Point(pinyinName: point.pinyinName, englishName: point.englishName, pointOnMeridian: point.pointOnMeridian, specialCategories: point.specialCategories!, channel: point.channel, locationDescription: point.locationDescription, uses: point.uses)
                 
-                topRightTextField.text = point.channel
-                topRightMiddleTextField.text = point.pinyinName
-                topRightBottomTextField.text = point.englishName
+                topRightTextField.text = point.pinyinName
+                topRightMiddleTextField.text = point.englishName
+                topRightBottomTextField.text = point.pointOnMeridian
                 location.text = point.locationDescription
                 indicationsAndUses.text = point.uses
                 
@@ -182,8 +182,8 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                 var channel = ChannelController.sharedController.channels[index!]
     
                 topRightTextField.text = channel.name
-                topRightMiddleTextField.text = channel.name
-                topRightBottomTextField.text = channel.name
+                topRightMiddleTextField.text = "  "
+                topRightBottomTextField.text = "  "
                 location.text = channel.name
                 indicationsAndUses.text = channel.uses
                 
@@ -288,12 +288,12 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     func updateHerb() {
         
         let pinyinName = topRightTextField.text
-        let botanicalName = ""
+        let botanicalName = topRightBottomTextField.text
         let englishName = topRightMiddleTextField.text
         let category = ""
         let temp = ""
         let meridians = ""
-        let uses = ""
+        let uses = indicationsAndUses.text
         let majorFormulas = ""
         
         let newHerb = Herb(pinyinName: pinyinName, botanicalName: botanicalName, englishName: englishName!, category: category, temp: temp , meridians: meridians, uses: uses, majorFormulas: majorFormulas, imageId1: placeholderLeftImageId, imageId2: placeholderRightImageId, context: Stack.sharedStack.managedObjectContext)
@@ -307,7 +307,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         
         let pinyinName = topRightTextField.text
         let englishName = topRightMiddleTextField.text
-        let pointOnMeridan = ""
+        let pointOnMeridan = topRightBottomTextField.text
         let specialCategories = ""
         let locationDescription = location.text
         let channel = ""
@@ -355,10 +355,10 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             textfield.placeholder = "Main Name"
         }
         commentAlert.addTextFieldWithConfigurationHandler { (textfield) -> Void in
-            textfield.placeholder = "Secondary Name"
+            textfield.placeholder = "English Name"
         }
         commentAlert.addTextFieldWithConfigurationHandler { (textfield) -> Void in
-            textfield.placeholder = "Other Info"
+            textfield.placeholder = "Other Info, i.e. Botanical Name"
         }
         commentAlert.addAction(UIAlertAction(title: "Herb", style: .Default, handler: { (action) -> Void in
             self.herbsList = true
