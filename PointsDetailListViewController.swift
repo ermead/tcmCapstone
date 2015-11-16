@@ -515,6 +515,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         print("ADD BUTTON TAPPED")
         
         let cvc = self.storyboard?.instantiateViewControllerWithIdentifier("combinations") as! UINavigationController
+        cvc.navigationItem.title = "Test"
         self.presentViewController(cvc, animated: true, completion: nil)
         
     }
