@@ -32,13 +32,17 @@ class OtherResourcesViewController: UIViewController {
     
     @IBAction func buttonedTapped(sender: UIButton){
         print("button \(sender.titleLabel!.text) got tapped")
-        if sender.restorationIdentifier! == "1" {
-        print(sender.restorationIdentifier)
-        self.titleA = sender.titleLabel!.text!
-        } else {
-            print("not 1")
-            titleA = "something else"
-        }
+        
+            self.titleA = sender.titleLabel!.text!
+        
+        
+//        if sender.restorationIdentifier! == "1" {
+//          print(sender.restorationIdentifier)
+//          self.titleA = sender.titleLabel!.text!
+//        } else {
+//            print("not it!")
+//            titleA = "something else"
+//        }
         
     }
     

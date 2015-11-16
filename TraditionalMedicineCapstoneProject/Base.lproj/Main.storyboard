@@ -1013,6 +1013,14 @@
                                     <segue destination="1Cj-GQ-A8K" kind="show" identifier="toOtherResourcesDetailView" id="VJf-vc-UO1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="2" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAt-3p-bVe">
+                                <rect key="frame" x="20" y="110" width="105" height="30"/>
+                                <state key="normal" title="Yoga Postures"/>
+                                <connections>
+                                    <action selector="buttonedTapped:" destination="WUn-gP-Kp3" eventType="touchUpInside" id="1lk-nF-qWv"/>
+                                    <segue destination="1Cj-GQ-A8K" kind="show" identifier="toOtherResourcesDetailView" id="fg6-VJ-ANk"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="3" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OrO-2K-W6V">
                                 <rect key="frame" x="20" y="148" width="105" height="30"/>
                                 <state key="normal" title="Diet"/>
@@ -1034,6 +1042,7 @@
                                 <state key="normal" title="Songs"/>
                                 <connections>
                                     <action selector="buttonedTapped:" destination="WUn-gP-Kp3" eventType="touchUpInside" id="tKb-Mg-5mG"/>
+                                    <segue destination="1Cj-GQ-A8K" kind="show" identifier="toOtherResourcesDetailView" id="sRj-fW-3bR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="6" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJh-Io-YzS">
@@ -1041,6 +1050,7 @@
                                 <state key="normal" title="Classical Quotes"/>
                                 <connections>
                                     <action selector="buttonedTapped:" destination="WUn-gP-Kp3" eventType="touchUpInside" id="zXL-EM-kdo"/>
+                                    <segue destination="1Cj-GQ-A8K" kind="show" identifier="toOtherResourcesDetailView" id="YST-IR-j00"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="7" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKk-JC-9EX">
@@ -1048,6 +1058,7 @@
                                 <state key="normal" title="Quiz"/>
                                 <connections>
                                     <action selector="buttonedTapped:" destination="WUn-gP-Kp3" eventType="touchUpInside" id="66C-cm-9A5"/>
+                                    <segue destination="1Cj-GQ-A8K" kind="show" identifier="toOtherResourcesDetailView" id="KAP-4A-yDz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="9" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixy-wO-Mcp">
@@ -1055,6 +1066,7 @@
                                 <state key="normal" title="Pulse"/>
                                 <connections>
                                     <action selector="buttonedTapped:" destination="WUn-gP-Kp3" eventType="touchUpInside" id="XmK-pj-aKt"/>
+                                    <segue destination="1Cj-GQ-A8K" kind="show" identifier="toOtherResourcesDetailView" id="otE-t5-cDP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="8" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNy-wG-woS">
@@ -1062,13 +1074,7 @@
                                 <state key="normal" title="Tongue"/>
                                 <connections>
                                     <action selector="buttonedTapped:" destination="WUn-gP-Kp3" eventType="touchUpInside" id="cAc-tM-XYf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="2" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAt-3p-bVe">
-                                <rect key="frame" x="20" y="110" width="105" height="30"/>
-                                <state key="normal" title="Yoga Postures"/>
-                                <connections>
-                                    <action selector="buttonedTapped:" destination="WUn-gP-Kp3" eventType="touchUpInside" id="1lk-nF-qWv"/>
+                                    <segue destination="1Cj-GQ-A8K" kind="show" identifier="toOtherResourcesDetailView" id="ZVR-RO-sE5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1085,7 +1091,6 @@
                         <outlet property="button7Outlet" destination="aKk-JC-9EX" id="b7u-ee-pVT"/>
                         <outlet property="button8Outlet" destination="Ixy-wO-Mcp" id="bBh-o9-dEh"/>
                         <outlet property="button9Outlet" destination="wNy-wG-woS" id="hqA-du-Oyz"/>
-                        <segue destination="3Oj-iL-gLi" kind="show" identifier="toOtherResourcesDetailView" id="h0d-iW-tyn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VBT-gB-7Yi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1328,7 +1333,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="sbV-85-wPU"/>
-        <segue reference="8qe-dp-0bo"/>
+        <segue reference="fg6-VJ-ANk"/>
         <segue reference="fF0-C2-OS7"/>
     </inferredMetricsTieBreakers>
 </document>
