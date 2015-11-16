@@ -40,45 +40,56 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
        self.navigationController?.popToRootViewControllerAnimated(true)
     }
     
-    @IBAction func SingleOrComboPoints(sender: UISegmentedControl) {
-        if(sender.selectedSegmentIndex == 0){
-            print("segment single points hit")
-            singles = true
-            pointsTableViewOutlet.reloadData()
-        } else {
-            print("segment combo points hit")
-            singles = false
-            pointsTableViewOutlet.reloadData()
-        }
-        
-    }
-    @IBAction func SingleOrComboHerbs(sender: UISegmentedControl) {
-        if(sender.selectedSegmentIndex == 0){
-            print("segment single herbs hit")
-            singles = true
-            pointsTableViewOutlet.reloadData()
-        } else {
-            print("segment formulas hit")
-            singles = false
-            pointsTableViewOutlet.reloadData()
-        }
-        
-    }
+//    @IBAction func SingleOrComboPoints(sender: UISegmentedControl) {
+//        if(sender.selectedSegmentIndex == 0){
+//            print("segment single points hit")
+//            singles = true
+//            pointsTableViewOutlet.reloadData()
+//        } else {
+//            print("segment combo points hit")
+//            singles = false
+//            pointsTableViewOutlet.reloadData()
+//        }
+//        
+//    }
+//    @IBAction func SingleOrComboHerbs(sender: UISegmentedControl) {
+//        if(sender.selectedSegmentIndex == 0){
+//            print("segment single herbs hit")
+//            singles = true
+//            pointsTableViewOutlet.reloadData()
+//        } else {
+//            print("segment formulas hit")
+//            singles = false
+//            pointsTableViewOutlet.reloadData()
+//        }
+//        
+//    }
     
     @IBAction func segmentedSwitched(sender: UISegmentedControl) {
       
         if(sender.selectedSegmentIndex == 0){
             print("segment points hit")
             herbsList = false
-            singleOrComboHerbsOutlet.hidden = true
-            singleOrComboPointsOutlet.hidden = false
+            singles = true
             pointsTableViewOutlet.reloadData()
 
-        } else {
-            print("segment herbs hit")
+        } else if(sender.selectedSegmentIndex == 1) {
+            print("segment combos hit")
+            herbsList = false
+            singles = false
+            pointsTableViewOutlet.reloadData()
+        } else if(sender.selectedSegmentIndex == 2) {
+             print("segment herbs hit")
             herbsList = true
-            singleOrComboHerbsOutlet.hidden = false
-            singleOrComboPointsOutlet.hidden = true
+            singles = true
+            pointsTableViewOutlet.reloadData()
+        } else if(sender.selectedSegmentIndex == 3){
+             print("segment formulas hit")
+            herbsList = true
+            singles = false
+            pointsTableViewOutlet.reloadData()
+        } else {
+            print("error on segmented switch")
             pointsTableViewOutlet.reloadData()
         }
         
@@ -89,7 +100,7 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         singleOrComboHerbsOutlet.hidden = true
-        
+        singleOrComboPointsOutlet.hidden = true
         buttonStackOutlet.hidden = true
         
         if herbsList == true {
@@ -202,7 +213,7 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
         
             if let pdlc : PointsDetailListViewController = segue.destinationViewController as? PointsDetailListViewController {
                 
-                if singleOrComboHerbsOutlet.selectedSegmentIndex == 0 {
+                if singles == true {
                     print("the index touched was \(index) and the point selected was \(HerbsController.sharedController.herbs[index!].pinyinName)")
                     pdlc.title = HerbsController.sharedController.herbs[index!].pinyinName
                     pdlc.index = index!
@@ -226,7 +237,7 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
         
             if let pdlc : PointsDetailListViewController = segue.destinationViewController as? PointsDetailListViewController {
             
-                if singleOrComboPointsOutlet.selectedSegmentIndex == 0 {
+                if singles == true {
                     print("the index touched was \(index) and the point selected was \(PointController.sharedController.points[index!].pinyinName)")
                     pdlc.title = PointController.sharedController.points[index!].pointOnMeridian
                     pdlc.index = index!

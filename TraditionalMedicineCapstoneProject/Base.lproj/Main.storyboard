@@ -208,11 +208,13 @@
                             </connections>
                         </barButtonItem>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="YUu-Ln-L1O">
-                            <rect key="frame" x="239.5" y="7.5" width="121" height="29"/>
+                            <rect key="frame" x="135.5" y="7" width="329" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
                                 <segment title="Points"/>
+                                <segment title="Combos"/>
                                 <segment title="Herbs"/>
+                                <segment title="Formulas"/>
                             </segments>
                             <connections>
                                 <action selector="segmentedSwitched:" destination="Y54-Jl-QS1" eventType="valueChanged" id="cJ3-Hj-mDb"/>
