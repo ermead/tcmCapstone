@@ -21,6 +21,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="YUu-Ln-L1O">
+                                <rect key="frame" x="0.0" y="64" width="600" height="29"/>
+                                <segments>
+                                    <segment title="Points"/>
+                                    <segment title="Combos"/>
+                                    <segment title="Herbs"/>
+                                    <segment title="Formulas"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedSwitched:" destination="Y54-Jl-QS1" eventType="valueChanged" id="cJ3-Hj-mDb"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="woodTexture" translatesAutoresizingMaskIntoConstraints="NO" id="m5U-gF-HCX">
+                                <rect key="frame" x="0.0" y="92" width="600" height="113"/>
+                            </imageView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Xpi-4d-A3S">
                                 <rect key="frame" x="0.0" y="116" width="600" height="44"/>
                                 <constraints>
@@ -35,28 +50,28 @@
                                         <rect key="frame" x="0.0" y="0.0" width="554" height="12"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZg-Qg-OBh">
-                                                <rect key="frame" x="0.0" y="0.0" width="138.5" height="12"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="139" height="12"/>
                                                 <color key="backgroundColor" red="1" green="0.91764705879999997" blue="0.18039215689999999" alpha="1" colorSpace="deviceRGB"/>
                                                 <state key="normal" title="Button">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CfB-6Q-hcN">
-                                                <rect key="frame" x="138" y="0.0" width="138.5" height="12"/>
+                                                <rect key="frame" x="139" y="0.0" width="139" height="12"/>
                                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="Button">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6o2-6b-5gR">
-                                                <rect key="frame" x="277" y="0.0" width="138.5" height="12"/>
+                                                <rect key="frame" x="277" y="0.0" width="139" height="12"/>
                                                 <color key="backgroundColor" red="0.61960784310000006" green="0.0" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="Button">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZH5-Xh-tJ4">
-                                                <rect key="frame" x="415" y="0.0" width="138.5" height="12"/>
+                                                <rect key="frame" x="416" y="0.0" width="139" height="12"/>
                                                 <color key="backgroundColor" red="0.0" green="0.41776315790000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="Button">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -71,28 +86,28 @@
                                         <rect key="frame" x="0.0" y="12" width="554" height="12"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gqt-Rz-jTo">
-                                                <rect key="frame" x="0.0" y="0.0" width="138.5" height="12"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="139" height="12"/>
                                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="Button">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLi-tS-PJo">
-                                                <rect key="frame" x="138" y="0.0" width="138.5" height="12"/>
+                                                <rect key="frame" x="139" y="0.0" width="139" height="12"/>
                                                 <color key="backgroundColor" red="0.61960784310000006" green="0.0" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="Button">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nrh-tj-hZp">
-                                                <rect key="frame" x="277" y="0.0" width="138.5" height="12"/>
+                                                <rect key="frame" x="277" y="0.0" width="139" height="12"/>
                                                 <color key="backgroundColor" red="0.0" green="0.44407894739999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="Button">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7H8-sr-lom">
-                                                <rect key="frame" x="415" y="0.0" width="138.5" height="12"/>
+                                                <rect key="frame" x="416" y="0.0" width="139" height="12"/>
                                                 <color key="backgroundColor" red="1" green="0.91764705879999997" blue="0.18039215689999999" alpha="1" colorSpace="deviceRGB"/>
                                                 <state key="normal" title="Button">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -146,18 +161,6 @@
                                     <outlet property="delegate" destination="Y54-Jl-QS1" id="Y2T-GX-U02"/>
                                 </connections>
                             </tableView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="YUu-Ln-L1O">
-                                <rect key="frame" x="0.0" y="64" width="600" height="29"/>
-                                <segments>
-                                    <segment title="Points"/>
-                                    <segment title="Combos"/>
-                                    <segment title="Herbs"/>
-                                    <segment title="Formulas"/>
-                                </segments>
-                                <connections>
-                                    <action selector="segmentedSwitched:" destination="Y54-Jl-QS1" eventType="valueChanged" id="cJ3-Hj-mDb"/>
-                                </connections>
-                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -197,8 +200,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="gqs-du-kG9">
-                        <nil key="title"/>
+                    <navigationItem key="navigationItem" title="Points &amp; Herbs" id="gqs-du-kG9">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="oJ6-3t-nmy">
                             <connections>
                                 <segue destination="ofP-5f-vj4" kind="show" id="sbV-85-wPU"/>
@@ -1316,6 +1318,7 @@
         <image name="glyphicons-369-collapse" width="19" height="19"/>
         <image name="glyphicons-50-star" width="25" height="24"/>
         <image name="glyphicons-591-folder-heart" width="24" height="22"/>
+        <image name="woodTexture" width="1698" height="864"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="sbV-85-wPU"/>

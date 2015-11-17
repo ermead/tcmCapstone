@@ -30,40 +30,17 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
     @IBOutlet weak var button2c: UIButton!
     @IBOutlet weak var button2d: UIButton!
     
+    @IBOutlet weak var pointsTableViewOutlet: UITableView!
+    
     @IBAction func BackToHomeTapped(sender: UIButton) {
-        print("back button")
+        print("unfold buttons")
         
         if buttonStackOutlet.hidden == true{
         buttonStackOutlet.hidden = false
         } else { buttonStackOutlet.hidden = true }
-        
-       self.navigationController?.popToRootViewControllerAnimated(true)
-    }
     
-//    @IBAction func SingleOrComboPoints(sender: UISegmentedControl) {
-//        if(sender.selectedSegmentIndex == 0){
-//            print("segment single points hit")
-//            singles = true
-//            pointsTableViewOutlet.reloadData()
-//        } else {
-//            print("segment combo points hit")
-//            singles = false
-//            pointsTableViewOutlet.reloadData()
-//        }
-//        
-//    }
-//    @IBAction func SingleOrComboHerbs(sender: UISegmentedControl) {
-//        if(sender.selectedSegmentIndex == 0){
-//            print("segment single herbs hit")
-//            singles = true
-//            pointsTableViewOutlet.reloadData()
-//        } else {
-//            print("segment formulas hit")
-//            singles = false
-//            pointsTableViewOutlet.reloadData()
-//        }
-//        
-//    }
+    }
+
     
     @IBAction func segmentedSwitched(sender: UISegmentedControl) {
       
@@ -95,7 +72,7 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
         
     }
    
-    @IBOutlet weak var pointsTableViewOutlet: UITableView!
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -109,6 +86,8 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
             print("displaying point list")
         }
         
+        pointsTableViewOutlet.backgroundView = nil
+        pointsTableViewOutlet.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
         setupButtons()
         
         // Do any additional setup after loading the view.
