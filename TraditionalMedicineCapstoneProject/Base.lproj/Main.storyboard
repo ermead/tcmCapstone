@@ -687,27 +687,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g52-8M-Z2L" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
-                                <rect key="frame" x="505" y="119" width="75" height="75"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <accessibility key="accessibilityConfiguration" identifier="TopRightButton"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="Qwf-I9-Nzd"/>
-                                </constraints>
-                                <state key="normal" title="External"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <real key="value" value="37.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="topRightButton:" destination="9Zw-A7-Dch" eventType="touchUpInside" id="gqf-ZQ-OmX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54k-I5-WUb" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
-                                <rect key="frame" x="505" y="460" width="75" height="75"/>
+                            <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54k-I5-WUb" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
+                                <rect key="frame" x="505" y="460" width="70" height="70"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <accessibility key="accessibilityConfiguration" identifier="BottomRightButton"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <state key="normal" title="Deficiencies"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -718,14 +702,15 @@
                                     <action selector="bottomRightButton:" destination="9Zw-A7-Dch" eventType="touchUpInside" id="nMc-Gc-OMu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Asf-pX-bWZ" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
-                                <rect key="frame" x="20" y="119" width="75" height="75"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Asf-pX-bWZ" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
+                                <rect key="frame" x="20" y="119" width="70" height="70"/>
                                 <color key="backgroundColor" red="0.31140350877192979" green="1" blue="0.17982456140350875" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration" identifier="TopLeftButton"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="K2V-4M-DkS"/>
                                     <constraint firstAttribute="width" constant="75" id="xus-2d-vLq"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="Stress"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -736,13 +721,14 @@
                                     <action selector="topLeftButton:" destination="9Zw-A7-Dch" eventType="touchUpInside" id="3zh-8u-0Fi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osO-KU-Cgp" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
-                                <rect key="frame" x="20" y="460" width="75" height="75"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osO-KU-Cgp" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
+                                <rect key="frame" x="20" y="460" width="70" height="70"/>
                                 <color key="backgroundColor" red="0.95294117649999999" green="0.93725490199999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration" identifier="BottomLeftButton"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="iVq-4e-bGr"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="Digestive"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -760,6 +746,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="9Bv-jA-28g"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="Repro"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -791,7 +778,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJc-6r-1j8">
                                 <rect key="frame" x="275" y="182" width="49" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.93421052630000001" green="0.93640350880000001" blue="0.94956140349999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyK-GU-z6b" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
@@ -802,6 +789,7 @@
                                     <constraint firstAttribute="width" constant="75" id="V6c-Cu-KKS"/>
                                     <constraint firstAttribute="height" constant="75" id="yEe-Sf-LAF"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="Pain"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -812,10 +800,10 @@
                                     <action selector="topCenterButton:" destination="9Zw-A7-Dch" eventType="touchUpInside" id="5Vh-OW-qWY"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxm-gW-i9S">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxm-gW-i9S">
                                 <rect key="frame" x="273" y="433" width="54" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Choose a Common Ailment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDa-4a-TUl">
@@ -839,6 +827,24 @@
                                 <rect key="frame" x="40" y="226" width="520" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g52-8M-Z2L" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
+                                <rect key="frame" x="505" y="119" width="70" height="70"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" identifier="TopRightButton"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="Qwf-I9-Nzd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="External"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="37.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="topRightButton:" destination="9Zw-A7-Dch" eventType="touchUpInside" id="gqf-ZQ-OmX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -891,12 +897,12 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Quick Picker" id="zgq-6P-9DB">
-                        <barButtonItem key="leftBarButtonItem" title="Settings" id="WJR-or-8Bm">
+                        <barButtonItem key="leftBarButtonItem" image="Hamburger" id="WJR-or-8Bm">
                             <connections>
                                 <action selector="topLeftNavigationButton:" destination="9Zw-A7-Dch" id="sDA-O5-Uni"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="TqF-Xv-sgk">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" id="TqF-Xv-sgk">
                             <connections>
                                 <segue destination="OIQ-0G-fvf" kind="show" id="tEx-Ff-rou"/>
                             </connections>

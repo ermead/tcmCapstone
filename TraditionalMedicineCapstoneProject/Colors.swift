@@ -67,23 +67,23 @@ extension UIColor {
     
     
     static func YellowEarth() -> UIColor {
-        return UIColor(red:1,  green:0.910,  blue:0.310, alpha:0.7)
+        return UIColor(red:1,  green:0.910,  blue:0.310, alpha:1)
     }
     
     static func RedFire() -> UIColor {
-        return UIColor(red:0.855,  green:0.043,  blue:0.196, alpha:0.7)
+        return UIColor(red:0.855,  green:0.043,  blue:0.196, alpha:1)
     }
     
     static func GreenWood() -> UIColor {
-        return UIColor(red:0.286,  green:0.722,  blue:0.027, alpha:0.7)
+        return UIColor(red:0.286,  green:0.722,  blue:0.027, alpha:1)
     }
     
     static func WhiteMetal() -> UIColor {
-        return UIColor(red:0.949,  green:1,  blue:0.945, alpha:0.7)
+        return UIColor(red:0.949,  green:1,  blue:0.945, alpha:1)
     }
     
     static func BlueWater() -> UIColor {
-        return UIColor(red:0.110,  green:0.231,  blue:0.949, alpha:0.7)
+        return UIColor(red:0.110,  green:0.231,  blue:0.949, alpha:1)
     }
 
     
