@@ -193,14 +193,14 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
                 
                 if singles == true {
                     print("the index touched was \(index) and the point selected was \(HerbsController.sharedController.herbs[index!].pinyinName)")
-                    pdlc.title = HerbsController.sharedController.herbs[index!].pinyinName
+                    //pdlc.title = HerbsController.sharedController.herbs[index!].pinyinName
                     pdlc.index = index!
                     pdlc.herbsList = true
                     pdlc.singles = true
                 } else {
                     print("the index touched was \(index) and the formula selected was \(FormulasController.sharedController.formulas[index!].pinyinName)")
                     
-                    pdlc.title = FormulasController.sharedController.formulas[index!].pinyinName
+                    //pdlc.title = FormulasController.sharedController.formulas[index!].pinyinName
                     pdlc.index = index!
                     pdlc.herbsList = true
                     pdlc.singles = false
@@ -217,14 +217,14 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
             
                 if singles == true {
                     print("the index touched was \(index) and the point selected was \(PointController.sharedController.points[index!].pinyinName)")
-                    pdlc.title = PointController.sharedController.points[index!].pointOnMeridian
+                    //pdlc.title = PointController.sharedController.points[index!].pointOnMeridian
                     pdlc.index = index!
                     pdlc.herbsList = false
                     pdlc.singles = true
                 } else {
                     print("the index touched was \(index) and the combination selected was \(ChannelController.sharedController.channels[index!].name)")
                     
-                    pdlc.title = ChannelController.sharedController.channels[index!].name
+                    //pdlc.title = ChannelController.sharedController.channels[index!].name
                     pdlc.index = index!
                     pdlc.herbsList = false
                     pdlc.singles = false
