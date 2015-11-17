@@ -255,8 +255,9 @@ class DiagnosticToolViewController: UIViewController, UIPickerViewDelegate, UIPi
         if segue.identifier == "diagnosticSegue" {
             print("the segue hit was the diagnosticSegue")
             if let ddlc : DiagnosisDetailViewController = segue.destinationViewController as? DiagnosisDetailViewController {
-                    ddlc.title = buttonTitle
+                    //ddlc.title = buttonTitle
                     ddlc.mainTitle = labelTitle
+                    ddlc.specificCategory = buttonTitle
         }
     }
     }

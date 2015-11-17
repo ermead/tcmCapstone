@@ -11,6 +11,7 @@ import UIKit
 class DiagnosisDetailViewController: UIViewController {
 
     var mainTitle = ""
+    var specificCategory = ""
    
     @IBOutlet weak var mainTitleOutlet: UILabel!
     
@@ -18,7 +19,8 @@ class DiagnosisDetailViewController: UIViewController {
         super.viewDidLoad()
         print("the main title is \(mainTitle)")
         // Do any additional setup after loading the view.
-        mainTitleOutlet.text = mainTitle
+      
+        mainTitleOutlet.text =  self.mainTitle.stringByReplacingOccurrencesOfString(" ", withString: " \(specificCategory) ")
     }
 
     override func didReceiveMemoryWarning() {

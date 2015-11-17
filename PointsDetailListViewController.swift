@@ -368,6 +368,9 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         
             canEdit = true
             
+            self.navigationItem.rightBarButtonItem?.image = nil
+            self.navigationItem.rightBarButtonItem?.title = "Cancel"
+            
         let commentAlert = UIAlertController(title: "Add New", message: nil, preferredStyle: .Alert)
         
         commentAlert.addTextFieldWithConfigurationHandler { (textfield) -> Void in
@@ -439,7 +442,11 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             ))
 
         
-        commentAlert.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: nil))
+        commentAlert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: { (action) -> Void in
+            self.navigationItem.rightBarButtonItem?.image = UIImage(named: "Hamburger")
+            self.navigationItem.rightBarButtonItem?.title = nil
+        
+        }))
         
         presentViewController(commentAlert, animated: true, completion: nil)
         }

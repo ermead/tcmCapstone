@@ -675,7 +675,7 @@
             </objects>
             <point key="canvasLocation" x="1960" y="551"/>
         </scene>
-        <!--Quick Picker-->
+        <!--Diagnostic Tool View Controller-->
         <scene sceneID="30K-8x-S1y">
             <objects>
                 <viewController id="9Zw-A7-Dch" customClass="DiagnosticToolViewController" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -896,7 +896,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Quick Picker" id="zgq-6P-9DB">
+                    <navigationItem key="navigationItem" id="zgq-6P-9DB">
                         <barButtonItem key="leftBarButtonItem" image="Hamburger" id="WJR-or-8Bm">
                             <connections>
                                 <action selector="topLeftNavigationButton:" destination="9Zw-A7-Dch" id="sDA-O5-Uni"/>
@@ -927,10 +927,10 @@
             </objects>
             <point key="canvasLocation" x="3616" y="1279"/>
         </scene>
-        <!--Screen C-1-->
+        <!--Diagnosis Detail View Controller-->
         <scene sceneID="MbZ-nG-kBv">
             <objects>
-                <viewController title="Screen C-1" id="OIQ-0G-fvf" customClass="DiagnosisDetailViewController" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OIQ-0G-fvf" customClass="DiagnosisDetailViewController" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hc2-HF-DgP"/>
                         <viewControllerLayoutGuide type="bottom" id="zUu-te-q24"/>
@@ -1135,27 +1135,84 @@
                         <viewControllerLayoutGuide type="bottom" id="idc-Iy-VRb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Edn-P1-qrO">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="1600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cDf-Jt-5Z5">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="1600"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZnY-bz-tJK">
-                                        <rect key="frame" x="180" y="236" width="240" height="128"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZnY-bz-tJK">
+                                        <rect key="frame" x="180" y="287" width="240" height="128"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="128" id="cll-zC-WLT"/>
                                             <constraint firstAttribute="width" constant="240" id="vzd-C8-GyQ"/>
                                         </constraints>
                                     </view>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FjD-9y-eN3">
+                                        <rect key="frame" x="0.0" y="415" width="600" height="192"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="192" id="LyP-sa-cUI"/>
+                                        </constraints>
+                                        <mutableString key="text">ericLorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Eric Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Eric</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w1B-ky-242">
+                                        <rect key="frame" x="0.0" y="657" width="600" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="dGy-mA-WsO"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="KfU-Z1-r8h" kind="embed" id="kbA-E9-Aa5"/>
+                                        </connections>
+                                    </containerView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="eqp-qm-lfk">
+                                        <rect key="frame" x="0.0" y="885" width="600" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="yJ6-tQ-1dj"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mPr-4S-AnJ">
+                                        <rect key="frame" x="0.0" y="100" width="600" height="179"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="179" id="8FS-lY-LK0"/>
+                                        </constraints>
+                                        <mutableString key="text">ericLorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Eric Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Eric</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="w1B-ky-242" secondAttribute="trailing" id="13F-JJ-aLK"/>
+                                    <constraint firstItem="w1B-ky-242" firstAttribute="centerX" secondItem="cDf-Jt-5Z5" secondAttribute="centerX" id="CG9-fI-WxS"/>
+                                    <constraint firstItem="FjD-9y-eN3" firstAttribute="top" secondItem="ZnY-bz-tJK" secondAttribute="bottom" id="H2F-vr-YTe"/>
+                                    <constraint firstItem="mPr-4S-AnJ" firstAttribute="centerX" secondItem="cDf-Jt-5Z5" secondAttribute="centerX" id="KRb-DZ-Mze"/>
                                     <constraint firstAttribute="trailing" secondItem="ZnY-bz-tJK" secondAttribute="trailing" constant="180" id="LF8-Ae-hiD"/>
+                                    <constraint firstItem="w1B-ky-242" firstAttribute="top" secondItem="FjD-9y-eN3" secondAttribute="bottom" constant="50" id="Pl1-td-BJB"/>
                                     <constraint firstItem="ZnY-bz-tJK" firstAttribute="top" secondItem="cDf-Jt-5Z5" secondAttribute="top" constant="300" id="PwC-jG-eov"/>
+                                    <constraint firstItem="mPr-4S-AnJ" firstAttribute="leading" secondItem="cDf-Jt-5Z5" secondAttribute="leading" id="Xvv-VA-ATO"/>
+                                    <constraint firstItem="w1B-ky-242" firstAttribute="top" secondItem="ZnY-bz-tJK" secondAttribute="bottom" constant="8" id="a1K-FW-2fy"/>
+                                    <constraint firstItem="mPr-4S-AnJ" firstAttribute="top" secondItem="cDf-Jt-5Z5" secondAttribute="top" constant="100" id="aXS-SX-Byl"/>
+                                    <constraint firstAttribute="bottom" secondItem="eqp-qm-lfk" secondAttribute="bottom" id="aaJ-IV-ah7"/>
+                                    <constraint firstAttribute="trailing" secondItem="FjD-9y-eN3" secondAttribute="trailing" id="dOv-WG-Eue"/>
+                                    <constraint firstItem="ZnY-bz-tJK" firstAttribute="top" secondItem="mPr-4S-AnJ" secondAttribute="bottom" constant="8" id="dmR-IJ-MFg"/>
                                     <constraint firstAttribute="bottom" secondItem="ZnY-bz-tJK" secondAttribute="bottom" constant="172" id="gLH-qi-kmq"/>
                                     <constraint firstItem="ZnY-bz-tJK" firstAttribute="centerX" secondItem="cDf-Jt-5Z5" secondAttribute="centerX" id="hEP-zq-bHx"/>
+                                    <constraint firstItem="w1B-ky-242" firstAttribute="leading" secondItem="cDf-Jt-5Z5" secondAttribute="leading" id="hf1-bc-9Mb"/>
+                                    <constraint firstItem="FjD-9y-eN3" firstAttribute="leading" secondItem="cDf-Jt-5Z5" secondAttribute="leading" id="i0S-x9-qWq"/>
+                                    <constraint firstItem="eqp-qm-lfk" firstAttribute="leading" secondItem="cDf-Jt-5Z5" secondAttribute="leading" id="j8i-AT-Dgw"/>
+                                    <constraint firstAttribute="trailing" secondItem="eqp-qm-lfk" secondAttribute="trailing" id="jmc-RT-0qC"/>
+                                    <constraint firstItem="eqp-qm-lfk" firstAttribute="top" secondItem="w1B-ky-242" secondAttribute="bottom" constant="100" id="scz-yk-cQ4"/>
+                                    <constraint firstAttribute="trailing" secondItem="mPr-4S-AnJ" secondAttribute="trailing" id="v0B-UN-hQi"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="PwC-jG-eov"/>
+                                        <exclude reference="gLH-qi-kmq"/>
+                                        <exclude reference="a1K-FW-2fy"/>
+                                    </mask>
+                                </variation>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1174,10 +1231,12 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" id="0MM-h1-cDs"/>
                     </navigationItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="1600"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M5S-c7-UWc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1948" y="1880"/>
+            <point key="canvasLocation" x="1948" y="1928"/>
         </scene>
         <!--Quick Nav-->
         <scene sceneID="FRi-jz-Gcb">
@@ -1316,6 +1375,70 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sj3-0X-bDe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1136" y="1880"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="85L-5k-guB">
+            <objects>
+                <viewController id="KfU-Z1-r8h" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xSH-lj-dPo">
+                        <rect key="frame" x="0.0" y="0.0" width="1200" height="128"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="adD-Ob-Iga">
+                                <rect key="frame" x="20" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="ela-vE-1W2"/>
+                                    <constraint firstAttribute="width" constant="240" id="uGE-6p-dbl"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TgX-NV-kBE">
+                                <rect key="frame" x="268" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="GBT-Xq-qwZ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ugj-Qi-3Cr">
+                                <rect key="frame" x="516" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Ez6-4g-8uI"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ifn-NT-IS5">
+                                <rect key="frame" x="764" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="3vW-u9-q7j"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TgX-NV-kBE" firstAttribute="leading" secondItem="adD-Ob-Iga" secondAttribute="trailing" constant="8" id="4MB-Xf-UFB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ifn-NT-IS5" secondAttribute="trailing" id="8Dq-A2-NTs"/>
+                            <constraint firstItem="adD-Ob-Iga" firstAttribute="leading" secondItem="xSH-lj-dPo" secondAttribute="leadingMargin" id="9wU-nX-h4r"/>
+                            <constraint firstItem="Ifn-NT-IS5" firstAttribute="width" secondItem="ugj-Qi-3Cr" secondAttribute="width" id="D4a-dP-Mou"/>
+                            <constraint firstItem="Ifn-NT-IS5" firstAttribute="centerY" secondItem="xSH-lj-dPo" secondAttribute="centerY" id="JLQ-2G-R60"/>
+                            <constraint firstItem="ugj-Qi-3Cr" firstAttribute="centerY" secondItem="xSH-lj-dPo" secondAttribute="centerY" id="RKd-HQ-rIL"/>
+                            <constraint firstItem="ugj-Qi-3Cr" firstAttribute="width" secondItem="TgX-NV-kBE" secondAttribute="width" id="Vbu-H9-M4r"/>
+                            <constraint firstItem="ugj-Qi-3Cr" firstAttribute="height" secondItem="TgX-NV-kBE" secondAttribute="height" id="YIz-LF-NCG"/>
+                            <constraint firstItem="TgX-NV-kBE" firstAttribute="width" secondItem="adD-Ob-Iga" secondAttribute="width" id="cb7-Nx-Mg0"/>
+                            <constraint firstItem="Ifn-NT-IS5" firstAttribute="height" secondItem="ugj-Qi-3Cr" secondAttribute="height" id="oC9-yl-oEw"/>
+                            <constraint firstItem="ugj-Qi-3Cr" firstAttribute="leading" secondItem="TgX-NV-kBE" secondAttribute="trailing" constant="8" id="pD4-1O-fjx"/>
+                            <constraint firstItem="adD-Ob-Iga" firstAttribute="centerY" secondItem="xSH-lj-dPo" secondAttribute="centerY" id="phm-cd-cTX"/>
+                            <constraint firstItem="TgX-NV-kBE" firstAttribute="height" secondItem="adD-Ob-Iga" secondAttribute="height" id="rZX-Xd-bpA"/>
+                            <constraint firstItem="TgX-NV-kBE" firstAttribute="centerY" secondItem="xSH-lj-dPo" secondAttribute="centerY" id="spE-yj-omv"/>
+                            <constraint firstItem="Ifn-NT-IS5" firstAttribute="leading" secondItem="ugj-Qi-3Cr" secondAttribute="trailing" constant="8" id="wkf-XQ-MZR"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1200" height="128"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="atf-yf-5lg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2373" y="2398"/>
         </scene>
     </scenes>
     <resources>
