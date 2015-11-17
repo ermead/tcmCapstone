@@ -30,7 +30,7 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
     @IBOutlet weak var button2c: UIButton!
     @IBOutlet weak var button2d: UIButton!
     
-    @IBAction func BackToHomeTapped(sender: UIBarButtonItem) {
+    @IBAction func BackToHomeTapped(sender: UIButton) {
         print("back button")
         
         if buttonStackOutlet.hidden == true{
@@ -99,8 +99,7 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        singleOrComboHerbsOutlet.hidden = true
-        singleOrComboPointsOutlet.hidden = true
+        
         buttonStackOutlet.hidden = true
         
         if herbsList == true {

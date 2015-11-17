@@ -21,12 +21,100 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Xpi-4d-A3S">
+                                <rect key="frame" x="0.0" y="116" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="uZU-pQ-IzC"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gMo-4a-bvC">
+                                <rect key="frame" x="26" y="92" width="554" height="24"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="R9h-K4-EIj">
+                                        <rect key="frame" x="0.0" y="0.0" width="554" height="12"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZg-Qg-OBh">
+                                                <rect key="frame" x="0.0" y="0.0" width="138.5" height="12"/>
+                                                <color key="backgroundColor" red="1" green="0.91764705879999997" blue="0.18039215689999999" alpha="1" colorSpace="deviceRGB"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CfB-6Q-hcN">
+                                                <rect key="frame" x="138" y="0.0" width="138.5" height="12"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6o2-6b-5gR">
+                                                <rect key="frame" x="277" y="0.0" width="138.5" height="12"/>
+                                                <color key="backgroundColor" red="0.61960784310000006" green="0.0" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZH5-Xh-tJ4">
+                                                <rect key="frame" x="415" y="0.0" width="138.5" height="12"/>
+                                                <color key="backgroundColor" red="0.0" green="0.41776315790000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="12" id="icg-qZ-hEs"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZmY-Ev-wJ3">
+                                        <rect key="frame" x="0.0" y="12" width="554" height="12"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gqt-Rz-jTo">
+                                                <rect key="frame" x="0.0" y="0.0" width="138.5" height="12"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLi-tS-PJo">
+                                                <rect key="frame" x="138" y="0.0" width="138.5" height="12"/>
+                                                <color key="backgroundColor" red="0.61960784310000006" green="0.0" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nrh-tj-hZp">
+                                                <rect key="frame" x="277" y="0.0" width="138.5" height="12"/>
+                                                <color key="backgroundColor" red="0.0" green="0.44407894739999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7H8-sr-lom">
+                                                <rect key="frame" x="415" y="0.0" width="138.5" height="12"/>
+                                                <color key="backgroundColor" red="1" green="0.91764705879999997" blue="0.18039215689999999" alpha="1" colorSpace="deviceRGB"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYE-4n-kMa">
+                                <rect key="frame" x="5" y="94" width="19" height="22"/>
+                                <state key="normal" image="glyphicons-369-collapse"/>
+                                <connections>
+                                    <action selector="BackToHomeTapped:" destination="Y54-Jl-QS1" eventType="touchUpInside" id="gKa-AP-VdE"/>
+                                </connections>
+                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="55" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="iCn-X0-nUq">
-                                <rect key="frame" x="0.0" y="92" width="600" height="459"/>
+                                <rect key="frame" x="0.0" y="160" width="600" height="391"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="pointsCell" textLabel="Vdc-TO-T45" detailTextLabel="Utp-LW-tYe" rowHeight="55" style="IBUITableViewCellStyleSubtitle" id="zis-SX-SJ5">
-                                        <rect key="frame" x="0.0" y="113.5" width="600" height="55"/>
+                                        <rect key="frame" x="0.0" y="49.5" width="600" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zis-SX-SJ5" id="SFc-iC-VyI">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="54.5"/>
@@ -58,133 +146,44 @@
                                     <outlet property="delegate" destination="Y54-Jl-QS1" id="Y2T-GX-U02"/>
                                 </connections>
                             </tableView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="f5b-yj-VHN">
-                                <rect key="frame" x="201" y="64" width="197" height="29"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="YUu-Ln-L1O">
+                                <rect key="frame" x="0.0" y="64" width="600" height="29"/>
                                 <segments>
-                                    <segment title="Single Point"/>
-                                    <segment title="Combinations"/>
-                                </segments>
-                                <connections>
-                                    <action selector="SingleOrComboPoints:" destination="Y54-Jl-QS1" eventType="valueChanged" id="nz5-c6-CP1"/>
-                                </connections>
-                            </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="K9L-gn-WV8">
-                                <rect key="frame" x="207" y="64" width="185" height="29"/>
-                                <segments>
-                                    <segment title="Single Herbs"/>
+                                    <segment title="Points"/>
+                                    <segment title="Combos"/>
+                                    <segment title="Herbs"/>
                                     <segment title="Formulas"/>
                                 </segments>
                                 <connections>
-                                    <action selector="SingleOrComboHerbs:" destination="Y54-Jl-QS1" eventType="valueChanged" id="yjI-fZ-EB7"/>
+                                    <action selector="segmentedSwitched:" destination="Y54-Jl-QS1" eventType="valueChanged" id="cJ3-Hj-mDb"/>
                                 </connections>
                             </segmentedControl>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Xpi-4d-A3S">
-                                <rect key="frame" x="0.0" y="116" width="600" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="uZU-pQ-IzC"/>
-                                </constraints>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gMo-4a-bvC">
-                                <rect key="frame" x="0.0" y="92" width="600" height="24"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="R9h-K4-EIj">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="12"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZg-Qg-OBh">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="12"/>
-                                                <color key="backgroundColor" red="1" green="0.91764705879999997" blue="0.18039215689999999" alpha="1" colorSpace="deviceRGB"/>
-                                                <state key="normal" title="Button">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CfB-6Q-hcN">
-                                                <rect key="frame" x="150" y="0.0" width="150" height="12"/>
-                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="Button">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6o2-6b-5gR">
-                                                <rect key="frame" x="300" y="0.0" width="150" height="12"/>
-                                                <color key="backgroundColor" red="0.61960784310000006" green="0.0" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="Button">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZH5-Xh-tJ4">
-                                                <rect key="frame" x="450" y="0.0" width="150" height="12"/>
-                                                <color key="backgroundColor" red="0.0" green="0.41776315790000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="Button">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                            </button>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="12" id="icg-qZ-hEs"/>
-                                        </constraints>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZmY-Ev-wJ3">
-                                        <rect key="frame" x="0.0" y="12" width="600" height="12"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gqt-Rz-jTo">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="12"/>
-                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="Button">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLi-tS-PJo">
-                                                <rect key="frame" x="150" y="0.0" width="150" height="12"/>
-                                                <color key="backgroundColor" red="0.61960784310000006" green="0.0" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="Button">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nrh-tj-hZp">
-                                                <rect key="frame" x="300" y="0.0" width="150" height="12"/>
-                                                <color key="backgroundColor" red="0.0" green="0.44407894739999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="Button">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7H8-sr-lom">
-                                                <rect key="frame" x="450" y="0.0" width="150" height="12"/>
-                                                <color key="backgroundColor" red="1" green="0.91764705879999997" blue="0.18039215689999999" alpha="1" colorSpace="deviceRGB"/>
-                                                <state key="normal" title="Button">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="gMo-4a-bvC" secondAttribute="trailing" constant="-20" id="0bj-V2-s1w"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gMo-4a-bvC" secondAttribute="trailing" id="0bj-V2-s1w"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gMo-4a-bvC" secondAttribute="trailing" id="3Tg-Ls-lb1"/>
-                            <constraint firstItem="iCn-X0-nUq" firstAttribute="top" secondItem="gMo-4a-bvC" secondAttribute="top" id="62v-lB-7Hm"/>
-                            <constraint firstItem="f5b-yj-VHN" firstAttribute="centerX" secondItem="7WJ-X1-b3I" secondAttribute="centerX" id="88w-uO-fqx"/>
-                            <constraint firstItem="gMo-4a-bvC" firstAttribute="leading" secondItem="7WJ-X1-b3I" secondAttribute="leadingMargin" constant="-20" id="8J3-M6-v4l"/>
+                            <constraint firstItem="iCn-X0-nUq" firstAttribute="top" secondItem="gMo-4a-bvC" secondAttribute="top" constant="68" id="62v-lB-7Hm"/>
+                            <constraint firstItem="gMo-4a-bvC" firstAttribute="leading" secondItem="7WJ-X1-b3I" secondAttribute="leadingMargin" constant="6" id="8J3-M6-v4l"/>
                             <constraint firstAttribute="trailing" secondItem="gMo-4a-bvC" secondAttribute="trailing" id="8qX-Ss-Gfc"/>
                             <constraint firstItem="Xpi-4d-A3S" firstAttribute="top" secondItem="gMo-4a-bvC" secondAttribute="bottom" id="AnL-9n-ipm"/>
                             <constraint firstItem="Xpi-4d-A3S" firstAttribute="trailing" secondItem="iCn-X0-nUq" secondAttribute="trailing" id="CIe-Ja-Sd2"/>
-                            <constraint firstItem="gMo-4a-bvC" firstAttribute="top" secondItem="K9L-gn-WV8" secondAttribute="bottom" id="EyE-Tp-Amq"/>
                             <constraint firstItem="F9l-PF-cgA" firstAttribute="top" secondItem="iCn-X0-nUq" secondAttribute="bottom" id="Ic9-db-qqv"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="fYE-4n-kMa" secondAttribute="leading" constant="15" id="IpI-bC-g1P"/>
+                            <constraint firstItem="YUu-Ln-L1O" firstAttribute="centerX" secondItem="7WJ-X1-b3I" secondAttribute="centerX" id="LUS-ZY-5ph"/>
                             <constraint firstItem="gMo-4a-bvC" firstAttribute="leading" secondItem="7WJ-X1-b3I" secondAttribute="leadingMargin" constant="20" id="M6J-WS-fhM"/>
                             <constraint firstItem="gMo-4a-bvC" firstAttribute="leading" secondItem="7WJ-X1-b3I" secondAttribute="leading" id="Ndc-Qt-XSL"/>
                             <constraint firstItem="gMo-4a-bvC" firstAttribute="leading" secondItem="7WJ-X1-b3I" secondAttribute="leadingMargin" id="RDx-GP-Uv4"/>
                             <constraint firstItem="Xpi-4d-A3S" firstAttribute="leading" secondItem="iCn-X0-nUq" secondAttribute="leading" id="SDw-V7-54a"/>
-                            <constraint firstItem="f5b-yj-VHN" firstAttribute="baseline" secondItem="K9L-gn-WV8" secondAttribute="baseline" id="UjV-qK-mln"/>
+                            <constraint firstItem="fYE-4n-kMa" firstAttribute="top" secondItem="6Po-3q-dwo" secondAttribute="bottom" constant="30" id="Skc-65-8Ac"/>
+                            <constraint firstItem="YUu-Ln-L1O" firstAttribute="leading" secondItem="7WJ-X1-b3I" secondAttribute="leadingMargin" constant="-20" id="TF6-1B-7Te"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YUu-Ln-L1O" secondAttribute="trailing" constant="-20" id="UBQ-2X-yei"/>
+                            <constraint firstItem="YUu-Ln-L1O" firstAttribute="top" secondItem="6Po-3q-dwo" secondAttribute="bottom" id="WhG-DF-2GQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="iCn-X0-nUq" secondAttribute="trailing" constant="-20" id="ZHP-KQ-pj9"/>
-                            <constraint firstItem="K9L-gn-WV8" firstAttribute="centerX" secondItem="7WJ-X1-b3I" secondAttribute="centerX" id="ZY2-dW-rGE"/>
-                            <constraint firstItem="f5b-yj-VHN" firstAttribute="top" secondItem="6Po-3q-dwo" secondAttribute="bottom" id="eSv-oh-5jT"/>
+                            <constraint firstItem="gMo-4a-bvC" firstAttribute="top" secondItem="YUu-Ln-L1O" secondAttribute="bottom" id="cCK-fS-oco"/>
                             <constraint firstItem="iCn-X0-nUq" firstAttribute="leading" secondItem="7WJ-X1-b3I" secondAttribute="leading" id="pba-yB-huU"/>
                             <constraint firstItem="iCn-X0-nUq" firstAttribute="top" secondItem="6Po-3q-dwo" secondAttribute="bottom" id="sRO-Lc-dLe"/>
                             <constraint firstItem="iCn-X0-nUq" firstAttribute="top" secondItem="Xpi-4d-A3S" secondAttribute="bottom" id="t7Q-Kb-Hjd"/>
-                            <constraint firstItem="gMo-4a-bvC" firstAttribute="top" secondItem="K9L-gn-WV8" secondAttribute="bottom" constant="43" id="v27-YW-L3B"/>
-                            <constraint firstItem="gMo-4a-bvC" firstAttribute="top" secondItem="K9L-gn-WV8" secondAttribute="bottom" constant="158" id="zaL-OM-dhq"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -193,8 +192,6 @@
                                 <exclude reference="M6J-WS-fhM"/>
                                 <exclude reference="Ndc-Qt-XSL"/>
                                 <exclude reference="RDx-GP-Uv4"/>
-                                <exclude reference="v27-YW-L3B"/>
-                                <exclude reference="zaL-OM-dhq"/>
                                 <exclude reference="sRO-Lc-dLe"/>
                                 <exclude reference="t7Q-Kb-Hjd"/>
                             </mask>
@@ -202,24 +199,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="gqs-du-kG9">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="bOn-81-P5Z">
-                            <connections>
-                                <action selector="BackToHomeTapped:" destination="Y54-Jl-QS1" id="fpB-BT-cee"/>
-                            </connections>
-                        </barButtonItem>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="YUu-Ln-L1O">
-                            <rect key="frame" x="135.5" y="7" width="329" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <segments>
-                                <segment title="Points"/>
-                                <segment title="Combos"/>
-                                <segment title="Herbs"/>
-                                <segment title="Formulas"/>
-                            </segments>
-                            <connections>
-                                <action selector="segmentedSwitched:" destination="Y54-Jl-QS1" eventType="valueChanged" id="cJ3-Hj-mDb"/>
-                            </connections>
-                        </segmentedControl>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="oJ6-3t-nmy">
                             <connections>
                                 <segue destination="ofP-5f-vj4" kind="show" id="sbV-85-wPU"/>
@@ -238,8 +217,6 @@
                         <outlet property="buttonStackOutlet" destination="gMo-4a-bvC" id="r9H-8H-5PK"/>
                         <outlet property="pointsTableViewOutlet" destination="iCn-X0-nUq" id="fOd-qj-XB2"/>
                         <outlet property="searchDisplayController" destination="mqB-uV-rWH" id="oAv-BL-Fpx"/>
-                        <outlet property="singleOrComboHerbsOutlet" destination="K9L-gn-WV8" id="8Vt-XH-tzo"/>
-                        <outlet property="singleOrComboPointsOutlet" destination="f5b-yj-VHN" id="uuA-yr-i9V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Drn-bV-y2W" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -311,17 +288,6 @@
                                     <constraint firstAttribute="width" constant="140" id="gJg-Ur-G4o"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQ8-DJ-IeL">
-                                <rect key="frame" x="20" y="290" width="140" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="kVo-jS-Oss"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <state key="normal" title="Toggle Picture"/>
-                                <connections>
-                                    <action selector="TogglePictureButtonTapped:" destination="ofP-5f-vj4" eventType="touchUpInside" id="nlI-N7-SAE"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Botanical Name" textAlignment="right" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZhS-Lq-6ks">
                                 <rect key="frame" x="340" y="117" width="240" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -350,6 +316,18 @@
                                     <outlet property="delegate" destination="ofP-5f-vj4" id="ATN-Ec-wq6"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQ8-DJ-IeL">
+                                <rect key="frame" x="20" y="287" width="140" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="kVo-jS-Oss"/>
+                                </constraints>
+                                <state key="normal" title="Toggle Picture">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="TogglePictureButtonTapped:" destination="ofP-5f-vj4" eventType="touchUpInside" id="nlI-N7-SAE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -391,14 +369,14 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Title" id="buK-LZ-vIB">
                         <rightBarButtonItems>
+                            <barButtonItem image="Hamburger" id="hRm-0p-yjx">
+                                <connections>
+                                    <action selector="NewButtonTapped:" destination="ofP-5f-vj4" id="ih9-wH-dy3"/>
+                                </connections>
+                            </barButtonItem>
                             <barButtonItem title="Save" id="tPo-eU-ezY">
                                 <connections>
                                     <action selector="saveButtonTapped:" destination="ofP-5f-vj4" id="wCX-5R-g5l"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem systemItem="add" id="hRm-0p-yjx">
-                                <connections>
-                                    <action selector="NewButtonTapped:" destination="ofP-5f-vj4" id="ih9-wH-dy3"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -1103,7 +1081,7 @@
         <scene sceneID="EK1-ZG-i8Y">
             <objects>
                 <navigationController title="Home Nav" automaticallyAdjustsScrollViewInsets="NO" id="d4v-9E-dBp" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="uz8-RF-m4M"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="glyphicons-21-home" id="uz8-RF-m4M"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qc2-IG-zBp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1122,7 +1100,7 @@
         <scene sceneID="rqR-r5-ZKb">
             <objects>
                 <navigationController title="AcuHerbList" automaticallyAdjustsScrollViewInsets="NO" id="Kot-ms-YDZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Acu/Herbs" id="pMO-1I-S0G"/>
+                    <tabBarItem key="tabBarItem" title="Acu/Herbs" image="glyphicons-591-folder-heart" id="pMO-1I-S0G"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5WO-OR-Seo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1194,7 +1172,7 @@
         <scene sceneID="FRi-jz-Gcb">
             <objects>
                 <navigationController title="Quick Nav" automaticallyAdjustsScrollViewInsets="NO" id="cwl-FY-ru7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Quick" id="TOc-if-pfq"/>
+                    <tabBarItem key="tabBarItem" title="Quick" image="glyphicons-50-star" id="TOc-if-pfq"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eny-ti-tyU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1213,7 +1191,7 @@
         <scene sceneID="cBR-T8-UQv">
             <objects>
                 <navigationController title="Other Resources Nav" automaticallyAdjustsScrollViewInsets="NO" id="Lrg-oX-lGU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Resources" id="tbO-4y-3Q5"/>
+                    <tabBarItem key="tabBarItem" title="Resources" image="glyphicons-352-book-open" id="tbO-4y-3Q5"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="exo-k3-puF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1330,8 +1308,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Hamburger" width="30" height="30"/>
         <image name="default" width="1024" height="768"/>
         <image name="default2" width="1024" height="768"/>
+        <image name="glyphicons-21-home" width="27" height="26"/>
+        <image name="glyphicons-352-book-open" width="24" height="22"/>
+        <image name="glyphicons-369-collapse" width="19" height="19"/>
+        <image name="glyphicons-50-star" width="25" height="24"/>
+        <image name="glyphicons-591-folder-heart" width="24" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="sbV-85-wPU"/>
