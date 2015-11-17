@@ -13,6 +13,9 @@ class ImageController {
     
     static func getImageIdFromPhoto(image: UIImage, completion: (imageId: String?) -> Void) {
         
+        //let imageData =  UIImageJPEGRepresentation(image, 1.0)
+        
+        
         if let base64Image = image.base64String {
             completion(imageId: base64Image)
         } else {
@@ -22,7 +25,9 @@ class ImageController {
     
     static func imageForImageId(imageId: String, completion: (image: UIImage?) -> Void) {
        
-            if let imageId = imageId as? String {
+       // let image = UIImage(data: data)
+       
+        if let imageId = imageId as? String {
                 let image = UIImage(base64: imageId)
                 completion(image: image)
             
