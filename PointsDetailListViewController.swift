@@ -263,6 +263,9 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             topRightBottomTextField.backgroundColor = newFieldsColor
             location.backgroundColor = newFieldsColor
             indicationsAndUses.backgroundColor = newFieldsColor
+            
+            self.navigationItem.rightBarButtonItem?.image = nil
+            self.navigationItem.rightBarButtonItem?.title = "Cancel"
         }
         
     }
@@ -347,8 +350,24 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     @IBAction func NewButtonTapped(sender: UIBarButtonItem) {
         
        
-        canEdit = true
         
+        if sender.title == "Cancel"{
+            
+            canEdit = false
+            self.saveButton.title = "Edit"
+            topRightTextField.backgroundColor = UIColor.whiteColor()
+            topRightMiddleTextField.backgroundColor = UIColor.whiteColor()
+            topRightBottomTextField.backgroundColor = UIColor.whiteColor()
+            location.backgroundColor = UIColor.whiteColor()
+            indicationsAndUses.backgroundColor = UIColor.whiteColor()
+            
+            self.navigationItem.rightBarButtonItem?.image = UIImage(named: "Hamburger")
+            self.navigationItem.rightBarButtonItem?.title = nil
+            
+        } else {
+        
+            canEdit = true
+            
         let commentAlert = UIAlertController(title: "Add New", message: nil, preferredStyle: .Alert)
         
         commentAlert.addTextFieldWithConfigurationHandler { (textfield) -> Void in
@@ -423,6 +442,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         commentAlert.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: nil))
         
         presentViewController(commentAlert, animated: true, completion: nil)
+        }
       
     }
     
