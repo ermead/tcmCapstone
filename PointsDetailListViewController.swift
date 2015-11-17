@@ -8,7 +8,11 @@
 
 import UIKit
 
-class PointsDetailListViewController: UIViewController,  UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate, UITextViewDelegate {
+class PointsDetailListViewController: UIViewController,  UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate, UITextViewDelegate, UIScrollViewDelegate {
+    
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    @IBOutlet var myView: UIView!
     
     var herb: Herb?
     var point: Point?
@@ -45,6 +49,8 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         if canEdit{
             addButtonsToScene(true)
         }
@@ -84,6 +90,10 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         
 //        self.navigationItem.rightBarButtonItem?.enabled = false
 //        self.navigationItem.rightBarButtonItem?.tintColor = UIColor.clearColor()
+        if let items = self.navigationController?.navigationBar.items {
+            print(items)
+            
+        }
         
     }
     
