@@ -87,6 +87,11 @@ class MyCustomButton: UIButton {
             //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
             self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         }
+        
+        
+        
+        
+        
 
     }
 

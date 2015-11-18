@@ -31,13 +31,13 @@ class OtherResourcesViewController: UIViewController {
             self.titleA = sender.titleLabel!.text!
         
         
-//        if sender.restorationIdentifier! == "1" {
-//          print(sender.restorationIdentifier)
-//          self.titleA = sender.titleLabel!.text!
-//        } else {
-//            print("not it!")
-//            titleA = "something else"
-//        }
+        if sender.restorationIdentifier != nil {
+          print(sender.restorationIdentifier)
+
+        } else {
+            print("no seender identifier!")
+
+        }
         
     }
     
