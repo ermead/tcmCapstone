@@ -48,6 +48,10 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         super.viewDidLoad()
         view.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
         
+        
+        location.contentInset = UIEdgeInsetsMake(50.0,0.0,0,0.0)
+        indicationsAndUses.contentInset = UIEdgeInsetsMake(20.0, 0, 0, 0)
+        
         if canEdit{
             addButtonsToScene(true)
         }
