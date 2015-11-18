@@ -1078,27 +1078,27 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w9l-xW-5bU">
                                         <rect key="frame" x="8" y="8" width="240" height="471"/>
-                                        <color key="backgroundColor" red="0.95294117649999999" green="0.93725490199999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="bF3-DX-hiB"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6rc-Yp-YIy">
-                                        <rect key="frame" x="256" y="8" width="240" height="471"/>
-                                        <color key="backgroundColor" red="0.0" green="0.41776315790000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RCc-ho-JNC">
+                                        <rect key="frame" x="504" y="8" width="240" height="471"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="468" id="eEY-EH-IcI"/>
-                                            <constraint firstAttribute="width" constant="240" id="xHe-36-5ri"/>
+                                            <constraint firstAttribute="width" constant="240" id="Bkg-XR-pOF"/>
+                                            <constraint firstAttribute="height" constant="468" id="Fyl-r5-LG4"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
-                                                <exclude reference="eEY-EH-IcI"/>
+                                                <exclude reference="Fyl-r5-LG4"/>
                                             </mask>
                                         </variation>
                                     </view>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VIw-Fn-gyi">
                                         <rect key="frame" x="752" y="8" width="240" height="471"/>
-                                        <color key="backgroundColor" red="0.0" green="0.41776315790000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="Tc0-WO-LDN"/>
                                             <constraint firstAttribute="height" constant="468" id="UMt-j3-LEW"/>
@@ -1111,7 +1111,7 @@
                                     </view>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iKY-Ev-cZA">
                                         <rect key="frame" x="1000" y="8" width="240" height="471"/>
-                                        <color key="backgroundColor" red="0.95294117649999999" green="0.93725490199999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="vgY-3e-ssN"/>
                                             <constraint firstAttribute="height" constant="468" id="y21-4o-NfW"/>
@@ -1124,7 +1124,7 @@
                                     </view>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wFm-fT-szU">
                                         <rect key="frame" x="1248" y="8" width="240" height="471"/>
-                                        <color key="backgroundColor" red="0.69078947369999999" green="0.029605263159999999" blue="0.0098684210530000007" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="Mqo-iX-012"/>
                                             <constraint firstAttribute="height" constant="468" id="fb9-oi-Rhp"/>
@@ -1139,16 +1139,16 @@
                                         <rect key="frame" x="1496" y="8" width="0.0" height="560"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RCc-ho-JNC">
-                                        <rect key="frame" x="504" y="8" width="240" height="471"/>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6rc-Yp-YIy">
+                                        <rect key="frame" x="256" y="8" width="240" height="471"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="240" id="Bkg-XR-pOF"/>
-                                            <constraint firstAttribute="height" constant="468" id="Fyl-r5-LG4"/>
+                                            <constraint firstAttribute="height" constant="468" id="eEY-EH-IcI"/>
+                                            <constraint firstAttribute="width" constant="240" id="xHe-36-5ri"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
-                                                <exclude reference="Fyl-r5-LG4"/>
+                                                <exclude reference="eEY-EH-IcI"/>
                                             </mask>
                                         </variation>
                                     </view>

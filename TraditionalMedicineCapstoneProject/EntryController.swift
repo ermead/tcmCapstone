@@ -16,11 +16,11 @@ class EntryController: NSObject {
     
     var defaultEntries: [Entry] {
         
-        let entry1 = Entry(name: "", text1: "", text2: "", text3: "", image1: nil, image2: nil, image3: nil, image4: nil, image5: nil, image6: nil)
+        let entry1 = Entry(name: "", text1: "", text2: "", text3: "")
         
-        let entry2 = Entry(name: "", text1: "", text2: "", text3: "", image1: nil, image2: nil, image3: nil, image4: nil, image5: nil, image6: nil)
+        let entry2 = Entry(name: "", text1: "", text2: "", text3: "")
         
-        let entry3 = Entry(name: "", text1: "", text2: "", text3: "", image1: nil, image2: nil, image3: nil, image4: nil, image5: nil, image6: nil)
+        let entry3 = Entry(name: "", text1: "", text2: "", text3: "")
         
         return [entry1, entry2, entry3]
         

@@ -65,7 +65,8 @@ class OtherResourcesViewController: UIViewController {
         
         setUpButtons()
         
-        scrollView.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
+        scrollView.backgroundColor = UIColor.blueColorMedium()  
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
         
         button1Outlet.updateButtonProperties()
         button2Outlet.updateButtonProperties()

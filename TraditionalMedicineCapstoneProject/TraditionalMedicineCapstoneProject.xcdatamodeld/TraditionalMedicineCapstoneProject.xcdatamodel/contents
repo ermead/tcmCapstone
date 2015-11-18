@@ -8,16 +8,11 @@
         <relationship name="hasPoints" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Point" inverseName="onChannel" inverseEntity="Point" syncable="YES"/>
     </entity>
     <entity name="Entry" representedClassName=".Entry" syncable="YES">
-        <attribute name="image1" optional="YES" attributeType="Binary" syncable="YES"/>
-        <attribute name="image2" optional="YES" attributeType="Binary" syncable="YES"/>
-        <attribute name="image3" optional="YES" attributeType="Binary" syncable="YES"/>
-        <attribute name="image4" optional="YES" attributeType="Binary" syncable="YES"/>
-        <attribute name="image5" optional="YES" attributeType="Binary" syncable="YES"/>
-        <attribute name="image6" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="text1" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="text2" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="text3" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="images" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Image" inverseName="entry" inverseEntity="Image" syncable="YES"/>
     </entity>
     <entity name="Formula" representedClassName="Formula" syncable="YES">
         <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
@@ -42,6 +37,10 @@
         <attribute name="uses" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="inContents" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Formula" inverseName="hasContents" inverseEntity="Formula" syncable="YES"/>
     </entity>
+    <entity name="Image" syncable="YES">
+        <attribute name="imageData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <relationship name="entry" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Entry" inverseName="images" inverseEntity="Entry" syncable="YES"/>
+    </entity>
     <entity name="Point" representedClassName="Point" syncable="YES">
         <attribute name="channel" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="englishName" optional="YES" attributeType="String" syncable="YES"/>
@@ -60,6 +59,7 @@
         <element name="Formula" positionX="-153" positionY="72" width="128" height="150"/>
         <element name="Herb" positionX="-63" positionY="-18" width="128" height="225"/>
         <element name="Point" positionX="-281" positionY="0" width="128" height="210"/>
-        <element name="Entry" positionX="-171" positionY="90" width="128" height="195"/>
+        <element name="Entry" positionX="-171" positionY="90" width="128" height="120"/>
+        <element name="Image" positionX="-162" positionY="117" width="128" height="75"/>
     </elements>
 </model>

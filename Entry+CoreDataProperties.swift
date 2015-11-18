@@ -18,11 +18,4 @@ extension Entry {
     @NSManaged var text1: String?
     @NSManaged var text2: String?
     @NSManaged var text3: String?
-    @NSManaged var image1: NSData?
-    @NSManaged var image2: NSData?
-    @NSManaged var image3: NSData?
-    @NSManaged var image4: NSData?
-    @NSManaged var image5: NSData?
-    @NSManaged var image6: NSData?
-
 }
