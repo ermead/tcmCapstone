@@ -46,7 +46,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
         
         if canEdit{
             addButtonsToScene(true)
@@ -472,7 +472,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         topRightTextField.text = self.textFieldPlaceholderZero!
         topRightMiddleTextField.text = self.textFieldPlaceholderOne!
         topRightBottomTextField.text = self.textFieldPlaceholderTwo!
-        locationLabel.text = "Preparation and Dosage"
+        //locationLabel.text = "Preparation and Dosage"
         location.text = "..."
         indicationsAndUses.text = "..."
         topRightTextField.backgroundColor = newFieldsColor
@@ -496,7 +496,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         topRightTextField.text = self.textFieldPlaceholderZero!
         topRightMiddleTextField.text = self.textFieldPlaceholderOne!
         topRightBottomTextField.text = self.textFieldPlaceholderTwo!
-        locationLabel.text = "Preparation and Dosage"
+        //locationLabel.text = "Preparation and Dosage"
         location.text = "..."
         indicationsAndUses.text = "..."
         topRightTextField.backgroundColor = newFieldsColor
@@ -520,7 +520,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         topRightTextField.text = self.textFieldPlaceholderZero!
         topRightMiddleTextField.text = self.textFieldPlaceholderOne!
         topRightBottomTextField.text = self.textFieldPlaceholderTwo!
-        locationLabel.text = "Location"
+        //locationLabel.text = "Location"
         location.text = "..."
         indicationsAndUses.text = "..."
         topRightTextField.backgroundColor = newFieldsColor
@@ -543,7 +543,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         topRightTextField.text = self.textFieldPlaceholderZero!
         topRightMiddleTextField.text = self.textFieldPlaceholderOne!
         topRightBottomTextField.text = self.textFieldPlaceholderTwo!
-        locationLabel.text = "General Strategy"
+        //locationLabel.text = "General Strategy"
         location.text = "..."
         indicationsAndUses.text = "..."
         topRightTextField.backgroundColor = newFieldsColor
@@ -559,7 +559,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     func addButtonsToScene(add: Bool){
         
         var addButton = UIButton()
-        addButton.frame = CGRect(x: self.view.bounds.size.width/2+90, y: self.view.bounds.size.height/2-90 , width: 80, height: 30)
+        addButton.frame = CGRect(x: self.view.bounds.size.width/2+75, y: self.view.bounds.size.height/2 + 25 , width: 80, height: 30)
         addButton.setTitle("Action", forState: .Normal)
         addButton.titleLabel?.font = UIFont.systemFontOfSize(CGFloat(12))
         addButton.layer.borderWidth = 1
@@ -570,7 +570,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         addButton.backgroundColor = UIColor.blueColorDark()
         
         var addPhotoButton = UIButton()
-        addPhotoButton.frame = CGRect(x: self.view.bounds.size.width/2, y: self.view.bounds.size.height/2-90 , width: 80, height: 30)
+        addPhotoButton.frame = CGRect(x: self.view.bounds.size.width/2-10, y: self.view.bounds.size.height/2 + 25, width: 80, height: 30)
         addPhotoButton.setTitle("add photo", forState: .Normal)
         addPhotoButton.titleLabel?.font = UIFont.systemFontOfSize(CGFloat(12))
         addPhotoButton.addTarget(self, action: "addPhotoButtonTapped:", forControlEvents: UIControlEvents.TouchUpInside)

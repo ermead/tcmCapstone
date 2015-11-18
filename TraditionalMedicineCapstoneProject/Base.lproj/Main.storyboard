@@ -577,7 +577,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B4A-ap-D8e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3601" y="-139"/>
+            <point key="canvasLocation" x="3417" y="-139"/>
         </scene>
         <!--Acu-Buddy-->
         <scene sceneID="tne-QT-ifu">
@@ -916,7 +916,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QiN-fF-CLq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3616" y="1279"/>
+            <point key="canvasLocation" x="3424" y="1287"/>
         </scene>
         <!--Diagnosis Detail View Controller-->
         <scene sceneID="MbZ-nG-kBv">
@@ -1035,7 +1035,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I60-jG-cm9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4504" y="1279"/>
+            <point key="canvasLocation" x="4136" y="1487"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="YF2-TV-5aY">
@@ -1329,7 +1329,7 @@
                                 <action selector="backButtonTapped:" destination="1Cj-GQ-A8K" id="9Ga-CO-klv"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="0MM-h1-cDs"/>
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="0MM-h1-cDs"/>
                     </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="1600"/>
@@ -1355,7 +1355,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ec-lU-Sb2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2872" y="1287"/>
+            <point key="canvasLocation" x="2744" y="1287"/>
         </scene>
         <!--Other Resources Nav-->
         <scene sceneID="cBR-T8-UQv">
@@ -1447,6 +1447,7 @@
                                                     <constraint firstAttribute="width" constant="240" id="qU2-5Q-QCh"/>
                                                     <constraint firstAttribute="width" constant="200" id="xok-rh-NL5"/>
                                                 </constraints>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <variation key="default">
@@ -1464,6 +1465,7 @@
                                                     <constraint firstAttribute="height" constant="30" id="jig-ME-san"/>
                                                     <constraint firstAttribute="width" constant="200" id="wXn-Wd-Zhx"/>
                                                 </constraints>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
@@ -1476,6 +1478,7 @@
                                                     <constraint firstAttribute="width" constant="200" id="8GV-It-Eyu"/>
                                                     <constraint firstAttribute="height" constant="30" id="U9O-JY-FiI"/>
                                                 </constraints>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
@@ -1488,6 +1491,7 @@
                                                     <constraint firstAttribute="width" constant="200" id="GWo-Dz-xpD"/>
                                                     <constraint firstAttribute="height" constant="30" id="NFD-d4-T9v"/>
                                                 </constraints>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
@@ -1500,6 +1504,7 @@
                                                     <constraint firstAttribute="height" constant="30" id="G6t-oN-GCU"/>
                                                     <constraint firstAttribute="width" constant="200" id="rG2-cy-l99"/>
                                                 </constraints>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
@@ -1531,6 +1536,7 @@
                                                     <constraint firstAttribute="height" constant="61" id="Wtu-3y-42D"/>
                                                 </constraints>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
@@ -1552,6 +1558,7 @@
                                                     <constraint firstAttribute="height" constant="102" id="DcI-bU-Xf7"/>
                                                 </constraints>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
@@ -1672,7 +1679,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zbv-Cx-yvV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2857" y="-132"/>
+            <point key="canvasLocation" x="2673" y="-139"/>
         </scene>
         <!--SideScroller-->
         <scene sceneID="PDv-Uc-oJW">
@@ -1736,7 +1743,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RFi-rw-qie" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2979" y="580"/>
+            <point key="canvasLocation" x="3035" y="580"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EXG-oi-ADE">
@@ -1948,7 +1955,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TE8-RG-x3G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5458" y="1531"/>
+            <point key="canvasLocation" x="5074" y="1739"/>
         </scene>
     </scenes>
     <resources>

@@ -16,11 +16,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
 //        deleteCoreData()
-//        addHerbSet(HerbSets.sharedController.setHerbSet())
-//        addHerbSet(HerbSets.sharedController.setHerbSet1())
-//        addHerbSet(HerbSets.sharedController.setHerbSet2())
-//        addHerbSet(HerbSets.sharedController.setHerbSet3())
-//        addHerbSet(HerbSets.sharedController.setHerbSet4())
+        addHerbSet(HerbSets.sharedController.setHerbSet())
+        addHerbSet(HerbSets.sharedController.setHerbSet1())
+        addHerbSet(HerbSets.sharedController.setHerbSet2())
+        addHerbSet(HerbSets.sharedController.setHerbSet3())
+        addHerbSet(HerbSets.sharedController.setHerbSet4())
      
     }
 
