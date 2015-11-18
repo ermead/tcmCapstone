@@ -1393,8 +1393,8 @@
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ouo-61-zMQ">
                                         <rect key="frame" x="0.0" y="85" width="600" height="481"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="xEy-SW-DBY">
-                                                <rect key="frame" x="58" y="-27" width="140" height="200"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="xEy-SW-DBY">
+                                                <rect key="frame" x="8" y="8" width="140" height="200"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="140" id="8UR-96-1tU"/>
                                                     <constraint firstAttribute="width" secondItem="xEy-SW-DBY" secondAttribute="height" multiplier="101:144" id="bYI-i1-PqZ"/>
@@ -1406,36 +1406,29 @@
                                                     </mask>
                                                 </variation>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="kZk-uo-87d">
-                                                <rect key="frame" x="8" y="8" width="140" height="200"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="140" id="7Mb-Zz-JH8"/>
-                                                    <constraint firstAttribute="height" constant="200" id="B5x-n9-FaG"/>
-                                                    <constraint firstAttribute="width" secondItem="kZk-uo-87d" secondAttribute="height" multiplier="101:144" id="ftn-IG-D9x"/>
-                                                </constraints>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="ftn-IG-D9x"/>
-                                                    </mask>
-                                                </variation>
-                                            </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Main Name" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mz4-U5-tH8">
-                                                <rect key="frame" x="352" y="8" width="240" height="30"/>
+                                                <rect key="frame" x="392" y="8" width="200" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="Nyx-mw-fma"/>
                                                     <constraint firstAttribute="width" constant="240" id="qU2-5Q-QCh"/>
+                                                    <constraint firstAttribute="width" constant="200" id="xok-rh-NL5"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="qU2-5Q-QCh"/>
+                                                    </mask>
+                                                </variation>
                                                 <connections>
                                                     <outlet property="delegate" destination="ofP-5f-vj4" id="hJf-mk-H2m"/>
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Botanical Name" textAlignment="right" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="gye-M0-Wwn">
-                                                <rect key="frame" x="352" y="60" width="240" height="30"/>
+                                                <rect key="frame" x="392" y="60" width="200" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="jig-ME-san"/>
-                                                    <constraint firstAttribute="width" constant="240" id="wXn-Wd-Zhx"/>
+                                                    <constraint firstAttribute="width" constant="200" id="wXn-Wd-Zhx"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -1444,9 +1437,9 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Other Names" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wSW-Gz-ePQ">
-                                                <rect key="frame" x="352" y="111" width="240" height="30"/>
+                                                <rect key="frame" x="392" y="111" width="200" height="30"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="240" id="8GV-It-Eyu"/>
+                                                    <constraint firstAttribute="width" constant="200" id="8GV-It-Eyu"/>
                                                     <constraint firstAttribute="height" constant="30" id="U9O-JY-FiI"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1456,9 +1449,9 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Other Names" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zDG-fO-ZCT">
-                                                <rect key="frame" x="352" y="160" width="240" height="30"/>
+                                                <rect key="frame" x="392" y="160" width="200" height="30"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="240" id="GWo-Dz-xpD"/>
+                                                    <constraint firstAttribute="width" constant="200" id="GWo-Dz-xpD"/>
                                                     <constraint firstAttribute="height" constant="30" id="NFD-d4-T9v"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1468,10 +1461,10 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Other Names" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WL8-zy-W0J">
-                                                <rect key="frame" x="352" y="211" width="240" height="30"/>
+                                                <rect key="frame" x="392" y="211" width="200" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="G6t-oN-GCU"/>
-                                                    <constraint firstAttribute="width" constant="240" id="rG2-cy-l99"/>
+                                                    <constraint firstAttribute="width" constant="200" id="rG2-cy-l99"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -1528,6 +1521,19 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="kZk-uo-87d">
+                                                <rect key="frame" x="8" y="8" width="140" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="140" id="7Mb-Zz-JH8"/>
+                                                    <constraint firstAttribute="height" constant="200" id="B5x-n9-FaG"/>
+                                                    <constraint firstAttribute="width" secondItem="kZk-uo-87d" secondAttribute="height" multiplier="101:144" id="ftn-IG-D9x"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="ftn-IG-D9x"/>
+                                                    </mask>
+                                                </variation>
+                                            </imageView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="lRs-w6-Ejj" secondAttribute="trailing" constant="30" id="71i-VR-gEa"/>
@@ -1553,7 +1559,9 @@
                                             <constraint firstItem="HMm-hv-uZ8" firstAttribute="leading" secondItem="ouo-61-zMQ" secondAttribute="leading" constant="8" id="khr-xt-bSr"/>
                                             <constraint firstAttribute="trailing" secondItem="gye-M0-Wwn" secondAttribute="trailing" constant="8" id="knC-q3-Rsr"/>
                                             <constraint firstAttribute="trailing" secondItem="MHl-Ac-BWN" secondAttribute="trailing" constant="30" id="oj3-qS-Y9O"/>
+                                            <constraint firstItem="xEy-SW-DBY" firstAttribute="centerX" secondItem="kZk-uo-87d" secondAttribute="centerX" id="qOx-Ja-nG5"/>
                                             <constraint firstAttribute="trailing" secondItem="wSW-Gz-ePQ" secondAttribute="trailing" constant="8" id="r9d-OD-5VI"/>
+                                            <constraint firstItem="xEy-SW-DBY" firstAttribute="centerY" secondItem="kZk-uo-87d" secondAttribute="centerY" id="tbA-Qc-dtV"/>
                                             <constraint firstItem="wSW-Gz-ePQ" firstAttribute="top" secondItem="gye-M0-Wwn" secondAttribute="bottom" constant="21" id="tit-5k-oHK"/>
                                         </constraints>
                                     </view>
