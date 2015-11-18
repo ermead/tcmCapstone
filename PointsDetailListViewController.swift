@@ -122,7 +122,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             topRightMiddleTextField.text = detailHerb.englishName
             topRightBottomTextField.text = detailHerb.botanicalName
                 
-            locationLabel.text = detailHerb.botanicalName
+            //locationLabel.text = detailHerb.botanicalName
                 
             location.text = "This herb, named \(detailHerb.pinyinName!), belongs to the category of \(detailHerb.category!). Having a \(detailHerb.temp!) temperature, it travels along the \(detailHerb.meridians!) channels."
                 indicationsAndUses.text = detailHerb.uses
@@ -147,7 +147,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                 topRightTextField.text = detailHerb.pinyinName
                 topRightMiddleTextField.text = detailHerb.englishName
                 topRightBottomTextField.text = "  "
-                locationLabel.text = detailHerb.pinyinName
+                //locationLabel.text = detailHerb.pinyinName
                 location.text = "This formula, contains how many and what herbs?"
                 indicationsAndUses.text = detailHerb.uses
                 

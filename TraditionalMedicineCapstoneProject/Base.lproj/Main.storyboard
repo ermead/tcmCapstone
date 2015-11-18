@@ -152,7 +152,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="ofP-5f-vj4" kind="show" identifier="showPointDetail" id="BTE-YL-rNC"/>
+                                            <segue destination="pLW-Pq-RcD" kind="show" identifier="showPointDetail" id="jzB-EM-KTi"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -203,7 +203,7 @@
                     <navigationItem key="navigationItem" id="gqs-du-kG9">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="oJ6-3t-nmy">
                             <connections>
-                                <segue destination="ofP-5f-vj4" kind="show" id="sbV-85-wPU"/>
+                                <segue destination="pLW-Pq-RcD" kind="show" id="5UO-u9-esO"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -245,7 +245,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="teu-Wa-kOn">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="teu-Wa-kOn">
                                 <rect key="frame" x="20" y="72" width="140" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="teu-Wa-kOn" secondAttribute="height" multiplier="101:144" id="DOk-b5-O6S"/>
@@ -324,11 +324,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ulN-e0-PcU">
-                                <rect key="frame" x="529" y="285" width="46" height="30"/>
+                                <rect key="frame" x="529" y="285" width="46" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="pLW-Pq-RcD" kind="show" id="fNP-8G-mN1"/>
-                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Botanical Name" textAlignment="right" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZhS-Lq-6ks">
                                 <rect key="frame" x="340" y="117" width="240" height="30"/>
@@ -406,12 +403,11 @@
                         <outlet property="topRightBottomTextField" destination="ibo-Wa-XQb" id="3Nb-PQ-sHv"/>
                         <outlet property="topRightMiddleTextField" destination="ZhS-Lq-6ks" id="AJN-P3-QyE"/>
                         <outlet property="topRightTextField" destination="WBA-rY-dn1" id="pPU-PF-FDt"/>
-                        <segue destination="Ocd-d0-SMa" kind="show" identifier="toCombinationsView" id="x5l-M3-GMs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tir-R6-dJW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3011" y="-531"/>
+            <point key="canvasLocation" x="3424" y="-1714"/>
         </scene>
         <!--Combinations View-->
         <scene sceneID="TsD-Bu-YMu">
@@ -422,7 +418,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Nly-6q-Ati"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="DhO-jM-7Zy">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" placeholder="...search" translatesAutoresizingMaskIntoConstraints="NO" id="8Pe-dQ-iOr">
@@ -508,7 +504,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Kp-he-lq8">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Kp-he-lq8">
                                 <rect key="frame" x="0.0" y="132" width="600" height="468"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -539,9 +535,6 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="ofP-5f-vj4" kind="show" identifier="showPointDetail" id="HTf-MF-4ah"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -567,11 +560,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Combinations View" id="Nvk-24-aSG">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="Q1t-Ms-xI1">
-                            <connections>
-                                <action selector="BackButtonTapped:" destination="Vde-ry-FGg" id="rir-11-nqA"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Edit" id="bFt-ey-5tX"/>
                     </navigationItem>
                     <connections>
@@ -589,7 +577,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B4A-ap-D8e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5583" y="-439"/>
+            <point key="canvasLocation" x="3601" y="-139"/>
         </scene>
         <!--Acu-Buddy-->
         <scene sceneID="tne-QT-ifu">
@@ -1400,7 +1388,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="alg-AB-jT0">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="alg-AB-jT0">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="1156"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UaK-Yd-a01">
@@ -1654,7 +1642,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="O3p-aD-QhS">
                         <rightBarButtonItems>
-                            <barButtonItem title="Item" id="2IE-tn-3nw">
+                            <barButtonItem image="Hamburger" id="2IE-tn-3nw">
                                 <connections>
                                     <action selector="NewButtonTapped:" destination="pLW-Pq-RcD" id="e8L-wV-go9"/>
                                 </connections>
@@ -1679,11 +1667,12 @@
                         <outlet property="topRightMiddleTextField" destination="gye-M0-Wwn" id="j1N-ub-gXg"/>
                         <outlet property="topRightTextField" destination="mz4-U5-tH8" id="hHB-fq-nW0"/>
                         <outlet property="view" destination="fH6-BP-Mcx" id="o20-vE-6Ac"/>
+                        <segue destination="Vde-ry-FGg" kind="show" identifier="toCombinationsView" id="Ipa-kN-BuH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zbv-Cx-yvV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4069" y="-292"/>
+            <point key="canvasLocation" x="2857" y="-132"/>
         </scene>
         <!--SideScroller-->
         <scene sceneID="PDv-Uc-oJW">
@@ -1748,24 +1737,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RFi-rw-qie" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2979" y="580"/>
-        </scene>
-        <!--Combinations Nav Scene-->
-        <scene sceneID="JiW-XJ-VMv">
-            <objects>
-                <navigationController storyboardIdentifier="combinations" title="Combinations Nav Scene" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ocd-d0-SMa" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qSO-cU-OQO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Vde-ry-FGg" kind="relationship" relationship="rootViewController" id="t6s-28-Wsp"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7Sg-X6-xhq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4772" y="-449"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EXG-oi-ADE">
@@ -1842,6 +1813,7 @@
                                     <constraint firstItem="adD-Ob-Iga" firstAttribute="leading" secondItem="ugj-Qi-3Cr" secondAttribute="trailing" constant="15" id="3vj-ju-qrh"/>
                                     <constraint firstItem="ugj-Qi-3Cr" firstAttribute="bottom" secondItem="Ifn-NT-IS5" secondAttribute="bottom" id="7lF-qw-3sf"/>
                                     <constraint firstItem="k5u-qK-Qrl" firstAttribute="leading" secondItem="adD-Ob-Iga" secondAttribute="trailing" constant="22" id="AtK-en-T6m"/>
+                                    <constraint firstItem="k5u-qK-Qrl" firstAttribute="top" secondItem="adD-Ob-Iga" secondAttribute="top" id="CFo-6z-Quy"/>
                                     <constraint firstItem="k5u-qK-Qrl" firstAttribute="height" secondItem="adD-Ob-Iga" secondAttribute="height" id="D8r-JK-sZN"/>
                                     <constraint firstItem="adD-Ob-Iga" firstAttribute="bottom" secondItem="ugj-Qi-3Cr" secondAttribute="bottom" id="K8j-wQ-Lut"/>
                                     <constraint firstItem="k5u-qK-Qrl" firstAttribute="width" secondItem="adD-Ob-Iga" secondAttribute="width" id="Qyw-mx-cAN"/>
@@ -1873,24 +1845,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="atf-yf-5lg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2897" y="2398"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="jb0-dz-nd8">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8x8-xq-9NA" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Fq-cT-5Ld">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="pLW-Pq-RcD" kind="relationship" relationship="rootViewController" id="fDd-Oi-lwP"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Z9F-gm-SI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3020" y="135"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Bha-Ro-jLa">
@@ -1950,7 +1904,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VfZ-HC-HeU">
-                                        <rect key="frame" x="773" y="8" width="143" height="128"/>
+                                        <rect key="frame" x="773" y="0.0" width="143" height="136"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="ERz-9I-Nrt"/>
@@ -1976,6 +1930,7 @@
                                     <constraint firstItem="VfZ-HC-HeU" firstAttribute="height" secondItem="QKd-EV-By4" secondAttribute="height" id="lLX-vJ-00u"/>
                                     <constraint firstItem="z1A-15-TR6" firstAttribute="leading" secondItem="Hzc-3L-TA0" secondAttribute="trailing" constant="8" symbolic="YES" id="oa5-gI-eHC"/>
                                     <constraint firstItem="z1A-15-TR6" firstAttribute="bottom" secondItem="Hzc-3L-TA0" secondAttribute="bottom" id="q1g-0v-pyc"/>
+                                    <constraint firstItem="VfZ-HC-HeU" firstAttribute="top" secondItem="QKd-EV-By4" secondAttribute="top" id="wLw-Z7-eMr"/>
                                     <constraint firstItem="UJC-ly-eCT" firstAttribute="trailing" secondItem="Tem-cp-vuE" secondAttribute="trailingMargin" id="z5U-hn-YqN"/>
                                 </constraints>
                             </scrollView>
@@ -2008,8 +1963,7 @@
         <image name="woodTexture" width="1698" height="864"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="jzB-EM-KTi"/>
         <segue reference="tFZ-Rx-MOA"/>
-        <segue reference="fNP-8G-mN1"/>
-        <segue reference="HTf-MF-4ah"/>
     </inferredMetricsTieBreakers>
 </document>
