@@ -1342,10 +1342,10 @@
             </objects>
             <point key="canvasLocation" x="282" y="1080"/>
         </scene>
-        <!--View Controller-->
+        <!--Points Detail List View Controller-->
         <scene sceneID="Xxv-iR-Nrh">
             <objects>
-                <viewController id="pLW-Pq-RcD" customClass="ViewController" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pLW-Pq-RcD" customClass="PointsDetailListViewController" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pot-t1-wKv"/>
                         <viewControllerLayoutGuide type="bottom" id="fdO-ih-54F"/>
@@ -1393,6 +1393,19 @@
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ouo-61-zMQ">
                                         <rect key="frame" x="0.0" y="85" width="600" height="481"/>
                                         <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="xEy-SW-DBY">
+                                                <rect key="frame" x="58" y="-27" width="140" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="140" id="8UR-96-1tU"/>
+                                                    <constraint firstAttribute="width" secondItem="xEy-SW-DBY" secondAttribute="height" multiplier="101:144" id="bYI-i1-PqZ"/>
+                                                    <constraint firstAttribute="height" constant="200" id="otm-EQ-r6a"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="bYI-i1-PqZ"/>
+                                                    </mask>
+                                                </variation>
+                                            </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="kZk-uo-87d">
                                                 <rect key="frame" x="8" y="8" width="140" height="200"/>
                                                 <constraints>
@@ -1469,6 +1482,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejR-1T-3AI">
                                                 <rect key="frame" x="55" y="211" width="46" height="30"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="TogglePictureButtonTapped:" destination="pLW-Pq-RcD" eventType="touchUpInside" id="MCg-bj-nws"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Other Names" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HMm-hv-uZ8">
                                                 <rect key="frame" x="8" y="246" width="240" height="30"/>
@@ -1584,19 +1600,36 @@
                     </view>
                     <navigationItem key="navigationItem" id="O3p-aD-QhS">
                         <rightBarButtonItems>
-                            <barButtonItem title="Item" id="2IE-tn-3nw"/>
-                            <barButtonItem title="Item" id="YMl-hJ-SWj"/>
+                            <barButtonItem title="Item" id="2IE-tn-3nw">
+                                <connections>
+                                    <action selector="NewButtonTapped:" destination="pLW-Pq-RcD" id="e8L-wV-go9"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Save" id="YMl-hJ-SWj">
+                                <connections>
+                                    <action selector="saveButtonTapped:" destination="pLW-Pq-RcD" id="rHt-UN-0ve"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="1200"/>
                     <connections>
+                        <outlet property="indicationsAndUses" destination="lRs-w6-Ejj" id="w7e-yW-rAg"/>
+                        <outlet property="leftImage" destination="xEy-SW-DBY" id="TLj-V3-hxU"/>
+                        <outlet property="location" destination="MHl-Ac-BWN" id="MVL-sb-hlH"/>
+                        <outlet property="rightImage" destination="kZk-uo-87d" id="JWW-D4-QNR"/>
+                        <outlet property="saveButton" destination="YMl-hJ-SWj" id="jMR-6S-UmP"/>
+                        <outlet property="togglePicOutlet" destination="ejR-1T-3AI" id="r7x-Si-uTu"/>
+                        <outlet property="topRightBottomTextField" destination="wSW-Gz-ePQ" id="9lz-qc-5vV"/>
+                        <outlet property="topRightMiddleTextField" destination="gye-M0-Wwn" id="j1N-ub-gXg"/>
+                        <outlet property="topRightTextField" destination="mz4-U5-tH8" id="hHB-fq-nW0"/>
                         <outlet property="view" destination="fH6-BP-Mcx" id="o20-vE-6Ac"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zbv-Cx-yvV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4012" y="-297"/>
+            <point key="canvasLocation" x="4069" y="-292"/>
         </scene>
         <!--SideScroller-->
         <scene sceneID="PDv-Uc-oJW">

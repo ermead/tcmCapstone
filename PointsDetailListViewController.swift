@@ -8,11 +8,8 @@
 
 import UIKit
 
-class PointsDetailListViewController: UIViewController,  UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate, UITextViewDelegate, UIScrollViewDelegate {
+class PointsDetailListViewController: UIViewController,  UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate, UITextViewDelegate {
     
-    @IBOutlet weak var scrollView: UIScrollView!
-    
-    @IBOutlet var myView: UIView!
     
     var herb: Herb?
     var point: Point?
