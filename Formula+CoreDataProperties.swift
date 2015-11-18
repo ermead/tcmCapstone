@@ -17,6 +17,7 @@ extension Formula {
     @NSManaged var pinyinName: String?
     @NSManaged var englishName: String?
     @NSManaged var uses: String?
+    @NSManaged var category: String?
     @NSManaged var hasContents: NSSet?
     @NSManaged var imageId1: String?
     @NSManaged var imageId2: String?
