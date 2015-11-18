@@ -1073,8 +1073,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1800" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgD-2n-yxH">
-                                <rect key="frame" x="100" y="64" width="1680" height="487"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgD-2n-yxH">
+                                <rect key="frame" x="100" y="64" width="1700" height="487"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w9l-xW-5bU">
                                         <rect key="frame" x="8" y="8" width="240" height="471"/>
@@ -1135,7 +1135,7 @@
                                             </mask>
                                         </variation>
                                     </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W0D-tc-VBg">
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W0D-tc-VBg">
                                         <rect key="frame" x="1496" y="8" width="0.0" height="560"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
@@ -1165,7 +1165,7 @@
                                     <constraint firstItem="RCc-ho-JNC" firstAttribute="top" secondItem="6rc-Yp-YIy" secondAttribute="top" id="9ka-Mt-wIt"/>
                                     <constraint firstItem="W0D-tc-VBg" firstAttribute="top" secondItem="rgD-2n-yxH" secondAttribute="top" constant="8" id="Foo-V6-JmD"/>
                                     <constraint firstItem="iKY-Ev-cZA" firstAttribute="centerY" secondItem="rgD-2n-yxH" secondAttribute="centerY" id="HbP-Vg-Nw4"/>
-                                    <constraint firstItem="W0D-tc-VBg" firstAttribute="leading" secondItem="wFm-fT-szU" secondAttribute="trailing" constant="8" id="IsB-Im-brS"/>
+                                    <constraint firstItem="W0D-tc-VBg" firstAttribute="leading" secondItem="wFm-fT-szU" secondAttribute="trailing" id="IsB-Im-brS"/>
                                     <constraint firstItem="VIw-Fn-gyi" firstAttribute="bottom" secondItem="RCc-ho-JNC" secondAttribute="bottom" id="KQh-S1-i1b"/>
                                     <constraint firstItem="iKY-Ev-cZA" firstAttribute="top" secondItem="VIw-Fn-gyi" secondAttribute="top" id="L09-P1-aME"/>
                                     <constraint firstAttribute="trailing" secondItem="W0D-tc-VBg" secondAttribute="trailing" constant="8" id="PHk-RR-r3E"/>
@@ -1227,7 +1227,7 @@
                                     </mask>
                                 </variation>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sX-4W-YSf" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" restorationIdentifier="1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sX-4W-YSf" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="92" height="30"/>
                                 <accessibility key="accessibilityConfiguration" identifier=""/>
                                 <state key="normal" title="Microsystems"/>
@@ -1236,7 +1236,7 @@
                                     <segue destination="1Cj-GQ-A8K" kind="show" identifier="toOtherResourcesDetailView" id="VJf-vc-UO1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="2" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAt-3p-bVe" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" restorationIdentifier="2" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAt-3p-bVe" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="110" width="92" height="30"/>
                                 <state key="normal" title="Yoga Postures"/>
                                 <connections>
@@ -1244,7 +1244,7 @@
                                     <segue destination="1Cj-GQ-A8K" kind="show" identifier="toOtherResourcesDetailView" id="fg6-VJ-ANk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="3" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OrO-2K-W6V" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" restorationIdentifier="3" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OrO-2K-W6V" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="148" width="92" height="30"/>
                                 <state key="normal" title="Diet"/>
                                 <connections>
@@ -1252,7 +1252,7 @@
                                     <segue destination="1Cj-GQ-A8K" kind="show" identifier="toOtherResourcesDetailView" id="tFZ-Rx-MOA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="4" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7t-46-4YI" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" restorationIdentifier="4" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7t-46-4YI" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="186" width="92" height="30"/>
                                 <state key="normal" title="EFT"/>
                                 <connections>
@@ -1260,7 +1260,7 @@
                                     <segue destination="1Cj-GQ-A8K" kind="show" identifier="toOtherResourcesDetailView" id="8qe-dp-0bo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="5" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCv-oI-NM2" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" restorationIdentifier="5" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCv-oI-NM2" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="224" width="92" height="30"/>
                                 <state key="normal" title="Songs"/>
                                 <connections>
@@ -1268,7 +1268,7 @@
                                     <segue destination="1Cj-GQ-A8K" kind="show" identifier="toOtherResourcesDetailView" id="sRj-fW-3bR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="6" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJh-Io-YzS" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" restorationIdentifier="6" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJh-Io-YzS" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="262" width="92" height="30"/>
                                 <state key="normal" title="Classical Quotes"/>
                                 <connections>
@@ -1276,7 +1276,7 @@
                                     <segue destination="1Cj-GQ-A8K" kind="show" identifier="toOtherResourcesDetailView" id="YST-IR-j00"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="7" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKk-JC-9EX" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" restorationIdentifier="7" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKk-JC-9EX" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="300" width="92" height="30"/>
                                 <state key="normal" title="Quiz"/>
                                 <connections>
@@ -1284,7 +1284,7 @@
                                     <segue destination="1Cj-GQ-A8K" kind="show" identifier="toOtherResourcesDetailView" id="KAP-4A-yDz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="8" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNy-wG-woS" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" restorationIdentifier="8" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNy-wG-woS" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="338" width="92" height="30"/>
                                 <state key="normal" title="Tongue"/>
                                 <connections>
@@ -1292,7 +1292,7 @@
                                     <segue destination="1Cj-GQ-A8K" kind="show" identifier="toOtherResourcesDetailView" id="ZVR-RO-sE5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="9" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixy-wO-Mcp" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" restorationIdentifier="9" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixy-wO-Mcp" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="376" width="92" height="30"/>
                                 <state key="normal" title="Pulse"/>
                                 <connections>
@@ -1312,7 +1312,7 @@
                             <constraint firstItem="b7t-46-4YI" firstAttribute="top" secondItem="OrO-2K-W6V" secondAttribute="bottom" constant="8" symbolic="YES" id="77m-5B-Hlv"/>
                             <constraint firstItem="Ixy-wO-Mcp" firstAttribute="top" secondItem="wNy-wG-woS" secondAttribute="bottom" constant="8" symbolic="YES" id="7h6-68-bKV"/>
                             <constraint firstItem="OrO-2K-W6V" firstAttribute="trailing" secondItem="b7t-46-4YI" secondAttribute="trailing" id="7p4-bD-ynE"/>
-                            <constraint firstItem="W0D-tc-VBg" firstAttribute="height" secondItem="wes-Pp-PJi" secondAttribute="height" constant="-40" id="8Lx-uX-lCI"/>
+                            <constraint firstItem="W0D-tc-VBg" firstAttribute="height" secondItem="wes-Pp-PJi" secondAttribute="height" id="8Lx-uX-lCI"/>
                             <constraint firstItem="Ea8-1L-NYo" firstAttribute="top" secondItem="iKY-Ev-cZA" secondAttribute="bottom" constant="8" id="8bR-D1-jzV"/>
                             <constraint firstItem="OrO-2K-W6V" firstAttribute="leading" secondItem="YAt-3p-bVe" secondAttribute="leading" id="9KD-gM-mhI"/>
                             <constraint firstItem="YAt-3p-bVe" firstAttribute="trailing" secondItem="OrO-2K-W6V" secondAttribute="trailing" id="Aoe-Ny-E1e"/>
@@ -1352,7 +1352,7 @@
                             <constraint firstItem="gCv-oI-NM2" firstAttribute="trailing" secondItem="b7t-46-4YI" secondAttribute="trailing" id="rhc-BU-lKx"/>
                             <constraint firstItem="rgD-2n-yxH" firstAttribute="leading" secondItem="wes-Pp-PJi" secondAttribute="leadingMargin" constant="80" id="sGv-yE-WQD"/>
                             <constraint firstItem="LJh-Io-YzS" firstAttribute="top" secondItem="gCv-oI-NM2" secondAttribute="bottom" constant="8" symbolic="YES" id="tqC-Jm-paz"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="rgD-2n-yxH" secondAttribute="trailing" id="uOf-iT-S83"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rgD-2n-yxH" secondAttribute="trailing" constant="-20" id="uOf-iT-S83"/>
                             <constraint firstItem="Ea8-1L-NYo" firstAttribute="top" secondItem="rgD-2n-yxH" secondAttribute="bottom" id="vbV-t2-uir"/>
                             <constraint firstItem="Ea8-1L-NYo" firstAttribute="top" secondItem="rgD-2n-yxH" secondAttribute="bottom" id="vhX-g8-zpe"/>
                             <constraint firstItem="aKk-JC-9EX" firstAttribute="trailing" secondItem="wNy-wG-woS" secondAttribute="trailing" id="wG8-Gq-ffS"/>
@@ -1366,6 +1366,7 @@
                                 <exclude reference="jvb-Kj-uSD"/>
                                 <exclude reference="neY-dg-UgL"/>
                                 <exclude reference="V3s-N4-KB6"/>
+                                <exclude reference="QAO-fV-WGj"/>
                                 <exclude reference="2Bs-R7-Dyo"/>
                                 <exclude reference="vhX-g8-zpe"/>
                                 <exclude reference="f0a-hz-WFy"/>
