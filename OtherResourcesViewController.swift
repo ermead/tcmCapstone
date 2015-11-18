@@ -12,6 +12,8 @@ class OtherResourcesViewController: UIViewController {
     
     var titleA: String = "TEST"
 
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     @IBOutlet weak var button1Outlet: MyCustomButton!
     @IBOutlet weak var button2Outlet: MyCustomButton!
     @IBOutlet weak var button3Outlet: MyCustomButton!
@@ -62,6 +64,8 @@ class OtherResourcesViewController: UIViewController {
         super.viewDidLoad()
         
         setUpButtons()
+        
+        scrollView.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
         
         button1Outlet.updateButtonProperties()
         button2Outlet.updateButtonProperties()

@@ -1389,6 +1389,7 @@
                         <outlet property="button7Outlet" destination="aKk-JC-9EX" id="b7u-ee-pVT"/>
                         <outlet property="button8Outlet" destination="Ixy-wO-Mcp" id="bBh-o9-dEh"/>
                         <outlet property="button9Outlet" destination="wNy-wG-woS" id="hqA-du-Oyz"/>
+                        <outlet property="scrollView" destination="rgD-2n-yxH" id="vsg-Aw-16m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VBT-gB-7Yi" userLabel="First Responder" sceneMemberID="firstResponder"/>
