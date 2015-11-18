@@ -18,6 +18,7 @@ class OtherResourcesDetailViewController: UIViewController {
         
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = titleB

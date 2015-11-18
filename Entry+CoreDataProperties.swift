@@ -13,7 +13,8 @@ import Foundation
 import CoreData
 
 extension Entry {
-
+    
+    @NSManaged var name: String?
     @NSManaged var text1: String?
     @NSManaged var text2: String?
     @NSManaged var text3: String?
