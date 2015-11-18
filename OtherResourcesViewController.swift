@@ -12,15 +12,15 @@ class OtherResourcesViewController: UIViewController {
     
     var titleA: String = "TEST"
 
-    @IBOutlet weak var button1Outlet: UIButton!
-    @IBOutlet weak var button2Outlet: UIButton!
-    @IBOutlet weak var button3Outlet: UIButton!
-    @IBOutlet weak var button4Outlet: UIButton!
-    @IBOutlet weak var button5Outlet: UIButton!
-    @IBOutlet weak var button6Outlet: UIButton!
-    @IBOutlet weak var button7Outlet: UIButton!
-    @IBOutlet weak var button8Outlet: UIButton!
-    @IBOutlet weak var button9Outlet: UIButton!
+    @IBOutlet weak var button1Outlet: MyCustomButton!
+    @IBOutlet weak var button2Outlet: MyCustomButton!
+    @IBOutlet weak var button3Outlet: MyCustomButton!
+    @IBOutlet weak var button4Outlet: MyCustomButton!
+    @IBOutlet weak var button5Outlet: MyCustomButton!
+    @IBOutlet weak var button6Outlet: MyCustomButton!
+    @IBOutlet weak var button7Outlet: MyCustomButton!
+    @IBOutlet weak var button8Outlet: MyCustomButton!
+    @IBOutlet weak var button9Outlet: MyCustomButton!
     
     
     var arrayOfButtonNames: [String] = []
@@ -60,7 +60,19 @@ class OtherResourcesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setUpButtons()
+        
+        button1Outlet.updateButtonProperties()
+        button2Outlet.updateButtonProperties()
+        button3Outlet.updateButtonProperties()
+        button4Outlet.updateButtonProperties()
+        button5Outlet.updateButtonProperties()
+        button6Outlet.updateButtonProperties()
+        button7Outlet.updateButtonProperties()
+        button8Outlet.updateButtonProperties()
+        button9Outlet.updateButtonProperties()
+        
         // Do any additional setup after loading the view.
     }
 

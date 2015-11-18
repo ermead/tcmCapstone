@@ -24,6 +24,7 @@ class MyCustomButton: UIButton {
         var water = UIColor.BlueWater()
         var metal = UIColor.WhiteMetal()
         
+        //BUTTONS on Quick View
         if self.accessibilityIdentifier == "TopLeftButton" {
             self.layer.cornerRadius = 37.5;
             self.layer.borderColor = UIColor.blueColorDark().CGColor
@@ -86,6 +87,129 @@ class MyCustomButton: UIButton {
             self.tintColor = UIColor.whiteColor()
             //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
             self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        }
+        
+        //BUTTONS on Other Resources View
+        if self.restorationIdentifier != nil {
+            
+            if self.restorationIdentifier! == "1"{
+                
+                print("I am a custom button!!!")
+                self.layer.cornerRadius = 5;
+                self.titleLabel!.font = UIFont.systemFontOfSize(CGFloat(11))
+                self.layer.borderColor = UIColor.blueColorDark().CGColor
+                self.layer.borderWidth = 1.5
+                //self.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
+                self.backgroundColor = water
+                self.tintColor = UIColor.whiteColor()
+                //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+                self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+            }
+            
+            if self.restorationIdentifier! == "2"{
+                
+                print("I am a custom button!!!")
+                self.layer.cornerRadius = 5;
+                self.titleLabel!.font = UIFont.systemFontOfSize(CGFloat(11))
+                self.layer.borderColor = UIColor.blueColorDark().CGColor
+                self.layer.borderWidth = 1.5
+                //self.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
+                self.backgroundColor = water
+                self.tintColor = UIColor.whiteColor()
+                //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+                self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+            }
+            if self.restorationIdentifier! == "3"{
+                
+                print("I am a custom button!!!")
+                self.layer.cornerRadius = 5;
+                self.titleLabel!.font = UIFont.systemFontOfSize(CGFloat(11))
+                self.layer.borderColor = UIColor.blueColorDark().CGColor
+                self.layer.borderWidth = 1.5
+                //self.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
+                self.backgroundColor = water
+                self.tintColor = UIColor.whiteColor()
+                //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+                self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+            }
+            if self.restorationIdentifier! == "4"{
+                
+                print("I am a custom button!!!")
+                self.layer.cornerRadius = 5;
+                self.titleLabel!.font = UIFont.systemFontOfSize(CGFloat(11))
+                self.layer.borderColor = UIColor.blueColorDark().CGColor
+                self.layer.borderWidth = 1.5
+                //self.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
+                self.backgroundColor = water
+                self.tintColor = UIColor.whiteColor()
+                //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+                self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+            }
+            if self.restorationIdentifier! == "5"{
+                
+                print("I am a custom button!!!")
+                self.layer.cornerRadius = 5;
+                self.titleLabel!.font = UIFont.systemFontOfSize(CGFloat(11))
+                self.layer.borderColor = UIColor.blueColorDark().CGColor
+                self.layer.borderWidth = 1.5
+                //self.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
+                self.backgroundColor = water
+                self.tintColor = UIColor.whiteColor()
+                //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+                self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+            }
+            if self.restorationIdentifier! == "6"{
+                
+                print("I am a custom button!!!")
+                self.layer.cornerRadius = 5;
+                self.titleLabel!.font = UIFont.systemFontOfSize(CGFloat(11))
+                self.layer.borderColor = UIColor.blueColorDark().CGColor
+                self.layer.borderWidth = 1.5
+                //self.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
+                self.backgroundColor = water
+                self.tintColor = UIColor.whiteColor()
+                //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+                self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+            }
+            if self.restorationIdentifier! == "7"{
+                
+                print("I am a custom button!!!")
+                self.layer.cornerRadius = 5;
+                self.titleLabel!.font = UIFont.systemFontOfSize(CGFloat(11))
+                self.layer.borderColor = UIColor.blueColorDark().CGColor
+                self.layer.borderWidth = 1.5
+                //self.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
+                self.backgroundColor = water
+                self.tintColor = UIColor.whiteColor()
+                //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+                self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+            }
+            if self.restorationIdentifier! == "8"{
+                
+                print("I am a custom button!!!")
+                self.layer.cornerRadius = 5;
+                self.titleLabel!.font = UIFont.systemFontOfSize(CGFloat(11))
+                self.layer.borderColor = UIColor.blueColorDark().CGColor
+                self.layer.borderWidth = 1.5
+                //self.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
+                self.backgroundColor = water
+                self.tintColor = UIColor.whiteColor()
+                //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+                self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+            }
+            if self.restorationIdentifier! == "9"{
+                
+                print("I am a custom button!!!")
+                self.layer.cornerRadius = 5;
+                self.titleLabel!.font = UIFont.systemFontOfSize(CGFloat(11))
+                self.layer.borderColor = UIColor.blueColorDark().CGColor
+                self.layer.borderWidth = 1.5
+                //self.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
+                self.backgroundColor = water
+                self.tintColor = UIColor.whiteColor()
+                //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+                self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+            }
         }
         
         
