@@ -6,6 +6,7 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="uses" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="hasPoints" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Point" inverseName="onChannel" inverseEntity="Point" syncable="YES"/>
+        <relationship name="images" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Image" inverseName="channel" inverseEntity="Image" syncable="YES"/>
     </entity>
     <entity name="Entry" representedClassName=".Entry" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
@@ -22,6 +23,7 @@
         <attribute name="pinyinName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="uses" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="hasContents" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Herb" inverseName="inContents" inverseEntity="Herb" syncable="YES"/>
+        <relationship name="images" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Image" inverseName="formula" inverseEntity="Image" syncable="YES"/>
     </entity>
     <entity name="Herb" representedClassName="Herb" syncable="YES">
         <attribute name="botanicalName" optional="YES" attributeType="String" syncable="YES"/>
@@ -35,11 +37,16 @@
         <attribute name="pinyinName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="temp" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="uses" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="images" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Image" inverseName="herb" inverseEntity="Image" syncable="YES"/>
         <relationship name="inContents" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Formula" inverseName="hasContents" inverseEntity="Formula" syncable="YES"/>
     </entity>
     <entity name="Image" syncable="YES">
         <attribute name="imageData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <relationship name="channel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Channel" inverseName="images" inverseEntity="Channel" syncable="YES"/>
         <relationship name="entry" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Entry" inverseName="images" inverseEntity="Entry" syncable="YES"/>
+        <relationship name="formula" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Formula" inverseName="images" inverseEntity="Formula" syncable="YES"/>
+        <relationship name="herb" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Herb" inverseName="images" inverseEntity="Herb" syncable="YES"/>
+        <relationship name="point" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Point" inverseName="images" inverseEntity="Point" syncable="YES"/>
     </entity>
     <entity name="Point" representedClassName="Point" syncable="YES">
         <attribute name="channel" optional="YES" attributeType="String" syncable="YES"/>
@@ -52,14 +59,15 @@
         <attribute name="pointOnMeridian" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="specialCategories" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="uses" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="images" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Image" inverseName="point" inverseEntity="Image" syncable="YES"/>
         <relationship name="onChannel" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Channel" inverseName="hasPoints" inverseEntity="Channel" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Channel" positionX="-144" positionY="90" width="128" height="120"/>
-        <element name="Formula" positionX="-153" positionY="72" width="128" height="150"/>
-        <element name="Herb" positionX="-63" positionY="-18" width="128" height="225"/>
-        <element name="Point" positionX="-281" positionY="0" width="128" height="210"/>
+        <element name="Channel" positionX="-144" positionY="90" width="128" height="135"/>
         <element name="Entry" positionX="-171" positionY="90" width="128" height="120"/>
-        <element name="Image" positionX="-162" positionY="117" width="128" height="75"/>
+        <element name="Formula" positionX="-153" positionY="72" width="128" height="165"/>
+        <element name="Herb" positionX="-63" positionY="-18" width="128" height="240"/>
+        <element name="Image" positionX="-162" positionY="117" width="128" height="135"/>
+        <element name="Point" positionX="-281" positionY="0" width="128" height="225"/>
     </elements>
 </model>
