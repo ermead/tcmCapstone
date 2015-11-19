@@ -134,7 +134,22 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             location.text = "This herb, named \(detailHerb.pinyinName!), belongs to the category of \(detailHerb.category!). Having a \(detailHerb.temp!) temperature, it travels along the \(detailHerb.meridians!) channels."
                 indicationsAndUses.text = detailHerb.uses
                 
-                
+                if detailHerb.images != nil{
+                    let imageSet = detailHerb.images
+                    print("The number of images in this set is \(imageSet!.count)")
+                    
+                    var imageArray = imageSet?.allObjects as! [NSData]
+                    var image1 = imageArray[0]
+                    var image2 = imageArray[1]
+                    
+                    let image1Image = ImageController.getImageFromData(image1, completion: { (image) -> Void in
+                        self.leftImage.image = image
+                    })
+                    let image2Image = ImageController.getImageFromData(image2, completion: { (image) -> Void in
+                        self.rightImage.image = image
+                    })
+                    
+                }
                 
 //                if detailHerb.imageId1 != nil {
 //                ImageController.imageForImageId(detailHerb.imageId1!, completion: { (image) -> Void in
