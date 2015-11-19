@@ -44,6 +44,9 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     var placeholderLeftImageId: String = ""
     var placeholderRightImageId: String = ""
     
+    var placeholderLeftImageData: NSData?
+    var placeholderRightImageData: NSData?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
@@ -131,14 +134,16 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             location.text = "This herb, named \(detailHerb.pinyinName!), belongs to the category of \(detailHerb.category!). Having a \(detailHerb.temp!) temperature, it travels along the \(detailHerb.meridians!) channels."
                 indicationsAndUses.text = detailHerb.uses
                 
-                if detailHerb.imageId1 != nil {
-                ImageController.imageForImageId(detailHerb.imageId1!, completion: { (image) -> Void in
-                    self.leftImage.image = image
-                })}
-                if detailHerb.imageId2 != nil {
-                ImageController.imageForImageId(detailHerb.imageId2!, completion: { (image) -> Void in
-                    self.rightImage.image = image
-                })}
+                
+                
+//                if detailHerb.imageId1 != nil {
+//                ImageController.imageForImageId(detailHerb.imageId1!, completion: { (image) -> Void in
+//                    self.leftImage.image = image
+//                })}
+//                if detailHerb.imageId2 != nil {
+//                ImageController.imageForImageId(detailHerb.imageId2!, completion: { (image) -> Void in
+//                    self.rightImage.image = image
+//                })}
             }
             else {
                 //FORMULA
@@ -252,6 +257,18 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             }
             }
             
+            ImageController.getDataFromImage(leftImage.image!, completion: { (imageData) -> Void in
+                if let imageData = imageData{
+                    self.placeholderLeftImageData = imageData
+                }
+            })
+            
+            ImageController.getDataFromImage(rightImage.image!, completion: { (imageData) -> Void in
+                if let imageData = imageData{
+                    self.placeholderRightImageData = imageData
+                }
+            })
+            
             topRightTextField.backgroundColor = .whiteColor()
             topRightMiddleTextField.backgroundColor = .whiteColor()
             topRightBottomTextField.backgroundColor = .whiteColor()
@@ -309,8 +326,16 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         let meridians = ""
         let uses = indicationsAndUses.text
         let majorFormulas = ""
+        var image1Data: NSData?
+        var image2Data: NSData?
+        if let data = self.placeholderLeftImageData{
+            image1Data = data
+        }
+        if let data = self.placeholderRightImageData{
+            image2Data = data
+        }
         
-        let newHerb = Herb(pinyinName: pinyinName, botanicalName: botanicalName, englishName: englishName!, category: category, temp: temp , meridians: meridians, uses: uses, majorFormulas: majorFormulas, imageId1: placeholderLeftImageId, imageId2: placeholderRightImageId, context: Stack.sharedStack.managedObjectContext)
+        let newHerb = Herb(pinyinName: pinyinName, botanicalName: botanicalName, englishName: englishName!, category: category, temp: temp , meridians: meridians, uses: uses, majorFormulas: majorFormulas, imageId1: placeholderLeftImageId, imageId2: placeholderRightImageId, images: [image1Data!, image2Data!],context: Stack.sharedStack.managedObjectContext)
         
         HerbsController.sharedController.addHerb(newHerb)
        
