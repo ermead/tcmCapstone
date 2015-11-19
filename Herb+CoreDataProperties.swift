@@ -27,5 +27,5 @@ extension Herb {
     @NSManaged var imageId1: String?
     @NSManaged var imageId2: String?
     @NSManaged var images: NSSet?
-
+    
 }

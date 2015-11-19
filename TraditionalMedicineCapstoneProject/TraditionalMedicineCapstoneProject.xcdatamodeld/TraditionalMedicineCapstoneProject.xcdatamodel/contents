@@ -40,7 +40,7 @@
         <relationship name="images" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Image" inverseName="herb" inverseEntity="Image" syncable="YES"/>
         <relationship name="inContents" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Formula" inverseName="hasContents" inverseEntity="Formula" syncable="YES"/>
     </entity>
-    <entity name="Image" syncable="YES">
+    <entity name="Image" representedClassName=".Image" syncable="YES">
         <attribute name="imageData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
         <relationship name="channel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Channel" inverseName="images" inverseEntity="Channel" syncable="YES"/>
         <relationship name="entry" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Entry" inverseName="images" inverseEntity="Entry" syncable="YES"/>

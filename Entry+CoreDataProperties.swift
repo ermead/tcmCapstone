@@ -18,4 +18,5 @@ extension Entry {
     @NSManaged var text1: String?
     @NSManaged var text2: String?
     @NSManaged var text3: String?
+    @NSManaged var images: NSSet?
 }

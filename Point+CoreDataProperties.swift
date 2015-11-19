@@ -25,5 +25,6 @@ extension Point {
     @NSManaged var onChannel: NSSet?
     @NSManaged var imageId1: String?
     @NSManaged var imageId2: String?
+    @NSManaged var images: NSSet?
 
 }
