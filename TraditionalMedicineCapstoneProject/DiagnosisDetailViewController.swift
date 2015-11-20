@@ -164,6 +164,8 @@ class DiagnosisDetailViewController: UIViewController,  UIImagePickerControllerD
         print("trying to update or save Entry")
         let newEntry = Entry(name: mainTitleOutlet.text, text1: textView1.text, text2: "", text3: "", images: [], context: Stack.sharedStack.managedObjectContext)
         
+        EntryController.sharedController.addEntry(newEntry)
+        
     }
     
     
