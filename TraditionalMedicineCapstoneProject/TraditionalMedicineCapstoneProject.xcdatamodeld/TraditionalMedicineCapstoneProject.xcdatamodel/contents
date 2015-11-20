@@ -8,7 +8,7 @@
         <relationship name="hasPoints" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Point" inverseName="onChannel" inverseEntity="Point" syncable="YES"/>
         <relationship name="images" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Image" inverseName="channel" inverseEntity="Image" syncable="YES"/>
     </entity>
-    <entity name="Entry" representedClassName=".Entry" syncable="YES">
+    <entity name="Entry" representedClassName="Entry" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="text1" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="text2" optional="YES" attributeType="String" syncable="YES"/>

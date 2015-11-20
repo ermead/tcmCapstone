@@ -13,7 +13,10 @@ class DiagnosisDetailViewController: UIViewController,  UIImagePickerControllerD
     var mainTitle = ""
     var specificCategory = ""
     var index:Int?
+    var entries: [Entry]?
     
+    
+    @IBOutlet weak var clearButtonOutlet: UIButton!
     @IBOutlet weak var addButton: UIBarButtonItem!
     @IBOutlet weak var mainTitleOutlet: UILabel!
     
@@ -40,23 +43,34 @@ class DiagnosisDetailViewController: UIViewController,  UIImagePickerControllerD
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.entries = EntryController.sharedController.entries
+        addButton.title = "Edit"
+        addButton.image = nil
+        clearButtonOutlet.hidden = true
+        clearButtonOutlet.backgroundColor = UIColor.whiteColor()    
+        
         print("the main title is \(mainTitle)")
         // Do any additional setup after loading the view.
         
         mainTitleOutlet.text =  self.mainTitle.stringByReplacingOccurrencesOfString(" ", withString: " \(specificCategory) ")
+        mainTitleOutlet.textColor = UIColor.whiteColor()
         
         view.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
         
         print(" I loaded the index \(index)")
         
-        if let index = index {
+        if let thisEntry = EntryController.sharedController.entries.last {
+        
+                if thisEntry.name == mainTitleOutlet.text {
             
-            populateEntryInfo()
-            addButton.title = "Edit"
+                    print("they match up, for now")
+                    populateEntryInfo()
+                    addButton.title = "Edit"
             
+                } else { }
         } else {
-            
-            addNewEntry()
+        
+           self.setupNewEntryScene()
             
         }
         
@@ -69,17 +83,24 @@ class DiagnosisDetailViewController: UIViewController,  UIImagePickerControllerD
         
     }
     
+    @IBAction func clearButtonTapped(sender: UIButton) {
+    
+        textView1.text = "  "
+        
+    }
+    
     
     func populateEntryInfo() {
         
-        let detailEntry = EntryController.sharedController.entries[index!]
+        print("I am trying to populate an Entry")
         
-        topRightTextField.text = detailEntry.text1
-        topRightMiddleTextField.text = detailEntry.text2
-        topRightBottomTextField.text = detailEntry.text3
+        let detailEntry = self.entries!.last
         
-        if detailEntry.images != nil{
-            let imageSet = detailEntry.images
+        self.textView1.text = detailEntry!.text1! + " " + detailEntry!.text2! + " " + detailEntry!.text3!
+   
+        
+        if detailEntry!.images != nil{
+            let imageSet = detailEntry!.images
             
             print("The number of images in this set is \(imageSet!.count)")
             
@@ -99,7 +120,7 @@ class DiagnosisDetailViewController: UIViewController,  UIImagePickerControllerD
             }
             
         }
-        
+        self.view.setNeedsDisplay()
     }
     
     func saveButtonTapped(sender: UIBarButtonItem) {
@@ -108,18 +129,18 @@ class DiagnosisDetailViewController: UIViewController,  UIImagePickerControllerD
         if sender.title == "Save"{
             let saveAlert = UIAlertController(title: "Save this Entry", message: "as...", preferredStyle: .Alert)
             
-            
-            saveAlert.addAction(UIAlertAction(title: "Save as \(mainTitleOutlet.text)", style: .Default, handler: { (action) -> Void in
+            saveAlert.addAction(UIAlertAction(title: "Save as \(mainTitleOutlet.text!)", style: .Default, handler: { (action) -> Void in
                 
                 self.updateEntry()
+                self.clearButtonOutlet.hidden = true
                 
             }))
             
             saveAlert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
             presentViewController(saveAlert, animated: true, completion: nil)
             
-            self.placeholderLeftImageData = ImageController.getDataFromImage(self.leftImage.image!)
-            self.placeholderRightImageData = ImageController.getDataFromImage(self.rightImage.image!)
+//            self.placeholderLeftImageData = ImageController.getDataFromImage(self.leftImage.image!)
+//            self.placeholderRightImageData = ImageController.getDataFromImage(self.rightImage.image!)
             
             self.navigationController?.popViewControllerAnimated(true)
             
@@ -128,68 +149,23 @@ class DiagnosisDetailViewController: UIViewController,  UIImagePickerControllerD
         } else {
             print("it is Edit")
             self.addButton.title = "Save"
+            clearButtonOutlet.hidden = false
             textView1.backgroundColor = newFieldsColor
             
-            
         }
         
     }
-    
-    func addNewEntry() {
-        
-        print("adding new entry")
-//        leftImage.image = UIImage(named: "default")
-//        rightImage.image = UIImage(named: "default2")
-//        topRightTextField.placeholder = "New Name"
-//        topRightMiddleTextField.placeholder = "new something"
-//        topRightBottomTextField.placeholder = "soemthing else"
-//        
-//        topRightTextField.backgroundColor = newFieldsColor
-//        topRightMiddleTextField.backgroundColor = newFieldsColor
-//        topRightBottomTextField.backgroundColor = newFieldsColor
-        
-        if addButton.title == "Cancel"{
-            
-            self.addButton.title = "Edit"
-            
-        } else {
-            
-            let commentAlert = UIAlertController(title: "Add New", message: nil, preferredStyle: .Alert)
-            
-            commentAlert.addTextFieldWithConfigurationHandler { (textfield) -> Void in
-                textfield.placeholder = "Entry Name"
-                
-                commentAlert.addAction(UIAlertAction(title: "Entry", style: .Default, handler: { (action) -> Void in
-                    
-                    if let textfields = commentAlert.textFields{
-                        self.textFieldPlaceholderZero = textfields[0].text
-                    }
-                    
-                    self.setupNewEntryScene()
-                    self.addButton.title = "Save"
-                    
-                    }
-                    ))
-                
-                commentAlert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: { (action) -> Void in
-                    
-                    
-                }))
-                
-                self.presentViewController(commentAlert, animated: true, completion: nil)
-            }
-            
-        }
-    }
-    
+  
     func updateEntry() {
         print("trying to update or save Entry")
+        let newEntry = Entry(name: mainTitleOutlet.text, text1: textView1.text, text2: "", text3: "", images: [], context: Stack.sharedStack.managedObjectContext)
         
     }
     
     
     func setupNewEntryScene(){
-        print("setting up new Formula Scene")
+        print("setting up new Entry Scene")
+        textView1.text = " "
         
     }
     

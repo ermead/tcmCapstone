@@ -937,7 +937,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jq0-8D-sWX">
-                                <rect key="frame" x="280" y="74" width="40.5" height="23"/>
+                                <rect key="frame" x="280" y="74" width="41" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1009,6 +1009,13 @@
                                     <constraint firstAttribute="trailing" secondItem="Mg0-oH-rIu" secondAttribute="trailing" id="ygc-aa-a0N"/>
                                 </constraints>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMA-CJ-m0J">
+                                <rect key="frame" x="550" y="82" width="36" height="30"/>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="clearButtonTapped:" destination="OIQ-0G-fvf" eventType="touchUpInside" id="9tl-5O-eS0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1019,8 +1026,10 @@
                             <constraint firstItem="nwG-hU-qlS" firstAttribute="leading" secondItem="JGW-Hl-dFn" secondAttribute="leadingMargin" constant="-20" id="Ko8-tg-sye"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nwG-hU-qlS" secondAttribute="trailing" constant="-40" id="LRX-5W-Mlg"/>
                             <constraint firstItem="nwG-hU-qlS" firstAttribute="width" secondItem="JGW-Hl-dFn" secondAttribute="width" constant="20" id="f7A-AH-6h7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JMA-CJ-m0J" secondAttribute="trailing" constant="-6" id="iMQ-BQ-XlK"/>
                             <constraint firstItem="Mg0-oH-rIu" firstAttribute="width" secondItem="JGW-Hl-dFn" secondAttribute="width" id="kRu-VS-LT5"/>
                             <constraint firstItem="Jq0-8D-sWX" firstAttribute="centerX" secondItem="JGW-Hl-dFn" secondAttribute="centerX" id="o0M-Qm-Yau"/>
+                            <constraint firstItem="nwG-hU-qlS" firstAttribute="top" secondItem="JMA-CJ-m0J" secondAttribute="bottom" constant="8" symbolic="YES" id="oee-Rr-0Vb"/>
                             <constraint firstItem="OOw-GA-QFe" firstAttribute="centerX" secondItem="JGW-Hl-dFn" secondAttribute="centerX" id="rnE-LV-Ccg"/>
                         </constraints>
                         <variation key="default">
@@ -1031,7 +1040,7 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="2Vj-i5-4dT">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="vEZ-v8-fH1">
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="vEZ-v8-fH1">
                             <connections>
                                 <action selector="addButtonTapped:" destination="OIQ-0G-fvf" id="8rf-cQ-ZVj"/>
                             </connections>
@@ -1041,13 +1050,14 @@
                     <size key="freeformSize" width="600" height="1000"/>
                     <connections>
                         <outlet property="addButton" destination="vEZ-v8-fH1" id="VdJ-Ub-MTS"/>
+                        <outlet property="clearButtonOutlet" destination="JMA-CJ-m0J" id="IJa-o5-PV7"/>
                         <outlet property="mainTitleOutlet" destination="Jq0-8D-sWX" id="Uay-sk-cvm"/>
                         <outlet property="textView1" destination="OOw-GA-QFe" id="nUP-64-r7c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I60-jG-cm9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4136" y="1487"/>
+            <point key="canvasLocation" x="4221" y="1487"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="YF2-TV-5aY">
