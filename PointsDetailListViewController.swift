@@ -143,11 +143,16 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                     
                     print("there are \(imageArray.count) images in the array")
                     
-                    let imageA = ImageController.getImageFromData(imageArray[0].imageData!)
-                    let imageB = ImageController.getImageFromData(imageArray[1].imageData!)
-                    
-                    self.leftImage.image = imageA
-                    self.rightImage.image = imageB
+                    if imageArray.count >= 2 {
+                        if let imageA = ImageController.getImageFromData(imageArray[0].imageData!){
+                            self.leftImage.image = imageA
+                        }
+                        if let imageB = ImageController.getImageFromData(imageArray[1].imageData!){
+                            self.rightImage.image = imageB
+                        }
+                    } else {
+                        return
+                    }
 
                 }
                 
@@ -351,7 +356,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         
         
         HerbsController.sharedController.addHerb(newHerb)
-        print("Here are my images in data form: \(newHerb.images)")
+        //print("Here are my images in data form: \(newHerb.images)")
        
     }
     
@@ -368,7 +373,22 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         let uses = indicationsAndUses.text
         let imageName = ""
         
-        let point = Point(pinyinName: pinyinName, englishName: englishName, pointOnMeridian: pointOnMeridan, specialCategories: specialCategories, locationDescription: locationDescription, channel: channel, uses: uses, imageName: imageName, imageId1: placeholderLeftImageId, imageId2: placeholderRightImageId, context: Stack.sharedStack.managedObjectContext)
+        let imageObject1 = Image(data: placeholderLeftImageData, context: Stack.sharedStack.managedObjectContext)
+        
+        let imageObject2 = Image(data: placeholderRightImageData, context: Stack.sharedStack.managedObjectContext)
+        
+        ImagesController.sharedController.addImage(imageObject1)
+        ImagesController.sharedController.addImage(imageObject2)
+        
+        let arrayofImageObjects: [Image] = [imageObject1, imageObject2]
+        let thisSetOfImageObjects = NSSet(array: arrayofImageObjects)
+        
+        //thisSetOfImageObjects.setByAddingObjectsFromArray(arrayofImageObjects)
+        print("This set I am adding has \(thisSetOfImageObjects.count) image objects")
+
+        
+        
+        let point = Point(pinyinName: pinyinName, englishName: englishName, pointOnMeridian: pointOnMeridan, specialCategories: specialCategories, locationDescription: locationDescription, channel: channel, uses: uses, imageName: imageName, imageId1: placeholderLeftImageId, imageId2: placeholderRightImageId, images: thisSetOfImageObjects, context: Stack.sharedStack.managedObjectContext)
         
         PointController.sharedController.addPoint(point)
         print("I tried to add a point")
@@ -380,8 +400,22 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         let pinyinName = topRightTextField.text
         let englishName = topRightMiddleTextField.text
         let uses = indicationsAndUses.text
+        
+        
+        let imageObject1 = Image(data: placeholderLeftImageData, context: Stack.sharedStack.managedObjectContext)
+        
+        let imageObject2 = Image(data: placeholderRightImageData, context: Stack.sharedStack.managedObjectContext)
+        
+        ImagesController.sharedController.addImage(imageObject1)
+        ImagesController.sharedController.addImage(imageObject2)
+        
+        let arrayofImageObjects: [Image] = [imageObject1, imageObject2]
+        let thisSetOfImageObjects = NSSet(array: arrayofImageObjects)
+        
+        //thisSetOfImageObjects.setByAddingObjectsFromArray(arrayofImageObjects)
+        print("This set I am adding has \(thisSetOfImageObjects.count) image objects")
     
-        let newFormula = Formula(pinyinName: pinyinName, englishName: englishName, uses: uses, hasContents: [], imageId1: placeholderLeftImageId, imageId2: placeholderRightImageId, context: Stack.sharedStack.managedObjectContext)
+        let newFormula = Formula(pinyinName: pinyinName, englishName: englishName, uses: uses, hasContents: [], imageId1: placeholderLeftImageId, imageId2: placeholderRightImageId, images: thisSetOfImageObjects, context: Stack.sharedStack.managedObjectContext)
         
         FormulasController.sharedController.addFormula(newFormula)
         print("I tried to add a new Formula")
@@ -392,7 +426,22 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         let name = topRightTextField.text
         let uses = indicationsAndUses.text
         
-        let newCombo = Channel(name: name, uses: uses, imageId1: placeholderLeftImageId, imageId2: placeholderRightImageId, context: Stack.sharedStack.managedObjectContext)
+        
+        let imageObject1 = Image(data: placeholderLeftImageData, context: Stack.sharedStack.managedObjectContext)
+        
+        let imageObject2 = Image(data: placeholderRightImageData, context: Stack.sharedStack.managedObjectContext)
+        
+        ImagesController.sharedController.addImage(imageObject1)
+        ImagesController.sharedController.addImage(imageObject2)
+        
+        let arrayofImageObjects: [Image] = [imageObject1, imageObject2]
+        let thisSetOfImageObjects = NSSet(array: arrayofImageObjects)
+        
+        //thisSetOfImageObjects.setByAddingObjectsFromArray(arrayofImageObjects)
+        print("This set I am adding has \(thisSetOfImageObjects.count) image objects")
+        
+        let newCombo = Channel(name: name, uses: uses, imageId1: placeholderLeftImageId, imageId2: placeholderRightImageId, images: thisSetOfImageObjects, context: Stack.sharedStack.managedObjectContext)
+        
         ChannelController.sharedController.addCombo(newCombo)
         print("I tried to add a new Combo")
     }

@@ -12,7 +12,7 @@ import CoreData
 @objc(Entry)
 class Entry: NSManagedObject {
 
-    convenience init(name: String?, text1 : String?, text2: String?, text3: String?,  context: NSManagedObjectContext = Stack.sharedStack.managedObjectContext) {
+    convenience init(name: String?, text1 : String?, text2: String?, text3: String?, images: NSSet? = [],  context: NSManagedObjectContext = Stack.sharedStack.managedObjectContext) {
         
         let entity = NSEntityDescription.entityForName("Entry", inManagedObjectContext: context)
         
@@ -22,6 +22,7 @@ class Entry: NSManagedObject {
         self.text1 = text1
         self.text2 = text2
         self.text3 = text3
+        self.images = images
 
     }
     

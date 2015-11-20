@@ -106,8 +106,6 @@
 		D7580AF71BDD1EB70008789F = {
 			isa = PBXGroup;
 			children = (
-				D7C2649D1BFA271F0009B2A7 /* OtherResourcesViewController.swift */,
-				D7C2649F1BFA2C660009B2A7 /* OtherResourcesDetailViewController.swift */,
 				D7580B021BDD1EB70008789F /* TraditionalMedicineCapstoneProject */,
 				D7580B011BDD1EB70008789F /* Products */,
 			);
@@ -125,15 +123,15 @@
 			isa = PBXGroup;
 			children = (
 				D7580B071BDD1EB70008789F /* Main.storyboard */,
-				D76D36671BF6C2B70003AC43 /* ImageController.swift */,
-				D7F0FE671BFE86A700CF4210 /* ImagesController.swift */,
 				D76D365F1BF5B16A0003AC43 /* CombinationsTableViewCell.swift */,
 				D76D365D1BF599980003AC43 /* CombinationsViewController.swift */,
 				D7D9EBBD1BDDAC3600C920AC /* PointsDetailListViewController.swift */,
 				D7D9EBBB1BDDAC2300C920AC /* PointsListViewController.swift */,
 				D7580B051BDD1EB70008789F /* ViewController.swift */,
 				D74D45B31BFD019A0098FD3D /* EntryController.swift */,
+				D7FF8E881BFEB1D40024FF6D /* Images */,
 				D7D9EBB61BDDA4F800C920AC /* Herbs */,
+				D7FF8E891BFEB1F40024FF6D /* OtherResources */,
 				D7D9EBBF1BDDAC4300C920AC /* Points */,
 				D782A59D1BE822D200E51BAC /* Diagnostics */,
 				D782A59E1BE8386000E51BAC /* Customization */,
@@ -205,6 +203,25 @@
 				D76D36551BF580CC0003AC43 /* ChannelController.swift */,
 			);
 			name = Points;
+			sourceTree = "<group>";
+		};
+		D7FF8E881BFEB1D40024FF6D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D76D36671BF6C2B70003AC43 /* ImageController.swift */,
+				D7F0FE671BFE86A700CF4210 /* ImagesController.swift */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		D7FF8E891BFEB1F40024FF6D /* OtherResources */ = {
+			isa = PBXGroup;
+			children = (
+				D7C2649D1BFA271F0009B2A7 /* OtherResourcesViewController.swift */,
+				D7C2649F1BFA2C660009B2A7 /* OtherResourcesDetailViewController.swift */,
+			);
+			name = OtherResources;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
