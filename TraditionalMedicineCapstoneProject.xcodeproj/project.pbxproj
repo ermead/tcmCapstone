@@ -45,6 +45,7 @@
 		D7D9EBBA1BDDABF400C920AC /* PointController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBB91BDDABF400C920AC /* PointController.swift */; };
 		D7D9EBBC1BDDAC2300C920AC /* PointsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBBB1BDDAC2300C920AC /* PointsListViewController.swift */; };
 		D7D9EBBE1BDDAC3600C920AC /* PointsDetailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9EBBD1BDDAC3600C920AC /* PointsDetailListViewController.swift */; };
+		D7F0FE681BFE86A700CF4210 /* ImagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F0FE671BFE86A700CF4210 /* ImagesController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,7 @@
 		D7D9EBB91BDDABF400C920AC /* PointController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointController.swift; sourceTree = "<group>"; };
 		D7D9EBBB1BDDAC2300C920AC /* PointsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PointsListViewController.swift; path = ../PointsListViewController.swift; sourceTree = "<group>"; };
 		D7D9EBBD1BDDAC3600C920AC /* PointsDetailListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PointsDetailListViewController.swift; path = ../PointsDetailListViewController.swift; sourceTree = "<group>"; };
+		D7F0FE671BFE86A700CF4210 /* ImagesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			children = (
 				D7580B071BDD1EB70008789F /* Main.storyboard */,
 				D76D36671BF6C2B70003AC43 /* ImageController.swift */,
+				D7F0FE671BFE86A700CF4210 /* ImagesController.swift */,
 				D76D365F1BF5B16A0003AC43 /* CombinationsTableViewCell.swift */,
 				D76D365D1BF599980003AC43 /* CombinationsViewController.swift */,
 				D7D9EBBD1BDDAC3600C920AC /* PointsDetailListViewController.swift */,
@@ -289,6 +292,7 @@
 				D782A5F51BEA4ECF00E51BAC /* Formula+CoreDataProperties.swift in Sources */,
 				D74D45B41BFD019A0098FD3D /* EntryController.swift in Sources */,
 				D74D46181BFE1F1D0098FD3D /* Image.swift in Sources */,
+				D7F0FE681BFE86A700CF4210 /* ImagesController.swift in Sources */,
 				D76D36561BF580CC0003AC43 /* ChannelController.swift in Sources */,
 				D782A5A61BE907F000E51BAC /* Formula.swift in Sources */,
 				D782A5701BE4479700E51BAC /* Stack.swift in Sources */,

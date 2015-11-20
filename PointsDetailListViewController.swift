@@ -44,8 +44,8 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     var placeholderLeftImageId: String = ""
     var placeholderRightImageId: String = ""
     
-    var placeholderLeftImageData: NSData?
-    var placeholderRightImageData: NSData?
+    var placeholderLeftImageData = NSData?()
+    var placeholderRightImageData = NSData?()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -136,19 +136,23 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                 
                 if detailHerb.images != nil{
                     let imageSet = detailHerb.images
+                    
                     print("The number of images in this set is \(imageSet!.count)")
                     
-                    var imageArray = imageSet?.allObjects as! [NSData]
-                    var image1 = imageArray[0]
-                    var image2 = imageArray[1]
+                    let imageArray: [Image] = imageSet!.allObjects as! [Image]
                     
-                    let image1Image = ImageController.getImageFromData(image1, completion: { (image) -> Void in
-                        self.leftImage.image = image
-                    })
-                    let image2Image = ImageController.getImageFromData(image2, completion: { (image) -> Void in
-                        self.rightImage.image = image
-                    })
+                    print("there are \(imageArray.count) images in the array")
                     
+                    let imageA = ImageController.getImageFromData(imageArray[0].imageData!)
+                    
+                    
+                    if let image = ImageController.getImageFromData(imageArray.first!.imageData!){
+                        self.leftImage.image = imageA
+                    }
+//                    if let image = ImageController.getImageFromData(imageArray.last!.imageData!) {
+//                        self.rightImage.image = image
+//                    }
+
                 }
                 
 //                if detailHerb.imageId1 != nil {
@@ -267,28 +271,20 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             }
             ImageController.getImageIdFromPhoto(rightImage.image!) { (imageId) -> Void in
             
-            if let imageId = imageId {
-                self.placeholderRightImageId = imageId
-            }
-            }
-            
-            ImageController.getDataFromImage(leftImage.image!, completion: { (imageData) -> Void in
-                if let imageData = imageData{
-                    self.placeholderLeftImageData = imageData
+                if let imageId = imageId {
+                    self.placeholderRightImageId = imageId
                 }
-            })
+            }
             
-            ImageController.getDataFromImage(rightImage.image!, completion: { (imageData) -> Void in
-                if let imageData = imageData{
-                    self.placeholderRightImageData = imageData
-                }
-            })
+            self.placeholderLeftImageData = ImageController.getDataFromImage(self.leftImage.image!)
             
-            topRightTextField.backgroundColor = .whiteColor()
-            topRightMiddleTextField.backgroundColor = .whiteColor()
-            topRightBottomTextField.backgroundColor = .whiteColor()
-            location.backgroundColor = .whiteColor()
-            indicationsAndUses.backgroundColor = .whiteColor()
+            self.placeholderLeftImageData = ImageController.getDataFromImage(self.rightImage.image!)
+//            
+//            topRightTextField.backgroundColor = .whiteColor()
+//            topRightMiddleTextField.backgroundColor = .whiteColor()
+//            topRightBottomTextField.backgroundColor = .whiteColor()
+//            location.backgroundColor = .whiteColor()
+//            indicationsAndUses.backgroundColor = .whiteColor()
             
         self.addButtonsToScene(false)
             
@@ -341,21 +337,29 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         let meridians = ""
         let uses = indicationsAndUses.text
         let majorFormulas = ""
-        var image1Data: NSData?
-        var image2Data: NSData?
-        if let data = self.placeholderLeftImageData{
-            image1Data = data
-        }
-        if let data = self.placeholderRightImageData{
-            image2Data = data
-        }
+    
+        let imageObject1 = Image(data: placeholderLeftImageData, context: Stack.sharedStack.managedObjectContext)
         
-        let newHerb = Herb(pinyinName: pinyinName, botanicalName: botanicalName, englishName: englishName!, category: category, temp: temp , meridians: meridians, uses: uses, majorFormulas: majorFormulas, imageId1: placeholderLeftImageId, imageId2: placeholderRightImageId, images: [image1Data!, image2Data!],context: Stack.sharedStack.managedObjectContext)
+        let imageObject2 = Image(data: placeholderRightImageData, context: Stack.sharedStack.managedObjectContext)
+        
+        ImagesController.sharedController.addImage(imageObject1)
+        ImagesController.sharedController.addImage(imageObject2)
+        
+        let arrayofImageObjects: [Image] = [imageObject1, imageObject2]
+        let thisSetOfImageObjects = NSSet(array: arrayofImageObjects)
+        
+        //thisSetOfImageObjects.setByAddingObjectsFromArray(arrayofImageObjects)
+        print("This set I am adding has \(thisSetOfImageObjects.count) image objects")
+        
+        let newHerb = Herb(pinyinName: pinyinName, botanicalName: botanicalName, englishName: englishName!, category: category, temp: temp , meridians: meridians, uses: uses, majorFormulas: majorFormulas, imageId1: placeholderLeftImageId, imageId2: placeholderRightImageId, images: thisSetOfImageObjects, context: Stack.sharedStack.managedObjectContext)
+        
         
         HerbsController.sharedController.addHerb(newHerb)
+        print("Here are my images in data form: \(newHerb.images)")
        
     }
     
+
     
     func updatePoint() {
         

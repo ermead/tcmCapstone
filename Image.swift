@@ -9,9 +9,18 @@
 import Foundation
 import CoreData
 
-
+@objc(Image)
 class Image: NSManagedObject {
 
-// Insert code here to add functionality to your managed object subclass
+
+    convenience init(data: NSData?, context: NSManagedObjectContext = Stack.sharedStack.managedObjectContext) {
+        
+        let entity = NSEntityDescription.entityForName("Image", inManagedObjectContext: context)
+        
+        self.init(entity: entity!, insertIntoManagedObjectContext: context)
+        
+        self.imageData = data
+    }
+    
 
 }

@@ -30,6 +30,8 @@ class ImageController {
         
         
         
+        
+        
 //        FirebaseController.dataAtEndpoint("images/\(identifier)") { (data) -> Void in
 //            
 //            if let data = data as? String {
@@ -39,17 +41,31 @@ class ImageController {
         
     }
     
-    static func getDataFromImage(image: UIImage, completion: (imageData: NSData?)-> Void) {
+    static func getDataFromImage(image: UIImage) -> NSData? {
         
-        _ = UIImageJPEGRepresentation(image, 1.0)
+        if let data = UIImageJPEGRepresentation(image, 1.0) {
         
         //let imageData = UIImagePNGRepresentation(image, 1.0)
         
+        return data
+            
+        } else {
+            return nil
+            print("error converting image to data")
+        }
+        
     }
     
-    static func getImageFromData(imageData: NSData, completion: (image: UIImage?)-> Void ) {
+    static func getImageFromData(imageData: NSData) -> UIImage? {
         
-        _ = UIImage(data: imageData)
+        if let image = UIImage(data: imageData){
+            
+            return image
+        } else {
+            return nil
+            print("there was an error getting the image from data")
+        }
+        
         
     }
 }
