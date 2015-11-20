@@ -63,6 +63,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } catch {
             fatalError("Error fetching data")
         }
+        
+        let fetchRequestDefaultEntries = NSFetchRequest(entityName: "Entry")
+        do {
+            let results = try Stack.sharedStack.managedObjectContext.executeFetchRequest(fetchRequestDefaultEntries)
+            if results.count == 0 {
+                
+                loadEntryDefaultData()
+            }
+        } catch {
+            fatalError("Error fetching data")
+        }
 
         
         return true
@@ -119,9 +130,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func loadChannelsDefaultData() {
         
-        guard let _ = NSEntityDescription.entityForName("Channel", inManagedObjectContext: Stack.sharedStack.managedObjectContext) else { fatalError("Could not find points entity description!")}
+        guard let _ = NSEntityDescription.entityForName("Channel", inManagedObjectContext: Stack.sharedStack.managedObjectContext) else { fatalError("Could not find Channel entity description!")}
         
         _ = ChannelController.sharedController.defaultChannels
+        
+    }
+    
+    func loadEntryDefaultData() {
+        
+        guard let _ = NSEntityDescription.entityForName("Entry", inManagedObjectContext: Stack.sharedStack.managedObjectContext) else { fatalError("Could not find Entry entity description!")}
+        
+        _ = EntryController.sharedController.defaultEntries 
         
     }
 

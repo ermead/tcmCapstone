@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     
     func deleteCoreData() {
         
-        let classObjectsToBeDeleted = ["Herb", "Point", "Formula", "Channel"]
+        let classObjectsToBeDeleted = ["Herb", "Point", "Formula", "Channel", "Entry"]
         
         for thing in classObjectsToBeDeleted {
         let fetchRequest = NSFetchRequest(entityName: thing)
