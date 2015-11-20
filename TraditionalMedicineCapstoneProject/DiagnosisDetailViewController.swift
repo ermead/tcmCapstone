@@ -15,7 +15,7 @@ class DiagnosisDetailViewController: UIViewController,  UIImagePickerControllerD
     var index:Int?
     var entries: [Entry]?
     var canEdit: Bool? = false
-    
+    var nameKey: String?
     
     @IBOutlet weak var clearButtonOutlet: UIButton!
     @IBOutlet weak var addButton: UIBarButtonItem!
@@ -46,8 +46,6 @@ class DiagnosisDetailViewController: UIViewController,  UIImagePickerControllerD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let nameKey = mainTitleOutlet.text! + "/name"
-        print(" The dictionary name entry is \(self.dictionary[nameKey])")
         self.entries = EntryController.sharedController.entries
         addButton.title = "Edit"
         canEdit = false
@@ -63,24 +61,17 @@ class DiagnosisDetailViewController: UIViewController,  UIImagePickerControllerD
         
         mainTitleOutlet.text =  self.mainTitle.stringByReplacingOccurrencesOfString(" ", withString: " \(specificCategory) ")
         mainTitleOutlet.textColor = UIColor.whiteColor()
+        nameKey = mainTitleOutlet.text! + "_name"
         
         view.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
         
         print(" I loaded the index \(index)")
         
-        if let thisEntry = EntryController.sharedController.entries.last {
-        
-                if thisEntry.name == mainTitleOutlet.text {
-            
-                    print("they match up, for now")
-                    populateEntryInfo()
-                    addButton.title = "Edit"
-            
-                } else { print("they didn't match?") }
+        if self.dictionary.keys.contains(nameKey!){
+            populateEntryInfo()
+            addButton.title = "Edit"
         } else {
-        
-           self.setupNewEntryScene()
-            
+            setupNewEntryScene()
         }
         
     }
