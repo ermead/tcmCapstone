@@ -921,10 +921,10 @@
             </objects>
             <point key="canvasLocation" x="3424" y="1287"/>
         </scene>
-        <!--Diagnosis Detail View Controller-->
+        <!--Diagnostic Detail View-->
         <scene sceneID="MbZ-nG-kBv">
             <objects>
-                <viewController id="OIQ-0G-fvf" customClass="DiagnosisDetailViewController" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Diagnostic Detail View" id="OIQ-0G-fvf" customClass="DiagnosisDetailViewController" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hc2-HF-DgP"/>
                         <viewControllerLayoutGuide type="bottom" id="zUu-te-q24"/>
@@ -1030,10 +1030,19 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="2Vj-i5-4dT">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="vEZ-v8-fH1">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="OIQ-0G-fvf" id="8rf-cQ-ZVj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="1000"/>
                     <connections>
+                        <outlet property="addButton" destination="vEZ-v8-fH1" id="VdJ-Ub-MTS"/>
                         <outlet property="mainTitleOutlet" destination="Jq0-8D-sWX" id="Uay-sk-cvm"/>
+                        <outlet property="textView1" destination="OOw-GA-QFe" id="nUP-64-r7c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I60-jG-cm9" userLabel="First Responder" sceneMemberID="firstResponder"/>
