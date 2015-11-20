@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PointsDetailListViewController.swift"
-            timestampString = "469673029.676922"
+            timestampString = "469676160.887067"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "359"
-            endingLineNumber = "359"
+            startingLineNumber = "355"
+            endingLineNumber = "355"
             landmarkName = "updateHerb()"
             landmarkType = "5">
          </BreakpointContent>

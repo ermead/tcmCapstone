@@ -144,14 +144,10 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                     print("there are \(imageArray.count) images in the array")
                     
                     let imageA = ImageController.getImageFromData(imageArray[0].imageData!)
+                    let imageB = ImageController.getImageFromData(imageArray[1].imageData!)
                     
-                    
-                    if let image = ImageController.getImageFromData(imageArray.first!.imageData!){
-                        self.leftImage.image = imageA
-                    }
-//                    if let image = ImageController.getImageFromData(imageArray.last!.imageData!) {
-//                        self.rightImage.image = image
-//                    }
+                    self.leftImage.image = imageA
+                    self.rightImage.image = imageB
 
                 }
                 
@@ -278,7 +274,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             
             self.placeholderLeftImageData = ImageController.getDataFromImage(self.leftImage.image!)
             
-            self.placeholderLeftImageData = ImageController.getDataFromImage(self.rightImage.image!)
+            self.placeholderRightImageData = ImageController.getDataFromImage(self.rightImage.image!)
 //            
 //            topRightTextField.backgroundColor = .whiteColor()
 //            topRightMiddleTextField.backgroundColor = .whiteColor()
