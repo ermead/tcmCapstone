@@ -41,14 +41,14 @@ class EntryController: NSObject {
     func createDictionaryfromArrayOfEntryObjects(entries: [Entry]) -> [String: AnyObject] {
         var entriesDictionary  = [String: AnyObject]()
             for entry in entries {
-                let nameKey = "\(entry.name)_name"
-                let nameValue = entry.name
-                let text1Key = "\(entry.name)_text1"
-                let text1Value = entry.text1
-                let text2Key = "\(entry.name)_text2"
-                let text2Value = entry.text2
-                let text3Key = "\(entry.name)_text3"
-                let text3Value = entry.text3
+                let nameKey = "\(entry.name!)_name"
+                let nameValue = entry.name!
+                let text1Key = "\(entry.name!)_text1"
+                let text1Value = entry.text1!
+                let text2Key = "\(entry.name!)_text2"
+                let text2Value = entry.text2!
+                let text3Key = "\(entry.name!)_text3"
+                let text3Value = entry.text3!
                 entriesDictionary[nameKey]  = nameValue
                 entriesDictionary[text1Key] = text1Value
                 entriesDictionary[text2Key] = text2Value

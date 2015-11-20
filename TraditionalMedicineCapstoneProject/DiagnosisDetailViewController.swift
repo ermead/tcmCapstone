@@ -103,10 +103,10 @@ class DiagnosisDetailViewController: UIViewController,  UIImagePickerControllerD
         
         print("I am trying to populate an Entry")
         
-        let detailEntryName = self.dictionary[("\(mainTitleOutlet.text)_name")]
-        let detailEntryText1 = self.dictionary[("\(mainTitleOutlet.text)_text1")] as! String
-        let detailEntryText2 = self.dictionary[("\(mainTitleOutlet.text)_text2")]
-        let detailEntryText3 = self.dictionary[("\(mainTitleOutlet.text)_text3")]
+        let detailEntryName = self.dictionary[("\(mainTitleOutlet.text!)_name")]
+        let detailEntryText1 = self.dictionary[("\(mainTitleOutlet.text!)_text1")] as! String
+        let detailEntryText2 = self.dictionary[("\(mainTitleOutlet.text!)_text2")]
+        let detailEntryText3 = self.dictionary[("\(mainTitleOutlet.text!)_text3")]
         
         print("I am about to print the values:")
         print(detailEntryName)
