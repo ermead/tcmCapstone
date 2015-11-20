@@ -21,17 +21,13 @@ class DiagnosisDetailViewController: UIViewController,  UIImagePickerControllerD
     @IBOutlet weak var addButton: UIBarButtonItem!
     @IBOutlet weak var mainTitleOutlet: UILabel!
     
+    @IBOutlet weak var cameraButton: UIButton!
     @IBOutlet weak var textView1: UITextView!
+    @IBOutlet weak var textView2: UITextView!
+    @IBOutlet weak var textView3: UITextView!
     
     var newFieldsColor = UIColor(red:0.012,  green:0.549,  blue:0.549, alpha: 0.1)
     
-    @IBOutlet weak var topRightTextField: UITextField!
-    @IBOutlet weak var topRightMiddleTextField: UITextField!
-    @IBOutlet weak var topRightBottomTextField: UITextField!
-    
-    var textFieldPlaceholderZero: String? = ""
-    var textFieldPlaceholderOne: String? = ""
-    var textFieldPlaceholderTwo: String? = ""
     
     var photos = [AnyObject]()
     
@@ -89,6 +85,10 @@ class DiagnosisDetailViewController: UIViewController,  UIImagePickerControllerD
         }
     }
     
+    @IBAction func cameraButtonTapped(sender: UIButton) {
+        addPhotoButtonTapped(sender)
+    }
+    
     
     func populateEntryInfo() {
         
@@ -96,8 +96,8 @@ class DiagnosisDetailViewController: UIViewController,  UIImagePickerControllerD
         
         let detailEntryName = self.dictionary[("\(mainTitleOutlet.text!)_name")]
         let detailEntryText1 = self.dictionary[("\(mainTitleOutlet.text!)_text1")] as! String
-        let detailEntryText2 = self.dictionary[("\(mainTitleOutlet.text!)_text2")]
-        let detailEntryText3 = self.dictionary[("\(mainTitleOutlet.text!)_text3")]
+        let detailEntryText2 = self.dictionary[("\(mainTitleOutlet.text!)_text2")] as! String
+        let detailEntryText3 = self.dictionary[("\(mainTitleOutlet.text!)_text3")] as! String
         
         print("I am about to print the values:")
         print(detailEntryName)
@@ -106,7 +106,10 @@ class DiagnosisDetailViewController: UIViewController,  UIImagePickerControllerD
         print(detailEntryText3)
         
         self.textView1.text = detailEntryText1
-        
+        self.textView2.text = detailEntryText2
+        self.textView3.text = detailEntryText3
+
+
    //     self.textView1.text = detailEntryText1 as! String
    
         
@@ -162,6 +165,8 @@ class DiagnosisDetailViewController: UIViewController,  UIImagePickerControllerD
             self.addButton.title = "Save"
             clearButtonOutlet.hidden = false
             textView1.backgroundColor = newFieldsColor
+            textView2.backgroundColor = newFieldsColor
+            textView3.backgroundColor = newFieldsColor
             canEdit = true
         }
         
@@ -169,7 +174,7 @@ class DiagnosisDetailViewController: UIViewController,  UIImagePickerControllerD
   
     func updateEntry() {
         print("trying to update or save Entry")
-        let newEntry = Entry(name: mainTitleOutlet.text, text1: textView1.text, text2: "", text3: "", images: [], context: Stack.sharedStack.managedObjectContext)
+        let newEntry = Entry(name: mainTitleOutlet.text, text1: textView1.text, text2: textView2.text, text3: textView3.text, images: [], context: Stack.sharedStack.managedObjectContext)
         
         EntryController.sharedController.addEntry(newEntry)
         
