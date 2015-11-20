@@ -1117,7 +1117,11 @@
                         <outlet property="cameraButton" destination="B7r-9B-Dr3" id="mzo-AC-Fvo"/>
                         <outlet property="clearButtonOutlet" destination="JMA-CJ-m0J" id="IJa-o5-PV7"/>
                         <outlet property="mainTitleOutlet" destination="Jq0-8D-sWX" id="Uay-sk-cvm"/>
+                        <outlet property="middleImage" destination="Y0b-R4-wdZ" id="Ca2-nM-bEM"/>
                         <outlet property="textView1" destination="OOw-GA-QFe" id="nUP-64-r7c"/>
+                        <outlet property="textView2" destination="0U5-17-RJK" id="teQ-4o-NrE"/>
+                        <outlet property="textView3" destination="WwA-HV-eCa" id="DvZ-AZ-lAf"/>
+                        <outlet property="topImage" destination="saJ-rs-hzL" id="vB5-5f-KS0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I60-jG-cm9" userLabel="First Responder" sceneMemberID="firstResponder"/>

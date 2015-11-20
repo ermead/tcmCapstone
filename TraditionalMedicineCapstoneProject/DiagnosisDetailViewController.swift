@@ -31,11 +31,11 @@ class DiagnosisDetailViewController: UIViewController,  UIImagePickerControllerD
     
     var photos = [AnyObject]()
     
-    @IBOutlet weak var leftImage: UIImageView!
-    @IBOutlet weak var rightImage: UIImageView!
+    @IBOutlet weak var topImage: UIImageView!
+    @IBOutlet weak var middleImage: UIImageView!
     
-    var placeholderLeftImageData = NSData?()
-    var placeholderRightImageData = NSData?()
+    var placeholderTopImageData = NSData?()
+    var placeholderMiddleImageData = NSData?()
     
     
     var dictionary = EntryController.sharedController.createDictionaryfromArrayOfEntryObjects(EntryController.sharedController.entries)
@@ -82,6 +82,8 @@ class DiagnosisDetailViewController: UIViewController,  UIImagePickerControllerD
     @IBAction func clearButtonTapped(sender: UIButton) {
         if self.canEdit == true {
             textView1.text = "  "
+            textView2.text = "  "
+            textView3.text = "  "
         }
     }
     
@@ -109,10 +111,6 @@ class DiagnosisDetailViewController: UIViewController,  UIImagePickerControllerD
         self.textView2.text = detailEntryText2
         self.textView3.text = detailEntryText3
 
-
-   //     self.textView1.text = detailEntryText1 as! String
-   
-        
 //        if detailEntry!.images != nil{
 //            let imageSet = detailEntry!.images
 //            
@@ -153,8 +151,8 @@ class DiagnosisDetailViewController: UIViewController,  UIImagePickerControllerD
             saveAlert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
             presentViewController(saveAlert, animated: true, completion: nil)
             
-//            self.placeholderLeftImageData = ImageController.getDataFromImage(self.leftImage.image!)
-//            self.placeholderRightImageData = ImageController.getDataFromImage(self.rightImage.image!)
+           self.placeholderTopImageData = ImageController.getDataFromImage(self.topImage.image!)
+            self.placeholderMiddleImageData = ImageController.getDataFromImage(self.middleImage.image!)
             
             self.navigationController?.popViewControllerAnimated(true)
             
@@ -174,7 +172,21 @@ class DiagnosisDetailViewController: UIViewController,  UIImagePickerControllerD
   
     func updateEntry() {
         print("trying to update or save Entry")
-        let newEntry = Entry(name: mainTitleOutlet.text, text1: textView1.text, text2: textView2.text, text3: textView3.text, images: [], context: Stack.sharedStack.managedObjectContext)
+        
+        let imageObject1 = Image(data: placeholderTopImageData, context: Stack.sharedStack.managedObjectContext)
+        
+        let imageObject2 = Image(data: placeholderMiddleImageData, context: Stack.sharedStack.managedObjectContext)
+        
+        ImagesController.sharedController.addImage(imageObject1)
+        ImagesController.sharedController.addImage(imageObject2)
+        
+        let arrayofImageObjects: [Image] = [imageObject1, imageObject2]
+        let thisSetOfImageObjects = NSSet(array: arrayofImageObjects)
+        
+        //thisSetOfImageObjects.setByAddingObjectsFromArray(arrayofImageObjects)
+        print("This set I am adding has \(thisSetOfImageObjects.count) image objects")
+        
+        let newEntry = Entry(name: mainTitleOutlet.text, text1: textView1.text, text2: textView2.text, text3: textView3.text, images: thisSetOfImageObjects, context: Stack.sharedStack.managedObjectContext)
         
         EntryController.sharedController.addEntry(newEntry)
         
@@ -223,9 +235,9 @@ class DiagnosisDetailViewController: UIViewController,  UIImagePickerControllerD
         
         picker.dismissViewControllerAnimated(true, completion: nil)
         
-        leftImage.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        topImage.image = info[UIImagePickerControllerOriginalImage] as? UIImage
         
-        rightImage.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        middleImage.image = info[UIImagePickerControllerOriginalImage] as? UIImage
     }
     
     func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
