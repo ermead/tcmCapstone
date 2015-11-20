@@ -38,6 +38,23 @@ class EntryController: NSObject {
         }
     }
     
+    func createDictionaryfromArrayOfEntryObjects(entries: [Entry]) -> [String: AnyObject] {
+        var entriesDictionary  = [String: AnyObject]()
+            for entry in entries {
+                let text1Key = "\(entry.name)/text1"
+                let text1Value = entry.text1
+                let text2Key = "\(entry.name)/text2"
+                let text2Value = entry.text2
+                let text3Key = "\(entry.name)/text3"
+                let text3Value = entry.text3
+                entriesDictionary[text1Key] = text1Value
+                entriesDictionary[text2Key] = text2Value
+                entriesDictionary[text3Key] = text3Value
+            }
+        
+        return entriesDictionary
+    }
+    
     func addEntry(entry: Entry) {
         saveToPersistentStorage()
     }

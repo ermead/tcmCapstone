@@ -45,11 +45,15 @@ class DiagnosisDetailViewController: UIViewController,  UIImagePickerControllerD
         
         self.entries = EntryController.sharedController.entries
         addButton.title = "Edit"
-        addButton.image = nil
         clearButtonOutlet.hidden = true
-        clearButtonOutlet.backgroundColor = UIColor.whiteColor()    
+        clearButtonOutlet.backgroundColor = UIColor.whiteColor()
         
         print("the main title is \(mainTitle)")
+        
+        let dictionary = EntryController.sharedController.createDictionaryfromArrayOfEntryObjects(EntryController.sharedController.entries)
+        
+        print("The dictionary is \(dictionary)")
+        
         // Do any additional setup after loading the view.
         
         mainTitleOutlet.text =  self.mainTitle.stringByReplacingOccurrencesOfString(" ", withString: " \(specificCategory) ")
