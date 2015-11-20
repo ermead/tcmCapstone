@@ -14,6 +14,7 @@ class DiagnosisDetailViewController: UIViewController,  UIImagePickerControllerD
     var specificCategory = ""
     var index:Int?
     var entries: [Entry]?
+    var canEdit: Bool? = false
     
     
     @IBOutlet weak var clearButtonOutlet: UIButton!
@@ -40,19 +41,23 @@ class DiagnosisDetailViewController: UIViewController,  UIImagePickerControllerD
     var placeholderLeftImageData = NSData?()
     var placeholderRightImageData = NSData?()
     
+    
+    var dictionary = EntryController.sharedController.createDictionaryfromArrayOfEntryObjects(EntryController.sharedController.entries)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let nameKey = mainTitleOutlet.text! + "/name"
+        print(" The dictionary name entry is \(self.dictionary[nameKey])")
         self.entries = EntryController.sharedController.entries
         addButton.title = "Edit"
+        canEdit = false
         clearButtonOutlet.hidden = true
         clearButtonOutlet.backgroundColor = UIColor.whiteColor()
         
         print("the main title is \(mainTitle)")
         
-        let dictionary = EntryController.sharedController.createDictionaryfromArrayOfEntryObjects(EntryController.sharedController.entries)
-        
-        print("The dictionary is \(dictionary)")
+        print("The dictionary is \(self.dictionary)")
+        print("Its keys are: \(self.dictionary.keys)")
         
         // Do any additional setup after loading the view.
         
@@ -71,7 +76,7 @@ class DiagnosisDetailViewController: UIViewController,  UIImagePickerControllerD
                     populateEntryInfo()
                     addButton.title = "Edit"
             
-                } else { }
+                } else { print("they didn't match?") }
         } else {
         
            self.setupNewEntryScene()
@@ -88,9 +93,9 @@ class DiagnosisDetailViewController: UIViewController,  UIImagePickerControllerD
     }
     
     @IBAction func clearButtonTapped(sender: UIButton) {
-    
-        textView1.text = "  "
-        
+        if self.canEdit == true {
+            textView1.text = "  "
+        }
     }
     
     
@@ -98,32 +103,43 @@ class DiagnosisDetailViewController: UIViewController,  UIImagePickerControllerD
         
         print("I am trying to populate an Entry")
         
-        let detailEntry = self.entries!.last
+        let detailEntryName = self.dictionary[("\(mainTitleOutlet.text)_name")]
+        let detailEntryText1 = self.dictionary[("\(mainTitleOutlet.text)_text1")] as! String
+        let detailEntryText2 = self.dictionary[("\(mainTitleOutlet.text)_text2")]
+        let detailEntryText3 = self.dictionary[("\(mainTitleOutlet.text)_text3")]
         
-        self.textView1.text = detailEntry!.text1! + " " + detailEntry!.text2! + " " + detailEntry!.text3!
+        print("I am about to print the values:")
+        print(detailEntryName)
+        print(detailEntryText1)
+        print(detailEntryText2)
+        print(detailEntryText3)
+        
+        self.textView1.text = detailEntryText1
+        
+   //     self.textView1.text = detailEntryText1 as! String
    
         
-        if detailEntry!.images != nil{
-            let imageSet = detailEntry!.images
-            
-            print("The number of images in this set is \(imageSet!.count)")
-            
-            let imageArray: [Image] = imageSet!.allObjects as! [Image]
-            
-            print("there are \(imageArray.count) images in the array")
-            
-            if imageArray.count >= 2 {
-                if let imageA = ImageController.getImageFromData(imageArray[0].imageData!){
-                    self.leftImage.image = imageA
-                }
-                if let imageB = ImageController.getImageFromData(imageArray[1].imageData!){
-                    self.rightImage.image = imageB
-                }
-            } else {
-                return
-            }
-            
-        }
+//        if detailEntry!.images != nil{
+//            let imageSet = detailEntry!.images
+//            
+//            print("The number of images in this set is \(imageSet!.count)")
+//            
+//            let imageArray: [Image] = imageSet!.allObjects as! [Image]
+//            
+//            print("there are \(imageArray.count) images in the array")
+//            
+//            if imageArray.count >= 2 {
+//                if let imageA = ImageController.getImageFromData(imageArray[0].imageData!){
+//                    self.leftImage.image = imageA
+//                }
+//                if let imageB = ImageController.getImageFromData(imageArray[1].imageData!){
+//                    self.rightImage.image = imageB
+//                }
+//            } else {
+//                return
+//            }
+//
+//       }
         self.view.setNeedsDisplay()
     }
     
@@ -133,7 +149,7 @@ class DiagnosisDetailViewController: UIViewController,  UIImagePickerControllerD
         if sender.title == "Save"{
             let saveAlert = UIAlertController(title: "Save this Entry", message: "as...", preferredStyle: .Alert)
             
-            saveAlert.addAction(UIAlertAction(title: "Save as \(mainTitleOutlet.text!)", style: .Default, handler: { (action) -> Void in
+            saveAlert.addAction(UIAlertAction(title: mainTitleOutlet.text!, style: .Default, handler: { (action) -> Void in
                 
                 self.updateEntry()
                 self.clearButtonOutlet.hidden = true
@@ -155,7 +171,7 @@ class DiagnosisDetailViewController: UIViewController,  UIImagePickerControllerD
             self.addButton.title = "Save"
             clearButtonOutlet.hidden = false
             textView1.backgroundColor = newFieldsColor
-            
+            canEdit = true
         }
         
     }
@@ -217,11 +233,11 @@ class DiagnosisDetailViewController: UIViewController,  UIImagePickerControllerD
     }
     
     func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
-        return true
+        return self.canEdit!
     }
     
     func textViewShouldBeginEditing(textView: UITextView) -> Bool {
-        return true
+        return self.canEdit!
     }
     
     
