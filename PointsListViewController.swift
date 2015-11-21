@@ -133,7 +133,6 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
         searchController.searchBar.sizeToFit()
         pointsTableViewOutlet.tableHeaderView = searchController.searchBar
         searchController.hidesNavigationBarDuringPresentation = false
-        
         definesPresentationContext = true
 
     }
