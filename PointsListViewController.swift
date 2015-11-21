@@ -134,9 +134,8 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
         pointsTableViewOutlet.tableHeaderView = searchController.searchBar
         searchController.hidesNavigationBarDuringPresentation = false
         
-        definesPresentationContext = false
-        
-        
+        definesPresentationContext = true
+
     }
     
     // MARK: - Search Results Updating Protocol
@@ -146,9 +145,24 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
         
         let resultsViewController = searchController.searchResultsController as! SearchResultsTableViewController
         
-        //resultsViewController.filteredArray = HerbController.sharedController().filter({ $0.details().lowercaseString.containsString(searchTerm) })
-        resultsViewController.filteredHerbArray = HerbsController.sharedController.herbs.filter({ $0.pinyinName!.lowercaseString.containsString(searchTerm) })
-        
+        if herbsList{
+            if singles{
+            resultsViewController.category = "Herb"
+            resultsViewController.filteredHerbArray = HerbsController.sharedController.herbs.filter({ $0.pinyinName!.lowercaseString.containsString(searchTerm) })
+            } else {
+                resultsViewController.category = "Formula"
+                resultsViewController.filteredFormulaArray = FormulasController.sharedController.formulas.filter({ $0.pinyinName!.lowercaseString.containsString(searchTerm) })
+            }
+        } else {
+            if singles{
+            resultsViewController.category = "Point"
+            resultsViewController.filteredPointArray = PointController.sharedController.points.filter({ $0.pinyinName!.lowercaseString.containsString(searchTerm) })
+            } else {
+            resultsViewController.category = "Channel"
+            resultsViewController.filteredChannelArray = ChannelController.sharedController.channels.filter({ $0.name!.lowercaseString.containsString(searchTerm) })
+            }
+        }
+    
         resultsViewController.tableView.reloadData()
     }
     

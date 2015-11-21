@@ -10,8 +10,11 @@ import UIKit
 
 class SearchResultsTableViewController: UITableViewController {
     
-    
+    var category: String = "Herb"
     var filteredHerbArray = [Herb]()
+    var filteredPointArray = [Point]()
+    var filteredChannelArray = [Channel]()
+    var filteredFormulaArray = [Formula]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,17 +36,38 @@ class SearchResultsTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return filteredHerbArray.count
+        
+        if category == "Herb"{
+            return filteredHerbArray.count
+        } else if category == "Point" {
+            return filteredPointArray.count
+        } else if category == "Channel" {
+            return filteredChannelArray.count
+        } else if category == "Formula"{
+            return filteredFormulaArray.count
+        } else {
+            return 0
+            print("Error assigning rows")
+        }
     }
-
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("searchResultsCell", forIndexPath: indexPath)
-
-        // Configure the cell...
         
-        let herb = filteredHerbArray[indexPath.row]
-        cell.textLabel?.text = herb.pinyinName
+        if category == "Herb"{
+            let herb = filteredHerbArray[indexPath.row]
+            cell.textLabel?.text = herb.pinyinName
+        } else if category == "Point" {
+            let point = filteredPointArray[indexPath.row]
+            cell.textLabel?.text = point.pinyinName
+        } else if category == "Channel" {
+            let channel = filteredChannelArray[indexPath.row]
+            cell.textLabel?.text = channel.name
+        } else if category == "Formula"{
+            let formula = filteredFormulaArray[indexPath.row]
+            cell.textLabel?.text = formula.pinyinName
+        }
+
 
         return cell
     }
