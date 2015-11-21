@@ -96,6 +96,7 @@ class SearchResultsTableViewController: UITableViewController {
                     pdlc.searchedFor = true
                     pdlc.herbsList = true
                     pdlc.singles = true
+                    pdlc.isHideButtonHidden = false
                     pdlc.filteredHerbArray = self.filteredHerbArray
                     pdlc.index = index!
                    
@@ -105,6 +106,7 @@ class SearchResultsTableViewController: UITableViewController {
                     pdlc.searchedFor = true
                     pdlc.herbsList = false
                     pdlc.singles = true
+                    pdlc.isHideButtonHidden = false
                     pdlc.filteredPointArray = self.filteredPointArray
                     pdlc.index = index!
                    
@@ -113,6 +115,7 @@ class SearchResultsTableViewController: UITableViewController {
                     pdlc.searchedFor = true
                     pdlc.herbsList = false
                     pdlc.singles = false
+                    pdlc.isHideButtonHidden = false
                     pdlc.filteredChannelArray = self.filteredChannelArray
                     pdlc.index = index!
                 } else if category == "Formula" {
@@ -120,6 +123,7 @@ class SearchResultsTableViewController: UITableViewController {
                     pdlc.searchedFor = true
                     pdlc.herbsList = true
                     pdlc.singles = false
+                    pdlc.isHideButtonHidden = false
                     pdlc.filteredFormulaArray = self.filteredFormulaArray
                     pdlc.index = index!
                 } else {

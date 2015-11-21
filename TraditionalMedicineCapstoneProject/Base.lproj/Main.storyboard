@@ -35,10 +35,11 @@
                             <outlet property="delegate" destination="k5d-5X-cvj" id="6Ge-K6-cXH"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="sbm-kR-gIB"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="df0-wX-v6i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1960" y="-1117"/>
+            <point key="canvasLocation" x="2673" y="-1183"/>
         </scene>
         <!--Traditional Chinese Medicine-->
         <scene sceneID="UWA-Eo-im0">
@@ -1753,9 +1754,24 @@
                                             <constraint firstItem="wSW-Gz-ePQ" firstAttribute="top" secondItem="gye-M0-Wwn" secondAttribute="bottom" constant="21" id="tit-5k-oHK"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Bk-Sj-EKk">
+                                        <rect key="frame" x="16" y="8" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="k5Y-89-0dX"/>
+                                            <constraint firstAttribute="width" constant="46" id="uls-Ez-rcG"/>
+                                        </constraints>
+                                        <state key="normal" title="✖︎">
+                                            <color key="titleColor" red="0.039215687659999998" green="0.086274512110000007" blue="0.090196080509999998" alpha="1" colorSpace="deviceRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="hideButtonTapped:" destination="pLW-Pq-RcD" eventType="touchUpInside" id="ClD-fE-YlS"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="2Bk-Sj-EKk" firstAttribute="top" secondItem="alg-AB-jT0" secondAttribute="top" constant="8" id="3TG-jw-Xze"/>
                                     <constraint firstItem="UaK-Yd-a01" firstAttribute="top" secondItem="ouo-61-zMQ" secondAttribute="bottom" constant="14" id="5Xw-ad-rEg"/>
+                                    <constraint firstItem="2Bk-Sj-EKk" firstAttribute="leading" secondItem="alg-AB-jT0" secondAttribute="leading" constant="8" id="5uK-iF-ajR"/>
                                     <constraint firstItem="Rn9-bu-Ll3" firstAttribute="trailing" secondItem="UaK-Yd-a01" secondAttribute="trailing" id="8fD-Ut-Qn1"/>
                                     <constraint firstItem="GTt-pA-YwA" firstAttribute="top" secondItem="UaK-Yd-a01" secondAttribute="bottom" constant="8" id="97a-LQ-Opa"/>
                                     <constraint firstItem="ouo-61-zMQ" firstAttribute="centerX" secondItem="alg-AB-jT0" secondAttribute="centerX" id="ADL-Qb-5kY"/>
@@ -1811,6 +1827,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="1200"/>
                     <connections>
+                        <outlet property="hideButtonOutlet" destination="2Bk-Sj-EKk" id="rcu-Hv-B56"/>
                         <outlet property="indicationsAndUses" destination="lRs-w6-Ejj" id="w7e-yW-rAg"/>
                         <outlet property="leftImage" destination="xEy-SW-DBY" id="TLj-V3-hxU"/>
                         <outlet property="location" destination="MHl-Ac-BWN" id="MVL-sb-hlH"/>

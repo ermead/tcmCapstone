@@ -11,6 +11,7 @@ import UIKit
 class PointsDetailListViewController: UIViewController,  UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate, UITextViewDelegate {
     
     
+    
     var herb: Herb?
     var point: Point?
     
@@ -18,6 +19,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     var canEdit: Bool = false
     
     @IBOutlet weak var saveButton: UIBarButtonItem!
+    @IBOutlet weak var hideButtonOutlet: UIButton!
     
     var herbsList: Bool = true
     var singles: Bool = true
@@ -27,6 +29,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     var newFieldsColor = UIColor(red:0.012,  green:0.549,  blue:0.549, alpha: 0.1)
     
     var searchedFor: Bool = false
+    var isHideButtonHidden: Bool = true
     var category: String = "Herb"
     var filteredHerbArray = [Herb]()
     var filteredPointArray = [Point]()
@@ -57,6 +60,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideButtonOutlet.hidden = isHideButtonHidden
         view.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
         
         
@@ -125,6 +129,11 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         
     }
     
+    @IBAction func hideButtonTapped(sender: UIButton) {
+        
+        dismissViewControllerAnimated(true, completion: nil)
+        
+    }
     
     func populatePointInfo() {
         if herbsList{
