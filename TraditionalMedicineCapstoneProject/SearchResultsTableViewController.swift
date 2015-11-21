@@ -81,6 +81,56 @@ class SearchResultsTableViewController: UITableViewController {
         
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "showPointDetail" {
+            
+            print("display herb detail")
+            let index = tableView.indexPathForSelectedRow?.row
+            
+            if let pdlc : PointsDetailListViewController = segue.destinationViewController as? PointsDetailListViewController {
+                
+                if category == "Herb" {
+                    print("the index touched was \(index) and the point selected was \(filteredHerbArray[index!].pinyinName)")
+                    //pdlc.title = HerbsController.sharedController.herbs[index!].pinyinName
+                    pdlc.searchedFor = true
+                    pdlc.herbsList = true
+                    pdlc.singles = true
+                    pdlc.filteredHerbArray = self.filteredHerbArray
+                    pdlc.index = index!
+                   
+                } else if category == "Point" {
+                    print("the index touched was \(index) and the point selected was \(filteredPointArray[index!].pinyinName)")
+                    //pdlc.title = FormulasController.sharedController.formulas[index!].pinyinName
+                    pdlc.searchedFor = true
+                    pdlc.herbsList = false
+                    pdlc.singles = true
+                    pdlc.filteredPointArray = self.filteredPointArray
+                    pdlc.index = index!
+                   
+                } else if category == "Channel" {
+                     print("the index touched was \(index) and the point selected was \(filteredChannelArray[index!].name)")
+                    pdlc.searchedFor = true
+                    pdlc.herbsList = false
+                    pdlc.singles = false
+                    pdlc.filteredChannelArray = self.filteredChannelArray
+                    pdlc.index = index!
+                } else if category == "Formula" {
+                     print("the index touched was \(index) and the point selected was \(filteredFormulaArray[index!].pinyinName)")
+                    pdlc.searchedFor = true
+                    pdlc.herbsList = true
+                    pdlc.singles = false
+                    pdlc.filteredFormulaArray = self.filteredFormulaArray
+                    pdlc.index = index!
+                } else {
+                    print("error preparing for search results to detail segue")
+                }
+                
+            }
+  
+    }
+
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -127,4 +177,5 @@ class SearchResultsTableViewController: UITableViewController {
     }
     */
 
+}
 }

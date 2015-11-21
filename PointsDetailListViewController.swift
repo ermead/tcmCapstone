@@ -22,8 +22,16 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     var herbsList: Bool = true
     var singles: Bool = true
     var index:Int?
+    
     var firstPicVisible: Bool = true
     var newFieldsColor = UIColor(red:0.012,  green:0.549,  blue:0.549, alpha: 0.1)
+    
+    var searchedFor: Bool = false
+    var category: String = "Herb"
+    var filteredHerbArray = [Herb]()
+    var filteredPointArray = [Point]()
+    var filteredChannelArray = [Channel]()
+    var filteredFormulaArray = [Formula]()
     
     
     @IBOutlet weak var topRightTextField: UITextField!
@@ -122,6 +130,12 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         if herbsList{
             if singles{
             var detailHerb = HerbsController.sharedController.herbs[index!]
+                
+                if self.searchedFor == true {
+                   
+                    detailHerb = filteredHerbArray[index!]
+
+                }
             
             //detailHerb = Herb(pinyinName: detailHerb.pinyinName, botanicalName: detailHerb.botanicalName, englishName: detailHerb.englishName!, category: detailHerb.category, temp: detailHerb.temp, meridians: detailHerb.meridians, uses: detailHerb.uses, majorFormulas: detailHerb.majorFormulas)
             
@@ -168,6 +182,12 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             else {
                 //FORMULA
                 var detailHerb = FormulasController.sharedController.formulas[index!]
+                
+                if self.searchedFor == true {
+                    
+                    detailHerb = filteredFormulaArray[index!]
+                    
+                }
                 print(detailHerb.pinyinName)
                 print(detailHerb.englishName)
                 print(detailHerb.uses)
@@ -197,6 +217,12 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             if singles{
                 var point = PointController.sharedController.points[index!]
                 
+                if self.searchedFor == true {
+                    
+                    point = filteredPointArray[index!]
+                    
+                }
+                
                 //point = Point(pinyinName: point.pinyinName, englishName: point.englishName, pointOnMeridian: point.pointOnMeridian, specialCategories: point.specialCategories!, channel: point.channel, locationDescription: point.locationDescription, uses: point.uses)
                 
                 topRightTextField.text = point.pinyinName
@@ -216,6 +242,12 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                 
         } else {
                 var channel = ChannelController.sharedController.channels[index!]
+                
+                if self.searchedFor == true {
+                    
+                    channel = filteredChannelArray[index!]
+                    
+                }
     
                 topRightTextField.text = channel.name
                 topRightMiddleTextField.text = "  "
