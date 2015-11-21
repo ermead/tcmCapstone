@@ -15,6 +15,9 @@ class SearchResultsTableViewController: UITableViewController {
     var filteredPointArray = [Point]()
     var filteredChannelArray = [Channel]()
     var filteredFormulaArray = [Formula]()
+    
+    var placeholderHerbArray = [Herb]()
+    var placeholderPointArray = [Point]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,8 +71,14 @@ class SearchResultsTableViewController: UITableViewController {
             cell.textLabel?.text = formula.pinyinName
         }
 
-
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let herb = filteredHerbArray[indexPath.row]
+        
+        
     }
     
 
