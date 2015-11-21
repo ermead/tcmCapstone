@@ -763,6 +763,11 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         return canEdit
     }
     
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
     func textViewShouldBeginEditing(textView: UITextView) -> Bool {
         return canEdit
     }

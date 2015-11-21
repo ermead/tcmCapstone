@@ -9,12 +9,13 @@
 import UIKit
 import CoreData
 
-class PointsListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class PointsListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchResultsUpdating {
 
     //toggle this var if herbs list or points list
     var herbsList: Bool = false
     var singles: Bool = true
    
+    var searchController: UISearchController!
     
     @IBOutlet weak var singleOrComboHerbsOutlet: UISegmentedControl!
     @IBOutlet weak var singleOrComboPointsOutlet: UISegmentedControl!
@@ -77,6 +78,8 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupSearchController()
+        
         buttonStackOutlet.hidden = true
         
         if herbsList == true {
@@ -120,6 +123,34 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
 //    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
 //        return 12
 //    }
+    
+    func setupSearchController(){
+        
+        let resultsViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("SearchResults")
+        
+        searchController = UISearchController(searchResultsController: resultsViewController)
+        searchController.searchResultsUpdater = self
+        searchController.searchBar.sizeToFit()
+        pointsTableViewOutlet.tableHeaderView = searchController.searchBar
+        searchController.hidesNavigationBarDuringPresentation = false
+        
+        definesPresentationContext = false
+        
+        
+    }
+    
+    // MARK: - Search Results Updating Protocol
+    func updateSearchResultsForSearchController(searchController: UISearchController) {
+        
+        let searchTerm = searchController.searchBar.text!.lowercaseString
+        
+        let resultsViewController = searchController.searchResultsController as! SearchResultsTableViewController
+        
+        //resultsViewController.filteredArray = HerbController.sharedController().filter({ $0.details().lowercaseString.containsString(searchTerm) })
+        resultsViewController.filteredHerbArray = HerbsController.sharedController.herbs.filter({ $0.pinyinName!.lowercaseString.containsString(searchTerm) })
+        
+        resultsViewController.tableView.reloadData()
+    }
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
