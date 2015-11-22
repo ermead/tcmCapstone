@@ -25,7 +25,9 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     var index:Int?
     
     var firstPicVisible: Bool = true
-    var newFieldsColor = UIColor(red:0.012,  green:0.549,  blue:0.549, alpha: 0.1)
+    //var newFieldsColor = UIColor(red:0.012,  green:0.549,  blue:0.549, alpha: 0.1)
+    var newFieldsColor = UIColor.whiteColor()
+    var newFieldTextColor = UIColor.blackColor()
     
     var searchedFor: Bool = false
     var isHideButtonHidden: Bool = true
@@ -55,7 +57,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     @IBOutlet weak var togglePicOutlet: UIButton!
     @IBOutlet weak var leftImage: UIImageView!
     @IBOutlet weak var rightImage: UIImageView!
-    @IBOutlet weak var locationLabel: UILabel!
+
     @IBOutlet weak var location: UITextView!
     @IBOutlet weak var indicationsAndUses: UITextView!
     
@@ -206,10 +208,23 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             addButtonsToScene(true)
             self.saveButton.title = "Save"
             topRightTextField.backgroundColor = newFieldsColor
+            topRightTextField.textColor = newFieldTextColor
             topRightMiddleTextField.backgroundColor = newFieldsColor
+            topRightMiddleTextField.textColor = newFieldTextColor
             topRightBottomTextField.backgroundColor = newFieldsColor
+            topRightBottomTextField.textColor = newFieldTextColor
+            textField4.backgroundColor = newFieldsColor
+            textField4.textColor = newFieldTextColor
+            textField5.backgroundColor = newFieldsColor
+            textField5.textColor = newFieldTextColor
+            textField6.backgroundColor = newFieldsColor
+            textField6.textColor = newFieldTextColor
+            textField7.backgroundColor = newFieldsColor
+            textField7.textColor = newFieldTextColor
             location.backgroundColor = newFieldsColor
+            location.textColor = newFieldTextColor
             indicationsAndUses.backgroundColor = newFieldsColor
+            indicationsAndUses.textColor = newFieldTextColor
             
             self.navigationItem.rightBarButtonItem?.image = nil
             self.navigationItem.rightBarButtonItem?.title = "Cancel"

@@ -68,6 +68,8 @@ class CombinationsViewController: UIViewController, UITableViewDataSource, UITab
         buttonStackOutlet.hidden = true
         setupSearchController()
         searchController.searchBar.hidden = true
+        self.navigationItem.rightBarButtonItem?.enabled = false
+        self.navigationItem.rightBarButtonItem?.tintColor = UIColor.clearColor()
         // Do any additional setup after loading the view.
         
         print("combination View loaded")

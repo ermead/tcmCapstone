@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TraditionalMedicineCapstoneProject/CombinationsViewController.swift"
-            timestampString = "469905247.823028"
+            timestampString = "469906630.686271"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
             landmarkName = "setupSearchController()"
             landmarkType = "5">
          </BreakpointContent>
