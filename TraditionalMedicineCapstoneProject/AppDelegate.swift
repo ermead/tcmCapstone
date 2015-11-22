@@ -45,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let fetchRequestDefaultFormulas = NSFetchRequest(entityName: "Formula")
         do {
             let results = try Stack.sharedStack.managedObjectContext.executeFetchRequest(fetchRequestDefaultFormulas)
-            if results.count == 0 {
+            if results.count ==  0 {
                 
                 loadFormulasDefaultData()
             }
@@ -117,14 +117,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             cinnamonDecoction.uses = "Release Wind Cold"
             cinnamonDecoction.imageId1 = nil
             cinnamonDecoction.imageId2 = nil
+            cinnamonDecoction.category = "release the exterior"
         
         let SixFlavorDecoction = Formula(entity: formulaEntity, insertIntoManagedObjectContext: Stack.sharedStack.managedObjectContext)
-            SixFlavorDecoction.pinyinName = "Liu Wei Di Huang Wan"
+            SixFlavorDecoction.pinyinName = "Liu Wei Di Huang Wan1"
             SixFlavorDecoction.englishName = "6 Flavor Rehmannia Decoction"
             SixFlavorDecoction.uses = "Tonify Liver & Kidney Yin"
             SixFlavorDecoction.imageId1 = nil
             SixFlavorDecoction.imageId2 = nil
-
+            SixFlavorDecoction.category = "Kidney and Liver Yin Tonics"
+        
+            var herbArray : [Herb] = HerbsController.sharedController.herbs.filter({$0.pinyinName!.lowercaseString.containsString("gui zhi")})
+        
+            SixFlavorDecoction.hasContents = NSSet(array: herbArray)
+        
         do { try Stack.sharedStack.managedObjectContext.save()} catch {print("Error with Default Formulas")}
     }
     

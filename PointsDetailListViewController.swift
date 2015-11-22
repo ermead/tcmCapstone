@@ -190,31 +190,65 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             }
             else {
                 //FORMULA
-                var detailHerb = FormulasController.sharedController.formulas[index!]
+                var detailFormula = FormulasController.sharedController.formulas[index!]
                 
                 if self.searchedFor == true {
                     
-                    detailHerb = filteredFormulaArray[index!]
+                    detailFormula = filteredFormulaArray[index!]
                     
                 }
-                print(detailHerb.pinyinName)
-                print(detailHerb.englishName)
-                print(detailHerb.uses)
+                print(detailFormula.pinyinName)
+                print(detailFormula.englishName)
+                print(detailFormula.uses)
                // generalDescription.text = ("\(detailHerb.pinyinName!) is used for \(detailHerb.uses!).")
                 
-                topRightTextField.text = detailHerb.pinyinName
-                topRightMiddleTextField.text = detailHerb.englishName
+                topRightTextField.text = detailFormula.pinyinName
+                topRightMiddleTextField.text = detailFormula.englishName
                 topRightBottomTextField.text = "  "
                 //locationLabel.text = detailHerb.pinyinName
                 location.text = "This formula, contains how many and what herbs?"
-                indicationsAndUses.text = detailHerb.uses
+                indicationsAndUses.text = detailFormula.uses
                 
-                if detailHerb.imageId1 != nil {
-                ImageController.imageForImageId(detailHerb.imageId1!, completion: { (image) -> Void in
+                if detailFormula.images != nil{
+                    let imageSet = detailFormula.images
+                    
+                    print("The number of images in this set is \(imageSet!.count)")
+                    
+                    let imageArray: [Image] = imageSet!.allObjects as! [Image]
+                    
+                    print("there are \(imageArray.count) images in the array")
+                    
+                    if imageArray.count >= 2 {
+                        if let imageA = ImageController.getImageFromData(imageArray[0].imageData!){
+                            self.leftImage.image = imageA
+                        }
+                        if let imageB = ImageController.getImageFromData(imageArray[1].imageData!){
+                            self.rightImage.image = imageB
+                        }
+                    } else if detailFormula.hasContents != nil {
+                        let set = detailFormula.hasContents
+                        print("The number of things in this set is \(set!.count)")
+                        
+                        let setArray: [Herb] = set!.allObjects as! [Herb]
+                        
+                        print("there are \(setArray.count) things in this array")
+                        
+                        for herb in setArray{
+                            print("my name is \(herb.pinyinName), and I am in \(detailFormula.pinyinName)")
+                        }
+                        
+                    } else {
+                        return
+                    }
+                    
+                }
+                
+                if detailFormula.imageId1 != nil {
+                ImageController.imageForImageId(detailFormula.imageId1!, completion: { (image) -> Void in
                     self.leftImage.image = image
                 })}
-                if detailHerb.imageId2 != nil {
-                ImageController.imageForImageId(detailHerb.imageId2!, completion: { (image) -> Void in
+                if detailFormula.imageId2 != nil {
+                ImageController.imageForImageId(detailFormula.imageId2!, completion: { (image) -> Void in
                     self.rightImage.image = image
                 })}
                 
