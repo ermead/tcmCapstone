@@ -98,20 +98,22 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         togglePicOutlet.titleLabel?.text = ""
         togglePicOutlet.imageView?.image = UIImage(named: "glyphicons-369-collapse")
         togglePicOutlet.backgroundColor = UIColor.blueColorDark()
-        togglePicOutlet.layer.cornerRadius = 4
+        togglePicOutlet.layer.cornerRadius = 2
         togglePicOutlet.layer.borderColor = UIColor.whiteColor().CGColor
         togglePicOutlet.layer.borderWidth = 0.5
         togglePicOutlet.frame.size = CGSize(width: 10, height: 10)
         togglePicOutlet.alpha = 0.8
         
-        addToButtonOutlet.layer.cornerRadius = 10
-        addToButtonOutlet.titleLabel?.text = "Add Ingredient to \(thisFormula?.pinyinName!)"
+        addToButtonOutlet.layer.cornerRadius = 6
+        if thisFormula != nil {
+            addToButtonOutlet.setTitle("Add Ingredient to \(thisFormula!.pinyinName!)?", forState: .Normal)
+        }
         addToButtonOutlet.backgroundColor = UIColor.blueColorMedium()
         addToButtonOutlet.layer.borderColor = UIColor.whiteColor().CGColor
         addToButtonOutlet.layer.borderWidth = 1
         addToButtonOutlet.titleLabel?.font = UIFont.systemFontOfSize(11)
         addToButtonOutlet.setTitleColor(UIColor.whiteColor(), forState: .Normal)
-        addToButtonOutlet.alpha = 0.8
+        addToButtonOutlet.alpha = 0.9
         
         
         if let index = index {
