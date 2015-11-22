@@ -129,6 +129,7 @@ class CombinationsViewController: UIViewController, UITableViewDataSource, UITab
                 
                     print("the index touched was \(index) and the point selected was \(filteredHerbArray[index!].pinyinName)")
                     pdlc.searchedFor = true
+                    pdlc.isHideButtonHidden = false
                     pdlc.filteredHerbArray = self.filteredHerbArray
                     pdlc.title = filteredHerbArray[index!].pinyinName
                     pdlc.index = index!
@@ -145,6 +146,7 @@ class CombinationsViewController: UIViewController, UITableViewDataSource, UITab
                 
                     print("the index touched was \(index) and the point selected was \(filteredPointArray[index!].pinyinName)")
                     pdlc.searchedFor = true
+                    pdlc.isHideButtonHidden = false
                     pdlc.filteredPointArray = self.filteredPointArray
                     pdlc.title = filteredPointArray[index!].pinyinName
                     pdlc.index = index!
