@@ -82,8 +82,8 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         view.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
         
         
-        location.contentInset = UIEdgeInsetsMake(50.0,0.0,0,0.0)
-        indicationsAndUses.contentInset = UIEdgeInsetsMake(20.0, 0, 0, 0)
+//        location.contentInset = UIEdgeInsetsMake(50.0,0.0,0,0.0)
+//        indicationsAndUses.contentInset = UIEdgeInsetsMake(20.0, 0, 0, 0)
         
         if canEdit{
             addButtonsToScene(true)
@@ -137,7 +137,11 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         topRightTextField.layer.cornerRadius = 5
         topRightMiddleTextField.layer.cornerRadius = 5
         topRightBottomTextField.layer.cornerRadius = 5
+        textField4.layer.cornerRadius = 5
+        textField5.layer.cornerRadius = 5
+        textField6.layer.cornerRadius = 5
         location.layer.cornerRadius = 5
+        textField7.layer.cornerRadius = 5
         indicationsAndUses.layer.cornerRadius = 5
         
         
@@ -503,7 +507,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                 topRightTextField.text = point.pinyinName
                 topRightMiddleTextField.text = point.englishName
                 topRightBottomTextField.text = point.pointOnMeridian
-                textField4.text = "Acupoint on the \n \(point.channel!) channel"
+                textField4.text = "\(point.channel!) meridian"
                 textField5.text = point.specialCategories
                 textField6.text = "Location"
                 /*if point.onChannel != nil {
@@ -554,7 +558,34 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                 topRightTextField.text = channel.name
                 topRightMiddleTextField.text = "  "
                 topRightBottomTextField.text = "  "
-                location.text = channel.name
+                textField4.text = ""
+                textField5.text = ""
+                textField6.text = "Contains Points:"
+                
+                if channel.hasPoints != nil {
+                    let points : [Point] = NSArray(array: channel.hasPoints!.allObjects) as! [Point]
+                    let count = points.count
+                    var ArrayOfStrings: [String] = []
+                    for point in points{
+                        ArrayOfStrings.append(point.pinyinName!)
+                    }
+                    var AllPointsAsString: String = ""
+                    for name in ArrayOfStrings {
+                        if name == ArrayOfStrings.first {
+                            AllPointsAsString = name
+                        } else if name == ArrayOfStrings.last {
+                            AllPointsAsString = "\(AllPointsAsString) & \(name)"
+                        } else {
+                            AllPointsAsString = "\(AllPointsAsString), \(name)"}
+                    }
+                    if count > 0{
+                    self.location.text = ("\(channel.name!) has \(count) points. They are \(AllPointsAsString).")
+                    } else {
+                    self.location.text = "This combination currently has no points."
+                }
+                }
+
+                textField7.text = "Indications & Uses"
                 indicationsAndUses.text = channel.uses
                 
                 if channel.imageId1 != nil {
