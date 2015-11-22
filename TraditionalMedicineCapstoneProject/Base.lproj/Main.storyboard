@@ -879,6 +879,13 @@
                                                     <constraint firstAttribute="height" constant="191" id="atN-zM-YIi"/>
                                                 </constraints>
                                             </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMA-CJ-m0J">
+                                                <rect key="frame" x="554" y="0.0" width="36" height="30"/>
+                                                <state key="normal" title="Clear"/>
+                                                <connections>
+                                                    <action selector="clearButtonTapped:" destination="OIQ-0G-fvf" eventType="touchUpInside" id="9tl-5O-eS0"/>
+                                                </connections>
+                                            </button>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OOw-GA-QFe">
                                                 <rect key="frame" x="10" y="0.0" width="580" height="158"/>
                                                 <constraints>
@@ -896,10 +903,12 @@
                                             <constraint firstAttribute="trailing" secondItem="yU4-PP-QtD" secondAttribute="trailing" id="6Zh-Si-6AI"/>
                                             <constraint firstItem="yU4-PP-QtD" firstAttribute="top" secondItem="OOw-GA-QFe" secondAttribute="bottom" constant="550" id="6pt-4C-Khr"/>
                                             <constraint firstItem="OOw-GA-QFe" firstAttribute="top" secondItem="Mg0-oH-rIu" secondAttribute="top" id="7an-7O-BMR"/>
+                                            <constraint firstItem="JMA-CJ-m0J" firstAttribute="top" secondItem="OOw-GA-QFe" secondAttribute="top" id="8cG-5q-i3Q"/>
                                             <constraint firstItem="Y0b-R4-wdZ" firstAttribute="top" secondItem="saJ-rs-hzL" secondAttribute="bottom" constant="11" id="D9W-tR-hGW"/>
                                             <constraint firstItem="yU4-PP-QtD" firstAttribute="trailing" secondItem="OOw-GA-QFe" secondAttribute="trailing" id="FVA-dl-E46"/>
                                             <constraint firstAttribute="trailing" secondItem="WwA-HV-eCa" secondAttribute="trailing" constant="8" id="Gr9-ak-qVs"/>
                                             <constraint firstItem="OOw-GA-QFe" firstAttribute="leading" secondItem="Mg0-oH-rIu" secondAttribute="leading" constant="10" id="H96-je-AAC"/>
+                                            <constraint firstItem="JMA-CJ-m0J" firstAttribute="trailing" secondItem="OOw-GA-QFe" secondAttribute="trailing" id="MIL-dZ-u4v"/>
                                             <constraint firstAttribute="bottom" secondItem="yU4-PP-QtD" secondAttribute="bottom" constant="14" id="N13-Wr-vc1"/>
                                             <constraint firstItem="yU4-PP-QtD" firstAttribute="centerX" secondItem="Mg0-oH-rIu" secondAttribute="centerX" id="N2O-YE-BjP"/>
                                             <constraint firstItem="Y0b-R4-wdZ" firstAttribute="height" secondItem="saJ-rs-hzL" secondAttribute="height" id="OxV-RP-O0k"/>
@@ -943,15 +952,8 @@
                                     <constraint firstAttribute="trailing" secondItem="Mg0-oH-rIu" secondAttribute="trailing" id="ygc-aa-a0N"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMA-CJ-m0J">
-                                <rect key="frame" x="550" y="82" width="36" height="30"/>
-                                <state key="normal" title="Clear"/>
-                                <connections>
-                                    <action selector="clearButtonTapped:" destination="OIQ-0G-fvf" eventType="touchUpInside" id="9tl-5O-eS0"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7r-9B-Dr3">
-                                <rect key="frame" x="460" y="86" width="82" height="22"/>
+                                <rect key="frame" x="516" y="91" width="82" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="82" id="3ue-WN-mUG"/>
                                     <constraint firstAttribute="height" constant="22" id="irh-W4-QV7"/>
@@ -969,15 +971,12 @@
                             <constraint firstItem="nwG-hU-qlS" firstAttribute="top" secondItem="Jq0-8D-sWX" secondAttribute="bottom" constant="23" id="8lL-Ji-PzL"/>
                             <constraint firstAttribute="leadingMargin" secondItem="yU4-PP-QtD" secondAttribute="leading" id="BYV-Og-gwd"/>
                             <constraint firstItem="nwG-hU-qlS" firstAttribute="leading" secondItem="JGW-Hl-dFn" secondAttribute="leadingMargin" constant="-20" id="Ko8-tg-sye"/>
+                            <constraint firstItem="B7r-9B-Dr3" firstAttribute="top" secondItem="hc2-HF-DgP" secondAttribute="bottom" constant="27" id="LO0-Ob-NlJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nwG-hU-qlS" secondAttribute="trailing" constant="-40" id="LRX-5W-Mlg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="B7r-9B-Dr3" secondAttribute="trailing" constant="-18" id="cpS-cm-CGz"/>
                             <constraint firstItem="nwG-hU-qlS" firstAttribute="width" secondItem="JGW-Hl-dFn" secondAttribute="width" constant="20" id="f7A-AH-6h7"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="JMA-CJ-m0J" secondAttribute="trailing" constant="-6" id="iMQ-BQ-XlK"/>
                             <constraint firstItem="Mg0-oH-rIu" firstAttribute="width" secondItem="JGW-Hl-dFn" secondAttribute="width" id="kRu-VS-LT5"/>
-                            <constraint firstItem="B7r-9B-Dr3" firstAttribute="top" secondItem="hc2-HF-DgP" secondAttribute="bottom" constant="22" id="mWG-Ef-mLJ"/>
                             <constraint firstItem="Jq0-8D-sWX" firstAttribute="centerX" secondItem="JGW-Hl-dFn" secondAttribute="centerX" id="o0M-Qm-Yau"/>
-                            <constraint firstItem="JMA-CJ-m0J" firstAttribute="leading" secondItem="B7r-9B-Dr3" secondAttribute="trailing" constant="8" id="oY0-ve-Wg0"/>
-                            <constraint firstItem="nwG-hU-qlS" firstAttribute="top" secondItem="JMA-CJ-m0J" secondAttribute="bottom" constant="8" symbolic="YES" id="oee-Rr-0Vb"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="JMA-CJ-m0J" secondAttribute="trailing" constant="-6" id="p92-P9-sFr"/>
                             <constraint firstItem="OOw-GA-QFe" firstAttribute="centerX" secondItem="JGW-Hl-dFn" secondAttribute="centerX" id="rnE-LV-Ccg"/>
                         </constraints>
                         <variation key="default">
