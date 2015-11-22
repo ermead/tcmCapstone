@@ -786,10 +786,17 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             print("display combinations detail")
             if let cvc : CombinationsViewController = segue.destinationViewController as? CombinationsViewController {
             
-                let detailFormula = FormulasController.sharedController.formulas[index!]
-                cvc.navigationItem.title = detailFormula.pinyinName
-                cvc.filteredHerbArray = detailFormula.hasContents?.allObjects as! [Herb]
-                
+                if herbsList == true{
+                    let detailFormula = FormulasController.sharedController.formulas[index!]
+                    cvc.navigationItem.title = detailFormula.pinyinName
+                    cvc.filteredHerbArray = detailFormula.hasContents?.allObjects as! [Herb]
+                    cvc.herbsList = true
+                } else {
+                    let detailChannel = ChannelController.sharedController.channels[index!]
+                    cvc.navigationItem.title = detailChannel.name
+                    cvc.filteredPointArray = detailChannel.hasPoints?.allObjects as! [Point]
+                    cvc.herbsList = false
+                }
             }
         }
     }

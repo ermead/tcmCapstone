@@ -50,20 +50,26 @@ class CombinationsViewController: UIViewController, UITableViewDataSource, UITab
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
-        cell.textLabel?.text = filteredHerbArray[indexPath.row].pinyinName
-        cell.detailTextLabel?.text = filteredHerbArray[indexPath.row].englishName
         
-//        if HerbsController.sharedController.herbs[indexPath.row].imageId1 != nil {
-//            ImageController.imageForImageId(HerbsController.sharedController.herbs[indexPath.row].imageId1!, completion: { (image) -> Void in
-//                cell.imageView!.image = image
-//            })}
+        if herbsList == true{
+            cell.textLabel?.text = filteredHerbArray[indexPath.row].pinyinName
+            cell.detailTextLabel?.text = filteredHerbArray[indexPath.row].englishName
+        } else {
+            cell.textLabel?.text = filteredPointArray[indexPath.row].pinyinName
+            cell.detailTextLabel?.text = filteredPointArray[indexPath.row].englishName
+        }
         
         return cell
         
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return filteredHerbArray.count
+        
+        if herbsList == true {
+            return filteredHerbArray.count
+        } else {
+            return filteredPointArray.count
+        }
     }
     
     
@@ -92,8 +98,10 @@ class CombinationsViewController: UIViewController, UITableViewDataSource, UITab
             
             if let pdlc : PointsDetailListViewController = segue.destinationViewController as? PointsDetailListViewController {
                 
-                    print("the index touched was \(index) and the point selected was \(PointController.sharedController.points[index!].pinyinName)")
-                    pdlc.title = PointController.sharedController.points[index!].pointOnMeridian
+                    print("the index touched was \(index) and the point selected was \(filteredPointArray[index!].pinyinName)")
+                    pdlc.searchedFor = true
+                    pdlc.filteredPointArray = self.filteredPointArray
+                    pdlc.title = filteredPointArray[index!].pinyinName
                     pdlc.index = index!
                     pdlc.herbsList = false
                     pdlc.singles = true

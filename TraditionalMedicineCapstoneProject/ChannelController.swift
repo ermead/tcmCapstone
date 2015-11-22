@@ -18,7 +18,9 @@ class ChannelController: NSObject {
     
     var defaultChannels: [Channel] {
         
-        let fourFlowers = Channel(name: "Four Flowers", uses: "Exhaustion", imageId1: nil, imageId2: nil, context: Stack.sharedStack.managedObjectContext)
+        var pointsArray : [Point] = PointController.sharedController.points.filter({$0.pinyinName!.lowercaseString.containsString("tai chong")})
+        
+        let fourFlowers = Channel(name: "Four Flowers1", uses: "Exhaustion", imageId1: nil, imageId2: nil, hasPoints: NSSet(array: pointsArray), context: Stack.sharedStack.managedObjectContext)
         
         let fiveFlowers = Channel(name: "Five Flowers", uses: "Exhaustion", imageId1: nil, imageId2: nil, context: Stack.sharedStack.managedObjectContext)
         
