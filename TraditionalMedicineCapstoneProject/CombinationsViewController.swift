@@ -19,6 +19,8 @@ class CombinationsViewController: UIViewController, UITableViewDataSource, UITab
     
     var index: Int?
     
+    @IBOutlet weak var topRightAddButtonOutlet: UIButton!
+    
     var filteredHerbArray: [Herb] = []
     var filteredPointArray: [Point] = []
     
@@ -38,10 +40,34 @@ class CombinationsViewController: UIViewController, UITableViewDataSource, UITab
         dismissViewControllerAnimated(true, completion: nil)
         
     }
+    
+    @IBAction func collapseButtonTapped(sender: UIButton) {
+        
+        print("unfold buttons")
+        
+        if buttonStackOutlet.hidden == true{
+            buttonStackOutlet.hidden = false
+        } else { buttonStackOutlet.hidden = true }
+        
+    }
+    
+    @IBAction func topRightAddButtonTapped(sender: UIButton) {
+        
+        if searchController.searchBar.hidden == true{
+            searchController.searchBar.hidden = false
+        } else { searchController.searchBar.hidden = true }
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupButtons()
+        topRightAddButtonOutlet.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
+        buttonStackOutlet.hidden = true
         setupSearchController()
+        searchController.searchBar.hidden = true
         // Do any additional setup after loading the view.
         
         print("combination View loaded")
@@ -133,10 +159,14 @@ class CombinationsViewController: UIViewController, UITableViewDataSource, UITab
                     pdlc.searchedFor = true
                     pdlc.isHideButtonHidden = false
                     pdlc.filteredHerbArray = self.filteredHerbArray
-                    pdlc.title = filteredHerbArray[index!].pinyinName
+                    if thisFormula != nil {
+                        pdlc.title = "Ingredient in \(thisFormula!.pinyinName!)"
+                    }
                     pdlc.index = index!
                     pdlc.herbsList = true
                     pdlc.singles = true
+                    pdlc.navigationItem.rightBarButtonItem?.enabled = false
+
             }
             
         } else if segue.identifier == "showPointDetail" && herbsList == false {

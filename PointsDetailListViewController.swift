@@ -71,6 +71,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        addButtonsToScene(true)
         hideButtonOutlet.hidden = isHideButtonHidden
         addToButtonOutlet.hidden = isAddToButtonHidden
         
@@ -115,6 +116,8 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         addToButtonOutlet.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         addToButtonOutlet.alpha = 0.9
         
+        textField6.font = UIFont.systemFontOfSize(15, weight: 2)
+        textField7.font = UIFont.systemFontOfSize(15, weight: 2)
         
         if let index = index {
             
@@ -126,18 +129,13 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             addNewPointEntry()
             
         }
-        
+        topRightTextField.font = UIFont.systemFontOfSize(17, weight: 3)
         topRightTextField.layer.cornerRadius = 5
         topRightMiddleTextField.layer.cornerRadius = 5
         topRightBottomTextField.layer.cornerRadius = 5
         location.layer.cornerRadius = 5
         indicationsAndUses.layer.cornerRadius = 5
         
-
-        if let items = self.navigationController?.navigationBar.items {
-            print(items)
-            
-        }
         
     }
     
@@ -619,7 +617,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         print("I tried to add a new Combo")
     }
     
-    
+/*
     @IBAction func NewButtonTapped(sender: UIBarButtonItem) {
         
        
@@ -725,6 +723,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         }
       
     }
+*/
     
 //MARK: - SetUp Scenes
     
@@ -827,7 +826,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         
         var addButton = UIButton()
         addButton.frame = CGRect(x: self.view.bounds.size.width/2+75, y: self.view.bounds.size.height/2 + 25 , width: 80, height: 30)
-        addButton.setTitle("Action", forState: .Normal)
+        addButton.setTitle("Ingredients", forState: .Normal)
         addButton.titleLabel?.font = UIFont.systemFontOfSize(CGFloat(12))
         addButton.layer.borderWidth = 1
         addButton.layer.borderColor = UIColor.blueColorLight().CGColor
@@ -838,7 +837,8 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         
         var addPhotoButton = UIButton()
         addPhotoButton.frame = CGRect(x: self.view.bounds.size.width/2-10, y: self.view.bounds.size.height/2 + 25, width: 80, height: 30)
-        addPhotoButton.setTitle("add photo", forState: .Normal)
+        addPhotoButton.setTitle("", forState: .Normal)
+        addPhotoButton.setImage(UIImage(named: "glyphicons-12-camera"), forState: .Normal)
         addPhotoButton.titleLabel?.font = UIFont.systemFontOfSize(CGFloat(12))
         addPhotoButton.addTarget(self, action: "addPhotoButtonTapped:", forControlEvents: UIControlEvents.TouchUpInside)
         addPhotoButton.layer.borderWidth = 1
@@ -872,9 +872,6 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         
         performSegueWithIdentifier("toCombinationsView", sender: sender)
         
-//        let cvc = self.storyboard?.instantiateViewControllerWithIdentifier("combinations") as! UINavigationController
-//        cvc.navigationItem.title = "Test"
-//        self.presentViewController(cvc, animated: true, completion: nil)
         
     }
     
