@@ -1717,9 +1717,20 @@
                                                     </mask>
                                                 </variation>
                                             </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qY-Yr-x1m">
+                                                <rect key="frame" x="156" y="8" width="228" height="30"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Add to Formula">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addToButtonTapped:" destination="pLW-Pq-RcD" eventType="touchUpInside" id="auq-za-Zt7"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="lRs-w6-Ejj" secondAttribute="trailing" constant="30" id="71i-VR-gEa"/>
+                                            <constraint firstItem="7qY-Yr-x1m" firstAttribute="leading" secondItem="kZk-uo-87d" secondAttribute="trailing" constant="8" id="AxW-Se-iLh"/>
                                             <constraint firstItem="MHl-Ac-BWN" firstAttribute="top" secondItem="HMm-hv-uZ8" secondAttribute="bottom" constant="-1" id="CPe-9c-HAF"/>
                                             <constraint firstItem="kZk-uo-87d" firstAttribute="leading" secondItem="ouo-61-zMQ" secondAttribute="leading" constant="8" id="DLb-j9-fGi"/>
                                             <constraint firstItem="gye-M0-Wwn" firstAttribute="top" secondItem="mz4-U5-tH8" secondAttribute="bottom" constant="22" id="E3D-6I-tcz"/>
@@ -1731,11 +1742,13 @@
                                             <constraint firstItem="WL8-zy-W0J" firstAttribute="top" secondItem="zDG-fO-ZCT" secondAttribute="bottom" constant="21" id="QXg-7O-XIe"/>
                                             <constraint firstItem="mz4-U5-tH8" firstAttribute="top" secondItem="ouo-61-zMQ" secondAttribute="top" constant="8" id="VAv-su-sHW"/>
                                             <constraint firstAttribute="height" constant="300" id="alm-1I-6po"/>
+                                            <constraint firstItem="7qY-Yr-x1m" firstAttribute="top" secondItem="ouo-61-zMQ" secondAttribute="top" constant="8" id="cP1-0C-YLM"/>
                                             <constraint firstItem="kZk-uo-87d" firstAttribute="top" secondItem="ouo-61-zMQ" secondAttribute="top" constant="8" id="cUO-O4-YJX"/>
                                             <constraint firstItem="RoL-c5-Wuk" firstAttribute="top" secondItem="MHl-Ac-BWN" secondAttribute="bottom" constant="-1" id="chr-RF-Q33"/>
                                             <constraint firstAttribute="trailing" secondItem="WL8-zy-W0J" secondAttribute="trailing" constant="8" id="eBR-lN-YKA"/>
                                             <constraint firstItem="RoL-c5-Wuk" firstAttribute="leading" secondItem="HMm-hv-uZ8" secondAttribute="leading" id="f4j-Gw-a0T"/>
                                             <constraint firstItem="MHl-Ac-BWN" firstAttribute="leading" secondItem="ouo-61-zMQ" secondAttribute="leading" constant="24" id="fBu-Ik-DgA"/>
+                                            <constraint firstItem="mz4-U5-tH8" firstAttribute="leading" secondItem="7qY-Yr-x1m" secondAttribute="trailing" constant="8" id="g6D-GP-K9c"/>
                                             <constraint firstItem="HMm-hv-uZ8" firstAttribute="top" secondItem="ejR-1T-3AI" secondAttribute="bottom" constant="5" id="gIs-Lm-ZF5"/>
                                             <constraint firstItem="ejR-1T-3AI" firstAttribute="top" secondItem="kZk-uo-87d" secondAttribute="bottom" constant="3" id="hda-CW-9iA"/>
                                             <constraint firstAttribute="trailing" secondItem="zDG-fO-ZCT" secondAttribute="trailing" constant="8" id="hqI-Yy-dZc"/>
@@ -1821,6 +1834,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="1200"/>
                     <connections>
+                        <outlet property="addToButtonOutlet" destination="7qY-Yr-x1m" id="qW9-Eq-And"/>
                         <outlet property="hideButtonOutlet" destination="2Bk-Sj-EKk" id="rcu-Hv-B56"/>
                         <outlet property="indicationsAndUses" destination="lRs-w6-Ejj" id="w7e-yW-rAg"/>
                         <outlet property="leftImage" destination="xEy-SW-DBY" id="TLj-V3-hxU"/>

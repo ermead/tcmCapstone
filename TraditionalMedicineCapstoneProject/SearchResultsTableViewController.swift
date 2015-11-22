@@ -9,7 +9,8 @@
 import UIKit
 
 class SearchResultsTableViewController: UITableViewController {
-    
+    var addingToFormula: Bool?
+    var addingToChannel: Bool?
     var category: String = "Herb"
     var filteredHerbArray = [Herb]()
     var filteredPointArray = [Point]()
@@ -93,6 +94,10 @@ class SearchResultsTableViewController: UITableViewController {
                     pdlc.isHideButtonHidden = false
                     pdlc.filteredHerbArray = self.filteredHerbArray
                     pdlc.index = index!
+                    if addingToFormula == true {
+                        pdlc.isAddToButtonHidden = false
+                        pdlc.addingToFormula = true
+                    }
                    
                 } else if category == "Point" {
                     print("the index touched was \(index) and the point selected was \(filteredPointArray[index!].pinyinName)")
@@ -103,6 +108,10 @@ class SearchResultsTableViewController: UITableViewController {
                     pdlc.isHideButtonHidden = false
                     pdlc.filteredPointArray = self.filteredPointArray
                     pdlc.index = index!
+                    if addingToChannel == true {
+                        pdlc.isAddToButtonHidden = false
+                        pdlc.addingToChannel = true
+                    }
                    
                 } else if category == "Channel" {
                      print("the index touched was \(index) and the point selected was \(filteredChannelArray[index!].name)")

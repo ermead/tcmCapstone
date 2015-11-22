@@ -20,6 +20,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     
     @IBOutlet weak var saveButton: UIBarButtonItem!
     @IBOutlet weak var hideButtonOutlet: UIButton!
+    @IBOutlet weak var addToButtonOutlet: UIButton!
     
     var herbsList: Bool = true
     var singles: Bool = true
@@ -30,6 +31,11 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     
     var searchedFor: Bool = false
     var isHideButtonHidden: Bool = true
+    var isAddToButtonHidden: Bool = true
+    
+    var addingToFormula: Bool?
+    var addingToChannel: Bool?
+    
     var category: String = "Herb"
     var filteredHerbArray = [Herb]()
     var filteredPointArray = [Point]()
@@ -61,6 +67,8 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     override func viewDidLoad() {
         super.viewDidLoad()
         hideButtonOutlet.hidden = isHideButtonHidden
+        addToButtonOutlet.hidden = isAddToButtonHidden
+        
         view.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
         
         
@@ -126,6 +134,22 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             rightImage.alpha = 0
             firstPicVisible = true
         }
+        
+    }
+    
+    @IBAction func addToButtonTapped(sender: UIButton) {
+        if addingToFormula == true {
+            
+            
+            
+        } else if addingToChannel == true {
+            
+            
+            
+        } else {
+            print("not adding to anything")
+        }
+        
         
     }
     
@@ -788,11 +812,13 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             
                 if herbsList == true{
                     let detailFormula = FormulasController.sharedController.formulas[index!]
+                    cvc.thisFormula = detailFormula
                     cvc.navigationItem.title = detailFormula.pinyinName
                     cvc.filteredHerbArray = detailFormula.hasContents?.allObjects as! [Herb]
                     cvc.herbsList = true
                 } else {
                     let detailChannel = ChannelController.sharedController.channels[index!]
+                    cvc.thisChannel = detailChannel
                     cvc.navigationItem.title = detailChannel.name
                     cvc.filteredPointArray = detailChannel.hasPoints?.allObjects as! [Point]
                     cvc.herbsList = false

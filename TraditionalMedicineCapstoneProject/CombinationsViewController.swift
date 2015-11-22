@@ -11,6 +11,8 @@ import UIKit
 class CombinationsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchResultsUpdating {
     @IBOutlet weak var tableView: UITableView!
    
+    var thisFormula: Formula?
+    var thisChannel: Channel?
     
     var herbsList = true
     var searchController: UISearchController!
@@ -95,9 +97,11 @@ class CombinationsViewController: UIViewController, UITableViewDataSource, UITab
         let resultsViewController = searchController.searchResultsController as! SearchResultsTableViewController
         
         if herbsList{
+                resultsViewController.addingToFormula = true
                 resultsViewController.category = "Herb"
                 resultsViewController.filteredHerbArray = HerbsController.sharedController.herbs.filter({ $0.pinyinName!.lowercaseString.containsString(searchTerm) })
             } else {
+                resultsViewController.addingToChannel = true
                 resultsViewController.category = "Point"
                 resultsViewController.filteredPointArray = PointController.sharedController.points.filter({ $0.pinyinName!.lowercaseString.containsString(searchTerm) })
             }
