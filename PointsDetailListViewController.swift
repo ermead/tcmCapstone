@@ -47,6 +47,11 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     @IBOutlet weak var topRightMiddleTextField: UITextField!
     @IBOutlet weak var topRightBottomTextField: UITextField!
     
+    @IBOutlet weak var textField4: UITextField!
+    @IBOutlet weak var textField5: UITextField!
+    @IBOutlet weak var textField6: UITextField!
+    @IBOutlet weak var textField7: UITextField!
+    
     @IBOutlet weak var togglePicOutlet: UIButton!
     @IBOutlet weak var leftImage: UIImageView!
     @IBOutlet weak var rightImage: UIImageView!
@@ -192,11 +197,37 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             topRightTextField.text = detailHerb.pinyinName!
             topRightMiddleTextField.text = detailHerb.englishName
             topRightBottomTextField.text = detailHerb.botanicalName
+            textField4.text = detailHerb.temp
+            textField5.text = detailHerb.meridians
                 
-            //locationLabel.text = detailHerb.botanicalName
+            textField6.text = "Major Formulas"
                 
-            location.text = "This herb, named \(detailHerb.pinyinName!), belongs to the category of \(detailHerb.category!). Having a \(detailHerb.temp!) temperature, it travels along the \(detailHerb.meridians!) channels."
-                indicationsAndUses.text = detailHerb.uses
+                if detailHerb.inContents != nil {
+                let formulasFoundIn : [Formula] = NSArray(array: detailHerb.inContents!.allObjects) as! [Formula]
+                let count = formulasFoundIn.count
+                var ArrayOfStrings: [String] = []
+                for formula in formulasFoundIn{
+                    ArrayOfStrings.append(formula.pinyinName!)
+                }
+                var AllFormulasAsString: String = ""
+                for name in ArrayOfStrings {
+                    if name == ArrayOfStrings.first {
+                        AllFormulasAsString = name
+                    } else if name == ArrayOfStrings.last {
+                        AllFormulasAsString = "\(AllFormulasAsString) & \(name)"
+                    } else {
+                        AllFormulasAsString = "\(AllFormulasAsString), \(name)"}
+                }
+                    
+                    self.location.text = ("\(detailHerb.pinyinName!) is found in \(count) formulas, some of which are \(AllFormulasAsString).")
+                } else {
+                self.location.text = "This herb is currently not contained in any of your formulas"
+                }
+            
+            
+            textField7.text = "Uses & Indications"
+                
+            indicationsAndUses.text = detailHerb.uses
                 
                 if detailHerb.images != nil{
                     let imageSet = detailHerb.images

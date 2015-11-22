@@ -1673,6 +1673,7 @@
                                                     <constraint firstAttribute="height" constant="30" id="KvX-m2-bwN"/>
                                                     <constraint firstAttribute="width" constant="240" id="erN-gh-yDu"/>
                                                 </constraints>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -1692,6 +1693,7 @@
                                                     <constraint firstAttribute="width" constant="240" id="6fu-6m-ey4"/>
                                                     <constraint firstAttribute="height" constant="30" id="PeE-5a-qsx"/>
                                                 </constraints>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -1845,6 +1847,10 @@
                         <outlet property="location" destination="MHl-Ac-BWN" id="MVL-sb-hlH"/>
                         <outlet property="rightImage" destination="kZk-uo-87d" id="JWW-D4-QNR"/>
                         <outlet property="saveButton" destination="YMl-hJ-SWj" id="jMR-6S-UmP"/>
+                        <outlet property="textField4" destination="zDG-fO-ZCT" id="ZOU-69-WII"/>
+                        <outlet property="textField5" destination="WL8-zy-W0J" id="Upw-au-8Xw"/>
+                        <outlet property="textField6" destination="HMm-hv-uZ8" id="0w3-K4-9Dh"/>
+                        <outlet property="textField7" destination="RoL-c5-Wuk" id="Fgr-zB-19C"/>
                         <outlet property="togglePicOutlet" destination="ejR-1T-3AI" id="r7x-Si-uTu"/>
                         <outlet property="topRightBottomTextField" destination="wSW-Gz-ePQ" id="9lz-qc-5vV"/>
                         <outlet property="topRightMiddleTextField" destination="gye-M0-Wwn" id="j1N-ub-gXg"/>
