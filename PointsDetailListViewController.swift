@@ -503,7 +503,34 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                 topRightTextField.text = point.pinyinName
                 topRightMiddleTextField.text = point.englishName
                 topRightBottomTextField.text = point.pointOnMeridian
+                textField4.text = "Acupoint on the \n \(point.channel!) channel"
+                textField5.text = point.specialCategories
+                textField6.text = "Location"
+                /*if point.onChannel != nil {
+                    let channelsFoundIn : [Channel] = NSArray(array: point.onChannel!.allObjects) as! [Channel]
+                    let count = channelsFoundIn.count
+                    var ArrayOfStrings: [String] = []
+                    for channel in channelsFoundIn{
+                        ArrayOfStrings.append(channel.name!)
+                    }
+                    var AllChannelsAsString: String = ""
+                    for name in ArrayOfStrings {
+                        if name == ArrayOfStrings.first {
+                            AllChannelsAsString = name
+                        } else if name == ArrayOfStrings.last {
+                            AllChannelsAsString = "\(AllChannelsAsString) & \(name)"
+                        } else {
+                            AllChannelsAsString = "\(AllChannelsAsString), \(name)"}
+                    }
+                    
+                    self.location.text = ("\(point.pinyinName!) is found in \(count) combinations, some of which are: \n \(AllChannelsAsString).")
+                } else {
+                    self.location.text = "This point is currently not contained in any of your combinations."
+                }*/
+                
                 location.text = point.locationDescription
+            
+                textField7.text = "Indications & Uses"
                 indicationsAndUses.text = point.uses
                 
                 if point.imageId1 != nil {
