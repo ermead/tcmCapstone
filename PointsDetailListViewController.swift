@@ -107,10 +107,10 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         togglePicOutlet.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         togglePicOutlet.titleLabel?.text = ""
         togglePicOutlet.imageView?.image = UIImage(named: "glyphicons-369-collapse")
-        togglePicOutlet.backgroundColor = UIColor.blueColorDark()
+        //togglePicOutlet.backgroundColor = UIColor.blueColorDark()
         togglePicOutlet.layer.cornerRadius = 2
         togglePicOutlet.layer.borderColor = UIColor.whiteColor().CGColor
-        togglePicOutlet.layer.borderWidth = 1
+        togglePicOutlet.layer.borderWidth = 0
         togglePicOutlet.frame.size = CGSize(width: 10, height: 10)
         togglePicOutlet.alpha = 0.8
         
@@ -135,10 +135,10 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         addButtonOutlet.alpha = 0.9
         
         
-        addPhotoButtonOutlet.backgroundColor = UIColor.blueColorDark()
+        addPhotoButtonOutlet.backgroundColor = UIColor.clearColor()
         addPhotoButtonOutlet.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         addPhotoButtonOutlet.layer.borderColor = UIColor.whiteColor().CGColor
-        addPhotoButtonOutlet.layer.borderWidth = 1
+        addPhotoButtonOutlet.layer.borderWidth = 0
         addPhotoButtonOutlet.titleLabel?.font = UIFont.systemFontOfSize(11)
         addPhotoButtonOutlet.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         addPhotoButtonOutlet.layer.cornerRadius = 5
@@ -157,9 +157,10 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             addNewPointEntry()
             
         }
-        topRightTextField.font = UIFont.systemFontOfSize(17, weight: 3)
+        topRightTextField.font = UIFont.systemFontOfSize(30, weight: 3)
         topRightTextField.layer.cornerRadius = 5
         topRightMiddleTextField.layer.cornerRadius = 5
+        topRightMiddleTextField.font = UIFont.systemFontOfSize(23, weight: 2.5)
         topRightBottomTextField.layer.cornerRadius = 5
         textField4.layer.cornerRadius = 5
         textField5.layer.cornerRadius = 5
@@ -552,8 +553,8 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                 //point = Point(pinyinName: point.pinyinName, englishName: point.englishName, pointOnMeridian: point.pointOnMeridian, specialCategories: point.specialCategories!, channel: point.channel, locationDescription: point.locationDescription, uses: point.uses)
                 
                 topRightTextField.text = point.pinyinName
-                topRightMiddleTextField.text = point.englishName
-                topRightBottomTextField.text = point.pointOnMeridian
+                topRightMiddleTextField.text = point.pointOnMeridian
+                topRightBottomTextField.text = point.englishName
                 textField4.text = "\(point.channel!) meridian"
                 textField5.text = point.specialCategories
                 textField6.text = "Location"
