@@ -1720,6 +1720,10 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qY-Yr-x1m">
                                                 <rect key="frame" x="156" y="8" width="228" height="30"/>
                                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="JHg-ZG-iMB"/>
+                                                    <constraint firstAttribute="width" constant="228" id="j00-oR-J7H"/>
+                                                </constraints>
                                                 <state key="normal" title="Add to Formula">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>

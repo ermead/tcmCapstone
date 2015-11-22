@@ -11,6 +11,10 @@ import UIKit
 class SearchResultsTableViewController: UITableViewController {
     var addingToFormula: Bool?
     var addingToChannel: Bool?
+    
+    var thisFormula: Formula?
+    var thisChannel: Channel?
+    
     var category: String = "Herb"
     var filteredHerbArray = [Herb]()
     var filteredPointArray = [Point]()
@@ -95,6 +99,7 @@ class SearchResultsTableViewController: UITableViewController {
                     pdlc.filteredHerbArray = self.filteredHerbArray
                     pdlc.index = index!
                     if addingToFormula == true {
+                        pdlc.thisFormula = self.thisFormula
                         pdlc.isAddToButtonHidden = false
                         pdlc.addingToFormula = true
                     }
@@ -109,6 +114,7 @@ class SearchResultsTableViewController: UITableViewController {
                     pdlc.filteredPointArray = self.filteredPointArray
                     pdlc.index = index!
                     if addingToChannel == true {
+                        pdlc.thisChannel = self.thisChannel
                         pdlc.isAddToButtonHidden = false
                         pdlc.addingToChannel = true
                     }

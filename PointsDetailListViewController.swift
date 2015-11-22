@@ -34,7 +34,9 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     var isAddToButtonHidden: Bool = true
     
     var addingToFormula: Bool?
+    var thisFormula: Formula?
     var addingToChannel: Bool?
+    var thisChannel: Channel?
     
     var category: String = "Herb"
     var filteredHerbArray = [Herb]()
@@ -139,8 +141,21 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     
     @IBAction func addToButtonTapped(sender: UIButton) {
         if addingToFormula == true {
-            
-            
+            let detailHerb = filteredHerbArray[index!]
+            print("I'm attempting to add \(detailHerb.pinyinName) to the formula \(thisFormula)")
+            if let set = thisFormula!.hasContents{
+                var newArray = set.allObjects as! [Herb]
+                newArray.append(detailHerb)
+                thisFormula?.hasContents = NSSet(array: newArray)
+                do {
+                    
+                 try thisFormula?.managedObjectContext?.save()
+                } catch {
+                    print("error adding to formula")
+                }
+            }
+            print("now, this formula's contents is \(thisFormula?.hasContents)")
+            print("now, the number of contents is \(thisFormula?.hasContents?.count)")
             
         } else if addingToChannel == true {
             

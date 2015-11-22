@@ -46,6 +46,12 @@ class CombinationsViewController: UIViewController, UITableViewDataSource, UITab
         
         print("combination View loaded")
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewDidLoad()
+        tableView.reloadData()
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -98,10 +104,12 @@ class CombinationsViewController: UIViewController, UITableViewDataSource, UITab
         
         if herbsList{
                 resultsViewController.addingToFormula = true
+                resultsViewController.thisFormula = self.thisFormula
                 resultsViewController.category = "Herb"
                 resultsViewController.filteredHerbArray = HerbsController.sharedController.herbs.filter({ $0.pinyinName!.lowercaseString.containsString(searchTerm) })
             } else {
                 resultsViewController.addingToChannel = true
+                resultsViewController.thisChannel = self.thisChannel
                 resultsViewController.category = "Point"
                 resultsViewController.filteredPointArray = PointController.sharedController.points.filter({ $0.pinyinName!.lowercaseString.containsString(searchTerm) })
             }
