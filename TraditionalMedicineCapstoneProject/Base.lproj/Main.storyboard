@@ -271,12 +271,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Kp-he-lq8">
-                                <rect key="frame" x="0.0" y="45" width="600" height="1155"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Kp-he-lq8">
+                                <rect key="frame" x="0.0" y="20" width="600" height="1180"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="2Vg-Ou-McS" detailTextLabel="ayd-Id-Yv1" imageView="gxs-F4-7Un" style="IBUITableViewCellStyleSubtitle" id="idU-AE-zVp" customClass="CombinationsTableViewCell" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="idU-AE-zVp" id="1cc-FA-gef">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -312,7 +312,7 @@
                                     <outlet property="delegate" destination="Vde-ry-FGg" id="YeT-Ut-Og3"/>
                                 </connections>
                             </tableView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MWr-Ex-CYe">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MWr-Ex-CYe">
                                 <rect key="frame" x="0.0" y="20" width="600" height="50"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ggr-wP-S5d">
@@ -389,8 +389,8 @@
                                     <constraint firstAttribute="height" constant="50" id="DRa-eM-QpT"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWS-zj-Rri">
-                                <rect key="frame" x="0.0" y="23" width="19" height="22"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWS-zj-Rri">
+                                <rect key="frame" x="0.0" y="20" width="19" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="19" id="Scg-yU-8rW"/>
                                     <constraint firstAttribute="height" constant="22" id="gUU-ue-fZh"/>
@@ -402,37 +402,44 @@
                                     <action selector="collapseButtonTapped:" destination="Vde-ry-FGg" eventType="touchUpInside" id="sHD-Kd-eWJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMt-yh-7IK">
-                                <rect key="frame" x="550" y="23" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9SZ-7S-8Xy">
+                                <rect key="frame" x="548" y="20" width="52" height="22"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="0YK-cw-ARH"/>
+                                    <constraint firstAttribute="height" constant="22" id="n5X-ad-y4E"/>
+                                </constraints>
                                 <state key="normal" title="Add">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="topRightAddButtonTapped:" destination="Vde-ry-FGg" eventType="touchUpInside" id="xdQ-ag-lGK"/>
+                                    <action selector="topRightAddButtonTapped:" destination="Vde-ry-FGg" eventType="touchUpInside" id="zlv-Xj-kHe"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="9SZ-7S-8Xy" secondAttribute="trailing" constant="-20" id="1t6-KF-7ah"/>
                             <constraint firstItem="MWr-Ex-CYe" firstAttribute="centerX" secondItem="DhO-jM-7Zy" secondAttribute="centerX" id="5yC-0P-NeF"/>
                             <constraint firstAttribute="trailing" secondItem="MWr-Ex-CYe" secondAttribute="trailing" id="8NO-7i-73F"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="jMt-yh-7IK" secondAttribute="trailing" id="Ax8-bk-Twk"/>
                             <constraint firstItem="MWr-Ex-CYe" firstAttribute="top" secondItem="6oC-Yi-qGy" secondAttribute="bottom" id="BNW-nD-fFK"/>
                             <constraint firstItem="CWS-zj-Rri" firstAttribute="leading" secondItem="4Kp-he-lq8" secondAttribute="leading" id="BzR-aH-VG9"/>
-                            <constraint firstItem="4Kp-he-lq8" firstAttribute="top" secondItem="jMt-yh-7IK" secondAttribute="bottom" id="Jpb-nC-QLS"/>
-                            <constraint firstItem="4Kp-he-lq8" firstAttribute="top" secondItem="6oC-Yi-qGy" secondAttribute="bottom" constant="25" id="RlC-ci-2oe"/>
+                            <constraint firstItem="9SZ-7S-8Xy" firstAttribute="top" secondItem="6oC-Yi-qGy" secondAttribute="bottom" id="K0K-cv-jDH"/>
+                            <constraint firstItem="4Kp-he-lq8" firstAttribute="top" secondItem="6oC-Yi-qGy" secondAttribute="bottom" id="RlC-ci-2oe"/>
                             <constraint firstItem="4Kp-he-lq8" firstAttribute="leading" secondItem="DhO-jM-7Zy" secondAttribute="leading" id="ZQF-Yj-mjw"/>
                             <constraint firstItem="Nly-6q-Ati" firstAttribute="top" secondItem="4Kp-he-lq8" secondAttribute="bottom" id="euR-NV-xyG"/>
-                            <constraint firstItem="jMt-yh-7IK" firstAttribute="top" secondItem="CWS-zj-Rri" secondAttribute="top" id="jiA-XN-0a1"/>
+                            <constraint firstItem="CWS-zj-Rri" firstAttribute="top" secondItem="9SZ-7S-8Xy" secondAttribute="top" id="fe4-8Z-2Zn"/>
                             <constraint firstAttribute="trailing" secondItem="4Kp-he-lq8" secondAttribute="trailing" id="kbp-v7-5in"/>
                             <constraint firstItem="4Kp-he-lq8" firstAttribute="top" secondItem="CWS-zj-Rri" secondAttribute="bottom" id="kza-JS-cce"/>
                             <constraint firstItem="MWr-Ex-CYe" firstAttribute="centerX" secondItem="DhO-jM-7Zy" secondAttribute="centerX" id="lWf-ZN-7NV"/>
+                            <constraint firstItem="CWS-zj-Rri" firstAttribute="top" secondItem="MWr-Ex-CYe" secondAttribute="top" id="xGe-1y-Ewx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="CWS-zj-Rri" secondAttribute="trailing" constant="561" id="xzP-aX-fjj"/>
                             <constraint firstItem="MWr-Ex-CYe" firstAttribute="leading" secondItem="DhO-jM-7Zy" secondAttribute="leading" id="zgj-h1-4g6"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="Jpb-nC-QLS"/>
+                                <exclude reference="xGe-1y-Ewx"/>
+                                <exclude reference="kza-JS-cce"/>
                             </mask>
                         </variation>
                     </view>
@@ -450,7 +457,7 @@
                         <outlet property="button2d" destination="9o5-sx-ccy" id="XNS-n4-bNE"/>
                         <outlet property="buttonStackOutlet" destination="MWr-Ex-CYe" id="oyH-4D-MWC"/>
                         <outlet property="tableView" destination="4Kp-he-lq8" id="vVN-zy-1sR"/>
-                        <outlet property="topRightAddButtonOutlet" destination="jMt-yh-7IK" id="xeK-8d-Vqq"/>
+                        <outlet property="topRightAddButtonOutlet" destination="9SZ-7S-8Xy" id="L6J-sY-AFL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B4A-ap-D8e" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2211,6 +2218,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="tFZ-Rx-MOA"/>
-        <segue reference="ewg-ee-X0e"/>
+        <segue reference="DEy-jc-sQJ"/>
     </inferredMetricsTieBreakers>
 </document>
