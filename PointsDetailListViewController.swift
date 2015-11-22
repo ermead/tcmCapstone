@@ -19,6 +19,8 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     @IBOutlet weak var saveButton: UIBarButtonItem!
     @IBOutlet weak var hideButtonOutlet: UIButton!
     @IBOutlet weak var addToButtonOutlet: UIButton!
+    @IBOutlet weak var addButtonOutlet: UIButton!
+    @IBOutlet weak var addPhotoButtonOutlet: UIButton!
     
     var herbsList: Bool = true
     var singles: Bool = true
@@ -75,7 +77,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addButtonsToScene(true)
+        //addButtonsToScene(true)
         hideButtonOutlet.hidden = isHideButtonHidden
         addToButtonOutlet.hidden = isAddToButtonHidden
         
@@ -86,7 +88,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
 //        indicationsAndUses.contentInset = UIEdgeInsetsMake(20.0, 0, 0, 0)
         
         if canEdit{
-            addButtonsToScene(true)
+            
         }
         print(" I loaded the index \(index)")
         
@@ -99,13 +101,16 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         leftImage.alpha = 1
         rightImage.alpha = 0
         
+        leftImage.layer.cornerRadius = 10
+        rightImage.layer.cornerRadius = 10
+        
         togglePicOutlet.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         togglePicOutlet.titleLabel?.text = ""
         togglePicOutlet.imageView?.image = UIImage(named: "glyphicons-369-collapse")
         togglePicOutlet.backgroundColor = UIColor.blueColorDark()
         togglePicOutlet.layer.cornerRadius = 2
         togglePicOutlet.layer.borderColor = UIColor.whiteColor().CGColor
-        togglePicOutlet.layer.borderWidth = 0.5
+        togglePicOutlet.layer.borderWidth = 1
         togglePicOutlet.frame.size = CGSize(width: 10, height: 10)
         togglePicOutlet.alpha = 0.8
         
@@ -119,6 +124,25 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         addToButtonOutlet.titleLabel?.font = UIFont.systemFontOfSize(11)
         addToButtonOutlet.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         addToButtonOutlet.alpha = 0.9
+        
+        addButtonOutlet.backgroundColor = UIColor.blueColorDark()
+        addButtonOutlet.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        addButtonOutlet.layer.borderColor = UIColor.whiteColor().CGColor
+        addButtonOutlet.layer.borderWidth = 1
+        addButtonOutlet.titleLabel?.font = UIFont.systemFontOfSize(11)
+        addButtonOutlet.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        addButtonOutlet.layer.cornerRadius = 5
+        addButtonOutlet.alpha = 0.9
+        
+        
+        addPhotoButtonOutlet.backgroundColor = UIColor.blueColorDark()
+        addPhotoButtonOutlet.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        addPhotoButtonOutlet.layer.borderColor = UIColor.whiteColor().CGColor
+        addPhotoButtonOutlet.layer.borderWidth = 1
+        addPhotoButtonOutlet.titleLabel?.font = UIFont.systemFontOfSize(11)
+        addPhotoButtonOutlet.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        addPhotoButtonOutlet.layer.cornerRadius = 5
+        addPhotoButtonOutlet.alpha = 0.9
         
         textField6.font = UIFont.systemFontOfSize(15, weight: 2)
         textField7.font = UIFont.systemFontOfSize(15, weight: 2)
@@ -202,7 +226,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             //            location.backgroundColor = .whiteColor()
             //            indicationsAndUses.backgroundColor = .whiteColor()
             
-            self.addButtonsToScene(false)
+          
             
             self.navigationController?.popViewControllerAnimated(true)
             
@@ -211,7 +235,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         } else if sender.title == "Edit"{
             print("it is Edit")
             canEdit = true
-            addButtonsToScene(true)
+           
             topRightTextField.backgroundColor = newFieldsColor
             topRightTextField.textColor = newFieldTextColor
             topRightMiddleTextField.backgroundColor = newFieldsColor
@@ -358,8 +382,10 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             topRightBottomTextField.text = detailHerb.botanicalName
             textField4.text = detailHerb.temp
             textField5.text = detailHerb.meridians
+            addButtonOutlet.hidden = true
+            
                 
-            textField6.text = "Major Formulas"
+            textField6.text = "Major Formulas found in"
                 
                 if detailHerb.inContents != nil {
                 let formulasFoundIn : [Formula] = NSArray(array: detailHerb.inContents!.allObjects) as! [Formula]
@@ -531,6 +557,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                 textField4.text = "\(point.channel!) meridian"
                 textField5.text = point.specialCategories
                 textField6.text = "Location"
+                addButtonOutlet.hidden = true
                 /*if point.onChannel != nil {
                     let channelsFoundIn : [Channel] = NSArray(array: point.onChannel!.allObjects) as! [Channel]
                     let count = channelsFoundIn.count
@@ -582,6 +609,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                 textField4.text = ""
                 textField5.text = ""
                 textField6.text = "Contains Points:"
+                addButtonOutlet.setTitle("+ Points", forState: .Normal)
                 
                 if channel.hasPoints != nil {
                     let points : [Point] = NSArray(array: channel.hasPoints!.allObjects) as! [Point]
@@ -625,7 +653,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     
     func addNewPointEntry() {
         canEdit = true
-        addButtonsToScene(true)
+       
         print("adding new point")
         leftImage.image = UIImage(named: "default")
         rightImage.image = UIImage(named: "default2")
@@ -892,7 +920,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         location.backgroundColor = newFieldsColor
         indicationsAndUses.backgroundColor = newFieldsColor
         
-        addButtonsToScene(true)
+    
 
     }
     
@@ -916,7 +944,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         location.backgroundColor = newFieldsColor
         indicationsAndUses.backgroundColor = newFieldsColor
         
-        addButtonsToScene(true)
+      
         
     }
     
@@ -940,7 +968,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         location.backgroundColor = newFieldsColor
         indicationsAndUses.backgroundColor = newFieldsColor
         
-        addButtonsToScene(true)
+       
     }
     
     func setupNewpointComboScene(){
@@ -963,11 +991,11 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         location.backgroundColor = newFieldsColor
         indicationsAndUses.backgroundColor = newFieldsColor
         
-        addButtonsToScene(true)
+  
 
     }
     
-    func addButtonsToScene(add: Bool){
+ /*   func addButtonsToScene(add: Bool){
         
         var addButton = UIButton()
         addButton.frame = CGRect(x: self.view.bounds.size.width/2+75, y: self.view.bounds.size.height/2 + 25 , width: 80, height: 30)
@@ -1009,6 +1037,10 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             }
         }
     }
+   */
+    
+  
+    
     
     
     @IBAction func addButtonTapped(sender: UIButton){
@@ -1047,6 +1079,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         }
     }
     
+   
     @IBAction func addPhotoButtonTapped(sender: UIButton){
        
         let imagePicker = UIImagePickerController()
