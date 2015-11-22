@@ -301,6 +301,27 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             })
             
         } else if addingToChannel == true {
+            let detailPoint = filteredPointArray[index!]
+            print("I'm attempting to add \(detailPoint.pinyinName) to the formula \(thisChannel)")
+            if let set = thisChannel!.hasPoints{
+                var newArray = set.allObjects as! [Point]
+                newArray.append(detailPoint)
+                thisChannel?.hasPoints = NSSet(array: newArray)
+                do {
+                    
+                    try thisChannel?.managedObjectContext?.save()
+                    
+                } catch {
+                    print("error adding to channel")
+                }
+            }
+            print("now, this channel's contents is \(thisChannel?.hasPoints)")
+            print("now, the number of contents is \(thisChannel?.hasPoints?.count)")
+            dismissViewControllerAnimated(true, completion: { () -> Void in
+                print("I need to pass in info here")
+                
+                
+            })
             
             
             
