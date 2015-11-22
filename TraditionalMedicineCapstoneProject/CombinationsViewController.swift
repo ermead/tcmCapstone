@@ -8,11 +8,12 @@
 
 import UIKit
 
-class CombinationsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class CombinationsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchResultsUpdating {
     @IBOutlet weak var tableView: UITableView!
    
     
     var herbsList = true
+    var searchController: UISearchController!
     
     var index: Int?
     
@@ -38,6 +39,7 @@ class CombinationsViewController: UIViewController, UITableViewDataSource, UITab
     override func viewDidLoad() {
         super.viewDidLoad()
         setupButtons()
+        setupSearchController()
         // Do any additional setup after loading the view.
         
         print("combination View loaded")
@@ -70,6 +72,37 @@ class CombinationsViewController: UIViewController, UITableViewDataSource, UITab
         } else {
             return filteredPointArray.count
         }
+    }
+    
+    func setupSearchController(){
+        
+        let resultsViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("SearchResults")
+        
+        searchController = UISearchController(searchResultsController: resultsViewController)
+        searchController.searchResultsUpdater = self
+        searchController.searchBar.sizeToFit()
+        tableView.tableHeaderView = searchController.searchBar
+        searchController.hidesNavigationBarDuringPresentation = false
+        definesPresentationContext = true
+        
+    }
+    
+    // MARK: - Search Results Updating Protocol
+    func updateSearchResultsForSearchController(searchController: UISearchController) {
+        
+        let searchTerm = searchController.searchBar.text!.lowercaseString
+        
+        let resultsViewController = searchController.searchResultsController as! SearchResultsTableViewController
+        
+        if herbsList{
+                resultsViewController.category = "Herb"
+                resultsViewController.filteredHerbArray = HerbsController.sharedController.herbs.filter({ $0.pinyinName!.lowercaseString.containsString(searchTerm) })
+            } else {
+                resultsViewController.category = "Point"
+                resultsViewController.filteredPointArray = PointController.sharedController.points.filter({ $0.pinyinName!.lowercaseString.containsString(searchTerm) })
+            }
+        
+        resultsViewController.tableView.reloadData()
     }
     
     
