@@ -92,7 +92,7 @@ class CombinationsViewController: UIViewController, UITableViewDataSource, UITab
         tableView.tableHeaderView = searchController.searchBar
         searchController.hidesNavigationBarDuringPresentation = false
         definesPresentationContext = true
-        
+     
     }
     
     // MARK: - Search Results Updating Protocol
@@ -116,6 +116,8 @@ class CombinationsViewController: UIViewController, UITableViewDataSource, UITab
         
         resultsViewController.tableView.reloadData()
     }
+    
+    
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

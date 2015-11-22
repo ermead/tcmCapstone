@@ -9,9 +9,7 @@
 import UIKit
 
 class PointsDetailListViewController: UIViewController,  UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate, UITextViewDelegate {
-    
-    
-    
+
     var herb: Herb?
     var point: Point?
     
@@ -113,9 +111,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         location.layer.cornerRadius = 5
         indicationsAndUses.layer.cornerRadius = 5
         
-        
-//        self.navigationItem.rightBarButtonItem?.enabled = false
-//        self.navigationItem.rightBarButtonItem?.tintColor = UIColor.clearColor()
+
         if let items = self.navigationController?.navigationBar.items {
             print(items)
             
@@ -157,7 +153,11 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             }
             print("now, this formula's contents is \(thisFormula?.hasContents)")
             print("now, the number of contents is \(thisFormula?.hasContents?.count)")
-            performSegueWithIdentifier("toCombinationsView", sender: sender)
+            dismissViewControllerAnimated(true, completion: { () -> Void in
+                print("I need to pass in info here")
+                
+
+            })
             
         } else if addingToChannel == true {
             
@@ -171,7 +171,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     }
     
     @IBAction func hideButtonTapped(sender: UIButton) {
-        
+        //performSegueWithIdentifier("toCombinationsView", sender: sender)
         dismissViewControllerAnimated(true, completion: nil)
         
     }
