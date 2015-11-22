@@ -150,12 +150,14 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                 do {
                     
                  try thisFormula?.managedObjectContext?.save()
+                
                 } catch {
                     print("error adding to formula")
                 }
             }
             print("now, this formula's contents is \(thisFormula?.hasContents)")
             print("now, the number of contents is \(thisFormula?.hasContents?.count)")
+            performSegueWithIdentifier("toCombinationsView", sender: sender)
             
         } else if addingToChannel == true {
             
@@ -824,9 +826,12 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             
             print("display combinations detail")
             if let cvc : CombinationsViewController = segue.destinationViewController as? CombinationsViewController {
-            
+               
                 if herbsList == true{
-                    let detailFormula = FormulasController.sharedController.formulas[index!]
+                    var detailFormula = FormulasController.sharedController.formulas[index!]
+                        if addingToFormula == true {
+                           detailFormula = self.thisFormula!
+                        }
                     cvc.thisFormula = detailFormula
                     cvc.navigationItem.title = detailFormula.pinyinName
                     cvc.filteredHerbArray = detailFormula.hasContents?.allObjects as! [Herb]
