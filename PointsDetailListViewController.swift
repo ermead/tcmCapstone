@@ -28,6 +28,8 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     //var newFieldsColor = UIColor(red:0.012,  green:0.549,  blue:0.549, alpha: 0.1)
     var newFieldsColor = UIColor.whiteColor()
     var newFieldTextColor = UIColor.blackColor()
+    var normalFieldTextColor = UIColor.whiteColor()
+    var normalFieldsColor = UIColor.clearColor()
     
     var searchedFor: Bool = false
     var isHideButtonHidden: Bool = true
@@ -202,11 +204,10 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             
             
             
-        } else {
+        } else if sender.title == "Edit"{
             print("it is Edit")
             canEdit = true
             addButtonsToScene(true)
-            self.saveButton.title = "Save"
             topRightTextField.backgroundColor = newFieldsColor
             topRightTextField.textColor = newFieldTextColor
             topRightMiddleTextField.backgroundColor = newFieldsColor
@@ -225,9 +226,33 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             location.textColor = newFieldTextColor
             indicationsAndUses.backgroundColor = newFieldsColor
             indicationsAndUses.textColor = newFieldTextColor
-            
-            self.navigationItem.rightBarButtonItem?.image = nil
+            //self.navigationItem.rightBarButtonItem?.image = nil
             self.navigationItem.rightBarButtonItem?.title = "Cancel"
+            
+        } else if sender.title == "Cancel"{
+            print("it is Cancel")
+            canEdit = false
+            topRightTextField.backgroundColor = normalFieldsColor
+            topRightTextField.textColor = normalFieldTextColor
+            topRightMiddleTextField.backgroundColor = normalFieldsColor
+            topRightMiddleTextField.textColor = normalFieldTextColor
+            topRightBottomTextField.backgroundColor = normalFieldsColor
+            topRightBottomTextField.textColor = normalFieldTextColor
+            textField4.backgroundColor = normalFieldsColor
+            textField4.textColor = normalFieldTextColor
+            textField5.backgroundColor = normalFieldsColor
+            textField5.textColor = normalFieldTextColor
+            textField6.backgroundColor = normalFieldsColor
+            textField6.textColor = normalFieldTextColor
+            textField7.backgroundColor = normalFieldsColor
+            textField7.textColor = normalFieldTextColor
+            location.backgroundColor = normalFieldsColor
+            location.textColor = normalFieldTextColor
+            indicationsAndUses.backgroundColor = normalFieldsColor
+            indicationsAndUses.textColor = normalFieldTextColor
+            //self.navigationItem.rightBarButtonItem?.image = nil
+            self.navigationItem.rightBarButtonItem?.title = "Edit"
+
         }
         
     }
@@ -381,13 +406,39 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                 print(detailFormula.pinyinName)
                 print(detailFormula.englishName)
                 print(detailFormula.uses)
-               // generalDescription.text = ("\(detailHerb.pinyinName!) is used for \(detailHerb.uses!).")
+              
                 
                 topRightTextField.text = detailFormula.pinyinName
                 topRightMiddleTextField.text = detailFormula.englishName
                 topRightBottomTextField.text = "  "
-                //locationLabel.text = detailHerb.pinyinName
-                location.text = "This formula, contains how many and what herbs?"
+                textField4.text = detailFormula.category
+                textField5.text = "  "
+                textField6.text = "Ingredients"
+                
+                if detailFormula.hasContents != nil {
+                    let ingredients : [Herb] = NSArray(array: detailFormula.hasContents!.allObjects) as! [Herb]
+                    let count = ingredients.count
+                    var ArrayOfStrings: [String] = []
+                    for herb in ingredients{
+                        ArrayOfStrings.append(herb.pinyinName!)
+                    }
+                    var AllFormulasAsString: String = ""
+                    for name in ArrayOfStrings {
+                        if name == ArrayOfStrings.first {
+                            AllFormulasAsString = name
+                        } else if name == ArrayOfStrings.last {
+                            AllFormulasAsString = "\(AllFormulasAsString) & \(name)"
+                        } else {
+                            AllFormulasAsString = "\(AllFormulasAsString), \(name)"}
+                    }
+                    
+                    self.location.text = ("\(detailFormula.pinyinName!) has \(count) herbs. They are \(AllFormulasAsString).")
+                } else {
+                    self.location.text = "This formula currently has no herbs."
+                }
+                
+               textField7.text = "Indications & Uses"
+                
                 indicationsAndUses.text = detailFormula.uses
                 
                 if detailFormula.images != nil{
