@@ -115,6 +115,7 @@ class CombinationsViewController: UIViewController, UITableViewDataSource, UITab
         searchController = UISearchController(searchResultsController: resultsViewController)
         searchController.searchResultsUpdater = self
         searchController.searchBar.sizeToFit()
+        searchController.searchBar.placeholder = "search for new herbs to add"
         tableView.tableHeaderView = searchController.searchBar
         searchController.hidesNavigationBarDuringPresentation = false
         definesPresentationContext = true
@@ -124,7 +125,7 @@ class CombinationsViewController: UIViewController, UITableViewDataSource, UITab
     // MARK: - Search Results Updating Protocol
     func updateSearchResultsForSearchController(searchController: UISearchController) {
         
-        let searchTerm = searchController.searchBar.text!.lowercaseString
+        let searchTerm = searchController.searchBar.text!.lowercaseString ?? " "
         
         let resultsViewController = searchController.searchResultsController as! SearchResultsTableViewController
         
