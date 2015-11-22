@@ -1660,13 +1660,6 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejR-1T-3AI">
-                                                <rect key="frame" x="55" y="211" width="46" height="30"/>
-                                                <state key="normal" title="Button"/>
-                                                <connections>
-                                                    <action selector="TogglePictureButtonTapped:" destination="pLW-Pq-RcD" eventType="touchUpInside" id="MCg-bj-nws"/>
-                                                </connections>
-                                            </button>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Other Names" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HMm-hv-uZ8">
                                                 <rect key="frame" x="8" y="246" width="240" height="30"/>
                                                 <constraints>
@@ -1734,6 +1727,19 @@
                                                     <action selector="addToButtonTapped:" destination="pLW-Pq-RcD" eventType="touchUpInside" id="auq-za-Zt7"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejR-1T-3AI">
+                                                <rect key="frame" x="156" y="97" width="19" height="22"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="19" id="VGE-T3-Vkk"/>
+                                                    <constraint firstAttribute="height" constant="22" id="a2e-ZP-T3e"/>
+                                                </constraints>
+                                                <state key="normal" title="▷">
+                                                    <color key="titleColor" red="0.066666670139999995" green="0.15294118230000001" blue="0.2078431547" alpha="0.63" colorSpace="deviceRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="TogglePictureButtonTapped:" destination="pLW-Pq-RcD" eventType="touchUpInside" id="MCg-bj-nws"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="lRs-w6-Ejj" secondAttribute="trailing" constant="30" id="71i-VR-gEa"/>
@@ -1745,9 +1751,9 @@
                                             <constraint firstAttribute="trailing" secondItem="mz4-U5-tH8" secondAttribute="trailing" constant="8" id="FQt-Jt-Wur"/>
                                             <constraint firstItem="zDG-fO-ZCT" firstAttribute="top" secondItem="wSW-Gz-ePQ" secondAttribute="bottom" constant="19" id="Kak-88-BID"/>
                                             <constraint firstItem="lRs-w6-Ejj" firstAttribute="top" secondItem="RoL-c5-Wuk" secondAttribute="bottom" constant="-1" id="LdD-ld-Gpc"/>
-                                            <constraint firstItem="ejR-1T-3AI" firstAttribute="centerX" secondItem="kZk-uo-87d" secondAttribute="centerX" id="LxN-Ml-XSv"/>
                                             <constraint firstItem="WL8-zy-W0J" firstAttribute="top" secondItem="zDG-fO-ZCT" secondAttribute="bottom" constant="21" id="QXg-7O-XIe"/>
                                             <constraint firstItem="mz4-U5-tH8" firstAttribute="top" secondItem="ouo-61-zMQ" secondAttribute="top" constant="8" id="VAv-su-sHW"/>
+                                            <constraint firstItem="HMm-hv-uZ8" firstAttribute="top" secondItem="kZk-uo-87d" secondAttribute="bottom" constant="38" id="ZPj-5O-i37"/>
                                             <constraint firstAttribute="height" constant="300" id="alm-1I-6po"/>
                                             <constraint firstItem="7qY-Yr-x1m" firstAttribute="top" secondItem="ouo-61-zMQ" secondAttribute="top" constant="8" id="cP1-0C-YLM"/>
                                             <constraint firstItem="kZk-uo-87d" firstAttribute="top" secondItem="ouo-61-zMQ" secondAttribute="top" constant="8" id="cUO-O4-YJX"/>
@@ -1755,11 +1761,11 @@
                                             <constraint firstAttribute="trailing" secondItem="WL8-zy-W0J" secondAttribute="trailing" constant="8" id="eBR-lN-YKA"/>
                                             <constraint firstItem="RoL-c5-Wuk" firstAttribute="leading" secondItem="HMm-hv-uZ8" secondAttribute="leading" id="f4j-Gw-a0T"/>
                                             <constraint firstItem="MHl-Ac-BWN" firstAttribute="leading" secondItem="ouo-61-zMQ" secondAttribute="leading" constant="24" id="fBu-Ik-DgA"/>
-                                            <constraint firstItem="HMm-hv-uZ8" firstAttribute="top" secondItem="ejR-1T-3AI" secondAttribute="bottom" constant="5" id="gIs-Lm-ZF5"/>
-                                            <constraint firstItem="ejR-1T-3AI" firstAttribute="top" secondItem="kZk-uo-87d" secondAttribute="bottom" constant="3" id="hda-CW-9iA"/>
                                             <constraint firstAttribute="trailing" secondItem="zDG-fO-ZCT" secondAttribute="trailing" constant="8" id="hqI-Yy-dZc"/>
                                             <constraint firstItem="HMm-hv-uZ8" firstAttribute="leading" secondItem="ouo-61-zMQ" secondAttribute="leading" constant="8" id="khr-xt-bSr"/>
                                             <constraint firstAttribute="trailing" secondItem="gye-M0-Wwn" secondAttribute="trailing" constant="8" id="knC-q3-Rsr"/>
+                                            <constraint firstItem="ejR-1T-3AI" firstAttribute="leading" secondItem="kZk-uo-87d" secondAttribute="trailing" constant="8" id="lEm-hx-3Y2"/>
+                                            <constraint firstItem="ejR-1T-3AI" firstAttribute="centerY" secondItem="kZk-uo-87d" secondAttribute="centerY" id="nsp-eO-92r"/>
                                             <constraint firstAttribute="trailing" secondItem="MHl-Ac-BWN" secondAttribute="trailing" constant="30" id="oj3-qS-Y9O"/>
                                             <constraint firstItem="xEy-SW-DBY" firstAttribute="centerX" secondItem="kZk-uo-87d" secondAttribute="centerX" id="qOx-Ja-nG5"/>
                                             <constraint firstAttribute="trailing" secondItem="wSW-Gz-ePQ" secondAttribute="trailing" constant="8" id="r9d-OD-5VI"/>

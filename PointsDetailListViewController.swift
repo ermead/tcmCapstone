@@ -93,11 +93,26 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         
         leftImage.alpha = 1
         rightImage.alpha = 0
+        
         togglePicOutlet.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        togglePicOutlet.titleLabel?.text = ""
+        togglePicOutlet.imageView?.image = UIImage(named: "glyphicons-369-collapse")
         togglePicOutlet.backgroundColor = UIColor.blueColorDark()
         togglePicOutlet.layer.cornerRadius = 4
-        togglePicOutlet.layer.borderColor = UIColor.blueColorDark().CGColor
-        togglePicOutlet.layer.borderWidth = 1
+        togglePicOutlet.layer.borderColor = UIColor.whiteColor().CGColor
+        togglePicOutlet.layer.borderWidth = 0.5
+        togglePicOutlet.frame.size = CGSize(width: 10, height: 10)
+        togglePicOutlet.alpha = 0.8
+        
+        addToButtonOutlet.layer.cornerRadius = 10
+        addToButtonOutlet.titleLabel?.text = "Add Ingredient to \(thisFormula?.pinyinName!)"
+        addToButtonOutlet.backgroundColor = UIColor.blueColorMedium()
+        addToButtonOutlet.layer.borderColor = UIColor.whiteColor().CGColor
+        addToButtonOutlet.layer.borderWidth = 1
+        addToButtonOutlet.titleLabel?.font = UIFont.systemFontOfSize(11)
+        addToButtonOutlet.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        addToButtonOutlet.alpha = 0.8
+        
         
         if let index = index {
             
@@ -124,6 +139,83 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         
     }
     
+    //MARK: - Buttons
+    
+    
+    
+    @IBAction func saveButtonTapped(sender: UIBarButtonItem) {
+        print("save attempted")
+        
+        if sender.title == "Save"{
+            let saveAlert = UIAlertController(title: "Save this Entry", message: "as...", preferredStyle: .Alert)
+            
+            
+            saveAlert.addAction(UIAlertAction(title: "Herb", style: .Default, handler: { (action) -> Void in
+                self.updateHerb()
+            }))
+            saveAlert.addAction(UIAlertAction(title: "Formula", style: .Default, handler: { (action) -> Void in
+                self.updateFormula()
+                
+            }))
+            
+            saveAlert.addAction(UIAlertAction(title: "Point", style: .Default, handler: { (action) -> Void in
+                self.updatePoint()
+                
+            }))
+            
+            saveAlert.addAction(UIAlertAction(title: "Combination", style: .Default, handler: { (action) -> Void in
+                self.updateChannel()
+                
+            }))
+            
+            saveAlert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
+            presentViewController(saveAlert, animated: true, completion: nil)
+            
+            ImageController.getImageIdFromPhoto(leftImage.image!) { (imageId) -> Void in
+                
+                if let imageId = imageId {
+                    self.placeholderLeftImageId = imageId
+                }
+            }
+            ImageController.getImageIdFromPhoto(rightImage.image!) { (imageId) -> Void in
+                
+                if let imageId = imageId {
+                    self.placeholderRightImageId = imageId
+                }
+            }
+            
+            self.placeholderLeftImageData = ImageController.getDataFromImage(self.leftImage.image!)
+            
+            self.placeholderRightImageData = ImageController.getDataFromImage(self.rightImage.image!)
+            //
+            //            topRightTextField.backgroundColor = .whiteColor()
+            //            topRightMiddleTextField.backgroundColor = .whiteColor()
+            //            topRightBottomTextField.backgroundColor = .whiteColor()
+            //            location.backgroundColor = .whiteColor()
+            //            indicationsAndUses.backgroundColor = .whiteColor()
+            
+            self.addButtonsToScene(false)
+            
+            self.navigationController?.popViewControllerAnimated(true)
+            
+            
+            
+        } else {
+            print("it is Edit")
+            canEdit = true
+            addButtonsToScene(true)
+            self.saveButton.title = "Save"
+            topRightTextField.backgroundColor = newFieldsColor
+            topRightMiddleTextField.backgroundColor = newFieldsColor
+            topRightBottomTextField.backgroundColor = newFieldsColor
+            location.backgroundColor = newFieldsColor
+            indicationsAndUses.backgroundColor = newFieldsColor
+            
+            self.navigationItem.rightBarButtonItem?.image = nil
+            self.navigationItem.rightBarButtonItem?.title = "Cancel"
+        }
+        
+    }
     
     @IBAction func TogglePictureButtonTapped(sender: UIButton) {
         
@@ -181,6 +273,8 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         
     }
     
+    //MARK: - Populate Info
+    
     func populatePointInfo() {
         if herbsList{
             if singles{
@@ -219,7 +313,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                         AllFormulasAsString = "\(AllFormulasAsString), \(name)"}
                 }
                     
-                    self.location.text = ("\(detailHerb.pinyinName!) is found in \(count) formulas, some of which are \(AllFormulasAsString).")
+                    self.location.text = ("\(detailHerb.pinyinName!) is found in \(count) formulas, some of which are: \n \(AllFormulasAsString).")
                 } else {
                 self.location.text = "This herb is currently not contained in any of your formulas"
                 }
@@ -382,80 +476,8 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         
     }
     }
+//MARK: - New entry
     
-    @IBAction func saveButtonTapped(sender: UIBarButtonItem) {
-        print("save attempted")
-    
-        if sender.title == "Save"{
-        let saveAlert = UIAlertController(title: "Save this Entry", message: "as...", preferredStyle: .Alert)
-        
-        
-            saveAlert.addAction(UIAlertAction(title: "Herb", style: .Default, handler: { (action) -> Void in
-               self.updateHerb()
-                }))
-            saveAlert.addAction(UIAlertAction(title: "Formula", style: .Default, handler: { (action) -> Void in
-               self.updateFormula()
-                
-            }))
-        
-            saveAlert.addAction(UIAlertAction(title: "Point", style: .Default, handler: { (action) -> Void in
-               self.updatePoint()
-            
-            }))
-        
-            saveAlert.addAction(UIAlertAction(title: "Combination", style: .Default, handler: { (action) -> Void in
-                self.updateChannel()
-            
-            }))
-        
-            saveAlert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
-            presentViewController(saveAlert, animated: true, completion: nil)
-            
-            ImageController.getImageIdFromPhoto(leftImage.image!) { (imageId) -> Void in
-                
-                if let imageId = imageId {
-                    self.placeholderLeftImageId = imageId
-                }
-            }
-            ImageController.getImageIdFromPhoto(rightImage.image!) { (imageId) -> Void in
-            
-                if let imageId = imageId {
-                    self.placeholderRightImageId = imageId
-                }
-            }
-            
-            self.placeholderLeftImageData = ImageController.getDataFromImage(self.leftImage.image!)
-            
-            self.placeholderRightImageData = ImageController.getDataFromImage(self.rightImage.image!)
-//            
-//            topRightTextField.backgroundColor = .whiteColor()
-//            topRightMiddleTextField.backgroundColor = .whiteColor()
-//            topRightBottomTextField.backgroundColor = .whiteColor()
-//            location.backgroundColor = .whiteColor()
-//            indicationsAndUses.backgroundColor = .whiteColor()
-            
-        self.addButtonsToScene(false)
-            
-        self.navigationController?.popViewControllerAnimated(true)
-            
-            
-            
-        } else {
-            print("it is Edit")
-            canEdit = true
-            addButtonsToScene(true)
-            self.saveButton.title = "Save"
-            topRightTextField.backgroundColor = newFieldsColor
-            topRightMiddleTextField.backgroundColor = newFieldsColor
-            topRightBottomTextField.backgroundColor = newFieldsColor
-            location.backgroundColor = newFieldsColor
-            indicationsAndUses.backgroundColor = newFieldsColor
-            
-            self.navigationItem.rightBarButtonItem?.image = nil
-            self.navigationItem.rightBarButtonItem?.title = "Cancel"
-        }
-        
-    }
     func addNewPointEntry() {
         canEdit = true
         addButtonsToScene(true)
@@ -474,6 +496,8 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         indicationsAndUses.backgroundColor = newFieldsColor
         
     }
+    
+//MARK: - Save as Object, Update Model
     
     func updateHerb() {
         
@@ -700,6 +724,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
       
     }
     
+//MARK: - SetUp Scenes
     
     func setupNewFormulaScene(){
         print("setting up new Formula Scene")
@@ -920,6 +945,9 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         }
     }
 
+
+//MARK: - TextField Delegate
+    
     func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
         return canEdit
     }
