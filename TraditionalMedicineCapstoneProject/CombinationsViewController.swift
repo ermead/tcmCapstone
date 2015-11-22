@@ -10,7 +10,14 @@ import UIKit
 
 class CombinationsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
+   
+    
     var herbsList = true
+    
+    var index: Int?
+    
+    var filteredHerbArray: [Herb] = []
+    var filteredPointArray: [Point] = []
     
     @IBOutlet weak var buttonStackOutlet: UIStackView!
     
@@ -43,20 +50,20 @@ class CombinationsViewController: UIViewController, UITableViewDataSource, UITab
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
-        cell.textLabel?.text = HerbsController.sharedController.herbs[indexPath.row].pinyinName
-        cell.detailTextLabel?.text = HerbsController.sharedController.herbs[indexPath.row].englishName
+        cell.textLabel?.text = filteredHerbArray[indexPath.row].pinyinName
+        cell.detailTextLabel?.text = filteredHerbArray[indexPath.row].englishName
         
-        if HerbsController.sharedController.herbs[indexPath.row].imageId1 != nil {
-            ImageController.imageForImageId(HerbsController.sharedController.herbs[indexPath.row].imageId1!, completion: { (image) -> Void in
-                cell.imageView!.image = image
-            })}
+//        if HerbsController.sharedController.herbs[indexPath.row].imageId1 != nil {
+//            ImageController.imageForImageId(HerbsController.sharedController.herbs[indexPath.row].imageId1!, completion: { (image) -> Void in
+//                cell.imageView!.image = image
+//            })}
         
         return cell
         
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return HerbsController.sharedController.herbs.count
+        return filteredHerbArray.count
     }
     
     
@@ -69,8 +76,10 @@ class CombinationsViewController: UIViewController, UITableViewDataSource, UITab
             
             if let pdlc : PointsDetailListViewController = segue.destinationViewController as? PointsDetailListViewController {
                 
-                    print("the index touched was \(index) and the point selected was \(HerbsController.sharedController.herbs[index!].pinyinName)")
-                    pdlc.title = HerbsController.sharedController.herbs[index!].pinyinName
+                    print("the index touched was \(index) and the point selected was \(filteredHerbArray[index!].pinyinName)")
+                    pdlc.searchedFor = true
+                    pdlc.filteredHerbArray = self.filteredHerbArray
+                    pdlc.title = filteredHerbArray[index!].pinyinName
                     pdlc.index = index!
                     pdlc.herbsList = true
                     pdlc.singles = true
