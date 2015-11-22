@@ -1045,17 +1045,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgD-2n-yxH">
-                                <rect key="frame" x="100" y="64" width="1700" height="487"/>
+                                <rect key="frame" x="120" y="64" width="1680" height="487"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w9l-xW-5bU">
-                                        <rect key="frame" x="8" y="8" width="240" height="471"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w9l-xW-5bU">
+                                        <rect key="frame" x="8" y="72" width="240" height="343"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="bF3-DX-hiB"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RCc-ho-JNC">
-                                        <rect key="frame" x="504" y="8" width="240" height="471"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RCc-ho-JNC">
+                                        <rect key="frame" x="504" y="72" width="240" height="343"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="Bkg-XR-pOF"/>
@@ -1067,8 +1067,8 @@
                                             </mask>
                                         </variation>
                                     </view>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VIw-Fn-gyi">
-                                        <rect key="frame" x="752" y="8" width="240" height="471"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIw-Fn-gyi">
+                                        <rect key="frame" x="752" y="72" width="240" height="343"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="Tc0-WO-LDN"/>
@@ -1080,8 +1080,8 @@
                                             </mask>
                                         </variation>
                                     </view>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iKY-Ev-cZA">
-                                        <rect key="frame" x="1000" y="8" width="240" height="471"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iKY-Ev-cZA">
+                                        <rect key="frame" x="1000" y="72" width="240" height="343"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="vgY-3e-ssN"/>
@@ -1093,8 +1093,8 @@
                                             </mask>
                                         </variation>
                                     </view>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wFm-fT-szU">
-                                        <rect key="frame" x="1248" y="8" width="240" height="471"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wFm-fT-szU">
+                                        <rect key="frame" x="1248" y="72" width="240" height="343"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="Mqo-iX-012"/>
@@ -1106,12 +1106,12 @@
                                             </mask>
                                         </variation>
                                     </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W0D-tc-VBg">
-                                        <rect key="frame" x="1496" y="8" width="0.0" height="560"/>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W0D-tc-VBg">
+                                        <rect key="frame" x="1488" y="8" width="0.0" height="600"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6rc-Yp-YIy">
-                                        <rect key="frame" x="256" y="8" width="240" height="471"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6rc-Yp-YIy">
+                                        <rect key="frame" x="256" y="72" width="240" height="343"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="468" id="eEY-EH-IcI"/>
@@ -1198,8 +1198,8 @@
                                     </mask>
                                 </variation>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" restorationIdentifier="1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sX-4W-YSf" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="92" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sX-4W-YSf" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
+                                <rect key="frame" x="10" y="72" width="109" height="30"/>
                                 <accessibility key="accessibilityConfiguration" identifier=""/>
                                 <state key="normal" title="Microsystems"/>
                                 <connections>
@@ -1207,64 +1207,64 @@
                                     <segue destination="1Cj-GQ-A8K" kind="show" identifier="toOtherResourcesDetailView" id="VJf-vc-UO1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" restorationIdentifier="2" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAt-3p-bVe" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="110" width="92" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="2" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAt-3p-bVe" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
+                                <rect key="frame" x="10" y="110" width="109" height="30"/>
                                 <state key="normal" title="Yoga Postures"/>
                                 <connections>
                                     <action selector="buttonedTapped:" destination="WUn-gP-Kp3" eventType="touchUpInside" id="1lk-nF-qWv"/>
                                     <segue destination="1Cj-GQ-A8K" kind="show" identifier="toOtherResourcesDetailView" id="fg6-VJ-ANk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" restorationIdentifier="3" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OrO-2K-W6V" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="148" width="92" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="3" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OrO-2K-W6V" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
+                                <rect key="frame" x="10" y="148" width="109" height="30"/>
                                 <state key="normal" title="Diet"/>
                                 <connections>
                                     <action selector="buttonedTapped:" destination="WUn-gP-Kp3" eventType="touchUpInside" id="EEh-9Y-UKw"/>
                                     <segue destination="1Cj-GQ-A8K" kind="show" identifier="toOtherResourcesDetailView" id="tFZ-Rx-MOA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" restorationIdentifier="4" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7t-46-4YI" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="186" width="92" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="4" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7t-46-4YI" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
+                                <rect key="frame" x="10" y="186" width="109" height="30"/>
                                 <state key="normal" title="EFT"/>
                                 <connections>
                                     <action selector="buttonedTapped:" destination="WUn-gP-Kp3" eventType="touchUpInside" id="t9y-CB-Hcz"/>
                                     <segue destination="1Cj-GQ-A8K" kind="show" identifier="toOtherResourcesDetailView" id="8qe-dp-0bo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" restorationIdentifier="5" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCv-oI-NM2" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="224" width="92" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="5" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCv-oI-NM2" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
+                                <rect key="frame" x="10" y="224" width="109" height="30"/>
                                 <state key="normal" title="Songs"/>
                                 <connections>
                                     <action selector="buttonedTapped:" destination="WUn-gP-Kp3" eventType="touchUpInside" id="tKb-Mg-5mG"/>
                                     <segue destination="1Cj-GQ-A8K" kind="show" identifier="toOtherResourcesDetailView" id="sRj-fW-3bR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" restorationIdentifier="6" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJh-Io-YzS" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="262" width="92" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="6" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJh-Io-YzS" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
+                                <rect key="frame" x="10" y="262" width="109" height="30"/>
                                 <state key="normal" title="Classical Quotes"/>
                                 <connections>
                                     <action selector="buttonedTapped:" destination="WUn-gP-Kp3" eventType="touchUpInside" id="zXL-EM-kdo"/>
                                     <segue destination="1Cj-GQ-A8K" kind="show" identifier="toOtherResourcesDetailView" id="YST-IR-j00"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" restorationIdentifier="7" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKk-JC-9EX" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="300" width="92" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="7" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKk-JC-9EX" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
+                                <rect key="frame" x="10" y="300" width="109" height="30"/>
                                 <state key="normal" title="Quiz"/>
                                 <connections>
                                     <action selector="buttonedTapped:" destination="WUn-gP-Kp3" eventType="touchUpInside" id="66C-cm-9A5"/>
                                     <segue destination="1Cj-GQ-A8K" kind="show" identifier="toOtherResourcesDetailView" id="KAP-4A-yDz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" restorationIdentifier="8" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNy-wG-woS" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="338" width="92" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="8" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNy-wG-woS" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
+                                <rect key="frame" x="10" y="338" width="109" height="30"/>
                                 <state key="normal" title="Tongue"/>
                                 <connections>
                                     <action selector="buttonedTapped:" destination="WUn-gP-Kp3" eventType="touchUpInside" id="cAc-tM-XYf"/>
                                     <segue destination="1Cj-GQ-A8K" kind="show" identifier="toOtherResourcesDetailView" id="ZVR-RO-sE5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" restorationIdentifier="9" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixy-wO-Mcp" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="376" width="92" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="9" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixy-wO-Mcp" customClass="MyCustomButton" customModule="TraditionalMedicineCapstoneProject" customModuleProvider="target">
+                                <rect key="frame" x="10" y="376" width="109" height="30"/>
                                 <state key="normal" title="Pulse"/>
                                 <connections>
                                     <action selector="buttonedTapped:" destination="WUn-gP-Kp3" eventType="touchUpInside" id="XmK-pj-aKt"/>
@@ -1306,6 +1306,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="rgD-2n-yxH" secondAttribute="trailing" constant="20" id="Wv6-dg-eP8"/>
                             <constraint firstItem="VIw-Fn-gyi" firstAttribute="height" secondItem="wes-Pp-PJi" secondAttribute="height" id="YIT-g0-uw0"/>
                             <constraint firstItem="4sX-4W-YSf" firstAttribute="trailing" secondItem="YAt-3p-bVe" secondAttribute="trailing" id="bGm-Jf-TdO"/>
+                            <constraint firstItem="4sX-4W-YSf" firstAttribute="leading" secondItem="wes-Pp-PJi" secondAttribute="leadingMargin" constant="-10" id="boT-Fh-nHS"/>
                             <constraint firstItem="rgD-2n-yxH" firstAttribute="leading" secondItem="4sX-4W-YSf" secondAttribute="trailing" constant="8" id="ctt-xJ-ShO"/>
                             <constraint firstItem="OrO-2K-W6V" firstAttribute="top" secondItem="YAt-3p-bVe" secondAttribute="bottom" constant="8" symbolic="YES" id="d98-hG-sWc"/>
                             <constraint firstItem="b7t-46-4YI" firstAttribute="leading" secondItem="gCv-oI-NM2" secondAttribute="leading" id="dGD-Dv-7T5"/>
@@ -1321,7 +1322,8 @@
                             <constraint firstItem="gCv-oI-NM2" firstAttribute="top" secondItem="b7t-46-4YI" secondAttribute="bottom" constant="8" symbolic="YES" id="oCC-Ux-Kwk"/>
                             <constraint firstItem="4sX-4W-YSf" firstAttribute="leading" secondItem="YAt-3p-bVe" secondAttribute="leading" id="ofn-eO-8AL"/>
                             <constraint firstItem="gCv-oI-NM2" firstAttribute="trailing" secondItem="b7t-46-4YI" secondAttribute="trailing" id="rhc-BU-lKx"/>
-                            <constraint firstItem="rgD-2n-yxH" firstAttribute="leading" secondItem="wes-Pp-PJi" secondAttribute="leadingMargin" constant="80" id="sGv-yE-WQD"/>
+                            <constraint firstItem="rgD-2n-yxH" firstAttribute="leading" secondItem="wes-Pp-PJi" secondAttribute="leadingMargin" constant="100" id="sGv-yE-WQD"/>
+                            <constraint firstItem="rgD-2n-yxH" firstAttribute="leading" secondItem="4sX-4W-YSf" secondAttribute="trailing" constant="1" id="sdD-Sc-vst"/>
                             <constraint firstItem="LJh-Io-YzS" firstAttribute="top" secondItem="gCv-oI-NM2" secondAttribute="bottom" constant="8" symbolic="YES" id="tqC-Jm-paz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="rgD-2n-yxH" secondAttribute="trailing" constant="-20" id="uOf-iT-S83"/>
                             <constraint firstItem="Ea8-1L-NYo" firstAttribute="top" secondItem="rgD-2n-yxH" secondAttribute="bottom" id="vbV-t2-uir"/>

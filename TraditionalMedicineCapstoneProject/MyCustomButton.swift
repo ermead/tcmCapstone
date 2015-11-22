@@ -97,10 +97,10 @@ class MyCustomButton: UIButton {
                 print("I am a custom button!!!")
                 self.layer.cornerRadius = 5;
                 self.titleLabel!.font = UIFont.systemFontOfSize(CGFloat(11))
-                self.layer.borderColor = UIColor.blueColorDark().CGColor
+                self.layer.borderColor = UIColor.whiteColor().CGColor
                 self.layer.borderWidth = 1.5
                 //self.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
-                self.backgroundColor = water
+                self.backgroundColor = UIColor.blueColorDark()
                 self.tintColor = UIColor.whiteColor()
                 //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
                 self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
@@ -111,10 +111,10 @@ class MyCustomButton: UIButton {
                 print("I am a custom button!!!")
                 self.layer.cornerRadius = 5;
                 self.titleLabel!.font = UIFont.systemFontOfSize(CGFloat(11))
-                self.layer.borderColor = UIColor.blueColorDark().CGColor
+                self.layer.borderColor = UIColor.whiteColor().CGColor
                 self.layer.borderWidth = 1.5
                 //self.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
-                self.backgroundColor = water
+                self.backgroundColor = UIColor.blueColorDark()
                 self.tintColor = UIColor.whiteColor()
                 //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
                 self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
@@ -124,10 +124,10 @@ class MyCustomButton: UIButton {
                 print("I am a custom button!!!")
                 self.layer.cornerRadius = 5;
                 self.titleLabel!.font = UIFont.systemFontOfSize(CGFloat(11))
-                self.layer.borderColor = UIColor.blueColorDark().CGColor
+                self.layer.borderColor = UIColor.whiteColor().CGColor
                 self.layer.borderWidth = 1.5
                 //self.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
-                self.backgroundColor = water
+                self.backgroundColor = UIColor.blueColorDark()
                 self.tintColor = UIColor.whiteColor()
                 //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
                 self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
@@ -137,10 +137,10 @@ class MyCustomButton: UIButton {
                 print("I am a custom button!!!")
                 self.layer.cornerRadius = 5;
                 self.titleLabel!.font = UIFont.systemFontOfSize(CGFloat(11))
-                self.layer.borderColor = UIColor.blueColorDark().CGColor
+                self.layer.borderColor = UIColor.whiteColor().CGColor
                 self.layer.borderWidth = 1.5
                 //self.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
-                self.backgroundColor = water
+                self.backgroundColor = UIColor.blueColorDark()
                 self.tintColor = UIColor.whiteColor()
                 //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
                 self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
@@ -150,10 +150,10 @@ class MyCustomButton: UIButton {
                 print("I am a custom button!!!")
                 self.layer.cornerRadius = 5;
                 self.titleLabel!.font = UIFont.systemFontOfSize(CGFloat(11))
-                self.layer.borderColor = UIColor.blueColorDark().CGColor
+                self.layer.borderColor = UIColor.whiteColor().CGColor
                 self.layer.borderWidth = 1.5
                 //self.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
-                self.backgroundColor = water
+                self.backgroundColor = UIColor.blueColorDark()
                 self.tintColor = UIColor.whiteColor()
                 //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
                 self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
@@ -163,10 +163,10 @@ class MyCustomButton: UIButton {
                 print("I am a custom button!!!")
                 self.layer.cornerRadius = 5;
                 self.titleLabel!.font = UIFont.systemFontOfSize(CGFloat(11))
-                self.layer.borderColor = UIColor.blueColorDark().CGColor
+                self.layer.borderColor = UIColor.whiteColor().CGColor
                 self.layer.borderWidth = 1.5
                 //self.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
-                self.backgroundColor = water
+                self.backgroundColor = UIColor.blueColorDark()
                 self.tintColor = UIColor.whiteColor()
                 //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
                 self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
@@ -176,10 +176,10 @@ class MyCustomButton: UIButton {
                 print("I am a custom button!!!")
                 self.layer.cornerRadius = 5;
                 self.titleLabel!.font = UIFont.systemFontOfSize(CGFloat(11))
-                self.layer.borderColor = UIColor.blueColorDark().CGColor
+                self.layer.borderColor = UIColor.whiteColor().CGColor
                 self.layer.borderWidth = 1.5
                 //self.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
-                self.backgroundColor = water
+                self.backgroundColor = UIColor.blueColorDark()
                 self.tintColor = UIColor.whiteColor()
                 //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
                 self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
@@ -190,9 +190,10 @@ class MyCustomButton: UIButton {
                 self.layer.cornerRadius = 5;
                 self.titleLabel!.font = UIFont.systemFontOfSize(CGFloat(11))
                 self.layer.borderColor = UIColor.blueColorDark().CGColor
+                self.layer.borderColor = UIColor.whiteColor().CGColor
                 self.layer.borderWidth = 1.5
                 //self.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
-                self.backgroundColor = water
+                self.backgroundColor = UIColor.blueColorDark()
                 self.tintColor = UIColor.whiteColor()
                 //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
                 self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
@@ -202,10 +203,10 @@ class MyCustomButton: UIButton {
                 print("I am a custom button!!!")
                 self.layer.cornerRadius = 5;
                 self.titleLabel!.font = UIFont.systemFontOfSize(CGFloat(11))
-                self.layer.borderColor = UIColor.blueColorDark().CGColor
+                self.layer.borderColor = UIColor.whiteColor().CGColor
                 self.layer.borderWidth = 1.5
                 //self.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
-                self.backgroundColor = water
+                self.backgroundColor = UIColor.blueColorDark()
                 self.tintColor = UIColor.whiteColor()
                 //self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
                 self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
