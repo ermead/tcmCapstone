@@ -32,9 +32,10 @@ class HerbSets {
         self.HerbSet = thisSetType
         print("this herb set I am trying to load is \(HerbSet)")
         switch thisSetType {
+            
         case .ReleaseWindCold: return windColdHerbs()
             
-        case .ReleaseWindCold: return windHeatHerbs()
+        case .ReleaseWindHeat: return windHeatHerbs()
             
         default: return []
             
@@ -77,6 +78,118 @@ class HerbSets {
         return [boHe, niuBangZi, sangYe, juHua, geGen, chaiHu]
        
     }
+    
+    func purgeHeatHerbs() -> [Herb]{
+        return [shiGao, zhiMu, zhiZi, xiaKuCao]
+    }
+    
+    func clearBloodHeatHerbs() -> [Herb]{
+        return [shengDiHuang, muDanPi, xuanShen]
+        
+    }
+    
+    func clearDampHeatHerbs() -> [Herb]{
+        return [huangQin, huangLian, huangBai, longDanCao]
+        
+    }
+    
+    func clearToxicHeatHerbs() -> [Herb]{
+        return [jinYinHua, lianQiao, puGongYing, tuFuLing]
+        
+    }
+    
+    func clearDeficiencyHeatHerbs() -> [Herb]{
+        return [qingHao, diGuPi, baiWei]
+    }
+    
+    func laxativeHerbs() -> [Herb]{
+        return [daHuang, mangXiao, huoMaRen]
+    }
+    
+    func drainDampHerbs() -> [Herb]{
+        return [fuLing, zeXie, yiYiRen]
+    }
+    
+    func dispelWindDampHerbs() -> [Herb]{
+        return [duHuo, muGua, sangJiSheng, sangZhi]
+    }
+    
+    func dissolveHotPhlegmHerbs() -> [Herb]{
+        return [chuanBeiMu, guaLuo]
+    }
+    
+    func dissolveColdPhlegmHerbs() -> [Herb]{
+        return [banXia, jieGeng]
+    }
+    
+    func stopCoughHerbs() -> [Herb]{
+        return [xingRen, piPaYe, ziSuZi, sangBaiPi]
+    }
+    
+    func aromaticDampResolvingHerbs() -> [Herb]{
+        return [huoPo, cangZhu, huoXiang, shaRen]
+    }
+    
+    func digestiveHerbs() -> [Herb]{
+        return [shanZha, shenQu, maiYa, laiFuZi]
+    }
+    
+    func regulateQiHerbs() -> [Herb]{
+        return [chenPi, xiangFu, wuYao, chuanLianZi]
+    }
+    
+    func stopBleedingHerbs() -> [Herb]{
+        return [sanQi, puHuang, ceBaiYe, aiYe]
+    }
+    
+    func bloodMovingHerbs() -> [Herb]{
+        return [chuanXiong, danShen, yanHuoSuo, yuJin, taoRen, hongHua, moYao, chiShao]
+        
+    }
+    
+    func interiorWarmingHerbs() -> [Herb]{
+        return [fuZi, ganJiang, rouGui, huJiao, xiaoHuiXiang]
+    }
+    
+    func qiTonicHerbs() -> [Herb]{
+        return [renShen, dangShen, huangQi, baiZhu, ganCao, daZao]
+    }
+    
+    func bloodTonicHerbs() -> [Herb]{
+        return [dangGui, shuDiHuang, baiShao, sangShen]
+    }
+    
+    func yangTonicHerbs() -> [Herb]{
+        return [yinYangHuo, huTaoRen, xuDuan, baJiTian]
+    }
+    
+    func yinTonicHerbs() -> [Herb]{
+        return [maiMenDong, tianMenDong, baiHe, heiZhiMa]
+    }
+    
+    func astringentHerbs() -> [Herb]{
+        return [wuWeiZi, rouDouKou, WuMei, fuPenZi, shanZhuYu ]
+    }
+    
+    func shenCalmingHerbs() -> [Herb]{
+        return [longGu, muLi]
+
+    }
+    
+    func shenNourishingHerbs() -> [Herb]{
+        return [suanZaoRen, baiZiRen]
+    }
+    
+    func liverWindExtinguishingHerbs() -> [Herb]{
+        
+    }
+    
+    func externalUseHerbs() -> [Herb]{
+        
+    }
+    
+    
+    
     
 
 

@@ -85,18 +85,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         _ = HerbsController.sharedController.defaultHerbs
         
-//        for herb in defaultHerbArray {
-//            
-//            let managedHerb = Herb(entity: entity, insertIntoManagedObjectContext: Stack.sharedStack.managedObjectContext)
-//            
-//            managedHerb.pinyinName = herb.pinyinName
-//            managedHerb.englishName = herb.englishName
-//            managedHerb.botanicalName = herb.botanicalName
-//            managedHerb.temp = herb.temp
-//            managedHerb.category = herb.category
-//            managedHerb.meridians = herb.meridians
-//            managedHerb.majorFormulas = herb.majorFormulas
-//        }
+
     }
     
     func loadPointsDefaultData() {

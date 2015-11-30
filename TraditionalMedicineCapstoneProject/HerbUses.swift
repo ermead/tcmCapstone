@@ -43,7 +43,7 @@ class HerbUses: NSObject {
             
         case .RenShen   : self.use = renShen
         case .BaiShao   : self.use = baiShao
-        case .BaiZhu    : self.use = baiShu
+        case .BaiZhu    : self.use = baiZhu
             
         default : self.use = "default"
         }
