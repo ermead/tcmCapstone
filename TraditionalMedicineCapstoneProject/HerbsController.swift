@@ -26,8 +26,13 @@ class HerbsController: NSObject {
 //    }
     
     var defaultHerbs: [Herb] {
-        return HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.ReleaseWindCold)
-        //return HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.ReleaseWindHeat)
+        
+        var array: [Herb] = []
+        
+        array = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.ReleaseWindCold)
+        array = array + HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.ReleaseWindHeat)
+        
+        return array
     }
     
     var herbs: [Herb] {
