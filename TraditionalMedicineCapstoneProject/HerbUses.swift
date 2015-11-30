@@ -17,7 +17,7 @@ class HerbUses: NSObject {
     var use: String?
     
     enum Herb {
-        case BaiShao,GuiZhi,RenShen,BaiZhu
+        case GuiZhi, ZiSuYe, JingJie, QiangHuo, ShengJiang, BaiShao, RenShen,BaiZhu
     }
     
     func getHerbUse(herb: HerbUses.Herb) -> String {
@@ -28,6 +28,10 @@ class HerbUses: NSObject {
             
         case .BaiShao   : self.use = baishaoUse
         case .GuiZhi    : self.use = guizhiUse
+        case .ZiSuYe    : self.use = ziSuYe
+        case .JingJie   : self.use = jingJie
+        case .QiangHuo  : self.use = qiangHuo
+        case .ShengJiang: self.use = shengJiang
         case .RenShen   : self.use = renshenUse
         case .BaiZhu    : self.use = baizhuUse
         default : self.use = "default"
@@ -37,6 +41,10 @@ class HerbUses: NSObject {
         return self.use!
     }
     
+    var ziSuYe = ""
+    var jingJie = ""
+    var qiangHuo = ""
+    var shengJiang = ""
     
     var baishaoUse = "This is a test to see what gets entered and where"
     var guizhiUse = "This is the test for guizhiUse"

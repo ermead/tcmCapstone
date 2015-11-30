@@ -697,7 +697,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         //thisSetOfImageObjects.setByAddingObjectsFromArray(arrayofImageObjects)
         print("This set I am adding has \(thisSetOfImageObjects.count) image objects")
         
-        let newHerb = Herb(pinyinName: pinyinName, botanicalName: botanicalName, englishName: englishName!, category: category, temp: temp , meridians: meridians, uses: uses, majorFormulas: majorFormulas, imageId1: placeholderLeftImageId, imageId2: placeholderRightImageId, images: thisSetOfImageObjects, context: Stack.sharedStack.managedObjectContext)
+        let newHerb = Herb(pinyinName: pinyinName, botanicalName: botanicalName, englishName: englishName!, category: category, temp: temp , meridians: meridians, uses: uses, majorFormulas: majorFormulas, images: thisSetOfImageObjects, context: Stack.sharedStack.managedObjectContext)
         
         
         HerbsController.sharedController.addHerb(newHerb)

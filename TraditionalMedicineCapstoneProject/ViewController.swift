@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-       // deleteCoreData()
+ //       deleteCoreData()
 //        addHerbSet(HerbSets.sharedController.setHerbSet())
 //        addHerbSet(HerbSets.sharedController.setHerbSet1())
 //        addHerbSet(HerbSets.sharedController.setHerbSet2())

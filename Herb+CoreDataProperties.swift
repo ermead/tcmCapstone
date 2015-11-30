@@ -24,8 +24,6 @@ extension Herb {
     @NSManaged var temp: String?
     @NSManaged var uses: String?
     @NSManaged var inContents: NSSet?
-    @NSManaged var imageId1: String?
-    @NSManaged var imageId2: String?
     @NSManaged var images: NSSet?
     
 }

@@ -15,14 +15,19 @@ class HerbsController: NSObject {
     
     static let sharedController = HerbsController()
     
+//    var defaultHerbs: [Herb] {
+//        
+//        let cinnamon = Herb(pinyinName: "Gui Zhi", botanicalName: "insert botanical name", englishName: "Cinnamon", category: "Release the Exterior", temp: "Warm", meridians: "insert meridians", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.BaiZhu), majorFormulas: "Gui Zhi Tang", imageId1: nil, imageId2: nil, images: [])
+//        let ginseng = Herb(pinyinName: "Ren Shen", botanicalName: "insert botanical name", englishName: "Ginseng", category: "Tonify the Qi", temp: "Warm", meridians: "insert meridians", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.BaiZhu), majorFormulas: "Si Jun Zi Tang", imageId1: nil, imageId2: nil, images: [])
+//        let dangGui = Herb(pinyinName: "Dang Gui", botanicalName: "insert botanical name", englishName: "Angelica", category: "Tonify the Blood", temp: "Warm", meridians: "insert meridians", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.BaiZhu), majorFormulas: "Si Wu Tang", imageId1: nil, imageId2: nil, images: [])
+//        
+//        return [cinnamon, ginseng, dangGui]
+//        
+//    }
+    
     var defaultHerbs: [Herb] {
-        
-        let cinnamon = Herb(pinyinName: "Gui Zhi", botanicalName: "insert botanical name", englishName: "Cinnamon", category: "Release the Exterior", temp: "Warm", meridians: "insert meridians", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.BaiZhu), majorFormulas: "Gui Zhi Tang", imageId1: nil, imageId2: nil, images: [])
-        let ginseng = Herb(pinyinName: "Ren Shen", botanicalName: "insert botanical name", englishName: "Ginseng", category: "Tonify the Qi", temp: "Warm", meridians: "insert meridians", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.BaiZhu), majorFormulas: "Si Jun Zi Tang", imageId1: nil, imageId2: nil, images: [])
-        let dangGui = Herb(pinyinName: "Dang Gui", botanicalName: "insert botanical name", englishName: "Angelica", category: "Tonify the Blood", temp: "Warm", meridians: "insert meridians", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.BaiZhu), majorFormulas: "Si Wu Tang", imageId1: nil, imageId2: nil, images: [])
-        
-        return [cinnamon, ginseng, dangGui]
-        
+        return HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.ReleaseWindCold)
+        //return HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.ReleaseWindHeat)
     }
     
     var herbs: [Herb] {

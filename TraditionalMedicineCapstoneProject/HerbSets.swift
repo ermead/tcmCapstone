@@ -13,6 +13,8 @@ class HerbSets {
     
     static let sharedController = HerbSets()
     
+    let moc = Stack.sharedStack.managedObjectContext
+    
     var HerbSet = HerbSetType.ReleaseWindCold
     var herbset: [Herb] = []
     
@@ -29,62 +31,59 @@ class HerbSets {
         //self.thisHerbSetType = thisSetType
         self.HerbSet = thisSetType
         print("this herb set I am trying to load is \(HerbSet)")
-        return setHerbSet1()
+        switch thisSetType {
+        case .ReleaseWindCold: return windColdHerbs()
+            
+        case .ReleaseWindCold: return windHeatHerbs()
+            
+        default: return []
+            
+        }
     }
     
     
-    func setHerbSet()->[Herb]{
+    func windColdHerbs()->[Herb]{
         
-        let cinnamon = Herb(pinyinName: "Gui Zhi", botanicalName: "insert botanical name", englishName: "Cinnamon", category: "Release the Exterior", temp: "Warm", meridians: "insert meridians", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.GuiZhi), majorFormulas: "Gui Zhi Tang", imageId1: nil, imageId2: nil)
-        let ginseng = Herb(pinyinName: "Ren Shen", botanicalName: "insert botanical name", englishName: "Ginseng", category: "Tonify the Qi", temp: "Warm", meridians: "insert meridians", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.RenShen), majorFormulas: "Si Jun Zi Tang", imageId1: nil, imageId2: nil)
-        let dangGui = Herb(pinyinName: "Dang Gui", botanicalName: "insert botanical name", englishName: "Angelica", category: "Tonify the Blood", temp: "Warm", meridians: "insert meridians", uses:HerbUses.sharedController.getHerbUse(HerbUses.Herb.BaiZhu), majorFormulas: "Si Wu Tang", imageId1: nil, imageId2: nil)
+        print("Wind-Cold herbs set")
         
-        let baishao = Herb(pinyinName: "Bai Shao", botanicalName: "Radix Peony", englishName: "White Peony", category: "Yin Tonic", temp: "Cool", meridians: "LR", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.BaiShao), majorFormulas: "Xiao Yao San", imageId1: nil, imageId2: nil)
+        let cinnamon = Herb(pinyinName: "Gui Zhi", botanicalName: "Cinnamomi Ramulus", englishName: "Cinnamon Twig", category: "Disperse Wind-Cold", temp: "warm", meridians: "HT, LU, BL", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.GuiZhi), majorFormulas: "Gui Zhi Tang", images: [], context: self.moc)
         
         
-        let baishao1 = Herb(pinyinName: "chi Shao", botanicalName: "Radix Peony", englishName: "White Peony", category: "Yin Tonic", temp: "Cool", meridians: "LR", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.BaiShao), majorFormulas: "Xiao Yao San", imageId1: nil, imageId2: nil)
+        let ziSuYe = Herb(pinyinName: "Zi Su Ye", botanicalName: "Perillaw Folium", englishName: "Perilla Leaf", category: "Disperse Wind-Cold", temp: "warm", meridians: "LU, SP", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ZiSuYe), majorFormulas: "", images: [], context: moc)
+        
+        let jingJie = Herb(pinyinName: "Jing Jie", botanicalName: "Schizonepetae Herba", englishName: "Japanese Catnip", category: "Disperse Wind-Cold", temp: "warm", meridians: "LU, LR", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.JingJie), majorFormulas: "", images: [], context: moc)
+        
+        let qiangHuo = Herb(pinyinName: "Qiang Huo", botanicalName: "Notopterygii Rhizoma seu Radix", englishName: "Notopterygium Root", category: "Disperse Wind-Cold", temp: "warm", meridians: "BL, KI", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.QiangHuo), majorFormulas: "", images: [], context: moc)
+        
+        let shengJiang = Herb(pinyinName: "Sheng Jiang", botanicalName: "Zingiberis Rhizoma Recens", englishName: "Fresh Ginger", category: "Disperse Wind-Cold", temp: "warm", meridians: "LU, SP, ST", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ShengJiang), majorFormulas: "", images: [], context: moc)
         
         return [cinnamon]
+        
+        
     }
     
-    func setHerbSet1()->[Herb]{
+    func windHeatHerbs()->[Herb]{
         
-        let cinnamon = Herb(pinyinName: "Gui Zhi", botanicalName: "insert botanical name", englishName: "Cinnamon", category: "Release the Exterior", temp: "Warm", meridians: "insert meridians", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.GuiZhi), majorFormulas: "Gui Zhi Tang", imageId1: nil, imageId2: nil)
+        print("Wind-Heat herbs set")
         
-        let baishao1 = Herb(pinyinName: "chi Shao", botanicalName: "Radix Peony", englishName: "White Peony", category: "Yin Tonic", temp: "Cool", meridians: "LR", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.BaiShao), majorFormulas: "Xiao Yao San", imageId1: nil, imageId2: nil)
+        let cinnamon = Herb(pinyinName: "Gui Zhi", botanicalName: "Cinnamomi Ramulus", englishName: "Cinnamon Twig", category: "Disperse Wind-Cold", temp: "warm", meridians: "HT, LU, BL", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.GuiZhi), majorFormulas: "Gui Zhi Tang", images: [], context: self.moc)
+        
+        
+        let ziSuYe = Herb(pinyinName: "Zi Su Ye", botanicalName: "Perillaw Folium", englishName: "Perilla Leaf", category: "Disperse Wind-Cold", temp: "warm", meridians: "LU, SP", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ZiSuYe), majorFormulas: "", images: [], context: moc)
+        
+        let jingJie = Herb(pinyinName: "Jing Jie", botanicalName: "Schizonepetae Herba", englishName: "Japanese Catnip", category: "Disperse Wind-Cold", temp: "warm", meridians: "LU, LR", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.JingJie), majorFormulas: "", images: [], context: moc)
+        
+        let qiangHuo = Herb(pinyinName: "Qiang Huo", botanicalName: "Notopterygii Rhizoma seu Radix", englishName: "Notopterygium Root", category: "Disperse Wind-Cold", temp: "warm", meridians: "BL, KI", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.QiangHuo), majorFormulas: "", images: [], context: moc)
+        
+        let shengJiang = Herb(pinyinName: "Sheng Jiang", botanicalName: "Zingiberis Rhizoma Recens", englishName: "Fresh Ginger", category: "Disperse Wind-Cold", temp: "warm", meridians: "LU, SP, ST", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ShengJiang), majorFormulas: "", images: [], context: moc)
         
         return [cinnamon]
+
+        
+       
     }
     
-    func setHerbSet2()->[Herb]{
-        
-        let cinnamon = Herb(pinyinName: "Gui Zhi", botanicalName: "insert botanical name", englishName: "Cinnamon", category: "Release the Exterior", temp: "Warm", meridians: "insert meridians", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.GuiZhi), majorFormulas: "Gui Zhi Tang", imageId1: nil, imageId2: nil)
-        
-        let baishao1 = Herb(pinyinName: "chi Shao", botanicalName: "Radix Peony", englishName: "White Peony", category: "Yin Tonic", temp: "Cool", meridians: "LR", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.BaiShao), majorFormulas: "Xiao Yao San", imageId1: nil, imageId2: nil)
-        
-        return [cinnamon]
-    }
-    
-    func setHerbSet3()->[Herb]{
-        
-        let cinnamon = Herb(pinyinName: "Gui Zhi", botanicalName: "insert botanical name", englishName: "Cinnamon", category: "Release the Exterior", temp: "Warm", meridians: "insert meridians", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.GuiZhi), majorFormulas: "Gui Zhi Tang", imageId1: nil, imageId2: nil)
-        
-        let baishao1 = Herb(pinyinName: "chi Shao", botanicalName: "Radix Peony", englishName: "White Peony", category: "Yin Tonic", temp: "Cool", meridians: "LR", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.BaiShao), majorFormulas: "Xiao Yao San", imageId1: nil, imageId2: nil)
-        
-        return [cinnamon]
-    }
-    
-    func setHerbSet4()->[Herb]{
-        
-        let cinnamon = Herb(pinyinName: "Gui Zhi", botanicalName: "insert botanical name", englishName: "Cinnamon", category: "Release the Exterior", temp: "Warm", meridians: "insert meridians", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.GuiZhi), majorFormulas: "Gui Zhi Tang", imageId1: nil, imageId2: nil)
-        
-        let baishao1 = Herb(pinyinName: "chi Shao", botanicalName: "Radix Peony", englishName: "White Peony", category: "Yin Tonic", temp: "Cool", meridians: "LR", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.BaiShao), majorFormulas: "Xiao Yao San", imageId1: nil, imageId2: nil)
-        
-        return [cinnamon]
-    }
 
 
 }
-
-
 

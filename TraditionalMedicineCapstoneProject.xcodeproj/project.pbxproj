@@ -38,7 +38,7 @@
 		D782A5F31BEA4BE200E51BAC /* FormulasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5F21BEA4BE200E51BAC /* FormulasController.swift */; };
 		D782A5F51BEA4ECF00E51BAC /* Formula+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5F41BEA4ECF00E51BAC /* Formula+CoreDataProperties.swift */; };
 		D7BAC6C31C00D56F001AF74B /* SearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BAC6C21C00D56F001AF74B /* SearchResultsTableViewController.swift */; };
-		D7C264961BF8256A0009B2A7 /* HerbUsesGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C264951BF8256A0009B2A7 /* HerbUsesGetter.swift */; };
+		D7C264961BF8256A0009B2A7 /* HerbUses.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C264951BF8256A0009B2A7 /* HerbUses.swift */; };
 		D7C264981BF825BB0009B2A7 /* HerbSets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C264971BF825BB0009B2A7 /* HerbSets.swift */; };
 		D7C2649E1BFA271F0009B2A7 /* OtherResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C2649D1BFA271F0009B2A7 /* OtherResourcesViewController.swift */; };
 		D7C264A01BFA2C660009B2A7 /* OtherResourcesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C2649F1BFA2C660009B2A7 /* OtherResourcesDetailViewController.swift */; };
@@ -83,7 +83,7 @@
 		D782A5F21BEA4BE200E51BAC /* FormulasController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulasController.swift; sourceTree = "<group>"; };
 		D782A5F41BEA4ECF00E51BAC /* Formula+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Formula+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D7BAC6C21C00D56F001AF74B /* SearchResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewController.swift; sourceTree = "<group>"; };
-		D7C264951BF8256A0009B2A7 /* HerbUsesGetter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HerbUsesGetter.swift; sourceTree = "<group>"; };
+		D7C264951BF8256A0009B2A7 /* HerbUses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HerbUses.swift; sourceTree = "<group>"; };
 		D7C264971BF825BB0009B2A7 /* HerbSets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HerbSets.swift; sourceTree = "<group>"; };
 		D7C2649D1BFA271F0009B2A7 /* OtherResourcesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherResourcesViewController.swift; sourceTree = "<group>"; };
 		D7C2649F1BFA2C660009B2A7 /* OtherResourcesDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherResourcesDetailViewController.swift; sourceTree = "<group>"; };
@@ -193,7 +193,7 @@
 			children = (
 				D7D9EBB01BDD8A6500C920AC /* HerbsController.swift */,
 				D7C264971BF825BB0009B2A7 /* HerbSets.swift */,
-				D7C264951BF8256A0009B2A7 /* HerbUsesGetter.swift */,
+				D7C264951BF8256A0009B2A7 /* HerbUses.swift */,
 				D782A5F21BEA4BE200E51BAC /* FormulasController.swift */,
 			);
 			name = Herbs;
@@ -307,7 +307,7 @@
 				D76D36601BF5B16A0003AC43 /* CombinationsTableViewCell.swift in Sources */,
 				D782A5741BE6667300E51BAC /* Colors.swift in Sources */,
 				D7580B0C1BDD1EB70008789F /* TraditionalMedicineCapstoneProject.xcdatamodeld in Sources */,
-				D7C264961BF8256A0009B2A7 /* HerbUsesGetter.swift in Sources */,
+				D7C264961BF8256A0009B2A7 /* HerbUses.swift in Sources */,
 				D74D46171BFE1F1D0098FD3D /* Image+CoreDataProperties.swift in Sources */,
 				D782A5F51BEA4ECF00E51BAC /* Formula+CoreDataProperties.swift in Sources */,
 				D74D45B41BFD019A0098FD3D /* EntryController.swift in Sources */,
