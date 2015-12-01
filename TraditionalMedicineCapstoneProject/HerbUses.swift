@@ -17,9 +17,33 @@ class HerbUses: NSObject {
     var use: String?
     
     enum Herb {
-        case GuiZhi, ZiSuYe, JingJie, QiangHuo, ShengJiang, BaiShao, RenShen,BaiZhu
+        case GuiZhi, ZiSuYe, JingJie, QiangHuo, ShengJiang
         case BoHe, NiuBangZi, SangYe, JuHua, GeGen, ChaiHu
-        case ShiGao, ZhiMu, ZhiZi, XiaKuCao, ShengDiHuang, MuDanPi, XuanShen, HuangQin, HuangLian, HuangBai, LongDanCao, JinYinHua, LianQiao, PuGongYing, TuFuLing, QingHao, DiGuPi, BaiWei, DaHuang, MangXiao, HuoMaRen, FuLing, ZeXie, YiYiRen, DuHuo, MuGua, SangJiSheng, SangZhi,ChuanBeiMu, GuaLuo,BanXia, JieGeng,XingRen, PiPaYe, ZiSuZi, SangBaiPi, HuoPo, CangZhu, HuoXiang, ShaRen,ShanZha, ShenQu, MaiYa, LaiFuZi, ChenPi, XiangFu, WuYao, ChuanLianZi,SanQi, PuHuang, CeBaiYe, AiYe,ChuanXiong, DanShen, YanHuoSuo, YuJin, TaoRen, HongHua, MoYao, ChiShao, FuZi, GanJiang, RouGui, HuJiao, XiaoHuiXiang, RenShen, DangShen, HuangQi, BaiZhu, GanCao, DaZao, DangGui, ShuDiHuang, BaiShao, SangShen, YinYangHuo, HuTaoRen, xuDuan, baJiTian,maiMenDong, tianMenDong, baiHe, heiZhiMa, wuWeiZi, rouDouKou, wuMei, fuPenZi, shanZhuYu,longGu, muLi, suanZaoRen, baiZiRen, gouTeng, tianMa
+        case ShiGao, ZhiMu, ZhiZi, XiaKuCao
+        case ShengDiHuang, MuDanPi, XuanShen
+        case HuangQin, HuangLian, HuangBai, LongDanCao
+        case JinYinHua, LianQiao, PuGongYing, TuFuLing
+        case QingHao, DiGuPi, BaiWei
+        case DaHuang, MangXiao, HuoMaRen
+        case FuLing, ZeXie, YiYiRen
+        case DuHuo, MuGua, SangJiSheng, SangZhi
+        case ChuanBeiMu, GuaLuo
+        case BanXia, JieGeng
+        case XingRen, PiPaYe, ZiSuZi, SangBaiPi
+        case HuoPo, CangZhu, HuoXiang, ShaRen
+        case ShanZha, ShenQu, MaiYa, LaiFuZi
+        case ChenPi, XiangFu, WuYao, ChuanLianZi
+        case SanQi, PuHuang, CeBaiYe, AiYe
+        case ChuanXiong, DanShen, YanHuoSuo, YuJin, TaoRen, HongHua, MoYao, ChiShao
+        case FuZi, GanJiang, RouGui, HuJiao, XiaoHuiXiang
+        case RenShen, DangShen, HuangQi, BaiZhu, GanCao, DaZao
+        case DangGui, ShuDiHuang, BaiShao, SangShen
+        case YinYangHuo, HuTaoRen, XuDuan, BaJiTian
+        case MaiMenDong, TianMenDong, BaiHe, HeiZhiMa
+        case WuWeiZi, RouDouKou, WuMei, FuPenZi, ShanZhuYu
+        case LongGu, MuLi
+        case SuanZaoRen, BaiZiRen
+        case GouTeng, TianMa
     }
     
     func getHerbUse(herb: HerbUses.Herb) -> String {
@@ -40,6 +64,11 @@ class HerbUses: NSObject {
         case .JuHua     : self.use = juHua
         case .GeGen     : self.use = geGen
         case .ChaiHu    : self.use = chaiHu
+         
+        case .ShiGao : self.use =
+        case. ZhiMu :
+        case .ZhiZi :
+        case .XiaKuCao :
             
             
         case .RenShen   : self.use = renShen
@@ -66,10 +95,113 @@ class HerbUses: NSObject {
     var geGen = ""
     var chaiHu = ""
     
-    var baiShao = "This is a test to see what gets entered and where"
+    var shiGao
+    var zhiMu
+    var zhiZi
+    xiaKuCao
+    shengDiHuang
+    muDanPi
+    xuanShen
+    huangQin
+    huangLian
+    huangBai
+    longDanCao
+    jinYinHua
+    lianQiao
+    puGongYing
+    tuFuLing
+    qingHao
+    diGuPi
+    baiWei
+    daHuang
+    mangXiao
+    huoMaRen
+    fuLing
+    zeXie
+    yiYiRen
+    duHuo
+    muGua
+    sangJiSheng
+    sangZhi
+    chuanBeiMu
+    guaLuo
+    banXia
+    jieGeng
+    xingRen
     
-    var renShen = "This is a test for ren shen use"
-    var baiZhu = "Another test for bai zhu use now"
+    piPaYe
+    
+    ziSuZi
+    sangBaiPi
+    huoPo
+    cangZhu
+    huoXiang
+    shaRen
+    shanZha
+    
+    shenQu
+    maiYa
+    laiFuZi
+    chenPi
+    xiangFu
+    wuYao
+    
+    chuanLianZi
+    sanQi
+    puHuang
+    ceBaiYe
+    aiYe
+    chuanXiong
+    danShen
+    
+    
+    yanHuoSuo
+    yuJin
+    taoRen
+    hongHua
+    
+    moYao
+    chiShao
+    fuZi
+    ganJiang
+    rouGui
+    huJiao
+    xiaoHuiXiang
+    renShen
+    dangShen
+    huangQi
+    baiZhu
+    ganCao
+    
+    daZao
+    dangGui
+    shuDiHuang
+    baiShao
+    sangShen
+    yinYangHuo
+    
+    huTaoRen
+    xuDuan
+    baJiTian
+    
+    maiMenDong
+    tianMenDong
+    baiHe
+    heiZhiMa
+    wuWeiZi
+    rouDouKou
+    wuMei
+    fuPenZi
+    shanZhuYu
+    
+    longGu
+    
+    
+    muLi
+    suanZaoRen
+    baiZiRen
+    gouTeng
+    tianMa
     
     
 }
