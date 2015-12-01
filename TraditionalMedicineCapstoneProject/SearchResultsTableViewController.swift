@@ -67,7 +67,7 @@ class SearchResultsTableViewController: UITableViewController {
             cell.textLabel?.text = herb.pinyinName
         } else if category == "Point" {
             let point = filteredPointArray[indexPath.row]
-            cell.textLabel?.text = point.pinyinName
+            cell.textLabel?.text = point.pointOnMeridian
         } else if category == "Channel" {
             let channel = filteredChannelArray[indexPath.row]
             cell.textLabel?.text = channel.name

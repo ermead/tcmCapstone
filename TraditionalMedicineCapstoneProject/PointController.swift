@@ -32,6 +32,7 @@ class PointController: NSObject {
         var array: [Point] = []
         
         let Lung = PointSets.sharedController.getPointSet(PointSets.PointSetType.Lung)
+        //let lungSorted = Lung.sort { $0.pointOnMeridian!.localizedCaseInsensitiveCompare($1.pointOnMeridian!) == NSComparisonResult.OrderedAscending }
         let LargeIntestine = PointSets.sharedController.getPointSet(PointSets.PointSetType.LargeIntestine)
         let Stomach = PointSets.sharedController.getPointSet(PointSets.PointSetType.Stomach)
         let Spleen = PointSets.sharedController.getPointSet(PointSets.PointSetType.Spleen)
@@ -59,7 +60,9 @@ class PointController: NSObject {
         
         array = flattenedFlattenedAllCategories
         
-        return array
+        var arraySorted = array.sort { $0.pointOnMeridian!.localizedCaseInsensitiveCompare($1.pointOnMeridian!) == NSComparisonResult.OrderedAscending }
+        
+        return arraySorted
     }
     
     var points: [Point] {

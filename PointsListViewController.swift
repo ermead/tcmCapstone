@@ -155,7 +155,7 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
         } else {
             if singles{
             resultsViewController.category = "Point"
-            resultsViewController.filteredPointArray = PointController.sharedController.points.filter({ $0.pinyinName!.lowercaseString.containsString(searchTerm) })
+            resultsViewController.filteredPointArray = PointController.sharedController.points.filter({ $0.pointOnMeridian!.lowercaseString.containsString(searchTerm) })
             } else {
             resultsViewController.category = "Channel"
             resultsViewController.filteredChannelArray = ChannelController.sharedController.channels.filter({ $0.name!.lowercaseString.containsString(searchTerm) })
@@ -207,8 +207,16 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
            
         } else {
             if singles{
-            cell.textLabel?.text = PointController.sharedController.points[indexPath.row].pointOnMeridian
-            cell.detailTextLabel?.text = PointController.sharedController.points[indexPath.row].pinyinName
+                
+            let pointsArray = PointController.sharedController.points
+            let sorted = pointsArray.sort { $0.pointOnMeridian!.localizedCaseInsensitiveCompare($1.pointOnMeridian!) == NSComparisonResult.OrderedAscending }
+            let point = sorted[indexPath.row]
+             
+                cell.textLabel?.text = point.pointOnMeridian
+                cell.detailTextLabel?.text = point.pinyinName
+                
+//            cell.textLabel?.text = PointController.sharedController.points[indexPath.row].pointOnMeridian
+//            cell.detailTextLabel?.text = PointController.sharedController.points[indexPath.row].pinyinName
             } else {
                 cell.textLabel?.text = ChannelController.sharedController.channels[indexPath.row].name
                 cell.detailTextLabel?.text = ChannelController.sharedController.channels[indexPath.row].uses
