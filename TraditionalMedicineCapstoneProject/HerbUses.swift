@@ -69,11 +69,101 @@ class HerbUses: NSObject {
         case. ZhiMu :
         case .ZhiZi :
         case .XiaKuCao :
+        case .ShengDiHuang
+        case    .MuDanPi
+        case    .XuanShen
+        case .HuangQin
+        case    .HuangLian
+        case    .HuangBai
+        case    .LongDanCao
+        case .JinYinHua
+         case   .LianQiao
+         case   .PuGongYing
+         case   .TuFuLing
+        case .QingHao
+        case    .DiGuPi
+        case    .BaiWei
+        case .DaHuang
+         case   .MangXiao
+        case    .HuoMaRen
+        case .FuLing
+        case    .ZeXie
+        case    .YiYiRen
+        case .DuHuo
+        case    .MuGua
+        case    .SangJiSheng
+        case    .SangZhi
+        case .ChuanBeiMu
+        case    .GuaLuo
+        case .BanXia
+         case   .JieGeng
+        case .XingRen
+         case   .PiPaYe
+         case   .ZiSuZi
+         case   .SangBaiPi
+        case .HuoPo
+        case    .CangZhu
+        case    .HuoXiang
+        case    .ShaRen
+        case .ShanZha
+        case    ShenQu
+        case    MaiYa
+        case    LaiFuZi
+        case ChenPi
+         case   XiangFu
+        case    WuYao
+        case    ChuanLianZi
+        case SanQi
+         case   PuHuang
+         case   CeBaiYe
+        case    AiYe
+        case ChuanXiong
+        case DanShen
+        case YanHuoSuo
+        case YuJin
+        case TaoRen
+        case HongHua
+        case MoYao
+        case    ChiShao
+        case FuZi
+         case   GanJiang
+         case   RouGui
+         case   HuJiao
+         case   XiaoHuiXiang
+        case RenShen
+        case    DangShen
+        case HuangQi
+        case    BaiZhu
+        case    GanCao
+        case    DaZao
+        case DangGui
+        case ShuDiHuang
+        case BaShao
+        case    SangShen
+        case YinYangHuo
+        case    HuTaoRen
+        case    XuDuan
+        case    BaJiTian
+        case MaiMenDong
+        case    TianMenDong
+        case    BaiHe
+        case    HeiZhiMa
+        case WuWeiZi
+        case    RouDouKou
+        case    WuMei
+        case    FuPenZi
+         case   ShanZhuYu
+        case LongGu
+        case    MuLi
+        case SuanZaoRen
+        case    BaiZiRen
+        case GouTeng
+        case   TianMa
+
             
             
-        case .RenShen   : self.use = renShen
-        case .BaiShao   : self.use = baiShao
-        case .BaiZhu    : self.use = baiZhu
+            
+       
             
         default : self.use = "default"
         }
@@ -95,113 +185,112 @@ class HerbUses: NSObject {
     var geGen = ""
     var chaiHu = ""
     
-    var shiGao
-    var zhiMu
-    var zhiZi
-    xiaKuCao
-    shengDiHuang
-    muDanPi
-    xuanShen
-    huangQin
-    huangLian
-    huangBai
-    longDanCao
-    jinYinHua
-    lianQiao
-    puGongYing
-    tuFuLing
-    qingHao
-    diGuPi
-    baiWei
-    daHuang
-    mangXiao
-    huoMaRen
-    fuLing
-    zeXie
-    yiYiRen
-    duHuo
-    muGua
-    sangJiSheng
-    sangZhi
-    chuanBeiMu
-    guaLuo
-    banXia
-    jieGeng
-    xingRen
+    var shiGao = ""
+    var zhiMu = ""
+    var zhiZi = ""
+    var xiaKuCao = ""
+    var shengDiHuang = ""
+    var muDanPi = ""
+    var xuanShen = ""
+    var huangQin = ""
+    var huangLian = ""
+    var huangBai = ""
+    var longDanCao = ""
+    var jinYinHua = ""
+    var lianQiao = ""
+    var puGongYing = ""
+    var tuFuLing = ""
+    var qingHao = ""
+    var diGuPi = ""
+    var baiWei = ""
+    var daHuang = ""
+    var mangXiao = ""
+    var huoMaRen = ""
+    var fuLing = ""
+    var zeXie = ""
+    var yiYiRen = ""
+    var duHuo = ""
+    var muGua = ""
+    var sangJiSheng = ""
+    var sangZhi = ""
+    var chuanBeiMu = ""
+    var guaLuo = ""
+    var banXia = ""
+    var jieGeng = ""
+    var xingRen = ""
     
-    piPaYe
+    var piPaYe = ""
     
-    ziSuZi
-    sangBaiPi
-    huoPo
-    cangZhu
-    huoXiang
-    shaRen
-    shanZha
+    var ziSuZi = ""
+    var sangBaiPi = ""
+    var huoPo = ""
+    var cangZhu = ""
+    var huoXiang = ""
+    var shaRen = ""
+    var shanZha = ""
     
-    shenQu
-    maiYa
-    laiFuZi
-    chenPi
-    xiangFu
-    wuYao
+    var shenQu = ""
+   var  maiYa = ""
+    var laiFuZi = ""
+    var chenPi = ""
+    var xiangFu = ""
+    var wuYao = ""
     
-    chuanLianZi
-    sanQi
-    puHuang
-    ceBaiYe
-    aiYe
-    chuanXiong
-    danShen
-    
-    
-    yanHuoSuo
-    yuJin
-    taoRen
-    hongHua
-    
-    moYao
-    chiShao
-    fuZi
-    ganJiang
-    rouGui
-    huJiao
-    xiaoHuiXiang
-    renShen
-    dangShen
-    huangQi
-    baiZhu
-    ganCao
-    
-    daZao
-    dangGui
-    shuDiHuang
-    baiShao
-    sangShen
-    yinYangHuo
-    
-    huTaoRen
-    xuDuan
-    baJiTian
-    
-    maiMenDong
-    tianMenDong
-    baiHe
-    heiZhiMa
-    wuWeiZi
-    rouDouKou
-    wuMei
-    fuPenZi
-    shanZhuYu
-    
-    longGu
+    var chuanLianZi = ""
+    var sanQi = ""
+    var puHuang = ""
+    var ceBaiYe = ""
+    var aiYe = ""
+    var chuanXiong = ""
+    var danShen = ""
     
     
-    muLi
-    suanZaoRen
-    baiZiRen
-    gouTeng
-    tianMa
+    var yanHuoSuo = ""
+    var yuJin = ""
+    var taoRen = ""
+    var hongHua = ""
+    
+    var moYao = ""
+    var chiShao = ""
+    var fuZi = ""
+    var ganJiang = ""
+    var rouGui = ""
+    var huJiao = ""
+    var xiaoHuiXiang = ""
+    var renShen = ""
+    var dangShen = ""
+    var huangQi = ""
+    var baiZhu = ""
+    var ganCao = ""
+    
+    var daZao = ""
+    var dangGui = ""
+    var shuDiHuang = ""
+    var baiShao = ""
+    var sangShen = ""
+    var yinYangHuo = ""
+    
+    var huTaoRen = ""
+    var xuDuan = ""
+    var baJiTian = ""
+    
+    var maiMenDong = ""
+    var tianMenDong = ""
+    var baiHe = ""
+    var heiZhiMa = ""
+    var wuWeiZi = ""
+    var rouDouKou = ""
+    var wuMei = ""
+    var fuPenZi = ""
+    var shanZhuYu = ""
+    
+    var longGu = ""
+    
+    var muLi = ""
+    var suanZaoRen = ""
+    var baiZiRen = ""
+    var gouTeng = ""
+    var tianMa = ""
     
     
 }
