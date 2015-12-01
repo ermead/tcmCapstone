@@ -58,9 +58,19 @@ class HerbsController: NSObject {
         let ExtinguishLiverWind = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.ExtinguishLiverWind)
         
         
-        array = windCold + windHeat + PurgeHeat + ClearBloodHeat + ClearDampHeat + ClearToxicHeat + ClearDeficiencyHeat + Laxatives + DrainDamp + DispelWindDamp + DissolveHotPhlegm + DissolveColdPhlegm + StopCough + AromaticsDispelDamp + Digestives + RegulateQi + StopBleeding + MoveBlood + WarmInterior + TonifyQi + TonifyBlood + TonifyYin + TonifyYang + Astringents + CalmShen + NourishShen + ExtinguishLiverWind
+        var array0 = [windCold, windHeat]
+        var array1 = [PurgeHeat, ClearBloodHeat, ClearDampHeat, ClearToxicHeat, ClearDeficiencyHeat]
+        var array2 = [Laxatives,  DrainDamp]
+        var array3 = [DispelWindDamp, AromaticsDispelDamp]
+        var array4 = [DissolveHotPhlegm, DissolveColdPhlegm, StopCough]
+        var array5 = [Digestives, RegulateQi]
+        var array6 = [StopBleeding, MoveBlood]
+        var array7 = [WarmInterior]
+        var array8 = [TonifyQi, TonifyBlood, TonifyYin, TonifyYang]
+        var array9 = [Astringents, CalmShen, NourishShen]
+        var array10 = [ExtinguishLiverWind]
         
-        return array
+        return array0 + array1
     }
     
     var herbs: [Herb] {
