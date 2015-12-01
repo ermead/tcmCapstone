@@ -14,6 +14,11 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
     //toggle this var if herbs list or points list
     var herbsList: Bool = false
     var singles: Bool = true
+    
+    var herbsArray: [Herb] = []
+    var pointsArray: [Point] = []
+    var channelsArray: [Channel] = []
+    var formulasArray: [Formula] = []
    
     var searchController: UISearchController!
     
@@ -33,6 +38,35 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
     
     @IBOutlet weak var pointsTableViewOutlet: UITableView!
     
+    @IBAction func button1a(sender: UIButton) {
+        
+        self.herbsArray = herbsArray.filter({ $0.category!.lowercaseString.containsString("disperse wind-cold") })
+        pointsTableViewOutlet.reloadData()
+    }
+    
+    @IBAction func button1b(sender: UIButton) {
+    }
+    
+    @IBAction func button1c(sender: UIButton) {
+    }
+    
+    @IBAction func button1d(sender: UIButton) {
+    }
+    
+    
+    @IBAction func button2a(sender: UIButton) {
+    }
+    
+    @IBAction func button2b(sender: UIButton) {
+    }
+    
+    @IBAction func button2c(sender: UIButton) {
+    }
+    
+    @IBAction func button2d(sender: UIButton) {
+    }
+    
+    
     @IBAction func BackToHomeTapped(sender: UIButton) {
         print("unfold buttons")
         
@@ -49,22 +83,26 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
             print("segment points hit")
             herbsList = false
             singles = true
+            updateButtons("points")
             pointsTableViewOutlet.reloadData()
 
         } else if(sender.selectedSegmentIndex == 1) {
             print("segment combos hit")
             herbsList = false
             singles = false
+            updateButtons("channels")
             pointsTableViewOutlet.reloadData()
         } else if(sender.selectedSegmentIndex == 2) {
              print("segment herbs hit")
             herbsList = true
             singles = true
+            updateButtons("herbs")
             pointsTableViewOutlet.reloadData()
         } else if(sender.selectedSegmentIndex == 3){
              print("segment formulas hit")
             herbsList = true
             singles = false
+            updateButtons("formulas")
             pointsTableViewOutlet.reloadData()
         } else {
             print("error on segmented switch")
@@ -77,6 +115,9 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.herbsArray = HerbsController.sharedController.herbsByPinyin
+        self.pointsArray = PointController.sharedController.pointsByPointOnMeridian
         
         setupSearchController()
         
@@ -93,36 +134,65 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
         pointsTableViewOutlet.backgroundColor = UIColor(patternImage: UIImage(named: "woodTexture")!)
         setupButtons()
         
-        // Do any additional setup after loading the view.
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if herbsList{
             if singles{
-                return HerbsController.sharedController.herbs.count
+                return self.herbsArray.count
             } else {
                 return FormulasController.sharedController.formulas.count
             }
         } else {
             if singles{
-                return PointController.sharedController.points.count
+                return self.pointsArray.count
             } else {
                 return ChannelController.sharedController.channels.count
             }
         }
     }
     
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("pointsCell", forIndexPath: indexPath)
+        
+        if herbsList {
+            if singles{
+                let herbsArray = self.herbsArray
+                let herb = herbsArray[indexPath.row]
+                cell.textLabel?.text = herb.pinyinName
+                cell.detailTextLabel?.text = herb.englishName
+                
+            } else {
+                cell.textLabel?.text = FormulasController.sharedController.formulas[indexPath.row].pinyinName
+                cell.detailTextLabel?.text = FormulasController.sharedController.formulas[indexPath.row].englishName
+            }
+            
+        } else {
+            if singles{
+                
+                let pointsArray = self.pointsArray
+                
+                let point = pointsArray[indexPath.row]
+                
+                cell.textLabel?.text = point.pointOnMeridian
+                cell.detailTextLabel?.text = point.pinyinName
+                
+            } else {
+                cell.textLabel?.text = ChannelController.sharedController.channels[indexPath.row].name
+                cell.detailTextLabel?.text = ChannelController.sharedController.channels[indexPath.row].uses
+            }
+            
+        }
+        
+        return cell
+    }
+    
     override func viewDidAppear(animated: Bool) {
         
         pointsTableViewOutlet.reloadData()
-        //print(HerbsController.sharedController.herbs)
-        //print(PointController.sharedController.points)
     }
-    
-//    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-//        return 12
-//    }
+
     
     func setupSearchController(){
         
@@ -192,40 +262,7 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
         }
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("pointsCell", forIndexPath: indexPath)
-        
-        if herbsList {
-            if singles{
-                let herbsArray = HerbsController.sharedController.herbsByCategory
-                let herb = herbsArray[indexPath.row]
-                cell.textLabel?.text = herb.pinyinName
-                cell.detailTextLabel?.text = herb.englishName
-            
-            } else {
-                cell.textLabel?.text = FormulasController.sharedController.formulas[indexPath.row].pinyinName
-                cell.detailTextLabel?.text = FormulasController.sharedController.formulas[indexPath.row].englishName
-            }
-           
-        } else {
-            if singles{
-                
-            let pointsArray = PointController.sharedController.pointsByPointOnMeridian
 
-            let point = pointsArray[indexPath.row]
-             
-                cell.textLabel?.text = point.pointOnMeridian
-                cell.detailTextLabel?.text = point.pinyinName
-                
-            } else {
-                cell.textLabel?.text = ChannelController.sharedController.channels[indexPath.row].name
-                cell.detailTextLabel?.text = ChannelController.sharedController.channels[indexPath.row].uses
-            }
-
-        }
-        
-        return cell
-    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
@@ -361,20 +398,50 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
 
     }
     
+    func updateButtons(kind: String){
+        
+        if kind == "herbs"{
+            button1a.setTitle("wind-heat", forState: .Normal)
+            button1b.setTitle("wind-cold", forState: .Normal)
+            button1c.setTitle("action", forState: .Normal)
+            button1d.setTitle("action", forState: .Normal)
+            button2a.setTitle("action", forState: .Normal)
+            button2b.setTitle("action", forState: .Normal)
+            button2c.setTitle("action", forState: .Normal)
+            button2d.setTitle("action", forState: .Normal)
+        } else if kind == "points"{
+            button1a.setTitle("action", forState: .Normal)
+            button1b.setTitle("action", forState: .Normal)
+            button1c.setTitle("action", forState: .Normal)
+            button1d.setTitle("action", forState: .Normal)
+            button2a.setTitle("action", forState: .Normal)
+            button2b.setTitle("action", forState: .Normal)
+            button2c.setTitle("action", forState: .Normal)
+            button2d.setTitle("action", forState: .Normal)
+        } else if kind == "channels"{
+            button1a.setTitle("action", forState: .Normal)
+            button1b.setTitle("action", forState: .Normal)
+            button1c.setTitle("action", forState: .Normal)
+            button1d.setTitle("action", forState: .Normal)
+            button2a.setTitle("action", forState: .Normal)
+            button2b.setTitle("action", forState: .Normal)
+            button2c.setTitle("action", forState: .Normal)
+            button2d.setTitle("action", forState: .Normal)
+        } else if kind == "formulas"{
+            button1a.setTitle("action", forState: .Normal)
+            button1b.setTitle("action", forState: .Normal)
+            button1c.setTitle("action", forState: .Normal)
+            button1d.setTitle("action", forState: .Normal)
+            button2a.setTitle("action", forState: .Normal)
+            button2b.setTitle("action", forState: .Normal)
+            button2c.setTitle("action", forState: .Normal)
+            button2d.setTitle("action", forState: .Normal)
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
