@@ -197,7 +197,7 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
         
         if herbsList {
             if singles{
-                let herbsArray = HerbsController.sharedController.herbsByPinyin
+                let herbsArray = HerbsController.sharedController.herbsByCategory
                 let herb = herbsArray[indexPath.row]
                 cell.textLabel?.text = herb.pinyinName
                 cell.detailTextLabel?.text = herb.englishName

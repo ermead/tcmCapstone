@@ -103,6 +103,21 @@ class HerbsController: NSObject {
         return array
     
     }
+    
+    var herbsByEnglish: [Herb] {
+        
+        let array = herbs.sort { $0.englishName!.localizedCaseInsensitiveCompare($1.englishName!) == NSComparisonResult.OrderedAscending }
+        
+        return array
+        
+    }
+    
+    var herbsByCategory: [Herb] {
+        
+        let array = herbs.sort { $0.category!.localizedCaseInsensitiveCompare($1.category!) == NSComparisonResult.OrderedAscending }
+        
+        return array
+    }
 
     func addHerb(herb: Herb) {
       saveToPersistentStorage()
