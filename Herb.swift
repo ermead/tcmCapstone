@@ -32,6 +32,11 @@ class Herb: NSManagedObject {
 
     }
     
+    func completeDetails() -> String{
+        
+        return "\(pinyinName), \(englishName), \(botanicalName), \(uses), \(category), \(temp), \(meridians)"
+    }
+    
 }
 
 

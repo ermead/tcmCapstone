@@ -31,6 +31,11 @@ class Point: NSManagedObject {
 
     }
     
+    func completeDetails() -> String{
+        
+        return "\(pinyinName), \(englishName), \(uses), \(specialCategories), \(channel)"
+    }
+    
 }
 
 

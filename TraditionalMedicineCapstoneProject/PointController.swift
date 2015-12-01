@@ -84,7 +84,20 @@ class PointController: NSObject {
         let array = points
         let sorted = array.sort { $0.pointOnMeridian!.localizedCaseInsensitiveCompare($1.pointOnMeridian!) == NSComparisonResult.OrderedAscending }
         return sorted
+    }
+    
+    var pointsByPinyin: [Point] {
         
+        let array = points
+        let sorted = array.sort { $0.pinyinName!.localizedCaseInsensitiveCompare($1.pinyinName!) == NSComparisonResult.OrderedAscending }
+        return sorted
+    }
+    
+    var pointsByChannel: [Point] {
+        
+        let array = points
+        let sorted = array.sort { $0.channel!.localizedCaseInsensitiveCompare($1.channel!) == NSComparisonResult.OrderedAscending }
+        return sorted
     }
     
     func addPoint(point: Point) {

@@ -147,7 +147,7 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
         if herbsList{
             if singles{
             resultsViewController.category = "Herb"
-            resultsViewController.filteredHerbArray = HerbsController.sharedController.herbs.filter({ $0.pinyinName!.lowercaseString.containsString(searchTerm) })
+            resultsViewController.filteredHerbArray = HerbsController.sharedController.herbs.filter({ $0.completeDetails().lowercaseString.containsString(searchTerm) })
             } else {
                 resultsViewController.category = "Formula"
                 resultsViewController.filteredFormulaArray = FormulasController.sharedController.formulas.filter({ $0.pinyinName!.lowercaseString.containsString(searchTerm) })
@@ -155,7 +155,7 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
         } else {
             if singles{
             resultsViewController.category = "Point"
-            resultsViewController.filteredPointArray = PointController.sharedController.points.filter({ $0.pointOnMeridian!.lowercaseString.containsString(searchTerm) })
+            resultsViewController.filteredPointArray = PointController.sharedController.points.filter({ $0.completeDetails().lowercaseString.containsString(searchTerm) })
             } else {
             resultsViewController.category = "Channel"
             resultsViewController.filteredChannelArray = ChannelController.sharedController.channels.filter({ $0.name!.lowercaseString.containsString(searchTerm) })
