@@ -29,8 +29,9 @@ class HerbsController: NSObject {
         
         var array: [Herb] = []
         
-        array = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.ReleaseWindCold)
-        array = array + HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.ReleaseWindHeat)
+        let windCold = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.DisperseWindCold)
+        let windHeat = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.DisperseWindHeat)
+        
         
         return array
     }
