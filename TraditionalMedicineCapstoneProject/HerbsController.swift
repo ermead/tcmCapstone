@@ -70,7 +70,13 @@ class HerbsController: NSObject {
         var array9 = [Astringents, CalmShen, NourishShen]
         var array10 = [ExtinguishLiverWind]
         
-        return array0 + array1
+        let allCategories = [array0, array1, array2, array3, array4, array5, array6, array7, array8, array9, array10]
+        
+        let flattenedAllCategories = allCategories.flatMap{$0}
+        let flattenedFlattenedAllCategories = flattenedAllCategories.flatMap{$0}
+        
+        return flattenedFlattenedAllCategories
+        
     }
     
     var herbs: [Herb] {
