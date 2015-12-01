@@ -23,8 +23,6 @@ extension Point {
     @NSManaged var englishName: String?
     @NSManaged var pinyinName: String?
     @NSManaged var onChannel: NSSet?
-    @NSManaged var imageId1: String?
-    @NSManaged var imageId2: String?
     @NSManaged var images: NSSet?
 
 }
