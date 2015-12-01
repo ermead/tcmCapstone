@@ -57,108 +57,108 @@ class HerbUses: NSObject {
         case .JingJie   : self.use = jingJie
         case .QiangHuo  : self.use = qiangHuo
         case .ShengJiang: self.use = shengJiang
-        
+            
         case .BoHe      : self.use = boHe
         case .NiuBangZi : self.use = niuBangZi
         case .SangYe    : self.use = sangYe
         case .JuHua     : self.use = juHua
         case .GeGen     : self.use = geGen
         case .ChaiHu    : self.use = chaiHu
-         
-        case .ShiGao : self.use =
-        case. ZhiMu :
-        case .ZhiZi :
-        case .XiaKuCao :
-        case .ShengDiHuang
-        case    .MuDanPi
-        case    .XuanShen
-        case .HuangQin
-        case    .HuangLian
-        case    .HuangBai
-        case    .LongDanCao
-        case .JinYinHua
-         case   .LianQiao
-         case   .PuGongYing
-         case   .TuFuLing
-        case .QingHao
-        case    .DiGuPi
-        case    .BaiWei
-        case .DaHuang
-         case   .MangXiao
-        case    .HuoMaRen
-        case .FuLing
-        case    .ZeXie
-        case    .YiYiRen
-        case .DuHuo
-        case    .MuGua
-        case    .SangJiSheng
-        case    .SangZhi
-        case .ChuanBeiMu
-        case    .GuaLuo
-        case .BanXia
-         case   .JieGeng
-        case .XingRen
-         case   .PiPaYe
-         case   .ZiSuZi
-         case   .SangBaiPi
-        case .HuoPo
-        case    .CangZhu
-        case    .HuoXiang
-        case    .ShaRen
-        case .ShanZha
-        case    ShenQu
-        case    MaiYa
-        case    LaiFuZi
-        case ChenPi
-         case   XiangFu
-        case    WuYao
-        case    ChuanLianZi
-        case SanQi
-         case   PuHuang
-         case   CeBaiYe
-        case    AiYe
-        case ChuanXiong
-        case DanShen
-        case YanHuoSuo
-        case YuJin
-        case TaoRen
-        case HongHua
-        case MoYao
-        case    ChiShao
-        case FuZi
-         case   GanJiang
-         case   RouGui
-         case   HuJiao
-         case   XiaoHuiXiang
-        case RenShen
-        case    DangShen
-        case HuangQi
-        case    BaiZhu
-        case    GanCao
-        case    DaZao
-        case DangGui
-        case ShuDiHuang
-        case BaShao
-        case    SangShen
-        case YinYangHuo
-        case    HuTaoRen
-        case    XuDuan
-        case    BaJiTian
-        case MaiMenDong
-        case    TianMenDong
-        case    BaiHe
-        case    HeiZhiMa
-        case WuWeiZi
-        case    RouDouKou
-        case    WuMei
-        case    FuPenZi
-         case   ShanZhuYu
-        case LongGu
-        case    MuLi
-        case SuanZaoRen
-        case    BaiZiRen
-        case GouTeng
-        case   TianMa
+            
+        case .ShiGao : self.use = boHe
+        case .ZhiMu : self.use = boHe
+        case .ZhiZi : self.use = boHe
+        case .XiaKuCao : self.use = boHe
+        case .ShengDiHuang : self.use = boHe
+        case .MuDanPi : self.use = boHe
+        case .XuanShen : self.use = boHe
+        case .HuangQin : self.use = boHe
+        case .HuangLian : self.use = boHe
+        case .HuangBai : self.use = boHe
+        case .LongDanCao : self.use = boHe
+        case .JinYinHua : self.use = boHe
+        case .LianQiao : self.use = boHe
+        case .PuGongYing : self.use = boHe
+        case .TuFuLing : self.use = boHe
+        case .QingHao : self.use = boHe
+        case .DiGuPi : self.use = boHe
+        case .BaiWei : self.use = boHe
+        case .DaHuang : self.use = boHe
+        case .MangXiao : self.use = boHe
+        case .HuoMaRen : self.use = boHe
+        case .FuLing : self.use = boHe
+        case .ZeXie : self.use = boHe
+        case .YiYiRen : self.use = boHe
+        case .DuHuo : self.use = boHe
+        case .MuGua : self.use = boHe
+        case .SangJiSheng : self.use = boHe
+        case .SangZhi : self.use = boHe
+        case .ChuanBeiMu : self.use = boHe
+        case .GuaLuo : self.use = boHe
+        case .BanXia : self.use = boHe
+        case .JieGeng : self.use = boHe
+        case .XingRen : self.use = boHe
+        case .PiPaYe : self.use = boHe
+        case .ZiSuZi : self.use = boHe
+        case .SangBaiPi : self.use = boHe
+        case .HuoPo : self.use = boHe
+        case .CangZhu : self.use = boHe
+        case .HuoXiang : self.use = boHe
+        case .ShaRen : self.use = boHe
+        case .ShanZha : self.use = boHe
+        case .ShenQu : self.use = boHe
+        case .MaiYa : self.use = boHe
+        case .LaiFuZi : self.use = boHe
+        case .ChenPi : self.use = boHe
+        case .XiangFu : self.use = boHe
+        case .WuYao : self.use = boHe
+        case .ChuanLianZi : self.use = boHe
+        case .SanQi : self.use = boHe
+        case .PuHuang : self.use = boHe
+        case .CeBaiYe : self.use = boHe
+        case .AiYe : self.use = boHe
+        case .ChuanXiong : self.use = boHe
+        case .DanShen : self.use = boHe
+        case .YanHuoSuo : self.use = boHe
+        case .YuJin : self.use = boHe
+        case .TaoRen : self.use = boHe
+        case .HongHua : self.use = boHe
+        case .MoYao : self.use = boHe
+        case .ChiShao : self.use = boHe
+        case .FuZi : self.use = boHe
+        case .GanJiang : self.use = boHe
+        case .RouGui : self.use = boHe
+        case .HuJiao : self.use = boHe
+        case .XiaoHuiXiang : self.use = boHe
+        case .RenShen : self.use = boHe
+        case .DangShen : self.use = boHe
+        case .HuangQi : self.use = boHe
+        case .BaiZhu : self.use = boHe
+        case .GanCao : self.use = boHe
+        case .DaZao : self.use = boHe
+        case .DangGui : self.use = boHe
+        case .ShuDiHuang : self.use = boHe
+        case .BaiShao : self.use = boHe
+        case .SangShen : self.use = boHe
+        case .YinYangHuo : self.use = boHe
+        case .HuTaoRen : self.use = boHe
+        case .XuDuan : self.use = boHe
+        case .BaJiTian : self.use = boHe
+        case .MaiMenDong : self.use = boHe
+        case .TianMenDong : self.use = boHe
+        case .BaiHe : self.use = boHe
+        case .HeiZhiMa : self.use = boHe
+        case .WuWeiZi : self.use = boHe
+        case .RouDouKou : self.use = boHe
+        case .WuMei : self.use = boHe
+        case .FuPenZi : self.use = boHe
+        case .ShanZhuYu : self.use = boHe
+        case .LongGu : self.use = boHe
+        case .MuLi : self.use = boHe
+        case .SuanZaoRen : self.use = boHe
+        case .BaiZiRen : self.use = boHe
+        case .GouTeng : self.use = boHe
+        case .TianMa : self.use = boHe
 
             
             
