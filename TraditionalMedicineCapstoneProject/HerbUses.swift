@@ -19,6 +19,7 @@ class HerbUses: NSObject {
     enum Herb {
         case GuiZhi, ZiSuYe, JingJie, QiangHuo, ShengJiang, BaiShao, RenShen,BaiZhu
         case BoHe, NiuBangZi, SangYe, JuHua, GeGen, ChaiHu
+        case ShiGao, ZhiMu, ZhiZi, XiaKuCao, ShengDiHuang, MuDanPi, XuanShen, HuangQin, HuangLian, HuangBai, LongDanCao, JinYinHua, LianQiao, PuGongYing, TuFuLing, QingHao, DiGuPi, BaiWei, DaHuang, MangXiao, HuoMaRen, FuLing, ZeXie, YiYiRen, DuHuo, MuGua, SangJiSheng, SangZhi,ChuanBeiMu, GuaLuo,BanXia, JieGeng,XingRen, PiPaYe, ZiSuZi, SangBaiPi, HuoPo, CangZhu, HuoXiang, ShaRen,ShanZha, ShenQu, MaiYa, LaiFuZi, ChenPi, XiangFu, WuYao, ChuanLianZi,SanQi, PuHuang, CeBaiYe, AiYe,ChuanXiong, DanShen, YanHuoSuo, YuJin, TaoRen, HongHua, MoYao, ChiShao, FuZi, GanJiang, RouGui, HuJiao, XiaoHuiXiang, RenShen, DangShen, HuangQi, BaiZhu, GanCao, DaZao, DangGui, ShuDiHuang, BaiShao, SangShen, YinYangHuo, HuTaoRen, xuDuan, baJiTian,maiMenDong, tianMenDong, baiHe, heiZhiMa, wuWeiZi, rouDouKou, wuMei, fuPenZi, shanZhuYu,longGu, muLi, suanZaoRen, baiZiRen, gouTeng, tianMa
     }
     
     func getHerbUse(herb: HerbUses.Herb) -> String {
