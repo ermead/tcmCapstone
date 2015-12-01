@@ -15,15 +15,42 @@ class HerbSets {
     
     let moc = Stack.sharedStack.managedObjectContext
     
-    var HerbSet = HerbSetType.ReleaseWindCold
+    var HerbSet = HerbSetType.DisperseWindCold
     var herbset: [Herb] = []
     
     var thisHerbSetType: HerbSetType?
     
     enum HerbSetType {
         case AllHerbs
-        case ReleaseWindCold
-        case ReleaseWindHeat
+        case DisperseWindCold
+        case DisperseWindHeat
+        case PurgeHeat
+        case ClearBloodHeat
+        case ClearDampHeat
+        case ClearToxicHeat
+        case ClearDeficiencyHeat
+        case Laxatives
+        case DrainDamp
+        case DispelWindDamp
+        case DissolveHotPhlegm
+        case DissolveColdPhlegm
+        case StopCough
+        case AromaticsDispelDamp
+        case Digestives
+        case RegulateQi
+        case StopBleeding
+        case MoveBlood
+        case WarmInterior
+        case TonifyQi
+        case TonifyBlood
+        case TonifyYang
+        case TonifyYin
+        case Astringents
+        case CalmShen
+        case NourishShen
+        case ExtinguishLiverWind
+        case ExternalApplication
+        
         
     }
     
@@ -33,9 +60,37 @@ class HerbSets {
         print("this herb set I am trying to load is \(HerbSet)")
         switch thisSetType {
             
-        case .ReleaseWindCold: return windColdHerbs()
+        case .DisperseWindCold: return windColdHerbs()
             
-        case .ReleaseWindHeat: return windHeatHerbs()
+        case .DisperseWindHeat: return windHeatHerbs()
+            
+        case .PurgeHeat:        return purgeHeatHerbs()
+        case .ClearBloodHeat:   return clearBloodHeatHerbs()
+        case .ClearDampHeat:    return clearDampHeatHerbs()
+        case .ClearToxicHeat:   return clearToxicHeatHerbs()
+        case .ClearDeficiencyHeat: return clearDeficiencyHeatHerbs()
+        case .Laxatives:        return laxativeHerbs()
+        case .DrainDamp:        return drainDampHerbs()
+        case .DispelWindDamp:   return dispelWindDampHerbs()
+        case .DissolveHotPhlegm: return dissolveHotPhlegmHerbs()
+        case .DissolveColdPhlegm: return dissolveColdPhlegmHerbs()
+        case .StopCough:        return stopCoughHerbs()
+        case .AromaticsDispelDamp: return aromaticDispelDampHerbs()
+        case .Digestives:       return digestiveHerbs()
+        case .RegulateQi:       return regulateQiHerbs()
+        case .StopBleeding:     return stopBleedingHerbs()
+        case .MoveBlood:        return bloodMovingHerbs()
+        case .WarmInterior:     return interiorWarmingHerbs()
+        case .TonifyQi:         return qiTonicHerbs()
+        case .TonifyBlood:      return bloodTonicHerbs()
+        case .TonifyYang:       return yangTonicHerbs()
+        case .TonifyYin:        return yinTonicHerbs()
+        case .Astringents:      return astringentHerbs()
+        case .CalmShen:         return shenCalmingHerbs()
+        case .NourishShen:      return shenNourishingHerbs()
+        case .ExtinguishLiverWind: return liverWindExtinguishingHerbs()
+        case .ExternalApplication: return externalApplicationHerbs()
+
             
         default: return []
             
