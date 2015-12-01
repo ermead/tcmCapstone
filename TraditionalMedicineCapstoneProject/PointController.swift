@@ -14,16 +14,58 @@ class PointController: NSObject {
     private let PointKey = "points"
     
     static let sharedController = PointController()
+//    
+//    var defaultPoints: [Point] {
+//        
+//        let ST36 = Point(pinyinName: "Zu San Li", englishName: "Leg Three Miles", pointOnMeridian: "ST-36", specialCategories: "He Sea", channel: "Foot Yang Ming", locationDescription: "on the Leg", uses: "channel regulation")
+//        let HT7 = Point(pinyinName: "Shen Men", englishName: "Spirit Gate", pointOnMeridian: "HT-7", specialCategories: "Yuan Source", channel: "Arm Shao Yin",locationDescription: "", uses: "channel regulation")
+//        let LR3 = Point(pinyinName: "Tai Chong", englishName: "Great Rushing", pointOnMeridian: "LR-3", specialCategories: "Yuan Source", channel:"Leg Jue Yin", locationDescription: "", uses: "channel regulation")
+//        let LI4 = Point(pinyinName: "Hegu", englishName: "Adjoining Valley", pointOnMeridian: "LI-4", specialCategories: "Yuan Source", channel: "Arm Yang Ming", locationDescription: "", uses: "channel regulation")
+//    
+//    return [ST36, HT7, LR3, LI4]
+//    
+//    }
     
     var defaultPoints: [Point] {
         
-        let ST36 = Point(pinyinName: "Zu San Li", englishName: "Leg Three Miles", pointOnMeridian: "ST-36", specialCategories: "He Sea", channel: "Foot Yang Ming", locationDescription: "on the Leg", uses: "channel regulation")
-        let HT7 = Point(pinyinName: "Shen Men", englishName: "Spirit Gate", pointOnMeridian: "HT-7", specialCategories: "Yuan Source", channel: "Arm Shao Yin",locationDescription: "", uses: "channel regulation")
-        let LR3 = Point(pinyinName: "Tai Chong", englishName: "Great Rushing", pointOnMeridian: "LR-3", specialCategories: "Yuan Source", channel:"Leg Jue Yin", locationDescription: "", uses: "channel regulation")
-        let LI4 = Point(pinyinName: "Hegu", englishName: "Adjoining Valley", pointOnMeridian: "LI-4", specialCategories: "Yuan Source", channel: "Arm Yang Ming", locationDescription: "", uses: "channel regulation")
-    
-    return [ST36, HT7, LR3, LI4]
-    
+        
+        var array: [Point] = []
+        
+        let Lung = PointSets.sharedController.getPointSet(PointSets.PointSetType.Lung)
+        let LargeIntestine = PointSets.sharedController.getPointSet(PointSets.PointSetType.LargeIntestine)
+        let Stomach = PointSets.sharedController.getPointSet(PointSets.PointSetType.Stomach)
+        let Spleen = PointSets.sharedController.getPointSet(PointSets.PointSetType.Spleen)
+        let Heart = PointSets.sharedController.getPointSet(PointSets.PointSetType.Heart)
+        let SmallIntestine = PointSets.sharedController.getPointSet(PointSets.PointSetType.SmallIntestine)
+        let Bladder = PointSets.sharedController.getPointSet(PointSets.PointSetType.Bladder)
+        let Kidney = PointSets.sharedController.getPointSet(PointSets.PointSetType.Kidney)
+        let Pericardium = PointSets.sharedController.getPointSet(PointSets.PointSetType.Pericardium)
+        let SanJiao = PointSets.sharedController.getPointSet(PointSets.PointSetType.SanJiao)
+        let GallBladder = PointSets.sharedController.getPointSet(PointSets.PointSetType.GallBladder)
+        let Liver = PointSets.sharedController.getPointSet(PointSets.PointSetType.Liver)
+        let Ren = PointSets.sharedController.getPointSet(PointSets.PointSetType.Ren)
+        let Du = PointSets.sharedController.getPointSet(PointSets.PointSetType.Du)
+   
+        let array0 = [windCold, windHeat]
+        let array1 = [PurgeHeat, ClearBloodHeat, ClearDampHeat, ClearToxicHeat, ClearDeficiencyHeat]
+        let array2 = [Laxatives,  DrainDamp]
+        let array3 = [DispelWindDamp, AromaticsDispelDamp]
+        let array4 = [DissolveHotPhlegm, DissolveColdPhlegm, StopCough]
+        let array5 = [Digestives, RegulateQi]
+        let array6 = [StopBleeding, MoveBlood]
+        let array7 = [WarmInterior]
+        let array8 = [TonifyQi, TonifyBlood, TonifyYin, TonifyYang]
+        let array9 = [Astringents, CalmShen, NourishShen]
+        let array10 = [ExtinguishLiverWind]
+        
+        let allCategories = [array0, array1, array2, array3, array4, array5, array6, array7, array8, array9, array10]
+        
+        let flattenedAllCategories = allCategories.flatMap{$0}
+        let flattenedFlattenedAllCategories = flattenedAllCategories.flatMap{$0}
+        
+        array = flattenedFlattenedAllCategories
+        
+        return array
     }
     
     var points: [Point] {
