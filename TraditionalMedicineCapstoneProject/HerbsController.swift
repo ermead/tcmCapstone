@@ -86,7 +86,11 @@ class HerbsController: NSObject {
         let request = NSFetchRequest(entityName: "Herb")
         
         do {
-            return try Stack.sharedStack.managedObjectContext.executeFetchRequest(request) as! [Herb]
+            let herbsArray = try Stack.sharedStack.managedObjectContext.executeFetchRequest(request) as! [Herb]
+            
+            let sorted = herbsArray.sort { $0.pinyinName!.localizedCaseInsensitiveCompare($1.pinyinName!) == NSComparisonResult.OrderedAscending }
+           
+            return sorted
             
         } catch {
             return []

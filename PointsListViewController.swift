@@ -197,8 +197,11 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
         
         if herbsList {
             if singles{
-            cell.textLabel?.text = HerbsController.sharedController.herbs[indexPath.row].pinyinName
-            cell.detailTextLabel?.text = HerbsController.sharedController.herbs[indexPath.row].englishName
+                let herbsArray = HerbsController.sharedController.herbs
+                let herb = herbsArray[indexPath.row]
+                
+                cell.textLabel?.text = herb.pinyinName
+                cell.detailTextLabel?.text = herb.englishName
             
             } else {
                 cell.textLabel?.text = FormulasController.sharedController.formulas[indexPath.row].pinyinName
@@ -209,14 +212,12 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
             if singles{
                 
             let pointsArray = PointController.sharedController.points
-            let sorted = pointsArray.sort { $0.pointOnMeridian!.localizedCaseInsensitiveCompare($1.pointOnMeridian!) == NSComparisonResult.OrderedAscending }
-            let point = sorted[indexPath.row]
+
+            let point = pointsArray[indexPath.row]
              
                 cell.textLabel?.text = point.pointOnMeridian
                 cell.detailTextLabel?.text = point.pinyinName
                 
-//            cell.textLabel?.text = PointController.sharedController.points[indexPath.row].pointOnMeridian
-//            cell.detailTextLabel?.text = PointController.sharedController.points[indexPath.row].pinyinName
             } else {
                 cell.textLabel?.text = ChannelController.sharedController.channels[indexPath.row].name
                 cell.detailTextLabel?.text = ChannelController.sharedController.channels[indexPath.row].uses

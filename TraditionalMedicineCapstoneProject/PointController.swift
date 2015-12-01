@@ -70,7 +70,10 @@ class PointController: NSObject {
         let request = NSFetchRequest(entityName: "Point")
         
         do {
-            return try Stack.sharedStack.managedObjectContext.executeFetchRequest(request) as! [Point]
+            let pointsArray = try Stack.sharedStack.managedObjectContext.executeFetchRequest(request) as! [Point]
+            let sorted = pointsArray.sort { $0.pointOnMeridian!.localizedCaseInsensitiveCompare($1.pointOnMeridian!) == NSComparisonResult.OrderedAscending }
+
+            return sorted
             
         } catch {
             return []
