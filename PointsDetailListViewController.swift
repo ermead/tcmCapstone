@@ -586,14 +586,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                 textField7.text = "Indications & Uses"
                 indicationsAndUses.text = point.uses
                 
-                if point.imageId1 != nil {
-                ImageController.imageForImageId(point.imageId1!, completion: { (image) -> Void in
-                    self.leftImage.image = image
-                })}
-                if point.imageId2 != nil {
-                ImageController.imageForImageId(point.imageId2!, completion: { (image) -> Void in
-                    self.rightImage.image = image
-                })}
+                
                 
         } else {
                 var channel = ChannelController.sharedController.channels[index!]
@@ -733,7 +726,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
 
         
         
-        let point = Point(pinyinName: pinyinName, englishName: englishName, pointOnMeridian: pointOnMeridan, specialCategories: specialCategories, locationDescription: locationDescription, channel: channel, uses: uses, imageName: imageName, imageId1: placeholderLeftImageId, imageId2: placeholderRightImageId, images: thisSetOfImageObjects, context: Stack.sharedStack.managedObjectContext)
+        let point = Point(pinyinName: pinyinName, englishName: englishName, pointOnMeridian: pointOnMeridan, specialCategories: specialCategories, locationDescription: locationDescription, channel: channel, uses: uses, imageName: imageName, images: thisSetOfImageObjects, context: Stack.sharedStack.managedObjectContext)
         
         PointController.sharedController.addPoint(point)
         print("I tried to add a point")

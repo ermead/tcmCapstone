@@ -46,19 +46,13 @@ class PointController: NSObject {
         let Ren = PointSets.sharedController.getPointSet(PointSets.PointSetType.Ren)
         let Du = PointSets.sharedController.getPointSet(PointSets.PointSetType.Du)
    
-        let array0 = [windCold, windHeat]
-        let array1 = [PurgeHeat, ClearBloodHeat, ClearDampHeat, ClearToxicHeat, ClearDeficiencyHeat]
-        let array2 = [Laxatives,  DrainDamp]
-        let array3 = [DispelWindDamp, AromaticsDispelDamp]
-        let array4 = [DissolveHotPhlegm, DissolveColdPhlegm, StopCough]
-        let array5 = [Digestives, RegulateQi]
-        let array6 = [StopBleeding, MoveBlood]
-        let array7 = [WarmInterior]
-        let array8 = [TonifyQi, TonifyBlood, TonifyYin, TonifyYang]
-        let array9 = [Astringents, CalmShen, NourishShen]
-        let array10 = [ExtinguishLiverWind]
+        let array1 = [Lung, LargeIntestine, Stomach, Spleen]
+        let array2 = [Heart, SmallIntestine, Bladder, Kidney]
+        let array3 = [Pericardium, SanJiao, GallBladder, Liver]
+        let array4 = [Ren, Du]
+      
         
-        let allCategories = [array0, array1, array2, array3, array4, array5, array6, array7, array8, array9, array10]
+        let allCategories = [array1, array2, array3, array4]
         
         let flattenedAllCategories = allCategories.flatMap{$0}
         let flattenedFlattenedAllCategories = flattenedAllCategories.flatMap{$0}
