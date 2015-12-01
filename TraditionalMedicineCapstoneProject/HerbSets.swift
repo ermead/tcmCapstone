@@ -75,7 +75,7 @@ class HerbSets {
         case .DissolveHotPhlegm: return dissolveHotPhlegmHerbs()
         case .DissolveColdPhlegm: return dissolveColdPhlegmHerbs()
         case .StopCough:        return stopCoughHerbs()
-        case .AromaticsDispelDamp: return aromaticDispelDampHerbs()
+        case .AromaticsDispelDamp: return aromaticDampResolvingHerbs()
         case .Digestives:       return digestiveHerbs()
         case .RegulateQi:       return regulateQiHerbs()
         case .StopBleeding:     return stopBleedingHerbs()
@@ -89,7 +89,7 @@ class HerbSets {
         case .CalmShen:         return shenCalmingHerbs()
         case .NourishShen:      return shenNourishingHerbs()
         case .ExtinguishLiverWind: return liverWindExtinguishingHerbs()
-        case .ExternalApplication: return externalApplicationHerbs()
+        //case .ExternalApplication: return externalApplicationHerbs()
 
             
         default: return []
