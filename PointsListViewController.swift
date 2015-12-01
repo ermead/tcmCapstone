@@ -403,10 +403,10 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
         if kind == "herbs"{
             button1a.setTitle("wind-heat", forState: .Normal)
             button1b.setTitle("wind-cold", forState: .Normal)
-            button1c.setTitle("action", forState: .Normal)
-            button1d.setTitle("action", forState: .Normal)
-            button2a.setTitle("action", forState: .Normal)
-            button2b.setTitle("action", forState: .Normal)
+            button1c.setTitle("clear heat", forState: .Normal)
+            button1d.setTitle("tonics", forState: .Normal)
+            button2a.setTitle("damp resolving", forState: .Normal)
+            button2b.setTitle("drain downward", forState: .Normal)
             button2c.setTitle("action", forState: .Normal)
             button2d.setTitle("action", forState: .Normal)
         } else if kind == "points"{

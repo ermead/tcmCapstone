@@ -22,6 +22,9 @@ extension Point {
     @NSManaged var pointOnMeridian: String?
     @NSManaged var englishName: String?
     @NSManaged var pinyinName: String?
+    @NSManaged var channelAbrev: String?
+    @NSManaged var number: String?
+    @NSManaged var chineseCharacter: String?
     @NSManaged var onChannel: NSSet?
     @NSManaged var images: NSSet?
 

@@ -48,9 +48,12 @@
     </entity>
     <entity name="Point" representedClassName="Point" syncable="YES">
         <attribute name="channel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="channelAbrev" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="chineseCharacter" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="englishName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="imageName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="locationDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="pinyinName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="pointOnMeridian" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="specialCategories" optional="YES" attributeType="String" syncable="YES"/>
@@ -64,6 +67,6 @@
         <element name="Formula" positionX="-153" positionY="72" width="128" height="165"/>
         <element name="Herb" positionX="-63" positionY="-18" width="128" height="210"/>
         <element name="Image" positionX="-162" positionY="117" width="128" height="135"/>
-        <element name="Point" positionX="-281" positionY="0" width="128" height="195"/>
+        <element name="Point" positionX="-281" positionY="0" width="128" height="240"/>
     </elements>
 </model>
