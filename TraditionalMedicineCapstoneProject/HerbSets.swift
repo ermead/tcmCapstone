@@ -82,18 +82,18 @@ class HerbSets {
     func purgeHeatHerbs() -> [Herb]{
         
         let shiGao = Herb(pinyinName: "Shi Gao", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ShiGao), majorFormulas: "", images: [], context: self.moc)
-        let zhiMu = Herb(pinyinName: "Zhi Mu", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ChaiHu), majorFormulas: "", images: [], context: self.moc)
-        let zhiZi = Herb(pinyinName: "Zhi Zi", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ChaiHu), majorFormulas: "", images: [], context: self.moc)
-        let xiaKuCao = Herb(pinyinName: "Xia Ku Cao", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ChaiHu), majorFormulas: "", images: [], context: self.moc)
+        let zhiMu = Herb(pinyinName: "Zhi Mu", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ZhiMu), majorFormulas: "", images: [], context: self.moc)
+        let zhiZi = Herb(pinyinName: "Zhi Zi", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ZhiZi), majorFormulas: "", images: [], context: self.moc)
+        let xiaKuCao = Herb(pinyinName: "Xia Ku Cao", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.XiaKuCao), majorFormulas: "", images: [], context: self.moc)
         
         return [shiGao, zhiMu, zhiZi, xiaKuCao]
     }
     
     func clearBloodHeatHerbs() -> [Herb]{
         
-        let shengDiHuang = Herb(pinyinName: "Sheng Di Huang", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ChaiHu), majorFormulas: "", images: [], context: self.moc)
-        let muDanPi = Herb(pinyinName: "Mu Dan Pi", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ChaiHu), majorFormulas: "", images: [], context: self.moc)
-        let xuanShen = Herb(pinyinName: "Xuan Shen", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ChaiHu), majorFormulas: "", images: [], context: self.moc)
+        let shengDiHuang = Herb(pinyinName: "Sheng Di Huang", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ShengDiHuang), majorFormulas: "", images: [], context: self.moc)
+        let muDanPi = Herb(pinyinName: "Mu Dan Pi", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.MuDanPi), majorFormulas: "", images: [], context: self.moc)
+        let xuanShen = Herb(pinyinName: "Xuan Shen", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.XuanShen ), majorFormulas: "", images: [], context: self.moc)
         
         return [shengDiHuang, muDanPi, xuanShen]
         
@@ -101,10 +101,10 @@ class HerbSets {
     
     func clearDampHeatHerbs() -> [Herb]{
         
-        let huangQin = Herb(pinyinName: "Huang Qin", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ChaiHu), majorFormulas: "", images: [], context: self.moc)
-        let huangLian = Herb(pinyinName: "Huang Lian", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ChaiHu), majorFormulas: "", images: [], context: self.moc)
-        let huangBai = Herb(pinyinName: "Huang Bai", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ChaiHu), majorFormulas: "", images: [], context: self.moc)
-        let longDanCao = Herb(pinyinName: "Long Dan Cao", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ChaiHu), majorFormulas: "", images: [], context: self.moc)
+        let huangQin = Herb(pinyinName: "Huang Qin", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.HuangQin), majorFormulas: "", images: [], context: self.moc)
+        let huangLian = Herb(pinyinName: "Huang Lian", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.HuangLian), majorFormulas: "", images: [], context: self.moc)
+        let huangBai = Herb(pinyinName: "Huang Bai", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.HuangBai), majorFormulas: "", images: [], context: self.moc)
+        let longDanCao = Herb(pinyinName: "Long Dan Cao", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.LongDanCao), majorFormulas: "", images: [], context: self.moc)
         
         return [huangQin, huangLian, huangBai, longDanCao]
         
@@ -112,10 +112,10 @@ class HerbSets {
     
     func clearToxicHeatHerbs() -> [Herb]{
         
-        let jinYinHua = Herb(pinyinName: "Jin Yin Hua", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ChaiHu), majorFormulas: "", images: [], context: self.moc)
-        let lianQiao = Herb(pinyinName: "Lian Qiao", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ChaiHu), majorFormulas: "", images: [], context: self.moc)
-        let puGongYing = Herb(pinyinName: "Pu Gong Ying", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ChaiHu), majorFormulas: "", images: [], context: self.moc)
-        let tuFuLing = Herb(pinyinName: "Tu Fu Ling", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ChaiHu), majorFormulas: "", images: [], context: self.moc)
+        let jinYinHua = Herb(pinyinName: "Jin Yin Hua", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.JinYinHua), majorFormulas: "", images: [], context: self.moc)
+        let lianQiao = Herb(pinyinName: "Lian Qiao", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.LianQiao), majorFormulas: "", images: [], context: self.moc)
+        let puGongYing = Herb(pinyinName: "Pu Gong Ying", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.PuGongYing), majorFormulas: "", images: [], context: self.moc)
+        let tuFuLing = Herb(pinyinName: "Tu Fu Ling", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.TuFuLing), majorFormulas: "", images: [], context: self.moc)
         
         return [jinYinHua, lianQiao, puGongYing, tuFuLing]
         
@@ -123,9 +123,9 @@ class HerbSets {
     
     func clearDeficiencyHeatHerbs() -> [Herb]{
         
-        let qingHao = Herb(pinyinName: "Qinag Hao", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ChaiHu), majorFormulas: "", images: [], context: self.moc)
-        let diGuPi = Herb(pinyinName: "Di Gu Pi", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ChaiHu), majorFormulas: "", images: [], context: self.moc)
-        let baiWei = Herb(pinyinName: "Bai Wei", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ChaiHu), majorFormulas: "", images: [], context: self.moc)
+        let qingHao = Herb(pinyinName: "Qinag Hao", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.QingHao), majorFormulas: "", images: [], context: self.moc)
+        let diGuPi = Herb(pinyinName: "Di Gu Pi", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.DiGuPi), majorFormulas: "", images: [], context: self.moc)
+        let baiWei = Herb(pinyinName: "Bai Wei", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.BaiWei), majorFormulas: "", images: [], context: self.moc)
         
         return [qingHao, diGuPi, baiWei]
     }
@@ -160,26 +160,26 @@ class HerbSets {
     
     func dissolveHotPhlegmHerbs() -> [Herb]{
         
-        let chuanBeiMu = Herb(pinyinName: "Chuan Bei Mu", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ChaiHu), majorFormulas: "", images: [], context: self.moc)
-        let guaLuo = Herb(pinyinName: "Gua Luo", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ChaiHu), majorFormulas: "", images: [], context: self.moc)
+        let chuanBeiMu = Herb(pinyinName: "Chuan Bei Mu", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ChuanBeiMu), majorFormulas: "", images: [], context: self.moc)
+        let guaLuo = Herb(pinyinName: "Gua Luo", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.GuaLuo), majorFormulas: "", images: [], context: self.moc)
         
         return [chuanBeiMu, guaLuo]
     }
     
     func dissolveColdPhlegmHerbs() -> [Herb]{
         
-        let banXia = Herb(pinyinName: "Ban Xia", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ChaiHu), majorFormulas: "", images: [], context: self.moc)
-        let jieGeng = Herb(pinyinName: "Jie Geng", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ChaiHu), majorFormulas: "", images: [], context: self.moc)
+        let banXia = Herb(pinyinName: "Ban Xia", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.BanXia), majorFormulas: "", images: [], context: self.moc)
+        let jieGeng = Herb(pinyinName: "Jie Geng", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.JieGeng), majorFormulas: "", images: [], context: self.moc)
         
         return [banXia, jieGeng]
     }
     
     func stopCoughHerbs() -> [Herb]{
         
-        let xingRen = Herb(pinyinName: "Xing Ren", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ChaiHu), majorFormulas: "", images: [], context: self.moc)
-        let piPaYe = Herb(pinyinName: "Pi Pa Ye", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ChaiHu), majorFormulas: "", images: [], context: self.moc)
-        let ziSuZi = Herb(pinyinName: "Zi Su Zi", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ChaiHu), majorFormulas: "", images: [], context: self.moc)
-        let sangBaiPi = Herb(pinyinName: "Sang Bai Pi", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ChaiHu), majorFormulas: "", images: [], context: self.moc)
+        let xingRen = Herb(pinyinName: "Xing Ren", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.XingRen), majorFormulas: "", images: [], context: self.moc)
+        let piPaYe = Herb(pinyinName: "Pi Pa Ye", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.PiPaYe), majorFormulas: "", images: [], context: self.moc)
+        let ziSuZi = Herb(pinyinName: "Zi Su Zi", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ZiSuZi), majorFormulas: "", images: [], context: self.moc)
+        let sangBaiPi = Herb(pinyinName: "Sang Bai Pi", botanicalName: "Bupleuri Radix", englishName: "Hare's Ear Root", category: "Purge Heat", temp: "cool", meridians: "GB, LR, SJ, PC" , uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.SangBaiPi), majorFormulas: "", images: [], context: self.moc)
         
         return [xingRen, piPaYe, ziSuZi, sangBaiPi]
     }
