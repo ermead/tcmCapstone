@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D74D057B1C0D4C0F005644A1 /* PointSets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74D057A1C0D4C0F005644A1 /* PointSets.swift */; };
 		D74D45B11BFCFEDD0098FD3D /* Entry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74D45AF1BFCFEDD0098FD3D /* Entry+CoreDataProperties.swift */; };
 		D74D45B21BFCFEDD0098FD3D /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74D45B01BFCFEDD0098FD3D /* Entry.swift */; };
 		D74D45B41BFD019A0098FD3D /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74D45B31BFD019A0098FD3D /* EntryController.swift */; };
@@ -50,6 +51,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D74D057A1C0D4C0F005644A1 /* PointSets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointSets.swift; sourceTree = "<group>"; };
 		D74D45AF1BFCFEDD0098FD3D /* Entry+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Entry+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D74D45B01BFCFEDD0098FD3D /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		D74D45B31BFD019A0098FD3D /* EntryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 		D7D9EBBF1BDDAC4300C920AC /* Points */ = {
 			isa = PBXGroup;
 			children = (
+				D74D057A1C0D4C0F005644A1 /* PointSets.swift */,
 				D7D9EBB91BDDABF400C920AC /* PointController.swift */,
 				D76D36551BF580CC0003AC43 /* ChannelController.swift */,
 			);
@@ -332,6 +335,7 @@
 				D782A5AC1BE9535C00E51BAC /* Point.swift in Sources */,
 				D7D9EBBE1BDDAC3600C920AC /* PointsDetailListViewController.swift in Sources */,
 				D7D9EBB11BDD8A6500C920AC /* HerbsController.swift in Sources */,
+				D74D057B1C0D4C0F005644A1 /* PointSets.swift in Sources */,
 				D7C264A01BFA2C660009B2A7 /* OtherResourcesDetailViewController.swift in Sources */,
 				D7D9EBBA1BDDABF400C920AC /* PointController.swift in Sources */,
 			);

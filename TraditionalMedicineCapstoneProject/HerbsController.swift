@@ -58,24 +58,26 @@ class HerbsController: NSObject {
         let ExtinguishLiverWind = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.ExtinguishLiverWind)
         
         
-        var array0 = [windCold, windHeat]
-        var array1 = [PurgeHeat, ClearBloodHeat, ClearDampHeat, ClearToxicHeat, ClearDeficiencyHeat]
-        var array2 = [Laxatives,  DrainDamp]
-        var array3 = [DispelWindDamp, AromaticsDispelDamp]
-        var array4 = [DissolveHotPhlegm, DissolveColdPhlegm, StopCough]
-        var array5 = [Digestives, RegulateQi]
-        var array6 = [StopBleeding, MoveBlood]
-        var array7 = [WarmInterior]
-        var array8 = [TonifyQi, TonifyBlood, TonifyYin, TonifyYang]
-        var array9 = [Astringents, CalmShen, NourishShen]
-        var array10 = [ExtinguishLiverWind]
+        let array0 = [windCold, windHeat]
+        let array1 = [PurgeHeat, ClearBloodHeat, ClearDampHeat, ClearToxicHeat, ClearDeficiencyHeat]
+        let array2 = [Laxatives,  DrainDamp]
+        let array3 = [DispelWindDamp, AromaticsDispelDamp]
+        let array4 = [DissolveHotPhlegm, DissolveColdPhlegm, StopCough]
+        let array5 = [Digestives, RegulateQi]
+        let array6 = [StopBleeding, MoveBlood]
+        let array7 = [WarmInterior]
+        let array8 = [TonifyQi, TonifyBlood, TonifyYin, TonifyYang]
+        let array9 = [Astringents, CalmShen, NourishShen]
+        let array10 = [ExtinguishLiverWind]
         
         let allCategories = [array0, array1, array2, array3, array4, array5, array6, array7, array8, array9, array10]
         
         let flattenedAllCategories = allCategories.flatMap{$0}
         let flattenedFlattenedAllCategories = flattenedAllCategories.flatMap{$0}
         
-        return flattenedFlattenedAllCategories
+        array = flattenedFlattenedAllCategories
+        
+        return array
         
     }
     
