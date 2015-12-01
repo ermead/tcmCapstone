@@ -197,9 +197,8 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
         
         if herbsList {
             if singles{
-                let herbsArray = HerbsController.sharedController.herbs
+                let herbsArray = HerbsController.sharedController.herbsByPinyin
                 let herb = herbsArray[indexPath.row]
-                
                 cell.textLabel?.text = herb.pinyinName
                 cell.detailTextLabel?.text = herb.englishName
             
@@ -211,7 +210,7 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
         } else {
             if singles{
                 
-            let pointsArray = PointController.sharedController.points
+            let pointsArray = PointController.sharedController.pointsByPointOnMeridian
 
             let point = pointsArray[indexPath.row]
              

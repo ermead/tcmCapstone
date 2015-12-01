@@ -368,7 +368,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
     func populatePointInfo() {
         if herbsList{
             if singles{
-            var detailHerb = HerbsController.sharedController.herbs[index!]
+            var detailHerb = HerbsController.sharedController.herbsByPinyin[index!]
                 
                 if self.searchedFor == true {
                    
@@ -542,7 +542,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         } else {
         
             if singles{
-                var point = PointController.sharedController.points[index!]
+                var point = PointController.sharedController.pointsByPointOnMeridian[index!]
                 
                 if self.searchedFor == true {
                     

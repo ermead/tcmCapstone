@@ -87,14 +87,21 @@ class HerbsController: NSObject {
         
         do {
             let herbsArray = try Stack.sharedStack.managedObjectContext.executeFetchRequest(request) as! [Herb]
-            
-            let sorted = herbsArray.sort { $0.pinyinName!.localizedCaseInsensitiveCompare($1.pinyinName!) == NSComparisonResult.OrderedAscending }
+            //let sorted = herbsArray.sort { $0.pinyinName!.localizedCaseInsensitiveCompare($1.pinyinName!) == NSComparisonResult.OrderedAscending }
            
-            return sorted
+            return herbsArray
             
         } catch {
             return []
         }
+    }
+    
+    var herbsByPinyin: [Herb] {
+    
+        let array = herbs.sort { $0.pinyinName!.localizedCaseInsensitiveCompare($1.pinyinName!) == NSComparisonResult.OrderedAscending }
+        
+        return array
+    
     }
 
     func addHerb(herb: Herb) {

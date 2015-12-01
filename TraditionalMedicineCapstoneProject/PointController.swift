@@ -71,13 +71,20 @@ class PointController: NSObject {
         
         do {
             let pointsArray = try Stack.sharedStack.managedObjectContext.executeFetchRequest(request) as! [Point]
-            let sorted = pointsArray.sort { $0.pointOnMeridian!.localizedCaseInsensitiveCompare($1.pointOnMeridian!) == NSComparisonResult.OrderedAscending }
-
-            return sorted
+            
+            return pointsArray
             
         } catch {
             return []
         }
+    }
+    
+    var pointsByPointOnMeridian: [Point] {
+        
+        let array = points
+        let sorted = array.sort { $0.pointOnMeridian!.localizedCaseInsensitiveCompare($1.pointOnMeridian!) == NSComparisonResult.OrderedAscending }
+        return sorted
+        
     }
     
     func addPoint(point: Point) {
