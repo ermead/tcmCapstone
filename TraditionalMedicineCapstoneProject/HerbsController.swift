@@ -31,7 +31,34 @@ class HerbsController: NSObject {
         
         let windCold = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.DisperseWindCold)
         let windHeat = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.DisperseWindHeat)
+        let PurgeHeat = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.PurgeHeat)
+        let ClearBloodHeat = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.ClearBloodHeat)
+        let ClearDampHeat = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.ClearDampHeat)
+        let ClearToxicHeat = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.ClearToxicHeat)
+        let ClearDeficiencyHeat = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.ClearDeficiencyHeat)
+        let Laxatives = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.Laxatives)
+        let DrainDamp = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.DrainDamp)
+        let DispelWindDamp = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.DispelWindDamp)
+        let DissolveHotPhlegm = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.DissolveHotPhlegm)
+        let DissolveColdPhlegm = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.DissolveColdPhlegm)
+        let StopCough = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.StopCough)
+        let AromaticsDispelDamp = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.AromaticsDispelDamp)
+        let Digestives = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.Digestives)
+        let RegulateQi = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.RegulateQi)
+        let StopBleeding = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.StopBleeding)
+        let MoveBlood = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.MoveBlood)
+        let WarmInterior = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.WarmInterior)
+        let TonifyQi = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.TonifyQi)
+        let TonifyBlood = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.TonifyBlood)
+        let TonifyYang = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.TonifyYang)
+        let TonifyYin = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.TonifyYin)
+        let Astringents = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.Astringents)
+        let CalmShen = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.CalmShen)
+        let NourishShen = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.NourishShen)
+        let ExtinguishLiverWind = HerbSets.sharedController.getHerbSet(HerbSets.HerbSetType.ExtinguishLiverWind)
         
+        
+        array = windCold + windHeat + PurgeHeat + ClearBloodHeat + ClearDampHeat + ClearToxicHeat + ClearDeficiencyHeat + Laxatives + DrainDamp + DispelWindDamp + DissolveHotPhlegm + DissolveColdPhlegm + StopCough + AromaticsDispelDamp + Digestives + RegulateQi + StopBleeding + MoveBlood + WarmInterior + TonifyQi + TonifyBlood + TonifyYin + TonifyYang + Astringents + CalmShen + NourishShen + ExtinguishLiverWind
         
         return array
     }

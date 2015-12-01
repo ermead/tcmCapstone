@@ -61,9 +61,7 @@ class HerbSets {
         switch thisSetType {
             
         case .DisperseWindCold: return windColdHerbs()
-            
         case .DisperseWindHeat: return windHeatHerbs()
-            
         case .PurgeHeat:        return purgeHeatHerbs()
         case .ClearBloodHeat:   return clearBloodHeatHerbs()
         case .ClearDampHeat:    return clearDampHeatHerbs()
