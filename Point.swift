@@ -35,8 +35,11 @@ class Point: NSManagedObject {
     }
     
     func completeDetails() -> String{
+        let pinyinNameWithAccents = pinyinName
+        let pinyinNameWithoutAccents = pinyinNameWithAccents!.stringByFoldingWithOptions(.DiacriticInsensitiveSearch, locale: NSLocale.currentLocale())
+        let pinYinNoSpaces = pinyinNameWithoutAccents.stringByReplacingOccurrencesOfString(" ", withString: "")
         
-        return "\(pinyinName), \(englishName), \(uses), \(specialCategories), \(channel)"
+        return "\(channelAbrev!),\(channelAbrev!)\(number!),\(pinYinNoSpaces), \(channelAbrev!)-\(number!),\(number!), \(pinyinNameWithoutAccents), \(englishName!), \(uses!), \(specialCategories!), \(channel!)"
     }
     
 }

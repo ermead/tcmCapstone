@@ -299,8 +299,9 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
             if let pdlc : PointsDetailListViewController = segue.destinationViewController as? PointsDetailListViewController {
             
                 if singles == true {
-                    print("the index touched was \(index) and the point selected was \(PointController.sharedController.points[index!].pinyinName)")
+                    print("the index touched was \(index) and the point selected was \(self.pointsArray[index!].pinyinName)")
                     //pdlc.title = PointController.sharedController.points[index!].pointOnMeridian
+                    print(self.pointsArray[index!].completeDetails())
                     pdlc.index = index!
                     pdlc.herbsList = false
                     pdlc.singles = true
