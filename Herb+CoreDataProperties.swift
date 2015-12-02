@@ -13,7 +13,8 @@ import Foundation
 import CoreData
 
 extension Herb {
-
+    
+    @NSManaged var chineseCharacter: String?
     @NSManaged var botanicalName: String?
     @NSManaged var category: String?
     @NSManaged var englishName: String?

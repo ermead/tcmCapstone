@@ -28,6 +28,7 @@
     <entity name="Herb" representedClassName="Herb" syncable="YES">
         <attribute name="botanicalName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="chineseCharacter" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="englishName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="imageName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="majorFormulas" optional="YES" attributeType="String" syncable="YES"/>
@@ -65,7 +66,7 @@
         <element name="Channel" positionX="-144" positionY="90" width="128" height="135"/>
         <element name="Entry" positionX="-171" positionY="90" width="128" height="120"/>
         <element name="Formula" positionX="-153" positionY="72" width="128" height="165"/>
-        <element name="Herb" positionX="-63" positionY="-18" width="128" height="210"/>
+        <element name="Herb" positionX="-63" positionY="-18" width="128" height="225"/>
         <element name="Image" positionX="-162" positionY="117" width="128" height="135"/>
         <element name="Point" positionX="-281" positionY="0" width="128" height="240"/>
     </elements>

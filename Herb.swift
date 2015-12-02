@@ -14,7 +14,7 @@ class Herb: NSManagedObject {
 
 // Insert code here to add functionality to your managed object subclass
     
-    convenience init(pinyinName: String? = nil, botanicalName: String? = nil, englishName: String, category: String? = nil, temp: String? = nil, meridians: String? = nil, uses: String? = nil, majorFormulas: String? = nil, images: NSSet? = [], context: NSManagedObjectContext = Stack.sharedStack.managedObjectContext) {
+    convenience init(pinyinName: String? = nil, botanicalName: String? = nil, englishName: String, chineseCharacter: String? = nil, category: String? = nil, temp: String? = nil, meridians: String? = nil, uses: String? = nil, majorFormulas: String? = nil, images: NSSet? = [], context: NSManagedObjectContext = Stack.sharedStack.managedObjectContext) {
         
         let entity = NSEntityDescription.entityForName("Herb", inManagedObjectContext: context)
         
@@ -23,6 +23,7 @@ class Herb: NSManagedObject {
         self.pinyinName = pinyinName
         self.botanicalName = botanicalName
         self.englishName = englishName
+        self.chineseCharacter = chineseCharacter
         self.category = category
         self.temp = temp
         self.meridians = meridians
