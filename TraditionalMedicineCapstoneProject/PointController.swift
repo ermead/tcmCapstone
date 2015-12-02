@@ -82,7 +82,7 @@ class PointController: NSObject {
     var pointsByPointOnMeridian: [Point] {
         
         let array = points
-        let sorted = array.sort { $0.pointOnMeridian!.localizedCaseInsensitiveCompare($1.pointOnMeridian!) == NSComparisonResult.OrderedAscending }
+        let sorted = array.sort { $0.pointOnMeridian!.localizedStandardCompare($1.pointOnMeridian!) == NSComparisonResult.OrderedAscending }
         return sorted
     }
     
