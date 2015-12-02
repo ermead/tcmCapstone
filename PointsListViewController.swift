@@ -97,6 +97,7 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
             herbsList = true
             singles = true
             updateButtons("herbs")
+            self.herbsArray = HerbsController.sharedController.herbsByPinyin
             pointsTableViewOutlet.reloadData()
         } else if(sender.selectedSegmentIndex == 3){
              print("segment formulas hit")

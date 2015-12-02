@@ -381,7 +381,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             topRightTextField.text = detailHerb.pinyinName!
             topRightMiddleTextField.text = detailHerb.englishName
             topRightBottomTextField.text = detailHerb.botanicalName
-            textField4.text = detailHerb.temp
+            textField4.text = detailHerb.chineseCharacter   
             textField5.text = detailHerb.meridians
             addButtonOutlet.hidden = true
             
