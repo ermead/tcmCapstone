@@ -128,7 +128,7 @@ class HerbSets {
         
         let juHua = Herb(pinyinName: "Ju Hua", botanicalName: "Flos Chrysanthemi", englishName: "Chrysanthemum Flower", chineseCharacter: "菊花", category: " ", temp: " ", meridians: " ", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.JuHua), majorFormulas: " ", images: [], context: self.moc)
         
-        let geGen = Herb(pinyinName: "Ge Gen", botanicalName: "Rhizoma Menispermi", englishName: "Rhizome Of Asiatic Moonseed", chineseCharacter: "蝙蝠葛根", category: " ", temp: " ", meridians: " ", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.GeGen), majorFormulas: " ", images: [], context: self.moc)
+        let geGen = Herb(pinyinName: "Ge Gen", botanicalName: "Radix Puerariae", englishName: "Root of Lobed Kudzuvine", chineseCharacter: "葛根", category: " ", temp: " ", meridians: " ", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.GeGen), majorFormulas: " ", images: [], context: self.moc)
         
         let chaiHu = Herb(pinyinName: "Chai Hu", botanicalName: "Radix Bupleuri", englishName: "Root of Chinese Thorowax", chineseCharacter: "柴胡", category: " ", temp: " ", meridians: " ", uses: HerbUses.sharedController.getHerbUse(HerbUses.Herb.ChaiHu), majorFormulas: " ", images: [], context: self.moc)
         

@@ -196,7 +196,7 @@ class HerbUses: NSObject {
     
     var chaiHu = "To relieve fever, to soothe the liver, and to cure drooping of the eyelid and ptosis."
     
-    var geGen = "To remove toxic heat and relieve rheumatic pains."
+    var geGen = "To relieve fever, to promote the production of body fluid, to facilitate eruption, and to arrest diarrhea."
     
     
     var shiGao = "To dispel dampness, to replenish muscle, curing sore, to stop bleeding."

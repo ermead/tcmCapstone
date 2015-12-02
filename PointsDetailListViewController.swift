@@ -163,6 +163,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         topRightMiddleTextField.font = UIFont.systemFontOfSize(23, weight: 2.5)
         topRightBottomTextField.layer.cornerRadius = 5
         textField4.layer.cornerRadius = 5
+        textField4.font = UIFont.systemFontOfSize(30, weight: 3)
         textField5.layer.cornerRadius = 5
         textField6.layer.cornerRadius = 5
         location.layer.cornerRadius = 5
@@ -552,7 +553,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                 
                 //point = Point(pinyinName: point.pinyinName, englishName: point.englishName, pointOnMeridian: point.pointOnMeridian, specialCategories: point.specialCategories!, channel: point.channel, locationDescription: point.locationDescription, uses: point.uses)
                 
-                topRightTextField.text = point.pinyinName
+                topRightTextField.text = point.pinyinName?.capitalizedString
                 topRightMiddleTextField.text = point.pointOnMeridian
                 topRightBottomTextField.text = point.englishName
                 textField4.text = "\(point.channel!) meridian"

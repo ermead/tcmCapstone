@@ -177,7 +177,7 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
                 let point = pointsArray[indexPath.row]
                 
                 cell.textLabel?.text = point.pointOnMeridian
-                cell.detailTextLabel?.text = point.pinyinName
+                cell.detailTextLabel?.text = point.pinyinName!.capitalizedString
                 
             } else {
                 cell.textLabel?.text = ChannelController.sharedController.channels[indexPath.row].name
