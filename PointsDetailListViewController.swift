@@ -556,8 +556,8 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                 topRightTextField.text = point.pinyinName?.capitalizedString
                 topRightMiddleTextField.text = point.pointOnMeridian
                 topRightBottomTextField.text = point.englishName
-                textField4.text = "\(point.channel!) meridian"
-                textField5.text = point.specialCategories
+                textField4.text = point.chineseCharacter
+                textField5.text = "\(point.channel!)"
                 textField6.text = "Location"
                 addButtonOutlet.hidden = true
                 /*if point.onChannel != nil {
