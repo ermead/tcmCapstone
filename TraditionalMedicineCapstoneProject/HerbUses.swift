@@ -301,7 +301,7 @@ class HerbUses: NSObject {
     
     var ceBaiYe = "To arrest bleeding by removing heat from blood, and to promote the growth of black hair."
     
-    var aiYe = "1. To warm the channels and stop bleeding; 2. To dispel cold and stop pain"
+    var aiYe = "1. To warm the channels and stop bleeding; \n 2. To dispel cold and stop pain"
     
     var chuanXiong = "1. To invigorate blood and promote qi circulation; 2. To expel wind and stop pain"
     

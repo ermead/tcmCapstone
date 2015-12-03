@@ -1682,7 +1682,7 @@
                                             <action selector="addToButtonTapped:" destination="pLW-Pq-RcD" eventType="touchUpInside" id="auq-za-Zt7"/>
                                         </connections>
                                     </button>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ouo-61-zMQ">
+                                    <view contentMode="scaleAspectFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ouo-61-zMQ">
                                         <rect key="frame" x="0.0" y="85" width="600" height="481"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default2" translatesAutoresizingMaskIntoConstraints="NO" id="xEy-SW-DBY">
@@ -1784,7 +1784,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="kZk-uo-87d">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="body_back" translatesAutoresizingMaskIntoConstraints="NO" id="kZk-uo-87d">
                                                 <rect key="frame" x="8" y="8" width="140" height="200"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="140" id="7Mb-Zz-JH8"/>
@@ -2265,6 +2265,7 @@
     </scenes>
     <resources>
         <image name="Hamburger" width="30" height="30"/>
+        <image name="body_back" width="4900" height="4900"/>
         <image name="default" width="1024" height="768"/>
         <image name="default2" width="1024" height="768"/>
         <image name="glyphicons-12-camera" width="22" height="17"/>

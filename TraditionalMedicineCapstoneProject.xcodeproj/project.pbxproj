@@ -32,7 +32,6 @@
 		D782A5721BE664E600E51BAC /* AppearanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5711BE664E600E51BAC /* AppearanceController.swift */; };
 		D782A5741BE6667300E51BAC /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5731BE6667300E51BAC /* Colors.swift */; };
 		D782A57A1BE6827C00E51BAC /* MyCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5791BE6827C00E51BAC /* MyCustomButton.swift */; };
-		D782A5A11BE849B600E51BAC /* Herb+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A59F1BE849B600E51BAC /* Herb+CoreDataProperties.swift */; };
 		D782A5A21BE849B600E51BAC /* Herb.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5A01BE849B600E51BAC /* Herb.swift */; };
 		D782A5A61BE907F000E51BAC /* Formula.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5A41BE907F000E51BAC /* Formula.swift */; };
 		D782A5AB1BE9535C00E51BAC /* Point+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5A71BE9535C00E51BAC /* Point+CoreDataProperties.swift */; };
@@ -40,6 +39,9 @@
 		D782A5AE1BE9535C00E51BAC /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5AA1BE9535C00E51BAC /* Channel.swift */; };
 		D782A5F31BEA4BE200E51BAC /* FormulasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5F21BEA4BE200E51BAC /* FormulasController.swift */; };
 		D782A5F51BEA4ECF00E51BAC /* Formula+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782A5F41BEA4ECF00E51BAC /* Formula+CoreDataProperties.swift */; };
+		D79431D11C0FC9CD0021AF29 /* Herb+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79431D01C0FC9CD0021AF29 /* Herb+CoreDataProperties.swift */; };
+		D79431D31C0FD5330021AF29 /* HerbGatheringInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79431D21C0FD5330021AF29 /* HerbGatheringInfo.swift */; };
+		D79431D51C0FD54A0021AF29 /* HerbUsesMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79431D41C0FD54A0021AF29 /* HerbUsesMore.swift */; };
 		D7BAC6C31C00D56F001AF74B /* SearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BAC6C21C00D56F001AF74B /* SearchResultsTableViewController.swift */; };
 		D7C264961BF8256A0009B2A7 /* HerbUses.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C264951BF8256A0009B2A7 /* HerbUses.swift */; };
 		D7C264981BF825BB0009B2A7 /* HerbSets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C264971BF825BB0009B2A7 /* HerbSets.swift */; };
@@ -80,7 +82,6 @@
 		D782A5711BE664E600E51BAC /* AppearanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceController.swift; sourceTree = "<group>"; };
 		D782A5731BE6667300E51BAC /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		D782A5791BE6827C00E51BAC /* MyCustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomButton.swift; sourceTree = "<group>"; };
-		D782A59F1BE849B600E51BAC /* Herb+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Herb+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D782A5A01BE849B600E51BAC /* Herb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Herb.swift; sourceTree = "<group>"; };
 		D782A5A41BE907F000E51BAC /* Formula.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formula.swift; sourceTree = "<group>"; };
 		D782A5A71BE9535C00E51BAC /* Point+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Point+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -88,6 +89,9 @@
 		D782A5AA1BE9535C00E51BAC /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		D782A5F21BEA4BE200E51BAC /* FormulasController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulasController.swift; sourceTree = "<group>"; };
 		D782A5F41BEA4ECF00E51BAC /* Formula+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Formula+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D79431D01C0FC9CD0021AF29 /* Herb+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Herb+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D79431D21C0FD5330021AF29 /* HerbGatheringInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HerbGatheringInfo.swift; sourceTree = "<group>"; };
+		D79431D41C0FD54A0021AF29 /* HerbUsesMore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HerbUsesMore.swift; sourceTree = "<group>"; };
 		D7BAC6C21C00D56F001AF74B /* SearchResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewController.swift; sourceTree = "<group>"; };
 		D7C264951BF8256A0009B2A7 /* HerbUses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HerbUses.swift; sourceTree = "<group>"; };
 		D7C264971BF825BB0009B2A7 /* HerbSets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HerbSets.swift; sourceTree = "<group>"; };
@@ -187,7 +191,7 @@
 				D782A5AA1BE9535C00E51BAC /* Channel.swift */,
 				D782A5F41BEA4ECF00E51BAC /* Formula+CoreDataProperties.swift */,
 				D782A5A41BE907F000E51BAC /* Formula.swift */,
-				D782A59F1BE849B600E51BAC /* Herb+CoreDataProperties.swift */,
+				D79431D01C0FC9CD0021AF29 /* Herb+CoreDataProperties.swift */,
 				D782A5A01BE849B600E51BAC /* Herb.swift */,
 			);
 			name = CoreData;
@@ -197,6 +201,8 @@
 		D7D9EBB61BDDA4F800C920AC /* Herbs */ = {
 			isa = PBXGroup;
 			children = (
+				D79431D41C0FD54A0021AF29 /* HerbUsesMore.swift */,
+				D79431D21C0FD5330021AF29 /* HerbGatheringInfo.swift */,
 				D7D9EBB01BDD8A6500C920AC /* HerbsController.swift */,
 				D7C264971BF825BB0009B2A7 /* HerbSets.swift */,
 				D7C264951BF8256A0009B2A7 /* HerbUses.swift */,
@@ -312,7 +318,6 @@
 				D7D9EBBC1BDDAC2300C920AC /* PointsListViewController.swift in Sources */,
 				D7580B061BDD1EB70008789F /* ViewController.swift in Sources */,
 				D782A57A1BE6827C00E51BAC /* MyCustomButton.swift in Sources */,
-				D782A5A11BE849B600E51BAC /* Herb+CoreDataProperties.swift in Sources */,
 				D76D36601BF5B16A0003AC43 /* CombinationsTableViewCell.swift in Sources */,
 				D782A5741BE6667300E51BAC /* Colors.swift in Sources */,
 				D702FA461C0D51E000FDCD5A /* PointLocation.swift in Sources */,
@@ -334,6 +339,7 @@
 				D76D365E1BF599980003AC43 /* CombinationsViewController.swift in Sources */,
 				D782A5AB1BE9535C00E51BAC /* Point+CoreDataProperties.swift in Sources */,
 				D7580B041BDD1EB70008789F /* AppDelegate.swift in Sources */,
+				D79431D11C0FC9CD0021AF29 /* Herb+CoreDataProperties.swift in Sources */,
 				D76D36681BF6C2B70003AC43 /* ImageController.swift in Sources */,
 				D782A4A81BE03B6A00E51BAC /* DiagnosisDetailViewController.swift in Sources */,
 				D702FA441C0D51D000FDCD5A /* PointUses.swift in Sources */,
@@ -341,11 +347,13 @@
 				D7C2649E1BFA271F0009B2A7 /* OtherResourcesViewController.swift in Sources */,
 				D782A5721BE664E600E51BAC /* AppearanceController.swift in Sources */,
 				D782A5AC1BE9535C00E51BAC /* Point.swift in Sources */,
+				D79431D31C0FD5330021AF29 /* HerbGatheringInfo.swift in Sources */,
 				D7D9EBBE1BDDAC3600C920AC /* PointsDetailListViewController.swift in Sources */,
 				D7D9EBB11BDD8A6500C920AC /* HerbsController.swift in Sources */,
 				D74D057B1C0D4C0F005644A1 /* PointSets.swift in Sources */,
 				D7C264A01BFA2C660009B2A7 /* OtherResourcesDetailViewController.swift in Sources */,
 				D7D9EBBA1BDDABF400C920AC /* PointController.swift in Sources */,
+				D79431D51C0FD54A0021AF29 /* HerbUsesMore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
