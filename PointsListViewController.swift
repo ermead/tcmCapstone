@@ -20,6 +20,10 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
     var channelsArray: [Channel] = []
     var formulasArray: [Formula] = []
    
+    let pd = PointDictionaries.sharedController
+    var pdk = PointDictionaries.Key.self
+    var pdp = PointDictionaries.Point.self
+    
     var searchController: UISearchController!
     
     @IBOutlet weak var singleOrComboHerbsOutlet: UISegmentedControl!
@@ -48,6 +52,8 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
          print("another example is  \(PointDictionaries.sharedController.haveThis(PointDictionaries.sharedController.LR12, key: PointDictionaries.sharedController.actions))")
          print("another example is  \(PointDictionaries.sharedController.haveThis(PointDictionaries.sharedController.ST36, key: PointDictionaries.sharedController.location))")
          print("another example is  \(PointDictionaries.sharedController.haveThis(PointDictionaries.sharedController.HT7, key: PointDictionaries.sharedController.classifications))")*/
+        
+        print(pd.getEntryForPoint((pdp.HT5), key: (pdk.Location)))
         
     }
     
