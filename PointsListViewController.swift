@@ -42,6 +42,13 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
         
         self.herbsArray = herbsArray.filter({ $0.category!.lowercaseString.containsString("disperse wind-cold") })
         pointsTableViewOutlet.reloadData()
+        
+        /*print("the test location is \(PointDictionaries.sharedController.printExample())")
+        print("another example is  \(PointDictionaries.sharedController.haveThis(PointDictionaries.sharedController.LI1, key: PointDictionaries.sharedController.location))")
+         print("another example is  \(PointDictionaries.sharedController.haveThis(PointDictionaries.sharedController.LR12, key: PointDictionaries.sharedController.actions))")
+         print("another example is  \(PointDictionaries.sharedController.haveThis(PointDictionaries.sharedController.ST36, key: PointDictionaries.sharedController.location))")
+         print("another example is  \(PointDictionaries.sharedController.haveThis(PointDictionaries.sharedController.HT7, key: PointDictionaries.sharedController.classifications))")*/
+        
     }
     
     @IBAction func button1b(sender: UIButton) {
