@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D702FA441C0D51D000FDCD5A /* PointUses.swift in Sources */ = {isa = PBXBuildFile; fileRef = D702FA431C0D51D000FDCD5A /* PointUses.swift */; };
 		D702FA461C0D51E000FDCD5A /* PointLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D702FA451C0D51E000FDCD5A /* PointLocation.swift */; };
+		D7138B951C137E6F00523D49 /* FormulasDictionaries.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7138B941C137E6F00523D49 /* FormulasDictionaries.swift */; };
 		D74D057B1C0D4C0F005644A1 /* PointSets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74D057A1C0D4C0F005644A1 /* PointSets.swift */; };
 		D74D45B11BFCFEDD0098FD3D /* Entry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74D45AF1BFCFEDD0098FD3D /* Entry+CoreDataProperties.swift */; };
 		D74D45B21BFCFEDD0098FD3D /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74D45B01BFCFEDD0098FD3D /* Entry.swift */; };
@@ -58,6 +59,7 @@
 /* Begin PBXFileReference section */
 		D702FA431C0D51D000FDCD5A /* PointUses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointUses.swift; sourceTree = "<group>"; };
 		D702FA451C0D51E000FDCD5A /* PointLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointLocation.swift; sourceTree = "<group>"; };
+		D7138B941C137E6F00523D49 /* FormulasDictionaries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulasDictionaries.swift; sourceTree = "<group>"; };
 		D74D057A1C0D4C0F005644A1 /* PointSets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointSets.swift; sourceTree = "<group>"; };
 		D74D45AF1BFCFEDD0098FD3D /* Entry+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Entry+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D74D45B01BFCFEDD0098FD3D /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				D7D9EBB01BDD8A6500C920AC /* HerbsController.swift */,
 				D7C264971BF825BB0009B2A7 /* HerbSets.swift */,
 				D7C264951BF8256A0009B2A7 /* HerbUses.swift */,
+				D7138B941C137E6F00523D49 /* FormulasDictionaries.swift */,
 				D782A5F21BEA4BE200E51BAC /* FormulasController.swift */,
 			);
 			name = Herbs;
@@ -335,6 +338,7 @@
 				D782A5A61BE907F000E51BAC /* Formula.swift in Sources */,
 				D782A5701BE4479700E51BAC /* Stack.swift in Sources */,
 				D782A4A61BE02A1000E51BAC /* DiagnosticToolViewController.swift in Sources */,
+				D7138B951C137E6F00523D49 /* FormulasDictionaries.swift in Sources */,
 				D782A5A21BE849B600E51BAC /* Herb.swift in Sources */,
 				D782A5AE1BE9535C00E51BAC /* Channel.swift in Sources */,
 				D7C264981BF825BB0009B2A7 /* HerbSets.swift in Sources */,
