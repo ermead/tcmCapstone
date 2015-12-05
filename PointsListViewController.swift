@@ -54,6 +54,8 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
          print("another example is  \(PointDictionaries.sharedController.haveThis(PointDictionaries.sharedController.HT7, key: PointDictionaries.sharedController.classifications))")*/
         
         print(pd.getEntryForPoint((pdp.HT5), key: (pdk.Location)))
+        let this = FormulaDictionaries.sharedController.Category_1["1. Exterior-relieving formulae"]![1]
+        print(this[1])
         
         
     }
