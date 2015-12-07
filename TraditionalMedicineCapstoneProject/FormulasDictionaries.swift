@@ -30,7 +30,7 @@ static let sharedController = FormulaDictionaries()
     Category 16:  Dryness-moistening formulae
     */
     
-    let Category_1 = ["1. Exterior-relieving formulae" : [
+    let Category_1 : NSDictionary = ["1. Exterior-relieving formulae" : [
         [ "Cinnamon Twig Decoction " , " Gui Zhi Tang" , " 4"] ,
         [ "Ephedra Decoction " , " Ma Huang Tang" , " 3"] ,
         [ "Ginseng Powder to Overcome Pathogenic Influences " , " Ren Shen Bai Du San" , " 6"] ,
@@ -47,24 +47,24 @@ static let sharedController = FormulaDictionaries()
         [ "Three Abnormally Combined Decoction " , " San Ao Tang" , " 1"]] ]
     
     
-    let Category_2 = ["2. Purgative formulae" : [
+    let Category_2 : NSDictionary = ["2. Purgative formulae" : [
         [ "Golden Thread Rhizome Decoction for Dispersion " , " Nei Shu Huang Lian Tang" , " /exam/specialties_ext_formulae2"] ,
         [ "Hemp Seed Pill " , " Ma Zi Ren Wan" , " 8"] ,
         [ "Major Purgative Decoction " , " Da Cheng Qi Tang" , " 7"]]]
     
-    let Category_3 = ["3. Digestive formulae" : [
+    let Category_3 : NSDictionary = ["3. Digestive formulae" : [
         ["Kudzu Flower Decoction to Relieve Heavy Drinking " , " Ge Hua Jie Cheng Tang ", "7" ] ,
         ["Preserve Harmony Pill " , " Bao He Wan ", "9" ] ,
         ["Strengthen the Spleen Pill " , " Jian Pi Wan ", "/exam/formulae11" ]]]
     
     
-    let Category_4 = ["4. Harmonizing formulae" : [
+    let Category_4 : NSDictionary = ["4. Harmonizing formulae" : [
         [ "Essential Formula for Diarrhea with Pain " , " Tong Xie Yao Fang" , " hmmmm"] ,
         [ "Free and Easy Wanderer Plus " , " Jia Wei Xiao Yao San" , " 5"] ,
         [ "" , " Xiao Yao San" , " 11"] ,
         [ "Minor Bupleurum Decoction " , " Xiao Chia Hu Tang" , " 10"] ]]
     
-    let Category_5 = ["5. Heat-clearing formulae" : [
+    let Category_5 : NSDictionary = ["5. Heat-clearing formulae" : [
         [ "Chinese Angelica and Six Yellow  Decoction " , " Dang Gu Liu Huang Tang" , " 3"] ,
         [ "Clear the Nutritive Level Decoction " , " Qing Ying Tang" , " 12"] ,
         [ "Five Flavors Drink to Expel Toxins " , " Wu Wei Xiao Du Yin" , " /exam/specialties_ext_formulae3"] ,
@@ -86,14 +86,14 @@ static let sharedController = FormulaDictionaries()
         [ "Rhinoceros Horn Rehmannia Decoction " , " Xi Jiao Di Huang Tang" , " 15"] ,
         [ "Clear Heat and Consolidate Menstruation Decoction " , " Qing Re Gu Jing Tang" , " 18"]]]
     
-    let Category_6 = ["6. Interior-warming formulae" : [
+    let Category_6 : NSDictionary = ["6. Interior-warming formulae" : [
         ["Aconite Pill for Regulating the Middle" , "  Fu Zi Li Zhong Wan ", "2" ] ,
         ["Decoction for Harmonizing Yang " , " Yang He Tang ", "/exam/specialties_ext_formulae4" ] ,
         ["Regulate the Middle Pill " , " Li Zhong Wan ", "14" ] ,
         ["Aconiti Decoction " , " Wu Tou Tang ", "2" ] ,
         ["True Warrior Decoction " , " Zhen Wu Tang ", "7" ]]]
     
-    let Category_7 = ["7. Tonic formulae" : [
+    let Category_7 : NSDictionary = ["7. Tonic formulae" : [
         ["All-inclusive Great Tonifying Decoction " , " Shi Quan Da Bu Tang ", "4" ] ,
         ["Costus and Amomum with Six Noble Ingredients Pill " , " Xiang Sha Liu Jun Zi Wan  ", "/exam/formulae6" ] ,
         ["Eight-treasure Decoction " , " Ba Zhen Tang ", "/exam/formulae3" ] ,
@@ -123,7 +123,7 @@ static let sharedController = FormulaDictionaries()
         ["Seven Treasures Hair Beauty Pill " , " Qi Bao Mei Ran Dan ", "30" ]]]
     
     
-    let Category_8 = ["8. Astringent formulae" : [
+    let Category_8 : NSDictionary = ["8. Astringent formulae" : [
         ["Consolidating Thoroughfare Vessel Decoction" , "  Gu Chong Tang ", "8" ] ,
         [ "Consolidating Thoroughfare Vessel Decoction" , "  Gu Chong Tang" , " 8"] ,
         [ "Immortal Organ-Nourishing Decoction " , " Zhen Ren Yang Zang Tang" , " /health/uc_popup8"] ,
@@ -131,7 +131,7 @@ static let sharedController = FormulaDictionaries()
         [ "Peach Blossom Decoction " , " Tao Hua Tang" , " /health/uc_popup2"] ,
         [ "Vaginal Discharge Decoction " , " Wan Dai Tang" , " 15"]]]
     
-    let Category_9 = ["9. Calming formulae" : [
+    let Category_9 : NSDictionary = ["9. Calming formulae" : [
         [ "Cinnabar Pill to Calm the Spirit " , " Zhu Sha An Shen Wan" , " 16"] ,
         [ "Communicating and Tranquilizing Pill " , " Jiao Tai Wan" , " 4"] ,
         [ "Heaven King Heart-Nourish Pellets " , " Tian Wan Bu Xin Dan" , " /lifestyles/popup18"] ,
@@ -140,16 +140,16 @@ static let sharedController = FormulaDictionaries()
         [ "Sedative and Heart Invigorating Pill " , " An Shen Ding Zhi Wan" , " 3"] ,
         [ "Sore Jujube Seed Decoction " , " Suen Zao Ren Tang" , " /lifestyles/popup14"]]]
     
-    let Category_10 = ["10. Orifice-opening formulae" : [
+    let Category_10 : NSDictionary = ["10. Orifice-opening formulae" : [
         ["Peaceful Palace Bovine Gall-stone Bolus " , " An Gong Niu Huang Wan ", "17" ]]]
     
-    let Category_11 = ["11. Qi-regulating formulae" : [
+    let Category_11 : NSDictionary = ["11. Qi-regulating formulae" : [
         [ "Decoction for Clearing the Liver and Relieving Stagnation " , " Qing Gan Jie Yu Tang" , " /exam/specialties_ext_formulae7"] ,
         [ "Four Herbs Decoction for Clearing Stagnation " , " Si Qi Tang" , " 9"] ,
         [ "Inula &amp; Haematite Decoction " , " Xuan Fu Dai Zhe Tang" , " /exam/formulae8"] ,
         [ "Pinellia and Magnolia Decoction " , " Ban Xia Hou Po Tang" , " 18"] ]]
     
-    let Category_12 = ["12. Blood-regulating formulae" : [
+    let Category_12 : NSDictionary = ["12. Blood-regulating formulae" : [
         [ "Decoction for Activating Blood and Relieving Firmness " , " Huo Xue Hua Jian Tang" , " /exam/specialties_ext_formulae8"] ,
         [ "Decoction for Removing Blood Stasis in the Lower Abdomen " , " Shao Fu Zhu Yu Tang" , " /health/uc_popup5"] ,
         [ "Generation and Transformation Decoction " , " Sheng Hua Tang" , " 19"] ,
@@ -168,7 +168,7 @@ static let sharedController = FormulaDictionaries()
         [ "Effective and Miraculous Pills for Activating Collaterals " , " Huo Luo Ling Xiao Dan" , " 9"] ,
         [ "Removing Blood Stasis Decoction for Painful Body " , " Shen Tong Zhu Yu Tang" , " 8"] ]]
     
-    let Category_13 = ["13. Dampness-dispelling formulae" : [
+    let Category_13 : NSDictionary = ["13. Dampness-dispelling formulae" : [
         [ "Agastache Powder for Rectifying Healthy Qi " , " Huo Xiang Zheng Qi San" , " 21"] ,
         [ "Calm the Stomach Powder " , " Ping Wei San" , " 20"] ,
         [ "Coix Seed Decoction " , " Yi Yi Ren Tang" , " 11"] ,
@@ -184,7 +184,7 @@ static let sharedController = FormulaDictionaries()
         [ "Weiling Decoction " , " Wei Ling Tang" , " /health/uc_popup4"] ,
         [ "Wormwood Decoction " , " Yin  Chen Hao Tang" , " 10"] ]]
     
-    let Category_14 = ["14. Phlegm-resolving formulae" : [
+    let Category_14 : NSDictionary = ["14. Phlegm-resolving formulae" : [
         [ "Citrus &amp; Pinellia Decoction " , " Er Chen Tang" , " /exam/formulae9"] ,
         [ "Clear Lung Heat and Resolve Phlegm  Decoction " , " Qing Jing Hau Tan Tang" , " 4"] ,
         [ "Cleansing Phlegm Decoction " , " Di Tan Tang" , " /health/multiple_sclerosis_formulae1"] ,
@@ -193,14 +193,14 @@ static let sharedController = FormulaDictionaries()
         [ "Pinellia, Atractylodes and Gastropdia Decoction " , " Ban Xia Bai Shu Tian Ma Tang" , " 6"] ,
         [ "Dispelling Phlegm Decoction " , " Dao Tan Tang" , " 28"] ]]
     
-    let Category_15 = ["15. Wind-eliminating formulae" : [
+    let Category_15 : NSDictionary = ["15. Wind-eliminating formulae" : [
         [ "Gastrodia and Uncaria Decoction " , " Tian Ma Gou Teng Yin" , " 23"] ,
         [ "Pubescent Angelica and Loranthus Decoction " , " Du Huo Ji Sheng Tang" , " 22"] ,
         [ "Four Substances Disperse Wind Drink " , " Si Wu Xiao Feng Yin" , " 14"] ,
         [ "Calming Liver and Extinguishing Wind Decoction " , " Zhen Gan Xi Feng Tang" , " 27"] ,
         [ "Restoring Facial Distortion Powder " , " Qian Zheng San" , " 29"] ]]
     
-    let Category_16 = ["16. Dryness-moistening formulae" : [
+    let Category_16 : NSDictionary = ["16. Dryness-moistening formulae" : [
         [ "Apricot Kernel and Perilla Leaf Powder " , " Xing Su San" , " 24"] ,
         [ "Glehnia Root and Dwarf Lily-turf Tuber  Decoction " , " Sha Shen Mai Dong Tang" , " 7"] ,
         [ "Increase the Fluids Decoction " , " Zeng  Ye Tang" , " 14"] ,
