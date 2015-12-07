@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 import CoreData
 
 class ViewController: UIViewController {
@@ -16,6 +17,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
        //deleteCoreData()
+        
+        let url = "http://www.maciociaonline.com/"
+        let url2 = "http://www.shen-nong.com/eng/exam/index.html"
+        
+        let svc = SFSafariViewController(URL: NSURL(string: url2)!)
+        
+        self.presentViewController(svc, animated: true, completion: nil)
      
     }
 
@@ -39,6 +47,9 @@ class ViewController: UIViewController {
         }
         }
     }
+    
+    
+    
     
     func addHerbSet(array: [Herb]){
         
