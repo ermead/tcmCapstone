@@ -54,9 +54,7 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
          print("another example is  \(PointDictionaries.sharedController.haveThis(PointDictionaries.sharedController.HT7, key: PointDictionaries.sharedController.classifications))")*/
         
         print(pd.getEntryForPoint((pdp.HT5), key: (pdk.Location)))
-        let this = FormulaDictionaries.sharedController.Category_1["1. Exterior-relieving formulae"]![1]
-        print(this[1])
-        
+       
         
     }
     
@@ -135,6 +133,8 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
         
         self.herbsArray = HerbsController.sharedController.herbsByPinyin
         self.pointsArray = PointController.sharedController.pointsByPointOnMeridian
+        self.channelsArray = ChannelController.sharedController.channelsByName
+        self.formulasArray = FormulasController.sharedController.formulasByPinyin
         
         setupSearchController()
         
@@ -159,13 +159,13 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
             if singles{
                 return self.herbsArray.count
             } else {
-                return FormulasController.sharedController.formulas.count
+                return self.formulasArray.count
             }
         } else {
             if singles{
                 return self.pointsArray.count
             } else {
-                return ChannelController.sharedController.channels.count
+                return self.channelsArray.count
             }
         }
     }
@@ -181,23 +181,26 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
                 cell.detailTextLabel?.text = herb.englishName
                 
             } else {
-                cell.textLabel?.text = FormulasController.sharedController.formulas[indexPath.row].pinyinName
-                cell.detailTextLabel?.text = FormulasController.sharedController.formulas[indexPath.row].englishName
+                let formulaArray = self.formulasArray
+                let formula = formulasArray[indexPath.row]
+                cell.textLabel?.text =  formula.pinyinName
+                cell.detailTextLabel?.text = formula.englishName
             }
             
         } else {
             if singles{
                 
                 let pointsArray = self.pointsArray
-                
                 let point = pointsArray[indexPath.row]
-                
                 cell.textLabel?.text = point.pointOnMeridian
                 cell.detailTextLabel?.text = point.pinyinName!.capitalizedString
                 
             } else {
-                cell.textLabel?.text = ChannelController.sharedController.channels[indexPath.row].name
-                cell.detailTextLabel?.text = ChannelController.sharedController.channels[indexPath.row].uses
+                
+                let channelsArray = self.channelsArray
+                let channel = channelsArray[indexPath.row]
+                cell.textLabel?.text = channel.name
+                cell.detailTextLabel?.text = channel.simplePointsString
             }
             
         }

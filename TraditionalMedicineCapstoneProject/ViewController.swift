@@ -12,18 +12,22 @@ import CoreData
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var view1: UIView!
+    
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
        //deleteCoreData()
         
-        let url = "http://www.maciociaonline.com/"
+        let url = "http://maciociaonline.blogspot.com/"
         let url2 = "http://www.shen-nong.com/eng/exam/index.html"
         
         let svc = SFSafariViewController(URL: NSURL(string: url2)!)
         
-        self.presentViewController(svc, animated: true, completion: nil)
+      self.presentViewController(svc, animated: true, completion: nil)
      
     }
 

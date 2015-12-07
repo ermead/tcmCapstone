@@ -14,20 +14,17 @@ class ChannelController: NSObject {
     
     private let ChannelKey = "channelCombo"
     
+    let moc = Stack.sharedStack.managedObjectContext
+    
     static let sharedController = ChannelController()
     
     var defaultChannels: [Channel] {
         
         var pointsArray : [Point] = PointController.sharedController.points.filter({$0.pinyinName!.lowercaseString.containsString("tai chong")})
         
-        let fourFlowers = Channel(name: "Four Flowers1", uses: "Exhaustion", imageId1: nil, imageId2: nil, hasPoints: NSSet(array: pointsArray), context: Stack.sharedStack.managedObjectContext)
+        let allCombos = ChannelSets.sharedController.allCombos()
         
-        let fiveFlowers = Channel(name: "Five Flowers", uses: "Exhaustion", imageId1: nil, imageId2: nil, context: Stack.sharedStack.managedObjectContext)
-        
-        let sixFlowers = Channel(name: "Six Flowers", uses: "Exhaustion", imageId1: nil, imageId2: nil, context: Stack.sharedStack.managedObjectContext)
-        
-    
-        return[fourFlowers, fiveFlowers, sixFlowers]
+        return allCombos
         
     }
     
@@ -41,6 +38,14 @@ class ChannelController: NSObject {
         } catch {
             return []
         }
+    }
+    
+    var channelsByName: [Channel] {
+        
+        let array = channels.sort { $0.name!.localizedCaseInsensitiveCompare($1.name!) == NSComparisonResult.OrderedAscending }
+        
+        return array
+        
     }
     
     func addCombo(combo: Channel) {

@@ -20,6 +20,7 @@ class Formula: NSManagedObject {
         
         self.pinyinName = pinyinName
         self.englishName = englishName
+        self.simpleIngredientsString = simpleIngredientsString
         self.uses = uses
         self.category = category
      

@@ -575,6 +575,9 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="1200"/>
+                    <connections>
+                        <outlet property="view1" destination="Qvj-3r-iUm" id="UjY-bp-vFs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -2261,6 +2264,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ibv-gL-LQd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3569" y="-1359"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vmm-pJ-WE1">
+            <objects>
+                <viewController id="4ho-Ew-EKf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wmT-jo-7Vy"/>
+                        <viewControllerLayoutGuide type="bottom" id="gLr-aj-q29"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uvg-Af-LVH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cpE-AW-Psf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>

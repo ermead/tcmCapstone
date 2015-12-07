@@ -449,7 +449,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
             }
             else {
                 //FORMULA
-                var detailFormula = FormulasController.sharedController.formulas[index!]
+                var detailFormula = FormulasController.sharedController.formulasByPinyin[index!]
                 
                 if self.searchedFor == true {
                     
@@ -459,6 +459,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                 print(detailFormula.pinyinName)
                 print(detailFormula.englishName)
                 print(detailFormula.uses)
+                print(detailFormula.simpleIngredientsString)
               
                 
                 topRightTextField.text = detailFormula.pinyinName
@@ -468,7 +469,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                 textField5.text = "  "
                 textField6.text = "Ingredients"
                 
-                if detailFormula.hasContents != nil {
+                if detailFormula.hasContents!.count > 0 {
                     let ingredients : [Herb] = NSArray(array: detailFormula.hasContents!.allObjects) as! [Herb]
                     let count = ingredients.count
                     var ArrayOfStrings: [String] = []
@@ -484,10 +485,9 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                         } else {
                             AllFormulasAsString = "\(AllFormulasAsString), \(name)"}
                     }
-                    
                     self.location.text = ("\(detailFormula.pinyinName!) has \(count) herbs. They are \(AllFormulasAsString).")
                 } else {
-                    self.location.text = "This formula currently has no herbs."
+                    self.location.text = detailFormula.simpleIngredientsString
                 }
                 
                textField7.text = "Indications & Uses"
@@ -590,7 +590,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                 
                 
         } else {
-                var channel = ChannelController.sharedController.channels[index!]
+                var channel = ChannelController.sharedController.channelsByName[index!]
                 
                 if self.searchedFor == true {
                     
@@ -625,22 +625,15 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                     if count > 0{
                     self.location.text = ("\(channel.name!) has \(count) points. They are \(AllPointsAsString).")
                     } else {
-                    self.location.text = "This combination currently has no points."
+                    self.location.text = channel.simplePointsString
                 }
                 }
 
                 textField7.text = "Indications & Uses"
                 indicationsAndUses.text = channel.uses
                 
-                if channel.imageId1 != nil {
-                ImageController.imageForImageId(channel.imageId1!, completion: { (image) -> Void in
-                    self.leftImage.image = image
-                })}
-                if channel.imageId2 != nil {
-                ImageController.imageForImageId(channel.imageId2!, completion: { (image) -> Void in
-                    self.rightImage.image = image
-                })}
-        }
+           
+            }
         
     }
     }
@@ -779,7 +772,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         //thisSetOfImageObjects.setByAddingObjectsFromArray(arrayofImageObjects)
         print("This set I am adding has \(thisSetOfImageObjects.count) image objects")
         
-        let newCombo = Channel(name: name, uses: uses, imageId1: placeholderLeftImageId, imageId2: placeholderRightImageId, images: thisSetOfImageObjects, context: Stack.sharedStack.managedObjectContext)
+        let newCombo = Channel(name: name, uses: uses, simplePointsString: "" , hasPoints: [] , images: thisSetOfImageObjects, context: Stack.sharedStack.managedObjectContext)
         
         ChannelController.sharedController.addCombo(newCombo)
         print("I tried to add a new Combo")

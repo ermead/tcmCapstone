@@ -44,6 +44,14 @@ class FormulasController: NSObject {
         }
     }
     
+    var formulasByPinyin: [Formula] {
+        
+        let array = formulas.sort { $0.pinyinName!.localizedCaseInsensitiveCompare($1.pinyinName!) == NSComparisonResult.OrderedAscending }
+        
+        return array
+        
+    }
+    
     func addFormula(formula: Formula) {
         saveToPersistentStorage()
     }

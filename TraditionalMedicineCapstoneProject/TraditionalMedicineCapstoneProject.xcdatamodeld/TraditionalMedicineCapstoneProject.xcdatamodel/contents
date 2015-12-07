@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="14F27" minimumToolsVersion="Automatic">
     <entity name="Channel" representedClassName="Channel" syncable="YES">
-        <attribute name="imageId1" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="imageId2" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="simplePointsString" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="uses" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="hasPoints" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Point" inverseName="onChannel" inverseEntity="Point" syncable="YES"/>
         <relationship name="images" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Image" inverseName="channel" inverseEntity="Image" syncable="YES"/>
@@ -68,7 +67,7 @@
         <relationship name="onChannel" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Channel" inverseName="hasPoints" inverseEntity="Channel" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Channel" positionX="-144" positionY="90" width="128" height="135"/>
+        <element name="Channel" positionX="-144" positionY="90" width="128" height="120"/>
         <element name="Entry" positionX="-171" positionY="90" width="128" height="120"/>
         <element name="Formula" positionX="-153" positionY="72" width="128" height="150"/>
         <element name="Herb" positionX="-63" positionY="-18" width="128" height="315"/>

@@ -10,6 +10,7 @@
 		D702FA441C0D51D000FDCD5A /* PointUses.swift in Sources */ = {isa = PBXBuildFile; fileRef = D702FA431C0D51D000FDCD5A /* PointUses.swift */; };
 		D702FA461C0D51E000FDCD5A /* PointLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D702FA451C0D51E000FDCD5A /* PointLocation.swift */; };
 		D7138B951C137E6F00523D49 /* FormulasDictionaries.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7138B941C137E6F00523D49 /* FormulasDictionaries.swift */; };
+		D717A5451C163DEA00D26DCF /* ChannelSets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717A5441C163DEA00D26DCF /* ChannelSets.swift */; };
 		D74D057B1C0D4C0F005644A1 /* PointSets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74D057A1C0D4C0F005644A1 /* PointSets.swift */; };
 		D74D45B11BFCFEDD0098FD3D /* Entry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74D45AF1BFCFEDD0098FD3D /* Entry+CoreDataProperties.swift */; };
 		D74D45B21BFCFEDD0098FD3D /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74D45B01BFCFEDD0098FD3D /* Entry.swift */; };
@@ -62,6 +63,7 @@
 		D702FA431C0D51D000FDCD5A /* PointUses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointUses.swift; sourceTree = "<group>"; };
 		D702FA451C0D51E000FDCD5A /* PointLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointLocation.swift; sourceTree = "<group>"; };
 		D7138B941C137E6F00523D49 /* FormulasDictionaries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulasDictionaries.swift; sourceTree = "<group>"; };
+		D717A5441C163DEA00D26DCF /* ChannelSets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelSets.swift; sourceTree = "<group>"; };
 		D74D057A1C0D4C0F005644A1 /* PointSets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointSets.swift; sourceTree = "<group>"; };
 		D74D45AF1BFCFEDD0098FD3D /* Entry+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Entry+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D74D45B01BFCFEDD0098FD3D /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 				D702FA451C0D51E000FDCD5A /* PointLocation.swift */,
 				D7AA5C041C112981009E32A7 /* PointDictionaries.swift */,
 				D7D9EBB91BDDABF400C920AC /* PointController.swift */,
+				D717A5441C163DEA00D26DCF /* ChannelSets.swift */,
 				D76D36551BF580CC0003AC43 /* ChannelController.swift */,
 			);
 			name = Points;
@@ -326,6 +329,7 @@
 			files = (
 				D782A5F31BEA4BE200E51BAC /* FormulasController.swift in Sources */,
 				D76D365A1BF58BC90003AC43 /* Channel+CoreDataProperties.swift in Sources */,
+				D717A5451C163DEA00D26DCF /* ChannelSets.swift in Sources */,
 				D74D45B11BFCFEDD0098FD3D /* Entry+CoreDataProperties.swift in Sources */,
 				D7D9EBBC1BDDAC2300C920AC /* PointsListViewController.swift in Sources */,
 				D7580B061BDD1EB70008789F /* ViewController.swift in Sources */,
