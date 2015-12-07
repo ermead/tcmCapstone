@@ -99,7 +99,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func loadFormulasDefaultData() {
         
         guard let formulaEntity = NSEntityDescription.entityForName("Formula", inManagedObjectContext: Stack.sharedStack.managedObjectContext) else {fatalError("Could not find formula entity description!")}
-            
+        
+        _ = FormulasController.sharedController.defaultFormulas
+        
+        
+        /*
         let cinnamonDecoction = Formula(entity: formulaEntity, insertIntoManagedObjectContext: Stack.sharedStack.managedObjectContext)
             cinnamonDecoction.pinyinName = "Gui Zhi Tang"
             cinnamonDecoction.englishName = "Cinnamon Decoction"
@@ -121,6 +125,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             SixFlavorDecoction.hasContents = NSSet(array: herbArray)
         
         do { try Stack.sharedStack.managedObjectContext.save()} catch {print("Error with Default Formulas")}
+        */
     }
     
     func loadChannelsDefaultData() {

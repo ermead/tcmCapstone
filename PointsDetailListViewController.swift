@@ -528,14 +528,14 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                     
                 }
                 
-                if detailFormula.imageId1 != nil {
-                ImageController.imageForImageId(detailFormula.imageId1!, completion: { (image) -> Void in
-                    self.leftImage.image = image
-                })}
-                if detailFormula.imageId2 != nil {
-                ImageController.imageForImageId(detailFormula.imageId2!, completion: { (image) -> Void in
-                    self.rightImage.image = image
-                })}
+//                if detailFormula.imageId1 != nil {
+//                ImageController.imageForImageId(detailFormula.imageId1!, completion: { (image) -> Void in
+//                    self.leftImage.image = image
+//                })}
+//                if detailFormula.imageId2 != nil {
+//                ImageController.imageForImageId(detailFormula.imageId2!, completion: { (image) -> Void in
+//                    self.rightImage.image = image
+//                })}
                 
             }
             
@@ -754,7 +754,7 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         //thisSetOfImageObjects.setByAddingObjectsFromArray(arrayofImageObjects)
         print("This set I am adding has \(thisSetOfImageObjects.count) image objects")
     
-        let newFormula = Formula(pinyinName: pinyinName, englishName: englishName, uses: uses, hasContents: [], imageId1: placeholderLeftImageId, imageId2: placeholderRightImageId, images: thisSetOfImageObjects, context: Stack.sharedStack.managedObjectContext)
+        let newFormula = Formula(pinyinName: pinyinName, englishName: englishName, uses: uses, hasContents: [], images: thisSetOfImageObjects, context: Stack.sharedStack.managedObjectContext)
         
         FormulasController.sharedController.addFormula(newFormula)
         print("I tried to add a new Formula")

@@ -25,6 +25,13 @@ class FormulasController: NSObject {
 //        
 //    }
     
+    var defaultFormulas : [Formula] {
+        
+        let array = FormulaSets.sharedController.allFormulas()
+        return array
+        
+    }
+    
     var formulas: [Formula] {
         
         let request = NSFetchRequest(entityName: "Formula")
