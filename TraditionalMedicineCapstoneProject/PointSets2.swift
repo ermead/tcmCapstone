@@ -581,7 +581,7 @@ func Stomach() ->[Point] {
         let DU28 = Point(pinyinName: "yín jiāo" , englishName: " ", chineseCharacter: "齦交", pointOnMeridian: "DU-28", channelAbrev: "DU", number: "28", specialCategories: (pd.getEntryForPoint((pdp.DU28, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU28, key: (pdk.Location)))), channel: "Du Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU28), actions: (pd.getEntryForPoint((pdp.DU28, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU28, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU28, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU28, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU28, key: (pdk.Trigger)))), imageName: "DU28", images: [], context: moc)
         
         
-        return [DU1,DU2,DU3,DU5,DU6,DU7,DU8,DU9,DU10,DU11,DU12,DU13,DU14,DU15,DU16,DU17,DU18,DU19,DU20,DU21,DU22,DU23,DU24,DU25,DU26,DU27,DU28]
+        return [DU1,DU2,DU3,DU4,DU5,DU6,DU7,DU8,DU9,DU10,DU11,DU12,DU13,DU14,DU15,DU16,DU17,DU18,DU19,DU20,DU21,DU22,DU23,DU24,DU25,DU26,DU27,DU28]
         
         
     }

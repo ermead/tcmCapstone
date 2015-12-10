@@ -20,15 +20,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-       //deleteCoreData()
+       deleteCoreData()
         
-        let url = "http://maciociaonline.blogspot.com/"
-        let url2 = "http://www.shen-nong.com/eng/exam/index.html"
+//        let url = "http://maciociaonline.blogspot.com/"
+//        let url2 = "http://www.shen-nong.com/eng/exam/index.html"
+//        
+//        let svc = SFSafariViewController(URL: NSURL(string: url2)!)
+//        svc.view.frame = CGRect(x: 50, y: 50, width: 180, height: 180)
         
-        let svc = SFSafariViewController(URL: NSURL(string: url2)!)
-        svc.view.frame = CGRect(x: 50, y: 50, width: 180, height: 180)
-        
-      self.presentViewController(svc, animated: true, completion: nil)
+ //     self.presentViewController(svc, animated: true, completion: nil)
      
     }
 

@@ -193,7 +193,7 @@ class PointsListViewController: UIViewController, UITableViewDataSource, UITable
                 let pointsArray = self.pointsArray
                 let point = pointsArray[indexPath.row]
                 cell.textLabel?.text = point.pointOnMeridian
-                cell.detailTextLabel?.text = point.pinyinName!.capitalizedString
+                cell.detailTextLabel?.text = point.pinyinName!.capitalizedString.stringByReplacingOccurrencesOfString("(?)", withString: "")
                 
             } else {
                 
