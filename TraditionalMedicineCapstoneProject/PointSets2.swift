@@ -106,43 +106,6 @@ func LargeIntestine() ->[Point] {
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     let LI1 = Point(pinyinName: "shāng yáng" , englishName: "Shang Yang", chineseCharacter: "商陽", pointOnMeridian: "LI-1", channelAbrev: "LI", number: "1", specialCategories: (pd.getEntryForPoint((pdp.LI1, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.LI1, key: (pdk.Location)))), channel: "Hand Yang Ming", uses: PointUses.sharedController.getPointUse(PointUses.Point.LI1), actions: (pd.getEntryForPoint((pdp.LI1, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.LI1, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.LI1, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.LI1, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.LI1, key: (pdk.Trigger)))), imageName: "LI1", images: [], context: moc)
     let LI2 = Point(pinyinName: "èr jiān" , englishName: "Second Space", chineseCharacter: "二間(?)", pointOnMeridian: "LI-2", channelAbrev: "LI", number: "2", specialCategories: (pd.getEntryForPoint((pdp.LI2, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.LI2, key: (pdk.Location)))), channel: "Hand Yang Ming", uses: PointUses.sharedController.getPointUse(PointUses.Point.LI2), actions: (pd.getEntryForPoint((pdp.LI2, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.LI2, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.LI2, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.LI2, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.LI2, key: (pdk.Trigger)))), imageName: "LI2", images: [], context: moc)
     let LI3 = Point(pinyinName: "sān jiān(?)" , englishName: "Third Space", chineseCharacter: "三間(?)", pointOnMeridian: "LI-3", channelAbrev: "LI", number: "3", specialCategories: (pd.getEntryForPoint((pdp.LI3, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.LI3, key: (pdk.Location)))), channel: "Hand Yang Ming", uses: PointUses.sharedController.getPointUse(PointUses.Point.LI3), actions: (pd.getEntryForPoint((pdp.LI3, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.LI3, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.LI3, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.LI3, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.LI3, key: (pdk.Trigger)))), imageName: "LI3", images: [], context: moc)
@@ -171,96 +134,7 @@ func LargeIntestine() ->[Point] {
 
 func Stomach() ->[Point] {
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+ 
     
     let ST1 = Point(pinyinName: "chéng qì" , englishName: "Container of Tears", chineseCharacter: "承泣", pointOnMeridian: "ST-1", channelAbrev: "ST", number: "1", specialCategories: (pd.getEntryForPoint((pdp.ST1, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.ST1, key: (pdk.Location)))), channel: "Foot Yang Ming", uses: PointUses.sharedController.getPointUse(PointUses.Point.ST1), actions: (pd.getEntryForPoint((pdp.ST1, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.ST1, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.ST1, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.ST1, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.ST1, key: (pdk.Trigger)))), imageName: "ST1", images: [], context: moc)
     let ST2 = Point(pinyinName: "sì bái" , englishName: "Four Whites", chineseCharacter: "四白(?)", pointOnMeridian: "ST-2", channelAbrev: "ST", number: "2", specialCategories: (pd.getEntryForPoint((pdp.ST2, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.ST2, key: (pdk.Location)))), channel: "Foot Yang Ming", uses: PointUses.sharedController.getPointUse(PointUses.Point.ST2), actions: (pd.getEntryForPoint((pdp.ST2, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.ST2, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.ST2, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.ST2, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.ST2, key: (pdk.Trigger)))), imageName: "ST2", images: [], context: moc)
@@ -316,46 +190,7 @@ func Stomach() ->[Point] {
     func Spleen() ->[Point] {
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+       
         
         
         let SP1 = Point(pinyinName: "yǐn bái" , englishName: "Hidden White", chineseCharacter: "隱白", pointOnMeridian: "SP-1", channelAbrev: "SP", number: "1", specialCategories: (pd.getEntryForPoint((pdp.SP1, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.SP1, key: (pdk.Location)))), channel: "Foot Tai Yin", uses: PointUses.sharedController.getPointUse(PointUses.Point.SP1), actions: (pd.getEntryForPoint((pdp.SP1, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.SP1, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.SP1, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.SP1, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.SP1, key: (pdk.Trigger)))), imageName: "SP1", images: [], context: moc)
@@ -387,24 +222,7 @@ func Stomach() ->[Point] {
     
     func Heart() ->[Point] {
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+      
         
         let HT1 = Point(pinyinName: "jí quán" , englishName: "Summit Spring", chineseCharacter: "極泉", pointOnMeridian: "HT-1", channelAbrev: "HT", number: "1", specialCategories: (pd.getEntryForPoint((pdp.HT1, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.HT1, key: (pdk.Location)))), channel: "Hand Shao Yin", uses: PointUses.sharedController.getPointUse(PointUses.Point.HT1), actions: (pd.getEntryForPoint((pdp.HT1, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.HT1, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.HT1, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.HT1, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.HT1, key: (pdk.Trigger)))), imageName: "HT1", images: [], context: moc)
         let HT2 = Point(pinyinName: "qīng líng" , englishName: "Green Spirit", chineseCharacter: "青靈", pointOnMeridian: "HT-2", channelAbrev: "HT", number: "2", specialCategories: (pd.getEntryForPoint((pdp.HT2, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.HT2, key: (pdk.Location)))), channel: "Hand Shao Yin", uses: PointUses.sharedController.getPointUse(PointUses.Point.HT2), actions: (pd.getEntryForPoint((pdp.HT2, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.HT2, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.HT2, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.HT2, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.HT2, key: (pdk.Trigger)))), imageName: "HT2", images: [], context: moc)
@@ -424,42 +242,7 @@ func Stomach() ->[Point] {
     func SmallIntestine() ->[Point] {
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+     
         
         
         let SI1 = Point(pinyinName: "shào zé" , englishName: "Lesser Marsh", chineseCharacter: "少澤", pointOnMeridian: "SI-1", channelAbrev: "SI", number: "1", specialCategories: (pd.getEntryForPoint((pdp.SI1, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.SI1, key: (pdk.Location)))), channel: "Hand Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.SI1), actions: (pd.getEntryForPoint((pdp.SI1, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.SI1, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.SI1, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.SI1, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.SI1, key: (pdk.Trigger)))), imageName: "SI1", images: [], context: moc)
@@ -489,66 +272,85 @@ func Stomach() ->[Point] {
 
     
     func Bladder() ->[Point] {
+      
+        
+        let BL1 = Point(pinyinName: "jīng míng" , englishName: "Bright Eyes", chineseCharacter: "睛明", pointOnMeridian: "BL-1", channelAbrev: "BL", number: "1", specialCategories: (pd.getEntryForPoint((pdp.BL1, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL1, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL1), actions: (pd.getEntryForPoint((pdp.BL1, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL1, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL1, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL1, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL1, key: (pdk.Trigger)))), imageName: "BL1", images: [], context: moc)
+        let BL2 = Point(pinyinName: "cuán zhú" , englishName: "Gathered Bamboo", chineseCharacter: "攢竹", pointOnMeridian: "BL-2", channelAbrev: "BL", number: "2", specialCategories: (pd.getEntryForPoint((pdp.BL2, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL2, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL2), actions: (pd.getEntryForPoint((pdp.BL2, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL2, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL2, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL2, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL2, key: (pdk.Trigger)))), imageName: "BL2", images: [], context: moc)
+        let BL3 = Point(pinyinName: "Bright Eyes" , englishName: "Jingming", chineseCharacter: "Bl-1", pointOnMeridian: "BL-3", channelAbrev: "BL", number: "3", specialCategories: (pd.getEntryForPoint((pdp.BL3, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL3, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL3), actions: (pd.getEntryForPoint((pdp.BL3, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL3, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL3, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL3, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL3, key: (pdk.Trigger)))), imageName: "BL3", images: [], context: moc)
+        let BL5 = Point(pinyinName: "wǔ chǔ" , englishName: "Fifth Place", chineseCharacter: "五處", pointOnMeridian: "BL-5", channelAbrev: "BL", number: "5", specialCategories: (pd.getEntryForPoint((pdp.BL5, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL5, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL5), actions: (pd.getEntryForPoint((pdp.BL5, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL5, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL5, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL5, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL5, key: (pdk.Trigger)))), imageName: "BL5", images: [], context: moc)
+        let BL6 = Point(pinyinName: "chéng guāng(?)" , englishName: "Receiving Light", chineseCharacter: "承光(?)", pointOnMeridian: "BL-6", channelAbrev: "BL", number: "6", specialCategories: (pd.getEntryForPoint((pdp.BL6, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL6, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL6), actions: (pd.getEntryForPoint((pdp.BL6, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL6, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL6, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL6, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL6, key: (pdk.Trigger)))), imageName: "BL6", images: [], context: moc)
+        let BL7 = Point(pinyinName: "tōng tiān(?)" , englishName: "Heavenly Connection", chineseCharacter: "通天(?)", pointOnMeridian: "BL-7", channelAbrev: "BL", number: "7", specialCategories: (pd.getEntryForPoint((pdp.BL7, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL7, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL7), actions: (pd.getEntryForPoint((pdp.BL7, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL7, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL7, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL7, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL7, key: (pdk.Trigger)))), imageName: "BL7", images: [], context: moc)
+        let BL8 = Point(pinyinName: "luò què" , englishName: "Declining Connection", chineseCharacter: "絡卻", pointOnMeridian: "BL-8", channelAbrev: "BL", number: "8", specialCategories: (pd.getEntryForPoint((pdp.BL8, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL8, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL8), actions: (pd.getEntryForPoint((pdp.BL8, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL8, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL8, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL8, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL8, key: (pdk.Trigger)))), imageName: "BL8", images: [], context: moc)
+        let BL9 = Point(pinyinName: "yù zhěn(?)" , englishName: "Jade Pillow", chineseCharacter: "玉枕(?)", pointOnMeridian: "BL-9", channelAbrev: "BL", number: "9", specialCategories: (pd.getEntryForPoint((pdp.BL9, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL9, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL9), actions: (pd.getEntryForPoint((pdp.BL9, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL9, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL9, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL9, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL9, key: (pdk.Trigger)))), imageName: "BL9", images: [], context: moc)
+        let BL10 = Point(pinyinName: "tiān zhù" , englishName: "Celestial Pillar", chineseCharacter: "天柱(?)", pointOnMeridian: "BL-10", channelAbrev: "BL", number: "10", specialCategories: (pd.getEntryForPoint((pdp.BL10, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL10, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL10), actions: (pd.getEntryForPoint((pdp.BL10, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL10, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL10, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL10, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL10, key: (pdk.Trigger)))), imageName: "BL10", images: [], context: moc)
+        let BL11 = Point(pinyinName: "dà zhù" , englishName: "Great Shuttle", chineseCharacter: "大杼", pointOnMeridian: "BL-11", channelAbrev: "BL", number: "11", specialCategories: (pd.getEntryForPoint((pdp.BL11, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL11, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL11), actions: (pd.getEntryForPoint((pdp.BL11, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL11, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL11, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL11, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL11, key: (pdk.Trigger)))), imageName: "BL11", images: [], context: moc)
+        let BL12 = Point(pinyinName: "fēng mén" , englishName: "Wind Gate", chineseCharacter: "風門", pointOnMeridian: "BL-12", channelAbrev: "BL", number: "12", specialCategories: (pd.getEntryForPoint((pdp.BL12, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL12, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL12), actions: (pd.getEntryForPoint((pdp.BL12, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL12, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL12, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL12, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL12, key: (pdk.Trigger)))), imageName: "BL12", images: [], context: moc)
+        let BL13 = Point(pinyinName: "fèi shū" , englishName: "Lung Transporter", chineseCharacter: "肺俞", pointOnMeridian: "BL-13", channelAbrev: "BL", number: "13", specialCategories: (pd.getEntryForPoint((pdp.BL13, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL13, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL13), actions: (pd.getEntryForPoint((pdp.BL13, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL13, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL13, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL13, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL13, key: (pdk.Trigger)))), imageName: "BL13", images: [], context: moc)
+        let BL14 = Point(pinyinName: "jué yīn shū" , englishName: "Jueyin Transporter", chineseCharacter: "厥陰俞", pointOnMeridian: "BL-14", channelAbrev: "BL", number: "14", specialCategories: (pd.getEntryForPoint((pdp.BL14, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL14, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL14), actions: (pd.getEntryForPoint((pdp.BL14, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL14, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL14, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL14, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL14, key: (pdk.Trigger)))), imageName: "BL14", images: [], context: moc)
+        let BL15 = Point(pinyinName: "xīn shū" , englishName: "Heart Transporter", chineseCharacter: "心俞(?)", pointOnMeridian: "BL-15", channelAbrev: "BL", number: "15", specialCategories: (pd.getEntryForPoint((pdp.BL15, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL15, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL15), actions: (pd.getEntryForPoint((pdp.BL15, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL15, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL15, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL15, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL15, key: (pdk.Trigger)))), imageName: "BL15", images: [], context: moc)
+        let BL16 = Point(pinyinName: "dū shū?" , englishName: "Governor Transporter", chineseCharacter: "督俞", pointOnMeridian: "BL-16", channelAbrev: "BL", number: "16", specialCategories: (pd.getEntryForPoint((pdp.BL16, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL16, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL16), actions: (pd.getEntryForPoint((pdp.BL16, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL16, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL16, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL16, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL16, key: (pdk.Trigger)))), imageName: "BL16", images: [], context: moc)
+        let BL17 = Point(pinyinName: "gé shū" , englishName: "Diaphragm Transporter", chineseCharacter: "膈俞", pointOnMeridian: "BL-17", channelAbrev: "BL", number: "17", specialCategories: (pd.getEntryForPoint((pdp.BL17, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL17, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL17), actions: (pd.getEntryForPoint((pdp.BL17, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL17, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL17, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL17, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL17, key: (pdk.Trigger)))), imageName: "BL17", images: [], context: moc)
+        let BL18 = Point(pinyinName: "gān shū" , englishName: "Liver Transporter", chineseCharacter: "肝俞", pointOnMeridian: "BL-18", channelAbrev: "BL", number: "18", specialCategories: (pd.getEntryForPoint((pdp.BL18, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL18, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL18), actions: (pd.getEntryForPoint((pdp.BL18, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL18, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL18, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL18, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL18, key: (pdk.Trigger)))), imageName: "BL18", images: [], context: moc)
+        let BL19 = Point(pinyinName: "dǎn shū" , englishName: "Gallbladder Transporter", chineseCharacter: "膽俞", pointOnMeridian: "BL-19", channelAbrev: "BL", number: "19", specialCategories: (pd.getEntryForPoint((pdp.BL19, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL19, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL19), actions: (pd.getEntryForPoint((pdp.BL19, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL19, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL19, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL19, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL19, key: (pdk.Trigger)))), imageName: "BL19", images: [], context: moc)
+        let BL20 = Point(pinyinName: "pí shū" , englishName: "Spleen Transporter", chineseCharacter: "脾俞", pointOnMeridian: "BL-20", channelAbrev: "BL", number: "20", specialCategories: (pd.getEntryForPoint((pdp.BL20, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL20, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL20), actions: (pd.getEntryForPoint((pdp.BL20, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL20, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL20, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL20, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL20, key: (pdk.Trigger)))), imageName: "BL20", images: [], context: moc)
+        let BL21 = Point(pinyinName: "wèi shū" , englishName: "Stomach Transporter", chineseCharacter: "胃俞", pointOnMeridian: "BL-21", channelAbrev: "BL", number: "21", specialCategories: (pd.getEntryForPoint((pdp.BL21, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL21, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL21), actions: (pd.getEntryForPoint((pdp.BL21, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL21, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL21, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL21, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL21, key: (pdk.Trigger)))), imageName: "BL21", images: [], context: moc)
+        let BL22 = Point(pinyinName: "sān jiāo shū" , englishName: "Sanjiao Transporter", chineseCharacter: "三焦俞", pointOnMeridian: "BL-22", channelAbrev: "BL", number: "22", specialCategories: (pd.getEntryForPoint((pdp.BL22, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL22, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL22), actions: (pd.getEntryForPoint((pdp.BL22, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL22, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL22, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL22, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL22, key: (pdk.Trigger)))), imageName: "BL22", images: [], context: moc)
+        let BL23 = Point(pinyinName: "shèn shū" , englishName: "Kidney Transporter", chineseCharacter: "腎俞", pointOnMeridian: "BL-23", channelAbrev: "BL", number: "23", specialCategories: (pd.getEntryForPoint((pdp.BL23, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL23, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL23), actions: (pd.getEntryForPoint((pdp.BL23, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL23, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL23, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL23, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL23, key: (pdk.Trigger)))), imageName: "BL23", images: [], context: moc)
+        let BL24 = Point(pinyinName: "qì hǎi shū?" , englishName: "Sea of Qi Transporter", chineseCharacter: "氣海俞", pointOnMeridian: "BL-24", channelAbrev: "BL", number: "24", specialCategories: (pd.getEntryForPoint((pdp.BL24, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL24, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL24), actions: (pd.getEntryForPoint((pdp.BL24, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL24, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL24, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL24, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL24, key: (pdk.Trigger)))), imageName: "BL24", images: [], context: moc)
+        let BL25 = Point(pinyinName: "dà cháng shū" , englishName: "Large Intestine Transporter", chineseCharacter: "大腸俞", pointOnMeridian: "BL-25", channelAbrev: "BL", number: "25", specialCategories: (pd.getEntryForPoint((pdp.BL25, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL25, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL25), actions: (pd.getEntryForPoint((pdp.BL25, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL25, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL25, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL25, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL25, key: (pdk.Trigger)))), imageName: "BL25", images: [], context: moc)
+        let BL26 = Point(pinyinName: "guān yuán shū" , englishName: "Gate of Origin Transporter", chineseCharacter: "關元俞", pointOnMeridian: "BL-26", channelAbrev: "BL", number: "26", specialCategories: (pd.getEntryForPoint((pdp.BL26, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL26, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL26), actions: (pd.getEntryForPoint((pdp.BL26, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL26, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL26, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL26, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL26, key: (pdk.Trigger)))), imageName: "BL26", images: [], context: moc)
+        let BL27 = Point(pinyinName: "xiǎo cháng shū" , englishName: "Small Intestine Transporter", chineseCharacter: "小腸俞", pointOnMeridian: "BL-27", channelAbrev: "BL", number: "27", specialCategories: (pd.getEntryForPoint((pdp.BL27, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL27, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL27), actions: (pd.getEntryForPoint((pdp.BL27, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL27, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL27, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL27, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL27, key: (pdk.Trigger)))), imageName: "BL27", images: [], context: moc)
+        let BL28 = Point(pinyinName: "páng guāng shū(?)" , englishName: "Bladder Transporter", chineseCharacter: "膀胱俞(?)", pointOnMeridian: "BL-28", channelAbrev: "BL", number: "28", specialCategories: (pd.getEntryForPoint((pdp.BL28, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL28, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL28), actions: (pd.getEntryForPoint((pdp.BL28, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL28, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL28, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL28, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL28, key: (pdk.Trigger)))), imageName: "BL28", images: [], context: moc)
+        let BL29 = Point(pinyinName: "zhōng lǚ shū(?)" , englishName: "Mid-Spine Transporter", chineseCharacter: "中膂俞(?)", pointOnMeridian: "BL-29", channelAbrev: "BL", number: "29", specialCategories: (pd.getEntryForPoint((pdp.BL29, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL29, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL29), actions: (pd.getEntryForPoint((pdp.BL29, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL29, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL29, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL29, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL29, key: (pdk.Trigger)))), imageName: "BL29", images: [], context: moc)
+        let BL30 = Point(pinyinName: "bái huán shū" , englishName: "White Ring Transporter", chineseCharacter: "白環俞", pointOnMeridian: "BL-30", channelAbrev: "BL", number: "30", specialCategories: (pd.getEntryForPoint((pdp.BL30, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL30, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL30), actions: (pd.getEntryForPoint((pdp.BL30, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL30, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL30, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL30, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL30, key: (pdk.Trigger)))), imageName: "BL30", images: [], context: moc)
+        let BL31 = Point(pinyinName: "shàng liáo(?)" , englishName: "Upper Crevice", chineseCharacter: "上髎(?)", pointOnMeridian: "BL-31", channelAbrev: "BL", number: "31", specialCategories: (pd.getEntryForPoint((pdp.BL31, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL31, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL31), actions: (pd.getEntryForPoint((pdp.BL31, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL31, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL31, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL31, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL31, key: (pdk.Trigger)))), imageName: "BL31", images: [], context: moc)
+        let BL32 = Point(pinyinName: "cì liáo" , englishName: "Second Crevice", chineseCharacter: "次髎(?)", pointOnMeridian: "BL-32", channelAbrev: "BL", number: "32", specialCategories: (pd.getEntryForPoint((pdp.BL32, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL32, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL32), actions: (pd.getEntryForPoint((pdp.BL32, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL32, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL32, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL32, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL32, key: (pdk.Trigger)))), imageName: "BL32", images: [], context: moc)
+        let BL33 = Point(pinyinName: "zhōng liáo(?)" , englishName: "Middle Crevice", chineseCharacter: "中髎(?)", pointOnMeridian: "BL-33", channelAbrev: "BL", number: "33", specialCategories: (pd.getEntryForPoint((pdp.BL33, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL33, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL33), actions: (pd.getEntryForPoint((pdp.BL33, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL33, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL33, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL33, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL33, key: (pdk.Trigger)))), imageName: "BL33", images: [], context: moc)
+        let BL34 = Point(pinyinName: "xià liáo(?)" , englishName: "Lower crevice", chineseCharacter: "下髎(?)", pointOnMeridian: "BL-34", channelAbrev: "BL", number: "34", specialCategories: (pd.getEntryForPoint((pdp.BL34, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL34, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL34), actions: (pd.getEntryForPoint((pdp.BL34, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL34, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL34, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL34, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL34, key: (pdk.Trigger)))), imageName: "BL34", images: [], context: moc)
+        let BL35 = Point(pinyinName: "Bright Eyes" , englishName: "Jingming", chineseCharacter: "Bl-1", pointOnMeridian: "BL-35", channelAbrev: "BL", number: "35", specialCategories: (pd.getEntryForPoint((pdp.BL35, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL35, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL35), actions: (pd.getEntryForPoint((pdp.BL35, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL35, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL35, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL35, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL35, key: (pdk.Trigger)))), imageName: "BL35", images: [], context: moc)
+        let BL36 = Point(pinyinName: "chéng fú(?)" , englishName: "Hold and Support", chineseCharacter: "承扶(?)", pointOnMeridian: "BL-36", channelAbrev: "BL", number: "36", specialCategories: (pd.getEntryForPoint((pdp.BL36, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL36, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL36), actions: (pd.getEntryForPoint((pdp.BL36, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL36, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL36, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL36, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL36, key: (pdk.Trigger)))), imageName: "BL36", images: [], context: moc)
+        let BL37 = Point(pinyinName: "yīn mén" , englishName: "Gate of Abundance", chineseCharacter: "殷門", pointOnMeridian: "BL-37", channelAbrev: "BL", number: "37", specialCategories: (pd.getEntryForPoint((pdp.BL37, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL37, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL37), actions: (pd.getEntryForPoint((pdp.BL37, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL37, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL37, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL37, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL37, key: (pdk.Trigger)))), imageName: "BL37", images: [], context: moc)
+        let BL38 = Point(pinyinName: "fú xī" , englishName: "Floating Cleft", chineseCharacter: "浮郄", pointOnMeridian: "BL-38", channelAbrev: "BL", number: "38", specialCategories: (pd.getEntryForPoint((pdp.BL38, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL38, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL38), actions: (pd.getEntryForPoint((pdp.BL38, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL38, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL38, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL38, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL38, key: (pdk.Trigger)))), imageName: "BL38", images: [], context: moc)
+        let BL39 = Point(pinyinName: "wěi yáng" , englishName: "Outside of the Crook", chineseCharacter: "委陽", pointOnMeridian: "BL-39", channelAbrev: "BL", number: "39", specialCategories: (pd.getEntryForPoint((pdp.BL39, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL39, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL39), actions: (pd.getEntryForPoint((pdp.BL39, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL39, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL39, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL39, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL39, key: (pdk.Trigger)))), imageName: "BL39", images: [], context: moc)
+        let BL40 = Point(pinyinName: "Bright Eyes" , englishName: "Jingming", chineseCharacter: "Bl-1", pointOnMeridian: "BL-40", channelAbrev: "BL", number: "40", specialCategories: (pd.getEntryForPoint((pdp.BL40, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL40, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL40), actions: (pd.getEntryForPoint((pdp.BL40, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL40, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL40, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL40, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL40, key: (pdk.Trigger)))), imageName: "BL40", images: [], context: moc)
+        let BL41 = Point(pinyinName: "Bright Eyes" , englishName: "Jingming", chineseCharacter: "Bl-1", pointOnMeridian: "BL-41", channelAbrev: "BL", number: "41", specialCategories: (pd.getEntryForPoint((pdp.BL41, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL41, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL41), actions: (pd.getEntryForPoint((pdp.BL41, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL41, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL41, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL41, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL41, key: (pdk.Trigger)))), imageName: "BL41", images: [], context: moc)
+        let BL42 = Point(pinyinName: "pò hù" , englishName: "Door of the Corporeal Soul", chineseCharacter: "魄戶", pointOnMeridian: "BL-42", channelAbrev: "BL", number: "42", specialCategories: (pd.getEntryForPoint((pdp.BL42, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL42, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL42), actions: (pd.getEntryForPoint((pdp.BL42, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL42, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL42, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL42, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL42, key: (pdk.Trigger)))), imageName: "BL42", images: [], context: moc)
+        let BL43 = Point(pinyinName: "gāo huāng shū" , englishName: "Vital Region Shu", chineseCharacter: "膏肓俞", pointOnMeridian: "BL-43", channelAbrev: "BL", number: "43", specialCategories: (pd.getEntryForPoint((pdp.BL43, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL43, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL43), actions: (pd.getEntryForPoint((pdp.BL43, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL43, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL43, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL43, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL43, key: (pdk.Trigger)))), imageName: "BL43", images: [], context: moc)
+        let BL44 = Point(pinyinName: "shén táng(?)" , englishName: "Hall of the Spirit", chineseCharacter: "神堂(?)", pointOnMeridian: "BL-44", channelAbrev: "BL", number: "44", specialCategories: (pd.getEntryForPoint((pdp.BL44, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL44, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL44), actions: (pd.getEntryForPoint((pdp.BL44, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL44, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL44, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL44, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL44, key: (pdk.Trigger)))), imageName: "BL44", images: [], context: moc)
+        let BL45 = Point(pinyinName: "yì xǐ?" , englishName: "Yi Xi&#160;?", chineseCharacter: "譩譆(?)", pointOnMeridian: "BL-45", channelAbrev: "BL", number: "45", specialCategories: (pd.getEntryForPoint((pdp.BL45, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL45, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL45), actions: (pd.getEntryForPoint((pdp.BL45, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL45, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL45, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL45, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL45, key: (pdk.Trigger)))), imageName: "BL45", images: [], context: moc)
+        let BL46 = Point(pinyinName: "gé guān" , englishName: "Diaphragm Gate", chineseCharacter: "膈關", pointOnMeridian: "BL-46", channelAbrev: "BL", number: "46", specialCategories: (pd.getEntryForPoint((pdp.BL46, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL46, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL46), actions: (pd.getEntryForPoint((pdp.BL46, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL46, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL46, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL46, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL46, key: (pdk.Trigger)))), imageName: "BL46", images: [], context: moc)
+        let BL47 = Point(pinyinName: "hún mén" , englishName: "Gate of the Ethereal Soul", chineseCharacter: "魂門", pointOnMeridian: "BL-47", channelAbrev: "BL", number: "47", specialCategories: (pd.getEntryForPoint((pdp.BL47, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL47, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL47), actions: (pd.getEntryForPoint((pdp.BL47, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL47, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL47, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL47, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL47, key: (pdk.Trigger)))), imageName: "BL47", images: [], context: moc)
+        let BL48 = Point(pinyinName: "yáng gāng" , englishName: "Yang's Key Link", chineseCharacter: "陽綱", pointOnMeridian: "BL-48", channelAbrev: "BL", number: "48", specialCategories: (pd.getEntryForPoint((pdp.BL48, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL48, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL48), actions: (pd.getEntryForPoint((pdp.BL48, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL48, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL48, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL48, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL48, key: (pdk.Trigger)))), imageName: "BL48", images: [], context: moc)
+        let BL49 = Point(pinyinName: "yì shě?" , englishName: "Abode of Consciousness of Potentials", chineseCharacter: "意舍(?)", pointOnMeridian: "BL-49", channelAbrev: "BL", number: "49", specialCategories: (pd.getEntryForPoint((pdp.BL49, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL49, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL49), actions: (pd.getEntryForPoint((pdp.BL49, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL49, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL49, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL49, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL49, key: (pdk.Trigger)))), imageName: "BL49", images: [], context: moc)
+        let BL50 = Point(pinyinName: "Gate of Abundance" , englishName: "Yinmen", chineseCharacter: "Bl-37", pointOnMeridian: "BL-50", channelAbrev: "BL", number: "50", specialCategories: (pd.getEntryForPoint((pdp.BL50, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL50, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL50), actions: (pd.getEntryForPoint((pdp.BL50, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL50, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL50, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL50, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL50, key: (pdk.Trigger)))), imageName: "BL50", images: [], context: moc)
+        let BL51 = Point(pinyinName: "Floating Cleft" , englishName: "Fuxi", chineseCharacter: "Bl-38", pointOnMeridian: "BL-51", channelAbrev: "BL", number: "51", specialCategories: (pd.getEntryForPoint((pdp.BL51, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL51, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL51), actions: (pd.getEntryForPoint((pdp.BL51, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL51, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL51, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL51, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL51, key: (pdk.Trigger)))), imageName: "BL51", images: [], context: moc)
+        let BL52 = Point(pinyinName: "Outside of the Crook" , englishName: "Weiyang", chineseCharacter: "Bl-39", pointOnMeridian: "BL-52", channelAbrev: "BL", number: "52", specialCategories: (pd.getEntryForPoint((pdp.BL52, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL52, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL52), actions: (pd.getEntryForPoint((pdp.BL52, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL52, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL52, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL52, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL52, key: (pdk.Trigger)))), imageName: "BL52", images: [], context: moc)
+        let BL53 = Point(pinyinName: "Middle of the Crook" , englishName: "Weizhong", chineseCharacter: "Bl-40", pointOnMeridian: "BL-53", channelAbrev: "BL", number: "53", specialCategories: (pd.getEntryForPoint((pdp.BL53, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL53, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL53), actions: (pd.getEntryForPoint((pdp.BL53, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL53, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL53, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL53, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL53, key: (pdk.Trigger)))), imageName: "BL53", images: [], context: moc)
+        let BL54 = Point(pinyinName: "Attached Branch" , englishName: "Fufen", chineseCharacter: "Bl-41", pointOnMeridian: "BL-54", channelAbrev: "BL", number: "54", specialCategories: (pd.getEntryForPoint((pdp.BL54, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL54, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL54), actions: (pd.getEntryForPoint((pdp.BL54, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL54, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL54, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL54, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL54, key: (pdk.Trigger)))), imageName: "BL54", images: [], context: moc)
+        let BL55 = Point(pinyinName: "hé yáng" , englishName: "Confluence of Yang", chineseCharacter: "合陽", pointOnMeridian: "BL-55", channelAbrev: "BL", number: "55", specialCategories: (pd.getEntryForPoint((pdp.BL55, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL55, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL55), actions: (pd.getEntryForPoint((pdp.BL55, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL55, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL55, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL55, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL55, key: (pdk.Trigger)))), imageName: "BL55", images: [], context: moc)
+        let BL56 = Point(pinyinName: "chéng jīn" , englishName: "Support the Sinews", chineseCharacter: "承筋(?)", pointOnMeridian: "BL-56", channelAbrev: "BL", number: "56", specialCategories: (pd.getEntryForPoint((pdp.BL56, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL56, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL56), actions: (pd.getEntryForPoint((pdp.BL56, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL56, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL56, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL56, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL56, key: (pdk.Trigger)))), imageName: "BL56", images: [], context: moc)
+        let BL57 = Point(pinyinName: "chéng shān(?)" , englishName: "Support the Mountain", chineseCharacter: "承山(?)", pointOnMeridian: "BL-57", channelAbrev: "BL", number: "57", specialCategories: (pd.getEntryForPoint((pdp.BL57, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL57, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL57), actions: (pd.getEntryForPoint((pdp.BL57, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL57, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL57, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL57, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL57, key: (pdk.Trigger)))), imageName: "BL57", images: [], context: moc)
+        let BL58 = Point(pinyinName: "fēi yáng" , englishName: "Soaring Upwards", chineseCharacter: "飛陽", pointOnMeridian: "BL-58", channelAbrev: "BL", number: "58", specialCategories: (pd.getEntryForPoint((pdp.BL58, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL58, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL58), actions: (pd.getEntryForPoint((pdp.BL58, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL58, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL58, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL58, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL58, key: (pdk.Trigger)))), imageName: "BL58", images: [], context: moc)
+        let BL59 = Point(pinyinName: "fū yáng" , englishName: "Instep Yang", chineseCharacter: "跗陽", pointOnMeridian: "BL-59", channelAbrev: "BL", number: "59", specialCategories: (pd.getEntryForPoint((pdp.BL59, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL59, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL59), actions: (pd.getEntryForPoint((pdp.BL59, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL59, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL59, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL59, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL59, key: (pdk.Trigger)))), imageName: "BL59", images: [], context: moc)
+        let BL60 = Point(pinyinName: "kūn lún" , englishName: "Kunlun Mountains", chineseCharacter: "昆侖", pointOnMeridian: "BL-60", channelAbrev: "BL", number: "60", specialCategories: (pd.getEntryForPoint((pdp.BL60, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL60, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL60), actions: (pd.getEntryForPoint((pdp.BL60, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL60, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL60, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL60, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL60, key: (pdk.Trigger)))), imageName: "BL60", images: [], context: moc)
+        let BL61 = Point(pinyinName: "pú cān" , englishName: "Servant's Respect", chineseCharacter: "僕參", pointOnMeridian: "BL-61", channelAbrev: "BL", number: "61", specialCategories: (pd.getEntryForPoint((pdp.BL61, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL61, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL61), actions: (pd.getEntryForPoint((pdp.BL61, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL61, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL61, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL61, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL61, key: (pdk.Trigger)))), imageName: "BL61", images: [], context: moc)
+        let BL62 = Point(pinyinName: "shēn mài" , englishName: "Extending Vessel", chineseCharacter: "申脈", pointOnMeridian: "BL-62", channelAbrev: "BL", number: "62", specialCategories: (pd.getEntryForPoint((pdp.BL62, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL62, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL62), actions: (pd.getEntryForPoint((pdp.BL62, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL62, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL62, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL62, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL62, key: (pdk.Trigger)))), imageName: "BL62", images: [], context: moc)
+        let BL63 = Point(pinyinName: "jīn mén" , englishName: "Golden Gate", chineseCharacter: "金門", pointOnMeridian: "BL-63", channelAbrev: "BL", number: "63", specialCategories: (pd.getEntryForPoint((pdp.BL63, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL63, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL63), actions: (pd.getEntryForPoint((pdp.BL63, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL63, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL63, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL63, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL63, key: (pdk.Trigger)))), imageName: "BL63", images: [], context: moc)
+        let BL64 = Point(pinyinName: "jīng gǔ(?)" , englishName: "Capital Bone", chineseCharacter: "京骨(?)", pointOnMeridian: "BL-64", channelAbrev: "BL", number: "64", specialCategories: (pd.getEntryForPoint((pdp.BL64, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL64, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL64), actions: (pd.getEntryForPoint((pdp.BL64, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL64, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL64, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL64, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL64, key: (pdk.Trigger)))), imageName: "BL64", images: [], context: moc)
+        let BL65 = Point(pinyinName: "shù gǔ(?)" , englishName: "Restraining Bone", chineseCharacter: "束骨(?)", pointOnMeridian: "BL-65", channelAbrev: "BL", number: "65", specialCategories: (pd.getEntryForPoint((pdp.BL65, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL65, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL65), actions: (pd.getEntryForPoint((pdp.BL65, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL65, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL65, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL65, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL65, key: (pdk.Trigger)))), imageName: "BL65", images: [], context: moc)
+        let BL66 = Point(pinyinName: "zú tōng gǔ" , englishName: "Foot Connecting Valley", chineseCharacter: "足通谷", pointOnMeridian: "BL-66", channelAbrev: "BL", number: "66", specialCategories: (pd.getEntryForPoint((pdp.BL66, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL66, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL66), actions: (pd.getEntryForPoint((pdp.BL66, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL66, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL66, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL66, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL66, key: (pdk.Trigger)))), imageName: "BL66", images: [], context: moc)
+        let BL67 = Point(pinyinName: "zhì yīn" , englishName: "Reaching Yin", chineseCharacter: "至陰", pointOnMeridian: "BL-67", channelAbrev: "BL", number: "67", specialCategories: (pd.getEntryForPoint((pdp.BL67, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.BL67, key: (pdk.Location)))), channel: "Foot Tai Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.BL67), actions: (pd.getEntryForPoint((pdp.BL67, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.BL67, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.BL67, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.BL67, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.BL67, key: (pdk.Trigger)))), imageName: "BL67", images: [], context: moc)
         
         
+        return [BL1,BL2,BL3,BL5,BL6,BL7,BL8,BL9,BL10,BL11,BL12,BL13,BL14,BL15,BL16,BL17,BL18,BL19,BL20,BL21,BL22,BL23,BL24,BL25,BL26,BL27,BL28,BL29,BL30,BL31,BL32,BL33,BL34,BL35,BL36,BL37,BL38,BL39,BL40,BL41,BL42,BL43,BL44,BL45,BL46,BL47,BL48,BL49,BL50,BL51,BL52,BL53,BL54,BL55,BL56,BL57,BL58,BL59,BL60,BL61,BL62,BL63,BL64,BL65,BL66,BL67]
+     
     }
     
     
     func Kidney() ->[Point] {
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+  
         
         
         let KI1 = Point(pinyinName: "yǒng quán" , englishName: "Gushing Spring", chineseCharacter: "涌泉", pointOnMeridian: "KI-1", channelAbrev: "KI", number: "1", specialCategories: (pd.getEntryForPoint((pdp.KI1, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.KI1, key: (pdk.Location)))), channel: "Foot Shao Yin", uses: PointUses.sharedController.getPointUse(PointUses.Point.KI1), actions: (pd.getEntryForPoint((pdp.KI1, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.KI1, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.KI1, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.KI1, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.KI1, key: (pdk.Trigger)))), imageName: "KI1", images: [], context: moc)
@@ -586,24 +388,7 @@ func Stomach() ->[Point] {
     
     func Pericardium() ->[Point] {
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+   
         
         let PC1 = Point(pinyinName: "tiān chí" , englishName: "Heavenly Pool", chineseCharacter: "天池", pointOnMeridian: "PC-1", channelAbrev: "PC", number: "1", specialCategories: (pd.getEntryForPoint((pdp.PC1, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.PC1, key: (pdk.Location)))), channel: "Hand Jue Yin", uses: PointUses.sharedController.getPointUse(PointUses.Point.PC1), actions: (pd.getEntryForPoint((pdp.PC1, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.PC1, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.PC1, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.PC1, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.PC1, key: (pdk.Trigger)))), imageName: "PC1", images: [], context: moc)
         let PC2 = Point(pinyinName: "tiān quán(?)" , englishName: "Heavenly Spring", chineseCharacter: "天泉(?)", pointOnMeridian: "PC-2", channelAbrev: "PC", number: "2", specialCategories: (pd.getEntryForPoint((pdp.PC2, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.PC2, key: (pdk.Location)))), channel: "Hand Jue Yin", uses: PointUses.sharedController.getPointUse(PointUses.Point.PC2), actions: (pd.getEntryForPoint((pdp.PC2, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.PC2, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.PC2, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.PC2, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.PC2, key: (pdk.Trigger)))), imageName: "PC2", images: [], context: moc)
@@ -622,52 +407,7 @@ func Stomach() ->[Point] {
     
     func SanJiao() ->[Point] {
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+    
         
         let SJ1 = Point(pinyinName: "guān chōng" , englishName: "Rushing Pass", chineseCharacter: "關衝", pointOnMeridian: "SJ-1", channelAbrev: "SJ", number: "1", specialCategories: (pd.getEntryForPoint((pdp.SJ1, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.SJ1, key: (pdk.Location)))), channel: "Hand Shao Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.SJ1), actions: (pd.getEntryForPoint((pdp.SJ1, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.SJ1, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.SJ1, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.SJ1, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.SJ1, key: (pdk.Trigger)))), imageName: "SJ1", images: [], context: moc)
         let SJ2 = Point(pinyinName: "yè mén(?)" , englishName: "Fluid Gate", chineseCharacter: "液門(?)", pointOnMeridian: "SJ-2", channelAbrev: "SJ", number: "2", specialCategories: (pd.getEntryForPoint((pdp.SJ2, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.SJ2, key: (pdk.Location)))), channel: "Hand Shao Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.SJ2), actions: (pd.getEntryForPoint((pdp.SJ2, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.SJ2, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.SJ2, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.SJ2, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.SJ2, key: (pdk.Trigger)))), imageName: "SJ2", images: [], context: moc)
@@ -700,94 +440,7 @@ func Stomach() ->[Point] {
     
     func GallBladder() ->[Point] {
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+  
         
         let GB1 = Point(pinyinName: "tóng zǐ liáo" , englishName: "Pupil Crevice", chineseCharacter: "瞳子髎", pointOnMeridian: "GB-1", channelAbrev: "GB", number: "1", specialCategories: (pd.getEntryForPoint((pdp.GB1, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.GB1, key: (pdk.Location)))), channel: "Foot Shao Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.GB1), actions: (pd.getEntryForPoint((pdp.GB1, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.GB1, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.GB1, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.GB1, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.GB1, key: (pdk.Trigger)))), imageName: "GB1", images: [], context: moc)
         let GB2 = Point(pinyinName: "tīng huì" , englishName: "Meeting of Hearing", chineseCharacter: "聽會", pointOnMeridian: "GB-2", channelAbrev: "GB", number: "2", specialCategories: (pd.getEntryForPoint((pdp.GB2, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.GB2, key: (pdk.Location)))), channel: "Foot Shao Yang", uses: PointUses.sharedController.getPointUse(PointUses.Point.GB2), actions: (pd.getEntryForPoint((pdp.GB2, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.GB2, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.GB2, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.GB2, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.GB2, key: (pdk.Trigger)))), imageName: "GB2", images: [], context: moc)
@@ -839,35 +492,7 @@ func Stomach() ->[Point] {
 }
     func Liver() ->[Point] {
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+      
         let LR1 = Point(pinyinName: "tai ton" , englishName: "dae don 대돈", chineseCharacter: "大敦", pointOnMeridian: "LR-1", channelAbrev: "LR", number: "1", specialCategories: (pd.getEntryForPoint((pdp.LR1, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.LR1, key: (pdk.Location)))), channel: "Foot Jue Yin", uses: PointUses.sharedController.getPointUse(PointUses.Point.LR1), actions: (pd.getEntryForPoint((pdp.LR1, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.LR1, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.LR1, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.LR1, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.LR1, key: (pdk.Trigger)))), imageName: "LR1", images: [], context: moc)
         let LR2 = Point(pinyinName: "kō kan" , englishName: "haeng gan 행간", chineseCharacter: "行間", pointOnMeridian: "LR-2", channelAbrev: "LR", number: "2", specialCategories: (pd.getEntryForPoint((pdp.LR2, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.LR2, key: (pdk.Location)))), channel: "Foot Jue Yin", uses: PointUses.sharedController.getPointUse(PointUses.Point.LR2), actions: (pd.getEntryForPoint((pdp.LR2, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.LR2, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.LR2, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.LR2, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.LR2, key: (pdk.Trigger)))), imageName: "LR2", images: [], context: moc)
         let LR3 = Point(pinyinName: "tai shō" , englishName: "tae chung 태충", chineseCharacter: "太沖", pointOnMeridian: "LR-3", channelAbrev: "LR", number: "3", specialCategories: (pd.getEntryForPoint((pdp.LR3, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.LR3, key: (pdk.Location)))), channel: "Foot Jue Yin", uses: PointUses.sharedController.getPointUse(PointUses.Point.LR3), actions: (pd.getEntryForPoint((pdp.LR3, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.LR3, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.LR3, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.LR3, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.LR3, key: (pdk.Trigger)))), imageName: "LR3", images: [], context: moc)
@@ -889,80 +514,31 @@ func Stomach() ->[Point] {
     
     
     func Ren() ->[Point] {
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        let REN1 = Point(pinyinName: "e in" , englishName: "hoe eum 회음", chineseCharacter: "會陰", pointOnMeridian: "REN-1", channelAbrev: "REN", number: "1", specialCategories: (pd.getEntryForPoint((pdp.REN1, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN1, key: (pdk.Location)))), channel: "Ren Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN1), actions: (pd.getEntryForPoint((pdp.REN1, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN1, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN1, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN1, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN1, key: (pdk.Trigger)))), imageName: "REN1", images: [], context: moc)
-        let REN2 = Point(pinyinName: "kyok kotsu?" , englishName: "gok gol 곡골", chineseCharacter: "曲骨", pointOnMeridian: "REN-2", channelAbrev: "REN", number: "2", specialCategories: (pd.getEntryForPoint((pdp.REN2, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN2, key: (pdk.Location)))), channel: "Ren Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN2), actions: (pd.getEntryForPoint((pdp.REN2, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN2, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN2, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN2, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN2, key: (pdk.Trigger)))), imageName: "REN2", images: [], context: moc)
-        let REN3 = Point(pinyinName: "chū kyoku?" , englishName: "jung geuk 중극", chineseCharacter: "中極", pointOnMeridian: "REN-3", channelAbrev: "REN", number: "3", specialCategories: (pd.getEntryForPoint((pdp.REN3, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN3, key: (pdk.Location)))), channel: "Ren Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN3), actions: (pd.getEntryForPoint((pdp.REN3, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN3, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN3, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN3, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN3, key: (pdk.Trigger)))), imageName: "REN3", images: [], context: moc)
-        let REN4 = Point(pinyinName: "kan gen" , englishName: "gwan won 관원", chineseCharacter: "關元", pointOnMeridian: "REN-4", channelAbrev: "REN", number: "4", specialCategories: (pd.getEntryForPoint((pdp.REN4, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN4, key: (pdk.Location)))), channel: "Ren Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN4), actions: (pd.getEntryForPoint((pdp.REN4, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN4, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN4, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN4, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN4, key: (pdk.Trigger)))), imageName: "REN4", images: [], context: moc)
-        let REN5 = Point(pinyinName: "seki mon(?)" , englishName: "seong mun 석문", chineseCharacter: "石門(?)", pointOnMeridian: "REN-5", channelAbrev: "REN", number: "5", specialCategories: (pd.getEntryForPoint((pdp.REN5, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN5, key: (pdk.Location)))), channel: "Ren Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN5), actions: (pd.getEntryForPoint((pdp.REN5, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN5, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN5, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN5, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN5, key: (pdk.Trigger)))), imageName: "REN5", images: [], context: moc)
-        let REN6 = Point(pinyinName: "ki kai" , englishName: "gi hae 기해", chineseCharacter: "氣海", pointOnMeridian: "REN-6", channelAbrev: "REN", number: "6", specialCategories: (pd.getEntryForPoint((pdp.REN6, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN6, key: (pdk.Location)))), channel: "Ren Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN6), actions: (pd.getEntryForPoint((pdp.REN6, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN6, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN6, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN6, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN6, key: (pdk.Trigger)))), imageName: "REN6", images: [], context: moc)
-        let REN7 = Point(pinyinName: "in kō" , englishName: "eum gyo 음교", chineseCharacter: "陰交", pointOnMeridian: "REN-7", channelAbrev: "REN", number: "7", specialCategories: (pd.getEntryForPoint((pdp.REN7, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN7, key: (pdk.Location)))), channel: "Ren Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN7), actions: (pd.getEntryForPoint((pdp.REN7, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN7, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN7, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN7, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN7, key: (pdk.Trigger)))), imageName: "REN7", images: [], context: moc)
-        let REN8 = Point(pinyinName: "shin ketsu(?)" , englishName: "sin gwol 신궐", chineseCharacter: "神闕", pointOnMeridian: "REN-8", channelAbrev: "REN", number: "8", specialCategories: (pd.getEntryForPoint((pdp.REN8, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN8, key: (pdk.Location)))), channel: "Ren Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN8), actions: (pd.getEntryForPoint((pdp.REN8, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN8, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN8, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN8, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN8, key: (pdk.Trigger)))), imageName: "REN8", images: [], context: moc)
-        let REN9 = Point(pinyinName: "sui bun(?)" , englishName: "su bun 수분", chineseCharacter: "水分(?)", pointOnMeridian: "REN-9", channelAbrev: "REN", number: "9", specialCategories: (pd.getEntryForPoint((pdp.REN9, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN9, key: (pdk.Location)))), channel: "Ren Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN9), actions: (pd.getEntryForPoint((pdp.REN9, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN9, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN9, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN9, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN9, key: (pdk.Trigger)))), imageName: "REN9", images: [], context: moc)
-        let REN10 = Point(pinyinName: "ge kan" , englishName: "ha wan 하완", chineseCharacter: "下脘", pointOnMeridian: "REN-10", channelAbrev: "REN", number: "10", specialCategories: (pd.getEntryForPoint((pdp.REN10, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN10, key: (pdk.Location)))), channel: "Ren Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN10), actions: (pd.getEntryForPoint((pdp.REN10, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN10, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN10, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN10, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN10, key: (pdk.Trigger)))), imageName: "REN10", images: [], context: moc)
-        let REN11 = Point(pinyinName: "ken ri(?)" , englishName: "geol li 건리", chineseCharacter: "建里(?)", pointOnMeridian: "REN-11", channelAbrev: "REN", number: "11", specialCategories: (pd.getEntryForPoint((pdp.REN11, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN11, key: (pdk.Location)))), channel: "Ren Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN11), actions: (pd.getEntryForPoint((pdp.REN11, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN11, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN11, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN11, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN11, key: (pdk.Trigger)))), imageName: "REN11", images: [], context: moc)
-        let REN12 = Point(pinyinName: "chū kan" , englishName: "jung wan 중완", chineseCharacter: "中脘", pointOnMeridian: "REN-12", channelAbrev: "REN", number: "12", specialCategories: (pd.getEntryForPoint((pdp.REN12, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN12, key: (pdk.Location)))), channel: "Ren Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN12), actions: (pd.getEntryForPoint((pdp.REN12, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN12, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN12, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN12, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN12, key: (pdk.Trigger)))), imageName: "REN12", images: [], context: moc)
-        let REN13 = Point(pinyinName: "jo kan" , englishName: "sang wan 상완", chineseCharacter: "上脘", pointOnMeridian: "REN-13", channelAbrev: "REN", number: "13", specialCategories: (pd.getEntryForPoint((pdp.REN13, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN13, key: (pdk.Location)))), channel: "Ren Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN13), actions: (pd.getEntryForPoint((pdp.REN13, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN13, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN13, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN13, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN13, key: (pdk.Trigger)))), imageName: "REN13", images: [], context: moc)
-        let REN14 = Point(pinyinName: "ko ketsu(?)" , englishName: "geo gwol 거궐", chineseCharacter: "巨闕(?)", pointOnMeridian: "REN-14", channelAbrev: "REN", number: "14", specialCategories: (pd.getEntryForPoint((pdp.REN14, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN14, key: (pdk.Location)))), channel: "Ren Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN14), actions: (pd.getEntryForPoint((pdp.REN14, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN14, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN14, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN14, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN14, key: (pdk.Trigger)))), imageName: "REN14", images: [], context: moc)
-        let REN15 = Point(pinyinName: "kyū bi?" , englishName: "gu mi 구미", chineseCharacter: "鳩尾(?)", pointOnMeridian: "REN-15", channelAbrev: "REN", number: "15", specialCategories: (pd.getEntryForPoint((pdp.REN15, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN15, key: (pdk.Location)))), channel: "Ren Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN15), actions: (pd.getEntryForPoint((pdp.REN15, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN15, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN15, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN15, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN15, key: (pdk.Trigger)))), imageName: "REN15", images: [], context: moc)
-        let REN16 = Point(pinyinName: "chū tei?" , englishName: "jung jeong 중정", chineseCharacter: "中庭(?)", pointOnMeridian: "REN-16", channelAbrev: "REN", number: "16", specialCategories: (pd.getEntryForPoint((pdp.REN16, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN16, key: (pdk.Location)))), channel: "Ren Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN16), actions: (pd.getEntryForPoint((pdp.REN16, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN16, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN16, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN16, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN16, key: (pdk.Trigger)))), imageName: "REN16", images: [], context: moc)
-        let REN17 = Point(pinyinName: "dan chū" , englishName: "dan jung 단중", chineseCharacter: "膻中", pointOnMeridian: "REN-17", channelAbrev: "REN", number: "17", specialCategories: (pd.getEntryForPoint((pdp.REN17, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN17, key: (pdk.Location)))), channel: "Ren Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN17), actions: (pd.getEntryForPoint((pdp.REN17, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN17, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN17, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN17, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN17, key: (pdk.Trigger)))), imageName: "REN17", images: [], context: moc)
-        let REN18 = Point(pinyinName: "gyoku dō?" , englishName: "ok dang 옥당", chineseCharacter: "玉堂(?)", pointOnMeridian: "REN-18", channelAbrev: "REN", number: "18", specialCategories: (pd.getEntryForPoint((pdp.REN18, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN18, key: (pdk.Location)))), channel: "Ren Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN18), actions: (pd.getEntryForPoint((pdp.REN18, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN18, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN18, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN18, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN18, key: (pdk.Trigger)))), imageName: "REN18", images: [], context: moc)
-        let REN19 = Point(pinyinName: "shi kyū?" , englishName: "ja gung 자궁", chineseCharacter: "紫宮(?)", pointOnMeridian: "REN-19", channelAbrev: "REN", number: "19", specialCategories: (pd.getEntryForPoint((pdp.REN19, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN19, key: (pdk.Location)))), channel: "Ren Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN19), actions: (pd.getEntryForPoint((pdp.REN19, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN19, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN19, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN19, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN19, key: (pdk.Trigger)))), imageName: "REN19", images: [], context: moc)
-        let REN20 = Point(pinyinName: "ko gai?" , englishName: "hwa gae 화개", chineseCharacter: "華蓋", pointOnMeridian: "REN-20", channelAbrev: "REN", number: "20", specialCategories: (pd.getEntryForPoint((pdp.REN20, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN20, key: (pdk.Location)))), channel: "Ren Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN20), actions: (pd.getEntryForPoint((pdp.REN20, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN20, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN20, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN20, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN20, key: (pdk.Trigger)))), imageName: "REN20", images: [], context: moc)
-        let REN21 = Point(pinyinName: "sen ki" , englishName: "seon gi 선기", chineseCharacter: "璇璣", pointOnMeridian: "REN-21", channelAbrev: "REN", number: "21", specialCategories: (pd.getEntryForPoint((pdp.REN21, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN21, key: (pdk.Location)))), channel: "Ren Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN21), actions: (pd.getEntryForPoint((pdp.REN21, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN21, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN21, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN21, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN21, key: (pdk.Trigger)))), imageName: "REN21", images: [], context: moc)
-        let REN22 = Point(pinyinName: "ten totsu" , englishName: "cheon dol 천돌", chineseCharacter: "天突", pointOnMeridian: "REN-22", channelAbrev: "REN", number: "22", specialCategories: (pd.getEntryForPoint((pdp.REN22, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN22, key: (pdk.Location)))), channel: "Ren Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN22), actions: (pd.getEntryForPoint((pdp.REN22, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN22, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN22, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN22, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN22, key: (pdk.Trigger)))), imageName: "REN22", images: [], context: moc)
-        let REN23 = Point(pinyinName: "ren sen" , englishName: "yeom cheon 염천", chineseCharacter: "廉泉", pointOnMeridian: "REN-23", channelAbrev: "REN", number: "23", specialCategories: (pd.getEntryForPoint((pdp.REN23, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN23, key: (pdk.Location)))), channel: "Ren Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN23), actions: (pd.getEntryForPoint((pdp.REN23, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN23, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN23, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN23, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN23, key: (pdk.Trigger)))), imageName: "REN23", images: [], context: moc)
-        let REN24 = Point(pinyinName: "shō shō" , englishName: "seung jang 승장", chineseCharacter: "承漿", pointOnMeridian: "REN-24", channelAbrev: "REN", number: "24", specialCategories: (pd.getEntryForPoint((pdp.REN24, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN24, key: (pdk.Location)))), channel: "Ren Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN24), actions: (pd.getEntryForPoint((pdp.REN24, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN24, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN24, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN24, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN24, key: (pdk.Trigger)))), imageName: "REN24", images: [], context: moc)
+    
+        let REN1 = Point(pinyinName: "huì yīn" , englishName: " ", chineseCharacter: "會陰", pointOnMeridian: "REN-1", channelAbrev: "REN", number: "1", specialCategories: (pd.getEntryForPoint((pdp.REN1, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN1, key: (pdk.Location)))), channel: "Ren Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN1), actions: (pd.getEntryForPoint((pdp.REN1, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN1, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN1, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN1, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN1, key: (pdk.Trigger)))), imageName: "REN1", images: [], context: moc)
+        let REN2 = Point(pinyinName: "qū gǔ" , englishName: " ", chineseCharacter: "曲骨", pointOnMeridian: "REN-2", channelAbrev: "REN", number: "2", specialCategories: (pd.getEntryForPoint((pdp.REN2, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN2, key: (pdk.Location)))), channel: "Ren Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN2), actions: (pd.getEntryForPoint((pdp.REN2, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN2, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN2, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN2, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN2, key: (pdk.Trigger)))), imageName: "REN2", images: [], context: moc)
+        let REN3 = Point(pinyinName: "zhōng jí" , englishName: " ", chineseCharacter: "中極", pointOnMeridian: "REN-3", channelAbrev: "REN", number: "3", specialCategories: (pd.getEntryForPoint((pdp.REN3, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN3, key: (pdk.Location)))), channel: "Ren Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN3), actions: (pd.getEntryForPoint((pdp.REN3, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN3, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN3, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN3, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN3, key: (pdk.Trigger)))), imageName: "REN3", images: [], context: moc)
+        let REN4 = Point(pinyinName: "guān yuán" , englishName: " ", chineseCharacter: "關元", pointOnMeridian: "REN-4", channelAbrev: "REN", number: "4", specialCategories: (pd.getEntryForPoint((pdp.REN4, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN4, key: (pdk.Location)))), channel: "Ren Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN4), actions: (pd.getEntryForPoint((pdp.REN4, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN4, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN4, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN4, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN4, key: (pdk.Trigger)))), imageName: "REN4", images: [], context: moc)
+        let REN5 = Point(pinyinName: "shí mén(?)" , englishName: " ", chineseCharacter: "石門(?)", pointOnMeridian: "REN-5", channelAbrev: "REN", number: "5", specialCategories: (pd.getEntryForPoint((pdp.REN5, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN5, key: (pdk.Location)))), channel: "Ren Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN5), actions: (pd.getEntryForPoint((pdp.REN5, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN5, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN5, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN5, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN5, key: (pdk.Trigger)))), imageName: "REN5", images: [], context: moc)
+        let REN6 = Point(pinyinName: "qì hǎi" , englishName: " ", chineseCharacter: "氣海", pointOnMeridian: "REN-6", channelAbrev: "REN", number: "6", specialCategories: (pd.getEntryForPoint((pdp.REN6, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN6, key: (pdk.Location)))), channel: "Ren Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN6), actions: (pd.getEntryForPoint((pdp.REN6, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN6, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN6, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN6, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN6, key: (pdk.Trigger)))), imageName: "REN6", images: [], context: moc)
+        let REN7 = Point(pinyinName: "yīn jiāo" , englishName: " ", chineseCharacter: "陰交", pointOnMeridian: "REN-7", channelAbrev: "REN", number: "7", specialCategories: (pd.getEntryForPoint((pdp.REN7, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN7, key: (pdk.Location)))), channel: "Ren Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN7), actions: (pd.getEntryForPoint((pdp.REN7, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN7, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN7, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN7, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN7, key: (pdk.Trigger)))), imageName: "REN7", images: [], context: moc)
+        let REN8 = Point(pinyinName: "shén què" , englishName: " ", chineseCharacter: "神闕", pointOnMeridian: "REN-8", channelAbrev: "REN", number: "8", specialCategories: (pd.getEntryForPoint((pdp.REN8, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN8, key: (pdk.Location)))), channel: "Ren Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN8), actions: (pd.getEntryForPoint((pdp.REN8, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN8, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN8, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN8, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN8, key: (pdk.Trigger)))), imageName: "REN8", images: [], context: moc)
+        let REN9 = Point(pinyinName: "shuǐ fēn(?)" , englishName: " ", chineseCharacter: "水分(?)", pointOnMeridian: "REN-9", channelAbrev: "REN", number: "9", specialCategories: (pd.getEntryForPoint((pdp.REN9, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN9, key: (pdk.Location)))), channel: "Ren Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN9), actions: (pd.getEntryForPoint((pdp.REN9, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN9, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN9, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN9, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN9, key: (pdk.Trigger)))), imageName: "REN9", images: [], context: moc)
+        let REN10 = Point(pinyinName: "xià wǎn [<i>or</i> xià guǎn]" , englishName: " ", chineseCharacter: "下脘", pointOnMeridian: "REN-10", channelAbrev: "REN", number: "10", specialCategories: (pd.getEntryForPoint((pdp.REN10, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN10, key: (pdk.Location)))), channel: "Ren Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN10), actions: (pd.getEntryForPoint((pdp.REN10, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN10, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN10, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN10, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN10, key: (pdk.Trigger)))), imageName: "REN10", images: [], context: moc)
+        let REN11 = Point(pinyinName: "jiàn lǐ(?)" , englishName: " ", chineseCharacter: "建里(?)", pointOnMeridian: "REN-11", channelAbrev: "REN", number: "11", specialCategories: (pd.getEntryForPoint((pdp.REN11, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN11, key: (pdk.Location)))), channel: "Ren Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN11), actions: (pd.getEntryForPoint((pdp.REN11, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN11, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN11, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN11, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN11, key: (pdk.Trigger)))), imageName: "REN11", images: [], context: moc)
+        let REN12 = Point(pinyinName: "zhōng wǎn [<i>or</i> zhōng guǎn]" , englishName: " ", chineseCharacter: "中脘", pointOnMeridian: "REN-12", channelAbrev: "REN", number: "12", specialCategories: (pd.getEntryForPoint((pdp.REN12, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN12, key: (pdk.Location)))), channel: "Ren Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN12), actions: (pd.getEntryForPoint((pdp.REN12, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN12, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN12, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN12, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN12, key: (pdk.Trigger)))), imageName: "REN12", images: [], context: moc)
+        let REN13 = Point(pinyinName: "shàng wǎn [<i>or</i> shàng guǎn]" , englishName: " ", chineseCharacter: "上脘", pointOnMeridian: "REN-13", channelAbrev: "REN", number: "13", specialCategories: (pd.getEntryForPoint((pdp.REN13, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN13, key: (pdk.Location)))), channel: "Ren Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN13), actions: (pd.getEntryForPoint((pdp.REN13, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN13, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN13, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN13, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN13, key: (pdk.Trigger)))), imageName: "REN13", images: [], context: moc)
+        let REN14 = Point(pinyinName: "jù què(?)" , englishName: " ", chineseCharacter: "巨闕(?)", pointOnMeridian: "REN-14", channelAbrev: "REN", number: "14", specialCategories: (pd.getEntryForPoint((pdp.REN14, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN14, key: (pdk.Location)))), channel: "Ren Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN14), actions: (pd.getEntryForPoint((pdp.REN14, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN14, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN14, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN14, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN14, key: (pdk.Trigger)))), imageName: "REN14", images: [], context: moc)
+        let REN15 = Point(pinyinName: "jiū wěi(?)" , englishName: " ", chineseCharacter: "鳩尾(?)", pointOnMeridian: "REN-15", channelAbrev: "REN", number: "15", specialCategories: (pd.getEntryForPoint((pdp.REN15, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN15, key: (pdk.Location)))), channel: "Ren Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN15), actions: (pd.getEntryForPoint((pdp.REN15, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN15, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN15, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN15, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN15, key: (pdk.Trigger)))), imageName: "REN15", images: [], context: moc)
+        let REN16 = Point(pinyinName: "zhōng tíng(?)" , englishName: " ", chineseCharacter: "中庭(?)", pointOnMeridian: "REN-16", channelAbrev: "REN", number: "16", specialCategories: (pd.getEntryForPoint((pdp.REN16, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN16, key: (pdk.Location)))), channel: "Ren Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN16), actions: (pd.getEntryForPoint((pdp.REN16, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN16, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN16, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN16, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN16, key: (pdk.Trigger)))), imageName: "REN16", images: [], context: moc)
+        let REN17 = Point(pinyinName: "shān zhōng" , englishName: " ", chineseCharacter: "膻中", pointOnMeridian: "REN-17", channelAbrev: "REN", number: "17", specialCategories: (pd.getEntryForPoint((pdp.REN17, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN17, key: (pdk.Location)))), channel: "Ren Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN17), actions: (pd.getEntryForPoint((pdp.REN17, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN17, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN17, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN17, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN17, key: (pdk.Trigger)))), imageName: "REN17", images: [], context: moc)
+        let REN18 = Point(pinyinName: "yù táng(?)" , englishName: " ", chineseCharacter: "玉堂(?)", pointOnMeridian: "REN-18", channelAbrev: "REN", number: "18", specialCategories: (pd.getEntryForPoint((pdp.REN18, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN18, key: (pdk.Location)))), channel: "Ren Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN18), actions: (pd.getEntryForPoint((pdp.REN18, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN18, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN18, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN18, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN18, key: (pdk.Trigger)))), imageName: "REN18", images: [], context: moc)
+        let REN19 = Point(pinyinName: "zǐ gōng(?)" , englishName: " ", chineseCharacter: "紫宮(?)", pointOnMeridian: "REN-19", channelAbrev: "REN", number: "19", specialCategories: (pd.getEntryForPoint((pdp.REN19, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN19, key: (pdk.Location)))), channel: "Ren Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN19), actions: (pd.getEntryForPoint((pdp.REN19, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN19, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN19, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN19, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN19, key: (pdk.Trigger)))), imageName: "REN19", images: [], context: moc)
+        let REN20 = Point(pinyinName: "huá gài" , englishName: " ", chineseCharacter: "華蓋", pointOnMeridian: "REN-20", channelAbrev: "REN", number: "20", specialCategories: (pd.getEntryForPoint((pdp.REN20, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN20, key: (pdk.Location)))), channel: "Ren Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN20), actions: (pd.getEntryForPoint((pdp.REN20, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN20, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN20, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN20, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN20, key: (pdk.Trigger)))), imageName: "REN20", images: [], context: moc)
+        let REN21 = Point(pinyinName: "xuán jī" , englishName: " ", chineseCharacter: "璇璣", pointOnMeridian: "REN-21", channelAbrev: "REN", number: "21", specialCategories: (pd.getEntryForPoint((pdp.REN21, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN21, key: (pdk.Location)))), channel: "Ren Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN21), actions: (pd.getEntryForPoint((pdp.REN21, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN21, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN21, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN21, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN21, key: (pdk.Trigger)))), imageName: "REN21", images: [], context: moc)
+        let REN22 = Point(pinyinName: "tiān tū" , englishName: " ", chineseCharacter: "天突", pointOnMeridian: "REN-22", channelAbrev: "REN", number: "22", specialCategories: (pd.getEntryForPoint((pdp.REN22, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN22, key: (pdk.Location)))), channel: "Ren Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN22), actions: (pd.getEntryForPoint((pdp.REN22, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN22, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN22, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN22, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN22, key: (pdk.Trigger)))), imageName: "REN22", images: [], context: moc)
+        let REN23 = Point(pinyinName: "lián quán" , englishName: " ", chineseCharacter: "廉泉", pointOnMeridian: "REN-23", channelAbrev: "REN", number: "23", specialCategories: (pd.getEntryForPoint((pdp.REN23, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN23, key: (pdk.Location)))), channel: "Ren Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN23), actions: (pd.getEntryForPoint((pdp.REN23, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN23, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN23, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN23, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN23, key: (pdk.Trigger)))), imageName: "REN23", images: [], context: moc)
+        let REN24 = Point(pinyinName: "chéng jiāng" , englishName: " ", chineseCharacter: "承漿", pointOnMeridian: "REN-24", channelAbrev: "REN", number: "24", specialCategories: (pd.getEntryForPoint((pdp.REN24, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.REN24, key: (pdk.Location)))), channel: "Ren Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.REN24), actions: (pd.getEntryForPoint((pdp.REN24, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.REN24, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.REN24, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.REN24, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.REN24, key: (pdk.Trigger)))), imageName: "REN24", images: [], context: moc)
         
         
         return [REN1,REN2,REN3,REN4,REN5,REN6,REN7,REN8,REN9,REN10,REN11,REN12,REN13,REN14,REN15,REN16,REN17,REN18,REN19,REN20,REN21,REN22,REN23,REN24]
@@ -971,93 +547,42 @@ func Stomach() ->[Point] {
     
     func Du() ->[Point] {
         
+       
+        
+        let DU1 = Point(pinyinName: "cháng qiáng" , englishName: " ", chineseCharacter: "長強", pointOnMeridian: "DU-1", channelAbrev: "DU", number: "1", specialCategories: (pd.getEntryForPoint((pdp.DU1, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU1, key: (pdk.Location)))), channel: "Du Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU1), actions: (pd.getEntryForPoint((pdp.DU1, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU1, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU1, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU1, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU1, key: (pdk.Trigger)))), imageName: "DU1", images: [], context: moc)
+        let DU2 = Point(pinyinName: "yāo shū(?)" , englishName: " ", chineseCharacter: "腰俞", pointOnMeridian: "DU-2", channelAbrev: "DU", number: "2", specialCategories: (pd.getEntryForPoint((pdp.DU2, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU2, key: (pdk.Location)))), channel: "Du Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU2), actions: (pd.getEntryForPoint((pdp.DU2, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU2, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU2, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU2, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU2, key: (pdk.Trigger)))), imageName: "DU2", images: [], context: moc)
+        let DU3 = Point(pinyinName: "yāo yáng guān" , englishName: " ", chineseCharacter: "腰陽關", pointOnMeridian: "DU-3", channelAbrev: "DU", number: "3", specialCategories: (pd.getEntryForPoint((pdp.DU3, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU3, key: (pdk.Location)))), channel: "Du Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU3), actions: (pd.getEntryForPoint((pdp.DU3, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU3, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU3, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU3, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU3, key: (pdk.Trigger)))), imageName: "DU3", images: [], context: moc)
+        
+        let DU4 = Point(pinyinName: "mìng mén" , englishName: " ", chineseCharacter: "命門", pointOnMeridian: "DU-4", channelAbrev: "DU", number: "4", specialCategories: (pd.getEntryForPoint((pdp.DU4, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU4, key: (pdk.Location)))), channel: "Du Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU4), actions: (pd.getEntryForPoint((pdp.DU4, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU4, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU4, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU4, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU4, key: (pdk.Trigger)))), imageName: "DU4", images: [], context: moc)
+
+        let DU5 = Point(pinyinName: "xuán shū" , englishName: " ", chineseCharacter: "懸樞", pointOnMeridian: "DU-5", channelAbrev: "DU", number: "5", specialCategories: (pd.getEntryForPoint((pdp.DU5, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU5, key: (pdk.Location)))), channel: "Du Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU5), actions: (pd.getEntryForPoint((pdp.DU5, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU5, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU5, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU5, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU5, key: (pdk.Trigger)))), imageName: "DU5", images: [], context: moc)
+        let DU6 = Point(pinyinName: "jì zhōng?" , englishName: " ", chineseCharacter: "脊中(?)", pointOnMeridian: "DU-6", channelAbrev: "DU", number: "6", specialCategories: (pd.getEntryForPoint((pdp.DU6, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU6, key: (pdk.Location)))), channel: "Du Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU6), actions: (pd.getEntryForPoint((pdp.DU6, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU6, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU6, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU6, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU6, key: (pdk.Trigger)))), imageName: "DU6", images: [], context: moc)
+        let DU7 = Point(pinyinName: "zhōng shū" , englishName: " ", chineseCharacter: "中樞", pointOnMeridian: "DU-7", channelAbrev: "DU", number: "7", specialCategories: (pd.getEntryForPoint((pdp.DU7, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU7, key: (pdk.Location)))), channel: "Du Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU7), actions: (pd.getEntryForPoint((pdp.DU7, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU7, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU7, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU7, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU7, key: (pdk.Trigger)))), imageName: "DU7", images: [], context: moc)
+        let DU8 = Point(pinyinName: "jīn suō" , englishName: " ", chineseCharacter: "筋縮", pointOnMeridian: "DU-8", channelAbrev: "DU", number: "8", specialCategories: (pd.getEntryForPoint((pdp.DU8, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU8, key: (pdk.Location)))), channel: "Du Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU8), actions: (pd.getEntryForPoint((pdp.DU8, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU8, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU8, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU8, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU8, key: (pdk.Trigger)))), imageName: "DU8", images: [], context: moc)
+        let DU9 = Point(pinyinName: "zhì yáng" , englishName: " ", chineseCharacter: "至陽", pointOnMeridian: "DU-9", channelAbrev: "DU", number: "9", specialCategories: (pd.getEntryForPoint((pdp.DU9, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU9, key: (pdk.Location)))), channel: "Du Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU9), actions: (pd.getEntryForPoint((pdp.DU9, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU9, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU9, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU9, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU9, key: (pdk.Trigger)))), imageName: "DU9", images: [], context: moc)
+        let DU10 = Point(pinyinName: "líng tái" , englishName: " ", chineseCharacter: "霊台", pointOnMeridian: "DU-10", channelAbrev: "DU", number: "10", specialCategories: (pd.getEntryForPoint((pdp.DU10, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU10, key: (pdk.Location)))), channel: "Du Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU10), actions: (pd.getEntryForPoint((pdp.DU10, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU10, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU10, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU10, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU10, key: (pdk.Trigger)))), imageName: "DU10", images: [], context: moc)
+        let DU11 = Point(pinyinName: "shén dào(?)" , englishName: " ", chineseCharacter: "神道(?)", pointOnMeridian: "DU-11", channelAbrev: "DU", number: "11", specialCategories: (pd.getEntryForPoint((pdp.DU11, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU11, key: (pdk.Location)))), channel: "Du Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU11), actions: (pd.getEntryForPoint((pdp.DU11, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU11, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU11, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU11, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU11, key: (pdk.Trigger)))), imageName: "DU11", images: [], context: moc)
+        let DU12 = Point(pinyinName: "shēn zhù(?)" , englishName: " ", chineseCharacter: "身柱(?)", pointOnMeridian: "DU-12", channelAbrev: "DU", number: "12", specialCategories: (pd.getEntryForPoint((pdp.DU12, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU12, key: (pdk.Location)))), channel: "Du Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU12), actions: (pd.getEntryForPoint((pdp.DU12, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU12, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU12, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU12, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU12, key: (pdk.Trigger)))), imageName: "DU12", images: [], context: moc)
+        let DU13 = Point(pinyinName: "táo dào" , englishName: " ", chineseCharacter: "陶道", pointOnMeridian: "DU-13", channelAbrev: "DU", number: "13", specialCategories: (pd.getEntryForPoint((pdp.DU13, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU13, key: (pdk.Location)))), channel: "Du Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU13), actions: (pd.getEntryForPoint((pdp.DU13, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU13, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU13, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU13, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU13, key: (pdk.Trigger)))), imageName: "DU13", images: [], context: moc)
+        let DU14 = Point(pinyinName: "dà zhuī" , englishName: " ", chineseCharacter: "大椎", pointOnMeridian: "DU-14", channelAbrev: "DU", number: "14", specialCategories: (pd.getEntryForPoint((pdp.DU14, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU14, key: (pdk.Location)))), channel: "Du Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU14), actions: (pd.getEntryForPoint((pdp.DU14, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU14, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU14, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU14, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU14, key: (pdk.Trigger)))), imageName: "DU14", images: [], context: moc)
+        let DU15 = Point(pinyinName: "yǎ mén" , englishName: " ", chineseCharacter: "啞門", pointOnMeridian: "DU-15", channelAbrev: "DU", number: "15", specialCategories: (pd.getEntryForPoint((pdp.DU15, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU15, key: (pdk.Location)))), channel: "Du Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU15), actions: (pd.getEntryForPoint((pdp.DU15, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU15, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU15, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU15, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU15, key: (pdk.Trigger)))), imageName: "DU15", images: [], context: moc)
+        let DU16 = Point(pinyinName: "fēng fǔ" , englishName: " ", chineseCharacter: "風府", pointOnMeridian: "DU-16", channelAbrev: "DU", number: "16", specialCategories: (pd.getEntryForPoint((pdp.DU16, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU16, key: (pdk.Location)))), channel: "Du Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU16), actions: (pd.getEntryForPoint((pdp.DU16, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU16, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU16, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU16, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU16, key: (pdk.Trigger)))), imageName: "DU16", images: [], context: moc)
+        let DU17 = Point(pinyinName: "nǎo hù" , englishName: " ", chineseCharacter: "腦戶", pointOnMeridian: "DU-17", channelAbrev: "DU", number: "17", specialCategories: (pd.getEntryForPoint((pdp.DU17, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU17, key: (pdk.Location)))), channel: "Du Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU17), actions: (pd.getEntryForPoint((pdp.DU17, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU17, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU17, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU17, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU17, key: (pdk.Trigger)))), imageName: "DU17", images: [], context: moc)
+        let DU18 = Point(pinyinName: "qiáng jiān" , englishName: " ", chineseCharacter: "強間", pointOnMeridian: "DU-18", channelAbrev: "DU", number: "18", specialCategories: (pd.getEntryForPoint((pdp.DU18, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU18, key: (pdk.Location)))), channel: "Du Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU18), actions: (pd.getEntryForPoint((pdp.DU18, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU18, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU18, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU18, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU18, key: (pdk.Trigger)))), imageName: "DU18", images: [], context: moc)
+        let DU19 = Point(pinyinName: "hòu dǐng" , englishName: " ", chineseCharacter: "後頂", pointOnMeridian: "DU-19", channelAbrev: "DU", number: "19", specialCategories: (pd.getEntryForPoint((pdp.DU19, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU19, key: (pdk.Location)))), channel: "Du Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU19), actions: (pd.getEntryForPoint((pdp.DU19, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU19, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU19, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU19, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU19, key: (pdk.Trigger)))), imageName: "DU19", images: [], context: moc)
+        let DU20 = Point(pinyinName: "bǎi huì" , englishName: " ", chineseCharacter: "百會", pointOnMeridian: "DU-20", channelAbrev: "DU", number: "20", specialCategories: (pd.getEntryForPoint((pdp.DU20, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU20, key: (pdk.Location)))), channel: "Du Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU20), actions: (pd.getEntryForPoint((pdp.DU20, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU20, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU20, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU20, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU20, key: (pdk.Trigger)))), imageName: "DU20", images: [], context: moc)
+        let DU21 = Point(pinyinName: "qián dǐng(?)" , englishName: " ", chineseCharacter: "前頂(?)", pointOnMeridian: "DU-21", channelAbrev: "DU", number: "21", specialCategories: (pd.getEntryForPoint((pdp.DU21, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU21, key: (pdk.Location)))), channel: "Du Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU21), actions: (pd.getEntryForPoint((pdp.DU21, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU21, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU21, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU21, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU21, key: (pdk.Trigger)))), imageName: "DU21", images: [], context: moc)
+        let DU22 = Point(pinyinName: "xìn huì" , englishName: " ", chineseCharacter: "囟會", pointOnMeridian: "DU-22", channelAbrev: "DU", number: "22", specialCategories: (pd.getEntryForPoint((pdp.DU22, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU22, key: (pdk.Location)))), channel: "Du Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU22), actions: (pd.getEntryForPoint((pdp.DU22, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU22, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU22, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU22, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU22, key: (pdk.Trigger)))), imageName: "DU22", images: [], context: moc)
+        let DU23 = Point(pinyinName: "shàng xīng(?)" , englishName: " ", chineseCharacter: "上星(?)", pointOnMeridian: "DU-23", channelAbrev: "DU", number: "23", specialCategories: (pd.getEntryForPoint((pdp.DU23, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU23, key: (pdk.Location)))), channel: "Du Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU23), actions: (pd.getEntryForPoint((pdp.DU23, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU23, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU23, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU23, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU23, key: (pdk.Trigger)))), imageName: "DU23", images: [], context: moc)
+        let DU24 = Point(pinyinName: "shén tíng" , englishName: " ", chineseCharacter: "神庭", pointOnMeridian: "DU-24", channelAbrev: "DU", number: "24", specialCategories: (pd.getEntryForPoint((pdp.DU24, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU24, key: (pdk.Location)))), channel: "Du Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU24), actions: (pd.getEntryForPoint((pdp.DU24, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU24, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU24, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU24, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU24, key: (pdk.Trigger)))), imageName: "DU24", images: [], context: moc)
+        let DU25 = Point(pinyinName: "sù liáo(?)" , englishName: " ", chineseCharacter: "素髎(?)", pointOnMeridian: "DU-25", channelAbrev: "DU", number: "25", specialCategories: (pd.getEntryForPoint((pdp.DU25, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU25, key: (pdk.Location)))), channel: "Du Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU25), actions: (pd.getEntryForPoint((pdp.DU25, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU25, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU25, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU25, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU25, key: (pdk.Trigger)))), imageName: "DU25", images: [], context: moc)
+        let DU26 = Point(pinyinName: "rén zhōng" , englishName: " ", chineseCharacter: "人中", pointOnMeridian: "DU-26", channelAbrev: "DU", number: "26", specialCategories: (pd.getEntryForPoint((pdp.DU26, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU26, key: (pdk.Location)))), channel: "Du Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU26), actions: (pd.getEntryForPoint((pdp.DU26, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU26, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU26, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU26, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU26, key: (pdk.Trigger)))), imageName: "DU26", images: [], context: moc)
+        let DU27 = Point(pinyinName: "duì duān" , englishName: " ", chineseCharacter: "兌端", pointOnMeridian: "DU-27", channelAbrev: "DU", number: "27", specialCategories: (pd.getEntryForPoint((pdp.DU27, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU27, key: (pdk.Location)))), channel: "Du Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU27), actions: (pd.getEntryForPoint((pdp.DU27, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU27, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU27, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU27, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU27, key: (pdk.Trigger)))), imageName: "DU27", images: [], context: moc)
+        let DU28 = Point(pinyinName: "yín jiāo" , englishName: " ", chineseCharacter: "齦交", pointOnMeridian: "DU-28", channelAbrev: "DU", number: "28", specialCategories: (pd.getEntryForPoint((pdp.DU28, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU28, key: (pdk.Location)))), channel: "Du Extraordinary", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU28), actions: (pd.getEntryForPoint((pdp.DU28, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU28, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU28, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU28, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU28, key: (pdk.Trigger)))), imageName: "DU28", images: [], context: moc)
         
         
+        return [DU1,DU2,DU3,DU5,DU6,DU7,DU8,DU9,DU10,DU11,DU12,DU13,DU14,DU15,DU16,DU17,DU18,DU19,DU20,DU21,DU22,DU23,DU24,DU25,DU26,DU27,DU28]
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        let DU1 = Point(pinyinName: "chō kyō" , englishName: "jang gang 장강", chineseCharacter: "長強", pointOnMeridian: "DU-1", channelAbrev: "DU", number: "1", specialCategories: (pd.getEntryForPoint((pdp.DU1, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU1, key: (pdk.Location)))), channel: "DU Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU1), actions: (pd.getEntryForPoint((pdp.DU1, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU1, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU1, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU1, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU1, key: (pdk.Trigger)))), imageName: "DU1", images: [], context: moc)
-        let DU2 = Point(pinyinName: "yō yu?" , englishName: "yo yu 요유", chineseCharacter: "腰俞", pointOnMeridian: "DU-2", channelAbrev: "DU", number: "2", specialCategories: (pd.getEntryForPoint((pdp.DU2, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU2, key: (pdk.Location)))), channel: "DU Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU2), actions: (pd.getEntryForPoint((pdp.DU2, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU2, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU2, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU2, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU2, key: (pdk.Trigger)))), imageName: "DU2", images: [], context: moc)
-        let DU3 = Point(pinyinName: "koshi no yo kan?" , englishName: "[yo] yang gwan [요] 양관", chineseCharacter: "腰陽關", pointOnMeridian: "DU-3", channelAbrev: "DU", number: "3", specialCategories: (pd.getEntryForPoint((pdp.DU3, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU3, key: (pdk.Location)))), channel: "DU Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU3), actions: (pd.getEntryForPoint((pdp.DU3, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU3, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU3, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU3, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU3, key: (pdk.Trigger)))), imageName: "DU3", images: [], context: moc)
-        let DU4 = Point(pinyinName: "mei mon" , englishName: "myeong mun 명문", chineseCharacter: "命門", pointOnMeridian: "DU-4", channelAbrev: "DU", number: "4", specialCategories: (pd.getEntryForPoint((pdp.DU4, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU4, key: (pdk.Location)))), channel: "DU Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU4), actions: (pd.getEntryForPoint((pdp.DU4, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU4, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU4, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU4, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU4, key: (pdk.Trigger)))), imageName: "DU4", images: [], context: moc)
-        let DU5 = Point(pinyinName: "ken sū?" , englishName: "hyeon chu 현추", chineseCharacter: "懸樞", pointOnMeridian: "DU-5", channelAbrev: "DU", number: "5", specialCategories: (pd.getEntryForPoint((pdp.DU5, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU5, key: (pdk.Location)))), channel: "DU Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU5), actions: (pd.getEntryForPoint((pdp.DU5, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU5, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU5, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU5, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU5, key: (pdk.Trigger)))), imageName: "DU5", images: [], context: moc)
-        let DU6 = Point(pinyinName: "seki chū?" , englishName: "cheok jung 척중", chineseCharacter: "脊中(?)", pointOnMeridian: "DU-6", channelAbrev: "DU", number: "6", specialCategories: (pd.getEntryForPoint((pdp.DU6, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU6, key: (pdk.Location)))), channel: "DU Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU6), actions: (pd.getEntryForPoint((pdp.DU6, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU6, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU6, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU6, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU6, key: (pdk.Trigger)))), imageName: "DU6", images: [], context: moc)
-        let DU7 = Point(pinyinName: "chū sū?" , englishName: "jung chu 중추", chineseCharacter: "中樞", pointOnMeridian: "DU-7", channelAbrev: "DU", number: "7", specialCategories: (pd.getEntryForPoint((pdp.DU7, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU7, key: (pdk.Location)))), channel: "DU Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU7), actions: (pd.getEntryForPoint((pdp.DU7, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU7, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU7, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU7, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU7, key: (pdk.Trigger)))), imageName: "DU7", images: [], context: moc)
-        let DU8 = Point(pinyinName: "kin shuku(?)" , englishName: "geun chuk 근축", chineseCharacter: "筋縮", pointOnMeridian: "DU-8", channelAbrev: "DU", number: "8", specialCategories: (pd.getEntryForPoint((pdp.DU8, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU8, key: (pdk.Location)))), channel: "DU Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU8), actions: (pd.getEntryForPoint((pdp.DU8, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU8, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU8, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU8, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU8, key: (pdk.Trigger)))), imageName: "DU8", images: [], context: moc)
-        let DU9 = Point(pinyinName: "shi yō?" , englishName: "ji yang 지양", chineseCharacter: "至陽", pointOnMeridian: "DU-9", channelAbrev: "DU", number: "9", specialCategories: (pd.getEntryForPoint((pdp.DU9, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU9, key: (pdk.Location)))), channel: "DU Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU9), actions: (pd.getEntryForPoint((pdp.DU9, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU9, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU9, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU9, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU9, key: (pdk.Trigger)))), imageName: "DU9", images: [], context: moc)
-        let DU10 = Point(pinyinName: "rei dai(?)" , englishName: "yeong dae 영대", chineseCharacter: "霊台", pointOnMeridian: "DU-10", channelAbrev: "DU", number: "10", specialCategories: (pd.getEntryForPoint((pdp.DU10, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU10, key: (pdk.Location)))), channel: "DU Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU10), actions: (pd.getEntryForPoint((pdp.DU10, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU10, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU10, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU10, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU10, key: (pdk.Trigger)))), imageName: "DU10", images: [], context: moc)
-        let DU11 = Point(pinyinName: "shin dō" , englishName: "sin do 신도", chineseCharacter: "神道(?)", pointOnMeridian: "DU-11", channelAbrev: "DU", number: "11", specialCategories: (pd.getEntryForPoint((pdp.DU11, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU11, key: (pdk.Location)))), channel: "DU Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU11), actions: (pd.getEntryForPoint((pdp.DU11, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU11, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU11, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU11, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU11, key: (pdk.Trigger)))), imageName: "DU11", images: [], context: moc)
-        let DU12 = Point(pinyinName: "shin chū" , englishName: "sin ju 신주", chineseCharacter: "身柱(?)", pointOnMeridian: "DU-12", channelAbrev: "DU", number: "12", specialCategories: (pd.getEntryForPoint((pdp.DU12, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU12, key: (pdk.Location)))), channel: "DU Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU12), actions: (pd.getEntryForPoint((pdp.DU12, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU12, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU12, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU12, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU12, key: (pdk.Trigger)))), imageName: "DU12", images: [], context: moc)
-        let DU13 = Point(pinyinName: "tō dō?" , englishName: "do do 도도", chineseCharacter: "陶道", pointOnMeridian: "DU-13", channelAbrev: "DU", number: "13", specialCategories: (pd.getEntryForPoint((pdp.DU13, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU13, key: (pdk.Location)))), channel: "DU Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU13), actions: (pd.getEntryForPoint((pdp.DU13, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU13, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU13, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU13, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU13, key: (pdk.Trigger)))), imageName: "DU13", images: [], context: moc)
-        let DU14 = Point(pinyinName: "dai tsui" , englishName: "dae chu 대추", chineseCharacter: "大椎", pointOnMeridian: "DU-14", channelAbrev: "DU", number: "14", specialCategories: (pd.getEntryForPoint((pdp.DU14, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU14, key: (pdk.Location)))), channel: "DU Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU14), actions: (pd.getEntryForPoint((pdp.DU14, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU14, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU14, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU14, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU14, key: (pdk.Trigger)))), imageName: "DU14", images: [], context: moc)
-        let DU15 = Point(pinyinName: "a mon" , englishName: "a mun 아문", chineseCharacter: "啞門", pointOnMeridian: "DU-15", channelAbrev: "DU", number: "15", specialCategories: (pd.getEntryForPoint((pdp.DU15, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU15, key: (pdk.Location)))), channel: "DU Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU15), actions: (pd.getEntryForPoint((pdp.DU15, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU15, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU15, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU15, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU15, key: (pdk.Trigger)))), imageName: "DU15", images: [], context: moc)
-        let DU16 = Point(pinyinName: "fū fu" , englishName: "pung bu 풍부", chineseCharacter: "風府", pointOnMeridian: "DU-16", channelAbrev: "DU", number: "16", specialCategories: (pd.getEntryForPoint((pdp.DU16, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU16, key: (pdk.Location)))), channel: "DU Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU16), actions: (pd.getEntryForPoint((pdp.DU16, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU16, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU16, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU16, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU16, key: (pdk.Trigger)))), imageName: "DU16", images: [], context: moc)
-        let DU17 = Point(pinyinName: "nō ko?" , englishName: "noe ho 뇌호", chineseCharacter: "腦戶", pointOnMeridian: "DU-17", channelAbrev: "DU", number: "17", specialCategories: (pd.getEntryForPoint((pdp.DU17, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU17, key: (pdk.Location)))), channel: "DU Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU17), actions: (pd.getEntryForPoint((pdp.DU17, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU17, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU17, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU17, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU17, key: (pdk.Trigger)))), imageName: "DU17", images: [], context: moc)
-        let DU18 = Point(pinyinName: "kyō kan?" , englishName: "gang gan 강간", chineseCharacter: "強間", pointOnMeridian: "DU-18", channelAbrev: "DU", number: "18", specialCategories: (pd.getEntryForPoint((pdp.DU18, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU18, key: (pdk.Location)))), channel: "DU Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU18), actions: (pd.getEntryForPoint((pdp.DU18, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU18, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU18, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU18, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU18, key: (pdk.Trigger)))), imageName: "DU18", images: [], context: moc)
-        let DU19 = Point(pinyinName: "go chō?" , englishName: "hu jeong 후정", chineseCharacter: "後頂", pointOnMeridian: "DU-19", channelAbrev: "DU", number: "19", specialCategories: (pd.getEntryForPoint((pdp.DU19, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU19, key: (pdk.Location)))), channel: "DU Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU19), actions: (pd.getEntryForPoint((pdp.DU19, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU19, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU19, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU19, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU19, key: (pdk.Trigger)))), imageName: "DU19", images: [], context: moc)
-        let DU20 = Point(pinyinName: "hyaku e" , englishName: "baek hoe 백회", chineseCharacter: "百會", pointOnMeridian: "DU-20", channelAbrev: "DU", number: "20", specialCategories: (pd.getEntryForPoint((pdp.DU20, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU20, key: (pdk.Location)))), channel: "DU Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU20), actions: (pd.getEntryForPoint((pdp.DU20, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU20, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU20, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU20, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU20, key: (pdk.Trigger)))), imageName: "DU20", images: [], context: moc)
-        let DU21 = Point(pinyinName: "zen chō?" , englishName: "jeon jeong 전정", chineseCharacter: "前頂(?)", pointOnMeridian: "DU-21", channelAbrev: "DU", number: "21", specialCategories: (pd.getEntryForPoint((pdp.DU21, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU21, key: (pdk.Location)))), channel: "DU Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU21), actions: (pd.getEntryForPoint((pdp.DU21, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU21, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU21, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU21, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU21, key: (pdk.Trigger)))), imageName: "DU21", images: [], context: moc)
-        let DU22 = Point(pinyinName: "shin e(?)" , englishName: "sin hoe 신회", chineseCharacter: "囟會", pointOnMeridian: "DU-22", channelAbrev: "DU", number: "22", specialCategories: (pd.getEntryForPoint((pdp.DU22, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU22, key: (pdk.Location)))), channel: "DU Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU22), actions: (pd.getEntryForPoint((pdp.DU22, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU22, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU22, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU22, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU22, key: (pdk.Trigger)))), imageName: "DU22", images: [], context: moc)
-        let DU23 = Point(pinyinName: "jō sei?" , englishName: "sang seong 상성", chineseCharacter: "上星(?)", pointOnMeridian: "DU-23", channelAbrev: "DU", number: "23", specialCategories: (pd.getEntryForPoint((pdp.DU23, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU23, key: (pdk.Location)))), channel: "DU Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU23), actions: (pd.getEntryForPoint((pdp.DU23, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU23, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU23, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU23, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU23, key: (pdk.Trigger)))), imageName: "DU23", images: [], context: moc)
-        let DU24 = Point(pinyinName: "shin tei" , englishName: "sin jeong 신정", chineseCharacter: "神庭", pointOnMeridian: "DU-24", channelAbrev: "DU", number: "24", specialCategories: (pd.getEntryForPoint((pdp.DU24, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU24, key: (pdk.Location)))), channel: "DU Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU24), actions: (pd.getEntryForPoint((pdp.DU24, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU24, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU24, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU24, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU24, key: (pdk.Trigger)))), imageName: "DU24", images: [], context: moc)
-        let DU25 = Point(pinyinName: "so ryō?" , englishName: "so ryo 소료", chineseCharacter: "素髎(?)", pointOnMeridian: "DU-25", channelAbrev: "DU", number: "25", specialCategories: (pd.getEntryForPoint((pdp.DU25, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU25, key: (pdk.Location)))), channel: "DU Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU25), actions: (pd.getEntryForPoint((pdp.DU25, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU25, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU25, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU25, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU25, key: (pdk.Trigger)))), imageName: "DU25", images: [], context: moc)
-        let DU26 = Point(pinyinName: "jin chu" , englishName: "in jung 인중/su gu 수구", chineseCharacter: "人中", pointOnMeridian: "DU-26", channelAbrev: "DU", number: "26", specialCategories: (pd.getEntryForPoint((pdp.DU26, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU26, key: (pdk.Location)))), channel: "DU Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU26), actions: (pd.getEntryForPoint((pdp.DU26, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU26, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU26, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU26, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU26, key: (pdk.Trigger)))), imageName: "DU26", images: [], context: moc)
-        let DU27 = Point(pinyinName: "da tan(?)" , englishName: "tae don 태단", chineseCharacter: "兌端", pointOnMeridian: "DU-27", channelAbrev: "DU", number: "27", specialCategories: (pd.getEntryForPoint((pdp.DU27, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU27, key: (pdk.Location)))), channel: "DU Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU27), actions: (pd.getEntryForPoint((pdp.DU27, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU27, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU27, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU27, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU27, key: (pdk.Trigger)))), imageName: "DU27", images: [], context: moc)
-        let DU28 = Point(pinyinName: "gin kō" , englishName: "eun gyo 은교", chineseCharacter: "齦交", pointOnMeridian: "DU-28", channelAbrev: "DU", number: "28", specialCategories: (pd.getEntryForPoint((pdp.DU28, key: (pdk.Classifications)))), locationDescription: (pd.getEntryForPoint((pdp.DU28, key: (pdk.Location)))), channel: "DU Extraordinary Meridian", uses: PointUses.sharedController.getPointUse(PointUses.Point.DU28), actions: (pd.getEntryForPoint((pdp.DU28, key: (pdk.Actions)))), needling: (pd.getEntryForPoint((pdp.DU28, key: (pdk.Needling)))), warning: (pd.getEntryForPoint((pdp.DU28, key: (pdk.Warning)))), neuroAnatomy: (pd.getEntryForPoint((pdp.DU28, key: (pdk.Neuro)))), triggerPointAssociations: (pd.getEntryForPoint((pdp.DU28, key: (pdk.Trigger)))), imageName: "DU28", images: [], context: moc)
-        
-        
-        return [DU1,DU2,DU3,DU4,DU5,DU6,DU7,DU8,DU9,DU10,DU11,DU12,DU13,DU14,DU15,DU16,DU17,DU18,DU19,DU20,DU21,DU22,DU23,DU24,DU25,DU26,DU27,DU28]
-}
+    }
 }

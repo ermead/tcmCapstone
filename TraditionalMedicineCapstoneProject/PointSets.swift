@@ -78,7 +78,6 @@ class PointSets2 {
     
     func Lung() ->[Point] {
         
-        let LU1Test = Point(pinyinName: "zhōng fǔ", englishName: "Middle Palace", chineseCharacter: "中府", pointOnMeridian: "LU-1", channelAbrev: "LU", number: "1", specialCategories: <#T##String?#>, locationDescription: PointLocation.sharedController.getPointLocation(PointLocation.Point.LU1), channel: "Hand Tai Yin", uses: PointUses.sharedController.getPointUse(PointUses.Point.LU1), meeting: <#T##String?#>, actions: <#T##String?#>, needling: <#T##String?#>, warning: <#T##String?#>, neuroAnatomy: <#T##String?#>, triggerPointAssociations: <#T##String?#>, imageName: "LU1", images: <#T##NSSet?#>, context: moc)
         
         let LU1 = Point(pinyinName: "zhōng fǔ" , englishName: "Middle Palace", chineseCharacter: "中府", pointOnMeridian: "LU-1", channelAbrev: "LU", number: "1", specialCategories: " "  , locationDescription: PointLocation.sharedController.getPointLocation(PointLocation.Point.LU1), channel: "Hand Tai Yin", uses: PointUses.sharedController.getPointUse(PointUses.Point.LU1), imageName: "LU1", images: [], context: moc)
         let LU2 = Point(pinyinName: "yún mén" , englishName: "Cloud Gate", chineseCharacter: "雲門", pointOnMeridian: "LU-2", channelAbrev: "LU", number: "2", specialCategories: " "  , locationDescription: PointLocation.sharedController.getPointLocation(PointLocation.Point.LU2), channel: "Hand Tai Yin", uses: PointUses.sharedController.getPointUse(PointUses.Point.LU2), imageName: "LU2", images: [], context: moc)
