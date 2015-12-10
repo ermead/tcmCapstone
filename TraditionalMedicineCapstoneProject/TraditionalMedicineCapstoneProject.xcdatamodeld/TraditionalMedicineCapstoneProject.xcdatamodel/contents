@@ -52,17 +52,23 @@
         <relationship name="point" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Point" inverseName="images" inverseEntity="Point" syncable="YES"/>
     </entity>
     <entity name="Point" representedClassName="Point" syncable="YES">
+        <attribute name="actions" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="channel" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="channelAbrev" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="chineseCharacter" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="englishName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="imageName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="locationDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="meeting" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="needling" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="neuroAnatomy" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="number" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="pinyinName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="pointOnMeridian" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="specialCategories" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="triggerPointAssociations" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="uses" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="warning" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="images" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Image" inverseName="point" inverseEntity="Image" syncable="YES"/>
         <relationship name="onChannel" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Channel" inverseName="hasPoints" inverseEntity="Channel" syncable="YES"/>
     </entity>
@@ -72,6 +78,6 @@
         <element name="Formula" positionX="-153" positionY="72" width="128" height="150"/>
         <element name="Herb" positionX="-63" positionY="-18" width="128" height="315"/>
         <element name="Image" positionX="-162" positionY="117" width="128" height="135"/>
-        <element name="Point" positionX="-281" positionY="0" width="128" height="240"/>
+        <element name="Point" positionX="-281" positionY="0" width="128" height="330"/>
     </elements>
 </model>

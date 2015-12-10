@@ -14,7 +14,7 @@ class Point: NSManagedObject {
 
 // Insert code here to add functionality to your managed object subclass
 
-    convenience init(pinyinName: String? = "", englishName: String? = "", chineseCharacter: String? = "",pointOnMeridian: String? = "", channelAbrev: String? = "", number: String? = "", specialCategories: String? = "", locationDescription: String? = "", channel: String? = "", uses: String? = "", imageName: String? = "", images: NSSet? = [],context: NSManagedObjectContext = Stack.sharedStack.managedObjectContext) {
+    convenience init(pinyinName: String? = "", englishName: String? = "", chineseCharacter: String? = "",pointOnMeridian: String? = "", channelAbrev: String? = "", number: String? = "", specialCategories: String? = "", locationDescription: String? = "", channel: String? = "", uses: String? = "", meeting: String? = "", actions: String? = "", needling: String? = "", warning: String? = "", neuroAnatomy: String? = "", triggerPointAssociations: String? = "",  imageName: String? = "", images: NSSet? = [],context: NSManagedObjectContext = Stack.sharedStack.managedObjectContext) {
         
         let entity = NSEntityDescription.entityForName("Point", inManagedObjectContext: context)
         
@@ -30,6 +30,12 @@ class Point: NSManagedObject {
         self.locationDescription = locationDescription
         self.channel = channel
         self.uses = uses
+        self.meeting = meeting
+        self.actions = actions
+        self.needling = needling
+        self.warning = warning
+        self.neuroAnatomy = neuroAnatomy
+        self.triggerPointAssociations = triggerPointAssociations
         self.imageName = imageName
 
     }
