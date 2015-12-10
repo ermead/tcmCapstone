@@ -551,7 +551,10 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
                     
                 }
                 
-                //point = Point(pinyinName: point.pinyinName, englishName: point.englishName, pointOnMeridian: point.pointOnMeridian, specialCategories: point.specialCategories!, channel: point.channel, locationDescription: point.locationDescription, uses: point.uses)
+                
+              //  point = Point(pinyinName: <#T##String?#>, englishName: <#T##String?#>, chineseCharacter: <#T##String?#>, pointOnMeridian: <#T##String?#>, channelAbrev: <#T##String?#>, number: <#T##String?#>, specialCategories: <#T##String?#>, locationDescription: <#T##String?#>, channel: <#T##String?#>, uses: <#T##String?#>, meeting: <#T##String?#>, actions: <#T##String?#>, needling: <#T##String?#>, warning: <#T##String?#>, neuroAnatomy: <#T##String?#>, triggerPointAssociations: <#T##String?#>, imageName: <#T##String?#>, images: <#T##NSSet?#>, context: <#T##NSManagedObjectContext#>)
+                
+                
                 
                 topRightTextField.text = point.pinyinName?.capitalizedString
                 topRightMiddleTextField.text = point.pointOnMeridian

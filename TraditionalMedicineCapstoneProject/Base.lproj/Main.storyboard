@@ -2297,7 +2297,7 @@
         <image name="woodTexture" width="1698" height="864"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jzB-EM-KTi"/>
         <segue reference="tFZ-Rx-MOA"/>
+        <segue reference="ewg-ee-X0e"/>
     </inferredMetricsTieBreakers>
 </document>
