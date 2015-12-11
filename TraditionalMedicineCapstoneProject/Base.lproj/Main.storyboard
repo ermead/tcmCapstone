@@ -1951,6 +1951,7 @@
                         <outlet property="location" destination="MHl-Ac-BWN" id="MVL-sb-hlH"/>
                         <outlet property="rightImage" destination="kZk-uo-87d" id="JWW-D4-QNR"/>
                         <outlet property="saveButton" destination="YMl-hJ-SWj" id="jMR-6S-UmP"/>
+                        <outlet property="scrollView" destination="alg-AB-jT0" id="75c-XX-FPT"/>
                         <outlet property="textField4" destination="zDG-fO-ZCT" id="ZOU-69-WII"/>
                         <outlet property="textField5" destination="WL8-zy-W0J" id="Upw-au-8Xw"/>
                         <outlet property="textField6" destination="HMm-hv-uZ8" id="0w3-K4-9Dh"/>

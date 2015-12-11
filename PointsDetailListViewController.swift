@@ -10,6 +10,9 @@ import UIKit
 
 class PointsDetailListViewController: UIViewController,  UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate, UITextViewDelegate {
 
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    
     var herb: Herb?
     var point: Point?
     
@@ -1129,17 +1132,22 @@ class PointsDetailListViewController: UIViewController,  UIImagePickerController
         return canEdit
     }
    
-    
-    
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+extension ViewController: UIScrollViewDelegate {
+    func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
+        return view1
     }
-    */
-
+    
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        //updateLabel()
+    }
+    
+    func scrollViewDidZoom(scrollView: UIScrollView) {
+        //recenterImage()
+        //updateLabel()
+    }
+    
+    
 }
